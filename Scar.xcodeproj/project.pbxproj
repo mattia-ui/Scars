@@ -15,6 +15,7 @@
 		345F14D924573809003EE819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345F14D724573809003EE819 /* LaunchScreen.storyboard */; };
 		345F14E424573809003EE819 /* ScarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F14E324573809003EE819 /* ScarTests.swift */; };
 		345F14EF24573809003EE819 /* ScarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F14EE24573809003EE819 /* ScarUITests.swift */; };
+		345F14FF24573819003EE819 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345F14FE24573819003EE819 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		345F14EA24573809003EE819 /* ScarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		345F14EE24573809003EE819 /* ScarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScarUITests.swift; sourceTree = "<group>"; };
 		345F14F024573809003EE819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		345F14FC24573816003EE819 /* Scar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scar.entitlements; sourceTree = "<group>"; };
+		345F14FE24573819003EE819 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345F14FF24573819003EE819 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,7 @@
 				345F14E224573809003EE819 /* ScarTests */,
 				345F14ED24573809003EE819 /* ScarUITests */,
 				345F14CA24573808003EE819 /* Products */,
+				345F14FD24573819003EE819 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +104,7 @@
 		345F14CB24573808003EE819 /* Scar */ = {
 			isa = PBXGroup;
 			children = (
+				345F14FC24573816003EE819 /* Scar.entitlements */,
 				345F14CC24573808003EE819 /* AppDelegate.swift */,
 				345F14CE24573808003EE819 /* SceneDelegate.swift */,
 				345F14D024573808003EE819 /* ViewController.swift */,
@@ -126,6 +132,14 @@
 				345F14F024573809003EE819 /* Info.plist */,
 			);
 			path = ScarUITests;
+			sourceTree = "<group>";
+		};
+		345F14FD24573819003EE819 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				345F14FE24573819003EE819 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -434,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Scar/Scar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RL6WJW484U;
 				INFOPLIST_FILE = Scar/Info.plist;
@@ -441,7 +456,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.Scar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.coders.Scar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Scar/Scar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RL6WJW484U;
 				INFOPLIST_FILE = Scar/Info.plist;
@@ -459,7 +475,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.Scar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.coders.Scar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
