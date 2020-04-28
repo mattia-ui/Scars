@@ -88,7 +88,7 @@
                         <viewLayoutGuide key="safeArea" id="7xe-tb-H0C"/>
                     </view>
                     <connections>
-                        <outlet property="scarsImage" destination="BZ6-tJ-sA0" id="SpE-e7-EsO"/>
+                        <outlet property="scarsImage" destination="BZ6-tJ-sA0" id="78I-rA-t0f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upZ-oD-daW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

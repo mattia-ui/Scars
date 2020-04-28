@@ -3,7 +3,7 @@
 //  Scar
 //
 //  Created by Mattia Cardone on 27/04/2020.
-//  Copyright © 2020 Mattia Cardone. All rights reserved.
+//  Copyright © 2020 Antonio Cimino. All rights reserved.
 //
 
 import UIKit
