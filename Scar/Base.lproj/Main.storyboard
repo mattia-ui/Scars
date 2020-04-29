@@ -143,7 +143,7 @@
             </objects>
             <point key="canvasLocation" x="2613.04347826087" y="137.94642857142856"/>
         </scene>
-        <!--Item-->
+        <!--InstaScar-->
         <scene sceneID="Bzx-Zb-FVk">
             <objects>
                 <viewController id="6gb-hr-oD9" customClass="InstaPage" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
@@ -164,7 +164,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="usL-e3-7JS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="cEk-WR-47W"/>
+                    <tabBarItem key="tabBarItem" title="InstaScar" image="person.crop.circle.fill" catalog="system" id="cEk-WR-47W"/>
                     <navigationItem key="navigationItem" id="L2d-YI-2Ee"/>
                     <connections>
                         <outlet property="myWebView" destination="i8f-uW-hrO" id="UBj-1M-wSf"/>
@@ -174,11 +174,11 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="862.5"/>
         </scene>
-        <!--Item-->
+        <!--Draw-->
         <scene sceneID="Ert-xa-1Lq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uqz-Kw-fbm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Gek-4P-XAa"/>
+                    <tabBarItem key="tabBarItem" title="Draw" image="pencil.tip.crop.circle" catalog="system" id="Gek-4P-XAa"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nzM-UT-pxI">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -214,6 +214,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="pencil.tip.crop.circle" catalog="system" width="128" height="121"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
         <image name="photo.on.rectangle" catalog="system" width="128" height="98"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
     </resources>
