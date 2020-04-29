@@ -16,6 +16,7 @@
 		345F14E424573809003EE819 /* ScarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F14E324573809003EE819 /* ScarTests.swift */; };
 		345F14EF24573809003EE819 /* ScarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F14EE24573809003EE819 /* ScarUITests.swift */; };
 		345F14FF24573819003EE819 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345F14FE24573819003EE819 /* CloudKit.framework */; };
+		76CD0C292459C65800E9CA9B /* IstaPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD0C282459C65800E9CA9B /* IstaPage.swift */; };
 		76F8FF152458AFDB00E50D7F /* Collage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F8FF142458AFDB00E50D7F /* Collage.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		345F14F024573809003EE819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		345F14FC24573816003EE819 /* Scar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scar.entitlements; sourceTree = "<group>"; };
 		345F14FE24573819003EE819 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		76CD0C282459C65800E9CA9B /* IstaPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IstaPage.swift; sourceTree = "<group>"; };
 		76F8FF142458AFDB00E50D7F /* Collage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				345F14FC24573816003EE819 /* Scar.entitlements */,
 				345F14CC24573808003EE819 /* AppDelegate.swift */,
 				76F8FF142458AFDB00E50D7F /* Collage.swift */,
+				76CD0C282459C65800E9CA9B /* IstaPage.swift */,
 				345F14CE24573808003EE819 /* SceneDelegate.swift */,
 				345F14D024573808003EE819 /* ViewController.swift */,
 				345F14D224573808003EE819 /* Main.storyboard */,
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76CD0C292459C65800E9CA9B /* IstaPage.swift in Sources */,
 				345F14D124573808003EE819 /* ViewController.swift in Sources */,
 				345F14CD24573808003EE819 /* AppDelegate.swift in Sources */,
 				345F14CF24573808003EE819 /* SceneDelegate.swift in Sources */,
