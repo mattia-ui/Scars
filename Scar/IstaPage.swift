@@ -7,15 +7,17 @@
 //
 
 import UIKit
+import WebKit
 
 class InstaPage: UIViewController {
 
-    @IBOutlet weak var myWebView: UIWebView!
+   
+    @IBOutlet weak var myWebView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let url = URL(string: "https://www.instagram.com/giosan1999/?hl=en")
-        myWebView.loadRequest(URLRequest(url: url!))
+        myWebView.load(URLRequest(url: url!))
     }
 
     override func didReceiveMemoryWarning() {
