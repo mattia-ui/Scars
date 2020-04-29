@@ -58,27 +58,38 @@ class Collage: UIViewController, UITextFieldDelegate  {
     
     
     @IBAction func shareImg(_ sender: Any) {
-        guard let instagramUrl = URL(string: "instagram://app") else {
-            return
-        }
-        if UIApplication.shared.canOpenURL(instagramUrl) {
-            guard let imageData = scarsImage.image!.jpegData(compressionQuality: 100) else {
-                return
-            }
-            let path = (NSTemporaryDirectory() as NSString).appendingPathComponent("instagram.ig")
-            let fileUrl = URL(fileURLWithPath: path)
-            do {
-                try imageData.write(to: fileUrl, options: .atomic)
-            } catch {
-                return
-            }
-            let documentController = UIDocumentInteractionController(url: fileUrl)
-            documentController.delegate = self as? UIDocumentInteractionControllerDelegate
-            documentController.uti = "com.instagram.photo"
-            documentController.presentOpenInMenu(from: self.view.frame, in: self.view, animated: true)
-        } else {
-            print("Istagram no istalled")
-        }
+        let firstActivityItem = "\(String(describing: descriptionField))"
+            let secondActivityItem : NSURL = NSURL(string: "http//:hangme")!
+            // If you want to put an image
+        let image : UIImage =  scarsImage.image!
+
+            let activityViewController : UIActivityViewController = UIActivityViewController(
+                activityItems: [firstActivityItem, secondActivityItem, image], applicationActivities: nil)
+
+            // This lines is for the popover you need to show in iPad
+            activityViewController.popoverPresentationController?.sourceView = (sender as! UIButton)
+
+            // This line remove the arrow of the popover to show in iPad
+            activityViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection.up
+            activityViewController.popoverPresentationController?.sourceRect = CGRect(x: 150, y: 150, width: 0, height: 0)
+
+            // Anything you want to exclude
+            activityViewController.excludedActivityTypes = [
+                UIActivity.ActivityType.postToWeibo,
+                UIActivity.ActivityType.print,
+                UIActivity.ActivityType.assignToContact,
+                UIActivity.ActivityType.saveToCameraRoll,
+                UIActivity.ActivityType.addToReadingList,
+                UIActivity.ActivityType.postToFlickr,
+                UIActivity.ActivityType.postToVimeo,
+                UIActivity.ActivityType.postToTencentWeibo,
+                UIActivity.ActivityType.postToFacebook,
+                UIActivity.ActivityType.postToTwitter,
+                
+                
+            ]
+
+            self.present(activityViewController, animated: true, completion: nil)
     }
 
     
