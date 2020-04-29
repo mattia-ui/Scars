@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uqz-Kw-fbm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uqz-Kw-fbm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -79,6 +79,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="drawScars" destination="Jmz-4f-0Na" id="CZM-q9-cxF"/>
+                        <outlet property="elaboraDisegno" destination="9kw-vZ-BG8" id="ASE-Pk-7ab"/>
                         <outlet property="pictureScars" destination="ns4-Sj-bJV" id="7Te-6s-L6w"/>
                         <outlet property="tempDrawScars" destination="Y7q-Le-8bb" id="P4K-uF-JWT"/>
                     </connections>
@@ -131,6 +132,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="photo.on.rectangle" catalog="system" width="64" height="48"/>
+        <image name="photo.on.rectangle" catalog="system" width="128" height="98"/>
     </resources>
 </document>

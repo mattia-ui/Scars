@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate  {
-
+    @IBOutlet weak var elaboraDisegno: UIButton!
+    
     @IBOutlet weak var pictureScars: UIImageView!
     @IBOutlet weak var drawScars: UIImageView!
     @IBOutlet weak var tempDrawScars: UIImageView!
