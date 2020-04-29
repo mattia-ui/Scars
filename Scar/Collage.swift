@@ -7,10 +7,17 @@
 //
 
 import UIKit
+import CloudKit
 
-class Collage: UIViewController  {
+class Collage: UIViewController, UITextFieldDelegate  {
     
     @IBOutlet weak var scarsImage: UIImageView!
+    
+    @IBOutlet weak var descriptionField: UITextField!
+    
+    @IBOutlet weak var activityField: UIActivityIndicatorView!
+    
+    let dataBase = CKContainer.default().publicCloudDatabase
     
     override func
         viewDidLoad() {
@@ -22,6 +29,80 @@ class Collage: UIViewController  {
             maskView.frame =  scarsImage.bounds
             scarsImage.mask = maskView
         }
+        
+            let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+
+                view.addGestureRecognizer(tap)
+            
+                descriptionField.smartInsertDeleteType = UITextSmartInsertDeleteType.no
+                descriptionField.delegate = self
+            
+        }
+
+                   
+        @objc func dismissKeyboard() {
+                       
+                view.endEditing(true)
+            
+        }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let textFieldText = descriptionField.text,
+            let rangeOfTextToReplace = Range(range, in: textFieldText) else {
+                return false
+        }
+        let substringToReplace = textFieldText[rangeOfTextToReplace]
+        let count = textFieldText.count - substringToReplace.count + string.count
+        return count <= 250
     }
+    
+    
+    @IBAction func shareUnkown(_ sender: Any) {
+         
+         
+         let ourRecord = CKRecord(recordType: "PublicInfo")
+                 
+                 ourRecord.setObject(descriptionField?.text as __CKRecordObjCValue?, forKey: "Description")
+                 
+                 self.activityField.startAnimating()
+                 
+         
+                 
+                 let mngr = FileManager.default
+                 let dir = mngr.urls(for: .documentDirectory, in: .userDomainMask)
+                 let file = dir[0].appendingPathComponent("myImage").path
+                 
+                 
+                  do {
+                     try scarsImage.image?.jpegData(compressionQuality: 0.5)?.write(to: URL(fileURLWithPath: file))
+                     let url = NSURL.fileURL(withPath: file)
+                     let imageAsset = CKAsset(fileURL: url)
+                     
+                     ourRecord.setObject(imageAsset as CKAsset, forKey: "Photo")
+                     print("\(url)")
+                  } catch _ {
+                     print("error")
+                 }
+                 
+                 
+                 dataBase.save(ourRecord,completionHandler:  {  (record, error) -> Void in
+                     
+                     if error != nil {
+
+                         print("error to save" + error.debugDescription)
+                         
+                     } else {
+
+                         print("save succesfull")
+                     }
+                     
+                     
+                     DispatchQueue.main.async{
+                         self.activityField.stopAnimating()
+                     }
+                 })
+        
+    }
+    
 
 }
