@@ -16,6 +16,7 @@
 		345F14E424573809003EE819 /* ScarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F14E324573809003EE819 /* ScarTests.swift */; };
 		345F14EF24573809003EE819 /* ScarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F14EE24573809003EE819 /* ScarUITests.swift */; };
 		345F14FF24573819003EE819 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345F14FE24573819003EE819 /* CloudKit.framework */; };
+		345F15492459D5D9003EE819 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345F15482459D5D9003EE819 /* WebKit.framework */; };
 		76CD0C292459C65800E9CA9B /* IstaPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD0C282459C65800E9CA9B /* IstaPage.swift */; };
 		76F8FF152458AFDB00E50D7F /* Collage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F8FF142458AFDB00E50D7F /* Collage.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		345F14F024573809003EE819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		345F14FC24573816003EE819 /* Scar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scar.entitlements; sourceTree = "<group>"; };
 		345F14FE24573819003EE819 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		345F15482459D5D9003EE819 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		76CD0C282459C65800E9CA9B /* IstaPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IstaPage.swift; sourceTree = "<group>"; };
 		76F8FF142458AFDB00E50D7F /* Collage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345F15492459D5D9003EE819 /* WebKit.framework in Frameworks */,
 				345F14FF24573819003EE819 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +146,7 @@
 		345F14FD24573819003EE819 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				345F15482459D5D9003EE819 /* WebKit.framework */,
 				345F14FE24573819003EE819 /* CloudKit.framework */,
 			);
 			name = Frameworks;
