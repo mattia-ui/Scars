@@ -100,23 +100,23 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     //Elabora foto.
     @IBAction func drawElaboration(_ sender: Any) {
         
-        UIGraphicsBeginImageContext(view.frame.size)
-        guard let context = UIGraphicsGetCurrentContext() else {return}
-        tempDrawScars.image?.draw(in: view.bounds)
-        for i in 0...points.count-1 {
-          for j in 0...points.count-1 {
-            print(points[i])
-            context.move(to: points[i])
-            context.addLine(to: points[j])
-            context.setLineCap(.round)
-            context.setBlendMode(.normal)
-            context.setLineWidth(brushWidth)
-            context.setStrokeColor(color.cgColor)
-            context.strokePath()
-          }
-        }
-        tempDrawScars.image = UIGraphicsGetImageFromCurrentImageContext()
-        tempDrawScars.alpha = opacity
+//        UIGraphicsBeginImageContext(view.frame.size)
+//        guard let context = UIGraphicsGetCurrentContext() else {return}
+//        tempDrawScars.image?.draw(in: view.bounds)
+//        for i in 0...points.count-1 {
+//          for j in 0...points.count-1 {
+//            print(points[i])
+//            context.move(to: points[i])
+//            context.addLine(to: points[j])
+//            context.setLineCap(.round)
+//            context.setBlendMode(.normal)
+//            context.setLineWidth(brushWidth)
+//            context.setStrokeColor(color.cgColor)
+//            context.strokePath()
+//          }
+//        }
+//        tempDrawScars.image = UIGraphicsGetImageFromCurrentImageContext()
+//        tempDrawScars.alpha = opacity
         
         if let image = tempDrawScars.image {
             if let data = image.pngData() {

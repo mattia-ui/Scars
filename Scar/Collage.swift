@@ -12,15 +12,12 @@ import CloudKit
 class Collage: UIViewController, UITextFieldDelegate  {
     
     @IBOutlet weak var scarsImage: UIImageView!
-    
     @IBOutlet weak var descriptionField: UITextField!
-    
     @IBOutlet weak var activityField: UIActivityIndicatorView!
     
     let dataBase = CKContainer.default().publicCloudDatabase
     
-    override func
-        viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
             scarsImage.image = UIImage(named: "2-.jpg")
@@ -30,21 +27,15 @@ class Collage: UIViewController, UITextFieldDelegate  {
             scarsImage.mask = maskView
         }
         
-            let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        descriptionField.smartInsertDeleteType = UITextSmartInsertDeleteType.no
+        descriptionField.delegate = self
+    }
 
-                view.addGestureRecognizer(tap)
-            
-                descriptionField.smartInsertDeleteType = UITextSmartInsertDeleteType.no
-                descriptionField.delegate = self
-            
-        }
-
-                   
-        @objc func dismissKeyboard() {
-                       
-                view.endEditing(true)
-            
-        }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let textFieldText = descriptionField.text,
@@ -59,21 +50,13 @@ class Collage: UIViewController, UITextFieldDelegate  {
     
     @IBAction func shareImg(_ sender: Any) {
         let firstActivityItem = "\(String(describing: descriptionField))"
-            let secondActivityItem : NSURL = NSURL(string: "http//:hangme")!
-            // If you want to put an image
+        let secondActivityItem : NSURL = NSURL(string: "http//:hangme")!
         let image : UIImage =  scarsImage.image!
-
-            let activityViewController : UIActivityViewController = UIActivityViewController(
-                activityItems: [firstActivityItem, secondActivityItem, image], applicationActivities: nil)
-
-            // This lines is for the popover you need to show in iPad
+        let activityViewController : UIActivityViewController = UIActivityViewController(
+            activityItems: [firstActivityItem, secondActivityItem, image], applicationActivities: nil)
             activityViewController.popoverPresentationController?.sourceView = (sender as! UIButton)
-
-            // This line remove the arrow of the popover to show in iPad
             activityViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection.up
             activityViewController.popoverPresentationController?.sourceRect = CGRect(x: 150, y: 150, width: 0, height: 0)
-
-            // Anything you want to exclude
             activityViewController.excludedActivityTypes = [
                 UIActivity.ActivityType.postToWeibo,
                 UIActivity.ActivityType.print,
@@ -85,10 +68,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                 UIActivity.ActivityType.postToTencentWeibo,
                 UIActivity.ActivityType.postToFacebook,
                 UIActivity.ActivityType.postToTwitter,
-                
-                
             ]
-
             self.present(activityViewController, animated: true, completion: nil)
     }
 
