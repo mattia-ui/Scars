@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SSV-aU-n6h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SSV-aU-n6h">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -74,6 +74,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="elaboraDisegno" destination="3Ed-Iy-86w" id="RYa-eF-Ik1"/>
                         <outlet property="pictureScars" destination="ns4-Sj-bJV" id="7Te-6s-L6w"/>
                         <outlet property="tempDrawScars" destination="Y7q-Le-8bb" id="P4K-uF-JWT"/>
                     </connections>
@@ -90,10 +91,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BZ6-tJ-sA0">
-                                <rect key="frame" x="0.0" y="96" width="414" height="537"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHs-2h-Qgw">
                                 <rect key="frame" x="32" y="832" width="95" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -129,6 +126,18 @@
                                     <action selector="shareImg:" destination="yYg-UP-XTl" eventType="touchUpInside" id="X7y-JW-jJG"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Prova" translatesAutoresizingMaskIntoConstraints="NO" id="b8m-8v-r6a">
+                                <rect key="frame" x="0.0" y="157" width="414" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BZ6-tJ-sA0">
+                                <rect key="frame" x="0.0" y="157" width="414" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dBx-UX-5Zm">
+                                <rect key="frame" x="0.0" y="157" width="414" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="7xe-tb-H0C"/>
@@ -137,6 +146,8 @@
                         <outlet property="activityField" destination="ykR-e5-Fec" id="CI7-rM-vz3"/>
                         <outlet property="descriptionField" destination="2n9-Pq-ufU" id="lqh-Ow-EgJ"/>
                         <outlet property="scarsImage" destination="BZ6-tJ-sA0" id="78I-rA-t0f"/>
+                        <outlet property="screen" destination="dBx-UX-5Zm" id="aqG-F5-DhE"/>
+                        <outlet property="topp" destination="b8m-8v-r6a" id="GaZ-FY-mj6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upZ-oD-daW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -214,9 +225,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pencil.tip.crop.circle" catalog="system" width="128" height="121"/>
-        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="photo.on.rectangle" catalog="system" width="128" height="98"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="Prova" width="800" height="800"/>
+        <image name="pencil.tip.crop.circle" catalog="system" width="64" height="60"/>
+        <image name="person.crop.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="photo.on.rectangle" catalog="system" width="64" height="48"/>
+        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
     </resources>
 </document>
