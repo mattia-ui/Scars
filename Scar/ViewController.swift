@@ -12,7 +12,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBOutlet weak var elaboraDisegno: UIButton!
     
     @IBOutlet weak var pictureScars: UIImageView!
-    @IBOutlet weak var drawScars: UIImageView!
     @IBOutlet weak var tempDrawScars: UIImageView!
 
     var imagePicker: UIImagePickerController!
@@ -46,7 +45,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     //Cancella disegno.
     @IBAction func resetDraw(_ sender: Any) {
-        drawScars.image = nil
+        tempDrawScars.image = nil
         points = []
     }
     
@@ -96,18 +95,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         if !swiped {// draw a single point
             drawLine(from: lastPoint, to: lastPoint)
         }
-        
-        // Merge tempImageView into mainImageView
-        UIGraphicsBeginImageContext(drawScars.frame.size)
-        drawScars.image?.draw(in: view.bounds, blendMode: .normal, alpha: 1.0)
-        tempDrawScars?.image?.draw(in: view.bounds, blendMode: .normal, alpha: opacity)
-        drawScars.image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        tempDrawScars.image = nil
     }
-    
-    
     
     //Elabora foto.
     @IBAction func drawElaboration(_ sender: Any) {
@@ -129,14 +117,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         }
         tempDrawScars.image = UIGraphicsGetImageFromCurrentImageContext()
         tempDrawScars.alpha = opacity
-        UIGraphicsBeginImageContext(drawScars.frame.size)
-        drawScars.image?.draw(in: view.bounds, blendMode: .normal, alpha: 1.0)
-        tempDrawScars?.image?.draw(in: view.bounds, blendMode: .normal, alpha: opacity)
-        drawScars.image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        tempDrawScars.image = nil
         
-        if let image = drawScars.image {
+        if let image = tempDrawScars.image {
             if let data = image.pngData() {
                 let filename = getDocumentsDirectory().appendingPathComponent("copy.png")
                 try? data.write(to: filename)
