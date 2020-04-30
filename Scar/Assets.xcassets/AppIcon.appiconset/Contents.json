@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "Icon-40.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
@@ -18,6 +19,7 @@
       "size" : "29x29"
     },
     {
+      "filename" : "Icon-58.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
@@ -35,9 +37,22 @@
       "size" : "40x40"
     },
     {
+      "filename" : "Icon-121.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
+    },
+    {
+      "filename" : "Icon-57.png",
+      "idiom" : "iphone",
+      "scale" : "1x",
+      "size" : "57x57"
+    },
+    {
+      "filename" : "Icon-114.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "57x57"
     },
     {
       "filename" : "Icon-120.png",
@@ -58,28 +73,31 @@
       "size" : "20x20"
     },
     {
-      "filename" : "Icon-40.png",
+      "filename" : "Icon-41.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
+      "filename" : "Icon-30.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "29x29"
     },
     {
-      "filename" : "Icon-58.png",
+      "filename" : "Icon-59.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
+      "filename" : "Icon-42.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "40x40"
     },
     {
+      "filename" : "Icon-81.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "40x40"
@@ -107,6 +125,31 @@
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
+    },
+    {
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "16x16"
+    },
+    {
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "32x32"
+    },
+    {
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "128x128"
+    },
+    {
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "256x256"
+    },
+    {
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "512x512"
     }
   ],
   "info" : {
