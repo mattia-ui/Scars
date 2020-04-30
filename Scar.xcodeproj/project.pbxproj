@@ -19,6 +19,7 @@
 		345F15492459D5D9003EE819 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345F15482459D5D9003EE819 /* WebKit.framework */; };
 		76C13DE7245B255C00D1AE9F /* ChoosePalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C13DE6245B255C00D1AE9F /* ChoosePalette.swift */; };
 		76C13DE9245B2B3100D1AE9F /* ChooseTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C13DE8245B2B3100D1AE9F /* ChooseTexture.swift */; };
+		76C13DEB245B2FAE00D1AE9F /* TakePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C13DEA245B2FAE00D1AE9F /* TakePicture.swift */; };
 		76CD0C292459C65800E9CA9B /* IstaPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD0C282459C65800E9CA9B /* IstaPage.swift */; };
 		76E9F0FE245B214B00D4921E /* ChooseShape2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E9F0FC245B214B00D4921E /* ChooseShape2.swift */; };
 		76E9F0FF245B214B00D4921E /* ChooseShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E9F0FD245B214B00D4921E /* ChooseShape.swift */; };
@@ -62,6 +63,7 @@
 		345F15482459D5D9003EE819 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		76C13DE6245B255C00D1AE9F /* ChoosePalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePalette.swift; sourceTree = "<group>"; };
 		76C13DE8245B2B3100D1AE9F /* ChooseTexture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTexture.swift; sourceTree = "<group>"; };
+		76C13DEA245B2FAE00D1AE9F /* TakePicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePicture.swift; sourceTree = "<group>"; };
 		76CD0C282459C65800E9CA9B /* IstaPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IstaPage.swift; sourceTree = "<group>"; };
 		76E9F0FC245B214B00D4921E /* ChooseShape2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseShape2.swift; sourceTree = "<group>"; };
 		76E9F0FD245B214B00D4921E /* ChooseShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseShape.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				76C13DE8245B2B3100D1AE9F /* ChooseTexture.swift */,
 				76CD0C282459C65800E9CA9B /* IstaPage.swift */,
 				345F14CE24573808003EE819 /* SceneDelegate.swift */,
+				76C13DEA245B2FAE00D1AE9F /* TakePicture.swift */,
 				345F14D024573808003EE819 /* ViewController.swift */,
 				345F14D224573808003EE819 /* Main.storyboard */,
 				345F14D724573809003EE819 /* LaunchScreen.storyboard */,
@@ -298,6 +301,7 @@
 				76E9F0FF245B214B00D4921E /* ChooseShape.swift in Sources */,
 				76CD0C292459C65800E9CA9B /* IstaPage.swift in Sources */,
 				345F14D124573808003EE819 /* ViewController.swift in Sources */,
+				76C13DEB245B2FAE00D1AE9F /* TakePicture.swift in Sources */,
 				345F14CD24573808003EE819 /* AppDelegate.swift in Sources */,
 				345F14CF24573808003EE819 /* SceneDelegate.swift in Sources */,
 				76C13DE9245B2B3100D1AE9F /* ChooseTexture.swift in Sources */,

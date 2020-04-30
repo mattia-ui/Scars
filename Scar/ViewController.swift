@@ -9,12 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate  {
+    
     @IBOutlet weak var elaboraDisegno: UIButton!
     
     @IBOutlet weak var pictureScars: UIImageView!
     @IBOutlet weak var tempDrawScars: UIImageView!
 
-    var imagePicker: UIImagePickerController!
+    static var imageScars: UIImage!
     var lastPoint = CGPoint.zero
     var color = UIColor.black
     var brushWidth: CGFloat = 10.0
@@ -25,22 +26,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        pictureScars.image = ViewController.imageScars
     }
-
-    //Fai la foto.
-    @IBAction func addImage(_ sender: Any) {
-        imagePicker =  UIImagePickerController()
-        imagePicker.delegate = self
-        imagePicker.sourceType = .camera
-
-        present(imagePicker, animated: true, completion: nil)
-    }
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        imagePicker.dismiss(animated: true, completion: nil)
-        pictureScars.image = info[.originalImage] as? UIImage
-    }
-    
     
     
     //Cancella disegno.
@@ -48,7 +35,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         tempDrawScars.image = nil
         points = []
     }
-    
     
     
     //Disegnare.
