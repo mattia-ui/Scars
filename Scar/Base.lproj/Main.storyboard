@@ -282,7 +282,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Te-rI-HPa">
-                                <rect key="frame" x="185" y="784" width="27" height="22"/>
+                                <rect key="frame" x="208" y="790" width="27" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="pencil" catalog="system"/>
                                 <state key="disabled" image="xmark.seal.fill" catalog="system"/>
@@ -395,12 +395,13 @@
                                     <action selector="chooseTriangle:" destination="My5-jh-AI2" eventType="touchUpInside" id="Z8c-mM-Bhf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trL-Z8-D8e">
-                                <rect key="frame" x="164" y="789" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwR-8A-D92">
+                                <rect key="frame" x="208" y="797" width="27" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button" image="pencil" catalog="system"/>
+                                <state key="disabled" image="xmark.seal.fill" catalog="system"/>
                                 <connections>
-                                    <segue destination="lYX-Go-SkF" kind="show" id="Z3N-w1-d69"/>
+                                    <segue destination="lYX-Go-SkF" kind="show" id="DuD-b2-eFA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -410,6 +411,7 @@
                     <navigationItem key="navigationItem" id="wgy-8u-MYd"/>
                     <connections>
                         <outlet property="circle" destination="B71-RY-kN2" id="ZYZ-MR-W7a"/>
+                        <outlet property="nex" destination="bwR-8A-D92" id="NQv-F1-kef"/>
                         <outlet property="rect" destination="idm-Vm-ofd" id="QIe-Nk-JsR"/>
                         <outlet property="square" destination="wSE-1b-OHo" id="QfS-Hi-SCZ"/>
                         <outlet property="triangle" destination="uCS-Vx-npP" id="WCh-XS-mfg"/>
@@ -484,10 +486,11 @@
                                     <action selector="chooseTriangle:" destination="My5-jh-AI2" eventType="touchUpInside" id="7bD-N5-iVb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBz-kh-UfO">
-                                <rect key="frame" x="223" y="780" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2t-hU-7Lg">
+                                <rect key="frame" x="210" y="797" width="27" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button" image="pencil" catalog="system"/>
+                                <state key="disabled" image="xmark.seal.fill" catalog="system"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -497,6 +500,7 @@
                     <connections>
                         <outlet property="cool" destination="m8e-tD-btm" id="Trh-iU-pCz"/>
                         <outlet property="neutral" destination="53f-Wh-VQP" id="vab-HU-Y3S"/>
+                        <outlet property="nex" destination="y2t-hU-7Lg" id="7aa-Pm-gNV"/>
                         <outlet property="warm" destination="Hot-ON-zvu" id="aAo-Lf-1Z8"/>
                     </connections>
                 </viewController>
