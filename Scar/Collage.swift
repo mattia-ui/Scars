@@ -106,7 +106,7 @@ var structTopImageType = [topImage(
     woodZigZag: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
     texileZigZag: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
     cratereZigZag: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
-    marbleZigZag: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    marbleZigZag: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")]
 )]
 
 class Collage: UIViewController, UITextFieldDelegate  {
@@ -118,6 +118,8 @@ class Collage: UIViewController, UITextFieldDelegate  {
     @IBOutlet weak var top: UIImageView!
     @IBOutlet weak var screen: UIImageView!
     var imgPrincipale:UIImage?
+    var nomeImgPrincipale:String!
+    var imgSecondaria:UIImage?
 
     let dataBase = CKContainer.default().publicCloudDatabase
         
@@ -128,6 +130,91 @@ class Collage: UIViewController, UITextFieldDelegate  {
             if(ChoosePalette.color == "cool"){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].coolSquare[randomInt].name)
+                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+            } else if(ChoosePalette.color == "warm"){
+                let randomInt = Int.random(in: 0..<4)
+                imgPrincipale = UIImage(named: structBackImageType[0].warmSquare[randomInt].name)
+                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+            } else {
+                let randomInt = Int.random(in: 0..<4)
+                imgPrincipale = UIImage(named: structBackImageType[0].neutralSquare[randomInt].name)
+                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+            }
+        } else if(ChooseShape.shape1 == "circle"){
+            if(ChoosePalette.color == "cool"){
+                let randomInt = Int.random(in: 0..<4)
+                imgPrincipale = UIImage(named: structBackImageType[0].coolCircle[randomInt].name)
+                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+            } else if(ChoosePalette.color == "warm"){
+                let randomInt = Int.random(in: 0..<4)
+                imgPrincipale = UIImage(named: structBackImageType[0].warmCircle[randomInt].name)
+                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+            } else {
+                let randomInt = Int.random(in: 0..<4)
+                imgPrincipale = UIImage(named: structBackImageType[0].neutralCircle[randomInt].name)
+                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+            }
+        } else if(ChooseShape.shape1 == "triangle"){
+            if(ChoosePalette.color == "cool"){
+                let randomInt = Int.random(in: 0..<4)
+                imgPrincipale = UIImage(named: structBackImageType[0].coolTriangle[randomInt].name)
+                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+            } else if(ChoosePalette.color == "warm"){
+                let randomInt = Int.random(in: 0..<4)
+                imgPrincipale = UIImage(named: structBackImageType[0].warmTriangle[randomInt].name)
+                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+            } else {
+                let randomInt = Int.random(in: 0..<4)
+                imgPrincipale = UIImage(named: structBackImageType[0].neutralTriangle[randomInt].name)
+                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+            }
+        } else if(ChooseShape.shape1 == "rect"){
+            if(ChoosePalette.color == "cool"){
+                let randomInt = Int.random(in: 0..<4)
+                imgPrincipale = UIImage(named: structBackImageType[0].coolRect[randomInt].name)
+                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+            } else if(ChoosePalette.color == "warm"){
+                let randomInt = Int.random(in: 0..<4)
+                imgPrincipale = UIImage(named: structBackImageType[0].warmRect[randomInt].name)
+                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+            } else {
+                let randomInt = Int.random(in: 0..<4)
+                imgPrincipale = UIImage(named: structBackImageType[0].neutralRect[randomInt].name)
+                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+            }
+        } else {
+            if(ChoosePalette.color == "cool"){
+                let randomInt = Int.random(in: 0..<4)
+                imgPrincipale = UIImage(named: structBackImageType[0].coolZigZag[randomInt].name)
+                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+            } else if(ChoosePalette.color == "warm"){
+                let randomInt = Int.random(in: 0..<4)
+                imgPrincipale = UIImage(named: structBackImageType[0].warmZigZag[randomInt].name)
+                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+            } else {
+                let randomInt = Int.random(in: 0..<4)
+                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+                imgPrincipale = UIImage(named: structBackImageType[0].neutralZigZag[randomInt].name)
+            }
+        }
+
+        
+        if(ChooseShape2.shape2 == "square"){
+            if(ChooseTexture.texture1 == "wood"){
+                switch nomeImgPrincipale {
+                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[/*numero dell 'immagione complementare*/0].name)
+                     case "b": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+                     case "c": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+                     case "d": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+                     case "e": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+                     case "f": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+                     case "g": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+                     case "h": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+                     case "i": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+                     case "l": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+                     case "m": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+                     default: imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+                }
             } else if(ChoosePalette.color == "warm"){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].warmSquare[randomInt].name)
@@ -135,55 +222,12 @@ class Collage: UIViewController, UITextFieldDelegate  {
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].neutralSquare[randomInt].name)
             }
-        } else if(ChooseShape.shape1 == "circle"){
-            if(ChoosePalette.color == "cool"){
-                let randomInt = Int.random(in: 0..<4)
-                imgPrincipale = UIImage(named: structBackImageType[0].coolCircle[randomInt].name)
-            } else if(ChoosePalette.color == "warm"){
-                let randomInt = Int.random(in: 0..<4)
-                imgPrincipale = UIImage(named: structBackImageType[0].warmCircle[randomInt].name)
-            } else {
-                let randomInt = Int.random(in: 0..<4)
-                imgPrincipale = UIImage(named: structBackImageType[0].neutralCircle[randomInt].name)
-            }
-        } else if(ChooseShape.shape1 == "triangle"){
-            if(ChoosePalette.color == "cool"){
-                let randomInt = Int.random(in: 0..<4)
-                imgPrincipale = UIImage(named: structBackImageType[0].coolTriangle[randomInt].name)
-            } else if(ChoosePalette.color == "warm"){
-                let randomInt = Int.random(in: 0..<4)
-                imgPrincipale = UIImage(named: structBackImageType[0].warmTriangle[randomInt].name)
-            } else {
-                let randomInt = Int.random(in: 0..<4)
-                imgPrincipale = UIImage(named: structBackImageType[0].neutralTriangle[randomInt].name)
-            }
-        } else if(ChooseShape.shape1 == "rect"){
-            if(ChoosePalette.color == "cool"){
-                let randomInt = Int.random(in: 0..<4)
-                imgPrincipale = UIImage(named: structBackImageType[0].coolRect[randomInt].name)
-            } else if(ChoosePalette.color == "warm"){
-                let randomInt = Int.random(in: 0..<4)
-                imgPrincipale = UIImage(named: structBackImageType[0].warmRect[randomInt].name)
-            } else {
-                let randomInt = Int.random(in: 0..<4)
-                imgPrincipale = UIImage(named: structBackImageType[0].neutralRect[randomInt].name)
-            }
-        } else {
-            if(ChoosePalette.color == "cool"){
-                let randomInt = Int.random(in: 0..<4)
-                imgPrincipale = UIImage(named: structBackImageType[0].coolZigZag[randomInt].name)
-            } else if(ChoosePalette.color == "warm"){
-                let randomInt = Int.random(in: 0..<4)
-                imgPrincipale = UIImage(named: structBackImageType[0].warmZigZag[randomInt].name)
-            } else {
-                let randomInt = Int.random(in: 0..<4)
-                imgPrincipale = UIImage(named: structBackImageType[0].neutralZigZag[randomInt].name)
-            }
         }
-
-        imgPrincipale = top.image
-        mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: UIImage(named: "arancione") ?? UIImage(), x: 10, y: 10, width: 150, height: 150)
-        mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: UIImage(named: "arancione") ?? UIImage(), x: 530, y: 530, width: 150, height: 150)
+        
+        
+//        imgPrincipale = top.image
+        mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: imgSecondaria ?? UIImage(), x: 10, y: 10, width: 150, height: 150)
+        mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: imgSecondaria ?? UIImage(), x: 530, y: 530, width: 150, height: 150)
 
         
         if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
