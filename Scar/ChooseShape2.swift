@@ -36,7 +36,6 @@ class ChooseShape2: UIViewController  {
             zigZag.isSelected = false
             nex.isEnabled = true
             ChooseShape2.shape2 = "square"
-            print(ChooseShape.shape1)
         }
     }
     
@@ -52,7 +51,6 @@ class ChooseShape2: UIViewController  {
             zigZag.isSelected = false
             nex.isEnabled = true
             ChooseShape2.shape2 = "circle"
-            print(ChooseShape.shape1)
         }
     }
     
@@ -68,7 +66,6 @@ class ChooseShape2: UIViewController  {
             zigZag.isSelected = false
             nex.isEnabled = true
             ChooseShape2.shape2 = "triangle"
-            print(ChooseShape.shape1)
         }
     }
     
@@ -84,7 +81,6 @@ class ChooseShape2: UIViewController  {
             zigZag.isSelected = false
             nex.isEnabled = true
             ChooseShape2.shape2 = "rect"
-            print(ChooseShape.shape1)
         }
     }
     
@@ -100,7 +96,6 @@ class ChooseShape2: UIViewController  {
             zigZag.isSelected = true
             nex.isEnabled = true
             ChooseShape2.shape2 = "zigzag"
-            print(ChooseShape.shape1)
         }
     }
 }
