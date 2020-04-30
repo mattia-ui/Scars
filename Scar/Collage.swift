@@ -13,6 +13,10 @@ struct backImagePalette {
     var name: String
 }
 
+struct topImageTexture {
+    var name: String
+}
+
 struct backImage {
     var coolSquare: [backImagePalette]
     var warmSquare: [backImagePalette]
@@ -32,8 +36,31 @@ struct backImage {
 }
 
 struct topImage {
-    var id = UUID()
-    var name: String
+    var seaSquare: [topImageTexture]
+    var woodSquare: [topImageTexture]
+    var texileSquare: [topImageTexture]
+    var cratereSquare: [topImageTexture]
+    var marbleSquare: [topImageTexture]
+    var seaCircle: [topImageTexture]
+    var woodCircle: [topImageTexture]
+    var texileCircle: [topImageTexture]
+    var cratereCircle: [topImageTexture]
+    var marbleCircle: [topImageTexture]
+    var seaTriangle: [topImageTexture]
+    var woodTriangle: [topImageTexture]
+    var texileTriangle: [topImageTexture]
+    var cratereTriangle: [topImageTexture]
+    var marbleTriangle: [topImageTexture]
+    var seaRect: [topImageTexture]
+    var woodRect: [topImageTexture]
+    var texileRect: [topImageTexture]
+    var cratereRect: [topImageTexture]
+    var marbleRect: [topImageTexture]
+    var seaZigZag: [topImageTexture]
+    var woodZigZag: [topImageTexture]
+    var texileZigZag: [topImageTexture]
+    var cratereZigZag: [topImageTexture]
+    var marbleZigZag: [topImageTexture]
 }
 
 var structBackImageType = [backImage(
@@ -52,6 +79,34 @@ var structBackImageType = [backImage(
     coolZigZag: [backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:"")],
     warmZigZag: [backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:"")],
     neutralZigZag: [backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:"")]
+)]
+
+var structTopImageType = [topImage(
+    seaSquare: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    woodSquare: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    texileSquare: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    cratereSquare: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    marbleSquare: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    seaCircle: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    woodCircle: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    texileCircle: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    cratereCircle: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    marbleCircle: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    seaTriangle: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    woodTriangle: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    texileTriangle: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    cratereTriangle: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    marbleTriangle: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    seaRect: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    woodRect: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    texileRect: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    cratereRect: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    marbleRect: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    seaZigZag: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    woodZigZag: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    texileZigZag: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    cratereZigZag: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
+    marbleZigZag: [topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:""),topImageTexture(name:"")],
 )]
 
 class Collage: UIViewController, UITextFieldDelegate  {
