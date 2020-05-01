@@ -225,9 +225,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[11].name)
                 }
             } else if(ChooseTexture.texture1 == "texile"){
@@ -240,9 +240,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[11].name)
                 }
             } else if(ChooseTexture.texture1 == "cratere"){
@@ -255,9 +255,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[11].name)
                 }
             } else if(ChooseTexture.texture1 == "marble"){
@@ -270,9 +270,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[11].name)
                 }
             }
@@ -287,9 +287,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[11].name)
                 }
             } else if(ChooseTexture.texture1 == "wood"){
@@ -302,9 +302,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[11].name)
                 }
             } else if(ChooseTexture.texture1 == "texile"){
@@ -317,9 +317,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[11].name)
                 }
             } else if(ChooseTexture.texture1 == "cratere"){
@@ -332,9 +332,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[11].name)
                 }
             } else if(ChooseTexture.texture1 == "marble"){
@@ -347,9 +347,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[11].name)
                 }
             }
@@ -364,9 +364,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[11].name)
                 }
             } else if(ChooseTexture.texture1 == "wood"){
@@ -379,9 +379,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[11].name)
                 }
             } else if(ChooseTexture.texture1 == "texile"){
@@ -394,9 +394,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[11].name)
                 }
             } else if(ChooseTexture.texture1 == "cratere"){
@@ -409,9 +409,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[11].name)
                 }
             } else if(ChooseTexture.texture1 == "marble"){
@@ -424,9 +424,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[11].name)
                 }
             }
@@ -441,9 +441,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].seaRect[11].name)
                 }
             } else if(ChooseTexture.texture1 == "wood"){
@@ -456,9 +456,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].woodRect[11].name)
                 }
             } else if(ChooseTexture.texture1 == "texile"){
@@ -471,9 +471,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].texileRect[11].name)
                 }
             } else if(ChooseTexture.texture1 == "cratere"){
@@ -486,9 +486,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[11].name)
                 }
             } else if(ChooseTexture.texture1 == "marble"){
@@ -501,9 +501,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[11].name)
                 }
             }
@@ -518,9 +518,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[11].name)
                 }
             } else if(ChooseTexture.texture1 == "wood"){
@@ -533,9 +533,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[11].name)
                 }
             } else if(ChooseTexture.texture1 == "texile"){
@@ -548,9 +548,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[11].name)
                 }
             } else if(ChooseTexture.texture1 == "cratere"){
@@ -563,9 +563,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[11].name)
                 }
             } else if(ChooseTexture.texture1 == "marble"){
@@ -578,9 +578,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QNer.png", "CNer.png","TNer.png","RNer.png","ONer.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[5].name)
                     case "QGr.png", "CGr.png","TGr.png","RGr.png","OGr.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[6].name)
                     case "QMarr.png", "CMarr.png","TMarr.png","RMarr.png","OMarr.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[7].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[8].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[9].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[10].name)
+                    case "QAzz.png", "CAzz.png","TAzz.png","RAzz.png","OAzz.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[8].name)
+                    case "QVe.png", "CVe.png","TVe.png","RVe.png","OVe.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[9].name)
+                    case "QRoss.png", "CRoss.png","TRoss.png","RRoss.png","ORoss.png": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[11].name)
                 }
             }
