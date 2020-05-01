@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oAL-mq-W2a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oAL-mq-W2a">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,65 +15,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ns4-Sj-bJV">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y7q-Le-8bb">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="Y7q-Le-8bb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2e1-TJ-MaY"/>
-                            <constraint firstItem="ns4-Sj-bJV" firstAttribute="bottom" secondItem="Y7q-Le-8bb" secondAttribute="bottom" id="73b-H7-QXx"/>
-                            <constraint firstItem="ns4-Sj-bJV" firstAttribute="trailing" secondItem="Y7q-Le-8bb" secondAttribute="trailing" id="Cxj-Ln-amb"/>
-                            <constraint firstItem="ns4-Sj-bJV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NHh-H6-uNL"/>
-                            <constraint firstItem="ns4-Sj-bJV" firstAttribute="leading" secondItem="Y7q-Le-8bb" secondAttribute="leading" id="Pap-Nz-Q7M"/>
-                            <constraint firstItem="Y7q-Le-8bb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YhZ-bE-2Em"/>
-                            <constraint firstItem="Y7q-Le-8bb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dkT-jx-wXN"/>
-                            <constraint firstItem="ns4-Sj-bJV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jPC-LW-d6y"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <toolbarItems>
-                        <barButtonItem style="plain" id="y3Y-He-bYn">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Ed-Iy-86w">
-                                <rect key="frame" x="20" y="12" width="149" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ns4-Sj-bJV">
+                                <rect key="frame" x="20" y="118" width="374" height="630"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Elabora disegno">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="drawElaboration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wtt-gI-7ng"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                        <barButtonItem style="plain" id="bBq-UR-azZ">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PrK-8x-Y4r">
-                                <rect key="frame" x="286" y="12" width="108" height="30"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y7q-Le-8bb">
+                                <rect key="frame" x="20" y="118" width="374" height="630"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Leg-nv-08a">
+                                <rect key="frame" x="266" y="772" width="128" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Reset disegno">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="resetDraw:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kDI-md-p0f"/>
+                                    <action selector="resetDraw:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mk6-Sl-Sai"/>
                                 </connections>
                             </button>
-                        </barButtonItem>
-                    </toolbarItems>
-                    <navigationItem key="navigationItem" id="Da6-Bq-3bh">
-                        <nil key="title"/>
-                    </navigationItem>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7Ov-gi-Skw">
+                                <rect key="frame" x="20" y="772" width="137" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Elabora disegno">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="drawElaboration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nvb-Ps-QCM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="elaboraDisegno" destination="3Ed-Iy-86w" id="RYa-eF-Ik1"/>
+                        <outlet property="elaboraDisegno" destination="7Ov-gi-Skw" id="SZf-Pq-wW4"/>
                         <outlet property="pictureScars" destination="ns4-Sj-bJV" id="7Te-6s-L6w"/>
+                        <outlet property="resetDis" destination="Leg-nv-08a" id="Fdy-nj-iVe"/>
                         <outlet property="tempDrawScars" destination="Y7q-Le-8bb" id="P4K-uF-JWT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5552" y="1559"/>
+            <point key="canvasLocation" x="5550.7246376811599" y="1558.9285714285713"/>
         </scene>
         <!--Collage-->
         <scene sceneID="QtM-Th-oAc">
@@ -140,7 +125,6 @@
                         <outlet property="scarsImage" destination="BZ6-tJ-sA0" id="78I-rA-t0f"/>
                         <outlet property="screen" destination="dBx-UX-5Zm" id="aqG-F5-DhE"/>
                         <outlet property="top" destination="b8m-8v-r6a" id="5tc-qz-g2k"/>
-                        <outlet property="topp" destination="b8m-8v-r6a" id="GaZ-FY-mj6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upZ-oD-daW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -741,20 +725,20 @@
     </scenes>
     <resources>
         <image name="Prova" width="800" height="800"/>
-        <image name="bolt.fill" catalog="system" width="50" height="64"/>
-        <image name="circle.fill" catalog="system" width="64" height="60"/>
+        <image name="bolt.fill" catalog="system" width="101" height="128"/>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="music" width="512" height="512"/>
         <image name="music-2" width="512" height="512"/>
-        <image name="pencil" catalog="system" width="64" height="56"/>
-        <image name="person.crop.circle.fill" catalog="system" width="64" height="60"/>
-        <image name="photo" catalog="system" width="64" height="46"/>
-        <image name="rectangle.3.offgrid.fill" catalog="system" width="64" height="40"/>
-        <image name="rectangle.fill" catalog="system" width="64" height="46"/>
-        <image name="rectangle.split.3x1" catalog="system" width="64" height="46"/>
-        <image name="rectangle.split.3x1.fill" catalog="system" width="64" height="46"/>
-        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
-        <image name="square.fill" catalog="system" width="64" height="56"/>
-        <image name="triangle.fill" catalog="system" width="64" height="56"/>
-        <image name="xmark.seal.fill" catalog="system" width="64" height="60"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="rectangle.3.offgrid.fill" catalog="system" width="128" height="81"/>
+        <image name="rectangle.fill" catalog="system" width="128" height="93"/>
+        <image name="rectangle.split.3x1" catalog="system" width="128" height="93"/>
+        <image name="rectangle.split.3x1.fill" catalog="system" width="128" height="93"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="square.fill" catalog="system" width="128" height="114"/>
+        <image name="triangle.fill" catalog="system" width="128" height="112"/>
+        <image name="xmark.seal.fill" catalog="system" width="128" height="122"/>
     </resources>
 </document>

@@ -12,6 +12,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     @IBOutlet weak var elaboraDisegno: UIButton!
     
+    @IBOutlet weak var resetDis: UIButton!
     @IBOutlet weak var pictureScars: UIImageView!
     @IBOutlet weak var tempDrawScars: UIImageView!
 
