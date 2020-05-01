@@ -64,21 +64,21 @@ struct topImage {
 }
 
 var structBackImageType = [backImage(
-    coolSquare: [backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:"")],
-    warmSquare: [backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:"")],
-    neutralSquare: [backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:"")],
-    coolCircle: [backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:"")],
-    warmCircle: [backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:"")],
-    neutralCircle: [backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:"")],
-    coolTriangle: [backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:"")],
-    warmTriangle: [backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:"")],
-    neutralTriangle: [backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:"")],
-    coolRect: [backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:"")],
-    warmRect: [backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:"")],
-    neutralRect: [backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:"")],
-    coolZigZag: [backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:"")],
-    warmZigZag: [backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:"")],
-    neutralZigZag: [backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:""),backImagePalette(name:"")]
+    coolSquare: [backImagePalette(name:"QAzz.png"),backImagePalette(name:"QVer.png"),backImagePalette(name:"QVi.png"),backImagePalette(name:"QBl.png")],
+    warmSquare: [backImagePalette(name:"QRosa.png"),backImagePalette(name:"QRoss.png"),backImagePalette(name:"QAr.png"),backImagePalette(name:"QGia.png")],
+    neutralSquare: [backImagePalette(name:"QMarrone.png"),backImagePalette(name:"QMarr.png"),backImagePalette(name:"QNer.png"),backImagePalette(name:"QGr.png")],
+    coolCircle: [backImagePalette(name:"CAzz.png"),backImagePalette(name:"CVer.png"),backImagePalette(name:"CVi.png"),backImagePalette(name:"CBl.png")],
+    warmCircle: [backImagePalette(name:"CRosa.png"),backImagePalette(name:"CRoss.png"),backImagePalette(name:"CAr.png"),backImagePalette(name:"CGia.png")],
+    neutralCircle: [backImagePalette(name:"CMarrone.png"),backImagePalette(name:"CMarr.png"),backImagePalette(name:"CNer.png"),backImagePalette(name:"CGr.png")],
+    coolTriangle: [backImagePalette(name:"TAzz.png"),backImagePalette(name:"TVer.png"),backImagePalette(name:"TVi.png"),backImagePalette(name:"TBl.png")],
+    warmTriangle: [backImagePalette(name:"TRosa.png"),backImagePalette(name:"TRoss.png"),backImagePalette(name:"TAr.png"),backImagePalette(name:"TGia.png")],
+    neutralTriangle: [backImagePalette(name:"TMarrone.png"),backImagePalette(name:"TMarr.png"),backImagePalette(name:"TNer.png"),backImagePalette(name:"TGr.png")],
+    coolRect: [backImagePalette(name:"RAzz.png"),backImagePalette(name:"RVer.png"),backImagePalette(name:"RVi.png"),backImagePalette(name:"RBl.png")],
+    warmRect: [backImagePalette(name:"RRosa.png"),backImagePalette(name:"RRoss.png"),backImagePalette(name:"RAr.png"),backImagePalette(name:"RGia.png")],
+    neutralRect: [backImagePalette(name:"RMarrone.png"),backImagePalette(name:"RMarr.png"),backImagePalette(name:"RNer.png"),backImagePalette(name:"RGr.png")],
+    coolZigZag: [backImagePalette(name:"OAzz.png"),backImagePalette(name:"OVer.png"),backImagePalette(name:"OVi.png"),backImagePalette(name:"OBl.png")],
+    warmZigZag: [backImagePalette(name:"ORosa.png"),backImagePalette(name:"ORoss.png"),backImagePalette(name:"OAr.png"),backImagePalette(name:"OGia.png")],
+    neutralZigZag: [backImagePalette(name:"OMarrone.png"),backImagePalette(name:"OMarr.png"),backImagePalette(name:"ONer.png"),backImagePalette(name:"OGr.png")]
 )]
 
 var structTopImageType = [topImage(
@@ -202,7 +202,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
         if(ChooseShape2.shape2 == "square"){
             if(ChooseTexture.texture1 == "sea"){
                 switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[/*numero dell 'immagione complementare*/0].name)
+                    case "a", "z": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[/*numero dell 'immagione complementare*/0].name)
                      case "b": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
                      case "c": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
                      case "d": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
