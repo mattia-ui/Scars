@@ -140,7 +140,6 @@
                         <outlet property="scarsImage" destination="BZ6-tJ-sA0" id="78I-rA-t0f"/>
                         <outlet property="screen" destination="dBx-UX-5Zm" id="aqG-F5-DhE"/>
                         <outlet property="top" destination="b8m-8v-r6a" id="5tc-qz-g2k"/>
-                        <outlet property="topp" destination="b8m-8v-r6a" id="GaZ-FY-mj6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upZ-oD-daW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
