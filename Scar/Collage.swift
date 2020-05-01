@@ -199,395 +199,396 @@ class Collage: UIViewController, UITextFieldDelegate  {
         }
 
         
-        if(ChooseShape2.shape2 == "square"){
-            if(ChooseTexture.texture1 == "sea"){
-                switch nomeImgPrincipale {
-                    case "a", "z": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[/*numero dell 'immagione complementare*/0].name)
-                     case "b": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
-                     case "c": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
-                     case "d": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
-                     case "e": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
-                     case "f": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
-                     case "g": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
-                     case "h": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
-                     case "i": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
-                     case "l": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
-                     case "m": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
-                     default: imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "wood"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "texile"){
-                switch nomeImgPrincipale {
-                case "a": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "cratere"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "marble"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
-                }
-            }
-        } else if(ChooseShape2.shape2 == "circle"){
-            if(ChooseTexture.texture1 == "sea"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "wood"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "texile"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "cratere"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "marble"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
-                }
-            }
-        } else if(ChooseShape2.shape2 == "trianle"){
-            if(ChooseTexture.texture1 == "sea"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "wood"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "texile"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "cratere"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "marble"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
-                }
-            }
-        } else if(ChooseShape2.shape2 == "rect"){
-            if(ChooseTexture.texture1 == "sea"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "wood"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "texile"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "cratere"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "marble"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
-                }
-            }
-        }  else {
-            if(ChooseTexture.texture1 == "sea"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "wood"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "texile"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "cratere"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
-                }
-            } else if(ChooseTexture.texture1 == "marble"){
-                switch nomeImgPrincipale {
-                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[/*numero dell 'immagione complementare*/0].name)
-                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
-                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
-                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
-                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
-                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
-                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
-                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
-                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
-                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
-                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
-                    default: imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
-                }
-            }
-        }
+//        if(ChooseShape2.shape2 == "square"){
+//            if(ChooseTexture.texture1 == "sea"){
+//                switch nomeImgPrincipale {
+//                    case "a", "z": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[/*numero dell 'immagione complementare*/0].name)
+//                     case "b": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
+//                     case "c": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
+//                     case "d": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
+//                     case "e": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
+//                     case "f": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
+//                     case "g": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
+//                     case "h": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
+//                     case "i": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
+//                     case "l": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
+//                     case "m": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
+//                     default: imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "wood"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "texile"){
+//                switch nomeImgPrincipale {
+//                case "a": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "cratere"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "marble"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
+//                }
+//            }
+//        } else if(ChooseShape2.shape2 == "circle"){
+//            if(ChooseTexture.texture1 == "sea"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "wood"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "texile"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "cratere"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "marble"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
+//                }
+//            }
+//        } else if(ChooseShape2.shape2 == "trianle"){
+//            if(ChooseTexture.texture1 == "sea"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "wood"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "texile"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "cratere"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "marble"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
+//                }
+//            }
+//        } else if(ChooseShape2.shape2 == "rect"){
+//            if(ChooseTexture.texture1 == "sea"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "wood"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "texile"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "cratere"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "marble"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
+//                }
+//            }
+//        }  else {
+//            if(ChooseTexture.texture1 == "sea"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "wood"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "texile"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "cratere"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
+//                }
+//            } else if(ChooseTexture.texture1 == "marble"){
+//                switch nomeImgPrincipale {
+//                    case "a": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[/*numero dell 'immagione complementare*/0].name)
+//                    case "b": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
+//                    case "c": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
+//                    case "d": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
+//                    case "e": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
+//                    case "f": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
+//                    case "g": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
+//                    case "h": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
+//                    case "i": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
+//                    case "l": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
+//                    case "m": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
+//                    default: imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
+//                }
+//            }
+//        }
     
         
 //        imgPrincipale = top.image
+        imgSecondaria = UIImage(named: "arancione.png")
         mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: imgSecondaria ?? UIImage(), x: 10, y: 10, width: 150, height: 150)
         mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: imgSecondaria ?? UIImage(), x: 530, y: 530, width: 150, height: 150)
 
