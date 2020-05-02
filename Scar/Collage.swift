@@ -130,67 +130,67 @@ class Collage: UIViewController, UITextFieldDelegate  {
             if(ChoosePalette.color == "cool"){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].coolSquare[randomInt].name)
-                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+                nomeImgPrincipale = structBackImageType[0].coolSquare[randomInt].name
             } else if(ChoosePalette.color == "warm"){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].warmSquare[randomInt].name)
-                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+                nomeImgPrincipale = structBackImageType[0].warmSquare[randomInt].name
             } else {
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].neutralSquare[randomInt].name)
-                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+                nomeImgPrincipale = structBackImageType[0].neutralSquare[randomInt].name
             }
         } else if(ChooseShape.shape1 == "circle"){
             if(ChoosePalette.color == "cool"){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].coolCircle[randomInt].name)
-                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+                nomeImgPrincipale = structBackImageType[0].coolCircle[randomInt].name
             } else if(ChoosePalette.color == "warm"){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].warmCircle[randomInt].name)
-                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+                nomeImgPrincipale = structBackImageType[0].warmCircle[randomInt].name
             } else {
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].neutralCircle[randomInt].name)
-                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+                nomeImgPrincipale = structBackImageType[0].neutralCircle[randomInt].name
             }
         } else if(ChooseShape.shape1 == "triangle"){
             if(ChoosePalette.color == "cool"){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].coolTriangle[randomInt].name)
-                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+                nomeImgPrincipale = structBackImageType[0].coolTriangle[randomInt].name
             } else if(ChoosePalette.color == "warm"){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].warmTriangle[randomInt].name)
-                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+                nomeImgPrincipale = structBackImageType[0].warmTriangle[randomInt].name
             } else {
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].neutralTriangle[randomInt].name)
-                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+                nomeImgPrincipale = structBackImageType[0].neutralTriangle[randomInt].name
             }
         } else if(ChooseShape.shape1 == "rect"){
             if(ChoosePalette.color == "cool"){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].coolRect[randomInt].name)
-                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+                nomeImgPrincipale = structBackImageType[0].coolRect[randomInt].name
             } else if(ChoosePalette.color == "warm"){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].warmRect[randomInt].name)
-                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+                nomeImgPrincipale = structBackImageType[0].warmRect[randomInt].name
             } else {
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].neutralRect[randomInt].name)
-                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+                nomeImgPrincipale = structBackImageType[0].neutralRect[randomInt].name
             }
         } else {
             if(ChoosePalette.color == "cool"){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].coolZigZag[randomInt].name)
-                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+                nomeImgPrincipale = structBackImageType[0].coolZigZag[randomInt].name
             } else if(ChoosePalette.color == "warm"){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].warmZigZag[randomInt].name)
-                nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
+                nomeImgPrincipale = structBackImageType[0].warmZigZag[randomInt].name
             } else {
                 let randomInt = Int.random(in: 0..<4)
                 nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
@@ -199,9 +199,10 @@ class Collage: UIViewController, UITextFieldDelegate  {
         }
 
         
+        print(nomeImgPrincipale.dropFirst(0))
         if(ChooseShape2.shape2 == "square"){
             if(ChooseTexture.texture1 == "sea"){
-                switch nomeImgPrincipale {
+                switch nomeImgPrincipale.dropFirst(0) {
                     case "QBl.png", "CBl.png","TBl.png","RBl.png","OBl.png": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
                      case "QRosa.png", "CRosa.png","TRosa.png","RRosa.png","ORosa.png": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[1].name)
                      case "QAr.png", "CAr.png","TAr.png","RAr.png","OAr.png": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[2].name)
@@ -586,11 +587,8 @@ class Collage: UIViewController, UITextFieldDelegate  {
             }
         }
     
-        
-//        imgPrincipale = top.image
-//        imgSecondaria = UIImage(named: "arancione.png")
-        mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: imgSecondaria ?? UIImage(), x: 10, y: 10, width: 150, height: 150)
-        mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: imgSecondaria ?? UIImage(), x: 530, y: 530, width: 150, height: 150)
+        mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: imgSecondaria ?? UIImage(), x: 8, y: 8, width: 90, height: 90)
+        mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: imgSecondaria ?? UIImage(), x: 200, y: 200, width: 50, height: 50)
 
         
         if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
@@ -600,10 +598,6 @@ class Collage: UIViewController, UITextFieldDelegate  {
             maskView.frame =  scarsImage.bounds
             scarsImage.mask = maskView
         }
-            
-//        imgPrincipale = topp.image
-//        mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: UIImage(named: "arancione") ?? UIImage(), x: 10, y: 10, width: 150, height: 150)
-//        mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: UIImage(named: "arancione") ?? UIImage(), x: 530, y: 530, width: 150, height: 150)
              
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         view.addGestureRecognizer(tap)
