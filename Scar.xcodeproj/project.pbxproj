@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		342BF26A245DD9EC004CD081 /* SecretCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342BF269245DD9EC004CD081 /* SecretCollection.swift */; };
+		342BF26C245DDA19004CD081 /* CaricaImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342BF26B245DDA19004CD081 /* CaricaImage.swift */; };
+		342BF26E245DDA34004CD081 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342BF26D245DDA34004CD081 /* CollectionViewCell.swift */; };
 		345F14CD24573808003EE819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F14CC24573808003EE819 /* AppDelegate.swift */; };
 		345F14CF24573808003EE819 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F14CE24573808003EE819 /* SceneDelegate.swift */; };
 		345F14D124573808003EE819 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F14D024573808003EE819 /* ViewController.swift */; };
@@ -44,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		342BF269245DD9EC004CD081 /* SecretCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretCollection.swift; sourceTree = "<group>"; };
+		342BF26B245DDA19004CD081 /* CaricaImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaricaImage.swift; sourceTree = "<group>"; };
+		342BF26D245DDA34004CD081 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		345F14C924573808003EE819 /* Scar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		345F14CC24573808003EE819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		345F14CE24573808003EE819 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +133,9 @@
 				76E9F0FD245B214B00D4921E /* ChooseShape.swift */,
 				76E9F0FC245B214B00D4921E /* ChooseShape2.swift */,
 				76C13DE6245B255C00D1AE9F /* ChoosePalette.swift */,
+				342BF269245DD9EC004CD081 /* SecretCollection.swift */,
+				342BF26D245DDA34004CD081 /* CollectionViewCell.swift */,
+				342BF26B245DDA19004CD081 /* CaricaImage.swift */,
 				76C13DE8245B2B3100D1AE9F /* ChooseTexture.swift */,
 				76CD0C282459C65800E9CA9B /* IstaPage.swift */,
 				345F14CE24573808003EE819 /* SceneDelegate.swift */,
@@ -300,11 +309,14 @@
 			files = (
 				76E9F0FF245B214B00D4921E /* ChooseShape.swift in Sources */,
 				76CD0C292459C65800E9CA9B /* IstaPage.swift in Sources */,
+				342BF26C245DDA19004CD081 /* CaricaImage.swift in Sources */,
 				345F14D124573808003EE819 /* ViewController.swift in Sources */,
 				76C13DEB245B2FAE00D1AE9F /* TakePicture.swift in Sources */,
 				345F14CD24573808003EE819 /* AppDelegate.swift in Sources */,
 				345F14CF24573808003EE819 /* SceneDelegate.swift in Sources */,
 				76C13DE9245B2B3100D1AE9F /* ChooseTexture.swift in Sources */,
+				342BF26E245DDA34004CD081 /* CollectionViewCell.swift in Sources */,
+				342BF26A245DD9EC004CD081 /* SecretCollection.swift in Sources */,
 				76F8FF152458AFDB00E50D7F /* Collage.swift in Sources */,
 				76C13DE7245B255C00D1AE9F /* ChoosePalette.swift in Sources */,
 				76E9F0FE245B214B00D4921E /* ChooseShape2.swift in Sources */,
