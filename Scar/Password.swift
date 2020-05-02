@@ -9,25 +9,24 @@
 import UIKit
 import CloudKit
 
-class Schermata1: UIViewController {
+class Password: UIViewController {
     
-    var i = 1
+    @IBOutlet weak var pass: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    @IBAction func secret(_ sender: Any) {
+    @IBAction func tryPass(_ sender: Any) {
         
-        if(i == 15){
+        if(pass.text == "uragani"){
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let secondVC = storyboard.instantiateViewController(withIdentifier: "pass")  as! Password
-            self.navigationController?.pushViewController(secondVC, animated: true)
+            let secondVC = storyboard.instantiateViewController(withIdentifier: "collection")  as! SecretCollection
+        self.navigationController?.pushViewController(secondVC, animated: true)
         } else {
-            i = i + 1
+            pass.text =  ""
         }
     }
     
     
 }
-
