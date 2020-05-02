@@ -675,6 +675,10 @@ class Collage: UIViewController, UITextFieldDelegate  {
         sqlite3_prepare(db, queryString, -1, &stmt, nil)
         sqlite3_step(stmt)
         print("Saved successfully")
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let secondVC = storyboard.instantiateViewController(withIdentifier: "settoreImage")  as! Schermata3
+        self.navigationController?.pushViewController(secondVC, animated: true)
     }
 
     @IBAction func shareUnkown(_ sender: Any) {
@@ -716,11 +720,17 @@ class Collage: UIViewController, UITextFieldDelegate  {
                 sqlite3_prepare(db, queryString, -1, &stmt, nil)
                 sqlite3_step(stmt)
                 print("Saved successfully")
+                
+                DispatchQueue.main.async{
+                    self.activityField.stopAnimating()
+                }
+                
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let secondVC = storyboard.instantiateViewController(withIdentifier: "settoreImage")  as! Schermata3
+                self.navigationController?.pushViewController(secondVC, animated: true)
             }
                          
-            DispatchQueue.main.async{
-                self.activityField.stopAnimating()
-            }
+           
         })
     }
     

@@ -136,7 +136,7 @@
         <!--Schermata3-->
         <scene sceneID="MNv-L7-wtp">
             <objects>
-                <viewController id="Z0a-7F-rJz" customClass="Schermata3" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="settoreImage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z0a-7F-rJz" customClass="Schermata3" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bEg-jK-SSQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -573,15 +573,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4O-Qz-X11">
-                                <rect key="frame" x="208" y="840" width="27" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="pencil" catalog="system"/>
-                                <state key="disabled" image="xmark.seal.fill" catalog="system"/>
-                                <connections>
-                                    <segue destination="hvR-kH-wNA" kind="show" id="Bz1-ah-J9c"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#aaa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKj-RJ-xFX">
                                 <rect key="frame" x="20" y="116" width="38" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -664,6 +655,15 @@
                                 <connections>
                                     <action selector="chooseTexile:" destination="lfU-OF-Bud" eventType="touchUpInside" id="l2A-8O-FG0"/>
                                     <action selector="chooseTriangle:" destination="My5-jh-AI2" eventType="touchUpInside" id="p33-Xu-t2A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4O-Qz-X11">
+                                <rect key="frame" x="202" y="786" width="27" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="pencil" catalog="system"/>
+                                <state key="disabled" image="xmark.seal.fill" catalog="system"/>
+                                <connections>
+                                    <segue destination="hvR-kH-wNA" kind="show" id="Bz1-ah-J9c"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -769,7 +769,7 @@
         <!--Secret Collection-->
         <scene sceneID="qjI-eq-ejK">
             <objects>
-                <viewController storyboardIdentifier="collection" id="g4r-8M-0U1" customClass="SecretCollection" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="collection" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g4r-8M-0U1" customClass="SecretCollection" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ceZ-Uo-O8G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -878,7 +878,7 @@
                         <viewLayoutGuide key="safeArea" id="auS-eg-mzf"/>
                     </view>
                     <connections>
-                        <outlet property="image" destination="wtK-9r-eHC" id="1PD-Ng-5rb"/>
+                        <outlet property="imageSelected" destination="wtK-9r-eHC" id="3Ld-Oh-o0z"/>
                         <outlet property="testo" destination="EvD-za-uew" id="zyX-2H-6mo"/>
                     </connections>
                 </viewController>
