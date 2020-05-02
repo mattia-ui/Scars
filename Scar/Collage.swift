@@ -8,6 +8,7 @@
 
 import UIKit
 import CloudKit
+import SQLite3
 
 struct backImagePalette {
     var name: String
@@ -659,6 +660,21 @@ class Collage: UIViewController, UITextFieldDelegate  {
             UIActivity.ActivityType.postToTwitter,
         ]
         self.present(activityViewController, animated: true, completion: nil)
+        
+        //Si connette al DB
+        var db: OpaquePointer?
+        let fileURL = try!
+        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+            print("error opening database")
+        }
+                      
+        //Update Valore
+        var stmt: OpaquePointer?
+        var queryString = "UPDATE Collage SET valore = 'no' WHERE id = 1;"
+        sqlite3_prepare(db, queryString, -1, &stmt, nil)
+        sqlite3_step(stmt)
+        print("Saved successfully")
     }
 
     @IBAction func shareUnkown(_ sender: Any) {
@@ -685,6 +701,21 @@ class Collage: UIViewController, UITextFieldDelegate  {
                 print("error to save" + error.debugDescription)
             } else {
                 print("save succesfull")
+                
+                //Si connette al DB
+                var db: OpaquePointer?
+                let fileURL = try!
+                FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+                if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+                    print("error opening database")
+                }
+                
+                //Update Valore
+                var stmt: OpaquePointer?
+                var queryString = "UPDATE Collage SET valore = 'no' WHERE id = 1;"
+                sqlite3_prepare(db, queryString, -1, &stmt, nil)
+                sqlite3_step(stmt)
+                print("Saved successfully")
             }
                          
             DispatchQueue.main.async{

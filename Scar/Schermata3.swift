@@ -24,23 +24,23 @@ class Schermata3: UIViewController {
         }
        
         
-        //Elimina Tabella
+        //Elimina Tabella. Quando Spostiamo le due funzioni successive nel tutorial non serve piu
         if sqlite3_exec(db, "DROP TABLE Collage", nil, nil, nil) != SQLITE_OK {
         let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("error creating table: \(errmsg)")
         }
         
         
-        //Crea Tabella
+        //Crea Tabella. Va nel tutorial
         if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS Collage (id INTEGER PRIMARY KEY AUTOINCREMENT,valore TEXT)", nil, nil, nil) != SQLITE_OK {
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("error creating table: \(errmsg)")
         }
 
         
-        //Inserisce Valore
+        //Inserisce Valore. Va nel tutorial
         var stmt: OpaquePointer?
-        var queryString = "INSERT INTO Collage(valore) VALUES ('no');"
+        var queryString = "INSERT INTO Collage(valore) VALUES ('si');"
         sqlite3_prepare(db, queryString, -1, &stmt, nil)
         sqlite3_step(stmt)
         print("Saved successfully")
