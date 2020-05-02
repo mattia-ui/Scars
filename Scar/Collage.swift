@@ -588,7 +588,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
     
         
 //        imgPrincipale = top.image
-        imgSecondaria = UIImage(named: "arancione.png")
+//        imgSecondaria = UIImage(named: "arancione.png")
         mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: imgSecondaria ?? UIImage(), x: 10, y: 10, width: 150, height: 150)
         mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: imgSecondaria ?? UIImage(), x: 530, y: 530, width: 150, height: 150)
 
