@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oAL-mq-W2a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SSV-aU-n6h">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -49,6 +49,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="efX-Z5-MKt"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="elaboraDisegno" destination="7Ov-gi-Skw" id="SZf-Pq-wW4"/>
@@ -104,7 +105,7 @@
                                     <action selector="shareImg:" destination="yYg-UP-XTl" eventType="touchUpInside" id="X7y-JW-jJG"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Prova" translatesAutoresizingMaskIntoConstraints="NO" id="b8m-8v-r6a">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b8m-8v-r6a">
                                 <rect key="frame" x="0.0" y="157" width="414" height="414"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -112,7 +113,7 @@
                                 <rect key="frame" x="0.0" y="157" width="414" height="414"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Prova" translatesAutoresizingMaskIntoConstraints="NO" id="dBx-UX-5Zm">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dBx-UX-5Zm">
                                 <rect key="frame" x="0.0" y="157" width="414" height="414"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -656,36 +657,39 @@
             </objects>
             <point key="canvasLocation" x="4817" y="1559"/>
         </scene>
-        <!--InstaScar-->
-        <scene sceneID="Bzx-Zb-FVk">
+        <!--Password-->
+        <scene sceneID="8kN-9H-Qr9">
             <objects>
-                <viewController id="6gb-hr-oD9" customClass="InstaPage" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Y0C-Yg-tsr">
+                <viewController storyboardIdentifier="pass" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yUW-Sd-l6b" customClass="Password" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GeQ-G8-jl7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i8f-uW-hrO">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qtc-PI-491">
+                                <rect key="frame" x="159" y="182" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W89-BO-sns">
+                                <rect key="frame" x="184" y="300" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tryPass:" destination="yUW-Sd-l6b" eventType="touchUpInside" id="mAx-Xs-dhB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="usL-e3-7JS"/>
+                        <viewLayoutGuide key="safeArea" id="jP5-gR-RKS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="InstaScar" image="person.crop.circle.fill" catalog="system" id="cEk-WR-47W"/>
-                    <navigationItem key="navigationItem" id="L2d-YI-2Ee"/>
                     <connections>
-                        <outlet property="myWebView" destination="i8f-uW-hrO" id="UBj-1M-wSf"/>
+                        <outlet property="pass" destination="Qtc-PI-491" id="ShK-by-MZk"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tPJ-8B-Y0t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QgY-i6-ciy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="862.5"/>
+            <point key="canvasLocation" x="1948" y="114"/>
         </scene>
         <!--Secret Collection-->
         <scene sceneID="qjI-eq-ejK">
@@ -706,14 +710,14 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCell" id="gIL-x7-jMY" customClass="CollectionViewCell" customModule="Scar" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aQw-CN-cVk">
-                                            <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qjk-C8-pXc">
-                                                    <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -756,7 +760,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ddL-mo-Nou" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2913.04347826087" y="215.625"/>
+            <point key="canvasLocation" x="2699" y="114"/>
         </scene>
         <!--Carica Image-->
         <scene sceneID="rJD-Qr-TLn">
@@ -778,6 +782,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anb-B6-kDK">
+                                <rect key="frame" x="57" y="770" width="19" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="square.and.arrow.up" catalog="system"/>
+                                <connections>
+                                    <action selector="share:" destination="cgj-06-g3C" eventType="touchUpInside" id="jTs-eK-kfY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -797,7 +809,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RI1-Pc-MHq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3737.68115942029" y="216.96428571428569"/>
+            <point key="canvasLocation" x="3451" y="114"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="D0l-ns-gWd">
@@ -810,17 +822,62 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="6gb-hr-oD9" kind="relationship" relationship="viewControllers" id="yKJ-xB-HvQ"/>
+                        <segue destination="kq5-Ia-teU" kind="relationship" relationship="viewControllers" id="zPD-eY-G1h"/>
+                        <segue destination="Aa9-1L-etK" kind="relationship" relationship="viewControllers" id="Wxj-BK-Pp3"/>
+                        <segue destination="oAL-mq-W2a" kind="relationship" relationship="viewControllers" id="Mt9-Q5-xbZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xud-Sz-KJV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="129" y="765"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Schermata1-->
+        <scene sceneID="v6U-wG-2hJ">
+            <objects>
+                <viewController id="eu2-Xb-SdY" customClass="Schermata1" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BeH-Hx-Ldu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRm-T0-FAA">
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="secret:" destination="eu2-Xb-SdY" eventType="touchUpInside" id="8LO-jQ-Qh8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Jhm-Xm-uFx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Qg-kE-5vn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sts-oa-HhK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1947.826086956522" y="764.73214285714278"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="i97-yh-FCQ">
+            <objects>
+                <viewController id="Aa9-1L-etK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k0H-CH-ZUa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="9Ch-hi-KT7"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Mjh-tW-da3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZSn-9M-qTg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1796" y="1561"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="xdd-ok-q6L">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oAL-mq-W2a" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Esi-P1-Vm4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tTR-pt-PNH">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -835,23 +892,40 @@
             </objects>
             <point key="canvasLocation" x="128.98550724637681" y="1560.9375"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="OmA-vA-d8N">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kq5-Ia-teU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Dg9-aA-Ofw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nJF-hq-3zc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eu2-Xb-SdY" kind="relationship" relationship="rootViewController" id="OoR-a9-t8i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ruQ-ea-UXn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037.68115942029" y="764.73214285714278"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Prova" width="800" height="800"/>
-        <image name="bolt.fill" catalog="system" width="101" height="128"/>
-        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="bolt.fill" catalog="system" width="50" height="64"/>
+        <image name="circle.fill" catalog="system" width="64" height="60"/>
         <image name="music" width="512" height="512"/>
         <image name="music-2" width="512" height="512"/>
-        <image name="pencil" catalog="system" width="128" height="113"/>
-        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="photo" catalog="system" width="128" height="93"/>
-        <image name="rectangle.3.offgrid.fill" catalog="system" width="128" height="81"/>
-        <image name="rectangle.fill" catalog="system" width="128" height="93"/>
-        <image name="rectangle.split.3x1" catalog="system" width="128" height="93"/>
-        <image name="rectangle.split.3x1.fill" catalog="system" width="128" height="93"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
-        <image name="square.fill" catalog="system" width="128" height="114"/>
-        <image name="triangle.fill" catalog="system" width="128" height="112"/>
-        <image name="xmark.seal.fill" catalog="system" width="128" height="122"/>
+        <image name="pencil" catalog="system" width="64" height="56"/>
+        <image name="photo" catalog="system" width="64" height="46"/>
+        <image name="rectangle.3.offgrid.fill" catalog="system" width="64" height="40"/>
+        <image name="rectangle.fill" catalog="system" width="64" height="46"/>
+        <image name="rectangle.split.3x1" catalog="system" width="64" height="46"/>
+        <image name="rectangle.split.3x1.fill" catalog="system" width="64" height="46"/>
+        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+        <image name="square.fill" catalog="system" width="64" height="56"/>
+        <image name="triangle.fill" catalog="system" width="64" height="56"/>
+        <image name="xmark.seal.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>

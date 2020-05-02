@@ -26,6 +26,8 @@
 		76CD0C292459C65800E9CA9B /* IstaPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD0C282459C65800E9CA9B /* IstaPage.swift */; };
 		76E9F0FE245B214B00D4921E /* ChooseShape2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E9F0FC245B214B00D4921E /* ChooseShape2.swift */; };
 		76E9F0FF245B214B00D4921E /* ChooseShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E9F0FD245B214B00D4921E /* ChooseShape.swift */; };
+		76F08B39245DEE8C002A6F19 /* Schermata1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F08B38245DEE8C002A6F19 /* Schermata1.swift */; };
+		76F08B3B245DEFCC002A6F19 /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F08B3A245DEFCC002A6F19 /* Password.swift */; };
 		76F8FF152458AFDB00E50D7F /* Collage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F8FF142458AFDB00E50D7F /* Collage.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +75,8 @@
 		76CD0C282459C65800E9CA9B /* IstaPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IstaPage.swift; sourceTree = "<group>"; };
 		76E9F0FC245B214B00D4921E /* ChooseShape2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseShape2.swift; sourceTree = "<group>"; };
 		76E9F0FD245B214B00D4921E /* ChooseShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseShape.swift; sourceTree = "<group>"; };
+		76F08B38245DEE8C002A6F19 /* Schermata1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schermata1.swift; sourceTree = "<group>"; };
+		76F08B3A245DEFCC002A6F19 /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
 		76F8FF142458AFDB00E50D7F /* Collage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,7 +142,9 @@
 				342BF26B245DDA19004CD081 /* CaricaImage.swift */,
 				76C13DE8245B2B3100D1AE9F /* ChooseTexture.swift */,
 				76CD0C282459C65800E9CA9B /* IstaPage.swift */,
+				76F08B3A245DEFCC002A6F19 /* Password.swift */,
 				345F14CE24573808003EE819 /* SceneDelegate.swift */,
+				76F08B38245DEE8C002A6F19 /* Schermata1.swift */,
 				76C13DEA245B2FAE00D1AE9F /* TakePicture.swift */,
 				345F14D024573808003EE819 /* ViewController.swift */,
 				345F14D224573808003EE819 /* Main.storyboard */,
@@ -310,9 +316,11 @@
 				76E9F0FF245B214B00D4921E /* ChooseShape.swift in Sources */,
 				76CD0C292459C65800E9CA9B /* IstaPage.swift in Sources */,
 				342BF26C245DDA19004CD081 /* CaricaImage.swift in Sources */,
+				76F08B3B245DEFCC002A6F19 /* Password.swift in Sources */,
 				345F14D124573808003EE819 /* ViewController.swift in Sources */,
 				76C13DEB245B2FAE00D1AE9F /* TakePicture.swift in Sources */,
 				345F14CD24573808003EE819 /* AppDelegate.swift in Sources */,
+				76F08B39245DEE8C002A6F19 /* Schermata1.swift in Sources */,
 				345F14CF24573808003EE819 /* SceneDelegate.swift in Sources */,
 				76C13DE9245B2B3100D1AE9F /* ChooseTexture.swift in Sources */,
 				342BF26E245DDA34004CD081 /* CollectionViewCell.swift in Sources */,
