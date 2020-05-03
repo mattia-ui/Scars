@@ -15,6 +15,7 @@ class Password: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
     
     @IBAction func tryPass(_ sender: Any) {
