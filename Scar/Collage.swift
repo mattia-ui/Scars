@@ -705,33 +705,30 @@ class Collage: UIViewController, UITextFieldDelegate  {
                 print("error to save" + error.debugDescription)
             } else {
                 print("save succesfull")
-                
-                //Si connette al DB
-                var db: OpaquePointer?
-                let fileURL = try!
-                FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
-                if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
-                    print("error opening database")
-                }
-                
-                //Update Valore
-                var stmt: OpaquePointer?
-                var queryString = "UPDATE Collage SET valore = 'no' WHERE id = 1;"
-                sqlite3_prepare(db, queryString, -1, &stmt, nil)
-                sqlite3_step(stmt)
-                print("Saved successfully")
-                
-                DispatchQueue.main.async{
-                    self.activityField.stopAnimating()
-                }
-                
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let secondVC = storyboard.instantiateViewController(withIdentifier: "settoreImage")  as! Schermata3
-                self.navigationController?.pushViewController(secondVC, animated: true)
             }
-                         
-           
         })
+        
+        //Si connette al DB
+        var db: OpaquePointer?
+        let fileURL = try!
+        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+            print("error opening database")
+        }
+        
+        //Update Valore
+        var stmt: OpaquePointer?
+        var queryString = "UPDATE Collage SET valore = 'no' WHERE id = 1;"
+        sqlite3_prepare(db, queryString, -1, &stmt, nil)
+        sqlite3_step(stmt)
+        print("Saved successfully")
+        
+        DispatchQueue.main.async{
+            self.activityField.stopAnimating()
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let secondVC = storyboard.instantiateViewController(withIdentifier: "settoreImage")  as! Schermata3
+            self.navigationController?.pushViewController(secondVC, animated: true)
+        }
     }
     
     func cropImage(image:UIImage, toRect rect:CGRect) -> UIImage{
