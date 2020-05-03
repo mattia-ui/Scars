@@ -20,6 +20,8 @@ class Password: UIViewController {
     @IBAction func tryPass(_ sender: Any) {
         
         if(pass.text == "uragani"){
+            SecretCollection.allDescr = []
+            SecretCollection.allImages = []
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let secondVC = storyboard.instantiateViewController(withIdentifier: "collection")  as! SecretCollection
         self.navigationController?.pushViewController(secondVC, animated: true)
