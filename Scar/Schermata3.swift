@@ -56,6 +56,7 @@ class Schermata3: UIViewController {
         }
         while(sqlite3_step(stmt) == SQLITE_ROW){
             d = String(cString: sqlite3_column_text(stmt, 1))
+            print(d)
         }
         
         
