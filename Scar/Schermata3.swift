@@ -11,6 +11,7 @@ import SQLite3
 
 class Schermata3: UIViewController {
     
+    var m = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,8 +55,9 @@ class Schermata3: UIViewController {
             print("error preparing insert: \(errmsg)")
             return
         }
-        while(sqlite3_step(stmt) == SQLITE_ROW){
+        while(sqlite3_step(stmt) == SQLITE_ROW && m < 1){
             d = String(cString: sqlite3_column_text(stmt, 1))
+            m = m + 1
             print(d)
         }
         
