@@ -10,6 +10,9 @@
 		342BF26A245DD9EC004CD081 /* SecretCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342BF269245DD9EC004CD081 /* SecretCollection.swift */; };
 		342BF26C245DDA19004CD081 /* CaricaImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342BF26B245DDA19004CD081 /* CaricaImage.swift */; };
 		342BF26E245DDA34004CD081 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342BF26D245DDA34004CD081 /* CollectionViewCell.swift */; };
+		342BF2CA2460CFEF004CD081 /* CollectionViewInitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342BF2C92460CFEF004CD081 /* CollectionViewInitial.swift */; };
+		342BF2CC2460D006004CD081 /* CollectionViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342BF2CB2460D006004CD081 /* CollectionViewCell1.swift */; };
+		342BF2CE2460D025004CD081 /* ViewControllerInitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342BF2CD2460D025004CD081 /* ViewControllerInitial.swift */; };
 		345F14CD24573808003EE819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F14CC24573808003EE819 /* AppDelegate.swift */; };
 		345F14CF24573808003EE819 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F14CE24573808003EE819 /* SceneDelegate.swift */; };
 		345F14D124573808003EE819 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F14D024573808003EE819 /* ViewController.swift */; };
@@ -58,6 +61,9 @@
 		342BF269245DD9EC004CD081 /* SecretCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretCollection.swift; sourceTree = "<group>"; };
 		342BF26B245DDA19004CD081 /* CaricaImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaricaImage.swift; sourceTree = "<group>"; };
 		342BF26D245DDA34004CD081 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		342BF2C92460CFEF004CD081 /* CollectionViewInitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewInitial.swift; sourceTree = "<group>"; };
+		342BF2CB2460D006004CD081 /* CollectionViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell1.swift; sourceTree = "<group>"; };
+		342BF2CD2460D025004CD081 /* ViewControllerInitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInitial.swift; sourceTree = "<group>"; };
 		345F14C924573808003EE819 /* Scar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		345F14CC24573808003EE819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		345F14CE24573808003EE819 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +165,9 @@
 				76F08B3C245DF36F002A6F19 /* PostCollage.swift */,
 				345F14CE24573808003EE819 /* SceneDelegate.swift */,
 				76F08B38245DEE8C002A6F19 /* Schermata1.swift */,
+				342BF2C92460CFEF004CD081 /* CollectionViewInitial.swift */,
+				342BF2CB2460D006004CD081 /* CollectionViewCell1.swift */,
+				342BF2CD2460D025004CD081 /* ViewControllerInitial.swift */,
 				76C147222460242200DAD927 /* Schermata2.swift */,
 				76F08B3E245DF433002A6F19 /* Schermata3.swift */,
 				342BF269245DD9EC004CD081 /* SecretCollection.swift */,
@@ -335,11 +344,14 @@
 				76F08B41245DF8B2002A6F19 /* StepCollage.swift in Sources */,
 				76C14725246026BB00DAD927 /* AddInsights.swift in Sources */,
 				76CD0C292459C65800E9CA9B /* IstaPage.swift in Sources */,
+				342BF2CC2460D006004CD081 /* CollectionViewCell1.swift in Sources */,
 				342BF26C245DDA19004CD081 /* CaricaImage.swift in Sources */,
 				76F08B3B245DEFCC002A6F19 /* Password.swift in Sources */,
+				342BF2CE2460D025004CD081 /* ViewControllerInitial.swift in Sources */,
 				345F14D124573808003EE819 /* ViewController.swift in Sources */,
 				76C1472724603A2A00DAD927 /* InsightsCollection.swift in Sources */,
 				76C13DEB245B2FAE00D1AE9F /* TakePicture.swift in Sources */,
+				342BF2CA2460CFEF004CD081 /* CollectionViewInitial.swift in Sources */,
 				345F14CD24573808003EE819 /* AppDelegate.swift in Sources */,
 				76F08B39245DEE8C002A6F19 /* Schermata1.swift in Sources */,
 				345F14CF24573808003EE819 /* SceneDelegate.swift in Sources */,
