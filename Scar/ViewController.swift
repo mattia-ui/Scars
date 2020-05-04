@@ -30,6 +30,10 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         pictureScars.image = ViewController.imageScars
     }
     
+    @IBAction func changeBrush(_ sender: UISlider) {
+        brushWidth = CGFloat(sender.value)
+        print(brushWidth)
+    }
     
     //Cancella disegno.
     @IBAction func resetDraw(_ sender: Any) {
