@@ -8,6 +8,8 @@
 
 import UIKit
 
+let NotificationKey = "co.seanallen.Side"
+
 struct Cont {
     var image: String
     var descr: String
@@ -46,6 +48,11 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
     static var insights: [String] = ["","","","",""]
     var contenuto: [Cont] = []
     
+    let light = Notification.Name(rawValue: NotificationKey)
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
     
     @IBOutlet weak var b1: UIButton!
     @IBOutlet weak var b2: UIButton!
@@ -76,12 +83,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
             UIApplication.shared.openURL(url as URL)
         }
      }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    
+
     override func viewWillAppear(_ animated: Bool) {
         b1.setTitle(Schermata2.insights[0], for: .normal)
         b2.setTitle(Schermata2.insights[1], for: .normal)
@@ -89,8 +91,70 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         b4.setTitle(Schermata2.insights[3], for: .normal)
         b5.setTitle(Schermata2.insights[4], for: .normal)
     }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if(Schermata2.insights[0] != ""){
+            if(Schermata2.insights[0] == "Podcast"){
+                contenuto = structIns[0].pod
+            }
+            if(Schermata2.insights[0] == "Wellbein"){
+                contenuto = structIns[0].well
+            }
+            if(Schermata2.insights[0] == "Movies"){
+                contenuto = structIns[0].mov
+            }
+            if(Schermata2.insights[0] == "Articols"){
+                contenuto = structIns[0].art
+            }
+            if(Schermata2.insights[0] == "Artists"){
+                contenuto = structIns[0].artists
+            }
+            b1.isSelected = true
+            b2.isSelected = false
+            b3.isSelected = false
+            b4.isSelected = false
+            b5.isSelected = false
+            myCollectionView.reloadData()
+        }
+        createObservers()
+    }
     
+    func createObservers() {
+        NotificationCenter.default.addObserver(self, selector: #selector(Schermata2.buttonName(notification:)), name: light, object: nil)
+    }
     
+    @objc func buttonName(notification: NSNotification) {
+        b1.setTitle(Schermata2.insights[0], for: .normal)
+        b2.setTitle(Schermata2.insights[1], for: .normal)
+        b3.setTitle(Schermata2.insights[2], for: .normal)
+        b4.setTitle(Schermata2.insights[3], for: .normal)
+        b5.setTitle(Schermata2.insights[4], for: .normal)
+        if(Schermata2.insights[0] != ""){
+            if(Schermata2.insights[0] == "Podcast"){
+                contenuto = structIns[0].pod
+            }
+            if(Schermata2.insights[0] == "Wellbein"){
+                contenuto = structIns[0].well
+            }
+            if(Schermata2.insights[0] == "Movies"){
+                contenuto = structIns[0].mov
+            }
+            if(Schermata2.insights[0] == "Articols"){
+                contenuto = structIns[0].art
+            }
+            if(Schermata2.insights[0] == "Artists"){
+                contenuto = structIns[0].artists
+            }
+            b1.isSelected = true
+            b2.isSelected = false
+            b3.isSelected = false
+            b4.isSelected = false
+            b5.isSelected = false
+            myCollectionView.reloadData()
+        }
+    }
+
     @IBAction func setTable(_ sender: UIButton) {
         if(sender.titleLabel?.text == "Podcast"){
             contenuto = structIns[0].pod
@@ -150,3 +214,4 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
 class MyTap: UITapGestureRecognizer {
     var link = String()
 }
+

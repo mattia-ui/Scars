@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class AddInsights: UIViewController {
     
     @IBOutlet weak var pod: UIButton!
@@ -15,7 +16,7 @@ class AddInsights: UIViewController {
     @IBOutlet weak var mov: UIButton!
     @IBOutlet weak var art: UIButton!
     @IBOutlet weak var artist: UIButton!
-    
+        
     static var j: Int = 0
     
     var temp: [String] = []
@@ -51,6 +52,11 @@ class AddInsights: UIViewController {
         }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        let name = Notification.Name(rawValue: NotificationKey)
+        NotificationCenter.default.post(name: name, object: nil)
+    }
+   
     @IBAction func podcast(_ sender: UIButton) {
         if sender.isSelected {
             pod.isSelected = false

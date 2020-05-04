@@ -1223,6 +1223,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="functionOnAnotherView:" destination="kOP-8S-voN" eventType="touchUpInside" id="Mit-9t-FLD"/>
                                     <action selector="podcast:" destination="pxK-AG-QlA" eventType="touchUpInside" id="lv1-hv-BHP"/>
                                 </connections>
                             </button>
@@ -1240,6 +1241,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KdF-Dn-BGp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="kOP-8S-voN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1065.217391304348" y="1558.9285714285713"/>
         </scene>
