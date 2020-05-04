@@ -12,7 +12,9 @@ let NotificationKey = "co.seanallen.Side"
 
 struct Cont {
     var image: String
+    var title: String
     var descr: String
+    var fonte: String
     var link: String
 }
 
@@ -26,20 +28,20 @@ struct ins {
 
 var structIns = [ins(
     pod:[
-        Cont(image: "2-.jpg", descr: "esempio Podcast", link: "https://www.google.com/?client=safari"),
-        Cont(image: "2-.jpg", descr: "esempio Podcast", link: "https://www.google.com/?client=safari")],
+        Cont(image: "2-.jpg", title:"t", descr: "esempio Podcast", fonte:"f", link: "https://www.google.com/?client=safari"),
+        Cont(image: "2-.jpg", title:"t", descr: "esempio Podcast", fonte:"f", link: "https://www.google.com/?client=safari")],
     well:[
-        Cont(image: "2-.jpg", descr: "esempio Wellbein", link: "https://www.google.com/?client=safari"),
-        Cont(image: "2-.jpg", descr: "esempio Wellbein", link: "https://www.google.com/?client=safari")],
+        Cont(image: "2-.jpg", title:"t", descr: "esempio Wellbein", fonte:"f", link: "https://www.google.com/?client=safari"),
+        Cont(image: "2-.jpg", title:"t", descr: "esempio Wellbein", fonte:"f", link: "https://www.google.com/?client=safari")],
     mov:[
-        Cont(image: "2-.jpg", descr: "esempio Movies", link: "https://www.google.com/?client=safari"),
-        Cont(image: "2-.jpg", descr: "esempio Movies", link: "https://www.google.com/?client=safari")],
+        Cont(image: "2-.jpg", title:"t", descr: "esempio Movies", fonte:"f", link: "https://www.google.com/?client=safari"),
+        Cont(image: "2-.jpg", title:"t", descr: "esempio Movies", fonte:"f", link: "https://www.google.com/?client=safari")],
     art:[
-        Cont(image: "2-.jpg", descr: "esempio Articols", link: "https://www.google.com/?client=safari"),
-        Cont(image: "2-.jpg", descr: "esempio Articols", link: "https://www.google.com/?client=safari")],
+        Cont(image: "2-.jpg", title:"t", descr: "esempio Articols", fonte:"f", link: "https://www.google.com/?client=safari"),
+        Cont(image: "2-.jpg", title:"t", descr: "esempio Articols", fonte:"f", link: "https://www.google.com/?client=safari")],
     artists:[
-        Cont(image: "2-.jpg", descr: "esempio Artistis", link: "https://www.google.com/?client=safari"),
-        Cont(image: "2-.jpg", descr: "esempio Artistis", link: "https://www.google.com/?client=safari")
+        Cont(image: "2-.jpg", title:"t", descr: "esempio Artistis", fonte:"f", link: "https://www.google.com/?client=safari"),
+        Cont(image: "2-.jpg", title:"t", descr: "esempio Artistis", fonte:"f", link: "https://www.google.com/?client=safari")
     ]
 )]
 
@@ -70,7 +72,9 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = myCollectionView.dequeueReusableCell(withReuseIdentifier: "ins", for: indexPath) as! InightsCollection
         cell.image.image = UIImage(named: contenuto[indexPath.row].image)
+        cell.title.text = contenuto[indexPath.row].title
         cell.label.text = contenuto[indexPath.row].descr
+        cell.fonte.text = contenuto[indexPath.row].fonte
         let tap = MyTap(target: self, action: #selector(self.goLink(sender:)))
         tap.link = contenuto[indexPath.row].link
         cell.button.isUserInteractionEnabled = true
