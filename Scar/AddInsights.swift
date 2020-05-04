@@ -61,6 +61,7 @@ class AddInsights: UIViewController {
             }
             AddInsights.j = AddInsights.j - 1
             Schermata2.insights = temp
+            Schermata2.insights.append("")
         } else {
             pod.isSelected = true
             Schermata2.insights[AddInsights.j] = "Podcast"
@@ -78,6 +79,7 @@ class AddInsights: UIViewController {
             }
             AddInsights.j = AddInsights.j - 1
             Schermata2.insights = temp
+            Schermata2.insights.append("")
         } else {
             well.isSelected = true
             Schermata2.insights[AddInsights.j] = "Wellbein"
@@ -95,6 +97,7 @@ class AddInsights: UIViewController {
             }
             AddInsights.j = AddInsights.j - 1
             Schermata2.insights = temp
+            Schermata2.insights.append("")
         } else {
             mov.isSelected = true
             Schermata2.insights[AddInsights.j] = "Movies"
@@ -112,6 +115,7 @@ class AddInsights: UIViewController {
             }
             AddInsights.j = AddInsights.j - 1
             Schermata2.insights = temp
+            Schermata2.insights.append("")
         } else {
             art.isSelected = true
             Schermata2.insights[AddInsights.j] = "Articols"
@@ -129,6 +133,7 @@ class AddInsights: UIViewController {
             }
             AddInsights.j = AddInsights.j - 1
             Schermata2.insights = temp
+            Schermata2.insights.append("")
         } else {
             artist.isSelected = true
             Schermata2.insights[AddInsights.j] = "Artist"
