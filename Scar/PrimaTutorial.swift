@@ -12,9 +12,17 @@ import SQLite3
 
 class PrimaTutorial : UIViewController {
     
+    override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+           navigationController?.setNavigationBarHidden(true, animated: animated)
+       }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         var db: OpaquePointer?
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard1))
+        view.addGestureRecognizer(tap)
         
         if UserDefaults.standard.bool(forKey: "LaunchedBefore") {
             self.performSegue(withIdentifier: "notFirst", sender: self)
@@ -109,5 +117,10 @@ class PrimaTutorial : UIViewController {
             print("Saved successfully")
         }
     }
+    
+    @objc func dismissKeyboard1() {
+           view.endEditing(true)
+       }
+    
     
 }
