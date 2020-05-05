@@ -9,7 +9,7 @@
 import UIKit
 class ViewControllerInitial: UIViewController {
 
-    var id: Int!
+    var id1: Int!
     
     @IBOutlet weak var cardImage: UIImageView!
     @IBOutlet weak var cardLabel: UILabel!
@@ -25,7 +25,7 @@ class ViewControllerInitial: UIViewController {
         let secondVC = storyboard?.instantiateViewController(withIdentifier: "collectionInitial")  as! Schermata1
 //        let cell = CollectionViewCell()
 //        cell.cardsImage.image = UIImage(named: "checked")
-        secondVC.allImages[id] = "checked"
+        secondVC.allImages[id1] = "checked"
 
         self.navigationController?.pushViewController(secondVC, animated: true)
         

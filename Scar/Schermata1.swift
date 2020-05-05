@@ -11,7 +11,7 @@ import CloudKit
 
 
 class MyTapGesture1: UITapGestureRecognizer {
-    var id = Int()
+    var id1 = Int()
 }
 
 class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
@@ -51,6 +51,16 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         let cellHeight = 164
         return CGSize(width: cellWidth, height: cellHeight)
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated);
+        super.viewWillDisappear(animated)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
         
 
     override func viewDidLoad() {
@@ -62,8 +72,8 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     
     @objc func go(sender : MyTapGesture) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let secondVC = storyboard.instantiateViewController(withIdentifier: "image")  as! ViewControllerInitial
-        secondVC.id = sender.id
+        let secondVC = storyboard.instantiateViewController(withIdentifier: "imageColl")  as! ViewControllerInitial
+        secondVC.id1 = sender.id
         self.navigationController?.pushViewController(secondVC, animated: true)
     }
     
