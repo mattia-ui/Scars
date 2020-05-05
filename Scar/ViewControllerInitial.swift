@@ -22,7 +22,7 @@ class ViewControllerInitial: UIViewController {
     
     @IBAction func done(_ sender: Any) {
         
-        let secondVC = storyboard?.instantiateViewController(withIdentifier: "collection")  as! CollectionViewInitial
+        let secondVC = storyboard?.instantiateViewController(withIdentifier: "collectionInitial")  as! Schermata1
 //        let cell = CollectionViewCell()
 //        cell.cardsImage.image = UIImage(named: "checked")
         secondVC.allImages[id] = "checked"
