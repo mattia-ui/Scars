@@ -588,8 +588,14 @@ class Collage: UIViewController, UITextFieldDelegate  {
             }
         }
     
-        mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: imgSecondaria ?? UIImage(), x: 8, y: 8, width: 90, height: 90)
-        mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: imgSecondaria ?? UIImage(), x: 200, y: 200, width: 50, height: 50)
+        let randomSize = Int.random(in: 5..<16)
+        let randomPos = Int.random(in: 0..<4)
+        let posizioneGx = [30,0,160,0]
+        let posizioneGy = [0,40,0,150]
+        let posizionePx = [180,235,50,235]
+        let posizionePy = [230,175,230,55]
+        mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: imgSecondaria ?? UIImage(), x: CGFloat(posizioneGx[randomPos]), y: CGFloat(posizioneGy[randomPos]), width: CGFloat(65 + randomSize), height: CGFloat(65 + randomSize))
+        mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: imgSecondaria ?? UIImage(), x: CGFloat(posizionePx[randomPos]), y: CGFloat(posizionePy[randomPos]), width: CGFloat(45 - randomSize), height: CGFloat(45 - randomSize))
 
         
         if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
