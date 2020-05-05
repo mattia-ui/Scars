@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SQLite3
+
 
 let NotificationKey = "co.seanallen.Side"
 
@@ -98,6 +100,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        caricaInfo()
         if(Schermata2.insights[0] != ""){
             if(Schermata2.insights[0] == "Podcast"){
                 contenuto = structIns[0].pod
@@ -128,7 +131,35 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         NotificationCenter.default.addObserver(self, selector: #selector(Schermata2.buttonName(notification:)), name: light, object: nil)
     }
     
+    func caricaInfo(){
+        var db: OpaquePointer?
+             
+        //Si connette al DB
+        let fileURL = try!
+        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+            print("error opening database")
+        }
+             
+        //Recupera Valore
+        var stmt: OpaquePointer?
+        let queryString = "SELECT * FROM Insights"
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+        let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error preparing insert: \(errmsg)")
+            return
+        }
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            Schermata2.insights[0] = String(cString: sqlite3_column_text(stmt, 1))
+            Schermata2.insights[1] = String(cString: sqlite3_column_text(stmt, 2))
+            Schermata2.insights[2] = String(cString: sqlite3_column_text(stmt, 3))
+            Schermata2.insights[3] = String(cString: sqlite3_column_text(stmt, 4))
+            Schermata2.insights[4] = String(cString: sqlite3_column_text(stmt, 5))
+        }
+    }
+    
     @objc func buttonName(notification: NSNotification) {
+        caricaInfo()
         b1.setTitle(Schermata2.insights[0], for: .normal)
         b2.setTitle(Schermata2.insights[1], for: .normal)
         b3.setTitle(Schermata2.insights[2], for: .normal)
@@ -200,7 +231,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
                 b5.isSelected = false
             }
         }
-        if(sender.titleLabel?.text == "Artists"){
+        if(sender.titleLabel?.text == "Artist"){
             contenuto = structIns[0].artists
             if !sender.isSelected {
                 sender.isSelected = true

@@ -10,5 +10,8 @@ import Foundation
 import UIKit
 
 class SecondaTutorial : UIViewController {
+    override func viewDidLoad() {
+//        Schermata2.insights
+    }
     
 }

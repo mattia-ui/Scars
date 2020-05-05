@@ -8,6 +8,7 @@
 
 import UIKit
 import CloudKit
+import SQLite3
 
 
 class MyTapGesture1: UITapGestureRecognizer {
@@ -18,8 +19,7 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     
     var i = 1
     @IBOutlet weak var activity: UICollectionView!
-    var allImages: [String] = ["unchecked","unchecked","unchecked","unchecked","unchecked"]
-//    var allImages1: [String] = ["checked"]
+    static var allImages: [String] = ["unchecked","unchecked","unchecked","unchecked","unchecked"]
     
     @IBAction func secret(_ sender: Any) {
         if(i == 15){
@@ -32,12 +32,12 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     }
   
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return allImages.count
+        return Schermata1.allImages.count
     }
         
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = activity.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! CollectionViewCell1
-        cell.cardsImage.image = UIImage(named: allImages[indexPath.row] + ".png")
+        cell.cardsImage.image = UIImage(named: Schermata1.allImages[indexPath.row] + ".png")
         let tap = MyTapGesture(target: self, action: #selector(self.go(sender:)))
         tap.id = indexPath.row
         cell.cardsImage.isUserInteractionEnabled = true
@@ -60,13 +60,78 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        
+        var db: OpaquePointer?
+        
+        //Si connette al DB
+        let fileURL = try!
+        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+            print("error opening database")
+        }
+        
+        //Recupera Valore
+        var stmt: OpaquePointer?
+        var queryString = "SELECT * FROM Date"
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+        let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error preparing insert: \(errmsg)")
+            return
+        }
+        
+        var m = 0, day = 0, h = 0, min = 0
+        while(sqlite3_step(stmt) == SQLITE_ROW && m < 1){
+            m = Int(String(cString: sqlite3_column_text(stmt, 1))) ?? 0
+            day = Int(String(cString: sqlite3_column_text(stmt, 2))) ?? 0
+            h = Int(String(cString: sqlite3_column_text(stmt, 3))) ?? 0
+            min = Int(String(cString: sqlite3_column_text(stmt, 4))) ?? 0
+        }
+        
+        let dateNow = Date()
+        let calendar2 = Calendar.current
+        let components2 = calendar2.dateComponents([.year, .month, .day, .hour, .minute, .second], from: dateNow)
+        let month2 = components2.month ?? 0
+        let day2 = components2.day ?? 0
+        let hour2 = components2.hour ?? 0
+        let minute2 = components2.minute ?? 0
+                
+        if(month2 >= m && day2 > day){
+            print(day2)
+            print(day)
+            //Inserisce Valore. Va nel tutorial
+            queryString = "UPDATE Date SET mese = '\(month2)', giorno = '\(day2)', ora = '\(hour2)', minuti = '\(minute2)';"
+            sqlite3_prepare(db, queryString, -1, &stmt, nil)
+            sqlite3_step(stmt)
+            print("Saved successfully")
+            
+            //Inserisce Valore. Va nel tutorial
+            queryString = "UPDATE InfoSchermata1 SET c1 = 'unchecked', c2 = 'unchecked', c3 = 'unchecked', c4 = 'unchecked', c5 = 'unchecked';"
+            sqlite3_prepare(db, queryString, -1, &stmt, nil)
+            sqlite3_step(stmt)
+            print("Saved successfully")
+        }
+        
+        //Recupera Valore
+        queryString = "SELECT * FROM InfoSchermata1"
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+        let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error preparing insert: \(errmsg)")
+            return
+        }
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            Schermata1.allImages[0] = String(cString: sqlite3_column_text(stmt, 1))
+            Schermata1.allImages[1] = String(cString: sqlite3_column_text(stmt, 2))
+            Schermata1.allImages[2] = String(cString: sqlite3_column_text(stmt, 3))
+            Schermata1.allImages[3] = String(cString: sqlite3_column_text(stmt, 4))
+            Schermata1.allImages[4] = String(cString: sqlite3_column_text(stmt, 5))
+        }
     }
         
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-            UserDefaults.standard.set(true, forKey: "LaunchedBefore")
+        UserDefaults.standard.set(true, forKey: "LaunchedBefore")
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal

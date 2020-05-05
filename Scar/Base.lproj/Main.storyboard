@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9C-PY-zlv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9C-PY-zlv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -309,7 +309,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vvJ-ld-bOe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2886.9565217391305" y="2256.6964285714284"/>
+            <point key="canvasLocation" x="-1797" y="78"/>
         </scene>
         <!--Seconda Tutorial-->
         <scene sceneID="OBK-zK-NGN">
@@ -397,7 +397,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PQB-nD-nhz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3707.2463768115945" y="2257.3660714285711"/>
+            <point key="canvasLocation" x="-426" y="78"/>
         </scene>
         <!--Step Collage-->
         <scene sceneID="G9Y-U3-VD5">
@@ -1108,7 +1108,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xud-Sz-KJV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048" y="803"/>
+            <point key="canvasLocation" x="-426" y="803"/>
         </scene>
         <!--Schermata1-->
         <scene sceneID="HeO-9e-5mn">
@@ -1659,7 +1659,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xpe-VT-DYx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4557.971014492754" y="2256.6964285714284"/>
+            <point key="canvasLocation" x="928" y="79"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HgI-k0-F1d">
@@ -1677,7 +1677,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jF9-ig-MbU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1976.8115942028987" y="2256.6964285714284"/>
+            <point key="canvasLocation" x="-2807" y="78"/>
         </scene>
     </scenes>
     <resources>
@@ -1703,6 +1703,6 @@
         <image name="xmark.seal.fill" catalog="system" width="64" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5YV-yP-11y"/>
+        <segue reference="wd9-1W-xO2"/>
     </inferredMetricsTieBreakers>
 </document>

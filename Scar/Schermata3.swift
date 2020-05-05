@@ -16,6 +16,7 @@ class Schermata3: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         var db: OpaquePointer?
+        var stmt: OpaquePointer?
 
         //Si connette al DB
         let fileURL = try!
@@ -23,33 +24,11 @@ class Schermata3: UIViewController {
         if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
             print("error opening database")
         }
-       
-        
-        //Elimina Tabella. Quando Spostiamo le due funzioni successive nel tutorial non serve piu
-        if sqlite3_exec(db, "DROP TABLE Collage", nil, nil, nil) != SQLITE_OK {
-        let errmsg = String(cString: sqlite3_errmsg(db)!)
-            print("error creating table: \(errmsg)")
-        }
-        
-        
-        //Crea Tabella. Va nel tutorial
-        if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS Collage (id INTEGER PRIMARY KEY AUTOINCREMENT,valore TEXT)", nil, nil, nil) != SQLITE_OK {
-            let errmsg = String(cString: sqlite3_errmsg(db)!)
-            print("error creating table: \(errmsg)")
-        }
-
-        
-        //Inserisce Valore. Va nel tutorial
-        var stmt: OpaquePointer?
-        var queryString = "INSERT INTO Collage(valore) VALUES ('si');"
-        sqlite3_prepare(db, queryString, -1, &stmt, nil)
-        sqlite3_step(stmt)
-        print("Saved successfully")
 
         
         //Recupera Valore
         var d = ""
-        queryString = "SELECT * FROM Collage"
+        var queryString = "SELECT * FROM Collage"
         if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("error preparing insert: \(errmsg)")
