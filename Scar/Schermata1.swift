@@ -95,7 +95,7 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         let hour2 = components2.hour ?? 0
         let minute2 = components2.minute ?? 0
                 
-        if(month2 >= m && day2 > day){
+        if(month2 > m || day2 > day){
             print(day2)
             print(day)
             //Inserisce Valore. Va nel tutorial
