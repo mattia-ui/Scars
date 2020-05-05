@@ -194,51 +194,56 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         if(sender.titleLabel?.text == "Podcast"){
             contenuto = structIns[0].pod
             if !sender.isSelected {
-                sender.isSelected = true
+                b1.isSelected = false
                 b2.isSelected = false
                 b3.isSelected = false
                 b4.isSelected = false
                 b5.isSelected = false
+                sender.isSelected = true
             }
         }
         if(sender.titleLabel?.text == "Wellbein"){
             contenuto = structIns[0].well
             if !sender.isSelected {
-                sender.isSelected = true
                 b1.isSelected = false
+                b2.isSelected = false
                 b3.isSelected = false
                 b4.isSelected = false
                 b5.isSelected = false
+                sender.isSelected = true
             }
         }
         if(sender.titleLabel?.text == "Movies"){
             contenuto = structIns[0].mov
             if !sender.isSelected {
-                sender.isSelected = true
-                b2.isSelected = false
                 b1.isSelected = false
+                b2.isSelected = false
+                b3.isSelected = false
                 b4.isSelected = false
                 b5.isSelected = false
+                sender.isSelected = true
             }
         }
         if(sender.titleLabel?.text == "Articols"){
             contenuto = structIns[0].art
             if !sender.isSelected {
-                sender.isSelected = true
+                b1.isSelected = false
                 b2.isSelected = false
                 b3.isSelected = false
-                b1.isSelected = false
+                b4.isSelected = false
                 b5.isSelected = false
+                sender.isSelected = true
             }
         }
         if(sender.titleLabel?.text == "Artist"){
             contenuto = structIns[0].artists
             if !sender.isSelected {
-                sender.isSelected = true
+                b1.isSelected = false
                 b2.isSelected = false
                 b3.isSelected = false
                 b4.isSelected = false
-                b1.isSelected = false
+                b5.isSelected = false
+                sender.isSelected = true
             }
         }
         myCollectionView.reloadData()

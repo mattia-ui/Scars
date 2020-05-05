@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A5DEA26D-6651-4555-A9B7-C9EBF19D68AF"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D601873E-EE23-4926-90B9-F139C6525901"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Scar/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "drawElaboration(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F7E5E379-B472-4A0E-8967-A676A8573343"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Scar/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "F7E5E379-B472-4A0E-8967-A676A8573343 - 140793d92aaed562"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Scar.ViewController.swiped.getter : Swift.Bool"
+                  moduleName = "Scar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antoniocimino/Documents/Scars5/Scar/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "89">
+               </Location>
+               <Location
+                  uuid = "F7E5E379-B472-4A0E-8967-A676A8573343 - a98eb508577e8d5e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Scar.ViewController.swiped.setter : Swift.Bool"
+                  moduleName = "Scar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antoniocimino/Documents/Scars5/Scar/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "F7E5E379-B472-4A0E-8967-A676A8573343 - 2815b4b87d8dcf6f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Scar.ViewController.swiped.modify : Swift.Bool"
+                  moduleName = "Scar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antoniocimino/Documents/Scars5/Scar/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "F7E5E379-B472-4A0E-8967-A676A8573343 - a6338a7925db015e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Scar.ViewController.swiped.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Scar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antoniocimino/Documents/Scars5/Scar/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "F7E5E379-B472-4A0E-8967-A676A8573343 - d88768595868d05"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Scar.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Scar.ViewController"
+                  moduleName = "Scar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antoniocimino/Documents/Scars5/Scar/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "980">
+               </Location>
+               <Location
+                  uuid = "F7E5E379-B472-4A0E-8967-A676A8573343 - 140d2e86abf4c106"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Scar.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Scar.ViewController&gt;"
+                  moduleName = "Scar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antoniocimino/Documents/Scars5/Scar/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "912">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
