@@ -65,20 +65,20 @@ struct topImage {
 }
 
 var structBackImageType = [backImage(
-    coolSquare: [backImagePalette(name:"QAzz.png"),backImagePalette(name:"QVer.png"),backImagePalette(name:"QVi.png"),backImagePalette(name:"QBl.png")],
-    warmSquare: [backImagePalette(name:"QRosa.png"),backImagePalette(name:"QRoss.png"),backImagePalette(name:"QAr.png"),backImagePalette(name:"QGia.png")],
+    coolSquare: [backImagePalette(name:"QRosa.png"),backImagePalette(name:"QRoss.png"),backImagePalette(name:"QAr.png"),backImagePalette(name:"QGia.png")],
+    warmSquare: [backImagePalette(name:"QAzz.png"),backImagePalette(name:"QVer.png"),backImagePalette(name:"QVi.png"),backImagePalette(name:"QBl.png")],
     neutralSquare: [backImagePalette(name:"QMarrone.png"),backImagePalette(name:"QMarr.png"),backImagePalette(name:"QNer.png"),backImagePalette(name:"QGr.png")],
-    coolCircle: [backImagePalette(name:"CAzz.png"),backImagePalette(name:"CVer.png"),backImagePalette(name:"CVi.png"),backImagePalette(name:"CBl.png")],
-    warmCircle: [backImagePalette(name:"CRosa.png"),backImagePalette(name:"CRoss.png"),backImagePalette(name:"CAr.png"),backImagePalette(name:"CGia.png")],
+    coolCircle: [backImagePalette(name:"CRosa.png"),backImagePalette(name:"CRoss.png"),backImagePalette(name:"CAr.png"),backImagePalette(name:"CGia.png")],
+    warmCircle: [backImagePalette(name:"CAzz.png"),backImagePalette(name:"CVer.png"),backImagePalette(name:"CVi.png"),backImagePalette(name:"CBl.png")],
     neutralCircle: [backImagePalette(name:"CMarrone.png"),backImagePalette(name:"CMarr.png"),backImagePalette(name:"CNer.png"),backImagePalette(name:"CGr.png")],
-    coolTriangle: [backImagePalette(name:"TAzz.png"),backImagePalette(name:"TVer.png"),backImagePalette(name:"TVi.png"),backImagePalette(name:"TBl.png")],
-    warmTriangle: [backImagePalette(name:"TRosa.png"),backImagePalette(name:"TRoss.png"),backImagePalette(name:"TAr.png"),backImagePalette(name:"TGia.png")],
+    coolTriangle: [backImagePalette(name:"TRosa.png"),backImagePalette(name:"TRoss.png"),backImagePalette(name:"TAr.png"),backImagePalette(name:"TGia.png")],
+    warmTriangle: [backImagePalette(name:"TAzz.png"),backImagePalette(name:"TVer.png"),backImagePalette(name:"TVi.png"),backImagePalette(name:"TBl.png")],
     neutralTriangle: [backImagePalette(name:"TMarrone.png"),backImagePalette(name:"TMarr.png"),backImagePalette(name:"TNer.png"),backImagePalette(name:"TGr.png")],
-    coolRect: [backImagePalette(name:"RAzz.png"),backImagePalette(name:"RVer.png"),backImagePalette(name:"RVi.png"),backImagePalette(name:"RBl.png")],
-    warmRect: [backImagePalette(name:"RRosa.png"),backImagePalette(name:"RRoss.png"),backImagePalette(name:"RAr.png"),backImagePalette(name:"RGia.png")],
+    coolRect: [backImagePalette(name:"RRosa.png"),backImagePalette(name:"RRoss.png"),backImagePalette(name:"RAr.png"),backImagePalette(name:"RGia.png")],
+    warmRect: [backImagePalette(name:"RAzz.png"),backImagePalette(name:"RVer.png"),backImagePalette(name:"RVi.png"),backImagePalette(name:"RBl.png")],
     neutralRect: [backImagePalette(name:"RMarrone.png"),backImagePalette(name:"RMarr.png"),backImagePalette(name:"RNer.png"),backImagePalette(name:"RGr.png")],
-    coolZigZag: [backImagePalette(name:"OAzz.png"),backImagePalette(name:"OVer.png"),backImagePalette(name:"OVi.png"),backImagePalette(name:"OBl.png")],
-    warmZigZag: [backImagePalette(name:"ORosa.png"),backImagePalette(name:"ORoss.png"),backImagePalette(name:"OAr.png"),backImagePalette(name:"OGia.png")],
+    coolZigZag: [backImagePalette(name:"ORosa.png"),backImagePalette(name:"ORoss.png"),backImagePalette(name:"OAr.png"),backImagePalette(name:"OGia.png")],
+    warmZigZag: [backImagePalette(name:"OAzz.png"),backImagePalette(name:"OVer.png"),backImagePalette(name:"OVi.png"),backImagePalette(name:"OBl.png")],
     neutralZigZag: [backImagePalette(name:"OMarrone.png"),backImagePalette(name:"OMarr.png"),backImagePalette(name:"ONer.png"),backImagePalette(name:"OGr.png")]
 )]
 
@@ -355,7 +355,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     default: imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[11].name)
                 }
             }
-        } else if(ChooseShape2.shape2 == "trianle"){
+        } else if(ChooseShape2.shape2 == "triangle"){
             if(ChooseTexture.texture1 == "sea"){
                 switch nomeImgPrincipale {
                     case "QBl.png", "CBl.png","TBl.png","RBl.png","OBl.png": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
