@@ -21,10 +21,10 @@ struct WeeklyStruct {
 }
 
 var weeklyInfo: [WeeklyStruct] = [
-    WeeklyStruct(descr: "CIAO", image:"2-.png"),
-    WeeklyStruct(descr: "CIAO", image:"2-.png"),
-    WeeklyStruct(descr: "CIAO", image:"2-.png"),
-    WeeklyStruct(descr: "CIAO", image:"2-.png")
+    WeeklyStruct(descr: "CIAO1", image:"2-.png"),
+    WeeklyStruct(descr: "CIAO2", image:"2-.png"),
+    WeeklyStruct(descr: "CIAO3", image:"2-.png"),
+    WeeklyStruct(descr: "CIAO4", image:"2-.png")
 ]
 
 class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
