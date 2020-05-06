@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9C-PY-zlv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9C-PY-zlv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -988,14 +988,14 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCell" id="gIL-x7-jMY" customClass="CollectionViewCell" customModule="Scar" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aQw-CN-cVk">
-                                            <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qjk-C8-pXc">
-                                                    <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -1214,6 +1214,8 @@
                     <navigationItem key="navigationItem" id="srW-18-WKu"/>
                     <connections>
                         <outlet property="activity" destination="fWY-uv-LMG" id="bnU-9Z-ama"/>
+                        <outlet property="descW" destination="61N-a8-v0d" id="YHC-gH-yCh"/>
+                        <outlet property="imageW" destination="mqk-Ya-Xpd" id="L1I-ZI-C7n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oQR-Pf-eCO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1680,9 +1682,6 @@
             <point key="canvasLocation" x="-2807" y="78"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="wd9-1W-xO2"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="CAzz" width="267" height="267"/>
         <image name="CONer" width="200" height="165"/>
@@ -1697,12 +1696,15 @@
         <image name="music" width="512" height="512"/>
         <image name="music-2" width="512" height="512"/>
         <image name="neutri" width="437" height="254"/>
-        <image name="pencil" catalog="system" width="128" height="113"/>
-        <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="pencil" catalog="system" width="64" height="56"/>
+        <image name="photo" catalog="system" width="64" height="46"/>
         <image name="quadrato" width="74" height="71"/>
         <image name="rettangolo" width="126" height="71"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
         <image name="triangolo" width="84" height="74"/>
-        <image name="xmark.seal.fill" catalog="system" width="128" height="122"/>
+        <image name="xmark.seal.fill" catalog="system" width="64" height="60"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wd9-1W-xO2"/>
+    </inferredMetricsTieBreakers>
 </document>

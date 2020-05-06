@@ -62,6 +62,27 @@ class PrimaTutorial : UIViewController {
              sqlite3_step(stmt)
              print("Saved successfully")
             
+            
+            
+            
+            //Elimina Tabella. Quando Spostiamo le due funzioni successive nel tutorial non serve piu
+            if sqlite3_exec(db, "DROP TABLE Week", nil, nil, nil) != SQLITE_OK {
+                let errmsg = String(cString: sqlite3_errmsg(db)!)
+                print("error creating table: \(errmsg)")
+            }
+            
+            //Crea Tabella. Per valore che dice se mostrare Weekly
+            if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS Week (id INTEGER PRIMARY KEY AUTOINCREMENT,valore TEXT)", nil, nil, nil) != SQLITE_OK {
+                let errmsg = String(cString: sqlite3_errmsg(db)!)
+                print("error creating table: \(errmsg)")
+             }
+             
+             //Inserisce Valore. Va nel tutorial
+             queryString = "INSERT INTO Week(valore) VALUES ('1');"
+             sqlite3_prepare(db, queryString, -1, &stmt, nil)
+             sqlite3_step(stmt)
+             print("Saved successfully")
+            
             //Elimina Tabella. Quando Spostiamo le due funzioni successive nel tutorial non serve piu
             if sqlite3_exec(db, "DROP TABLE Date", nil, nil, nil) != SQLITE_OK {
                 let errmsg = String(cString: sqlite3_errmsg(db)!)

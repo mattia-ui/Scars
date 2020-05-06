@@ -15,11 +15,27 @@ class MyTapGesture1: UITapGestureRecognizer {
     var id1 = Int()
 }
 
+struct WeeklyStruct {
+    var descr: String
+    var image: String
+}
+
+var weeklyInfo: [WeeklyStruct] = [
+    WeeklyStruct(descr: "CIAO", image:"2-.png"),
+    WeeklyStruct(descr: "CIAO", image:"2-.png"),
+    WeeklyStruct(descr: "CIAO", image:"2-.png"),
+    WeeklyStruct(descr: "CIAO", image:"2-.png")
+]
+
 class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     var i = 1
     @IBOutlet weak var activity: UICollectionView!
+    @IBOutlet weak var imageW: UIImageView!
+    @IBOutlet weak var descW: UILabel!
+    
     static var allImages: [String] = ["unchecked","unchecked","unchecked","unchecked","unchecked"]
+    static var weekly: WeeklyStruct = WeeklyStruct(descr: "", image: "")
     
     @IBAction func secret(_ sender: Any) {
         if(i == 15){
@@ -62,6 +78,14 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         
         var db: OpaquePointer?
+        let dateNow = Date()
+        let calendar2 = Calendar.current
+        let components2 = calendar2.dateComponents([.year, .month, .day, .hour, .minute, .second, .weekday], from: dateNow)
+        let month2 = components2.month ?? 0
+        let day2 = components2.day ?? 0
+        let hour2 = components2.hour ?? 0
+        let minute2 = components2.minute ?? 0
+        let weekday = components2.minute ?? 0
         
         //Si connette al DB
         let fileURL = try!
@@ -87,29 +111,42 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
             min = Int(String(cString: sqlite3_column_text(stmt, 4))) ?? 0
         }
         
-        let dateNow = Date()
-        let calendar2 = Calendar.current
-        let components2 = calendar2.dateComponents([.year, .month, .day, .hour, .minute, .second], from: dateNow)
-        let month2 = components2.month ?? 0
-        let day2 = components2.day ?? 0
-        let hour2 = components2.hour ?? 0
-        let minute2 = components2.minute ?? 0
-                
         if(month2 > m || day2 > day){
-            print(day2)
-            print(day)
-            //Inserisce Valore. Va nel tutorial
             queryString = "UPDATE Date SET mese = '\(month2)', giorno = '\(day2)', ora = '\(hour2)', minuti = '\(minute2)';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
             
-            //Inserisce Valore. Va nel tutorial
             queryString = "UPDATE InfoSchermata1 SET c1 = 'unchecked', c2 = 'unchecked', c3 = 'unchecked', c4 = 'unchecked', c5 = 'unchecked';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
         }
+        
+        //Recupera Valore
+        queryString = "SELECT * FROM Week"
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+        let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error preparing insert: \(errmsg)")
+            return
+        }
+        
+        var w = 0
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            w = Int(String(cString: sqlite3_column_text(stmt, 1))) ?? 0
+        }
+        
+        if(weekday == 7){
+            w = w + 1
+            queryString = "UPDATE Week SET valore = '\(w)';"
+            sqlite3_prepare(db, queryString, -1, &stmt, nil)
+            sqlite3_step(stmt)
+            print("Saved successfully")
+        }
+                
+        Schermata1.weekly = weeklyInfo[w]
+        imageW.image = UIImage(named: Schermata1.weekly.image)
+        descW.text = Schermata1.weekly.descr
         
         //Recupera Valore
         queryString = "SELECT * FROM InfoSchermata1"
