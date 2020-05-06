@@ -33,7 +33,7 @@ class Schermata3: UIViewController {
         
         //Recupera Valore
         var d = ""
-        var queryString = "SELECT * FROM Collage"
+        let queryString = "SELECT * FROM Collage"
         if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("error preparing insert: \(errmsg)")

@@ -677,7 +677,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                       
         //Update Valore
         var stmt: OpaquePointer?
-        var queryString = "UPDATE Collage SET valore = 'no' WHERE id = 1;"
+        let queryString = "UPDATE Collage SET valore = 'no' WHERE id = 1;"
         sqlite3_prepare(db, queryString, -1, &stmt, nil)
         sqlite3_step(stmt)
         print("Saved successfully")
