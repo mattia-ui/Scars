@@ -86,7 +86,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
     
     @objc func goLink(sender : MyTap) {
         if let url = NSURL(string: sender.link){
-            UIApplication.shared.openURL(url as URL)
+            UIApplication.shared.open(url as URL)
         }
      }
 
