@@ -10,7 +10,100 @@ import Foundation
 import UIKit
 import SQLite3
 
-class PrimaTutorial : UIViewController {
+class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelegate{
+
+    @IBOutlet weak var illustrazione: UIImageView!
+    @IBOutlet weak var welcome: UILabel!
+    @IBOutlet weak var frase1: UILabel!
+    @IBOutlet weak var domanda1: UILabel!
+    @IBOutlet weak var nome1: UITextField!
+    @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var TableView: UITableView!
+    @IBOutlet weak var LastStep: UILabel!
+    @IBOutlet weak var domande3: UILabel!
+    @IBOutlet weak var button3: UIButton!
+    
+    func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
+           print(view.frame.origin.x)
+               UIView.animate(withDuration: aCircleTime, animations: { () -> Void in
+                   view.transform = CGAffineTransform(translationX: to, y: 0)})
+       
+       }
+    
+    @IBAction func startPressed(_ sender: UIButton) {
+        traslate(view: illustrazione, aCircleTime: 0.2, to: -100)
+        traslate(view: welcome, aCircleTime: 0.2, to: -100)
+        traslate(view: frase1, aCircleTime: 0.2, to: -100)
+        traslate(view: domanda1, aCircleTime: 0.2, to: -100)
+        traslate(view: nome1, aCircleTime: 0.2, to: -100)
+        traslate(view: button1, aCircleTime: 0.2, to: -100)
+        traslate(view: TableView, aCircleTime: 0.2, to: -100)
+        traslate(view: LastStep, aCircleTime: 0.2, to: -100)
+        traslate(view: domande3, aCircleTime: 0.2, to: -100)
+        traslate(view: button3, aCircleTime: 0.2, to: -100)
+        sleep(UInt32(0.2))
+        
+        traslate(view: illustrazione, aCircleTime: 0.4, to: -364)
+        traslate(view: welcome, aCircleTime: 0.4, to: -364)
+        traslate(view: frase1, aCircleTime: 0.4, to: -364)
+        traslate(view: domanda1, aCircleTime: 0.4, to: -364)
+        traslate(view: nome1, aCircleTime: 0.4, to: -364)
+        traslate(view: button1, aCircleTime: 0.4, to: -364)
+        traslate(view: TableView, aCircleTime: 0.4, to: -364)
+        traslate(view: LastStep, aCircleTime: 0.4, to: -364)
+        traslate(view: domande3, aCircleTime: 0.4, to: -364)
+        traslate(view: button3, aCircleTime: 0.4, to: -364)
+        sleep(UInt32(0.4))
+
+        traslate(view: illustrazione, aCircleTime: 0.1, to: -414)
+        traslate(view: welcome, aCircleTime: 0.1, to: -414)
+        traslate(view: frase1, aCircleTime: 0.1, to: -414)
+        traslate(view: domanda1, aCircleTime: 0.1, to: -414)
+        traslate(view: nome1, aCircleTime: 0.1, to: -414)
+        traslate(view: button1, aCircleTime: 0.1, to: -414)
+        traslate(view: TableView, aCircleTime: 0.1, to: -414)
+        traslate(view: LastStep, aCircleTime: 0.1, to: -414)
+        traslate(view: domande3, aCircleTime: 0.1, to: -414)
+        traslate(view: button3, aCircleTime: 0.1, to: -414)
+    }
+    @IBAction func donePressed(_ sender: UIButton) {
+        traslate(view: illustrazione, aCircleTime: 0.2, to: -514)
+        traslate(view: welcome, aCircleTime: 0.2, to: -514)
+        traslate(view: frase1, aCircleTime: 0.2, to: -514)
+        traslate(view: domanda1, aCircleTime: 0.2, to: -514)
+        traslate(view: nome1, aCircleTime: 0.2, to: -514)
+        traslate(view: button1, aCircleTime: 0.2, to: -514)
+        traslate(view: TableView, aCircleTime: 0.2, to: -514)
+        traslate(view: LastStep, aCircleTime: 0.2, to: -514)
+        traslate(view: domande3, aCircleTime: 0.2, to: -514)
+        traslate(view: button3, aCircleTime: 0.2, to: -514)
+        sleep(UInt32(0.2))
+        
+        traslate(view: illustrazione, aCircleTime: 0.4, to: -778)
+        traslate(view: welcome, aCircleTime: 0.4, to: -778)
+        traslate(view: frase1, aCircleTime: 0.4, to: -778)
+        traslate(view: domanda1, aCircleTime: 0.4, to: -778)
+        traslate(view: nome1, aCircleTime: 0.4, to: -778)
+        traslate(view: button1, aCircleTime: 0.4, to: -778)
+        traslate(view: TableView, aCircleTime: 0.4, to: -778)
+        traslate(view: LastStep, aCircleTime: 0.4, to: -778)
+        traslate(view: domande3, aCircleTime: 0.4, to: -778)
+        traslate(view: button3, aCircleTime: 0.4, to: -778)
+        sleep(UInt32(0.4))
+
+        traslate(view: illustrazione, aCircleTime: 0.1, to: -828)
+        traslate(view: welcome, aCircleTime: 0.1, to: -828)
+        traslate(view: frase1, aCircleTime: 0.1, to: -828)
+        traslate(view: domanda1, aCircleTime: 0.1, to: -828)
+        traslate(view: nome1, aCircleTime: 0.1, to: -828)
+        traslate(view: button1, aCircleTime: 0.1, to: -828)
+        traslate(view: TableView, aCircleTime: 0.1, to: -828)
+        traslate(view: LastStep, aCircleTime: 0.1, to: -828)
+        traslate(view: domande3, aCircleTime: 0.1, to: -828)
+        traslate(view: button3, aCircleTime: 0.1, to: -828)
+
+    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
            super.viewWillAppear(animated)
@@ -142,6 +235,77 @@ class PrimaTutorial : UIViewController {
     @objc func dismissKeyboard1() {
            view.endEditing(true)
        }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return 8
+        }
+
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            
+           if indexPath.row == 0 {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as? Cella1 else {
+                return UITableViewCell()
+            }
+            
+            return cell
+            
+        }else if indexPath.row == 1{
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
+                   return UITableViewCell()
+               }
+            cell.button.setTitle("Movies and TV Shows", for: .normal)
+               return cell
+           }else if indexPath.row == 2{
+           guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
+                      return UITableViewCell()
+                  }
+                  cell.button.setTitle("Inspiring people", for: .normal)
+                  return cell
+              }else if indexPath.row == 3{
+              guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
+                         return UITableViewCell()
+                     }
+                     cell.button.setTitle("Articles", for: .normal)
+                     return cell
+                 }else if indexPath.row == 4{
+                 guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
+                            return UITableViewCell()
+                        }
+                        cell.button.setTitle("TEDx", for: .normal)
+                        return cell
+                    }else if indexPath.row == 5{
+                    guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
+                               return UITableViewCell()
+                           }
+                           cell.button.setTitle("Podcasts", for: .normal)
+                           return cell
+                       }else if indexPath.row == 6{
+                       guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
+                                  return UITableViewCell()
+                              }
+                              cell.button.setTitle("Books", for: .normal)
+                              return cell
+                          }else{
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell3") as? Cella3 else {
+                          return UITableViewCell()
+                      }
+            cell.done.setTitle("Done", for: .normal)
+                      return cell
+            }
+    }
+        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            if(indexPath.row == 0){
+                           return 120
+                       }
+            if(indexPath.row == 7){
+                return 200
+            }
+            return 100
+        }
+        
+        override func didReceiveMemoryWarning() {
+               super.didReceiveMemoryWarning()
+           }
     
     
 }
