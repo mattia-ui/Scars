@@ -23,12 +23,33 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var domande3: UILabel!
     @IBOutlet weak var button3: UIButton!
     
+    var db: OpaquePointer?
+    var stmt: OpaquePointer?
+
+    var selected : [String] = ["","","","","",""]
+    
+    func setSelected(stringa: String, n: Int){
+        print(stringa)
+        selected[n] = stringa
+    }
+    
     func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
            print(view.frame.origin.x)
                UIView.animate(withDuration: aCircleTime, animations: { () -> Void in
                    view.transform = CGAffineTransform(translationX: to, y: 0)})
        
        }
+    @IBAction func buttonCellPressed(_ sender: UIButton) {
+        if(sender.isSelected){
+                   sender.isSelected = false
+                   PrimaTutorial().setSelected(stringa: "", n: sender.tag )
+               }else{
+                   sender.isSelected = true
+                   let s : String = String(String(describing: sender.title(for: .normal)).dropFirst(10).dropLast(2))
+            print(sender.tag)
+                   selected[sender.tag] = s
+        }
+    }
     
     @IBAction func startPressed(_ sender: UIButton) {
         traslate(view: illustrazione, aCircleTime: 0.2, to: -100)
@@ -101,6 +122,10 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         traslate(view: LastStep, aCircleTime: 0.1, to: -828)
         traslate(view: domande3, aCircleTime: 0.1, to: -828)
         traslate(view: button3, aCircleTime: 0.1, to: -828)
+        
+       let queryString = "UPDATE Insights SET b1 = '\(selected[0])',b2 = '\(selected[1])',b3 = '\(selected[2])',b4 = '\(selected[3])',b5 = '\(selected[4])';"
+                   sqlite3_prepare(db, queryString, -1, &stmt, nil)
+                   sqlite3_step(stmt)
 
     }
     
@@ -112,7 +137,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var db: OpaquePointer?
+//        var db: OpaquePointer?
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard1))
         view.addGestureRecognizer(tap)
@@ -149,7 +174,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
              }
              
              //Inserisce Valore. Va nel tutorial
-             var stmt: OpaquePointer?
+//             var stmt: OpaquePointer?
              var queryString = "INSERT INTO Collage(valore) VALUES ('si');"
              sqlite3_prepare(db, queryString, -1, &stmt, nil)
              sqlite3_step(stmt)
@@ -246,7 +271,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as? Cella1 else {
                 return UITableViewCell()
             }
-            
+//            cell.Hi.text = "Hi, \(String(describing: nome1.text))!"
             return cell
             
         }else if indexPath.row == 1{
@@ -254,42 +279,47 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
                    return UITableViewCell()
                }
             cell.button.setTitle("Movies and TV Shows", for: .normal)
+            cell.button.tag = 0
                return cell
            }else if indexPath.row == 2{
            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
                       return UITableViewCell()
                   }
                   cell.button.setTitle("Inspiring people", for: .normal)
+                  cell.button.tag = 1
                   return cell
               }else if indexPath.row == 3{
               guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
                          return UITableViewCell()
                      }
                      cell.button.setTitle("Articles", for: .normal)
+                     cell.button.tag = 2
                      return cell
                  }else if indexPath.row == 4{
                  guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
                             return UITableViewCell()
                         }
                         cell.button.setTitle("TEDx", for: .normal)
+                        cell.button.tag = 3
                         return cell
                     }else if indexPath.row == 5{
                     guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
                                return UITableViewCell()
                            }
                            cell.button.setTitle("Podcasts", for: .normal)
+                            cell.button.tag = 4
                            return cell
                        }else if indexPath.row == 6{
                        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
                                   return UITableViewCell()
                               }
                               cell.button.setTitle("Books", for: .normal)
+                                cell.button.tag = 5
                               return cell
                           }else{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell3") as? Cella3 else {
                           return UITableViewCell()
                       }
-            cell.done.setTitle("Done", for: .normal)
                       return cell
             }
     }
