@@ -26,6 +26,7 @@ struct ins {
     var mov: [Cont]
     var art: [Cont]
     var artists: [Cont]
+    var books: [Cont]
 }
 
 var structIns = [ins(
@@ -43,13 +44,15 @@ var structIns = [ins(
         Cont(image: "2-.jpg", title:"t", descr: "esempio Articols", fonte:"f", link: "https://www.google.com/?client=safari")],
     artists:[
         Cont(image: "2-.jpg", title:"t", descr: "esempio Artistis", fonte:"f", link: "https://www.google.com/?client=safari"),
-        Cont(image: "2-.jpg", title:"t", descr: "esempio Artistis", fonte:"f", link: "https://www.google.com/?client=safari")
-    ]
+        Cont(image: "2-.jpg", title:"t", descr: "esempio Artistis", fonte:"f", link: "https://www.google.com/?client=safari")],
+    books:[
+        Cont(image: "2-.jpg", title:"t", descr: "esempio Books", fonte:"f", link: "https://www.google.com/?client=safari"),
+        Cont(image: "2-.jpg", title:"t", descr: "esempio Books", fonte:"f", link: "https://www.google.com/?client=safari")]
 )]
 
 class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate {
     
-    static var insights: [String] = ["","","","",""]
+    static var insights: [String] = ["","","","","",""]
     var contenuto: [Cont] = []
     
     let light = Notification.Name(rawValue: NotificationKey)
@@ -63,6 +66,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
     @IBOutlet weak var b3: UIButton!
     @IBOutlet weak var b4: UIButton!
     @IBOutlet weak var b5: UIButton!
+    @IBOutlet weak var b6: UIButton!
     
     @IBOutlet weak var myCollectionView: UICollectionView!
     
@@ -96,6 +100,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         b3.setTitle(Schermata2.insights[2], for: .normal)
         b4.setTitle(Schermata2.insights[3], for: .normal)
         b5.setTitle(Schermata2.insights[4], for: .normal)
+        b6.setTitle(Schermata2.insights[5], for: .normal)
     }
 
     override func viewDidLoad() {
@@ -114,14 +119,18 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
             if(Schermata2.insights[0] == "Articols"){
                 contenuto = structIns[0].art
             }
-            if(Schermata2.insights[0] == "Artists"){
+            if(Schermata2.insights[0] == "Artist"){
                 contenuto = structIns[0].artists
+            }
+            if(Schermata2.insights[0] == "Books"){
+                contenuto = structIns[0].books
             }
             b1.isSelected = true
             b2.isSelected = false
             b3.isSelected = false
             b4.isSelected = false
             b5.isSelected = false
+            b6.isSelected = false
             myCollectionView.reloadData()
         }
         createObservers()
@@ -155,6 +164,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
             Schermata2.insights[2] = String(cString: sqlite3_column_text(stmt, 3))
             Schermata2.insights[3] = String(cString: sqlite3_column_text(stmt, 4))
             Schermata2.insights[4] = String(cString: sqlite3_column_text(stmt, 5))
+            Schermata2.insights[5] = String(cString: sqlite3_column_text(stmt, 6))
         }
     }
     
@@ -165,6 +175,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         b3.setTitle(Schermata2.insights[2], for: .normal)
         b4.setTitle(Schermata2.insights[3], for: .normal)
         b5.setTitle(Schermata2.insights[4], for: .normal)
+        b6.setTitle(Schermata2.insights[5], for: .normal)
         if(Schermata2.insights[0] != ""){
             if(Schermata2.insights[0] == "Podcast"){
                 contenuto = structIns[0].pod
@@ -178,14 +189,18 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
             if(Schermata2.insights[0] == "Articols"){
                 contenuto = structIns[0].art
             }
-            if(Schermata2.insights[0] == "Artists"){
+            if(Schermata2.insights[0] == "Artist"){
                 contenuto = structIns[0].artists
+            }
+            if(Schermata2.insights[0] == "Books"){
+                contenuto = structIns[0].books
             }
             b1.isSelected = true
             b2.isSelected = false
             b3.isSelected = false
             b4.isSelected = false
             b5.isSelected = false
+            b6.isSelected = false
             myCollectionView.reloadData()
         }
     }
@@ -199,6 +214,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
                 b3.isSelected = false
                 b4.isSelected = false
                 b5.isSelected = false
+                b6.isSelected = false
                 sender.isSelected = true
             }
         }
@@ -210,6 +226,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
                 b3.isSelected = false
                 b4.isSelected = false
                 b5.isSelected = false
+                b6.isSelected = false
                 sender.isSelected = true
             }
         }
@@ -221,6 +238,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
                 b3.isSelected = false
                 b4.isSelected = false
                 b5.isSelected = false
+                b6.isSelected = false
                 sender.isSelected = true
             }
         }
@@ -232,6 +250,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
                 b3.isSelected = false
                 b4.isSelected = false
                 b5.isSelected = false
+                b6.isSelected = false
                 sender.isSelected = true
             }
         }
@@ -243,6 +262,19 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
                 b3.isSelected = false
                 b4.isSelected = false
                 b5.isSelected = false
+                b6.isSelected = false
+                sender.isSelected = true
+            }
+        }
+        if(sender.titleLabel?.text == "Books"){
+            contenuto = structIns[0].books
+            if !sender.isSelected {
+                b1.isSelected = false
+                b2.isSelected = false
+                b3.isSelected = false
+                b4.isSelected = false
+                b5.isSelected = false
+                b6.isSelected = false
                 sender.isSelected = true
             }
         }

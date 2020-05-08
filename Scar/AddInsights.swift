@@ -16,7 +16,8 @@ class AddInsights: UIViewController {
     @IBOutlet weak var mov: UIButton!
     @IBOutlet weak var art: UIButton!
     @IBOutlet weak var artist: UIButton!
-        
+    @IBOutlet weak var books: UIButton!
+    
     static var j: Int = 0
     var db: OpaquePointer?
     var stmt: OpaquePointer?
@@ -50,6 +51,11 @@ class AddInsights: UIViewController {
                 AddInsights.j = AddInsights.j + 1
                 artist.isSelected = true
             }
+            
+            if(Schermata2.insights[i] == "Books"){
+                AddInsights.j = AddInsights.j + 1
+                books.isSelected = true
+            }
         }
     }
     
@@ -77,7 +83,7 @@ class AddInsights: UIViewController {
             Schermata2.insights = temp
             Schermata2.insights.append("")
             
-            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])';"
+            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b5 = '\(Schermata2.insights[5])';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -91,7 +97,8 @@ class AddInsights: UIViewController {
                 case 1: ins = "b2"
                 case 2: ins = "b3"
                 case 3: ins = "b4"
-                default: ins = "b5"
+                case 4: ins = "b5"
+                default: ins = "b6"
             }
             let queryString = "UPDATE Insights SET \(ins) = 'Podcast';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
@@ -120,7 +127,7 @@ class AddInsights: UIViewController {
             Schermata2.insights = temp
             Schermata2.insights.append("")
             
-            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])';"
+            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b5 = '\(Schermata2.insights[5])';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -134,7 +141,8 @@ class AddInsights: UIViewController {
                 case 1: ins = "b2"
                 case 2: ins = "b3"
                 case 3: ins = "b4"
-                default: ins = "b5"
+                case 4: ins = "b5"
+                default: ins = "b6"
             }
             let queryString = "UPDATE Insights SET \(ins) = 'Wellbein';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
@@ -162,7 +170,7 @@ class AddInsights: UIViewController {
             AddInsights.j = AddInsights.j - 1
             Schermata2.insights = temp
             Schermata2.insights.append("")
-            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])';"
+            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b5 = '\(Schermata2.insights[5])';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -176,7 +184,8 @@ class AddInsights: UIViewController {
                 case 1: ins = "b2"
                 case 2: ins = "b3"
                 case 3: ins = "b4"
-                default: ins = "b5"
+                case 4: ins = "b5"
+                default: ins = "b6"
             }
             let queryString = "UPDATE Insights SET \(ins) = 'Movies';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
@@ -205,7 +214,7 @@ class AddInsights: UIViewController {
             Schermata2.insights = temp
             Schermata2.insights.append("")
             
-            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])';"
+            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b5 = '\(Schermata2.insights[5])';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -219,7 +228,8 @@ class AddInsights: UIViewController {
                 case 1: ins = "b2"
                 case 2: ins = "b3"
                 case 3: ins = "b4"
-                default: ins = "b5"
+                case 4: ins = "b5"
+                default: ins = "b6"
             }
             let queryString = "UPDATE Insights SET \(ins) = 'Articols';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
@@ -248,7 +258,7 @@ class AddInsights: UIViewController {
             Schermata2.insights = temp
             Schermata2.insights.append("")
             
-            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])';"
+            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b5 = '\(Schermata2.insights[5])';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -262,7 +272,8 @@ class AddInsights: UIViewController {
                 case 1: ins = "b2"
                 case 2: ins = "b3"
                 case 3: ins = "b4"
-                default: ins = "b5"
+                case 4: ins = "b5"
+                default: ins = "b6"
             }
             let queryString = "UPDATE Insights SET \(ins) = 'Artist';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
@@ -271,4 +282,50 @@ class AddInsights: UIViewController {
             AddInsights.j = AddInsights.j + 1
         }
     }
+    
+    @IBAction func books(_ sender: UIButton) {
+        //Si connette al DB
+        let fileURL = try!
+        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+        if sqlite3_open(fileURL.path, &db) !=
+            SQLITE_OK {
+            print("error opening database")
+        }
+            
+        if sender.isSelected {
+            books.isSelected = false
+            for i in 0...Schermata2.insights.count - 1{
+                if(Schermata2.insights[i] != "Books"){
+                    temp.append(Schermata2.insights[i])
+                }
+            }
+            AddInsights.j = AddInsights.j - 1
+            Schermata2.insights = temp
+            Schermata2.insights.append("")
+                
+            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b5 = '\(Schermata2.insights[5])';"
+            sqlite3_prepare(db, queryString, -1, &stmt, nil)
+            sqlite3_step(stmt)
+            print("Saved successfully")
+        } else {
+            books.isSelected = true
+                
+            //Update Valore
+            var ins = ""
+            switch AddInsights.j {
+                case 0: ins = "b1"
+                case 1: ins = "b2"
+                case 2: ins = "b3"
+                case 3: ins = "b4"
+                case 4: ins = "b5"
+                default: ins = "b6"
+            }
+            let queryString = "UPDATE Insights SET \(ins) = 'Books';"
+            sqlite3_prepare(db, queryString, -1, &stmt, nil)
+            sqlite3_step(stmt)
+            print("Saved successfully")
+            AddInsights.j = AddInsights.j + 1
+        }
+    }
 }
+

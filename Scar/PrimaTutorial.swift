@@ -123,7 +123,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         traslate(view: domande3, aCircleTime: 0.1, to: -828)
         traslate(view: button3, aCircleTime: 0.1, to: -828)
         
-       let queryString = "UPDATE Insights SET b1 = '\(selected[0])',b2 = '\(selected[1])',b3 = '\(selected[2])',b4 = '\(selected[3])',b5 = '\(selected[4])';"
+       let queryString = "UPDATE Insights SET b1 = '\(selected[0])',b2 = '\(selected[1])',b3 = '\(selected[2])',b4 = '\(selected[3])',b5 = '\(selected[4])', b6 = '\(selected[5])';"
                    sqlite3_prepare(db, queryString, -1, &stmt, nil)
                    sqlite3_step(stmt)
 
@@ -244,13 +244,13 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             }
                       
             //Crea Tabella. Per valore che dice se mostrare fakeInsta
-            if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS Insights (id INTEGER PRIMARY KEY AUTOINCREMENT,b1 TEXT, b2 TEXT, b3 TEXT, b4 TEXT, b5 TEXT)", nil, nil, nil) != SQLITE_OK {
+            if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS Insights (id INTEGER PRIMARY KEY AUTOINCREMENT,b1 TEXT, b2 TEXT, b3 TEXT, b4 TEXT, b5 TEXT, b6 TEXT)", nil, nil, nil) != SQLITE_OK {
                 let errmsg = String(cString: sqlite3_errmsg(db)!)
                 print("error creating table: \(errmsg)")
             }
                        
             //Inserisce Valore. Va nel tutorial
-            queryString = "INSERT INTO Insights(b1,b2,b3,b4,b5) VALUES ('','','','','');"
+            queryString = "INSERT INTO Insights(b1,b2,b3,b4,b5,b6) VALUES ('','','','','','');"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -278,35 +278,35 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
                    return UITableViewCell()
                }
-            cell.button.setTitle("Movies and TV Shows", for: .normal)
+            cell.button.setTitle("Artist", for: .normal)
             cell.button.tag = 0
                return cell
            }else if indexPath.row == 2{
            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
                       return UITableViewCell()
                   }
-                  cell.button.setTitle("Inspiring people", for: .normal)
+                  cell.button.setTitle("Wellbein", for: .normal)
                   cell.button.tag = 1
                   return cell
               }else if indexPath.row == 3{
               guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
                          return UITableViewCell()
                      }
-                     cell.button.setTitle("Articles", for: .normal)
+                     cell.button.setTitle("Articols", for: .normal)
                      cell.button.tag = 2
                      return cell
                  }else if indexPath.row == 4{
                  guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
                             return UITableViewCell()
                         }
-                        cell.button.setTitle("TEDx", for: .normal)
+                        cell.button.setTitle("Movies", for: .normal)
                         cell.button.tag = 3
                         return cell
                     }else if indexPath.row == 5{
                     guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
                                return UITableViewCell()
                            }
-                           cell.button.setTitle("Podcasts", for: .normal)
+                           cell.button.setTitle("Podcast", for: .normal)
                             cell.button.tag = 4
                            return cell
                        }else if indexPath.row == 6{
