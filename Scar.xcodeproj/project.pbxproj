@@ -46,6 +46,7 @@
 		76C147232460242200DAD927 /* Schermata2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C147222460242200DAD927 /* Schermata2.swift */; };
 		76C14725246026BB00DAD927 /* AddInsights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C14724246026BB00DAD927 /* AddInsights.swift */; };
 		76C1472724603A2A00DAD927 /* InsightsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1472624603A2A00DAD927 /* InsightsCollection.swift */; };
+		76C7D47C2466F19C00E82414 /* TableViewActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7D47B2466F19C00E82414 /* TableViewActivity.swift */; };
 		76CD0C292459C65800E9CA9B /* IstaPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD0C282459C65800E9CA9B /* IstaPage.swift */; };
 		76E9F0FE245B214B00D4921E /* ChooseShape2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E9F0FC245B214B00D4921E /* ChooseShape2.swift */; };
 		76E9F0FF245B214B00D4921E /* ChooseShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E9F0FD245B214B00D4921E /* ChooseShape.swift */; };
@@ -121,6 +122,7 @@
 		76C147222460242200DAD927 /* Schermata2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schermata2.swift; sourceTree = "<group>"; };
 		76C14724246026BB00DAD927 /* AddInsights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInsights.swift; sourceTree = "<group>"; };
 		76C1472624603A2A00DAD927 /* InsightsCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsCollection.swift; sourceTree = "<group>"; };
+		76C7D47B2466F19C00E82414 /* TableViewActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewActivity.swift; sourceTree = "<group>"; };
 		76CD0C282459C65800E9CA9B /* IstaPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IstaPage.swift; sourceTree = "<group>"; };
 		76E9F0FC245B214B00D4921E /* ChooseShape2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseShape2.swift; sourceTree = "<group>"; };
 		76E9F0FD245B214B00D4921E /* ChooseShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseShape.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				345F14D024573808003EE819 /* ViewController.swift */,
 				6B01C7992461A7980040EA77 /* PrimaTutorial.swift */,
 				6B01C79B2461A7BC0040EA77 /* SecondaTutorial.swift */,
+				76C7D47B2466F19C00E82414 /* TableViewActivity.swift */,
 				6B01C79D2461A7D90040EA77 /* TerzaTutorial.swift */,
 				6BAD16A22464A53200859C79 /* Cella1.swift */,
 				6BAD16A42464A53A00859C79 /* Cella2.swift */,
@@ -430,6 +433,7 @@
 				6B01C79A2461A7980040EA77 /* PrimaTutorial.swift in Sources */,
 				345F14CD24573808003EE819 /* AppDelegate.swift in Sources */,
 				76F08B39245DEE8C002A6F19 /* Schermata1.swift in Sources */,
+				76C7D47C2466F19C00E82414 /* TableViewActivity.swift in Sources */,
 				345F14CF24573808003EE819 /* SceneDelegate.swift in Sources */,
 				76F08B3D245DF36F002A6F19 /* PostCollage.swift in Sources */,
 				76C147232460242200DAD927 /* Schermata2.swift in Sources */,

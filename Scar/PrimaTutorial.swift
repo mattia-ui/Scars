@@ -27,29 +27,38 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     
     var db: OpaquePointer?
     var stmt: OpaquePointer?
+    static var j = 0
 
     var selected : [String] = ["","","","","",""]
     
-    func setSelected(stringa: String, n: Int){
-        print(stringa)
-        selected[n] = stringa
+    func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
+        print(view.frame.origin.x)
+        UIView.animate(withDuration: aCircleTime, animations: {
+            () -> Void in view.transform = CGAffineTransform(translationX: to, y: 0)
+        })
     }
     
-    func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
-           print(view.frame.origin.x)
-               UIView.animate(withDuration: aCircleTime, animations: { () -> Void in
-                   view.transform = CGAffineTransform(translationX: to, y: 0)})
-       
-       }
     @IBAction func buttonCellPressed(_ sender: UIButton) {
-        if(sender.isSelected){
-                   sender.isSelected = false
-                   PrimaTutorial().setSelected(stringa: "", n: sender.tag )
-               }else{
-                   sender.isSelected = true
-                   let s : String = String(String(describing: sender.title(for: .normal)).dropFirst(10).dropLast(2))
-            print(sender.tag)
-                   selected[sender.tag] = s
+
+        var temp : [String] = []
+        if sender.isSelected {
+            sender.isSelected = false
+            for i in 0...selected.count - 1{
+                if(selected[i] != String(sender.title(for: .normal)!)){
+                    temp.append(selected[i])
+                }
+            }
+            PrimaTutorial.j = PrimaTutorial.j  - 1
+            selected = temp
+            selected.append("")
+        } else {
+            sender.isSelected = true
+            selected[PrimaTutorial.j] = String(String(sender.title(for: .normal) ?? ""))
+            PrimaTutorial.j  = PrimaTutorial.j  + 1
+        }
+        
+        for k in 0...selected.count - 1{
+            print(selected[k])
         }
     }
     
@@ -246,13 +255,13 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             }
                       
             //Crea Tabella. Per valore che dice se mostrare le check checcate o no
-            if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS InfoSchermata1 (id INTEGER PRIMARY KEY AUTOINCREMENT,c1 TEXT,c2 TEXT,c3 TEXT,c4 TEXT,c5 TEXT)", nil, nil, nil) != SQLITE_OK {
+            if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS InfoSchermata1 (id INTEGER PRIMARY KEY AUTOINCREMENT,c1 TEXT,c2 TEXT,c3 TEXT,c4 TEXT,c5 TEXT,c6 TEXT)", nil, nil, nil) != SQLITE_OK {
                 let errmsg = String(cString: sqlite3_errmsg(db)!)
                 print("error creating table: \(errmsg)")
             }
                        
             //Inserisce Valore. Va nel tutorial
-            queryString = "INSERT INTO InfoSchermata1 (c1,c2,c3,c4,c5) VALUES ('unchecked', 'unchecked', 'unchecked', 'unchecked', 'unchecked');"
+            queryString = "INSERT INTO InfoSchermata1 (c1,c2,c3,c4,c5,c6) VALUES ('unchecked', 'unchecked', 'unchecked', 'unchecked', 'unchecked','unchecked');"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -285,7 +294,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             return 8
         }
 
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             
            if indexPath.row == 0 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as? Cella1 else {
