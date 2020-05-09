@@ -208,7 +208,6 @@
 				76C14724246026BB00DAD927 /* AddInsights.swift */,
 				342BF2CB2460D006004CD081 /* CollectionViewCell1.swift */,
 				76F8FF142458AFDB00E50D7F /* Collage.swift */,
-				342BF30B2466B806004CD081 /* Cera Pro */,
 				76E9F0FD245B214B00D4921E /* ChooseShape.swift */,
 				76E9F0FC245B214B00D4921E /* ChooseShape2.swift */,
 				76C13DE6245B255C00D1AE9F /* ChoosePalette.swift */,
@@ -236,6 +235,7 @@
 				6BAD16A62464A54600859C79 /* Cella3.swift */,
 				345F14D224573808003EE819 /* Main.storyboard */,
 				345F14D724573809003EE819 /* LaunchScreen.storyboard */,
+				342BF30B2466B806004CD081 /* Cera Pro */,
 				345F14D524573809003EE819 /* Assets.xcassets */,
 				345F14DA24573809003EE819 /* Info.plist */,
 			);
