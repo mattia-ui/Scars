@@ -12,6 +12,18 @@
 		342BF26E245DDA34004CD081 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342BF26D245DDA34004CD081 /* CollectionViewCell.swift */; };
 		342BF2CC2460D006004CD081 /* CollectionViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342BF2CB2460D006004CD081 /* CollectionViewCell1.swift */; };
 		342BF2CE2460D025004CD081 /* ViewControllerInitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342BF2CD2460D025004CD081 /* ViewControllerInitial.swift */; };
+		342BF3182466B806004CD081 /* Cera Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 342BF30C2466B806004CD081 /* Cera Pro Light.otf */; };
+		342BF3192466B806004CD081 /* Cera Pro Thin Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 342BF30D2466B806004CD081 /* Cera Pro Thin Italic.otf */; };
+		342BF31A2466B806004CD081 /* Cera Pro Regular Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 342BF30E2466B806004CD081 /* Cera Pro Regular Italic.otf */; };
+		342BF31B2466B806004CD081 /* Cera Pro Black Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 342BF30F2466B806004CD081 /* Cera Pro Black Italic.otf */; };
+		342BF31C2466B806004CD081 /* Cera Pro Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 342BF3102466B806004CD081 /* Cera Pro Regular.otf */; };
+		342BF31D2466B806004CD081 /* Cera Pro Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 342BF3112466B806004CD081 /* Cera Pro Bold Italic.otf */; };
+		342BF31E2466B806004CD081 /* Cera Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 342BF3122466B806004CD081 /* Cera Pro Bold.otf */; };
+		342BF31F2466B806004CD081 /* Cera Pro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 342BF3132466B806004CD081 /* Cera Pro Medium.otf */; };
+		342BF3202466B806004CD081 /* Cera Pro Medium Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 342BF3142466B806004CD081 /* Cera Pro Medium Italic.otf */; };
+		342BF3212466B806004CD081 /* Cera Pro Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 342BF3152466B806004CD081 /* Cera Pro Thin.otf */; };
+		342BF3222466B806004CD081 /* Cera Pro Light Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 342BF3162466B806004CD081 /* Cera Pro Light Italic.otf */; };
+		342BF3232466B806004CD081 /* Cera Pro Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 342BF3172466B806004CD081 /* Cera Pro Black.otf */; };
 		345F14CD24573808003EE819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F14CC24573808003EE819 /* AppDelegate.swift */; };
 		345F14CF24573808003EE819 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F14CE24573808003EE819 /* SceneDelegate.swift */; };
 		345F14D124573808003EE819 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F14D024573808003EE819 /* ViewController.swift */; };
@@ -68,6 +80,18 @@
 		342BF26D245DDA34004CD081 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		342BF2CB2460D006004CD081 /* CollectionViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell1.swift; sourceTree = "<group>"; };
 		342BF2CD2460D025004CD081 /* ViewControllerInitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInitial.swift; sourceTree = "<group>"; };
+		342BF30C2466B806004CD081 /* Cera Pro Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Light.otf"; sourceTree = "<group>"; };
+		342BF30D2466B806004CD081 /* Cera Pro Thin Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Thin Italic.otf"; sourceTree = "<group>"; };
+		342BF30E2466B806004CD081 /* Cera Pro Regular Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Regular Italic.otf"; sourceTree = "<group>"; };
+		342BF30F2466B806004CD081 /* Cera Pro Black Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Black Italic.otf"; sourceTree = "<group>"; };
+		342BF3102466B806004CD081 /* Cera Pro Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Regular.otf"; sourceTree = "<group>"; };
+		342BF3112466B806004CD081 /* Cera Pro Bold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Bold Italic.otf"; sourceTree = "<group>"; };
+		342BF3122466B806004CD081 /* Cera Pro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Bold.otf"; sourceTree = "<group>"; };
+		342BF3132466B806004CD081 /* Cera Pro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Medium.otf"; sourceTree = "<group>"; };
+		342BF3142466B806004CD081 /* Cera Pro Medium Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Medium Italic.otf"; sourceTree = "<group>"; };
+		342BF3152466B806004CD081 /* Cera Pro Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Thin.otf"; sourceTree = "<group>"; };
+		342BF3162466B806004CD081 /* Cera Pro Light Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Light Italic.otf"; sourceTree = "<group>"; };
+		342BF3172466B806004CD081 /* Cera Pro Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Black.otf"; sourceTree = "<group>"; };
 		345F14C924573808003EE819 /* Scar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		345F14CC24573808003EE819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		345F14CE24573808003EE819 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +159,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		342BF30B2466B806004CD081 /* Cera Pro */ = {
+			isa = PBXGroup;
+			children = (
+				342BF30C2466B806004CD081 /* Cera Pro Light.otf */,
+				342BF30D2466B806004CD081 /* Cera Pro Thin Italic.otf */,
+				342BF30E2466B806004CD081 /* Cera Pro Regular Italic.otf */,
+				342BF30F2466B806004CD081 /* Cera Pro Black Italic.otf */,
+				342BF3102466B806004CD081 /* Cera Pro Regular.otf */,
+				342BF3112466B806004CD081 /* Cera Pro Bold Italic.otf */,
+				342BF3122466B806004CD081 /* Cera Pro Bold.otf */,
+				342BF3132466B806004CD081 /* Cera Pro Medium.otf */,
+				342BF3142466B806004CD081 /* Cera Pro Medium Italic.otf */,
+				342BF3152466B806004CD081 /* Cera Pro Thin.otf */,
+				342BF3162466B806004CD081 /* Cera Pro Light Italic.otf */,
+				342BF3172466B806004CD081 /* Cera Pro Black.otf */,
+			);
+			name = "Cera Pro";
+			path = "../../../Downloads/Cera Pro";
+			sourceTree = "<group>";
+		};
 		345F14C024573808003EE819 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +208,7 @@
 				76C14724246026BB00DAD927 /* AddInsights.swift */,
 				342BF2CB2460D006004CD081 /* CollectionViewCell1.swift */,
 				76F8FF142458AFDB00E50D7F /* Collage.swift */,
+				342BF30B2466B806004CD081 /* Cera Pro */,
 				76E9F0FD245B214B00D4921E /* ChooseShape.swift */,
 				76E9F0FC245B214B00D4921E /* ChooseShape2.swift */,
 				76C13DE6245B255C00D1AE9F /* ChoosePalette.swift */,
@@ -329,8 +374,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				345F14D924573809003EE819 /* LaunchScreen.storyboard in Resources */,
+				342BF31E2466B806004CD081 /* Cera Pro Bold.otf in Resources */,
+				342BF3222466B806004CD081 /* Cera Pro Light Italic.otf in Resources */,
+				342BF31C2466B806004CD081 /* Cera Pro Regular.otf in Resources */,
+				342BF31D2466B806004CD081 /* Cera Pro Bold Italic.otf in Resources */,
+				342BF3182466B806004CD081 /* Cera Pro Light.otf in Resources */,
+				342BF3232466B806004CD081 /* Cera Pro Black.otf in Resources */,
+				342BF31B2466B806004CD081 /* Cera Pro Black Italic.otf in Resources */,
+				342BF31F2466B806004CD081 /* Cera Pro Medium.otf in Resources */,
 				345F14D624573809003EE819 /* Assets.xcassets in Resources */,
+				342BF3202466B806004CD081 /* Cera Pro Medium Italic.otf in Resources */,
+				342BF3192466B806004CD081 /* Cera Pro Thin Italic.otf in Resources */,
+				342BF31A2466B806004CD081 /* Cera Pro Regular Italic.otf in Resources */,
 				345F14D424573808003EE819 /* Main.storyboard in Resources */,
+				342BF3212466B806004CD081 /* Cera Pro Thin.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,7 +615,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Scar/Scar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = RL6WJW484U;
 				INFOPLIST_FILE = Scar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
@@ -579,7 +636,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Scar/Scar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = RL6WJW484U;
 				INFOPLIST_FILE = Scar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
