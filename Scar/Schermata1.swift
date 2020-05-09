@@ -34,7 +34,7 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     @IBOutlet weak var imageW: UIImageView!
     @IBOutlet weak var descW: UILabel!
     
-    static var allImages: [String] = ["unchecked","unchecked","unchecked","unchecked","unchecked"]
+    static var allImages: [String] = ["unchecked","unchecked","unchecked","unchecked","unchecked","unchecked"]
     static var weekly: WeeklyStruct = WeeklyStruct(descr: "", image: "")
     
     @IBAction func secret(_ sender: Any) {
@@ -117,7 +117,7 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
             sqlite3_step(stmt)
             print("Saved successfully")
             
-            queryString = "UPDATE InfoSchermata1 SET c1 = 'unchecked', c2 = 'unchecked', c3 = 'unchecked', c4 = 'unchecked', c5 = 'unchecked';"
+            queryString = "UPDATE InfoSchermata1 SET c1 = 'unchecked', c2 = 'unchecked', c3 = 'unchecked', c4 = 'unchecked', c5 = 'unchecked', c6 = 'unchecked';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -155,12 +155,15 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
             print("error preparing insert: \(errmsg)")
             return
         }
+        
         while(sqlite3_step(stmt) == SQLITE_ROW){
+            print(String(cString: sqlite3_column_text(stmt, 1)))
             Schermata1.allImages[0] = String(cString: sqlite3_column_text(stmt, 1))
             Schermata1.allImages[1] = String(cString: sqlite3_column_text(stmt, 2))
             Schermata1.allImages[2] = String(cString: sqlite3_column_text(stmt, 3))
             Schermata1.allImages[3] = String(cString: sqlite3_column_text(stmt, 4))
             Schermata1.allImages[4] = String(cString: sqlite3_column_text(stmt, 5))
+            Schermata1.allImages[5] = String(cString: sqlite3_column_text(stmt, 6))
         }
     }
         
