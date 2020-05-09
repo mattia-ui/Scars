@@ -21,6 +21,9 @@ struct ActivityStruct {
     var attivita4: [ContenutoStruct]
     var attivita5: [ContenutoStruct]
     var attivita6: [ContenutoStruct]
+    var attivita7: [ContenutoStruct]
+    var attivita8: [ContenutoStruct]
+    var attivita9: [ContenutoStruct]
 }
 
 var dati = [ActivityStruct(
@@ -38,6 +41,12 @@ var dati = [ActivityStruct(
     attivita5:
         [ContenutoStruct(contenuto: "", titolo: "")],
     attivita6:
+        [ContenutoStruct(contenuto: "", titolo: "")],
+    attivita7:
+        [ContenutoStruct(contenuto: "", titolo: "")],
+    attivita8:
+        [ContenutoStruct(contenuto: "", titolo: "")],
+    attivita9:
         [ContenutoStruct(contenuto: "", titolo: "")]
 )]
 
@@ -73,7 +82,10 @@ class ViewControllerInitial: UIViewController, UICollectionViewDataSource, UICol
             case 2: attivita = dati[0].attivita3
             case 3: attivita = dati[0].attivita4
             case 4: attivita = dati[0].attivita5
-            default: attivita = dati[0].attivita6
+            case 5: attivita = dati[0].attivita6
+            case 6: attivita = dati[0].attivita7
+            case 7: attivita = dati[0].attivita8
+            default: attivita = dati[0].attivita9
         }
         cardImage.image = UIImage(named: sfondi[id1])
 
@@ -98,7 +110,10 @@ class ViewControllerInitial: UIViewController, UICollectionViewDataSource, UICol
             case 2: att = "c3"
             case 3: att = "c4"
             case 4: att = "c5"
-            default: att = "c6"
+            case 5: att = "c6"
+            case 6: att = "c7"
+            case 7: att = "c8"
+            default: att = "c9"
         }
         let queryString = "UPDATE InfoSchermata1 SET \(att) = 'checked';"
         sqlite3_prepare(db, queryString, -1, &stmt, nil)

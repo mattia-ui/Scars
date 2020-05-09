@@ -34,7 +34,8 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     @IBOutlet weak var imageW: UIImageView!
     @IBOutlet weak var descW: UILabel!
     
-    static var allImages: [String] = ["unchecked","unchecked","unchecked","unchecked","unchecked","unchecked"]
+    static var allImages: [String] = ["unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked"]
+    static var allCardsImages: [String] = ["Card3","Card3","Card3","Card3","Card3","Card3","Card3","Card3","Card3"]
     static var weekly: WeeklyStruct = WeeklyStruct(descr: "", image: "")
     
     @IBAction func secret(_ sender: Any) {
@@ -52,12 +53,23 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     }
         
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = activity.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! CollectionViewCell1
-        cell.cardsImage.image = UIImage(named: Schermata1.allImages[indexPath.row] + ".png")
+    
+        
+        cell.cardsImage.image = UIImage(named: Schermata1.allCardsImages[indexPath.row] + ".png")
         let tap = MyTapGesture(target: self, action: #selector(self.go(sender:)))
-        tap.id = indexPath.row
-        cell.cardsImage.isUserInteractionEnabled = true
-        cell.cardsImage.addGestureRecognizer(tap)
+               tap.id = indexPath.row
+               cell.cardsImage.isUserInteractionEnabled = true
+               cell.cardsImage.addGestureRecognizer(tap)
+       
+        if(Schermata1.allImages[indexPath.row] == "checked"){
+            cell.check.isSelected = true
+        } else {
+             cell.check.isSelected = false
+        }
+        cell.check.tag = indexPath.row
+        
         return cell
     }
         
@@ -143,7 +155,7 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
             sqlite3_step(stmt)
             print("Saved successfully")
         }
-                
+        print(w)
         Schermata1.weekly = weeklyInfo[w]
         imageW.image = UIImage(named: Schermata1.weekly.image)
         descW.text = Schermata1.weekly.descr
@@ -157,16 +169,17 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         }
         
         while(sqlite3_step(stmt) == SQLITE_ROW){
-            print(String(cString: sqlite3_column_text(stmt, 1)))
             Schermata1.allImages[0] = String(cString: sqlite3_column_text(stmt, 1))
             Schermata1.allImages[1] = String(cString: sqlite3_column_text(stmt, 2))
             Schermata1.allImages[2] = String(cString: sqlite3_column_text(stmt, 3))
             Schermata1.allImages[3] = String(cString: sqlite3_column_text(stmt, 4))
             Schermata1.allImages[4] = String(cString: sqlite3_column_text(stmt, 5))
             Schermata1.allImages[5] = String(cString: sqlite3_column_text(stmt, 6))
+            Schermata1.allImages[6] = String(cString: sqlite3_column_text(stmt, 7))
+            Schermata1.allImages[7] = String(cString: sqlite3_column_text(stmt, 8))
+            Schermata1.allImages[8] = String(cString: sqlite3_column_text(stmt, 9))
         }
     }
-        
 
     override func viewDidLoad() {
         super.viewDidLoad()

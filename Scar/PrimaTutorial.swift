@@ -255,13 +255,13 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             }
                       
             //Crea Tabella. Per valore che dice se mostrare le check checcate o no
-            if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS InfoSchermata1 (id INTEGER PRIMARY KEY AUTOINCREMENT,c1 TEXT,c2 TEXT,c3 TEXT,c4 TEXT,c5 TEXT,c6 TEXT)", nil, nil, nil) != SQLITE_OK {
+            if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS InfoSchermata1 (id INTEGER PRIMARY KEY AUTOINCREMENT,c1 TEXT,c2 TEXT,c3 TEXT,c4 TEXT,c5 TEXT,c6 TEXT,c7 TEXT, c8 TEXT,c9 TEXT)", nil, nil, nil) != SQLITE_OK {
                 let errmsg = String(cString: sqlite3_errmsg(db)!)
                 print("error creating table: \(errmsg)")
             }
                        
             //Inserisce Valore. Va nel tutorial
-            queryString = "INSERT INTO InfoSchermata1 (c1,c2,c3,c4,c5,c6) VALUES ('unchecked', 'unchecked', 'unchecked', 'unchecked', 'unchecked','unchecked');"
+            queryString = "INSERT INTO InfoSchermata1 (c1,c2,c3,c4,c5,c6,c7,c8,c9) VALUES ('unchecked', 'unchecked', 'unchecked', 'unchecked', 'unchecked','unchecked', 'unchecked', 'unchecked','unchecked');"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
