@@ -10,5 +10,12 @@ import Foundation
 import UIKit
 
 class TerzaTutorial : UIViewController {
+    override func viewDidLoad() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
+               view.addGestureRecognizer(tap)
+    }
     
+    @objc func handleTap(){
+        performSegue(withIdentifier: "annanz2", sender: Any?.self)
+    }
 }

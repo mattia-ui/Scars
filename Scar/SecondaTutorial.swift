@@ -11,7 +11,12 @@ import UIKit
 
 class SecondaTutorial : UIViewController {
     override func viewDidLoad() {
-//        Schermata2.insights
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
+               view.addGestureRecognizer(tap)
+    }
+    
+    @objc func handleTap(){
+        performSegue(withIdentifier: "annanz", sender: Any?.self)
     }
     
 }

@@ -17,9 +17,11 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var frase1: UILabel!
     @IBOutlet weak var domanda1: UILabel!
     @IBOutlet weak var nome1: UITextField!
+    @IBOutlet weak var linea: UIImageView!
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var TableView: UITableView!
     @IBOutlet weak var LastStep: UILabel!
+    @IBOutlet weak var frase3: UILabel!
     @IBOutlet weak var domande3: UILabel!
     @IBOutlet weak var button3: UIButton!
     
@@ -52,40 +54,52 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     @IBAction func startPressed(_ sender: UIButton) {
-        traslate(view: illustrazione, aCircleTime: 0.2, to: -100)
-        traslate(view: welcome, aCircleTime: 0.2, to: -100)
-        traslate(view: frase1, aCircleTime: 0.2, to: -100)
-        traslate(view: domanda1, aCircleTime: 0.2, to: -100)
-        traslate(view: nome1, aCircleTime: 0.2, to: -100)
-        traslate(view: button1, aCircleTime: 0.2, to: -100)
-        traslate(view: TableView, aCircleTime: 0.2, to: -100)
-        traslate(view: LastStep, aCircleTime: 0.2, to: -100)
-        traslate(view: domande3, aCircleTime: 0.2, to: -100)
-        traslate(view: button3, aCircleTime: 0.2, to: -100)
-        sleep(UInt32(0.2))
-        
-        traslate(view: illustrazione, aCircleTime: 0.4, to: -364)
-        traslate(view: welcome, aCircleTime: 0.4, to: -364)
-        traslate(view: frase1, aCircleTime: 0.4, to: -364)
-        traslate(view: domanda1, aCircleTime: 0.4, to: -364)
-        traslate(view: nome1, aCircleTime: 0.4, to: -364)
-        traslate(view: button1, aCircleTime: 0.4, to: -364)
-        traslate(view: TableView, aCircleTime: 0.4, to: -364)
-        traslate(view: LastStep, aCircleTime: 0.4, to: -364)
-        traslate(view: domande3, aCircleTime: 0.4, to: -364)
-        traslate(view: button3, aCircleTime: 0.4, to: -364)
-        sleep(UInt32(0.4))
+        if(nome1.text == ""){
+            
+        }else{
+            TableView.reloadData()
+            traslate(view: illustrazione, aCircleTime: 0.2, to: -100)
+            traslate(view: welcome, aCircleTime: 0.2, to: -100)
+            traslate(view: frase1, aCircleTime: 0.2, to: -100)
+            traslate(view: domanda1, aCircleTime: 0.2, to: -100)
+            traslate(view: nome1, aCircleTime: 0.2, to: -100)
+            traslate(view: linea, aCircleTime: 0.2, to: -100)
+            traslate(view: button1, aCircleTime: 0.2, to: -100)
+            traslate(view: TableView, aCircleTime: 0.2, to: -100)
+            traslate(view: LastStep, aCircleTime: 0.2, to: -100)
+            traslate(view: frase3, aCircleTime: 0.2, to: -100)
+            traslate(view: domande3, aCircleTime: 0.2, to: -100)
+            traslate(view: button3, aCircleTime: 0.2, to: -100)
+            sleep(UInt32(0.2))
+            
+            traslate(view: illustrazione, aCircleTime: 0.4, to: -364)
+            traslate(view: welcome, aCircleTime: 0.4, to: -364)
+            traslate(view: frase1, aCircleTime: 0.4, to: -364)
+            traslate(view: linea, aCircleTime: 0.4, to: -364)
+            traslate(view: domanda1, aCircleTime: 0.4, to: -364)
+            traslate(view: nome1, aCircleTime: 0.4, to: -364)
+            traslate(view: button1, aCircleTime: 0.4, to: -364)
+            traslate(view: TableView, aCircleTime: 0.4, to: -364)
+            traslate(view: LastStep, aCircleTime: 0.4, to: -364)
+            traslate(view: frase3, aCircleTime: 0.4, to: -364)
+            traslate(view: domande3, aCircleTime: 0.4, to: -364)
+            traslate(view: button3, aCircleTime: 0.4, to: -364)
+            sleep(UInt32(0.4))
 
-        traslate(view: illustrazione, aCircleTime: 0.1, to: -414)
-        traslate(view: welcome, aCircleTime: 0.1, to: -414)
-        traslate(view: frase1, aCircleTime: 0.1, to: -414)
-        traslate(view: domanda1, aCircleTime: 0.1, to: -414)
-        traslate(view: nome1, aCircleTime: 0.1, to: -414)
-        traslate(view: button1, aCircleTime: 0.1, to: -414)
-        traslate(view: TableView, aCircleTime: 0.1, to: -414)
-        traslate(view: LastStep, aCircleTime: 0.1, to: -414)
-        traslate(view: domande3, aCircleTime: 0.1, to: -414)
-        traslate(view: button3, aCircleTime: 0.1, to: -414)
+            traslate(view: illustrazione, aCircleTime: 0.1, to: -414)
+            traslate(view: welcome, aCircleTime: 0.1, to: -414)
+            traslate(view: frase1, aCircleTime: 0.1, to: -414)
+            traslate(view: domanda1, aCircleTime: 0.1, to: -414)
+            traslate(view: nome1, aCircleTime: 0.1, to: -414)
+            traslate(view: linea, aCircleTime: 0.1, to: -414)
+            traslate(view: button1, aCircleTime: 0.1, to: -414)
+            traslate(view: TableView, aCircleTime: 0.1, to: -414)
+            traslate(view: LastStep, aCircleTime: 0.1, to: -414)
+            traslate(view: frase3, aCircleTime: 0.1, to: -414)
+            traslate(view: domande3, aCircleTime: 0.1, to: -414)
+            traslate(view: button3, aCircleTime: 0.1, to: -414)
+        }
+        
     }
     @IBAction func donePressed(_ sender: UIButton) {
         traslate(view: illustrazione, aCircleTime: 0.2, to: -514)
@@ -93,9 +107,11 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         traslate(view: frase1, aCircleTime: 0.2, to: -514)
         traslate(view: domanda1, aCircleTime: 0.2, to: -514)
         traslate(view: nome1, aCircleTime: 0.2, to: -514)
+        traslate(view: linea, aCircleTime: 0.2, to: -514)
         traslate(view: button1, aCircleTime: 0.2, to: -514)
         traslate(view: TableView, aCircleTime: 0.2, to: -514)
         traslate(view: LastStep, aCircleTime: 0.2, to: -514)
+        traslate(view: frase3, aCircleTime: 0.2, to: -514)
         traslate(view: domande3, aCircleTime: 0.2, to: -514)
         traslate(view: button3, aCircleTime: 0.2, to: -514)
         sleep(UInt32(0.2))
@@ -105,9 +121,11 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         traslate(view: frase1, aCircleTime: 0.4, to: -778)
         traslate(view: domanda1, aCircleTime: 0.4, to: -778)
         traslate(view: nome1, aCircleTime: 0.4, to: -778)
+        traslate(view: linea, aCircleTime: 0.4, to: -778)
         traslate(view: button1, aCircleTime: 0.4, to: -778)
         traslate(view: TableView, aCircleTime: 0.4, to: -778)
         traslate(view: LastStep, aCircleTime: 0.4, to: -778)
+        traslate(view: frase3, aCircleTime: 0.4, to: -778)
         traslate(view: domande3, aCircleTime: 0.4, to: -778)
         traslate(view: button3, aCircleTime: 0.4, to: -778)
         sleep(UInt32(0.4))
@@ -117,9 +135,11 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         traslate(view: frase1, aCircleTime: 0.1, to: -828)
         traslate(view: domanda1, aCircleTime: 0.1, to: -828)
         traslate(view: nome1, aCircleTime: 0.1, to: -828)
+        traslate(view: linea, aCircleTime: 0.1, to: -828)
         traslate(view: button1, aCircleTime: 0.1, to: -828)
         traslate(view: TableView, aCircleTime: 0.1, to: -828)
         traslate(view: LastStep, aCircleTime: 0.1, to: -828)
+        traslate(view: frase3, aCircleTime: 0.1, to: -828)
         traslate(view: domande3, aCircleTime: 0.1, to: -828)
         traslate(view: button3, aCircleTime: 0.1, to: -828)
         
@@ -271,7 +291,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as? Cella1 else {
                 return UITableViewCell()
             }
-//            cell.Hi.text = "Hi, \(String(describing: nome1.text))!"
+            cell.Hi.text = "Hi, \(String(describing: nome1.text).dropFirst(10).dropLast(2))!"
             return cell
             
         }else if indexPath.row == 1{
