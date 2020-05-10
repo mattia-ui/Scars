@@ -30,9 +30,14 @@ var dati = [ActivityStruct(
     attivita1:[
         ContenutoStruct(contenuto: "Doing mirror work is one of the most loving gifts you can give yourself. Remember that the more you use your mirror for complimenting and supporting yourself, the deeper and more pleasant your relationship with yourself will become.\n \nHere are three simple steps for mastering your mirror work in practice!" , titolo: "Your mirror is your friend" ), ContenutoStruct(contenuto:"Using a handheld mirror allows you to get closer to the most intimate part of yourself. Just make sure you're in a place where nobody can bother you!" , titolo: "1. Get a handheld mirror" ), ContenutoStruct(contenuto: "Start by making eye contact with yourself in the mirror and don't worry if at first this may seem a little uncomfortable.", titolo: "2. Make eye contact"), ContenutoStruct(contenuto: "Now begin to say some of your favorite affirmations out loud or just start a conversation with yourself. It’s so important to give yourself little positive messages, say anything that makes you feel really good!", titolo: "3. Give yourself positive messages out loud")],
     attivita2:
-        [ContenutoStruct(contenuto: "", titolo: "")],
+        [ContenutoStruct(contenuto: "Taking some time and writing a diary could help you improve your body image. Writing activities could be used as a form of therapy for people who have self-esteem and body issues.\nReady to get started? Here are some small tips that will help you along the way:", titolo: "The importance of writing"),
+        ContenutoStruct(contenuto: "Everyone has his own times: If you are an early riser, you can update your diary in the morning but If you are a night owl, choose to update it in the evening. ", titolo: "1. Choose a suitable time for you. "),
+        ContenutoStruct(contenuto: "Remember that you can change yourself but not others! Don’t think about what other people might say or think. They don’t matter at all. just think about what YOU feel.", titolo: "2. Stop listening to negativity"),
+        ContenutoStruct(contenuto: "Your body deserves respect, attention and love. Look yourself in the mirror, appreciate all the perfect things about you and write them in your diary.", titolo: "3. Write in a positive way about your body"),
+        ContenutoStruct(contenuto: "To understand yourself better you are going to keep track of your overall progress. A reliable way in which you can do this is by rating how you feel EACH day.", titolo: "4. Rate how you feel each day"),
+        ContenutoStruct(contenuto: "Probably after some time your passion for writing may wane, but don't worry. Remember that: consistency is the key. A useful way to not give up is to reward yourself for each writing session you end.", titolo: "5. Never give up!")],
     attivita3:
-        [ContenutoStruct(contenuto: "", titolo: "")],
+        [ContenutoStruct(contenuto: "If you are struggling with your body image issues or you are trying to increase your self-esteem, being inspired by someone who has had an experience similar to yours can be just the kick start you need to feel better about yourself.\nAn easy and fun way to be inspired by others is to collect quotes or story from your favorite celebrity or Instagram influencer, but also from authors and regular people.\nLet's see together how to get inspired\n• Save your favorite quotes or stories for your next low self-esteem day \n• Write them on colored sticky notes\n• Share them with your friends\n• Read them out loud when you look in the mirror\n• Put them into practice.", titolo: "Inspiration matters")],
     attivita4:
         [ContenutoStruct(contenuto: "Try to walk for at least 30 minutes. If it's too difficult for you, don't worry. Take small regular 10-minute walks three times a day and then gradually switch to longer sessions. People who exercise regularly tend to do so because it gives them a great sense of well-being, they feel more relaxed and positive about themselves and their lives.\nWalking requires minimal equipment, can be done at any time of day and can be performed at your own pace.. so no excuses!", titolo: "Walking is important")],
     attivita5:
@@ -54,8 +59,8 @@ class ViewControllerInitial: UIViewController, UICollectionViewDataSource, UICol
     @IBOutlet weak var collection: UICollectionView!
     @IBOutlet weak var cardImage: UIImageView!
     var attivita: [ContenutoStruct] = []
-    var sfondi: [String] = ["background","","","","","","","",""]
-    var sfondiNav: [String] = ["2-.jpg","","","","","","","",""]
+    var sfondi: [String] = ["background","background2","background3","background4","background5","background6","background7","background8","background9"]
+    var sfondiNav: [String] = ["nav1","nav2","nav3","nav4","nav5","nav6","nav7","nav8","nav9"]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return attivita.count

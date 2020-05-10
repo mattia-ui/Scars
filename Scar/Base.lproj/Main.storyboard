@@ -1831,33 +1831,37 @@ tips and inspirational contents for you!</string>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hug-TT-xcE">
-                                                    <rect key="frame" x="150.5" y="236" width="110" height="35"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="110" id="jCw-Tp-IeE"/>
-                                                        <constraint firstAttribute="height" constant="35" id="xpa-kk-Avv"/>
-                                                    </constraints>
-                                                    <state key="normal" image="done"/>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="48" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6M-Ib-qf4">
-                                                    <rect key="frame" x="22" y="40" width="367" height="192"/>
+                                                    <rect key="frame" x="22" y="40" width="367" height="158"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="381" id="2mo-Jh-mgE"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="367" id="08s-Mc-1Vz"/>
+                                                        <constraint firstAttribute="width" constant="367" id="2mo-Jh-mgE"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="19"/>
                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hug-TT-xcE">
+                                                    <rect key="frame" x="85.5" y="216" width="240" height="55"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="55" id="50E-YP-8Bx"/>
+                                                        <constraint firstAttribute="width" constant="240" id="rQC-lD-jqy"/>
+                                                    </constraints>
+                                                    <state key="normal" image="button-1"/>
+                                                </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="Hug-TT-xcE" firstAttribute="top" secondItem="N6M-Ib-qf4" secondAttribute="bottom" constant="18" id="2aQ-Fz-5Sp"/>
                                                 <constraint firstItem="fN8-Be-cJY" firstAttribute="trailing" secondItem="N6M-Ib-qf4" secondAttribute="trailing" id="8jo-8o-UaN"/>
-                                                <constraint firstItem="N6M-Ib-qf4" firstAttribute="centerX" secondItem="Hug-TT-xcE" secondAttribute="centerX" id="Gi4-Ct-pXM"/>
                                                 <constraint firstItem="fN8-Be-cJY" firstAttribute="top" secondItem="22q-He-zg3" secondAttribute="top" constant="11" id="ItP-E0-ttQ"/>
+                                                <constraint firstItem="N6M-Ib-qf4" firstAttribute="leading" secondItem="22q-He-zg3" secondAttribute="leading" constant="22" id="Nnj-mi-BPn"/>
                                                 <constraint firstItem="fN8-Be-cJY" firstAttribute="leading" secondItem="N6M-Ib-qf4" secondAttribute="leading" id="XMV-Zu-cPv"/>
+                                                <constraint firstItem="N6M-Ib-qf4" firstAttribute="top" secondItem="fN8-Be-cJY" secondAttribute="bottom" constant="8" id="eDu-lc-AHJ"/>
                                                 <constraint firstItem="fN8-Be-cJY" firstAttribute="leading" secondItem="22q-He-zg3" secondAttribute="leading" constant="22" id="ekR-2q-kR6"/>
+                                                <constraint firstItem="Hug-TT-xcE" firstAttribute="centerX" secondItem="N6M-Ib-qf4" secondAttribute="centerX" id="iTh-Dc-gej"/>
                                                 <constraint firstItem="Hug-TT-xcE" firstAttribute="bottom" secondItem="22q-He-zg3" secondAttribute="bottomMargin" id="mFI-yV-z2I"/>
-                                                <constraint firstItem="Hug-TT-xcE" firstAttribute="top" secondItem="N6M-Ib-qf4" secondAttribute="bottom" constant="4" id="skb-fY-OYM"/>
                                                 <constraint firstAttribute="trailing" secondItem="N6M-Ib-qf4" secondAttribute="trailing" constant="22" id="vUv-wU-Sm2"/>
+                                                <constraint firstAttribute="trailing" secondItem="N6M-Ib-qf4" secondAttribute="trailing" constant="22" id="vqC-RP-0Dc"/>
                                                 <constraint firstItem="N6M-Ib-qf4" firstAttribute="top" secondItem="fN8-Be-cJY" secondAttribute="bottom" constant="8" id="xYj-nH-A9k"/>
                                             </constraints>
                                         </collectionViewCellContentView>
@@ -2357,6 +2361,7 @@ tips and inspirational contents for you!</string>
         <image name="Group 175" width="414" height="93"/>
         <image name="Group 48" width="508" height="518"/>
         <image name="Onboarding1" width="3740" height="1350"/>
+        <image name="button-1" width="240" height="55"/>
         <image name="buttonDeselected" width="374" height="76"/>
         <image name="buttonSelected" width="374" height="76"/>
         <image name="caldi" width="437" height="254"/>
