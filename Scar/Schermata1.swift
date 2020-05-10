@@ -97,7 +97,6 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         let day2 = components2.day ?? 0
         let hour2 = components2.hour ?? 0
         let minute2 = components2.minute ?? 0
-        let weekday = components2.minute ?? 0
         
         //Si connette al DB
         let fileURL = try!
@@ -123,6 +122,20 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
             min = Int(String(cString: sqlite3_column_text(stmt, 4))) ?? 0
         }
         
+        //Recupera Valore
+        queryString = "SELECT * FROM Week"
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+        let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error preparing insert: \(errmsg)")
+            return
+        }
+        
+        var w = 0
+        let week = Calendar.current.component(.weekday, from: dateNow)
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            w = Int(String(cString: sqlite3_column_text(stmt, 1))) ?? 0
+        }
+        
         if(month2 > m || day2 > day){
             queryString = "UPDATE Date SET mese = '\(month2)', giorno = '\(day2)', ora = '\(hour2)', minuti = '\(minute2)';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
@@ -133,29 +146,16 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
+            
+            if(week == 1){
+                w = w + 1
+                queryString = "UPDATE Week SET valore = '\(w)';"
+                sqlite3_prepare(db, queryString, -1, &stmt, nil)
+                sqlite3_step(stmt)
+                print("Saved successfully")
+            }
         }
         
-        //Recupera Valore
-        queryString = "SELECT * FROM Week"
-        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
-        let errmsg = String(cString: sqlite3_errmsg(db)!)
-            print("error preparing insert: \(errmsg)")
-            return
-        }
-        
-        var w = 0
-        while(sqlite3_step(stmt) == SQLITE_ROW){
-            w = Int(String(cString: sqlite3_column_text(stmt, 1))) ?? 0
-        }
-        
-        if(weekday == 7){
-            w = w + 1
-            queryString = "UPDATE Week SET valore = '\(w)';"
-            sqlite3_prepare(db, queryString, -1, &stmt, nil)
-            sqlite3_step(stmt)
-            print("Saved successfully")
-        }
-        print(w)
         Schermata1.weekly = weeklyInfo[w]
         imageW.image = UIImage(named: Schermata1.weekly.image)
         descW.text = Schermata1.weekly.descr

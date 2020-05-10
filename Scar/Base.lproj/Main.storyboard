@@ -1880,6 +1880,7 @@ tips and inspirational contents for you!</string>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vg6-XX-2Y4" firstAttribute="leading" secondItem="bTK-SO-FHz" secondAttribute="leading" id="5oM-aL-Mfb"/>
                             <constraint firstItem="vg6-XX-2Y4" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" id="60D-Va-zMr"/>
@@ -2320,6 +2321,8 @@ tips and inspirational contents for you!</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ja8-ub-TVJ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

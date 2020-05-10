@@ -57,7 +57,8 @@ class ViewControllerInitial: UIViewController, UICollectionViewDataSource, UICol
     @IBOutlet weak var collection: UICollectionView!
     @IBOutlet weak var cardImage: UIImageView!
     var attivita: [ContenutoStruct] = []
-    var sfondi: [String] = ["2-.jpg","","","","",""]
+    var sfondi: [String] = ["2-.jpg","","","","","","","",""]
+    var sfondiNav: [String] = ["2-.jpg","","","","","","","",""]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return attivita.count
@@ -76,6 +77,7 @@ class ViewControllerInitial: UIViewController, UICollectionViewDataSource, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addNavBarImage()
         switch id1 {
             case 0: attivita = dati[0].attivita1
             case 1: attivita = dati[0].attivita2
@@ -122,6 +124,25 @@ class ViewControllerInitial: UIViewController, UICollectionViewDataSource, UICol
         
         let secondVC = storyboard?.instantiateViewController(withIdentifier: "collectionInitial")  as! Schermata1
         self.navigationController?.pushViewController(secondVC, animated: true)
+        
+    }
+    
+    func addNavBarImage() {
+        
+        let navController = navigationController!
+        let image = UIImage(named: sfondiNav[id1])
+        let imageView = UIImageView(image: image)
+        
+        let bannerWidth = navController.navigationBar.frame.size.width
+        let bannerHeight = navController.navigationBar.frame.size.height
+        
+        let bannerX = bannerWidth / 2 - (image?.size.width ?? 00) / 2
+        let bannerY = bannerHeight / 2 - (image?.size.height ?? 00) / 2
+        
+        imageView.frame = CGRect(x: bannerX, y: bannerY, width: bannerWidth, height: bannerHeight)
+        imageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = imageView
         
     }
     
