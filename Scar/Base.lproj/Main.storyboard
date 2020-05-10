@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9C-PY-zlv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9C-PY-zlv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -1076,25 +1076,25 @@ How you think others see it?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="legno" translatesAutoresizingMaskIntoConstraints="NO" id="3Uf-Yt-Gwb">
-                                <rect key="frame" x="130" y="248.5" width="125" height="174"/>
+                                <rect key="frame" x="130" y="292" width="125" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="CRt-7E-7JH"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fibra" translatesAutoresizingMaskIntoConstraints="NO" id="eP9-YF-Agc">
-                                <rect key="frame" x="130" y="334" width="125" height="174"/>
+                                <rect key="frame" x="130" y="377.5" width="125" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="r0e-bS-eNU"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mare" translatesAutoresizingMaskIntoConstraints="NO" id="YBv-BC-Bzc">
-                                <rect key="frame" x="130" y="153.5" width="125" height="174"/>
+                                <rect key="frame" x="130" y="197" width="125" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="OjQ-WT-0aA"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="marmo" translatesAutoresizingMaskIntoConstraints="NO" id="SNQ-KO-nnh">
-                                <rect key="frame" x="130" y="512" width="125" height="174"/>
+                                <rect key="frame" x="130" y="555.5" width="125" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="KWa-JG-sUs"/>
                                 </constraints>
@@ -1174,7 +1174,7 @@ How you think others see it?</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cratere" translatesAutoresizingMaskIntoConstraints="NO" id="57U-4M-5nY">
-                                <rect key="frame" x="130" y="421" width="125" height="174"/>
+                                <rect key="frame" x="130" y="464.5" width="125" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="P0r-KI-5SV"/>
                                 </constraints>
@@ -1510,14 +1510,14 @@ tips and inspirational contents for you!</string>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCell" id="gIL-x7-jMY" customClass="CollectionViewCell" customModule="Scar" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aQw-CN-cVk">
-                                            <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qjk-C8-pXc">
-                                                    <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -1723,7 +1723,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puv-vE-VcP">
-                                <rect key="frame" x="22" y="416" width="95" height="31.5"/>
+                                <rect key="frame" x="22" y="420.5" width="95" height="27"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1830,7 +1830,7 @@ tips and inspirational contents for you!</string>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="rFK-bT-P0O"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1840,7 +1840,7 @@ tips and inspirational contents for you!</string>
                                                         <constraint firstAttribute="width" constant="395" id="Cyl-em-x3B"/>
                                                         <constraint firstAttribute="height" constant="178" id="aBK-ZB-r9L"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2352,6 +2352,9 @@ tips and inspirational contents for you!</string>
             <point key="canvasLocation" x="-2807" y="78"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dtp-ln-G8d"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="CAzz" width="267" height="267"/>
         <image name="CONer" width="200" height="165"/>
@@ -2377,17 +2380,14 @@ tips and inspirational contents for you!</string>
         <image name="music" width="512" height="512"/>
         <image name="music-2" width="512" height="512"/>
         <image name="neutri" width="437" height="254"/>
-        <image name="pencil" catalog="system" width="64" height="56"/>
-        <image name="photo" catalog="system" width="64" height="46"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
         <image name="quadrato" width="74" height="71"/>
         <image name="readyViola" width="182" height="55"/>
         <image name="rettangolo" width="126" height="71"/>
-        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="start" width="182" height="55"/>
         <image name="triangolo" width="84" height="74"/>
-        <image name="xmark.seal.fill" catalog="system" width="64" height="60"/>
+        <image name="xmark.seal.fill" catalog="system" width="128" height="122"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="dtp-ln-G8d"/>
-    </inferredMetricsTieBreakers>
 </document>

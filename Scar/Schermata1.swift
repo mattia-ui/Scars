@@ -35,7 +35,7 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     @IBOutlet weak var descW: UILabel!
     
     static var allImages: [String] = ["unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked"]
-    static var allCardsImages: [String] = ["Card3","Card3","Card3","Card3","Card3","Card3","Card3","Card3","Card3"]
+    static var allCardsImages: [String] = ["Card1p","Card2p","Card3p","Card4p","Card5p","Card6p","Card7p","Card8p","Card9p"]
     static var weekly: WeeklyStruct = WeeklyStruct(descr: "", image: "")
     
     @IBAction func secret(_ sender: Any) {
