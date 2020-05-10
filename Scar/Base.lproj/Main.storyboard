@@ -14,9 +14,6 @@
         <array key="Cera Pro Light.otf">
             <string>CeraPro-Light</string>
         </array>
-        <array key="Cera Pro Medium Italic.otf">
-            <string>CeraPro-MediumItalic</string>
-        </array>
         <array key="Cera Pro Medium.otf">
             <string>CeraPro-Medium</string>
         </array>
@@ -1808,32 +1805,32 @@ tips and inspirational contents for you!</string>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4qg-Eq-Ae4">
-                                    <size key="itemSize" width="411" height="99"/>
+                                    <size key="itemSize" width="411" height="76"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" reuseIdentifier="celle" id="dW4-uo-8f6" customClass="TableViewActivity" customModule="Scar" customModuleProvider="target">
-                                        <rect key="frame" x="1.5" y="0.0" width="411" height="99"/>
+                                        <rect key="frame" x="1.5" y="0.0" width="411" height="76"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="22q-He-zg3">
-                                            <rect key="frame" x="0.0" y="0.0" width="411" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="411" height="76"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fN8-Be-cJY">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fN8-Be-cJY">
                                                     <rect key="frame" x="22" y="11" width="367" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="367" id="FQM-zd-Yxn"/>
+                                                        <constraint firstAttribute="width" constant="367" id="HnP-ag-ACT"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="CeraPro-MediumItalic" family="Cera Pro" pointSize="19"/>
+                                                    <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="48" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6M-Ib-qf4">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="48" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6M-Ib-qf4">
                                                     <rect key="frame" x="22" y="40" width="367" height="19"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="367" id="4RT-bU-Z4F"/>
+                                                        <constraint firstAttribute="width" constant="367" id="1yw-oX-ut5"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="19"/>
                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -1841,16 +1838,16 @@ tips and inspirational contents for you!</string>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="fN8-Be-cJY" firstAttribute="trailing" secondItem="N6M-Ib-qf4" secondAttribute="trailing" id="Vbe-6g-Bvc"/>
-                                                <constraint firstItem="N6M-Ib-qf4" firstAttribute="top" secondItem="fN8-Be-cJY" secondAttribute="bottom" constant="8" id="agJ-qi-US6"/>
-                                                <constraint firstItem="fN8-Be-cJY" firstAttribute="leading" secondItem="N6M-Ib-qf4" secondAttribute="leading" id="ajd-V4-JXa"/>
-                                                <constraint firstItem="fN8-Be-cJY" firstAttribute="leading" secondItem="22q-He-zg3" secondAttribute="leading" constant="22" id="oLH-iw-Ha8"/>
-                                                <constraint firstItem="N6M-Ib-qf4" firstAttribute="centerY" secondItem="22q-He-zg3" secondAttribute="centerY" id="qXo-VQ-gzF"/>
-                                                <constraint firstItem="fN8-Be-cJY" firstAttribute="centerX" secondItem="22q-He-zg3" secondAttribute="centerX" id="qku-6M-I8i"/>
-                                                <constraint firstItem="fN8-Be-cJY" firstAttribute="top" secondItem="22q-He-zg3" secondAttribute="top" constant="11" id="vIG-5e-PAO"/>
+                                                <constraint firstItem="N6M-Ib-qf4" firstAttribute="top" secondItem="fN8-Be-cJY" secondAttribute="bottom" constant="8" id="1pd-0Y-RIG"/>
+                                                <constraint firstItem="fN8-Be-cJY" firstAttribute="trailing" secondItem="N6M-Ib-qf4" secondAttribute="trailing" id="Bdd-xu-Y8O"/>
+                                                <constraint firstItem="fN8-Be-cJY" firstAttribute="leading" secondItem="N6M-Ib-qf4" secondAttribute="leading" id="Qku-yA-hI8"/>
+                                                <constraint firstItem="fN8-Be-cJY" firstAttribute="centerX" secondItem="22q-He-zg3" secondAttribute="centerX" id="Tyb-Ph-HUO"/>
+                                                <constraint firstAttribute="bottom" secondItem="N6M-Ib-qf4" secondAttribute="bottom" constant="17" id="bOW-QL-Tb3"/>
+                                                <constraint firstItem="fN8-Be-cJY" firstAttribute="top" secondItem="22q-He-zg3" secondAttribute="top" constant="11" id="cP8-8k-J07"/>
+                                                <constraint firstItem="fN8-Be-cJY" firstAttribute="leading" secondItem="22q-He-zg3" secondAttribute="leading" constant="22" id="zhe-hr-8rn"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="411" height="99"/>
+                                        <size key="customSize" width="411" height="76"/>
                                         <connections>
                                             <outlet property="contenuto" destination="N6M-Ib-qf4" id="IlS-FK-Fb8"/>
                                             <outlet property="titolo" destination="fN8-Be-cJY" id="OXQ-MA-PPf"/>
@@ -1866,14 +1863,14 @@ tips and inspirational contents for you!</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="OMr-bu-dwx" firstAttribute="leading" secondItem="vg6-XX-2Y4" secondAttribute="leading" id="1DZ-HZ-eYx"/>
-                            <constraint firstItem="vg6-XX-2Y4" firstAttribute="bottom" secondItem="bTK-SO-FHz" secondAttribute="bottom" id="4hM-4x-zpb"/>
-                            <constraint firstItem="OMr-bu-dwx" firstAttribute="centerX" secondItem="TZg-6g-tU7" secondAttribute="centerX" id="GaQ-S1-kr4"/>
-                            <constraint firstItem="OMr-bu-dwx" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" id="Yz2-UE-9T8"/>
-                            <constraint firstItem="OMr-bu-dwx" firstAttribute="bottom" secondItem="bTK-SO-FHz" secondAttribute="bottom" id="pwo-3B-2cN"/>
-                            <constraint firstItem="vg6-XX-2Y4" firstAttribute="top" secondItem="OMr-bu-dwx" secondAttribute="top" id="vKd-Ql-kEA"/>
-                            <constraint firstItem="vg6-XX-2Y4" firstAttribute="trailing" secondItem="OMr-bu-dwx" secondAttribute="trailing" id="vRf-SR-cM7"/>
-                            <constraint firstItem="OMr-bu-dwx" firstAttribute="leading" secondItem="bTK-SO-FHz" secondAttribute="leading" id="w24-OB-3sN"/>
+                            <constraint firstItem="OMr-bu-dwx" firstAttribute="top" secondItem="vg6-XX-2Y4" secondAttribute="top" id="0FH-Xl-yLi"/>
+                            <constraint firstItem="OMr-bu-dwx" firstAttribute="trailing" secondItem="vg6-XX-2Y4" secondAttribute="trailing" id="5MI-Vm-Z5b"/>
+                            <constraint firstItem="vg6-XX-2Y4" firstAttribute="leading" secondItem="OMr-bu-dwx" secondAttribute="leading" id="62W-O7-04H"/>
+                            <constraint firstItem="OMr-bu-dwx" firstAttribute="centerX" secondItem="TZg-6g-tU7" secondAttribute="centerX" id="IOl-Oa-lEG"/>
+                            <constraint firstItem="vg6-XX-2Y4" firstAttribute="leading" secondItem="bTK-SO-FHz" secondAttribute="leading" id="QUU-C7-hig"/>
+                            <constraint firstItem="vg6-XX-2Y4" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" id="Sac-mH-WT1"/>
+                            <constraint firstItem="vg6-XX-2Y4" firstAttribute="bottom" secondItem="bTK-SO-FHz" secondAttribute="bottom" id="XaI-Hh-h5D"/>
+                            <constraint firstItem="vg6-XX-2Y4" firstAttribute="bottom" secondItem="OMr-bu-dwx" secondAttribute="bottom" id="eaC-cY-GgJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bTK-SO-FHz"/>
                     </view>
