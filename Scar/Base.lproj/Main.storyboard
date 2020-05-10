@@ -317,7 +317,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpE-XT-qrG">
                                 <rect key="frame" x="116" y="751" width="182" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="start"/>
+                                <state key="normal" backgroundImage="Start"/>
                                 <connections>
                                     <action selector="startPressed:" destination="w7d-Tn-c1A" eventType="touchUpInside" id="58j-MS-1wl"/>
                                 </connections>
@@ -2339,6 +2339,7 @@ tips and inspirational contents for you!</string>
         <image name="Group 175" width="414" height="93"/>
         <image name="Group 48" width="508" height="518"/>
         <image name="Onboarding1" width="3740" height="1350"/>
+        <image name="Start" width="182" height="55"/>
         <image name="buttonDeselected" width="374" height="76"/>
         <image name="buttonSelected" width="374" height="76"/>
         <image name="caldi" width="437" height="254"/>
@@ -2363,12 +2364,11 @@ tips and inspirational contents for you!</string>
         <image name="readyViola" width="182" height="55"/>
         <image name="rettangolo" width="126" height="71"/>
         <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
-        <image name="start" width="182" height="55"/>
         <image name="triangolo" width="84" height="74"/>
         <image name="unchecked" width="43" height="43"/>
         <image name="xmark.seal.fill" catalog="system" width="64" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dtp-ln-G8d"/>
+        <segue reference="wd9-1W-xO2"/>
     </inferredMetricsTieBreakers>
 </document>
