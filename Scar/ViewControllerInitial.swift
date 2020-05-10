@@ -63,16 +63,24 @@ class ViewControllerInitial: UIViewController, UICollectionViewDataSource, UICol
     var sfondiNav: [String] = ["nav1","nav2","nav3","nav4","nav5","nav6","nav7","nav8","nav9"]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return attivita.count
+        return attivita.count + 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collection.dequeueReusableCell(withReuseIdentifier: "celle", for: indexPath) as! TableViewActivity
-        cell.titolo.text = attivita[indexPath.row].titolo
-        cell.contenuto.text = attivita[indexPath.row].contenuto
-        cell.button.addTarget(self, action: #selector(buttonAction), for: .touchDown)
-        if(indexPath.row != attivita.count - 1){
-            cell.button.isHidden = true
+        
+        if(indexPath.row == attivita.count){
+            cell.titolo.text = ""
+            cell.contenuto.text = "\n\n"
+            let image = UIImage(named: "button-1") as UIImage?
+            let button = UIButton(type: UIButton.ButtonType.custom) as UIButton
+            button.frame = CGRect(x: 84, y: 0, width: 244, height: 55)
+            button.setImage(image, for: .normal)
+            button.addTarget(self, action: #selector(buttonAction), for: .touchDown)
+            cell.addSubview(button)
+        } else {
+            cell.titolo.text = attivita[indexPath.row].titolo
+            cell.contenuto.text = attivita[indexPath.row].contenuto
         }
         return cell
     }
@@ -135,8 +143,8 @@ class ViewControllerInitial: UIViewController, UICollectionViewDataSource, UICol
         let image = UIImage(named: sfondiNav[id1])
         let imageView = UIImageView(image: image)
         
-        let bannerWidth = navController.navigationBar.frame.size.width
-        let bannerHeight = navController.navigationBar.frame.size.height
+        let bannerWidth = navController.navigationBar.frame.size.width / 2
+        let bannerHeight = navController.navigationBar.frame.size.height / 2
         
         let bannerX = bannerWidth / 2 - (image?.size.width ?? 00) / 2
         let bannerY = bannerHeight / 2 - (image?.size.height ?? 00) / 2
