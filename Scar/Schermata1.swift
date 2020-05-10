@@ -188,9 +188,9 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: 163, height: 115)
-        layout.minimumLineSpacing = 1
-        layout.minimumInteritemSpacing = 1
+//        layout.itemSize = CGSize(width: 163, height: 115)
+//        layout.minimumLineSpacing = 1
+//        layout.minimumInteritemSpacing = 1
         
     }
     
