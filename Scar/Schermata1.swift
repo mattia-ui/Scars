@@ -75,7 +75,7 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             
-        let cellWidth = 114
+        let cellWidth = 115
         let cellHeight = 164
         return CGSize(width: cellWidth, height: cellHeight)
     }
@@ -188,6 +188,10 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
+        layout.itemSize = CGSize(width: 163, height: 115)
+        layout.minimumLineSpacing = 1
+        layout.minimumInteritemSpacing = 1
+        
     }
     
     @objc func go(sender : MyTapGesture) {
