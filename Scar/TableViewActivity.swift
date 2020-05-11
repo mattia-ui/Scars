@@ -11,5 +11,4 @@ import UIKit
 class TableViewActivity: UICollectionViewCell {
     @IBOutlet weak var titolo: UILabel!
     @IBOutlet weak var contenuto: UILabel!
-    @IBOutlet weak var button: UIButton!
 }
