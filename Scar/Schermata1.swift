@@ -187,11 +187,15 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         UserDefaults.standard.set(true, forKey: "LaunchedBefore")
         
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
+//        layout.scrollDirection = .horizontal
 //        layout.itemSize = CGSize(width: 163, height: 115)
 //        layout.minimumLineSpacing =
 //        layout.minimumInteritemSpacing = 55
         
+//        activity.collectionViewLayout = layout
+//        layout.sectionInset = UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 0) // according to your requirements
+//        layout.minimumInteritemSpacing = 1 // according to your requirements
+//        layout.minimumLineSpacing = 1// according to your requirements
 //        activity.collectionViewLayout = layout
         
     }
