@@ -75,8 +75,8 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             
-        let cellWidth = 115
-        let cellHeight = 164
+        let cellWidth = 163
+        let cellHeight = 115
         return CGSize(width: cellWidth, height: cellHeight)
     }
     
