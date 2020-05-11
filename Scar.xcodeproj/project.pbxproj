@@ -40,6 +40,8 @@
 		764E60672468384300F6BC07 /* Cera Pro Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764E605B2468384300F6BC07 /* Cera Pro Thin.otf */; };
 		764E60682468384300F6BC07 /* Cera Pro Light Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764E605C2468384300F6BC07 /* Cera Pro Light Italic.otf */; };
 		764E60692468384300F6BC07 /* Cera Pro Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764E605D2468384300F6BC07 /* Cera Pro Black.otf */; };
+		7668C1402469D3960099FD11 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7668C13E2469D3960099FD11 /* Slide.swift */; };
+		7668C1412469D3960099FD11 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7668C13F2469D3960099FD11 /* Slide.xib */; };
 		76C13DE7245B255C00D1AE9F /* ChoosePalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C13DE6245B255C00D1AE9F /* ChoosePalette.swift */; };
 		76C13DE9245B2B3100D1AE9F /* ChooseTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C13DE8245B2B3100D1AE9F /* ChooseTexture.swift */; };
 		76C13DEB245B2FAE00D1AE9F /* TakePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C13DEA245B2FAE00D1AE9F /* TakePicture.swift */; };
@@ -116,6 +118,8 @@
 		764E605B2468384300F6BC07 /* Cera Pro Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Thin.otf"; sourceTree = "<group>"; };
 		764E605C2468384300F6BC07 /* Cera Pro Light Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Light Italic.otf"; sourceTree = "<group>"; };
 		764E605D2468384300F6BC07 /* Cera Pro Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Black.otf"; sourceTree = "<group>"; };
+		7668C13E2469D3960099FD11 /* Slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		7668C13F2469D3960099FD11 /* Slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		76C13DE6245B255C00D1AE9F /* ChoosePalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePalette.swift; sourceTree = "<group>"; };
 		76C13DE8245B2B3100D1AE9F /* ChooseTexture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTexture.swift; sourceTree = "<group>"; };
 		76C13DEA245B2FAE00D1AE9F /* TakePicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePicture.swift; sourceTree = "<group>"; };
@@ -220,6 +224,7 @@
 				345F14D724573809003EE819 /* LaunchScreen.storyboard */,
 				345F14DA24573809003EE819 /* Info.plist */,
 				345F14D524573809003EE819 /* Assets.xcassets */,
+				7668C13D2469D3960099FD11 /* views */,
 				764E60512468384300F6BC07 /* Cera Pro */,
 			);
 			path = Scar;
@@ -269,6 +274,15 @@
 				764E605D2468384300F6BC07 /* Cera Pro Black.otf */,
 			);
 			path = "Cera Pro";
+			sourceTree = "<group>";
+		};
+		7668C13D2469D3960099FD11 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7668C13E2469D3960099FD11 /* Slide.swift */,
+				7668C13F2469D3960099FD11 /* Slide.xib */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,6 +400,7 @@
 				764E60652468384300F6BC07 /* Cera Pro Medium.otf in Resources */,
 				345F14D624573809003EE819 /* Assets.xcassets in Resources */,
 				764E60692468384300F6BC07 /* Cera Pro Black.otf in Resources */,
+				7668C1412469D3960099FD11 /* Slide.xib in Resources */,
 				764E60642468384300F6BC07 /* Cera Pro Bold.otf in Resources */,
 				345F14D424573808003EE819 /* Main.storyboard in Resources */,
 				764E60672468384300F6BC07 /* Cera Pro Thin.otf in Resources */,
@@ -443,6 +458,7 @@
 				342BF26A245DD9EC004CD081 /* SecretCollection.swift in Sources */,
 				76F8FF152458AFDB00E50D7F /* Collage.swift in Sources */,
 				76C13DE7245B255C00D1AE9F /* ChoosePalette.swift in Sources */,
+				7668C1402469D3960099FD11 /* Slide.swift in Sources */,
 				76E9F0FE245B214B00D4921E /* ChooseShape2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
