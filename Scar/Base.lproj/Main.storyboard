@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9C-PY-zlv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9C-PY-zlv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -1510,14 +1510,14 @@ tips and inspirational contents for you!</string>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCell" id="gIL-x7-jMY" customClass="CollectionViewCell" customModule="Scar" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aQw-CN-cVk">
-                                            <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qjk-C8-pXc">
-                                                    <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -1818,7 +1818,7 @@ tips and inspirational contents for you!</string>
                                             <rect key="frame" x="0.0" y="0.0" width="411" height="76"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fN8-Be-cJY">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fN8-Be-cJY">
                                                     <rect key="frame" x="22" y="11" width="367" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="367" id="HnP-ag-ACT"/>
@@ -1827,7 +1827,7 @@ tips and inspirational contents for you!</string>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="48" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6M-Ib-qf4">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="48" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6M-Ib-qf4">
                                                     <rect key="frame" x="22" y="40" width="367" height="19"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="367" id="1yw-oX-ut5"/>
@@ -2088,7 +2088,7 @@ tips and inspirational contents for you!</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Ch-hi-KT7"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Mjh-tW-da3"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="Item2" id="Mjh-tW-da3"/>
                     <connections>
                         <outlet property="b1" destination="DWf-U8-k4A" id="g4n-Zl-F90"/>
                         <outlet property="b2" destination="dSy-AZ-0Wf" id="Zcm-FF-XcE"/>
@@ -2278,7 +2278,7 @@ tips and inspirational contents for you!</string>
         <scene sceneID="ObA-ob-7xj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JYP-pa-saJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Route" id="1FX-Cr-50e"/>
+                    <tabBarItem key="tabBarItem" title="Route" image="Item3" id="1FX-Cr-50e"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QVi-Ld-u79">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -2293,11 +2293,11 @@ tips and inspirational contents for you!</string>
             </objects>
             <point key="canvasLocation" x="129" y="1561"/>
         </scene>
-        <!--Item-->
+        <!--Activities-->
         <scene sceneID="VAp-f4-Cly">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3ag-Zl-dWv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="laR-IG-GjD"/>
+                    <tabBarItem key="tabBarItem" title="Activities" image="Item1" id="laR-IG-GjD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ja8-ub-TVJ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -2333,11 +2333,17 @@ tips and inspirational contents for you!</string>
             <point key="canvasLocation" x="-2807" y="78"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="wd9-1W-xO2"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="CAzz" width="267" height="267"/>
         <image name="CONer" width="200" height="165"/>
         <image name="Group 175" width="414" height="93"/>
         <image name="Group 48" width="508" height="518"/>
+        <image name="Item1" width="43" height="43"/>
+        <image name="Item2" width="29" height="25"/>
+        <image name="Item3" width="33" height="33"/>
         <image name="Onboarding1" width="3740" height="1350"/>
         <image name="Start" width="182" height="55"/>
         <image name="buttonDeselected" width="374" height="76"/>
@@ -2358,17 +2364,14 @@ tips and inspirational contents for you!</string>
         <image name="music" width="512" height="512"/>
         <image name="music-2" width="512" height="512"/>
         <image name="neutri" width="437" height="254"/>
-        <image name="pencil" catalog="system" width="64" height="56"/>
-        <image name="photo" catalog="system" width="64" height="46"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
         <image name="quadrato" width="74" height="71"/>
         <image name="readyViola" width="182" height="55"/>
         <image name="rettangolo" width="126" height="71"/>
-        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="triangolo" width="84" height="74"/>
         <image name="unchecked" width="43" height="43"/>
-        <image name="xmark.seal.fill" catalog="system" width="64" height="60"/>
+        <image name="xmark.seal.fill" catalog="system" width="128" height="122"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="wd9-1W-xO2"/>
-    </inferredMetricsTieBreakers>
 </document>
