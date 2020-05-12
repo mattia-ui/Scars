@@ -225,7 +225,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
              }
              
              //Inserisce Valore. Va nel tutorial
-             queryString = "INSERT INTO Week(valore) VALUES ('1');"
+             queryString = "INSERT INTO Week(valore) VALUES ('0');"
              sqlite3_prepare(db, queryString, -1, &stmt, nil)
              sqlite3_step(stmt)
              print("Saved successfully")

@@ -16,27 +16,29 @@ class MyTapGesture1: UITapGestureRecognizer {
 }
 
 struct WeeklyStruct {
+    var title: String
     var descr: String
     var image: String
 }
 
 var weeklyInfo: [WeeklyStruct] = [
-    WeeklyStruct(descr: "CIAO1", image:"2-.png"),
-    WeeklyStruct(descr: "CIAO2", image:"2-.png"),
-    WeeklyStruct(descr: "CIAO3", image:"2-.png"),
-    WeeklyStruct(descr: "CIAO4", image:"2-.png")
+    WeeklyStruct(title:"CIAO1",descr: "CIAO1", image:"2-.png"),
+    WeeklyStruct(title:"CIAO2",descr: "CIAO2", image:"2-.png"),
+    WeeklyStruct(title:"CIAO3",descr: "CIAO3", image:"2-.png"),
+    WeeklyStruct(title:"CIAO4",descr: "CIAO4", image:"2-.png")
 ]
 
 class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     var i = 1
     @IBOutlet weak var activity: UICollectionView!
+    @IBOutlet weak var titleW: UILabel!
     @IBOutlet weak var imageW: UIImageView!
     @IBOutlet weak var descW: UILabel!
     
     static var allImages: [String] = ["unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked"]
     static var allCardsImages: [String] = ["Card1p","Card2p","Card3p","Card4p","Card5p","Card6p","Card7p","Card8p","Card9p"]
-    static var weekly: WeeklyStruct = WeeklyStruct(descr: "", image: "")
+    static var weekly: WeeklyStruct = WeeklyStruct(title:"",descr: "", image: "")
     
     @IBAction func secret(_ sender: Any) {
         if(i == 15){
@@ -158,6 +160,7 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         
         Schermata1.weekly = weeklyInfo[w]
         imageW.image = UIImage(named: Schermata1.weekly.image)
+        titleW.text = Schermata1.weekly.title
         descW.text = Schermata1.weekly.descr
         
         //Recupera Valore
