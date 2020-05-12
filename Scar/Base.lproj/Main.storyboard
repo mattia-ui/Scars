@@ -1647,7 +1647,7 @@ tips and inspirational contents for you!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v02-uU-l8R">
-                                <rect key="frame" x="22" y="209" width="63" height="27"/>
+                                <rect key="frame" x="22" y="199" width="63" height="27"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1661,28 +1661,28 @@ tips and inspirational contents for you!</string>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="133" id="O36-1N-f3M"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QJ4-bF-fou">
-                                    <size key="itemSize" width="172" height="125"/>
+                                    <size key="itemSize" width="176" height="125"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" restorationIdentifier="myCell" reuseIdentifier="myCell" id="DOL-XC-LhE" customClass="CollectionViewCell1" customModule="Scar" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="4" width="172" height="125"/>
+                                        <rect key="frame" x="0.0" y="4" width="176" height="125"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dPQ-80-aLg">
-                                            <rect key="frame" x="0.0" y="0.0" width="172" height="125"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="176" height="125"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sPL-dm-Pkt">
-                                                    <rect key="frame" x="0.0" y="0.0" width="172" height="125"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="176" height="125"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="115" id="6Js-Fg-XVn"/>
                                                         <constraint firstAttribute="height" constant="125" id="DHc-1M-RtF"/>
                                                     </constraints>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xX-ao-YfK">
-                                                    <rect key="frame" x="125" y="78" width="34" height="34"/>
+                                                    <rect key="frame" x="130" y="78" width="34" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="34" id="OLP-cm-dlt"/>
                                                         <constraint firstAttribute="height" constant="34" id="awi-cn-tTP"/>
@@ -1696,17 +1696,17 @@ tips and inspirational contents for you!</string>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="sPL-dm-Pkt" firstAttribute="top" secondItem="dPQ-80-aLg" secondAttribute="top" id="2Pj-P8-lRp"/>
-                                                <constraint firstAttribute="trailing" secondItem="9xX-ao-YfK" secondAttribute="trailing" constant="13" id="LDb-Xt-jav"/>
+                                                <constraint firstAttribute="trailing" secondItem="9xX-ao-YfK" secondAttribute="trailing" constant="12" id="LDb-Xt-jav"/>
                                                 <constraint firstAttribute="bottom" secondItem="sPL-dm-Pkt" secondAttribute="bottom" id="Zc2-tP-dsK"/>
                                                 <constraint firstAttribute="bottom" secondItem="9xX-ao-YfK" secondAttribute="bottom" constant="13" id="dCP-4P-MaQ"/>
                                                 <constraint firstItem="9xX-ao-YfK" firstAttribute="top" secondItem="dPQ-80-aLg" secondAttribute="top" constant="78" id="p8U-Uh-IQe"/>
                                                 <constraint firstAttribute="trailing" secondItem="sPL-dm-Pkt" secondAttribute="trailing" id="pgd-Oa-uLv"/>
                                                 <constraint firstAttribute="trailing" secondItem="sPL-dm-Pkt" secondAttribute="trailing" id="sr3-TU-uFt"/>
                                                 <constraint firstItem="sPL-dm-Pkt" firstAttribute="leading" secondItem="dPQ-80-aLg" secondAttribute="leading" id="xKX-AH-5Fz"/>
-                                                <constraint firstItem="9xX-ao-YfK" firstAttribute="leading" secondItem="dPQ-80-aLg" secondAttribute="leading" constant="125" id="zeD-zN-adV"/>
+                                                <constraint firstItem="9xX-ao-YfK" firstAttribute="leading" secondItem="dPQ-80-aLg" secondAttribute="leading" constant="130" id="zeD-zN-adV"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="172" height="125"/>
+                                        <size key="customSize" width="176" height="125"/>
                                         <connections>
                                             <outlet property="cardsImage" destination="sPL-dm-Pkt" id="yoe-j4-7Ug"/>
                                             <outlet property="check" destination="9xX-ao-YfK" id="Mtl-Hf-vUo"/>
@@ -1732,58 +1732,60 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Nice work! Keep on going" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71W-Ns-qfS">
-                                <rect key="frame" x="22" y="221" width="238.5" height="20"/>
+                                <rect key="frame" x="22" y="235" width="238.5" height="20"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mqk-Ya-Xpd">
-                                <rect key="frame" x="207" y="493" width="185" height="286"/>
+                                <rect key="frame" x="207" y="493" width="185" height="277"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="9ux-fi-hW4"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdL-Hh-gis">
-                                <rect key="frame" x="20" y="493" width="179" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdL-Hh-gis">
+                                <rect key="frame" x="20" y="493" width="184" height="29"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Qua ci vanno le stronzate di francesca" lineBreakMode="tailTruncation" numberOfLines="33" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61N-a8-v0d">
-                                <rect key="frame" x="20" y="530" width="179" height="52"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Qua ci vanno le stronzate di francesca" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61N-a8-v0d">
+                                <rect key="frame" x="20" y="530" width="184" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="AS3-lh-Spp"/>
-                                    <constraint firstAttribute="width" constant="179" id="eJc-un-lub"/>
+                                    <constraint firstAttribute="height" constant="240" id="h3U-f3-0lv"/>
+                                    <constraint firstAttribute="width" constant="184" id="z9u-dT-5Ih"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="SdL-Hh-gis" firstAttribute="trailing" secondItem="61N-a8-v0d" secondAttribute="trailing" id="0w2-nr-yk4"/>
                             <constraint firstItem="fYq-XF-b71" firstAttribute="top" secondItem="M1P-wk-6qy" secondAttribute="top" constant="4.5" id="2To-am-a7H"/>
-                            <constraint firstItem="v02-uU-l8R" firstAttribute="top" secondItem="0Wg-V5-aIC" secondAttribute="bottom" constant="32" id="5oq-uj-UTB"/>
+                            <constraint firstItem="M1P-wk-6qy" firstAttribute="bottom" secondItem="61N-a8-v0d" secondAttribute="bottom" constant="43" id="3Kz-QW-apM"/>
+                            <constraint firstItem="v02-uU-l8R" firstAttribute="top" secondItem="0Wg-V5-aIC" secondAttribute="bottom" constant="22" id="5oq-uj-UTB"/>
                             <constraint firstItem="fWY-uv-LMG" firstAttribute="trailing" secondItem="M1P-wk-6qy" secondAttribute="trailing" id="6hI-hY-Zey"/>
                             <constraint firstItem="fYq-XF-b71" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="M1P-wk-6qy" secondAttribute="leading" id="DMm-7b-Gci"/>
+                            <constraint firstItem="61N-a8-v0d" firstAttribute="top" secondItem="SdL-Hh-gis" secondAttribute="bottom" constant="8" id="FLk-9d-moo"/>
                             <constraint firstItem="puv-vE-VcP" firstAttribute="top" secondItem="fWY-uv-LMG" secondAttribute="bottom" constant="45" id="Gnr-vP-aQl"/>
+                            <constraint firstItem="SdL-Hh-gis" firstAttribute="leading" secondItem="61N-a8-v0d" secondAttribute="leading" id="IL9-i7-Ba4"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="trailing" secondItem="mqk-Ya-Xpd" secondAttribute="trailing" constant="22" id="IhW-AG-cAk"/>
-                            <constraint firstItem="71W-Ns-qfS" firstAttribute="top" secondItem="v02-uU-l8R" secondAttribute="bottom" constant="-15" id="InV-4h-ypY"/>
-                            <constraint firstItem="M1P-wk-6qy" firstAttribute="bottom" secondItem="61N-a8-v0d" secondAttribute="bottom" constant="231" id="JIv-Us-HZf"/>
+                            <constraint firstItem="71W-Ns-qfS" firstAttribute="top" secondItem="v02-uU-l8R" secondAttribute="bottom" constant="9" id="InV-4h-ypY"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="trailing" secondItem="mqk-Ya-Xpd" secondAttribute="trailing" constant="22" id="Lva-J6-btk"/>
+                            <constraint firstItem="M1P-wk-6qy" firstAttribute="bottom" secondItem="mqk-Ya-Xpd" secondAttribute="bottom" constant="43" id="N9W-Kr-gu0"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0Wg-V5-aIC" secondAttribute="trailing" symbolic="YES" id="OK4-Xz-TIe"/>
                             <constraint firstItem="mqk-Ya-Xpd" firstAttribute="top" secondItem="61N-a8-v0d" secondAttribute="top" constant="-37" id="Oj7-rA-rdS"/>
                             <constraint firstItem="71W-Ns-qfS" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="22" id="Pl8-pz-QDb"/>
                             <constraint firstItem="0Wg-V5-aIC" firstAttribute="top" secondItem="M1P-wk-6qy" secondAttribute="top" constant="51" id="Qy2-6J-unK"/>
                             <constraint firstItem="v02-uU-l8R" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="22" id="Sab-Nb-46b"/>
-                            <constraint firstItem="mqk-Ya-Xpd" firstAttribute="leading" secondItem="61N-a8-v0d" secondAttribute="trailing" constant="8" id="SnX-bi-gI9"/>
-                            <constraint firstItem="mqk-Ya-Xpd" firstAttribute="leading" secondItem="61N-a8-v0d" secondAttribute="trailing" constant="8" id="Tb1-B2-wXo"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="trailing" secondItem="puv-vE-VcP" secondAttribute="trailing" constant="297" id="Wpk-jK-ZhQ"/>
-                            <constraint firstItem="M1P-wk-6qy" firstAttribute="bottom" secondItem="mqk-Ya-Xpd" secondAttribute="bottom" constant="34" id="XZP-RC-zKP"/>
                             <constraint firstItem="61N-a8-v0d" firstAttribute="top" secondItem="puv-vE-VcP" secondAttribute="bottom" constant="57" id="Zbh-eS-gnF"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="v02-uU-l8R" secondAttribute="trailing" symbolic="YES" id="dFZ-0v-SjE"/>
-                            <constraint firstItem="fWY-uv-LMG" firstAttribute="top" secondItem="71W-Ns-qfS" secondAttribute="bottom" constant="27" id="gqN-eb-fR5"/>
+                            <constraint firstItem="SdL-Hh-gis" firstAttribute="top" secondItem="mqk-Ya-Xpd" secondAttribute="top" id="eeX-lQ-G0z"/>
+                            <constraint firstItem="fWY-uv-LMG" firstAttribute="top" secondItem="71W-Ns-qfS" secondAttribute="bottom" constant="13" id="gqN-eb-fR5"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="71W-Ns-qfS" secondAttribute="trailing" symbolic="YES" id="lmD-iH-apv"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="trailing" secondItem="fYq-XF-b71" secondAttribute="trailing" constant="20.5" id="lwc-TO-Rh6"/>
                             <constraint firstItem="fWY-uv-LMG" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="22" id="m2I-c4-R22"/>
@@ -1791,6 +1793,7 @@ tips and inspirational contents for you!</string>
                             <constraint firstItem="puv-vE-VcP" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="22" id="pfr-a4-bwV"/>
                             <constraint firstItem="61N-a8-v0d" firstAttribute="top" secondItem="puv-vE-VcP" secondAttribute="bottom" constant="57" id="sly-6v-ubb"/>
                             <constraint firstItem="0Wg-V5-aIC" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="22" id="t3q-em-Eya"/>
+                            <constraint firstItem="mqk-Ya-Xpd" firstAttribute="leading" secondItem="61N-a8-v0d" secondAttribute="trailing" constant="3" id="wfR-BA-SPh"/>
                             <constraint firstItem="61N-a8-v0d" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="20" id="xG2-YQ-O2N"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M1P-wk-6qy"/>
