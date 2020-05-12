@@ -36,6 +36,8 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     @IBOutlet weak var imageW: UIImageView!
     @IBOutlet weak var descW: UILabel!
     
+    static var frasiDeStoCazzo : [String] = ["bravo sto cazzo","la testa delle due designer","scherzo","sono brave","buuu","fratm","ejaamm","complimenti","finalmente"]
+    
     static var allImages: [String] = ["unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked"]
     static var allCardsImages: [String] = ["Card1p","Card2p","Card3p","Card4p","Card5p","Card6p","Card7p","Card8p","Card9p"]
     static var weekly: WeeklyStruct = WeeklyStruct(title:"",descr: "", image: "")
