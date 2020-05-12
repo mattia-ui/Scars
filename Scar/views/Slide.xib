@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cera Pro Bold.otf">
+            <string>CeraPro-Bold</string>
+        </array>
+        <array key="Cera Pro Light.otf">
+            <string>CeraPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Slide" customModule="Scar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zKg-E3-u7K" colorLabel="IBBuiltInLabel-Yellow">
+                    <rect key="frame" x="9" y="8" width="356" height="510"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Winnie the Pooh" translatesAutoresizingMaskIntoConstraints="NO" id="zyz-yE-tYh" userLabel="Title">
+                            <rect key="frame" x="7" y="3" width="342" height="53"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="19"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Use this technique to make your slides, create your app, in a simple and effective way " translatesAutoresizingMaskIntoConstraints="NO" id="M3Z-3U-9Q6" userLabel="Description">
+                            <rect key="frame" x="7" y="57" width="342" height="445"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="19"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zKg-E3-u7K" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="EDY-ue-hBk"/>
+                <constraint firstItem="zKg-E3-u7K" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="9" id="tN6-xj-GiE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="zKg-E3-u7K" secondAttribute="bottom" constant="149" id="vhX-sw-ueC"/>
+                <constraint firstItem="zKg-E3-u7K" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wrP-66-xHP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="labelDesc" destination="M3Z-3U-9Q6" id="aYp-tQ-3hO"/>
+                <outlet property="labelTitle" destination="zyz-yE-tYh" id="o8d-aJ-Km2"/>
+                <outlet property="view" destination="zKg-E3-u7K" id="LGM-Vo-ZXw"/>
+            </connections>
+            <point key="canvasLocation" x="108" y="158.77061469265368"/>
+        </view>
+        <viewController id="aJc-Nl-9ki">
+            <view key="view" contentMode="scaleToFill" id="AN1-ZZ-CI3">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="federica pellegrini" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56d-oo-AFR">
+                        <rect key="frame" x="202" y="323" width="137" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                <viewLayoutGuide key="safeArea" id="twe-6C-yQt"/>
+            </view>
+            <point key="canvasLocation" x="780" y="159"/>
+        </viewController>
+    </objects>
+</document>

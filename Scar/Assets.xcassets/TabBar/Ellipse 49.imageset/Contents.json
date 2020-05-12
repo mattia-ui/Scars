@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Item2.pdf",
+      "filename" : "Ellipse 49.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Ellipse 49@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Ellipse 49@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
