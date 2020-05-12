@@ -1806,8 +1806,8 @@ tips and inspirational contents for you!</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IRL-vy-kpc">
-                                <rect key="frame" x="66" y="103" width="245" height="79"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav1" translatesAutoresizingMaskIntoConstraints="NO" id="IRL-vy-kpc">
+                                <rect key="frame" x="60" y="104" width="266" height="95"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zqp-a9-CTC">
                                 <rect key="frame" x="0.0" y="190" width="414" height="706"/>
@@ -1815,9 +1815,11 @@ tips and inspirational contents for you!</string>
                                 <viewLayoutGuide key="frameLayoutGuide" id="EgR-fQ-y8p"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg9-aS-nb6">
-                                <rect key="frame" x="22" y="117" width="30" height="65"/>
+                                <rect key="frame" x="22" y="141" width="30" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="lfR-Ka-V1K"/>
+                                    <constraint firstAttribute="width" constant="30" id="944-lc-E7Z"/>
+                                    <constraint firstAttribute="height" constant="35" id="lfR-Ka-V1K"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="sJV-2q-Ftl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="&lt;"/>
@@ -1829,15 +1831,15 @@ tips and inspirational contents for you!</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Yg9-aS-nb6" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" constant="29" id="2aq-5D-aEL"/>
+                            <constraint firstItem="Yg9-aS-nb6" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" constant="53" id="2aq-5D-aEL"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Zqp-a9-CTC" secondAttribute="bottom" constant="-83" id="5HH-fE-axJ"/>
                             <constraint firstItem="Yg9-aS-nb6" firstAttribute="leading" secondItem="bTK-SO-FHz" secondAttribute="leading" constant="22" id="HHl-wB-C8l"/>
-                            <constraint firstItem="bTK-SO-FHz" firstAttribute="trailing" secondItem="IRL-vy-kpc" secondAttribute="trailing" constant="103" id="S5d-T3-WR6"/>
-                            <constraint firstItem="Zqp-a9-CTC" firstAttribute="top" secondItem="Yg9-aS-nb6" secondAttribute="bottom" constant="8" id="amC-51-VuS"/>
+                            <constraint firstItem="bTK-SO-FHz" firstAttribute="trailing" secondItem="IRL-vy-kpc" secondAttribute="trailing" constant="88" id="S5d-T3-WR6"/>
+                            <constraint firstItem="Zqp-a9-CTC" firstAttribute="top" secondItem="Yg9-aS-nb6" secondAttribute="bottom" constant="14" id="amC-51-VuS"/>
                             <constraint firstItem="Zqp-a9-CTC" firstAttribute="centerX" secondItem="TZg-6g-tU7" secondAttribute="centerX" id="cJm-49-pOx"/>
-                            <constraint firstItem="IRL-vy-kpc" firstAttribute="leading" secondItem="Yg9-aS-nb6" secondAttribute="trailing" constant="14" id="hG2-9E-3Wc"/>
-                            <constraint firstItem="Yg9-aS-nb6" firstAttribute="bottom" secondItem="IRL-vy-kpc" secondAttribute="bottom" id="l2q-2J-QbD"/>
-                            <constraint firstItem="IRL-vy-kpc" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" constant="15" id="qIZ-cQ-qlQ"/>
+                            <constraint firstItem="IRL-vy-kpc" firstAttribute="leading" secondItem="Yg9-aS-nb6" secondAttribute="trailing" constant="8" id="hG2-9E-3Wc"/>
+                            <constraint firstItem="Yg9-aS-nb6" firstAttribute="bottom" secondItem="IRL-vy-kpc" secondAttribute="bottom" constant="-23" id="l2q-2J-QbD"/>
+                            <constraint firstItem="IRL-vy-kpc" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" constant="16" id="qIZ-cQ-qlQ"/>
                             <constraint firstItem="Zqp-a9-CTC" firstAttribute="leading" secondItem="bTK-SO-FHz" secondAttribute="leading" id="r6Y-rL-epE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bTK-SO-FHz"/>
@@ -2331,6 +2333,7 @@ tips and inspirational contents for you!</string>
         <image name="marmo" width="152" height="87"/>
         <image name="music" width="512" height="512"/>
         <image name="music-2" width="512" height="512"/>
+        <image name="nav1" width="273" height="54"/>
         <image name="neutri" width="437" height="254"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="photo" catalog="system" width="128" height="93"/>
