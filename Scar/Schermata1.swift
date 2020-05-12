@@ -23,7 +23,7 @@ struct WeeklyStruct {
 
 var weeklyInfo: [WeeklyStruct] = [
     WeeklyStruct(title:"Read a good book",descr: "CIAO1", image:"2-.png"),
-    WeeklyStruct(title:"CIAO2",descr: "Did you know that reading reduces stress levels, improves mood and is very good for your mind? What are you waiting for? Choose something you like and start reading it.", image:"Weekly1.png"),
+    WeeklyStruct(title:"Read a good book",descr: "Did you know that reading reduces stress levels, improves mood and is very good for your mind? What are you waiting for? Choose something you like and start reading it.", image:"Weekly1.png"),
     WeeklyStruct(title:"CIAO3",descr: "CIAO3", image:"2-.png"),
     WeeklyStruct(title:"CIAO4",descr: "CIAO4", image:"2-.png")
 ]
