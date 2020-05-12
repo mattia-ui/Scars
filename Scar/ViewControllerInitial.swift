@@ -29,7 +29,7 @@ struct ActivityStruct {
 
 var dati = [ActivityStruct(
     attivita1:[
-        ContenutoStruct(contenuto: "Doing mirror work is one of the most loving gifts you can give yourself. Remember that the more you use your mirror for complimenting and supporting yourself, the deeper and more pleasant your relationship with yourself will become.\n \nHere are three simple steps for mastering your mirror work in practice!" , titolo: "Your mirror is your friend", righe: 11), ContenutoStruct(contenuto:"Using a handheld mirror allows you to get closer to the most intimate part of yourself. Just make sure you're in a place where nobody can bother you!" , titolo: "1. Get a handheld mirror", righe: 18), ContenutoStruct(contenuto: "Start by making eye contact with yourself in the mirror and don't worry if at first this may seem a little uncomfortable.", titolo: "2. Make eye contact", righe: 24), ContenutoStruct(contenuto: "Now begin to say some of your favorite affirmations out loud or just start a conversation with yourself. It’s so important to give yourself little positive messages, say anything that makes you feel really good!", titolo: "3. Give yourself positive messages out loud",righe: 31)],
+        ContenutoStruct(contenuto: "Doing mirror work is one of the most loving gifts you can give yourself. Remember that the more you use your mirror for complimenting and supporting yourself, the deeper and more pleasant your relationship with yourself will become.\n \nHere are three simple steps for mastering your mirror work in practice!" , titolo: "Your mirror is your friend", righe: 11), ContenutoStruct(contenuto:"Using a handheld mirror allows you to get closer to the most intimate part of yourself. Just make sure you're in a place where nobody can bother you!" , titolo: "1. Get a handheld mirror", righe: 17), ContenutoStruct(contenuto: "Start by making eye contact with yourself in the mirror and don't worry if at first this may seem a little uncomfortable.", titolo: "2. Make eye contact", righe: 23), ContenutoStruct(contenuto: "Now begin to say some of your favorite affirmations out loud or just start a conversation with yourself. It’s so important to give yourself little positive messages, say anything that makes you feel really good!", titolo: "3. Give yourself positive messages out loud",righe: 30)],
     attivita2:
         [ContenutoStruct(contenuto: "Taking some time and writing a diary could help you improve your body image. Writing activities could be used as a form of therapy for people who have self-esteem and body issues.\nReady to get started? Here are some small tips that will help you along the way:", titolo: "The importance of writing", righe: 11),
         ContenutoStruct(contenuto: "Everyone has his own times: If you are an early riser, you can update your diary in the morning but If you are a night owl, choose to update it in the evening. ", titolo: "1. Choose a suitable time for you. ", righe: 11),
@@ -116,7 +116,9 @@ class ViewControllerInitial: UIViewController, UIScrollViewDelegate {
             
         for i in 0 ..< attivita.count{
             let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+            slide2.labelDesc.font = UIFont(name: "CeraPro-Bold", size: 19.0)
             slide2.labelTitle.text = attivita[i].titolo
+            slide2.labelDesc.font = UIFont(name: "CeraPro-Light", size: 19.0)
             slide2.labelDesc.text = attivita[i].contenuto
             slides.append(slide2)
         }
