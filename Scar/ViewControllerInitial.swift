@@ -50,7 +50,7 @@ var dati = [ActivityStruct(
         ContenutoStruct(contenuto: "To increase your concentration on the breath you can use a mantra, it is a short sentence, which you can repeat over and over again.", titolo: " 4. Use a mantra", righe: 31),
         ContenutoStruct(contenuto: "It is important to dedicate enough time to this practice. The ideal would be two meditation sessions, the first in the morning and the second in the evening. Meditation is not an occasional practice, it is very important to meditate every day, even for just a few minutes.", titolo: "5. Find your ideal time.", righe: 39)],
     attivita6:
-        [ContenutoStruct(contenuto: "Regular exercise can have a deeply positive impact on your daily life. But don’t worry, you don’t have to torture yourself with difficult exercises to get what you want. You can build confidence and do your exercises on your own terms and on your own times.\nLet's see together some exercises you can do:", titolo: "What are the exercises that affect your mood in a positive way?", righe: 11),
+        [ContenutoStruct(contenuto: "\nRegular exercise can have a deeply positive impact on your daily life. But don’t worry, you don’t have to torture yourself with difficult exercises to get what you want. You can build confidence and do your exercises on your own terms and on your own times.\nLet's see together some exercises you can do:", titolo: "What are the exercises that affect your mood in a positive way?", righe: 11),
         ContenutoStruct(contenuto: "Yoga develops inner awareness by focusing your attention on what you are experiencing in the present moment without judging yourself.", titolo: "1. Yoga", righe: 17),
         ContenutoStruct(contenuto: "Pilates is a training method that teaches you to become aware of your body, correct your posture and improve the precision of your movements", titolo: "2. Pilates", righe: 24),
         ContenutoStruct(contenuto: "Tai Chi is a discipline of ancient origins, close to the world of martial arts, useful for strengthening the character, the elasticity of the muscles and the improvement of posture.", titolo: "3. Tai Chi", righe: 31)],
@@ -149,9 +149,9 @@ class ViewControllerInitial: UIViewController, UIScrollViewDelegate {
             
         for i in 0 ..< attivita.count{
             let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            slide2.labelDesc.font = UIFont(name: "CeraPro-Bold", size: 19.0)
+            slide2.labelDesc.font = UIFont(name: "CeraPro-Bold", size: 17.0)
             slide2.labelTitle.text = attivita[i].titolo
-            slide2.labelDesc.font = UIFont(name: "CeraPro-Light", size: 19.0)
+            slide2.labelDesc.font = UIFont(name: "CeraPro-Light", size: 17.0)
             slide2.labelDesc.text = attivita[i].contenuto
             slides.append(slide2)
         }
