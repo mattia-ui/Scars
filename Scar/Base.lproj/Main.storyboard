@@ -1649,7 +1649,7 @@ tips and inspirational contents for you!</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Daily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v02-uU-l8R">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v02-uU-l8R">
                                 <rect key="frame" x="22" y="212" width="63" height="27"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="27"/>
                                 <nil key="textColor"/>
@@ -1734,7 +1734,7 @@ tips and inspirational contents for you!</string>
                                     <action selector="secret:" destination="bpt-qr-c5A" eventType="touchUpInside" id="Qcm-Mf-hv2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" misplaced="YES" text="Nice work! Keep on going" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71W-Ns-qfS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Nice work! Keep on going" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71W-Ns-qfS">
                                 <rect key="frame" x="22" y="226" width="238.5" height="20"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -1746,20 +1746,27 @@ tips and inspirational contents for you!</string>
                                     <constraint firstAttribute="height" constant="349" id="fgy-Dr-YAK"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Qua ci vanno le stronzate di francesca" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61N-a8-v0d">
-                                <rect key="frame" x="22" y="504" width="159" height="291"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="249" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61N-a8-v0d">
+                                <rect key="frame" x="22" y="464" width="159" height="331"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="291" id="Ay3-lB-ojg"/>
+                                    <constraint firstAttribute="height" constant="331" id="Ay3-lB-ojg"/>
                                     <constraint firstAttribute="width" constant="159" id="bcJ-4q-dkF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Qua ci vanno le stronzate di francesca">
+                                        <attributes>
+                                            <color key="NSColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="CeraPro-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdL-Hh-gis">
-                                <rect key="frame" x="22" y="477" width="156" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdL-Hh-gis">
+                                <rect key="frame" x="22" y="489" width="156" height="17"/>
                                 <fontDescription key="fontDescription" name="CeraPro-MediumItalic" family="Cera Pro" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -1767,23 +1774,22 @@ tips and inspirational contents for you!</string>
                         <constraints>
                             <constraint firstItem="fYq-XF-b71" firstAttribute="top" secondItem="M1P-wk-6qy" secondAttribute="top" constant="4.5" id="2To-am-a7H"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="bottom" secondItem="mqk-Ya-Xpd" secondAttribute="bottom" constant="18" id="55E-kN-LLE"/>
-                            <constraint firstItem="v02-uU-l8R" firstAttribute="top" secondItem="0Wg-V5-aIC" secondAttribute="bottom" constant="22" id="5oq-uj-UTB"/>
+                            <constraint firstItem="v02-uU-l8R" firstAttribute="top" secondItem="0Wg-V5-aIC" secondAttribute="bottom" constant="24" id="5oq-uj-UTB"/>
                             <constraint firstItem="fWY-uv-LMG" firstAttribute="trailing" secondItem="M1P-wk-6qy" secondAttribute="trailing" id="6hI-hY-Zey"/>
                             <constraint firstItem="mqk-Ya-Xpd" firstAttribute="leading" secondItem="61N-a8-v0d" secondAttribute="trailing" constant="5" id="75L-HV-7Dg"/>
                             <constraint firstItem="fYq-XF-b71" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="M1P-wk-6qy" secondAttribute="leading" id="DMm-7b-Gci"/>
                             <constraint firstItem="puv-vE-VcP" firstAttribute="top" secondItem="fWY-uv-LMG" secondAttribute="bottom" constant="41" id="Gnr-vP-aQl"/>
-                            <constraint firstItem="71W-Ns-qfS" firstAttribute="top" secondItem="v02-uU-l8R" secondAttribute="bottom" constant="-8" id="InV-4h-ypY"/>
+                            <constraint firstItem="71W-Ns-qfS" firstAttribute="top" secondItem="v02-uU-l8R" secondAttribute="bottom" constant="-13" id="InV-4h-ypY"/>
                             <constraint firstItem="61N-a8-v0d" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="22" id="JS8-BW-3w6"/>
+                            <constraint firstItem="SdL-Hh-gis" firstAttribute="top" secondItem="puv-vE-VcP" secondAttribute="bottom" constant="20" id="NKE-EA-uPO"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0Wg-V5-aIC" secondAttribute="trailing" symbolic="YES" id="OK4-Xz-TIe"/>
                             <constraint firstItem="71W-Ns-qfS" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="22" id="Pl8-pz-QDb"/>
                             <constraint firstItem="0Wg-V5-aIC" firstAttribute="top" secondItem="M1P-wk-6qy" secondAttribute="top" constant="62" id="Qy2-6J-unK"/>
                             <constraint firstItem="v02-uU-l8R" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="22" id="Sab-Nb-46b"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="trailing" secondItem="puv-vE-VcP" secondAttribute="trailing" constant="297" id="Wpk-jK-ZhQ"/>
                             <constraint firstItem="mqk-Ya-Xpd" firstAttribute="leading" secondItem="SdL-Hh-gis" secondAttribute="trailing" constant="8" id="YCD-mk-89u"/>
-                            <constraint firstItem="61N-a8-v0d" firstAttribute="top" secondItem="puv-vE-VcP" secondAttribute="bottom" constant="35" id="bAM-JD-qKD"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="v02-uU-l8R" secondAttribute="trailing" symbolic="YES" id="dFZ-0v-SjE"/>
-                            <constraint firstItem="fWY-uv-LMG" firstAttribute="top" secondItem="71W-Ns-qfS" secondAttribute="bottom" constant="19" id="gqN-eb-fR5"/>
-                            <constraint firstItem="SdL-Hh-gis" firstAttribute="top" secondItem="puv-vE-VcP" secondAttribute="bottom" constant="8" id="kg7-68-at3"/>
+                            <constraint firstItem="fWY-uv-LMG" firstAttribute="top" secondItem="71W-Ns-qfS" secondAttribute="bottom" constant="22" id="gqN-eb-fR5"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="71W-Ns-qfS" secondAttribute="trailing" symbolic="YES" id="lmD-iH-apv"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="trailing" secondItem="fYq-XF-b71" secondAttribute="trailing" constant="20.5" id="lwc-TO-Rh6"/>
                             <constraint firstItem="fWY-uv-LMG" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="22" id="m2I-c4-R22"/>
