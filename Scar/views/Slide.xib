@@ -36,7 +36,7 @@
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Use this technique to make your slides, create your app, in a simple and effective way " translatesAutoresizingMaskIntoConstraints="NO" id="M3Z-3U-9Q6" userLabel="Description">
-                            <rect key="frame" x="22" y="35" width="331" height="632"/>
+                            <rect key="frame" x="22" y="24" width="331" height="643"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="331" id="vpt-Qu-y0J"/>
@@ -50,7 +50,7 @@
                     <constraints>
                         <constraint firstItem="zyz-yE-tYh" firstAttribute="top" secondItem="zKg-E3-u7K" secondAttribute="top" id="5sr-5Y-4UJ"/>
                         <constraint firstItem="zyz-yE-tYh" firstAttribute="trailing" secondItem="M3Z-3U-9Q6" secondAttribute="trailing" id="Rgp-hl-v5J"/>
-                        <constraint firstItem="M3Z-3U-9Q6" firstAttribute="top" secondItem="zyz-yE-tYh" secondAttribute="bottom" constant="-24" id="SRA-hp-zwv"/>
+                        <constraint firstItem="M3Z-3U-9Q6" firstAttribute="top" secondItem="zyz-yE-tYh" secondAttribute="bottom" constant="-35" id="SRA-hp-zwv"/>
                         <constraint firstItem="zyz-yE-tYh" firstAttribute="leading" secondItem="M3Z-3U-9Q6" secondAttribute="leading" id="Yh8-7a-pPc"/>
                         <constraint firstAttribute="bottom" secondItem="M3Z-3U-9Q6" secondAttribute="bottom" id="hB4-9C-tXJ"/>
                         <constraint firstItem="zyz-yE-tYh" firstAttribute="leading" secondItem="zKg-E3-u7K" secondAttribute="leading" constant="22" id="nBg-JD-Njn"/>
