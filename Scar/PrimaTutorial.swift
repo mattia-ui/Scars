@@ -167,7 +167,8 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
 //        var db: OpaquePointer?
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard1))
         view.addGestureRecognizer(tap)
         
@@ -287,8 +288,19 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     @objc func dismissKeyboard1() {
-           view.endEditing(true)
+        if self.view.frame.origin.y != 0{
+        self.view.frame.origin.y += 150
+        }
+       view.endEditing(true)
        }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if ((notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue) != nil {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= 150
+            }
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return 8
