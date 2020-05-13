@@ -1828,9 +1828,13 @@ tips and inspirational contents for you!</string>
                                 <viewLayoutGuide key="contentLayoutGuide" id="EuJ-gc-azU"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="EgR-fQ-y8p"/>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg9-aS-nb6">
-                                <rect key="frame" x="5" y="133" width="30" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg9-aS-nb6">
+                                <rect key="frame" x="26" y="141" width="10" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="BBY-dP-QTs"/>
+                                    <constraint firstAttribute="width" constant="10" id="qre-qh-atK"/>
+                                </constraints>
+                                <state key="normal" image="frecciaBack"/>
                                 <connections>
                                     <action selector="back:" destination="5W6-fN-tNa" eventType="touchUpInside" id="0RW-O1-qDG"/>
                                 </connections>
@@ -1842,10 +1846,12 @@ tips and inspirational contents for you!</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Yg9-aS-nb6" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" constant="53" id="1Fl-g5-aIn"/>
                             <constraint firstItem="Zqp-a9-CTC" firstAttribute="centerX" secondItem="TZg-6g-tU7" secondAttribute="centerX" id="Gzi-hd-0Jg"/>
                             <constraint firstItem="Zqp-a9-CTC" firstAttribute="top" secondItem="IRL-vy-kpc" secondAttribute="bottom" constant="62" id="HnI-sM-3J5"/>
                             <constraint firstItem="bTK-SO-FHz" firstAttribute="trailing" secondItem="IRL-vy-kpc" secondAttribute="trailing" constant="88" id="Rzu-K0-2y8"/>
                             <constraint firstItem="IRL-vy-kpc" firstAttribute="leading" secondItem="Yg9-aS-nb6" secondAttribute="trailing" constant="18" id="gQU-c4-oNc"/>
+                            <constraint firstItem="IRL-vy-kpc" firstAttribute="leading" secondItem="Yg9-aS-nb6" secondAttribute="trailing" constant="17" id="kxm-bp-zh2"/>
                             <constraint firstItem="IRL-vy-kpc" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" constant="30" id="ngb-AN-vhh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bTK-SO-FHz"/>
@@ -2330,6 +2336,7 @@ tips and inspirational contents for you!</string>
         <image name="cratere" width="152" height="87"/>
         <image name="done" width="182" height="55"/>
         <image name="fibra" width="152" height="87"/>
+        <image name="frecciaBack" width="14" height="25"/>
         <image name="freddi" width="437" height="254"/>
         <image name="illustrazione3" width="376" height="444"/>
         <image name="legno" width="152" height="87"/>
