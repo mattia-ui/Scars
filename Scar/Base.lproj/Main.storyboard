@@ -1820,7 +1820,7 @@ tips and inspirational contents for you!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zqp-a9-CTC">
-                                <rect key="frame" x="0.0" y="241" width="414" height="663"/>
+                                <rect key="frame" x="0.0" y="192" width="414" height="707"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="8Nk-kU-HSs"/>
                                     <constraint firstAttribute="height" constant="663" id="eTf-WS-spw"/>
@@ -1828,6 +1828,13 @@ tips and inspirational contents for you!</string>
                                 <viewLayoutGuide key="contentLayoutGuide" id="EuJ-gc-azU"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="EgR-fQ-y8p"/>
                             </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rettangle" translatesAutoresizingMaskIntoConstraints="NO" id="aRI-Cd-2hP">
+                                <rect key="frame" x="0.0" y="88" width="414" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="DjJ-wO-8t3"/>
+                                    <constraint firstAttribute="width" constant="414" id="Dy4-lR-KRM"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg9-aS-nb6">
                                 <rect key="frame" x="26" y="141" width="10" height="20"/>
                                 <constraints>
@@ -1847,12 +1854,16 @@ tips and inspirational contents for you!</string>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Yg9-aS-nb6" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" constant="53" id="1Fl-g5-aIn"/>
+                            <constraint firstItem="aRI-Cd-2hP" firstAttribute="trailing" secondItem="bTK-SO-FHz" secondAttribute="trailing" id="7c2-k8-SAH"/>
+                            <constraint firstItem="Zqp-a9-CTC" firstAttribute="top" secondItem="IRL-vy-kpc" secondAttribute="bottom" constant="10" id="BCs-nI-qxb"/>
                             <constraint firstItem="Zqp-a9-CTC" firstAttribute="centerX" secondItem="TZg-6g-tU7" secondAttribute="centerX" id="Gzi-hd-0Jg"/>
-                            <constraint firstItem="Zqp-a9-CTC" firstAttribute="top" secondItem="IRL-vy-kpc" secondAttribute="bottom" constant="62" id="HnI-sM-3J5"/>
+                            <constraint firstItem="aRI-Cd-2hP" firstAttribute="leading" secondItem="bTK-SO-FHz" secondAttribute="leading" id="Mzq-cx-pae"/>
                             <constraint firstItem="bTK-SO-FHz" firstAttribute="trailing" secondItem="IRL-vy-kpc" secondAttribute="trailing" constant="88" id="Rzu-K0-2y8"/>
                             <constraint firstItem="IRL-vy-kpc" firstAttribute="leading" secondItem="Yg9-aS-nb6" secondAttribute="trailing" constant="18" id="gQU-c4-oNc"/>
                             <constraint firstItem="IRL-vy-kpc" firstAttribute="leading" secondItem="Yg9-aS-nb6" secondAttribute="trailing" constant="17" id="kxm-bp-zh2"/>
                             <constraint firstItem="IRL-vy-kpc" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" constant="30" id="ngb-AN-vhh"/>
+                            <constraint firstItem="aRI-Cd-2hP" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" id="qr6-jS-Gpm"/>
+                            <constraint firstItem="aRI-Cd-2hP" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" id="wLS-Bp-8yd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bTK-SO-FHz"/>
                     </view>
@@ -2327,6 +2338,7 @@ tips and inspirational contents for you!</string>
         <image name="Item2" width="29" height="25"/>
         <image name="Item3" width="33" height="33"/>
         <image name="Onboarding1" width="3740" height="1350"/>
+        <image name="Rettangle" width="432" height="161"/>
         <image name="Start" width="182" height="55"/>
         <image name="buttonDeselected" width="374" height="76"/>
         <image name="buttonSelected" width="374" height="76"/>

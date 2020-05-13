@@ -7,11 +7,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Cera Pro Bold.otf">
-            <string>CeraPro-Bold</string>
-        </array>
         <array key="Cera Pro Light.otf">
             <string>CeraPro-Light</string>
+        </array>
+        <array key="Cera Pro Medium Italic.otf">
+            <string>CeraPro-MediumItalic</string>
         </array>
     </customFonts>
     <objects>
@@ -32,7 +32,7 @@
                                 <constraint firstAttribute="height" constant="59" id="rc6-YM-oEF"/>
                             </constraints>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="CeraPro-MediumItalic" family="Cera Pro" pointSize="17"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Use this technique to make your slides, create your app, in a simple and effective way " translatesAutoresizingMaskIntoConstraints="NO" id="M3Z-3U-9Q6" userLabel="Description">
