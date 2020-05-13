@@ -1304,7 +1304,7 @@ How you think others see it?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Before starting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kk1-iP-iA2">
-                                <rect key="frame" x="22" y="90" width="269" height="38"/>
+                                <rect key="frame" x="22" y="90" width="369" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                 <nil key="textColor"/>
@@ -2339,7 +2339,7 @@ tips and inspirational contents for you!</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wd9-1W-xO2"/>
+        <segue reference="s1A-7h-Aw8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="CAzz" width="267" height="267"/>

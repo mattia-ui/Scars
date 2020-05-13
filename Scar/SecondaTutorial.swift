@@ -53,23 +53,23 @@ class SecondaTutorial : UIViewController {
             }
         }
         else if(cont == 2){
-            UIView.animate(withDuration: 0.2){
-                self.PrimaLabel.alpha = 0
-                self.SecondaLabel.alpha = 0
-                self.TerzaLabel.alpha = 0
+//            UIView.animate(withDuration: 0.2){
+//                self.PrimaLabel.alpha = 0
+//                self.SecondaLabel.alpha = 0
+//                self.TerzaLabel.alpha = 0
                 self.TiziaViola.alpha = 0
-                self.tab.alpha = 0
-            }
+               self.tab.alpha = 0
+//            }
             PrimaLabel.text = "Time to explore"
             SecondaLabel.text = "Activities and Insights"
             TerzaLabel.text = "We also provided a lot of interesting tips and inspirational contents for you!"
-            UIView.animate(withDuration: 0.2){
-                self.PrimaLabel.alpha = 1
-                self.SecondaLabel.alpha = 1
-                self.TerzaLabel.alpha = 1
+//            UIView.animate(withDuration: 0.2){
+//                self.PrimaLabel.alpha = 1
+//                self.SecondaLabel.alpha = 1
+//                self.TerzaLabel.alpha = 1
                 self.TiziaBionda.alpha = 1
                 self.button.alpha = 1
-            }
+//            }
         }
     }
     
