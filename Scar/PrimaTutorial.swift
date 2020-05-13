@@ -319,42 +319,42 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
                    return UITableViewCell()
                }
-            cell.button.setTitle("Artist", for: .normal)
+            cell.button.setTitle("TEDx", for: .normal)
             cell.button.tag = 0
                return cell
            }else if indexPath.row == 2{
            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
                       return UITableViewCell()
                   }
-                  cell.button.setTitle("Wellbein", for: .normal)
+                  cell.button.setTitle("Movies&TVShows", for: .normal)
                   cell.button.tag = 1
                   return cell
               }else if indexPath.row == 3{
               guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
                          return UITableViewCell()
                      }
-                     cell.button.setTitle("Articols", for: .normal)
+                     cell.button.setTitle("Articles", for: .normal)
                      cell.button.tag = 2
                      return cell
                  }else if indexPath.row == 4{
                  guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
                             return UITableViewCell()
                         }
-                        cell.button.setTitle("Movies", for: .normal)
+                        cell.button.setTitle("Books", for: .normal)
                         cell.button.tag = 3
                         return cell
                     }else if indexPath.row == 5{
                     guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
                                return UITableViewCell()
                            }
-                           cell.button.setTitle("Podcast", for: .normal)
+                           cell.button.setTitle("Inspiring People", for: .normal)
                             cell.button.tag = 4
                            return cell
                        }else if indexPath.row == 6{
                        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
                                   return UITableViewCell()
                               }
-                              cell.button.setTitle("Books", for: .normal)
+                              cell.button.setTitle("Podcasts", for: .normal)
                                 cell.button.tag = 5
                               return cell
                           }else{

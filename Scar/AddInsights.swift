@@ -27,32 +27,32 @@ class AddInsights: UIViewController {
         super.viewDidLoad()
         AddInsights.j = 0
         for i in 0...Schermata2.insights.count - 1{
-             if(Schermata2.insights[i] == "Podcast"){
+             if(Schermata2.insights[i] == "TEDx"){
                 AddInsights.j = AddInsights.j + 1
                 pod.isSelected = true
             }
             
-            if(Schermata2.insights[i] == "Wellbein"){
+            if(Schermata2.insights[i] == "Movies&TVShows"){
                 AddInsights.j = AddInsights.j + 1
                 well.isSelected = true
             }
             
-            if(Schermata2.insights[i] == "Movies"){
+            if(Schermata2.insights[i] == "Articles"){
                 AddInsights.j = AddInsights.j + 1
                 mov.isSelected = true
             }
             
-            if(Schermata2.insights[i] == "Articols"){
+            if(Schermata2.insights[i] == "Books"){
                 AddInsights.j = AddInsights.j + 1
                 art.isSelected = true
             }
             
-            if(Schermata2.insights[i] == "Artist"){
+            if(Schermata2.insights[i] == "Inspiring People"){
                 AddInsights.j = AddInsights.j + 1
                 artist.isSelected = true
             }
             
-            if(Schermata2.insights[i] == "Books"){
+            if(Schermata2.insights[i] == "Podcasts"){
                 AddInsights.j = AddInsights.j + 1
                 books.isSelected = true
             }
@@ -75,7 +75,7 @@ class AddInsights: UIViewController {
         if sender.isSelected {
             pod.isSelected = false
             for i in 0...Schermata2.insights.count - 1{
-                if(Schermata2.insights[i] != "Podcast"){
+                if(Schermata2.insights[i] != "TEDx"){
                     temp.append(Schermata2.insights[i])
                 }
             }
@@ -100,7 +100,7 @@ class AddInsights: UIViewController {
                 case 4: ins = "b5"
                 default: ins = "b6"
             }
-            let queryString = "UPDATE Insights SET \(ins) = 'Podcast';"
+            let queryString = "UPDATE Insights SET \(ins) = 'TEDx';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -119,7 +119,7 @@ class AddInsights: UIViewController {
         if sender.isSelected {
             well.isSelected = false
                 for i in 0...Schermata2.insights.count - 1{
-                    if(Schermata2.insights[i] != "Wellbein"){
+                    if(Schermata2.insights[i] != "Movies&TVShows"){
                     temp.append(Schermata2.insights[i])
                 }
             }
@@ -144,7 +144,7 @@ class AddInsights: UIViewController {
                 case 4: ins = "b5"
                 default: ins = "b6"
             }
-            let queryString = "UPDATE Insights SET \(ins) = 'Wellbein';"
+            let queryString = "UPDATE Insights SET \(ins) = 'Movies&TVShows';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -163,7 +163,7 @@ class AddInsights: UIViewController {
         if sender.isSelected {
             mov.isSelected = false
             for i in 0...Schermata2.insights.count - 1{
-                if(Schermata2.insights[i] != "Movies"){
+                if(Schermata2.insights[i] != "Articles"){
                     temp.append(Schermata2.insights[i])
                 }
             }
@@ -187,7 +187,7 @@ class AddInsights: UIViewController {
                 case 4: ins = "b5"
                 default: ins = "b6"
             }
-            let queryString = "UPDATE Insights SET \(ins) = 'Movies';"
+            let queryString = "UPDATE Insights SET \(ins) = 'Articles';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -206,7 +206,7 @@ class AddInsights: UIViewController {
         if sender.isSelected {
             art.isSelected = false
             for i in 0...Schermata2.insights.count - 1{
-                if(Schermata2.insights[i] != "Articols"){
+                if(Schermata2.insights[i] != "Books"){
                     temp.append(Schermata2.insights[i])
                 }
             }
@@ -231,7 +231,7 @@ class AddInsights: UIViewController {
                 case 4: ins = "b5"
                 default: ins = "b6"
             }
-            let queryString = "UPDATE Insights SET \(ins) = 'Articols';"
+            let queryString = "UPDATE Insights SET \(ins) = 'Books';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -250,7 +250,7 @@ class AddInsights: UIViewController {
         if sender.isSelected {
             artist.isSelected = false
             for i in 0...Schermata2.insights.count - 1{
-                if(Schermata2.insights[i] != "Artist"){
+                if(Schermata2.insights[i] != "Inspiring People"){
                     temp.append(Schermata2.insights[i])
                 }
             }
@@ -275,7 +275,7 @@ class AddInsights: UIViewController {
                 case 4: ins = "b5"
                 default: ins = "b6"
             }
-            let queryString = "UPDATE Insights SET \(ins) = 'Artist';"
+            let queryString = "UPDATE Insights SET \(ins) = 'Inspiring People';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -295,7 +295,7 @@ class AddInsights: UIViewController {
         if sender.isSelected {
             books.isSelected = false
             for i in 0...Schermata2.insights.count - 1{
-                if(Schermata2.insights[i] != "Books"){
+                if(Schermata2.insights[i] != "Podcasts"){
                     temp.append(Schermata2.insights[i])
                 }
             }
@@ -320,7 +320,7 @@ class AddInsights: UIViewController {
                 case 4: ins = "b5"
                 default: ins = "b6"
             }
-            let queryString = "UPDATE Insights SET \(ins) = 'Books';"
+            let queryString = "UPDATE Insights SET \(ins) = 'Podcasts';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
