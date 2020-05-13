@@ -15,6 +15,7 @@ class CollectionViewCell1: UICollectionViewCell {
     @IBOutlet weak var cardsImage: UIImageView!
     var indiceCard : Int = 0
     var db: OpaquePointer?
+    var stmt: OpaquePointer?
 
     
     @IBAction func checked(_ sender: UIButton) {
@@ -30,7 +31,6 @@ class CollectionViewCell1: UICollectionViewCell {
             sender.isSelected = false
             indiceCard -= 1
             //Update Valore
-            var stmt: OpaquePointer?
             var att = ""
             switch sender.tag {
                 case 0: att = "c1"
@@ -51,7 +51,6 @@ class CollectionViewCell1: UICollectionViewCell {
             sender.isSelected = true
             indiceCard += 1
             //Update Valore
-            var stmt: OpaquePointer?
             var att = ""
             switch sender.tag {
                 case 0: att = "c1"
@@ -69,5 +68,29 @@ class CollectionViewCell1: UICollectionViewCell {
             sqlite3_step(stmt)
             print("Saved successfully")
         }
+        
+        //Recupera Valore
+        let queryString = "SELECT * FROM InfoSchermata1"
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+        let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error preparing insert: \(errmsg)")
+            return
+        }
+        
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            Schermata1.allImages[0] = String(cString: sqlite3_column_text(stmt, 1))
+            Schermata1.allImages[1] = String(cString: sqlite3_column_text(stmt, 2))
+            Schermata1.allImages[2] = String(cString: sqlite3_column_text(stmt, 3))
+            Schermata1.allImages[3] = String(cString: sqlite3_column_text(stmt, 4))
+            Schermata1.allImages[4] = String(cString: sqlite3_column_text(stmt, 5))
+            Schermata1.allImages[5] = String(cString: sqlite3_column_text(stmt, 6))
+            Schermata1.allImages[6] = String(cString: sqlite3_column_text(stmt, 7))
+            Schermata1.allImages[7] = String(cString: sqlite3_column_text(stmt, 8))
+            Schermata1.allImages[8] = String(cString: sqlite3_column_text(stmt, 9))
+        }
+        
+        let name = Notification.Name(rawValue: NotificationKey2)
+        NotificationCenter.default.post(name: name, object: nil)
+  
     }
 }
