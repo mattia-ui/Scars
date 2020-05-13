@@ -36,11 +36,12 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     @IBOutlet weak var imageW: UIImageView!
     @IBOutlet weak var descW: UILabel!
     
-    static var frasiDeStoCazzo : [String] = ["bravo sto cazzo","la testa delle due designer","scherzo","sono brave","buuu","fratm","ejaamm","complimenti","finalmente"]
+    static var frasiDeStoCazzo : [String] = ["Great! The first step is done!","You are in great shape today!","Go up and never stop.","Wow! You are almost halfway there.","Keep it up, goes very well!","Don't give up, you're almost done.","Power! Only one is missing.","You did it great!"]
     
     static var allImages: [String] = ["unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked"]
     static var allCardsImages: [String] = ["Card1p","Card2p","Card3p","Card4p","Card5p","Card6p","Card7p","Card8p","Card9p"]
     static var weekly: WeeklyStruct = WeeklyStruct(title:"",descr: "", image: "")
+    @IBOutlet weak var spronatiLabel: UILabel!
     
     @IBAction func secret(_ sender: Any) {
         if(i == 15){
@@ -185,23 +186,61 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
             Schermata1.allImages[8] = String(cString: sqlite3_column_text(stmt, 9))
         }
     }
+    
+    func update() {
+        
+        let cell =  CollectionViewCell1()
+        if(cell.indiceCard == 0){
+            
+            spronatiLabel.text = "Come on"
+            
+        } else if(cell.indiceCard == 1){
+            
+            spronatiLabel.text = Schermata1.frasiDeStoCazzo[0]
+            
+        } else if(cell.indiceCard == 2){
+            
+            spronatiLabel.text = Schermata1.frasiDeStoCazzo[1]
+            
+        } else if(cell.indiceCard == 3){
+            
+            spronatiLabel.text = Schermata1.frasiDeStoCazzo[2]
+            
+        }else if(cell.indiceCard == 4){
+            
+            spronatiLabel.text = Schermata1.frasiDeStoCazzo[3]
+            
+        }else if(cell.indiceCard == 5){
+            
+            spronatiLabel.text = Schermata1.frasiDeStoCazzo[4]
+            
+        }else if(cell.indiceCard == 6){
+            
+            spronatiLabel.text = Schermata1.frasiDeStoCazzo[5]
+            
+        } else if(cell.indiceCard == 7){
+            
+            spronatiLabel.text = Schermata1.frasiDeStoCazzo[6]
+            
+        }else if(cell.indiceCard == 8){
+            
+            spronatiLabel.text = Schermata1.frasiDeStoCazzo[7]
+            
+        }else if(cell.indiceCard == 9){
+            
+            spronatiLabel.text = Schermata1.frasiDeStoCazzo[8]
+            
+        }
+        
+        
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         UserDefaults.standard.set(true, forKey: "LaunchedBefore")
-        
         let layout = UICollectionViewFlowLayout()
-//        layout.scrollDirection = .horizontal
-//        layout.itemSize = CGSize(width: 163, height: 115)
-//        layout.minimumLineSpacing =
-//        layout.minimumInteritemSpacing = 55
-        
-//        activity.collectionViewLayout = layout
-//        layout.sectionInset = UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 0) // according to your requirements
-//        layout.minimumInteritemSpacing = 1 // according to your requirements
-//        layout.minimumLineSpacing = 1// according to your requirements
-//        activity.collectionViewLayout = layout
         
     }
     

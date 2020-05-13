@@ -1803,6 +1803,7 @@ tips and inspirational contents for you!</string>
                         <outlet property="activity" destination="fWY-uv-LMG" id="bnU-9Z-ama"/>
                         <outlet property="descW" destination="61N-a8-v0d" id="YHC-gH-yCh"/>
                         <outlet property="imageW" destination="mqk-Ya-Xpd" id="L1I-ZI-C7n"/>
+                        <outlet property="spronatiLabel" destination="71W-Ns-qfS" id="mKN-sL-Ebs"/>
                         <outlet property="titleW" destination="SdL-Hh-gis" id="Orm-YN-V5v"/>
                     </connections>
                 </viewController>

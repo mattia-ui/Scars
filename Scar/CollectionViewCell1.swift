@@ -14,11 +14,15 @@ class CollectionViewCell1: UICollectionViewCell {
     @IBOutlet weak var check: UIButton!
     @IBOutlet weak var cardsImage: UIImageView!
     
+    var indiceCard : Int = 0
+    
     @IBAction func checked(_ sender: UIButton) {
         if(sender.isSelected == true){
             sender.isSelected = false
+            indiceCard -= 1
         } else {
             sender.isSelected = true
+            indiceCard += 1
         }
         
         var db: OpaquePointer?
