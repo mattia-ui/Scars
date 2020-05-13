@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,36 +21,50 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zKg-E3-u7K" colorLabel="IBBuiltInLabel-Yellow">
-                    <rect key="frame" x="9" y="8" width="356" height="510"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zKg-E3-u7K" colorLabel="IBBuiltInLabel-Yellow">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Winnie the Pooh" translatesAutoresizingMaskIntoConstraints="NO" id="zyz-yE-tYh" userLabel="Title">
-                            <rect key="frame" x="7" y="3" width="342" height="53"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Winnie the Pooh" translatesAutoresizingMaskIntoConstraints="NO" id="zyz-yE-tYh" userLabel="Title">
+                            <rect key="frame" x="22" y="0.0" width="331" height="59"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="331" id="He1-Hc-6BV"/>
+                                <constraint firstAttribute="height" constant="59" id="rc6-YM-oEF"/>
+                            </constraints>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="19"/>
+                            <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="17"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Use this technique to make your slides, create your app, in a simple and effective way " translatesAutoresizingMaskIntoConstraints="NO" id="M3Z-3U-9Q6" userLabel="Description">
-                            <rect key="frame" x="7" y="57" width="342" height="445"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Use this technique to make your slides, create your app, in a simple and effective way " translatesAutoresizingMaskIntoConstraints="NO" id="M3Z-3U-9Q6" userLabel="Description">
+                            <rect key="frame" x="22" y="35" width="331" height="632"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="331" id="vpt-Qu-y0J"/>
+                            </constraints>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="19"/>
+                            <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="17"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="zyz-yE-tYh" firstAttribute="top" secondItem="zKg-E3-u7K" secondAttribute="top" id="5sr-5Y-4UJ"/>
+                        <constraint firstItem="zyz-yE-tYh" firstAttribute="trailing" secondItem="M3Z-3U-9Q6" secondAttribute="trailing" id="Rgp-hl-v5J"/>
+                        <constraint firstItem="M3Z-3U-9Q6" firstAttribute="top" secondItem="zyz-yE-tYh" secondAttribute="bottom" constant="-24" id="SRA-hp-zwv"/>
+                        <constraint firstItem="zyz-yE-tYh" firstAttribute="leading" secondItem="M3Z-3U-9Q6" secondAttribute="leading" id="Yh8-7a-pPc"/>
+                        <constraint firstAttribute="bottom" secondItem="M3Z-3U-9Q6" secondAttribute="bottom" id="hB4-9C-tXJ"/>
+                        <constraint firstItem="zyz-yE-tYh" firstAttribute="leading" secondItem="zKg-E3-u7K" secondAttribute="leading" constant="22" id="nBg-JD-Njn"/>
+                        <constraint firstItem="zyz-yE-tYh" firstAttribute="centerX" secondItem="zKg-E3-u7K" secondAttribute="centerX" id="qUA-Yf-fGW"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="zKg-E3-u7K" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="EDY-ue-hBk"/>
-                <constraint firstItem="zKg-E3-u7K" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="9" id="tN6-xj-GiE"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="zKg-E3-u7K" secondAttribute="bottom" constant="149" id="vhX-sw-ueC"/>
-                <constraint firstItem="zKg-E3-u7K" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wrP-66-xHP"/>
+                <constraint firstAttribute="trailing" secondItem="zKg-E3-u7K" secondAttribute="trailing" id="4eG-Ef-Cj9"/>
+                <constraint firstItem="zKg-E3-u7K" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Qv5-vw-jTz"/>
+                <constraint firstItem="zKg-E3-u7K" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dYx-7O-7pN"/>
+                <constraint firstItem="zKg-E3-u7K" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="rRI-Mq-lGe"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
