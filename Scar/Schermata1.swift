@@ -48,7 +48,7 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         NotificationCenter.default.addObserver(self, selector: #selector(Schermata1.update(notification:)), name: light, object: nil)
     }
     
-    static var frasiDeStoCazzo : [String] = ["Great! The first step is done!","You are in great shape today!","Go up and never stop.","Wow! You are almost halfway there.","Keep it up, goes very well!","Don't give up, you're almost done.","Power! Only one is missing.","You did it great!"]
+    static var frasiDeStoCazzo : [String] = ["Great! The first step is done!","You are in great shape today!","Go up and never stop.","Wow! You are almost halfway there.","Keep it up, goes very well!","Don't give up, you're almost done.","Power! Only one is missing.","You did it great!" , "Well done! See you tomorrow."]
     
     static var allImages: [String] = ["unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked"]
     static var allCardsImages: [String] = ["Card1p","Card2p","Card3p","Card4p","Card5p","Card6p","Card7p","Card8p","Card9p"]
