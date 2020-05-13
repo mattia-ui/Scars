@@ -187,54 +187,37 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         }
     }
     
-    func update() {
+        func update() {
         
-        let cell =  CollectionViewCell1()
-        if(cell.indiceCard == 0){
-            
-            spronatiLabel.text = "Come on"
-            
-        } else if(cell.indiceCard == 1){
-            
-            spronatiLabel.text = Schermata1.frasiDeStoCazzo[0]
-            
-        } else if(cell.indiceCard == 2){
-            
-            spronatiLabel.text = Schermata1.frasiDeStoCazzo[1]
-            
-        } else if(cell.indiceCard == 3){
-            
-            spronatiLabel.text = Schermata1.frasiDeStoCazzo[2]
-            
-        }else if(cell.indiceCard == 4){
-            
-            spronatiLabel.text = Schermata1.frasiDeStoCazzo[3]
-            
-        }else if(cell.indiceCard == 5){
-            
-            spronatiLabel.text = Schermata1.frasiDeStoCazzo[4]
-            
-        }else if(cell.indiceCard == 6){
-            
-            spronatiLabel.text = Schermata1.frasiDeStoCazzo[5]
-            
-        } else if(cell.indiceCard == 7){
-            
-            spronatiLabel.text = Schermata1.frasiDeStoCazzo[6]
-            
-        }else if(cell.indiceCard == 8){
-            
-            spronatiLabel.text = Schermata1.frasiDeStoCazzo[7]
-            
-        }else if(cell.indiceCard == 9){
-            
-            spronatiLabel.text = Schermata1.frasiDeStoCazzo[8]
-            
+        var count : Int = 0
+        for k in 0...8 {
+        
+            if( Schermata1.allImages[k] == "checked") {
+               count = count+1
+            }
+            print("\(count)")
+        
+        }
+        
+        switch count {
+
+         case 1 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[0]
+         case 2 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[1]
+         case 3 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[2]
+         case 4 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[3]
+         case 5 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[4]
+         case 6 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[5]
+         case 7 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[6]
+         case 8 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[7]
+         case 9 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[8]
+         default : spronatiLabel.text = "Start the activities and mark them as done!"
+
         }
         
         
         
     }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
