@@ -28,6 +28,8 @@ var weeklyInfo: [WeeklyStruct] = [
     WeeklyStruct(title:"CIAO4",descr: "CIAO4", image:"2-.png")
 ]
 
+let NotificationKey2 = "co.seanallen.Side2"
+
 class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     var i = 1
@@ -36,9 +38,22 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     @IBOutlet weak var imageW: UIImageView!
     @IBOutlet weak var descW: UILabel!
     
+    let light = Notification.Name(rawValue: NotificationKey2)
+    
+    deinit {
+           NotificationCenter.default.removeObserver(self)
+    }
+    
+    func createObservers() {
+        NotificationCenter.default.addObserver(self, selector: #selector(Schermata1.update(notification:)), name: light, object: nil)
+    }
+    
+    static var frasiDeStoCazzo : [String] = ["Great! The first step is done!","You are in great shape today!","Go up and never stop.","Wow! You are almost halfway there.","Keep it up, goes very well!","Don't give up, you're almost done.","Power! Only one is missing.","You did it great!"]
+    
     static var allImages: [String] = ["unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked"]
     static var allCardsImages: [String] = ["Card1p","Card2p","Card3p","Card4p","Card5p","Card6p","Card7p","Card8p","Card9p"]
     static var weekly: WeeklyStruct = WeeklyStruct(title:"",descr: "", image: "")
+    @IBOutlet weak var spronatiLabel: UILabel!
     
     @IBAction func secret(_ sender: Any) {
         if(i == 15){
@@ -62,9 +77,9 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         cell.cardsImage.image = UIImage(named: Schermata1.allCardsImages[indexPath.row] + ".png")
         let tap = MyTapGesture(target: self, action: #selector(self.go(sender:)))
                tap.id = indexPath.row
-               cell.cardsImage.isUserInteractionEnabled = true
-               cell.cardsImage.addGestureRecognizer(tap)
-       
+        cell.cardsImage.isUserInteractionEnabled = true
+        cell.cardsImage.addGestureRecognizer(tap)
+
         if(Schermata1.allImages[indexPath.row] == "checked"){
             cell.check.isSelected = true
         } else {
@@ -182,24 +197,62 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
             Schermata1.allImages[7] = String(cString: sqlite3_column_text(stmt, 8))
             Schermata1.allImages[8] = String(cString: sqlite3_column_text(stmt, 9))
         }
+        update2()
+        createObservers()
     }
 
+    @objc func update(notification: NSNotification) {
+        var count : Int = 0
+        for k in 0...8 {
+            print(Schermata1.allImages[k])
+            if( Schermata1.allImages[k] == "checked") {
+               count = count + 1
+            }
+            print("\(count)")
+        }
+        
+        switch count {
+            case 1 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[0]
+            case 2 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[1]
+            case 3 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[2]
+            case 4 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[3]
+            case 5 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[4]
+            case 6 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[5]
+            case 7 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[6]
+            case 8 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[7]
+            case 9 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[8]
+            default : spronatiLabel.text = "Start the activities and mark them as done!"
+        }
+    }
+    
+    @objc func update2() {
+        var count : Int = 0
+        for k in 0...8 {
+            if( Schermata1.allImages[k] == "checked") {
+               count = count+1
+            }
+            print("\(count)")
+        }
+        
+        switch count {
+            case 1 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[0]
+            case 2 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[1]
+            case 3 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[2]
+            case 4 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[3]
+            case 5 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[4]
+            case 6 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[5]
+            case 7 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[6]
+            case 8 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[7]
+            case 9 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[8]
+            default : spronatiLabel.text = "Start the activities and mark them as done!"
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         UserDefaults.standard.set(true, forKey: "LaunchedBefore")
-        
         let layout = UICollectionViewFlowLayout()
-//        layout.scrollDirection = .horizontal
-//        layout.itemSize = CGSize(width: 163, height: 115)
-//        layout.minimumLineSpacing =
-//        layout.minimumInteritemSpacing = 55
-        
-//        activity.collectionViewLayout = layout
-//        layout.sectionInset = UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 0) // according to your requirements
-//        layout.minimumInteritemSpacing = 1 // according to your requirements
-//        layout.minimumLineSpacing = 1// according to your requirements
-//        activity.collectionViewLayout = layout
         
     }
     
