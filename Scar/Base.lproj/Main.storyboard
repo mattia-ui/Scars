@@ -1898,9 +1898,9 @@ tips and inspirational contents for you!</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOo-wB-kmc">
-                                <rect key="frame" x="356" y="88" width="30" height="30"/>
-                                <state key="normal" title="+"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOo-wB-kmc">
+                                <rect key="frame" x="348" y="99" width="36" height="38"/>
+                                <state key="normal" image="aggiungiInsight"/>
                                 <connections>
                                     <segue destination="pxK-AG-QlA" kind="presentation" id="14X-2c-NEC"/>
                                 </connections>
@@ -2035,7 +2035,7 @@ tips and inspirational contents for you!</string>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ymt-6W-zKb"/>
                             </scrollView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u6C-90-pJx">
-                                <rect key="frame" x="0.0" y="246" width="414" height="546"/>
+                                <rect key="frame" x="0.0" y="252" width="414" height="546"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="jtl-uh-CSj"/>
@@ -2148,16 +2148,25 @@ tips and inspirational contents for you!</string>
                                     <outlet property="delegate" destination="Aa9-1L-etK" id="OIh-yg-nxO"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCe-mq-vgd">
+                                <rect key="frame" x="22" y="99" width="140" height="38"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="mCe-mq-vgd" firstAttribute="leading" secondItem="9Ch-hi-KT7" secondAttribute="leading" constant="22" id="3hD-vc-1ar"/>
                             <constraint firstItem="9Ch-hi-KT7" firstAttribute="trailing" secondItem="ZS4-u3-Tl0" secondAttribute="trailing" constant="20" id="6Ia-Vs-q9u"/>
                             <constraint firstItem="ZS4-u3-Tl0" firstAttribute="leading" secondItem="9Ch-hi-KT7" secondAttribute="leading" constant="20" id="AsW-yc-bW2"/>
+                            <constraint firstItem="MOo-wB-kmc" firstAttribute="leading" secondItem="9Ch-hi-KT7" secondAttribute="leading" constant="348" id="FbX-uj-g4B"/>
                             <constraint firstItem="9Ch-hi-KT7" firstAttribute="trailing" secondItem="u6C-90-pJx" secondAttribute="trailing" id="ID5-bh-Cva"/>
-                            <constraint firstItem="9Ch-hi-KT7" firstAttribute="trailing" secondItem="MOo-wB-kmc" secondAttribute="trailing" constant="28" id="UKH-uM-qOk"/>
-                            <constraint firstItem="ZS4-u3-Tl0" firstAttribute="top" secondItem="MOo-wB-kmc" secondAttribute="bottom" constant="30" id="XSa-qh-W92"/>
-                            <constraint firstItem="MOo-wB-kmc" firstAttribute="leading" secondItem="9Ch-hi-KT7" secondAttribute="leading" constant="356" id="XkL-eB-baY"/>
-                            <constraint firstItem="MOo-wB-kmc" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" id="kYY-df-YPg"/>
+                            <constraint firstItem="ZS4-u3-Tl0" firstAttribute="top" secondItem="MOo-wB-kmc" secondAttribute="bottom" constant="17" id="Pp6-Uj-8hY"/>
+                            <constraint firstItem="9Ch-hi-KT7" firstAttribute="trailing" secondItem="MOo-wB-kmc" secondAttribute="trailing" constant="30" id="VYE-Aj-B2S"/>
+                            <constraint firstItem="mCe-mq-vgd" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="11" id="aDc-kV-piZ"/>
+                            <constraint firstItem="MOo-wB-kmc" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="11" id="fz1-9n-uFF"/>
+                            <constraint firstItem="ZS4-u3-Tl0" firstAttribute="top" secondItem="mCe-mq-vgd" secondAttribute="bottom" constant="17" id="gcf-GI-WQW"/>
                             <constraint firstItem="u6C-90-pJx" firstAttribute="leading" secondItem="9Ch-hi-KT7" secondAttribute="leading" id="pw4-nK-1q3"/>
                             <constraint firstItem="u6C-90-pJx" firstAttribute="top" secondItem="ZS4-u3-Tl0" secondAttribute="bottom" constant="8" id="ut0-dH-ues"/>
                         </constraints>
@@ -2193,95 +2202,91 @@ tips and inspirational contents for you!</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="podcast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZv-xW-yc5">
-                                <rect key="frame" x="41" y="129" width="64.5" height="17"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="podcast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZv-xW-yc5">
+                                <rect key="frame" x="41" y="129" width="83.5" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wellbeing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daM-Gz-AwK">
-                                <rect key="frame" x="41" y="201" width="77.5" height="17"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="wellbeing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daM-Gz-AwK">
+                                <rect key="frame" x="41" y="231" width="100.5" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhW-b9-vYz">
-                                <rect key="frame" x="346" y="197" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhW-b9-vYz">
+                                <rect key="frame" x="15" y="205" width="386" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="+">
+                                <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <state key="selected" title="-">
+                                <state key="selected" image="selezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="wellbein:" destination="pxK-AG-QlA" eventType="touchUpInside" id="hqW-l6-MIj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1H3-XO-3Jq">
-                                <rect key="frame" x="41" y="258" width="56" height="17"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1H3-XO-3Jq">
+                                <rect key="frame" x="41" y="326" width="72.5" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7I-AD-BUJ">
-                                <rect key="frame" x="346" y="258" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7I-AD-BUJ">
+                                <rect key="frame" x="15" y="299" width="386" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="+">
+                                <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <state key="selected" title="-">
+                                <state key="selected" image="selezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="movies:" destination="pxK-AG-QlA" eventType="touchUpInside" id="VAr-sd-trc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="articols" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBw-pU-Hzy">
-                                <rect key="frame" x="41" y="306" width="57.5" height="17"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="articols" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBw-pU-Hzy">
+                                <rect key="frame" x="41" y="426" width="74.5" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzd-QM-ZsD">
-                                <rect key="frame" x="346" y="310" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzd-QM-ZsD">
+                                <rect key="frame" x="15" y="399" width="386" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="+">
+                                <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <state key="selected" title="-">
+                                <state key="selected" image="selezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="articols:" destination="pxK-AG-QlA" eventType="touchUpInside" id="PdH-f5-Wdl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNm-Qf-5Tl">
-                                <rect key="frame" x="41" y="363" width="40" height="17"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNm-Qf-5Tl">
+                                <rect key="frame" x="41" y="516" width="52" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaW-2m-fzZ">
-                                <rect key="frame" x="346" y="363" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yP-st-eET">
+                                <rect key="frame" x="15" y="112" width="386" height="76"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="+">
+                                <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <state key="selected" title="-">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="artist:" destination="pxK-AG-QlA" eventType="touchUpInside" id="ERk-dG-C3x"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yP-st-eET">
-                                <rect key="frame" x="346" y="129" width="30" height="30"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="+">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <state key="selected" title="-">
+                                <state key="selected" image="selezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -2289,56 +2294,65 @@ tips and inspirational contents for you!</string>
                                     <action selector="podcast:" destination="pxK-AG-QlA" eventType="touchUpInside" id="lv1-hv-BHP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="books" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCO-IH-dct">
-                                <rect key="frame" x="39" y="435" width="48" height="17"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="books" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCO-IH-dct">
+                                <rect key="frame" x="39" y="622" width="62" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZk-O6-Ha0">
-                                <rect key="frame" x="346" y="430" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZk-O6-Ha0">
+                                <rect key="frame" x="15" y="595" width="386" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="+">
+                                <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <state key="selected" title="-">
+                                <state key="selected" image="selezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="books:" destination="pxK-AG-QlA" eventType="touchUpInside" id="YJX-hb-RvR"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Interests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICX-Lj-BMb">
+                                <rect key="frame" x="22" y="20" width="372" height="38"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalize your insights section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLV-JE-bPB">
+                                <rect key="frame" x="22" y="65" width="372" height="22"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaW-2m-fzZ">
+                                <rect key="frame" x="14" y="489" width="386" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="nonselezionato">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" image="selezionato">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="artist:" destination="pxK-AG-QlA" eventType="touchUpInside" id="ERk-dG-C3x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="M7I-AD-BUJ" firstAttribute="leading" secondItem="yhW-b9-vYz" secondAttribute="leading" id="2X9-15-1jF"/>
-                            <constraint firstItem="iCO-IH-dct" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" constant="39" id="3rf-xd-L8e"/>
-                            <constraint firstItem="DBw-pU-Hzy" firstAttribute="top" secondItem="1H3-XO-3Jq" secondAttribute="bottom" constant="31" id="5tW-yO-hr1"/>
-                            <constraint firstItem="1H3-XO-3Jq" firstAttribute="leading" secondItem="DBw-pU-Hzy" secondAttribute="leading" id="8Bn-hp-mKZ"/>
-                            <constraint firstItem="1H3-XO-3Jq" firstAttribute="leading" secondItem="tZv-xW-yc5" secondAttribute="leading" id="Cfk-a2-KlU"/>
-                            <constraint firstItem="1H3-XO-3Jq" firstAttribute="top" secondItem="daM-Gz-AwK" secondAttribute="bottom" constant="40" id="HyE-Kc-gOV"/>
-                            <constraint firstItem="1H3-XO-3Jq" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" constant="41" id="Nqv-Bu-EEJ"/>
-                            <constraint firstItem="SNm-Qf-5Tl" firstAttribute="top" secondItem="DBw-pU-Hzy" secondAttribute="bottom" constant="40" id="PES-IZ-NxN"/>
-                            <constraint firstItem="kzd-QM-ZsD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DBw-pU-Hzy" secondAttribute="trailing" constant="8" symbolic="YES" id="PnI-0O-bRf"/>
-                            <constraint firstItem="iCO-IH-dct" firstAttribute="top" secondItem="SNm-Qf-5Tl" secondAttribute="bottom" constant="55" id="Qjs-OK-Nvz"/>
-                            <constraint firstItem="gaW-2m-fzZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SNm-Qf-5Tl" secondAttribute="trailing" constant="8" symbolic="YES" id="Sbe-G3-ww2"/>
-                            <constraint firstItem="M7I-AD-BUJ" firstAttribute="leading" secondItem="gaW-2m-fzZ" secondAttribute="leading" id="WCP-eN-Ouz"/>
-                            <constraint firstItem="tZv-xW-yc5" firstAttribute="top" secondItem="vTd-oq-JON" secondAttribute="top" constant="129" id="Xdf-l6-Lsx"/>
-                            <constraint firstItem="1H3-XO-3Jq" firstAttribute="leading" secondItem="daM-Gz-AwK" secondAttribute="leading" id="ZCr-BM-p1d"/>
-                            <constraint firstItem="1H3-XO-3Jq" firstAttribute="leading" secondItem="SNm-Qf-5Tl" secondAttribute="leading" id="all-gs-fea"/>
-                            <constraint firstItem="SNm-Qf-5Tl" firstAttribute="top" secondItem="gaW-2m-fzZ" secondAttribute="top" id="ceR-8d-duF"/>
-                            <constraint firstItem="vTd-oq-JON" firstAttribute="trailing" secondItem="M7I-AD-BUJ" secondAttribute="trailing" constant="38" id="eab-IL-XfY"/>
-                            <constraint firstItem="1yP-st-eET" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tZv-xW-yc5" secondAttribute="trailing" constant="8" symbolic="YES" id="klj-1f-Ok9"/>
-                            <constraint firstItem="M7I-AD-BUJ" firstAttribute="top" secondItem="yhW-b9-vYz" secondAttribute="bottom" constant="31" id="lgS-Rw-A4j"/>
-                            <constraint firstItem="M7I-AD-BUJ" firstAttribute="leading" secondItem="1yP-st-eET" secondAttribute="leading" id="nAs-L2-LCA"/>
-                            <constraint firstItem="tZv-xW-yc5" firstAttribute="top" secondItem="1yP-st-eET" secondAttribute="top" id="nQj-2X-T6d"/>
-                            <constraint firstItem="1H3-XO-3Jq" firstAttribute="top" secondItem="M7I-AD-BUJ" secondAttribute="top" id="oyN-Ob-Q7p"/>
-                            <constraint firstItem="1H3-XO-3Jq" firstAttribute="top" secondItem="hoX-51-YQu" secondAttribute="top" constant="258" id="suM-bv-ckG"/>
-                            <constraint firstItem="yhW-b9-vYz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="daM-Gz-AwK" secondAttribute="trailing" constant="8" symbolic="YES" id="u0v-yj-g4f"/>
-                            <constraint firstItem="kzd-QM-ZsD" firstAttribute="top" secondItem="M7I-AD-BUJ" secondAttribute="bottom" constant="22" id="un0-7w-oIe"/>
-                            <constraint firstItem="M7I-AD-BUJ" firstAttribute="leading" secondItem="kzd-QM-ZsD" secondAttribute="leading" id="wfd-Gx-bCl"/>
-                            <constraint firstItem="M7I-AD-BUJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1H3-XO-3Jq" secondAttribute="trailing" constant="8" symbolic="YES" id="wkr-j0-XzU"/>
+                            <constraint firstItem="vTd-oq-JON" firstAttribute="trailing" secondItem="ICX-Lj-BMb" secondAttribute="trailing" constant="20" id="02H-wV-qsS"/>
+                            <constraint firstItem="ICX-Lj-BMb" firstAttribute="top" secondItem="vTd-oq-JON" secondAttribute="top" constant="20" id="EvM-7I-kZl"/>
+                            <constraint firstItem="ICX-Lj-BMb" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" constant="22" id="L0J-Ks-79d"/>
+                            <constraint firstItem="DLV-JE-bPB" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" constant="22" id="Lp2-1C-9Ee"/>
+                            <constraint firstItem="DLV-JE-bPB" firstAttribute="top" secondItem="ICX-Lj-BMb" secondAttribute="bottom" constant="7" id="QiN-FH-a6Z"/>
+                            <constraint firstItem="1yP-st-eET" firstAttribute="top" secondItem="DLV-JE-bPB" secondAttribute="bottom" constant="25" id="Rrx-4s-Sdi"/>
+                            <constraint firstItem="vTd-oq-JON" firstAttribute="trailing" secondItem="DLV-JE-bPB" secondAttribute="trailing" constant="20" id="W5S-md-Biz"/>
+                            <constraint firstItem="vTd-oq-JON" firstAttribute="trailing" secondItem="1yP-st-eET" secondAttribute="trailing" constant="13" id="ojO-8i-sMh"/>
+                            <constraint firstItem="1yP-st-eET" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" constant="15" id="skZ-dW-QAH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vTd-oq-JON"/>
                     </view>
@@ -2431,6 +2445,7 @@ tips and inspirational contents for you!</string>
         <image name="Rettangle" width="432" height="161"/>
         <image name="SeeMore" width="79" height="18"/>
         <image name="Start" width="182" height="55"/>
+        <image name="aggiungiInsight" width="38" height="32"/>
         <image name="caldi" width="437" height="254"/>
         <image name="cerchio" width="84" height="84"/>
         <image name="checked" width="43" height="43"/>
@@ -2451,12 +2466,14 @@ tips and inspirational contents for you!</string>
         <image name="music-2" width="512" height="512"/>
         <image name="nav1" width="273" height="57"/>
         <image name="neutri" width="437" height="254"/>
+        <image name="nonselezionato" width="374" height="76"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="photo" catalog="system" width="128" height="93"/>
         <image name="quadrato" width="74" height="71"/>
         <image name="readyViola" width="182" height="55"/>
         <image name="rettangolo" width="126" height="71"/>
         <image name="selected" width="374" height="76"/>
+        <image name="selezionato" width="374" height="76"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="triangolo" width="84" height="74"/>
         <image name="unchecked" width="43" height="43"/>
