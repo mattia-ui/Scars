@@ -67,6 +67,12 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
     @IBOutlet weak var b4: UIButton!
     @IBOutlet weak var b5: UIButton!
     @IBOutlet weak var b6: UIButton!
+    @IBOutlet weak var r1: UIImageView!
+    @IBOutlet weak var r2: UIImageView!
+    @IBOutlet weak var r3: UIImageView!
+    @IBOutlet weak var r4: UIImageView!
+    @IBOutlet weak var r5: UIImageView!
+    @IBOutlet weak var r6: UIImageView!
     
     @IBOutlet weak var myCollectionView: UICollectionView!
     @IBOutlet weak var scroll: UIScrollView!
@@ -95,72 +101,81 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         }
      }
 
-    override func viewWillAppear(_ animated: Bool) {
-        var somma: CGFloat = 0
-        b1.setTitle(Schermata2.insights[0], for: .normal)
-        somma = somma + (10 * CGFloat(Schermata2.insights[0].count))
-        b1.frame.size.width = 10 * CGFloat(Schermata2.insights[0].count)
-            
-        b2.setTitle(Schermata2.insights[1], for: .normal)
-        somma = somma + (10 * CGFloat(Schermata2.insights[1].count))
-        b2.frame.size.width = 10 * CGFloat(Schermata2.insights[1].count)
-
-        b3.setTitle(Schermata2.insights[2], for: .normal)
-        somma = somma + (10 * CGFloat(Schermata2.insights[2].count))
-        b3.frame.size.width = 10 * CGFloat(Schermata2.insights[2].count)
-
-        b4.setTitle(Schermata2.insights[3], for: .normal)
-        somma = somma + (10 * CGFloat(Schermata2.insights[3].count))
-        b4.frame.size.width = 10 * CGFloat(Schermata2.insights[3].count)
-            
-        b5.setTitle(Schermata2.insights[4], for: .normal)
-        somma = somma + (10 * CGFloat(Schermata2.insights[4].count))
-        b5.frame.size.width = 10 * CGFloat(Schermata2.insights[4].count)
-
-        b6.setTitle(Schermata2.insights[5], for: .normal)
-        somma = somma + (10 * CGFloat(Schermata2.insights[5].count))
-        b6.frame.size.width = 10 * CGFloat(Schermata2.insights[5].count)
-
-        scroll.contentSize = CGSize(width: somma, height: 10)
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         caricaInfo()
-        var underLineColor: UIColor = .black
+//        var underLineColor: UIColor = .black
         if(Schermata2.insights[0] != ""){
            if(Schermata2.insights[0] == "TEDx"){
                 contenuto = structIns[0].pod
-                underLineColor = .red
+//                underLineColor = .red
             }
             if(Schermata2.insights[0] == "Movies&TVShows"){
                 contenuto = structIns[0].well
-                underLineColor = .purple
+//                underLineColor = .purple
             }
             if(Schermata2.insights[0] == "Articles"){
                 contenuto = structIns[0].mov
-                underLineColor = .yellow
+//                underLineColor = .yellow
             }
             if(Schermata2.insights[0] == "Books"){
                 contenuto = structIns[0].art
-                underLineColor = .systemPink
+//                underLineColor = .systemPink
             }
             if(Schermata2.insights[0] == "Inspiring People"){
                 contenuto = structIns[0].artists
-                underLineColor = .green
+//                underLineColor = .green
             }
             if(Schermata2.insights[0] == "Podcasts"){
                 contenuto = structIns[0].books
-                underLineColor = .orange
+//                underLineColor = .orange
             }
-            let underLineStyle = NSUnderlineStyle.thick.rawValue
-            let labelAtributes:[NSAttributedString.Key : Any]  = [
-                NSAttributedString.Key.underlineStyle: underLineStyle,
-                NSAttributedString.Key.underlineColor: underLineColor
-            ]
-                                    
-            let underlineAttributedString = NSAttributedString(string: Schermata2.insights[0],attributes: labelAtributes)
-            b1.titleLabel?.attributedText =  underlineAttributedString
+//            let underLineStyle = NSUnderlineStyle.thick.rawValue
+//            let labelAtributes:[NSAttributedString.Key : Any]  = [
+//                NSAttributedString.Key.underlineStyle: underLineStyle,
+//                NSAttributedString.Key.underlineColor: underLineColor
+//            ]
+//                                    
+//            let underlineAttributedString = NSAttributedString(string: Schermata2.insights[0],attributes: labelAtributes)
+//            b1.titleLabel?.attributedText =  underlineAttributedString
+           
+            var somma: CGFloat = 0
+            b1.setTitle(Schermata2.insights[0], for: .normal)
+            somma = somma + (15 * CGFloat(Schermata2.insights[0].count))
+            b1.frame.size.width = 15 * CGFloat(Schermata2.insights[0].count)
+            r1.image = UIImage(named: Schermata2.insights[0])
+                
+            b2.setTitle(Schermata2.insights[1], for: .normal)
+            somma = somma + (15 * CGFloat(Schermata2.insights[1].count))
+            b2.frame.size.width = 15 * CGFloat(Schermata2.insights[1].count)
+            r2.image = UIImage(named: Schermata2.insights[1])
+            r2.isHidden = true
+
+            b3.setTitle(Schermata2.insights[2], for: .normal)
+            somma = somma + (15 * CGFloat(Schermata2.insights[2].count))
+            b3.frame.size.width = 15 * CGFloat(Schermata2.insights[2].count)
+            r3.image = UIImage(named: Schermata2.insights[2])
+            r3.isHidden = true
+
+            b4.setTitle(Schermata2.insights[3], for: .normal)
+            somma = somma + (15 * CGFloat(Schermata2.insights[3].count))
+            b4.frame.size.width = 15 * CGFloat(Schermata2.insights[3].count)
+            r4.image = UIImage(named: Schermata2.insights[3])
+            r4.isHidden = true
+            
+            b5.setTitle(Schermata2.insights[4], for: .normal)
+            somma = somma + (15 * CGFloat(Schermata2.insights[4].count))
+            b5.frame.size.width = 15 * CGFloat(Schermata2.insights[4].count)
+            r5.image = UIImage(named: Schermata2.insights[4])
+            r5.isHidden = true
+
+            b6.setTitle(Schermata2.insights[5], for: .normal)
+            somma = somma + (15 * CGFloat(Schermata2.insights[5].count))
+            b6.frame.size.width = 15 * CGFloat(Schermata2.insights[5].count)
+            r6.image = UIImage(named: Schermata2.insights[5])
+            r6.isHidden = true
+            
+            scroll.contentSize = CGSize(width: somma, height: 10)
             
             b1.isSelected = true
             b2.isSelected = false
@@ -280,88 +295,132 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
     }
 
     @IBAction func setTable(_ sender: UIButton) {
-        var underLineColor: UIColor = .clear
-        let underLineStyle = NSUnderlineStyle.single.rawValue
-        var labelAtributes:[NSAttributedString.Key : Any]
-        var underlineAttributedString: NSAttributedString
+//        var underLineColor: UIColor = .clear
+//        let underLineStyle = NSUnderlineStyle.single.rawValue
+//        var labelAtributes:[NSAttributedString.Key : Any]
+//        var underlineAttributedString: NSAttributedString
         
         if !sender.isSelected {
             b1.isSelected = false
-            labelAtributes = [
-                NSAttributedString.Key.underlineStyle: underLineStyle,
-                NSAttributedString.Key.underlineColor: underLineColor
-            ]
-            underlineAttributedString = NSAttributedString(string: b1.titleLabel?.text ?? "",attributes: labelAtributes)
-            b1.titleLabel?.attributedText =  underlineAttributedString
+//            labelAtributes = [
+//                NSAttributedString.Key.underlineStyle: underLineStyle,
+//                NSAttributedString.Key.underlineColor: underLineColor
+//            ]
+//            underlineAttributedString = NSAttributedString(string: b1.titleLabel?.text ?? "",attributes: labelAtributes)
+//            b1.titleLabel?.attributedText =  underlineAttributedString
             b2.isSelected = false
-            labelAtributes = [
-                NSAttributedString.Key.underlineStyle: underLineStyle,
-                NSAttributedString.Key.underlineColor: underLineColor
-            ]
-            underlineAttributedString = NSAttributedString(string: b2.titleLabel?.text ?? "",attributes: labelAtributes)
-            b2.titleLabel?.attributedText =  underlineAttributedString
+//            labelAtributes = [
+//                NSAttributedString.Key.underlineStyle: underLineStyle,
+//                NSAttributedString.Key.underlineColor: underLineColor
+//            ]
+//            underlineAttributedString = NSAttributedString(string: b2.titleLabel?.text ?? "",attributes: labelAtributes)
+//            b2.titleLabel?.attributedText =  underlineAttributedString
             b3.isSelected = false
-            labelAtributes = [
-                NSAttributedString.Key.underlineStyle: underLineStyle,
-                NSAttributedString.Key.underlineColor: underLineColor
-            ]
-            underlineAttributedString = NSAttributedString(string: b3.titleLabel?.text ?? "",attributes: labelAtributes)
-            b3.titleLabel?.attributedText =  underlineAttributedString
+//            labelAtributes = [
+//                NSAttributedString.Key.underlineStyle: underLineStyle,
+//                NSAttributedString.Key.underlineColor: underLineColor
+//            ]
+//            underlineAttributedString = NSAttributedString(string: b3.titleLabel?.text ?? "",attributes: labelAtributes)
+//            b3.titleLabel?.attributedText =  underlineAttributedString
             b4.isSelected = false
-            labelAtributes = [
-                NSAttributedString.Key.underlineStyle: underLineStyle,
-                NSAttributedString.Key.underlineColor: underLineColor
-            ]
-            underlineAttributedString = NSAttributedString(string: b4.titleLabel?.text ?? "",attributes: labelAtributes)
-            b4.titleLabel?.attributedText =  underlineAttributedString
+//            labelAtributes = [
+//                NSAttributedString.Key.underlineStyle: underLineStyle,
+//                NSAttributedString.Key.underlineColor: underLineColor
+//            ]
+//            underlineAttributedString = NSAttributedString(string: b4.titleLabel?.text ?? "",attributes: labelAtributes)
+//            b4.titleLabel?.attributedText =  underlineAttributedString
             b5.isSelected = false
-            labelAtributes = [
-                NSAttributedString.Key.underlineStyle: underLineStyle,
-                NSAttributedString.Key.underlineColor: underLineColor
-            ]
-            underlineAttributedString = NSAttributedString(string: b5.titleLabel?.text ?? "",attributes: labelAtributes)
-            b5.titleLabel?.attributedText =  underlineAttributedString
+//            labelAtributes = [
+//                NSAttributedString.Key.underlineStyle: underLineStyle,
+//                NSAttributedString.Key.underlineColor: underLineColor
+//            ]
+//            underlineAttributedString = NSAttributedString(string: b5.titleLabel?.text ?? "",attributes: labelAtributes)
+//            b5.titleLabel?.attributedText =  underlineAttributedString
             b6.isSelected = false
-            labelAtributes = [
-                NSAttributedString.Key.underlineStyle: underLineStyle,
-                NSAttributedString.Key.underlineColor: underLineColor
-            ]
-            underlineAttributedString = NSAttributedString(string: b6.titleLabel?.text ?? "",attributes: labelAtributes)
-            b6.titleLabel?.attributedText =  underlineAttributedString
+//            labelAtributes = [
+//                NSAttributedString.Key.underlineStyle: underLineStyle,
+//                NSAttributedString.Key.underlineColor: underLineColor
+//            ]
+//            underlineAttributedString = NSAttributedString(string: b6.titleLabel?.text ?? "",attributes: labelAtributes)
+//            b6.titleLabel?.attributedText =  underlineAttributedString
             sender.isSelected = true
         }
         
         if(sender.titleLabel?.text == "TEDx"){
             contenuto = structIns[0].pod
-            underLineColor = .red
+//            underLineColor = .red
         }
         if(sender.titleLabel?.text == "Movies&TVShows"){
             contenuto = structIns[0].well
-            underLineColor = .purple
+//            underLineColor = .purple
         }
         if(sender.titleLabel?.text == "Articles"){
             contenuto = structIns[0].mov
-            underLineColor = .yellow
+//            underLineColor = .yellow
         }
         if(sender.titleLabel?.text == "Books"){
             contenuto = structIns[0].art
-            underLineColor = .systemPink
+//            underLineColor = .systemPink
         }
         if(sender.titleLabel?.text == "Inspiring People"){
             contenuto = structIns[0].artists
-            underLineColor = .green
+//            underLineColor = .green
         }
         if(sender.titleLabel?.text == "Podcasts"){
             contenuto = structIns[0].books
-            underLineColor = .orange
+//            underLineColor = .orange
         }
         
-        labelAtributes = [
-            NSAttributedString.Key.underlineStyle: underLineStyle,
-            NSAttributedString.Key.underlineColor: underLineColor
-        ]
-        underlineAttributedString = NSAttributedString(string: sender.titleLabel?.text ?? "",attributes: labelAtributes)
-        sender.titleLabel?.attributedText =  underlineAttributedString
+//        labelAtributes = [
+//            NSAttributedString.Key.underlineStyle: underLineStyle,
+//            NSAttributedString.Key.underlineColor: underLineColor
+//        ]
+//        underlineAttributedString = NSAttributedString(string: sender.titleLabel?.text ?? "",attributes: labelAtributes)
+//        sender.titleLabel?.attributedText =  underlineAttributedString
+        if(b1.isSelected == true){
+            r1.isHidden = false
+            r2.isHidden = true
+            r3.isHidden = true
+            r4.isHidden = true
+            r5.isHidden = true
+            r6.isHidden = true
+        } else if(b2.isSelected == true){
+            r1.isHidden = true
+            r2.isHidden = false
+            r3.isHidden = true
+            r4.isHidden = true
+            r5.isHidden = true
+            r6.isHidden = true
+        }else if(b3.isSelected == true){
+            r1.isHidden = true
+            r2.isHidden = true
+            r3.isHidden = false
+            r4.isHidden = true
+            r5.isHidden = true
+            r6.isHidden = true
+        }else if(b4.isSelected == true){
+            r1.isHidden = true
+            r2.isHidden = true
+            r3.isHidden = true
+            r4.isHidden = false
+            r5.isHidden = true
+            r6.isHidden = true
+        }else if(b5.isSelected == true){
+            r1.isHidden = true
+            r2.isHidden = true
+            r3.isHidden = true
+            r4.isHidden = true
+            r5.isHidden = false
+            r6.isHidden = true
+        }else if(b6.isSelected == true){
+            r1.isHidden = true
+            r2.isHidden = true
+            r3.isHidden = true
+            r4.isHidden = true
+            r5.isHidden = true
+            r6.isHidden = false
+        }
+        
         myCollectionView.reloadData()
     }
 }

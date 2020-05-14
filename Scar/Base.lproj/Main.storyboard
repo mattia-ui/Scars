@@ -1909,10 +1909,11 @@ tips and inspirational contents for you!</string>
                                 <rect key="frame" x="20" y="148" width="374" height="90"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWf-U8-k4A">
-                                        <rect key="frame" x="10" y="29" width="46" height="49"/>
+                                        <rect key="frame" x="10" y="29" width="46" height="31"/>
+                                        <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button">
-                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <state key="selected">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1922,7 +1923,8 @@ tips and inspirational contents for you!</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSy-AZ-0Wf">
-                                        <rect key="frame" x="66" y="38.5" width="46" height="30"/>
+                                        <rect key="frame" x="68" y="29" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1935,7 +1937,8 @@ tips and inspirational contents for you!</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnF-9K-8Qw">
-                                        <rect key="frame" x="122" y="38.5" width="46" height="30"/>
+                                        <rect key="frame" x="122" y="30" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1948,7 +1951,8 @@ tips and inspirational contents for you!</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usK-xr-joa">
-                                        <rect key="frame" x="178" y="38.5" width="46" height="30"/>
+                                        <rect key="frame" x="180" y="29" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1961,7 +1965,8 @@ tips and inspirational contents for you!</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2l-Y5-5Ra">
-                                        <rect key="frame" x="234" y="38.5" width="46" height="30"/>
+                                        <rect key="frame" x="234" y="29" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1974,7 +1979,8 @@ tips and inspirational contents for you!</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1y-0b-Q2T">
-                                        <rect key="frame" x="290" y="38.5" width="46" height="30"/>
+                                        <rect key="frame" x="288" y="29" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1986,15 +1992,44 @@ tips and inspirational contents for you!</string>
                                             <action selector="setTable:" destination="Aa9-1L-etK" eventType="touchUpInside" id="dwl-o0-urL"/>
                                         </connections>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2cz-hS-iGh">
+                                        <rect key="frame" x="10" y="62" width="48" height="14"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2w2-2K-Ag7">
+                                        <rect key="frame" x="67" y="62" width="48" height="14"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4mN-US-bx1">
+                                        <rect key="frame" x="121" y="62" width="48" height="14"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PdY-XF-ifH">
+                                        <rect key="frame" x="179" y="62" width="48" height="14"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ekF-6R-Q59">
+                                        <rect key="frame" x="233" y="62" width="48" height="14"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nFb-B9-lwF">
+                                        <rect key="frame" x="287" y="62" width="48" height="14"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="rnF-9K-8Qw" firstAttribute="leading" secondItem="dSy-AZ-0Wf" secondAttribute="trailing" constant="10" id="4Or-f0-WmY"/>
-                                    <constraint firstItem="c1y-0b-Q2T" firstAttribute="leading" secondItem="o2l-Y5-5Ra" secondAttribute="trailing" constant="10" id="DHl-JL-7R3"/>
-                                    <constraint firstItem="o2l-Y5-5Ra" firstAttribute="leading" secondItem="usK-xr-joa" secondAttribute="trailing" constant="10" id="Mqb-Fi-G1R"/>
+                                    <constraint firstItem="2w2-2K-Ag7" firstAttribute="leading" secondItem="2cz-hS-iGh" secondAttribute="trailing" constant="33" id="22L-1m-c4I"/>
+                                    <constraint firstItem="4mN-US-bx1" firstAttribute="leading" secondItem="2w2-2K-Ag7" secondAttribute="trailing" constant="33" id="2yH-Pc-Jax"/>
+                                    <constraint firstItem="rnF-9K-8Qw" firstAttribute="leading" secondItem="dSy-AZ-0Wf" secondAttribute="trailing" constant="31" id="4Or-f0-WmY"/>
+                                    <constraint firstItem="ekF-6R-Q59" firstAttribute="top" secondItem="o2l-Y5-5Ra" secondAttribute="bottom" constant="2" id="4r5-gc-66C"/>
+                                    <constraint firstItem="4mN-US-bx1" firstAttribute="top" secondItem="rnF-9K-8Qw" secondAttribute="bottom" constant="2" id="5JD-LD-Mzz"/>
+                                    <constraint firstItem="2cz-hS-iGh" firstAttribute="top" secondItem="DWf-U8-k4A" secondAttribute="bottom" constant="2" id="9E4-5L-sgY"/>
+                                    <constraint firstItem="c1y-0b-Q2T" firstAttribute="leading" secondItem="o2l-Y5-5Ra" secondAttribute="trailing" constant="31" id="DHl-JL-7R3"/>
+                                    <constraint firstItem="2w2-2K-Ag7" firstAttribute="top" secondItem="dSy-AZ-0Wf" secondAttribute="bottom" constant="2" id="HX9-6B-ydr"/>
+                                    <constraint firstItem="nFb-B9-lwF" firstAttribute="leading" secondItem="ekF-6R-Q59" secondAttribute="trailing" constant="33" id="J9z-mP-oFv"/>
+                                    <constraint firstItem="nFb-B9-lwF" firstAttribute="top" secondItem="c1y-0b-Q2T" secondAttribute="bottom" constant="2" id="KYF-Kz-qVG"/>
+                                    <constraint firstItem="o2l-Y5-5Ra" firstAttribute="leading" secondItem="usK-xr-joa" secondAttribute="trailing" constant="31" id="Mqb-Fi-G1R"/>
                                     <constraint firstAttribute="height" constant="90" id="eSC-bn-eG6"/>
-                                    <constraint firstItem="dSy-AZ-0Wf" firstAttribute="leading" secondItem="DWf-U8-k4A" secondAttribute="trailing" constant="10" id="qBM-CC-VqN"/>
-                                    <constraint firstItem="usK-xr-joa" firstAttribute="leading" secondItem="rnF-9K-8Qw" secondAttribute="trailing" constant="10" id="ryq-hX-h3Q"/>
+                                    <constraint firstItem="PdY-XF-ifH" firstAttribute="leading" secondItem="4mN-US-bx1" secondAttribute="trailing" constant="33" id="gmZ-jH-zKt"/>
+                                    <constraint firstItem="PdY-XF-ifH" firstAttribute="top" secondItem="usK-xr-joa" secondAttribute="bottom" constant="2" id="ntz-xJ-ksZ"/>
+                                    <constraint firstItem="dSy-AZ-0Wf" firstAttribute="leading" secondItem="DWf-U8-k4A" secondAttribute="trailing" constant="31" id="qBM-CC-VqN"/>
+                                    <constraint firstItem="usK-xr-joa" firstAttribute="leading" secondItem="rnF-9K-8Qw" secondAttribute="trailing" constant="31" id="ryq-hX-h3Q"/>
                                     <constraint firstAttribute="width" constant="374" id="wvQ-4v-gJ0"/>
+                                    <constraint firstItem="ekF-6R-Q59" firstAttribute="leading" secondItem="PdY-XF-ifH" secondAttribute="trailing" constant="33" id="zrL-ik-avp"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Aen-nI-X0u"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ymt-6W-zKb"/>
@@ -2121,6 +2156,12 @@ tips and inspirational contents for you!</string>
                         <outlet property="b5" destination="o2l-Y5-5Ra" id="d8O-9N-HH9"/>
                         <outlet property="b6" destination="c1y-0b-Q2T" id="rrj-y2-pTj"/>
                         <outlet property="myCollectionView" destination="u6C-90-pJx" id="SbK-Ix-wDw"/>
+                        <outlet property="r1" destination="2cz-hS-iGh" id="J1e-e0-Ftu"/>
+                        <outlet property="r2" destination="2w2-2K-Ag7" id="5cE-bV-SHu"/>
+                        <outlet property="r3" destination="4mN-US-bx1" id="aJ8-Ww-zYb"/>
+                        <outlet property="r4" destination="PdY-XF-ifH" id="d8T-SE-QId"/>
+                        <outlet property="r5" destination="ekF-6R-Q59" id="DlF-vk-oli"/>
+                        <outlet property="r6" destination="nFb-B9-lwF" id="ZXH-3j-ByR"/>
                         <outlet property="scroll" destination="ZS4-u3-Tl0" id="42R-5q-i6J"/>
                     </connections>
                 </viewController>
