@@ -31,16 +31,16 @@ struct ins {
 
 var structIns = [ins(
     pod:[
-        Cont(image: "2-.jpg", title:"t", descr: "esempio Podcast", fonte:"f", link: "https://www.google.com/?client=safari"),
-        Cont(image: "2-.jpg", title:"t", descr: "esempio Podcast", fonte:"f", link: "https://www.google.com/?client=safari")],
+        Cont(image: "insight1", title:"How to Build Self Confidence", descr: "CeCe Olisa is a body positivity expert who creates popular plus-size workout videos on her YouTube channel, encouraging women to train because they love their bodies and not because they hate them.", fonte:"CeCe Olisa | TEDxFresnoState", link: "https://www.youtube.com/watch?v=ivNNgdCsY7o"),
+        Cont(image: "insight2", title:"Stop hating your body; start living your life", descr: "Taryn Brumfitt is a vary famous body image activist. This talk makes us understand that it is not our body that is wrong but our perspective and the unrealistic standards that surround us.", fonte:"Taryn Brumfitt | TEDxAdelaide", link: "https://www.youtube.com/watch?v=LSMH3WABkwg")],
     well:[
-        Cont(image: "2-.jpg", title:"t", descr: "esempio Wellbein", fonte:"f", link: "https://www.google.com/?client=safari"),
-        Cont(image: "2-.jpg", title:"t", descr: "esempio Wellbein", fonte:"f", link: "https://www.google.com/?client=safari")],
+        Cont(image: "insight3", title:"Stop hating your body; start living your life ", descr: "Taryn Brumfitt is a vary famous body image activist. This talk makes us understand that it is not our body that is wrong but our perspective and the unrealistic standards that surround us.", fonte:"f", link: "https://www.youtube.com/watch?v=LSMH3WABkwg"),
+        Cont(image: "insight4", title:"t", descr: "esempio Wellbein", fonte:"f", link: "https://www.google.com/?client=safari")],
     mov:[
-        Cont(image: "2-.jpg", title:"t", descr: "esempio Movies", fonte:"f", link: "https://www.google.com/?client=safari"),
+        Cont(image: "insight3", title:"t", descr: "esempio Movies", fonte:"f", link: "https://www.google.com/?client=safari"),
         Cont(image: "2-.jpg", title:"t", descr: "esempio Movies", fonte:"f", link: "https://www.google.com/?client=safari")],
     art:[
-        Cont(image: "2-.jpg", title:"t", descr: "esempio Articols", fonte:"f", link: "https://www.google.com/?client=safari"),
+        Cont(image: "insight4", title:"t", descr: "esempio Articols", fonte:"f", link: "https://www.google.com/?client=safari"),
         Cont(image: "2-.jpg", title:"t", descr: "esempio Articols", fonte:"f", link: "https://www.google.com/?client=safari")],
     artists:[
         Cont(image: "2-.jpg", title:"t", descr: "esempio Artistis", fonte:"f", link: "https://www.google.com/?client=safari"),
