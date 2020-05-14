@@ -2202,23 +2202,8 @@ tips and inspirational contents for you!</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="podcast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZv-xW-yc5">
-                                <rect key="frame" x="41" y="129" width="83.5" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="wellbeing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daM-Gz-AwK">
-                                <rect key="frame" x="41" y="231" width="100.5" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhW-b9-vYz">
-                                <rect key="frame" x="15" y="205" width="386" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhW-b9-vYz">
+                                <rect key="frame" x="15" y="229" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2230,16 +2215,8 @@ tips and inspirational contents for you!</string>
                                     <action selector="wellbein:" destination="pxK-AG-QlA" eventType="touchUpInside" id="hqW-l6-MIj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1H3-XO-3Jq">
-                                <rect key="frame" x="41" y="326" width="72.5" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7I-AD-BUJ">
-                                <rect key="frame" x="15" y="299" width="386" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7I-AD-BUJ">
+                                <rect key="frame" x="15" y="327" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2251,16 +2228,8 @@ tips and inspirational contents for you!</string>
                                     <action selector="movies:" destination="pxK-AG-QlA" eventType="touchUpInside" id="VAr-sd-trc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="articols" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBw-pU-Hzy">
-                                <rect key="frame" x="41" y="426" width="74.5" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzd-QM-ZsD">
-                                <rect key="frame" x="15" y="399" width="386" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzd-QM-ZsD">
+                                <rect key="frame" x="15" y="425" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2272,15 +2241,8 @@ tips and inspirational contents for you!</string>
                                     <action selector="articols:" destination="pxK-AG-QlA" eventType="touchUpInside" id="PdH-f5-Wdl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNm-Qf-5Tl">
-                                <rect key="frame" x="41" y="516" width="52" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yP-st-eET">
-                                <rect key="frame" x="15" y="112" width="386" height="76"/>
+                                <rect key="frame" x="15" y="131" width="386" height="76"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
@@ -2294,16 +2256,8 @@ tips and inspirational contents for you!</string>
                                     <action selector="podcast:" destination="pxK-AG-QlA" eventType="touchUpInside" id="lv1-hv-BHP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="books" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCO-IH-dct">
-                                <rect key="frame" x="39" y="622" width="62" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZk-O6-Ha0">
-                                <rect key="frame" x="15" y="595" width="386" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZk-O6-Ha0">
+                                <rect key="frame" x="15" y="621" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2315,21 +2269,8 @@ tips and inspirational contents for you!</string>
                                     <action selector="books:" destination="pxK-AG-QlA" eventType="touchUpInside" id="YJX-hb-RvR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Interests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICX-Lj-BMb">
-                                <rect key="frame" x="22" y="20" width="372" height="38"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalize your insights section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLV-JE-bPB">
-                                <rect key="frame" x="22" y="65" width="372" height="22"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaW-2m-fzZ">
-                                <rect key="frame" x="14" y="489" width="386" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaW-2m-fzZ">
+                                <rect key="frame" x="15" y="523" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2341,18 +2282,87 @@ tips and inspirational contents for you!</string>
                                     <action selector="artist:" destination="pxK-AG-QlA" eventType="touchUpInside" id="ERk-dG-C3x"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalize your insights section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLV-JE-bPB">
+                                <rect key="frame" x="22" y="65" width="372" height="22"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Interests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICX-Lj-BMb">
+                                <rect key="frame" x="22" y="20" width="372" height="38"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Podcasts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCO-IH-dct">
+                                <rect key="frame" x="41" y="648" width="92" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inspiring People" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNm-Qf-5Tl">
+                                <rect key="frame" x="41" y="550" width="164" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Books" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBw-pU-Hzy">
+                                <rect key="frame" x="41" y="452" width="62" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Articles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1H3-XO-3Jq">
+                                <rect key="frame" x="41" y="354" width="77" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TEDx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZv-xW-yc5">
+                                <rect key="frame" x="41" y="158" width="52" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movies&amp;TVShows" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daM-Gz-AwK">
+                                <rect key="frame" x="41" y="256" width="176" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="vTd-oq-JON" firstAttribute="trailing" secondItem="ICX-Lj-BMb" secondAttribute="trailing" constant="20" id="02H-wV-qsS"/>
+                            <constraint firstItem="vTd-oq-JON" firstAttribute="trailing" secondItem="yhW-b9-vYz" secondAttribute="trailing" constant="13" id="25d-tk-IZD"/>
+                            <constraint firstItem="M7I-AD-BUJ" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" constant="15" id="9lt-TG-ICl"/>
+                            <constraint firstItem="vTd-oq-JON" firstAttribute="trailing" secondItem="aZk-O6-Ha0" secondAttribute="trailing" constant="13" id="Bhy-iq-WcJ"/>
+                            <constraint firstItem="M7I-AD-BUJ" firstAttribute="top" secondItem="yhW-b9-vYz" secondAttribute="bottom" constant="22" id="BrG-VH-wlE"/>
+                            <constraint firstItem="kzd-QM-ZsD" firstAttribute="top" secondItem="M7I-AD-BUJ" secondAttribute="bottom" constant="22" id="C31-16-LHK"/>
+                            <constraint firstItem="aZk-O6-Ha0" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" constant="15" id="DCX-AL-N0T"/>
+                            <constraint firstItem="gaW-2m-fzZ" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" constant="15" id="EBs-9o-F0Z"/>
                             <constraint firstItem="ICX-Lj-BMb" firstAttribute="top" secondItem="vTd-oq-JON" secondAttribute="top" constant="20" id="EvM-7I-kZl"/>
                             <constraint firstItem="ICX-Lj-BMb" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" constant="22" id="L0J-Ks-79d"/>
                             <constraint firstItem="DLV-JE-bPB" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" constant="22" id="Lp2-1C-9Ee"/>
+                            <constraint firstItem="aZk-O6-Ha0" firstAttribute="top" secondItem="gaW-2m-fzZ" secondAttribute="bottom" constant="22" id="MLd-Jh-NA0"/>
+                            <constraint firstItem="kzd-QM-ZsD" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" constant="15" id="OOf-NF-0Nf"/>
                             <constraint firstItem="DLV-JE-bPB" firstAttribute="top" secondItem="ICX-Lj-BMb" secondAttribute="bottom" constant="7" id="QiN-FH-a6Z"/>
-                            <constraint firstItem="1yP-st-eET" firstAttribute="top" secondItem="DLV-JE-bPB" secondAttribute="bottom" constant="25" id="Rrx-4s-Sdi"/>
+                            <constraint firstItem="yhW-b9-vYz" firstAttribute="top" secondItem="1yP-st-eET" secondAttribute="bottom" constant="22" id="RJG-Es-amh"/>
+                            <constraint firstItem="vTd-oq-JON" firstAttribute="trailing" secondItem="gaW-2m-fzZ" secondAttribute="trailing" constant="13" id="RU5-rG-pOM"/>
+                            <constraint firstItem="1yP-st-eET" firstAttribute="top" secondItem="DLV-JE-bPB" secondAttribute="bottom" constant="44" id="Rrx-4s-Sdi"/>
                             <constraint firstItem="vTd-oq-JON" firstAttribute="trailing" secondItem="DLV-JE-bPB" secondAttribute="trailing" constant="20" id="W5S-md-Biz"/>
+                            <constraint firstItem="gaW-2m-fzZ" firstAttribute="top" secondItem="kzd-QM-ZsD" secondAttribute="bottom" constant="22" id="dZw-rs-mz3"/>
+                            <constraint firstItem="vTd-oq-JON" firstAttribute="trailing" secondItem="M7I-AD-BUJ" secondAttribute="trailing" constant="13" id="eZT-Ma-j6y"/>
+                            <constraint firstItem="vTd-oq-JON" firstAttribute="trailing" secondItem="kzd-QM-ZsD" secondAttribute="trailing" constant="13" id="lHq-8J-Kbl"/>
                             <constraint firstItem="vTd-oq-JON" firstAttribute="trailing" secondItem="1yP-st-eET" secondAttribute="trailing" constant="13" id="ojO-8i-sMh"/>
                             <constraint firstItem="1yP-st-eET" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" constant="15" id="skZ-dW-QAH"/>
+                            <constraint firstItem="yhW-b9-vYz" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" constant="15" id="uKZ-jJ-sa5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vTd-oq-JON"/>
                     </view>
