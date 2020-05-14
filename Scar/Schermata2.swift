@@ -60,6 +60,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
+
     
     @IBOutlet weak var b1: UIButton!
     @IBOutlet weak var b2: UIButton!
@@ -100,10 +101,14 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
             UIApplication.shared.open(url as URL)
         }
      }
+    
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         caricaInfo()
+
 //        var underLineColor: UIColor = .black
         if(Schermata2.insights[0] != ""){
            if(Schermata2.insights[0] == "TEDx"){
