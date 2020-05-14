@@ -2034,29 +2034,29 @@ tips and inspirational contents for you!</string>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Aen-nI-X0u"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ymt-6W-zKb"/>
                             </scrollView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u6C-90-pJx">
-                                <rect key="frame" x="20" y="246" width="374" height="546"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u6C-90-pJx">
+                                <rect key="frame" x="20" y="246" width="383" height="546"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="jtl-uh-CSj"/>
                                     <constraint firstAttribute="height" constant="546" id="rtK-vE-PGW"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7Av-WO-Uyr">
-                                    <size key="itemSize" width="374" height="281"/>
+                                    <size key="itemSize" width="380" height="281"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ins" reuseIdentifier="ins" id="tBk-G5-O86" customClass="InightsCollection" customModule="Scar" customModuleProvider="target">
-                                        <rect key="frame" x="2" y="0.0" width="370" height="281"/>
+                                        <rect key="frame" x="1.5" y="0.0" width="380" height="281"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="insightsCell" insetsLayoutMarginsFromSafeArea="NO" id="xtB-u9-g6l">
-                                            <rect key="frame" x="0.0" y="0.0" width="370" height="281"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="380" height="281"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9o9-F3-Tem">
-                                                    <rect key="frame" x="0.0" y="0.0" width="370" height="134"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9o9-F3-Tem">
+                                                    <rect key="frame" x="0.0" y="0.0" width="380" height="134"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="134" id="7Cq-2X-H47"/>
                                                         <constraint firstAttribute="width" constant="370" id="gef-G6-TSz"/>
@@ -2096,7 +2096,7 @@ tips and inspirational contents for you!</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxG-uB-0dh">
-                                                    <rect key="frame" x="268" y="256" width="79" height="18"/>
+                                                    <rect key="frame" x="268" y="256" width="81" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="79" id="IRU-lF-A5U"/>
                                                     </constraints>
@@ -2123,7 +2123,7 @@ tips and inspirational contents for you!</string>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <size key="customSize" width="370" height="281"/>
+                                        <size key="customSize" width="380" height="281"/>
                                         <connections>
                                             <outlet property="button" destination="vxG-uB-0dh" id="g2s-hP-B5K"/>
                                             <outlet property="fonte" destination="y9q-2C-HRN" id="E3o-l1-Jlk"/>
@@ -2184,14 +2184,14 @@ tips and inspirational contents for you!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="podcast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZv-xW-yc5">
-                                <rect key="frame" x="41" y="123" width="62" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="41" y="129" width="64.5" height="17"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wellbeing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daM-Gz-AwK">
-                                <rect key="frame" x="41" y="197" width="73" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="41" y="201" width="77.5" height="17"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2209,8 +2209,8 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1H3-XO-3Jq">
-                                <rect key="frame" x="41" y="258" width="55" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="41" y="258" width="56" height="17"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2228,8 +2228,8 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="articols" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBw-pU-Hzy">
-                                <rect key="frame" x="41" y="310" width="57" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="41" y="306" width="57.5" height="17"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2247,13 +2247,13 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNm-Qf-5Tl">
-                                <rect key="frame" x="41" y="371" width="40" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="41" y="363" width="40" height="17"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaW-2m-fzZ">
-                                <rect key="frame" x="346" y="371" width="30" height="30"/>
+                                <rect key="frame" x="346" y="363" width="30" height="30"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="+">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2266,7 +2266,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yP-st-eET">
-                                <rect key="frame" x="346" y="123" width="30" height="30"/>
+                                <rect key="frame" x="346" y="129" width="30" height="30"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="+">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2279,15 +2279,14 @@ tips and inspirational contents for you!</string>
                                     <action selector="podcast:" destination="pxK-AG-QlA" eventType="touchUpInside" id="lv1-hv-BHP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="books" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCO-IH-dct">
-                                <rect key="frame" x="39" y="457" width="47" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="books" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCO-IH-dct">
+                                <rect key="frame" x="39" y="435" width="48" height="17"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZk-O6-Ha0">
-                                <rect key="frame" x="346" y="452" width="30" height="30"/>
+                                <rect key="frame" x="346" y="430" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="+">
@@ -2304,6 +2303,7 @@ tips and inspirational contents for you!</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="M7I-AD-BUJ" firstAttribute="leading" secondItem="yhW-b9-vYz" secondAttribute="leading" id="2X9-15-1jF"/>
+                            <constraint firstItem="iCO-IH-dct" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" constant="39" id="3rf-xd-L8e"/>
                             <constraint firstItem="DBw-pU-Hzy" firstAttribute="top" secondItem="1H3-XO-3Jq" secondAttribute="bottom" constant="31" id="5tW-yO-hr1"/>
                             <constraint firstItem="1H3-XO-3Jq" firstAttribute="leading" secondItem="DBw-pU-Hzy" secondAttribute="leading" id="8Bn-hp-mKZ"/>
                             <constraint firstItem="1H3-XO-3Jq" firstAttribute="leading" secondItem="tZv-xW-yc5" secondAttribute="leading" id="Cfk-a2-KlU"/>
@@ -2311,9 +2311,10 @@ tips and inspirational contents for you!</string>
                             <constraint firstItem="1H3-XO-3Jq" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" constant="41" id="Nqv-Bu-EEJ"/>
                             <constraint firstItem="SNm-Qf-5Tl" firstAttribute="top" secondItem="DBw-pU-Hzy" secondAttribute="bottom" constant="40" id="PES-IZ-NxN"/>
                             <constraint firstItem="kzd-QM-ZsD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DBw-pU-Hzy" secondAttribute="trailing" constant="8" symbolic="YES" id="PnI-0O-bRf"/>
+                            <constraint firstItem="iCO-IH-dct" firstAttribute="top" secondItem="SNm-Qf-5Tl" secondAttribute="bottom" constant="55" id="Qjs-OK-Nvz"/>
                             <constraint firstItem="gaW-2m-fzZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SNm-Qf-5Tl" secondAttribute="trailing" constant="8" symbolic="YES" id="Sbe-G3-ww2"/>
                             <constraint firstItem="M7I-AD-BUJ" firstAttribute="leading" secondItem="gaW-2m-fzZ" secondAttribute="leading" id="WCP-eN-Ouz"/>
-                            <constraint firstItem="tZv-xW-yc5" firstAttribute="top" secondItem="vTd-oq-JON" secondAttribute="top" constant="123" id="Xdf-l6-Lsx"/>
+                            <constraint firstItem="tZv-xW-yc5" firstAttribute="top" secondItem="vTd-oq-JON" secondAttribute="top" constant="129" id="Xdf-l6-Lsx"/>
                             <constraint firstItem="1H3-XO-3Jq" firstAttribute="leading" secondItem="daM-Gz-AwK" secondAttribute="leading" id="ZCr-BM-p1d"/>
                             <constraint firstItem="1H3-XO-3Jq" firstAttribute="leading" secondItem="SNm-Qf-5Tl" secondAttribute="leading" id="all-gs-fea"/>
                             <constraint firstItem="SNm-Qf-5Tl" firstAttribute="top" secondItem="gaW-2m-fzZ" secondAttribute="top" id="ceR-8d-duF"/>
