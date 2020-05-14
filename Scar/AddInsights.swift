@@ -21,7 +21,6 @@ class AddInsights: UIViewController {
     static var j: Int = 0
     var db: OpaquePointer?
     var stmt: OpaquePointer?
-    var temp: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +64,8 @@ class AddInsights: UIViewController {
     }
    
     @IBAction func podcast(_ sender: UIButton) {
+        var temp: [String] = []
+        
         //Si connette al DB
         let fileURL = try!
         FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
@@ -75,15 +76,22 @@ class AddInsights: UIViewController {
         if sender.isSelected {
             pod.isSelected = false
             for i in 0...Schermata2.insights.count - 1{
-                if(Schermata2.insights[i] != "TEDx"){
+                if(Schermata2.insights[i] != "TEDx" && Schermata2.insights[i] != ""){
                     temp.append(Schermata2.insights[i])
                 }
             }
             AddInsights.j = AddInsights.j - 1
             Schermata2.insights = temp
-            Schermata2.insights.append("")
+            for i in 0..<6 - Schermata2.insights.count{
+                Schermata2.insights.append("")
+            }
+                  
+            for i in 0..<Schermata2.insights.count{
+                print(Schermata2.insights[i])
+            }
             
-            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b5 = '\(Schermata2.insights[5])';"
+            
+            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b6 = '\(Schermata2.insights[5])';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -109,6 +117,8 @@ class AddInsights: UIViewController {
     }
     
     @IBAction func wellbein(_ sender: UIButton) {
+        var temp: [String] = []
+        
         //Si connette al DB
         let fileURL = try!
         FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
@@ -119,15 +129,22 @@ class AddInsights: UIViewController {
         if sender.isSelected {
             well.isSelected = false
                 for i in 0...Schermata2.insights.count - 1{
-                    if(Schermata2.insights[i] != "Movies&TVShows"){
+                    if(Schermata2.insights[i] != "Movies&TVShows" && Schermata2.insights[i] != ""){
                     temp.append(Schermata2.insights[i])
                 }
             }
             AddInsights.j = AddInsights.j - 1
             Schermata2.insights = temp
-            Schermata2.insights.append("")
+            for i in 0..<6 - Schermata2.insights.count{
+                Schermata2.insights.append("")
+            }
             
-            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b5 = '\(Schermata2.insights[5])';"
+            for i in 0..<Schermata2.insights.count{
+                print(Schermata2.insights[i])
+            }
+                  
+            
+            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b6 = '\(Schermata2.insights[5])';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -153,6 +170,8 @@ class AddInsights: UIViewController {
     }
     
     @IBAction func movies(_ sender: UIButton) {
+        var temp: [String] = []
+        
         //Si connette al DB
         let fileURL = try!
         FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
@@ -163,14 +182,22 @@ class AddInsights: UIViewController {
         if sender.isSelected {
             mov.isSelected = false
             for i in 0...Schermata2.insights.count - 1{
-                if(Schermata2.insights[i] != "Articles"){
+                if(Schermata2.insights[i] != "Articles" && Schermata2.insights[i] != ""){
                     temp.append(Schermata2.insights[i])
                 }
             }
             AddInsights.j = AddInsights.j - 1
             Schermata2.insights = temp
-            Schermata2.insights.append("")
-            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b5 = '\(Schermata2.insights[5])';"
+            for i in 0..<6 - Schermata2.insights.count{
+                Schermata2.insights.append("")
+            }
+            
+            
+            for i in 0..<Schermata2.insights.count{
+                print(Schermata2.insights[i])
+            }
+            
+            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b6 = '\(Schermata2.insights[5])';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -196,6 +223,8 @@ class AddInsights: UIViewController {
     }
     
     @IBAction func articols(_ sender: UIButton) {
+        var temp: [String] = []
+        
         //Si connette al DB
         let fileURL = try!
         FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
@@ -206,15 +235,22 @@ class AddInsights: UIViewController {
         if sender.isSelected {
             art.isSelected = false
             for i in 0...Schermata2.insights.count - 1{
-                if(Schermata2.insights[i] != "Books"){
+                if(Schermata2.insights[i] != "Books" && Schermata2.insights[i] != ""){
                     temp.append(Schermata2.insights[i])
                 }
             }
             AddInsights.j = AddInsights.j - 1
             Schermata2.insights = temp
-            Schermata2.insights.append("")
+            for i in 0..<6 - Schermata2.insights.count{
+                Schermata2.insights.append("")
+            }
             
-            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b5 = '\(Schermata2.insights[5])';"
+            
+            for i in 0..<Schermata2.insights.count{
+                print(Schermata2.insights[i])
+            }
+            
+            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b6 = '\(Schermata2.insights[5])';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -240,6 +276,8 @@ class AddInsights: UIViewController {
     }
     
     @IBAction func artist(_ sender: UIButton) {
+        var temp: [String] = []
+        
         //Si connette al DB
         let fileURL = try!
         FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
@@ -250,15 +288,22 @@ class AddInsights: UIViewController {
         if sender.isSelected {
             artist.isSelected = false
             for i in 0...Schermata2.insights.count - 1{
-                if(Schermata2.insights[i] != "Inspiring People"){
+                if(Schermata2.insights[i] != "Inspiring People" && Schermata2.insights[i] != ""){
                     temp.append(Schermata2.insights[i])
                 }
             }
             AddInsights.j = AddInsights.j - 1
             Schermata2.insights = temp
-            Schermata2.insights.append("")
+            for i in 0..<6 - Schermata2.insights.count{
+                Schermata2.insights.append("")
+            }
+               
             
-            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b5 = '\(Schermata2.insights[5])';"
+            for i in 0..<Schermata2.insights.count{
+                print(Schermata2.insights[i])
+            }
+            
+            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b6 = '\(Schermata2.insights[5])';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -284,6 +329,8 @@ class AddInsights: UIViewController {
     }
     
     @IBAction func books(_ sender: UIButton) {
+        var temp: [String] = []
+        
         //Si connette al DB
         let fileURL = try!
         FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
@@ -295,15 +342,22 @@ class AddInsights: UIViewController {
         if sender.isSelected {
             books.isSelected = false
             for i in 0...Schermata2.insights.count - 1{
-                if(Schermata2.insights[i] != "Podcasts"){
+                if(Schermata2.insights[i] != "Podcasts" && Schermata2.insights[i] != ""){
                     temp.append(Schermata2.insights[i])
                 }
             }
             AddInsights.j = AddInsights.j - 1
             Schermata2.insights = temp
-            Schermata2.insights.append("")
+            for i in 0..<6 - Schermata2.insights.count{
+                Schermata2.insights.append("")
+            }
+               
+            
+            for i in 0..<Schermata2.insights.count{
+                print(Schermata2.insights[i])
+            }
                 
-            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b5 = '\(Schermata2.insights[5])';"
+            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b6 = '\(Schermata2.insights[5])';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -326,6 +380,7 @@ class AddInsights: UIViewController {
             print("Saved successfully")
             AddInsights.j = AddInsights.j + 1
         }
+        
     }
 }
 
