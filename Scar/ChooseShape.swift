@@ -13,8 +13,41 @@ class ChooseShape: UIViewController  {
    
     override func viewDidLoad() {
         nex.isEnabled = false
-    }
+        
+        var boldText = "Which of these shapes represents "
+        var attributedString = NSMutableAttributedString(string:boldText)
 
+        var normalText = "your deepest being?"
+        var attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 22)]
+        var normalString = NSMutableAttributedString(string:normalText, attributes:attrs)
+
+        attributedString.append(normalString)
+        
+        label.attributedText = attributedString
+        
+         boldText = "Square \n"
+         attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 22)]
+         attributedString = NSMutableAttributedString(string:boldText, attributes:attrs)
+
+         normalText = "careful - analytic"
+         normalString = NSMutableAttributedString(string:normalText)
+
+        attributedString.append(normalString)
+        
+        square.setAttributedTitle(attributedString, for: .normal)
+        
+        
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+
+    }
+    
+    @IBOutlet weak var label: UILabel!
+    
     @IBOutlet weak var square: UIButton!
     @IBOutlet weak var circle: UIButton!
     @IBOutlet weak var triangle: UIButton!
