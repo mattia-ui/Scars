@@ -212,11 +212,6 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
     
     @objc func buttonName(notification: NSNotification) {
         caricaInfo()
-       
-        for i in 0..<Schermata2.insights.count{
-                  print(Schermata2.insights[i])
-              }
-              
         
         var somma: CGFloat = 0
         b1.setTitle(Schermata2.insights[0], for: .normal)
