@@ -608,60 +608,60 @@ Masterpiece!</string>
                                     <action selector="chooseSquare:" destination="xs9-hS-2dx" eventType="touchUpInside" id="2j9-zi-hhX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcF-Kg-Q4p">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RcF-Kg-Q4p">
                                 <rect key="frame" x="130" y="509" width="261" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="261" id="SyA-3c-ReT"/>
                                     <constraint firstAttribute="height" constant="71" id="j7i-AU-OgS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="18"/>
-                                <state key="normal" image="QuestionSpento"/>
-                                <state key="selected" image="QuestionAcceso">
+                                <state key="normal" backgroundImage="QuestionSpento"/>
+                                <state key="selected" backgroundImage="QuestionAcceso">
                                     <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="chooseCircle:" destination="xs9-hS-2dx" eventType="touchUpInside" id="0HE-XA-v9D"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cj7-a4-0Xz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cj7-a4-0Xz">
                                 <rect key="frame" x="130" y="333" width="261" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="HPm-6b-pbV"/>
                                     <constraint firstAttribute="width" constant="261" id="aib-ZL-854"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="18"/>
-                                <state key="normal" image="QuestionSpento"/>
-                                <state key="selected" image="QuestionAcceso">
+                                <state key="normal" backgroundImage="QuestionSpento"/>
+                                <state key="selected" backgroundImage="QuestionAcceso">
                                     <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="chooseRect:" destination="xs9-hS-2dx" eventType="touchUpInside" id="lxu-qg-SGZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61O-Bn-xRC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="61O-Bn-xRC">
                                 <rect key="frame" x="130" y="596.5" width="261" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="3gm-a4-Wgr"/>
                                     <constraint firstAttribute="width" constant="261" id="V6g-EN-ATC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="18"/>
-                                <state key="normal" image="QuestionSpento"/>
-                                <state key="selected" image="QuestionAcceso">
+                                <state key="normal" backgroundImage="QuestionSpento"/>
+                                <state key="selected" backgroundImage="QuestionAcceso">
                                     <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="chooseZigZag:" destination="xs9-hS-2dx" eventType="touchUpInside" id="kP5-67-Epy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJU-JS-gID">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DJU-JS-gID">
                                 <rect key="frame" x="130" y="421" width="261" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="9o3-zH-0oH"/>
                                     <constraint firstAttribute="width" constant="261" id="kba-F9-ahc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="18"/>
-                                <state key="normal" image="QuestionSpento"/>
-                                <state key="selected" image="QuestionAcceso">
+                                <state key="normal" backgroundImage="QuestionSpento"/>
+                                <state key="selected" backgroundImage="QuestionAcceso">
                                     <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
@@ -744,26 +744,28 @@ Masterpiece!</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSE-1b-OHo">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wSE-1b-OHo">
                                 <rect key="frame" x="130" y="244" width="261" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="0I2-Sh-rxk"/>
                                     <constraint firstAttribute="width" constant="261" id="uZI-8h-NSl"/>
                                 </constraints>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
-                                <state key="selected" image="music" backgroundImage="QuestionAcceso"/>
+                                <state key="selected" backgroundImage="QuestionAcceso"/>
                                 <connections>
                                     <action selector="chooseSquare:" destination="My5-jh-AI2" eventType="touchUpInside" id="pvb-Pg-YGa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B71-RY-kN2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="B71-RY-kN2">
                                 <rect key="frame" x="130" y="333" width="261" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="QXr-Cv-hxw"/>
                                     <constraint firstAttribute="width" constant="261" id="eRE-pz-U57"/>
                                 </constraints>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
-                                <state key="selected" image="music" backgroundImage="QuestionAcceso"/>
+                                <state key="selected" backgroundImage="QuestionAcceso"/>
                                 <connections>
                                     <action selector="chooseCircle:" destination="My5-jh-AI2" eventType="touchUpInside" id="jRh-aQ-Mpy"/>
                                 </connections>
@@ -835,38 +837,41 @@ Masterpiece!</string>
                                     <constraint firstAttribute="height" constant="65" id="v3t-uE-76K"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idm-Vm-ofd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="idm-Vm-ofd">
                                 <rect key="frame" x="130" y="509" width="261" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="pF1-qG-qKB"/>
                                     <constraint firstAttribute="width" constant="261" id="yOV-Xx-aZk"/>
                                 </constraints>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
-                                <state key="selected" image="music" backgroundImage="QuestionAcceso"/>
+                                <state key="selected" backgroundImage="QuestionAcceso"/>
                                 <connections>
                                     <action selector="chooseRect:" destination="My5-jh-AI2" eventType="touchUpInside" id="bUO-qo-g6D"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPH-La-4u4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="IPH-La-4u4">
                                 <rect key="frame" x="130" y="596.5" width="261" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="3gW-pt-M5Q"/>
                                     <constraint firstAttribute="width" constant="261" id="RnX-zA-G2j"/>
                                 </constraints>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
-                                <state key="selected" image="music" backgroundImage="QuestionAcceso"/>
+                                <state key="selected" backgroundImage="QuestionAcceso"/>
                                 <connections>
                                     <action selector="chooseZigZag:" destination="My5-jh-AI2" eventType="touchUpInside" id="gkA-yo-R83"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCS-Vx-npP">
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uCS-Vx-npP">
                                 <rect key="frame" x="130" y="421" width="261" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="K7B-Y5-USy"/>
                                     <constraint firstAttribute="width" constant="261" id="dHn-jX-92c"/>
                                 </constraints>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
-                                <state key="selected" image="music" backgroundImage="QuestionAcceso"/>
+                                <state key="selected" backgroundImage="QuestionAcceso"/>
                                 <connections>
                                     <action selector="chooseTriangle:" destination="My5-jh-AI2" eventType="touchUpInside" id="Z8c-mM-Bhf"/>
                                 </connections>
