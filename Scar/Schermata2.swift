@@ -37,8 +37,12 @@ var structIns = [ins(
         Cont(image: "insight3", title:"Stop hating your body; start living your life ", descr: "Taryn Brumfitt is a vary famous body image activist. This talk makes us understand that it is not our body that is wrong but our perspective and the unrealistic standards that surround us.", fonte:"f", link: "https://www.youtube.com/watch?v=LSMH3WABkwg"),
         Cont(image: "insight4", title:"t", descr: "esempio Wellbein", fonte:"f", link: "https://www.google.com/?client=safari")],
     mov:[
-        Cont(image: "insight3", title:"t", descr: "esempio Movies", fonte:"f", link: "https://www.google.com/?client=safari"),
-        Cont(image: "2-.jpg", title:"t", descr: "esempio Movies", fonte:"f", link: "https://www.google.com/?client=safari")],
+        Cont(image: "insightP1", title:"My scars: journey to body acceptance", descr: "'My accidental fall into boiling water happened at home, when I was three. I ended up in hospital on life support. Many operations followed….'", fonte:"From Sylvia Mac on mentalhealth.org", link: "https://www.mentalhealth.org.uk/stories/my-scars-journey-body-acceptance"),
+        Cont(image: "insightP2", title:"Beyond Skin Deep: How Scars Affect Psychosocial Well-Being", descr: "'…the psychosocial impact of scarring from the treatment of facial skin cancers has been shown to affect the young, old, male and female alike.'", fonte:"From Katie Delach on pennmedicine.org", link: "https://www.pennmedicine.org/news/news-blog/2015/may/beyond-skin-deep-how-scars-aff"), Cont(image: "insightP3", title:"t", descr: "esempio Movies", fonte:"f", link: "https://www.google.com/?client=safari"),
+        Cont(image: "insightP3", title:"The effects of scars on mind", descr: "'The research suggests a healthy body image and high self-esteem can lead to you feeling good about yourself.'", fonte:"On nourisilmd.co.uk", link: "https://www.nourisilmd.co.uk/effects-of-scars-on-the-mind/"), Cont(image: "insightP5", title:"t", descr: "esempio Movies", fonte:"f", link: "https://www.google.com/?client=safari"),
+        Cont(image: "insightP6", title:"t", descr: "esempio Movies", fonte:"f", link: "https://www.google.com/?client=safari"), Cont(image: "insightP7", title:"t", descr: "esempio Movies", fonte:"f", link: "https://www.google.com/?client=safari"),
+        Cont(image: "insightP8", title:"t", descr: "esempio Movies", fonte:"f", link: "https://www.google.com/?client=safari"), Cont(image: "insightP9", title:"t", descr: "esempio Movies", fonte:"f", link: "https://www.google.com/?client=safari"),
+        Cont(image: "insightP10", title:"t", descr: "esempio Movies", fonte:"f", link: "https://www.google.com/?client=safari")],
     art:[
         Cont(image: "insight4", title:"t", descr: "esempio Articols", fonte:"f", link: "https://www.google.com/?client=safari"),
         Cont(image: "2-.jpg", title:"t", descr: "esempio Articols", fonte:"f", link: "https://www.google.com/?client=safari")],
