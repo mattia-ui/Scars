@@ -36,6 +36,50 @@ class ChooseShape: UIViewController  {
         
         square.setAttributedTitle(attributedString, for: .normal)
         
+         boldText = "Rectangle \n"
+         attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 22)]
+         attributedString = NSMutableAttributedString(string:boldText, attributes:attrs)
+
+         normalText = "curious - confused"
+         normalString = NSMutableAttributedString(string:normalText)
+
+        attributedString.append(normalString)
+        
+        rect.setAttributedTitle(attributedString, for: .normal)
+        
+         boldText = "Triangle \n"
+         attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 22)]
+         attributedString = NSMutableAttributedString(string:boldText, attributes:attrs)
+
+         normalText = "leader - focused"
+         normalString = NSMutableAttributedString(string:normalText)
+
+        attributedString.append(normalString)
+        
+        triangle.setAttributedTitle(attributedString, for: .normal)
+        
+         boldText = "Circle \n"
+         attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 22)]
+         attributedString = NSMutableAttributedString(string:boldText, attributes:attrs)
+
+         normalText = "empathic - sociable"
+         normalString = NSMutableAttributedString(string:normalText)
+
+        attributedString.append(normalString)
+        
+        circle.setAttributedTitle(attributedString, for: .normal)
+        
+         boldText = "Zig zag \n"
+         attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 22)]
+         attributedString = NSMutableAttributedString(string:boldText, attributes:attrs)
+
+         normalText = "creative - aspiring"
+         normalString = NSMutableAttributedString(string:normalText)
+
+        attributedString.append(normalString)
+        
+        zigZag.setAttributedTitle(attributedString, for: .normal)
+        
         
         
     }
