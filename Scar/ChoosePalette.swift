@@ -13,8 +13,20 @@ class ChoosePalette: UIViewController  {
    
     override func viewDidLoad() {
         nex.isEnabled = false
+        
+        let boldText = "With which of these color palettes\n"
+        let attributedString = NSMutableAttributedString(string:boldText)
+
+        let normalText = "do you dress more??"
+        let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 22)]
+        let normalString = NSMutableAttributedString(string:normalText, attributes:attrs)
+
+               attributedString.append(normalString)
+               
+               label.attributedText = attributedString
     }
     
+    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var cool: UIButton!
     @IBOutlet weak var warm: UIButton!
     @IBOutlet weak var neutral: UIButton!
