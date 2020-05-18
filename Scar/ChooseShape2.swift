@@ -19,16 +19,16 @@ class ChooseShape2: UIViewController  {
         var attributedString = NSMutableAttributedString(string:boldText)
 
         var normalText = "the way you would like to be?"
-        var attrs = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 22, weight: .medium)]
-        var normalString = NSMutableAttributedString(string:normalText, attributes:attrs)
+        var attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 22)]
+        var normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
 
         attributedString.append(normalString)
         
         label.attributedText = attributedString
         
          boldText = "Square \n"
-         attrs = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 22, weight: .medium)]
-         attributedString = NSMutableAttributedString(string:boldText, attributes:attrs)
+         attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 22)]
+        attributedString = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
          normalText = "careful - analytic"
          normalString = NSMutableAttributedString(string:normalText)
@@ -38,8 +38,8 @@ class ChooseShape2: UIViewController  {
         square.setAttributedTitle(attributedString, for: .normal)
         
          boldText = "Rectangle \n"
-         attrs = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 22, weight: .medium)]
-         attributedString = NSMutableAttributedString(string:boldText, attributes:attrs)
+         attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 22)]
+        attributedString = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
          normalText = "curious - confused"
          normalString = NSMutableAttributedString(string:normalText)
@@ -49,8 +49,8 @@ class ChooseShape2: UIViewController  {
         rect.setAttributedTitle(attributedString, for: .normal)
         
          boldText = "Triangle \n"
-         attrs = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 22, weight: .medium)]
-         attributedString = NSMutableAttributedString(string:boldText, attributes:attrs)
+         attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 22)]
+        attributedString = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
          normalText = "leader - focused"
          normalString = NSMutableAttributedString(string:normalText)
@@ -60,8 +60,8 @@ class ChooseShape2: UIViewController  {
         triangle.setAttributedTitle(attributedString, for: .normal)
         
          boldText = "Circle \n"
-         attrs = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 22, weight: .medium)]
-         attributedString = NSMutableAttributedString(string:boldText, attributes:attrs)
+         attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 22)]
+        attributedString = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
          normalText = "empathic - sociable"
          normalString = NSMutableAttributedString(string:normalText)
@@ -71,8 +71,8 @@ class ChooseShape2: UIViewController  {
         circle.setAttributedTitle(attributedString, for: .normal)
         
          boldText = "Zig zag \n"
-         attrs = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 22, weight: .medium)]
-         attributedString = NSMutableAttributedString(string:boldText, attributes:attrs)
+         attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 22)]
+        attributedString = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
          normalText = "creative - aspiring"
          normalString = NSMutableAttributedString(string:normalText)

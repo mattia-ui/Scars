@@ -15,8 +15,8 @@ class ChooseTexture: UIViewController  {
         nex.isEnabled = false
         
        var boldText = "Touch "
-         var attrs = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 22, weight: .medium)]
-         let attributedString = NSMutableAttributedString(string:boldText, attributes:attrs)
+         var attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 22)]
+        let attributedString = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
        let  normalText = "your indelible sign, which of\n these textures "
         let normalString = NSMutableAttributedString(string:normalText)
@@ -24,9 +24,9 @@ class ChooseTexture: UIViewController  {
         attributedString.append(normalString)
         
          boldText = "reminds you of it? "
-         attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 22)]
+         attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 22)]
         
-        let attributedString2 = NSMutableAttributedString(string:boldText, attributes:attrs)
+        let attributedString2 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
         
         attributedString.append(attributedString2)
                

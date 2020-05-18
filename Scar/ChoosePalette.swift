@@ -18,8 +18,8 @@ class ChoosePalette: UIViewController  {
         let attributedString = NSMutableAttributedString(string:boldText)
 
         let normalText = "do you dress more??"
-        let attrs = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 22, weight: .medium)]
-        let normalString = NSMutableAttributedString(string:normalText, attributes:attrs)
+        let attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 22)]
+        let normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
 
                attributedString.append(normalString)
                
