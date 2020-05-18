@@ -64,6 +64,7 @@ struct topImage {
     var marbleZigZag: [topImageTexture]
 }
 
+
 var structBackImageType = [backImage(
     coolSquare: [backImagePalette(name:"QRosa.png"),backImagePalette(name:"QRoss.png"),backImagePalette(name:"QAr.png"),backImagePalette(name:"QGia.png")],
     warmSquare: [backImagePalette(name:"QAzz.png"),backImagePalette(name:"QVer.png"),backImagePalette(name:"QVi.png"),backImagePalette(name:"QBl.png")],
@@ -124,6 +125,11 @@ class Collage: UIViewController, UITextFieldDelegate  {
 
     let dataBase = CKContainer.default().publicCloudDatabase
         
+    override func viewWillAppear(_ animated: Bool) {
+               super.viewWillAppear(animated)
+               self.navigationController?.setNavigationBarHidden(true, animated: animated)
+           }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

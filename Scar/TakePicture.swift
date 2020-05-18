@@ -12,8 +12,28 @@ class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePick
     
     var imagePicker: UIImagePickerController!
     
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tabBarController?.tabBar.isHidden = false
+        
+        let boldText = "Take a picture of your indelible sign\n"
+        let attributedString = NSMutableAttributedString(string:boldText)
+
+        let normalText = "to draw "
+        let attrs = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 22, weight: .medium)]
+        let normalString = NSMutableAttributedString(string:normalText, attributes:attrs)
+
+               attributedString.append(normalString)
+        
+        let boldText2 = "its shape."
+        let attributedString2 = NSMutableAttributedString(string:boldText2)
+        
+        attributedString.append(attributedString2)
+        
+               label.attributedText = attributedString
     }
     
     //Fai la foto.

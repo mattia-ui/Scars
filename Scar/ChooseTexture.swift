@@ -15,7 +15,7 @@ class ChooseTexture: UIViewController  {
         nex.isEnabled = false
         
        var boldText = "Touch "
-         var attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 22)]
+         var attrs = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 22, weight: .medium)]
          let attributedString = NSMutableAttributedString(string:boldText, attributes:attrs)
 
        let  normalText = "your indelible sign, which of\n these textures "
@@ -62,20 +62,16 @@ class ChooseTexture: UIViewController  {
         blurEffectView.alpha = 1
         view1.addSubview(blurEffectView)
         
-        let blurEffect2 = UIBlurEffect(style: UIBlurEffect.Style.light)
-               let blurEffectView2 = UIVisualEffectView(effect: blurEffect2)
-               blurEffectView2.frame = view.bounds
-               blurEffectView2.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-               blurEffectView2.alpha = 1
-               self.tabBarController?.tabBar.addSubview(blurEffectView2)
-        
+        self.tabBarController?.tabBar.isHidden = true
        
 
-        label1.isHidden = false
-        label2.isHidden = false
-        results.isHidden = false
-        yes.isHidden = false
-        no.isHidden = false
+//        label1.isHidden = false
+//        label2.isHidden = false
+//        results.isHidden = false
+//        yes.isHidden = false
+//        no.isHidden = false
+        
+        view2.isHidden = false
         
 //        let blurEffect3 = UIBlurEffect(style: UIBlurEffect.Style.light)
 //                let blurEffectView3 = UIVisualEffectView(effect: blurEffect3)
