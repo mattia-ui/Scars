@@ -103,7 +103,8 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         tap.link = contenuto[indexPath.row].link
         cell.button.isUserInteractionEnabled = true
         cell.button.addGestureRecognizer(tap)
-        cell.button.imageView?.image = UIImage(named: imgButt)
+        let image = UIImage(named: imgButt)
+        cell.button.setImage(image, for: .normal)
         return cell
     }
     
