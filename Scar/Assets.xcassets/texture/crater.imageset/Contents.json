@@ -1,7 +1,6 @@
 {
   "images" : [
     {
-      "filename" : "Crater.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -10,6 +9,7 @@
       "scale" : "2x"
     },
     {
+      "filename" : "crater-1.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }
