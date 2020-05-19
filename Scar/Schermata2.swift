@@ -128,7 +128,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
             }
             if(Schermata2.insights[0] == "Movies&TVShows"){
                 contenuto = structIns[0].well
-                self.imgButt = "SeeMoreMovie"
+                self.imgButt = "SeeMoreMovies"
             }
             if(Schermata2.insights[0] == "Articles"){
                 contenuto = structIns[0].mov
@@ -277,7 +277,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
             }
             if(Schermata2.insights[0] == "Movies&TVShows"){
                 contenuto = structIns[0].well
-                self.imgButt = "SeeMoreMovie"
+                self.imgButt = "SeeMoreMovies"
             }
             if(Schermata2.insights[0] == "Articles"){
                 contenuto = structIns[0].mov
@@ -323,7 +323,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         }
         if(sender.titleLabel?.text == "Movies&TVShows"){
             contenuto = structIns[0].well
-            self.imgButt = "SeeMoreMovie"
+            self.imgButt = "SeeMoreMovies"
         }
         if(sender.titleLabel?.text == "Articles"){
             contenuto = structIns[0].mov
