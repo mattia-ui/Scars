@@ -86,6 +86,8 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
     @IBOutlet weak var myCollectionView: UICollectionView!
     @IBOutlet weak var scroll: UIScrollView!
     
+    var imgButt: String = ""
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return contenuto.count
     }
@@ -101,6 +103,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         tap.link = contenuto[indexPath.row].link
         cell.button.isUserInteractionEnabled = true
         cell.button.addGestureRecognizer(tap)
+        cell.button.imageView?.image = UIImage(named: imgButt)
         return cell
     }
     
