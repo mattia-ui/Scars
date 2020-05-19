@@ -123,21 +123,27 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         if(Schermata2.insights[0] != ""){
            if(Schermata2.insights[0] == "TEDx"){
                 contenuto = structIns[0].pod
+                self.imgButt = "SeeMore"
             }
             if(Schermata2.insights[0] == "Movies&TVShows"){
                 contenuto = structIns[0].well
+                self.imgButt = "SeeMoreMovie"
             }
             if(Schermata2.insights[0] == "Articles"){
                 contenuto = structIns[0].mov
+                self.imgButt = "SeeMoreArticle"
             }
             if(Schermata2.insights[0] == "Books"){
                 contenuto = structIns[0].art
+                self.imgButt = "SeeMoreBooks"
             }
             if(Schermata2.insights[0] == "Inspiring People"){
                 contenuto = structIns[0].artists
+                self.imgButt = "SeeMoreInspiringPeople"
             }
             if(Schermata2.insights[0] == "Podcasts"){
                 contenuto = structIns[0].books
+                self.imgButt = "SeeMorePodcast"
             }
            
             var somma: CGFloat = 0
@@ -266,21 +272,27 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         if(Schermata2.insights[0] != ""){
             if(Schermata2.insights[0] == "TEDx"){
                 contenuto = structIns[0].pod
+                self.imgButt = "SeeMore"
             }
             if(Schermata2.insights[0] == "Movies&TVShows"){
                 contenuto = structIns[0].well
+                self.imgButt = "SeeMoreMovie"
             }
             if(Schermata2.insights[0] == "Articles"){
                 contenuto = structIns[0].mov
+                self.imgButt = "SeeMoreArticle"
             }
             if(Schermata2.insights[0] == "Books"){
                 contenuto = structIns[0].art
+                self.imgButt = "SeeMoreBooks"
             }
             if(Schermata2.insights[0] == "Inspiring People"){
                 contenuto = structIns[0].artists
+                self.imgButt = "SeeMoreInspiringPeople"
             }
             if(Schermata2.insights[0] == "Podcasts"){
                 contenuto = structIns[0].books
+                self.imgButt = "SeeMorePodcast"
             }
            
             b1.isSelected = true
@@ -306,21 +318,27 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         
         if(sender.titleLabel?.text == "TEDx"){
             contenuto = structIns[0].pod
+            self.imgButt = "SeeMore"
         }
         if(sender.titleLabel?.text == "Movies&TVShows"){
             contenuto = structIns[0].well
+            self.imgButt = "SeeMoreMovie"
         }
         if(sender.titleLabel?.text == "Articles"){
             contenuto = structIns[0].mov
+            self.imgButt = "SeeMoreArticle"
         }
         if(sender.titleLabel?.text == "Books"){
             contenuto = structIns[0].art
+            self.imgButt = "SeeMoreBooks"
         }
         if(sender.titleLabel?.text == "Inspiring People"){
             contenuto = structIns[0].artists
+            self.imgButt = "SeeMoreInspiringPeople"
         }
         if(sender.titleLabel?.text == "Podcasts"){
             contenuto = structIns[0].books
+            self.imgButt = "SeeMorePodcast"
         }
         
         if(b1.isSelected == true){
