@@ -1,7 +1,6 @@
 {
   "images" : [
     {
-      "filename" : "Sea.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -10,6 +9,7 @@
       "scale" : "2x"
     },
     {
+      "filename" : "sea-1.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }
