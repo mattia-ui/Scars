@@ -1753,9 +1753,9 @@ tips and inspirational contents for you!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OmbraInsights" translatesAutoresizingMaskIntoConstraints="NO" id="RZj-ub-Qfp">
-                                <rect key="frame" x="0.0" y="63" width="414" height="198"/>
+                                <rect key="frame" x="-13" y="55" width="434" height="198"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="414" id="M45-wa-wld"/>
+                                    <constraint firstAttribute="width" constant="434" id="M45-wa-wld"/>
                                     <constraint firstAttribute="height" constant="198" id="sX7-Cq-hPS"/>
                                 </constraints>
                             </imageView>
@@ -2017,20 +2017,20 @@ tips and inspirational contents for you!</string>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="RZj-ub-Qfp" firstAttribute="trailing" secondItem="u6C-90-pJx" secondAttribute="trailing" id="2gk-7h-Ibn"/>
+                            <constraint firstItem="RZj-ub-Qfp" firstAttribute="trailing" secondItem="u6C-90-pJx" secondAttribute="trailing" constant="7" id="2gk-7h-Ibn"/>
                             <constraint firstItem="mCe-mq-vgd" firstAttribute="leading" secondItem="9Ch-hi-KT7" secondAttribute="leading" constant="22" id="3hD-vc-1ar"/>
                             <constraint firstItem="9Ch-hi-KT7" firstAttribute="trailing" secondItem="ZS4-u3-Tl0" secondAttribute="trailing" constant="20" id="6Ia-Vs-q9u"/>
                             <constraint firstItem="ZS4-u3-Tl0" firstAttribute="leading" secondItem="9Ch-hi-KT7" secondAttribute="leading" constant="20" id="AsW-yc-bW2"/>
                             <constraint firstItem="MOo-wB-kmc" firstAttribute="leading" secondItem="9Ch-hi-KT7" secondAttribute="leading" constant="352" id="FbX-uj-g4B"/>
                             <constraint firstItem="9Ch-hi-KT7" firstAttribute="trailing" secondItem="u6C-90-pJx" secondAttribute="trailing" id="ID5-bh-Cva"/>
-                            <constraint firstItem="RZj-ub-Qfp" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="-25" id="Lgw-CJ-BHB"/>
+                            <constraint firstItem="RZj-ub-Qfp" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="-33" id="Lgw-CJ-BHB"/>
                             <constraint firstItem="ZS4-u3-Tl0" firstAttribute="top" secondItem="MOo-wB-kmc" secondAttribute="bottom" constant="28" id="Pp6-Uj-8hY"/>
                             <constraint firstItem="9Ch-hi-KT7" firstAttribute="trailing" secondItem="MOo-wB-kmc" secondAttribute="trailing" constant="26" id="VYE-Aj-B2S"/>
                             <constraint firstItem="u6C-90-pJx" firstAttribute="top" secondItem="ZS4-u3-Tl0" secondAttribute="bottom" constant="1" id="Y3f-RT-jW6"/>
                             <constraint firstItem="mCe-mq-vgd" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="58" id="aDc-kV-piZ"/>
                             <constraint firstItem="MOo-wB-kmc" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="58" id="fz1-9n-uFF"/>
                             <constraint firstItem="ZS4-u3-Tl0" firstAttribute="top" secondItem="mCe-mq-vgd" secondAttribute="bottom" constant="27" id="gcf-GI-WQW"/>
-                            <constraint firstItem="RZj-ub-Qfp" firstAttribute="leading" secondItem="u6C-90-pJx" secondAttribute="leading" id="h5F-ch-vYB"/>
+                            <constraint firstItem="RZj-ub-Qfp" firstAttribute="leading" secondItem="u6C-90-pJx" secondAttribute="leading" constant="-13" id="h5F-ch-vYB"/>
                             <constraint firstItem="u6C-90-pJx" firstAttribute="leading" secondItem="9Ch-hi-KT7" secondAttribute="leading" id="pw4-nK-1q3"/>
                             <constraint firstItem="u6C-90-pJx" firstAttribute="top" secondItem="ZS4-u3-Tl0" secondAttribute="bottom" constant="1" id="ut0-dH-ues"/>
                         </constraints>
