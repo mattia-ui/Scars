@@ -114,8 +114,6 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         }
      }
     
-    
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
