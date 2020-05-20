@@ -677,6 +677,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
             UIActivity.ActivityType.postToFacebook,
             UIActivity.ActivityType.postToTwitter,
         ]
+        
         self.present(activityViewController, animated: true, completion: nil)
         
         //Si connette al DB
