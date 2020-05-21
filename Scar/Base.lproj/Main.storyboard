@@ -1650,7 +1650,7 @@ tips and inspirational contents for you!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OmbraInsights" translatesAutoresizingMaskIntoConstraints="NO" id="RZj-ub-Qfp">
-                                <rect key="frame" x="-13" y="55" width="434" height="198"/>
+                                <rect key="frame" x="-13" y="57" width="434" height="198"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="434" id="M45-wa-wld"/>
                                     <constraint firstAttribute="height" constant="198" id="sX7-Cq-hPS"/>
@@ -1664,10 +1664,10 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZS4-u3-Tl0">
-                                <rect key="frame" x="20" y="212" width="374" height="90"/>
+                                <rect key="frame" x="20" y="212" width="374" height="67"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWf-U8-k4A">
-                                        <rect key="frame" x="10" y="29" width="46" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWf-U8-k4A">
+                                        <rect key="frame" x="10" y="12" width="46" height="28"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button">
@@ -1680,8 +1680,8 @@ tips and inspirational contents for you!</string>
                                             <action selector="setTable:" destination="Aa9-1L-etK" eventType="touchUpInside" id="qJS-FE-tDq"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSy-AZ-0Wf">
-                                        <rect key="frame" x="68" y="29" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSy-AZ-0Wf">
+                                        <rect key="frame" x="68" y="12" width="46" height="29"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button">
@@ -1694,8 +1694,8 @@ tips and inspirational contents for you!</string>
                                             <action selector="setTable:" destination="Aa9-1L-etK" eventType="touchUpInside" id="42O-cm-aN5"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnF-9K-8Qw">
-                                        <rect key="frame" x="122" y="30" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnF-9K-8Qw">
+                                        <rect key="frame" x="122" y="12" width="46" height="29"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button">
@@ -1708,8 +1708,8 @@ tips and inspirational contents for you!</string>
                                             <action selector="setTable:" destination="Aa9-1L-etK" eventType="touchUpInside" id="VaH-2t-J99"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usK-xr-joa">
-                                        <rect key="frame" x="180" y="29" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usK-xr-joa">
+                                        <rect key="frame" x="180" y="12" width="46" height="29"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button">
@@ -1722,8 +1722,8 @@ tips and inspirational contents for you!</string>
                                             <action selector="setTable:" destination="Aa9-1L-etK" eventType="touchUpInside" id="PFe-yZ-JVY"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2l-Y5-5Ra">
-                                        <rect key="frame" x="234" y="29" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2l-Y5-5Ra">
+                                        <rect key="frame" x="234" y="12" width="46" height="29"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <color key="tintColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button">
@@ -1736,8 +1736,8 @@ tips and inspirational contents for you!</string>
                                             <action selector="setTable:" destination="Aa9-1L-etK" eventType="touchUpInside" id="BmC-sL-Ip3"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1y-0b-Q2T">
-                                        <rect key="frame" x="288" y="29" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1y-0b-Q2T">
+                                        <rect key="frame" x="288" y="12" width="46" height="28"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button">
@@ -1751,44 +1751,51 @@ tips and inspirational contents for you!</string>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2cz-hS-iGh">
-                                        <rect key="frame" x="10" y="62" width="48" height="14"/>
+                                        <rect key="frame" x="10" y="39" width="48" height="14"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2w2-2K-Ag7">
-                                        <rect key="frame" x="67" y="62" width="48" height="14"/>
+                                        <rect key="frame" x="67" y="39" width="48" height="14"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4mN-US-bx1">
-                                        <rect key="frame" x="121" y="62" width="48" height="14"/>
+                                        <rect key="frame" x="121" y="39" width="48" height="14"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PdY-XF-ifH">
-                                        <rect key="frame" x="179" y="62" width="48" height="14"/>
+                                        <rect key="frame" x="179" y="39" width="48" height="14"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ekF-6R-Q59">
-                                        <rect key="frame" x="233" y="62" width="48" height="14"/>
+                                        <rect key="frame" x="233" y="39" width="48" height="14"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nFb-B9-lwF">
-                                        <rect key="frame" x="287" y="62" width="48" height="14"/>
+                                        <rect key="frame" x="287" y="39" width="48" height="14"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="2w2-2K-Ag7" firstAttribute="leading" secondItem="2cz-hS-iGh" secondAttribute="trailing" constant="33" id="22L-1m-c4I"/>
                                     <constraint firstItem="4mN-US-bx1" firstAttribute="leading" secondItem="2w2-2K-Ag7" secondAttribute="trailing" constant="33" id="2yH-Pc-Jax"/>
                                     <constraint firstItem="rnF-9K-8Qw" firstAttribute="leading" secondItem="dSy-AZ-0Wf" secondAttribute="trailing" constant="31" id="4Or-f0-WmY"/>
-                                    <constraint firstItem="ekF-6R-Q59" firstAttribute="top" secondItem="o2l-Y5-5Ra" secondAttribute="bottom" constant="2" id="4r5-gc-66C"/>
-                                    <constraint firstItem="4mN-US-bx1" firstAttribute="top" secondItem="rnF-9K-8Qw" secondAttribute="bottom" constant="2" id="5JD-LD-Mzz"/>
-                                    <constraint firstItem="2cz-hS-iGh" firstAttribute="top" secondItem="DWf-U8-k4A" secondAttribute="bottom" constant="2" id="9E4-5L-sgY"/>
+                                    <constraint firstItem="2w2-2K-Ag7" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="34" id="Amb-L3-614"/>
+                                    <constraint firstItem="2w2-2K-Ag7" firstAttribute="top" secondItem="dSy-AZ-0Wf" secondAttribute="bottom" id="Aqk-Zj-xwG"/>
                                     <constraint firstItem="c1y-0b-Q2T" firstAttribute="leading" secondItem="o2l-Y5-5Ra" secondAttribute="trailing" constant="31" id="DHl-JL-7R3"/>
-                                    <constraint firstItem="2w2-2K-Ag7" firstAttribute="top" secondItem="dSy-AZ-0Wf" secondAttribute="bottom" constant="2" id="HX9-6B-ydr"/>
+                                    <constraint firstItem="2cz-hS-iGh" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="39" id="EQT-EG-Uzm"/>
+                                    <constraint firstItem="dSy-AZ-0Wf" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="12" id="IJi-tW-WAo"/>
                                     <constraint firstItem="nFb-B9-lwF" firstAttribute="leading" secondItem="ekF-6R-Q59" secondAttribute="trailing" constant="33" id="J9z-mP-oFv"/>
-                                    <constraint firstItem="nFb-B9-lwF" firstAttribute="top" secondItem="c1y-0b-Q2T" secondAttribute="bottom" constant="2" id="KYF-Kz-qVG"/>
                                     <constraint firstItem="o2l-Y5-5Ra" firstAttribute="leading" secondItem="usK-xr-joa" secondAttribute="trailing" constant="31" id="Mqb-Fi-G1R"/>
+                                    <constraint firstItem="4mN-US-bx1" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="39" id="Vgr-HO-A32"/>
+                                    <constraint firstItem="c1y-0b-Q2T" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="12" id="a1h-Az-TxV"/>
+                                    <constraint firstItem="PdY-XF-ifH" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="39" id="cUJ-gP-ZbW"/>
+                                    <constraint firstItem="o2l-Y5-5Ra" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="12" id="dOx-UU-vY5"/>
+                                    <constraint firstItem="rnF-9K-8Qw" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="13" id="eAj-hp-aOW"/>
                                     <constraint firstAttribute="height" constant="90" id="eSC-bn-eG6"/>
                                     <constraint firstItem="PdY-XF-ifH" firstAttribute="leading" secondItem="4mN-US-bx1" secondAttribute="trailing" constant="33" id="gmZ-jH-zKt"/>
                                     <constraint firstItem="c1y-0b-Q2T" firstAttribute="leading" secondItem="o2l-Y5-5Ra" secondAttribute="trailing" constant="31" id="k0Z-Yt-TA5"/>
                                     <constraint firstItem="o2l-Y5-5Ra" firstAttribute="leading" secondItem="usK-xr-joa" secondAttribute="trailing" constant="31" id="m5Y-Ld-G7T"/>
-                                    <constraint firstItem="PdY-XF-ifH" firstAttribute="top" secondItem="usK-xr-joa" secondAttribute="bottom" constant="2" id="ntz-xJ-ksZ"/>
                                     <constraint firstItem="dSy-AZ-0Wf" firstAttribute="leading" secondItem="DWf-U8-k4A" secondAttribute="trailing" constant="31" id="qBM-CC-VqN"/>
                                     <constraint firstItem="usK-xr-joa" firstAttribute="leading" secondItem="rnF-9K-8Qw" secondAttribute="trailing" constant="31" id="ryq-hX-h3Q"/>
+                                    <constraint firstItem="ekF-6R-Q59" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="39" id="u3p-D3-bD2"/>
+                                    <constraint firstItem="usK-xr-joa" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="12" id="wrC-mf-yps"/>
                                     <constraint firstAttribute="width" constant="374" id="wvQ-4v-gJ0"/>
+                                    <constraint firstItem="nFb-B9-lwF" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="39" id="ye8-80-DtR"/>
+                                    <constraint firstItem="DWf-U8-k4A" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="12" id="zmy-eb-WpL"/>
                                     <constraint firstItem="ekF-6R-Q59" firstAttribute="leading" secondItem="PdY-XF-ifH" secondAttribute="trailing" constant="33" id="zrL-ik-avp"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Aen-nI-X0u"/>
@@ -1920,7 +1927,7 @@ tips and inspirational contents for you!</string>
                             <constraint firstItem="ZS4-u3-Tl0" firstAttribute="leading" secondItem="9Ch-hi-KT7" secondAttribute="leading" constant="20" id="AsW-yc-bW2"/>
                             <constraint firstItem="MOo-wB-kmc" firstAttribute="leading" secondItem="9Ch-hi-KT7" secondAttribute="leading" constant="352" id="FbX-uj-g4B"/>
                             <constraint firstItem="9Ch-hi-KT7" firstAttribute="trailing" secondItem="u6C-90-pJx" secondAttribute="trailing" id="ID5-bh-Cva"/>
-                            <constraint firstItem="RZj-ub-Qfp" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="-33" id="Lgw-CJ-BHB"/>
+                            <constraint firstItem="RZj-ub-Qfp" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="-31" id="Lgw-CJ-BHB"/>
                             <constraint firstItem="ZS4-u3-Tl0" firstAttribute="top" secondItem="MOo-wB-kmc" secondAttribute="bottom" constant="28" id="Pp6-Uj-8hY"/>
                             <constraint firstItem="9Ch-hi-KT7" firstAttribute="trailing" secondItem="MOo-wB-kmc" secondAttribute="trailing" constant="26" id="VYE-Aj-B2S"/>
                             <constraint firstItem="u6C-90-pJx" firstAttribute="top" secondItem="ZS4-u3-Tl0" secondAttribute="bottom" constant="1" id="Y3f-RT-jW6"/>
