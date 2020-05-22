@@ -1650,7 +1650,7 @@ tips and inspirational contents for you!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OmbraInsights" translatesAutoresizingMaskIntoConstraints="NO" id="RZj-ub-Qfp">
-                                <rect key="frame" x="-13" y="57" width="434" height="198"/>
+                                <rect key="frame" x="-13" y="60" width="434" height="198"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="434" id="M45-wa-wld"/>
                                     <constraint firstAttribute="height" constant="198" id="sX7-Cq-hPS"/>
@@ -1937,7 +1937,7 @@ tips and inspirational contents for you!</string>
                             <constraint firstItem="ZS4-u3-Tl0" firstAttribute="leading" secondItem="9Ch-hi-KT7" secondAttribute="leading" constant="20" id="AsW-yc-bW2"/>
                             <constraint firstItem="MOo-wB-kmc" firstAttribute="leading" secondItem="9Ch-hi-KT7" secondAttribute="leading" constant="352" id="FbX-uj-g4B"/>
                             <constraint firstItem="9Ch-hi-KT7" firstAttribute="trailing" secondItem="u6C-90-pJx" secondAttribute="trailing" id="ID5-bh-Cva"/>
-                            <constraint firstItem="RZj-ub-Qfp" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="-31" id="Lgw-CJ-BHB"/>
+                            <constraint firstItem="RZj-ub-Qfp" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="-28" id="Lgw-CJ-BHB"/>
                             <constraint firstItem="ZS4-u3-Tl0" firstAttribute="top" secondItem="MOo-wB-kmc" secondAttribute="bottom" constant="28" id="Pp6-Uj-8hY"/>
                             <constraint firstItem="9Ch-hi-KT7" firstAttribute="trailing" secondItem="MOo-wB-kmc" secondAttribute="trailing" constant="26" id="VYE-Aj-B2S"/>
                             <constraint firstItem="u6C-90-pJx" firstAttribute="top" secondItem="ZS4-u3-Tl0" secondAttribute="bottom" constant="1" id="Y3f-RT-jW6"/>
