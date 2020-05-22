@@ -86,7 +86,6 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
     @IBOutlet weak var scroll: UIScrollView!
     
     var imgButt: String = ""
-    var i : IndexPath!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return contenuto.count
@@ -107,14 +106,11 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         cell.button.addGestureRecognizer(tap)
         let image = UIImage(named: imgButt)
         cell.button.setImage(image, for: .normal)
-        if(indexPath.row < 3 && indexPath.row > 1){
-            let cell1 = myCollectionView.cellForItem(at: i) as! InightsCollection
-            let riga = UIImageView()
-            riga.image = UIImage(named: "divisore")
-            riga.frame = CGRect(x: 0, y: cell1.button.frame.origin.y+12, width: 412, height: 18)
-            myCollectionView.addSubview(riga)
+        if(indexPath.row < contenuto.count - 1){
+            cell.div.image = UIImage(named: "divisore")
+        } else {
+            cell.div.image = UIImage(named: "")
         }
-        i = indexPath
         return cell
     }
     
