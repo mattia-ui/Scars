@@ -28,6 +28,7 @@ class CollectionViewCell1: UICollectionViewCell {
         }
         
         if(sender.isSelected == true){
+            
             sender.isSelected = false
             indiceCard -= 1
             //Update Valore
@@ -48,6 +49,7 @@ class CollectionViewCell1: UICollectionViewCell {
             sqlite3_step(stmt)
             print("Saved successfully")
         } else {
+            
             sender.isSelected = true
             indiceCard += 1
             //Update Valore
