@@ -424,7 +424,7 @@ Masterpiece!</string>
             <objects>
                 <viewController id="xs9-hS-2dx" customClass="ChooseShape" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Srd-Ly-JAO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 1/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUp-S9-4CD">
@@ -685,7 +685,7 @@ Masterpiece!</string>
             <objects>
                 <viewController id="lYX-Go-SkF" customClass="ChoosePalette" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UH4-Nu-LfI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="m8e-tD-btm">
@@ -993,7 +993,7 @@ all the answers you gave?</string>
             <objects>
                 <viewController id="hvR-kH-wNA" customClass="TakePicture" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vEG-89-kEc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Snap it!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiM-zE-6gR">
@@ -1794,7 +1794,7 @@ tips and inspirational contents for you!</string>
                                     <constraint firstItem="PdY-XF-ifH" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="39" id="cUJ-gP-ZbW"/>
                                     <constraint firstItem="o2l-Y5-5Ra" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="12" id="dOx-UU-vY5"/>
                                     <constraint firstItem="rnF-9K-8Qw" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="13" id="eAj-hp-aOW"/>
-                                    <constraint firstAttribute="height" constant="90" id="eSC-bn-eG6"/>
+                                    <constraint firstAttribute="height" constant="54" id="eSC-bn-eG6"/>
                                     <constraint firstItem="PdY-XF-ifH" firstAttribute="leading" secondItem="4mN-US-bx1" secondAttribute="trailing" constant="33" id="gmZ-jH-zKt"/>
                                     <constraint firstItem="c1y-0b-Q2T" firstAttribute="leading" secondItem="o2l-Y5-5Ra" secondAttribute="trailing" constant="31" id="k0Z-Yt-TA5"/>
                                     <constraint firstItem="o2l-Y5-5Ra" firstAttribute="leading" secondItem="usK-xr-joa" secondAttribute="trailing" constant="31" id="m5Y-Ld-G7T"/>
@@ -1812,7 +1812,7 @@ tips and inspirational contents for you!</string>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ymt-6W-zKb"/>
                             </scrollView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u6C-90-pJx">
-                                <rect key="frame" x="0.0" y="302" width="414" height="592"/>
+                                <rect key="frame" x="0.0" y="266" width="414" height="592"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="jtl-uh-CSj"/>
@@ -2185,7 +2185,6 @@ tips and inspirational contents for you!</string>
                     <tabBarItem key="tabBarItem" title="Activities" image="Item1" id="laR-IG-GjD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ja8-ub-TVJ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
