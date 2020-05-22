@@ -1445,10 +1445,10 @@ tips and inspirational contents for you!</string>
                                                     </constraints>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xX-ao-YfK">
-                                                    <rect key="frame" x="130" y="78" width="34" height="34"/>
+                                                    <rect key="frame" x="130" y="78" width="30" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="34" id="OLP-cm-dlt"/>
-                                                        <constraint firstAttribute="height" constant="34" id="awi-cn-tTP"/>
+                                                        <constraint firstAttribute="width" constant="30" id="OLP-cm-dlt"/>
+                                                        <constraint firstAttribute="height" constant="30" id="awi-cn-tTP"/>
                                                     </constraints>
                                                     <state key="normal" backgroundImage="unchecked"/>
                                                     <state key="selected" backgroundImage="checked"/>
@@ -1459,9 +1459,9 @@ tips and inspirational contents for you!</string>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="sPL-dm-Pkt" firstAttribute="top" secondItem="dPQ-80-aLg" secondAttribute="top" id="2Pj-P8-lRp"/>
-                                                <constraint firstAttribute="trailing" secondItem="9xX-ao-YfK" secondAttribute="trailing" constant="12" id="LDb-Xt-jav"/>
+                                                <constraint firstAttribute="trailing" secondItem="9xX-ao-YfK" secondAttribute="trailing" constant="16" id="LDb-Xt-jav"/>
                                                 <constraint firstAttribute="bottom" secondItem="sPL-dm-Pkt" secondAttribute="bottom" id="Zc2-tP-dsK"/>
-                                                <constraint firstAttribute="bottom" secondItem="9xX-ao-YfK" secondAttribute="bottom" constant="13" id="dCP-4P-MaQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="9xX-ao-YfK" secondAttribute="bottom" constant="17" id="dCP-4P-MaQ"/>
                                                 <constraint firstItem="9xX-ao-YfK" firstAttribute="top" secondItem="dPQ-80-aLg" secondAttribute="top" constant="78" id="p8U-Uh-IQe"/>
                                                 <constraint firstAttribute="trailing" secondItem="sPL-dm-Pkt" secondAttribute="trailing" id="pgd-Oa-uLv"/>
                                                 <constraint firstAttribute="trailing" secondItem="sPL-dm-Pkt" secondAttribute="trailing" id="sr3-TU-uFt"/>
@@ -2374,8 +2374,8 @@ tips and inspirational contents for you!</string>
         <image name="Group 175" width="414" height="93"/>
         <image name="Group 48" width="508" height="518"/>
         <image name="IllustrazioneSchermata3" width="370" height="404"/>
-        <image name="Item1" width="32.5" height="30.5"/>
-        <image name="Item2" width="29" height="25"/>
+        <image name="Item1" width="35" height="33"/>
+        <image name="Item2" width="28" height="24"/>
         <image name="Item3" width="33" height="33"/>
         <image name="Lettsegoazzurro" width="182" height="55"/>
         <image name="OmbraInsights" width="432" height="214"/>
@@ -2390,8 +2390,8 @@ tips and inspirational contents for you!</string>
         <image name="TCAzz" width="230" height="230"/>
         <image name="Textile" width="168" height="168"/>
         <image name="Wood" width="168" height="168"/>
-        <image name="aggiungiInsight" width="38" height="32"/>
-        <image name="checked" width="43" height="43"/>
+        <image name="aggiungiInsight" width="32" height="25"/>
+        <image name="checked" width="35" height="33"/>
         <image name="circle" width="68" height="68"/>
         <image name="deselected" width="374" height="76"/>
         <image name="divisore" width="462" height="18"/>
@@ -2421,7 +2421,7 @@ tips and inspirational contents for you!</string>
         <image name="submitAzzurro" width="182" height="55"/>
         <image name="terzaPalette" width="87" height="87"/>
         <image name="triangle" width="74" height="69"/>
-        <image name="unchecked" width="43" height="43"/>
+        <image name="unchecked" width="31" height="31"/>
         <image name="yesAzzurro" width="112" height="55"/>
         <image name="zigzag" width="89" height="42"/>
     </resources>
