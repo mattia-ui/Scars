@@ -1825,7 +1825,7 @@ tips and inspirational contents for you!</string>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ins" reuseIdentifier="ins" id="tBk-G5-O86" customClass="InightsCollection" customModule="Scar" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" restorationIdentifier="ins" reuseIdentifier="ins" id="tBk-G5-O86" customClass="InightsCollection" customModule="Scar" customModuleProvider="target">
                                         <rect key="frame" x="1" y="0.0" width="412" height="363"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="insightsCell" insetsLayoutMarginsFromSafeArea="NO" id="xtB-u9-g6l">
@@ -1878,7 +1878,7 @@ tips and inspirational contents for you!</string>
                                                     </constraints>
                                                     <state key="normal" image="SeeMore"/>
                                                 </button>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divisore" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cSJ-OP-IOa">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cSJ-OP-IOa">
                                                     <rect key="frame" x="0.0" y="331" width="412" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="412" id="8Zl-Se-A3b"/>
@@ -1905,7 +1905,6 @@ tips and inspirational contents for you!</string>
                                                 <constraint firstItem="eqz-fq-sWa" firstAttribute="trailing" secondItem="pdk-F6-xZK" secondAttribute="trailing" constant="4" id="zOH-2m-1VX"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="customSize" width="412" height="363"/>
                                         <connections>
@@ -2404,7 +2403,6 @@ tips and inspirational contents for you!</string>
         <image name="checked" width="35" height="33"/>
         <image name="circle" width="68" height="68"/>
         <image name="deselected" width="374" height="76"/>
-        <image name="divisore" width="462" height="18"/>
         <image name="done" width="182" height="55"/>
         <image name="download" width="54" height="54"/>
         <image name="frecciaBack" width="14" height="25"/>
