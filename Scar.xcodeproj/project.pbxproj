@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,11 @@
 		6BAD16A32464A53200859C79 /* Cella1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD16A22464A53200859C79 /* Cella1.swift */; };
 		6BAD16A52464A53A00859C79 /* Cella2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD16A42464A53A00859C79 /* Cella2.swift */; };
 		6BAD16A72464A54600859C79 /* Cella3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD16A62464A54600859C79 /* Cella3.swift */; };
+		7607122F24793C9E00B29C2C /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607122B24793C9E00B29C2C /* ReachabilityManager.swift */; };
+		7607123024793C9E00B29C2C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607122C24793C9E00B29C2C /* Network.swift */; };
+		7607123124793C9E00B29C2C /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607122D24793C9E00B29C2C /* MovieAPI.swift */; };
+		7607123224793C9E00B29C2C /* ModelMapperHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607122E24793C9E00B29C2C /* ModelMapperHelper.swift */; };
+		7607123424793FE900B29C2C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607123324793FE900B29C2C /* Movie.swift */; };
 		764E605E2468384300F6BC07 /* Cera Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764E60522468384300F6BC07 /* Cera Pro Light.otf */; };
 		764E605F2468384300F6BC07 /* Cera Pro Thin Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764E60532468384300F6BC07 /* Cera Pro Thin Italic.otf */; };
 		764E60602468384300F6BC07 /* Cera Pro Regular Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764E60542468384300F6BC07 /* Cera Pro Regular Italic.otf */; };
@@ -58,6 +63,7 @@
 		76F08B3F245DF433002A6F19 /* Schermata3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F08B3E245DF433002A6F19 /* Schermata3.swift */; };
 		76F08B41245DF8B2002A6F19 /* StepCollage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F08B40245DF8B2002A6F19 /* StepCollage.swift */; };
 		76F8FF152458AFDB00E50D7F /* Collage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F8FF142458AFDB00E50D7F /* Collage.swift */; };
+		F1C4AB5024BDCE8F24FA5D87 /* Pods_Scar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5850DD5C17BD4E16DFDBE827 /* Pods_Scar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +84,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		001AF5F9EE058CBD1BA893F4 /* Pods-Scar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scar.release.xcconfig"; path = "Target Support Files/Pods-Scar/Pods-Scar.release.xcconfig"; sourceTree = "<group>"; };
 		342BF269245DD9EC004CD081 /* SecretCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretCollection.swift; sourceTree = "<group>"; };
 		342BF26B245DDA19004CD081 /* CaricaImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaricaImage.swift; sourceTree = "<group>"; };
 		342BF26D245DDA34004CD081 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -100,12 +107,18 @@
 		345F14FC24573816003EE819 /* Scar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scar.entitlements; sourceTree = "<group>"; };
 		345F14FE24573819003EE819 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		345F15482459D5D9003EE819 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		5850DD5C17BD4E16DFDBE827 /* Pods_Scar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B01C7992461A7980040EA77 /* PrimaTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaTutorial.swift; sourceTree = "<group>"; };
 		6B01C79B2461A7BC0040EA77 /* SecondaTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaTutorial.swift; sourceTree = "<group>"; };
 		6B01C79D2461A7D90040EA77 /* TerzaTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerzaTutorial.swift; sourceTree = "<group>"; };
 		6BAD16A22464A53200859C79 /* Cella1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cella1.swift; sourceTree = "<group>"; };
 		6BAD16A42464A53A00859C79 /* Cella2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cella2.swift; sourceTree = "<group>"; };
 		6BAD16A62464A54600859C79 /* Cella3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cella3.swift; sourceTree = "<group>"; };
+		7607122B24793C9E00B29C2C /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		7607122C24793C9E00B29C2C /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		7607122D24793C9E00B29C2C /* MovieAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
+		7607122E24793C9E00B29C2C /* ModelMapperHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelMapperHelper.swift; sourceTree = "<group>"; };
+		7607123324793FE900B29C2C /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		764E60522468384300F6BC07 /* Cera Pro Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Light.otf"; sourceTree = "<group>"; };
 		764E60532468384300F6BC07 /* Cera Pro Thin Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Thin Italic.otf"; sourceTree = "<group>"; };
 		764E60542468384300F6BC07 /* Cera Pro Regular Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Regular Italic.otf"; sourceTree = "<group>"; };
@@ -136,6 +149,7 @@
 		76F08B3E245DF433002A6F19 /* Schermata3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schermata3.swift; sourceTree = "<group>"; };
 		76F08B40245DF8B2002A6F19 /* StepCollage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCollage.swift; sourceTree = "<group>"; };
 		76F8FF142458AFDB00E50D7F /* Collage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collage.swift; sourceTree = "<group>"; };
+		B92244740DB141A2DB6E5D60 /* Pods-Scar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scar.debug.xcconfig"; path = "Target Support Files/Pods-Scar/Pods-Scar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +159,7 @@
 			files = (
 				345F15492459D5D9003EE819 /* WebKit.framework in Frameworks */,
 				345F14FF24573819003EE819 /* CloudKit.framework in Frameworks */,
+				F1C4AB5024BDCE8F24FA5D87 /* Pods_Scar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +180,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C6CEBFA99121D22EAFCB80E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B92244740DB141A2DB6E5D60 /* Pods-Scar.debug.xcconfig */,
+				001AF5F9EE058CBD1BA893F4 /* Pods-Scar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		345F14C024573808003EE819 = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +197,7 @@
 				345F14ED24573809003EE819 /* ScarUITests */,
 				345F14CA24573808003EE819 /* Products */,
 				345F14FD24573819003EE819 /* Frameworks */,
+				1C6CEBFA99121D22EAFCB80E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -224,6 +249,7 @@
 				345F14D724573809003EE819 /* LaunchScreen.storyboard */,
 				345F14DA24573809003EE819 /* Info.plist */,
 				345F14D524573809003EE819 /* Assets.xcassets */,
+				7607122A24793C9E00B29C2C /* Network */,
 				7668C13D2469D3960099FD11 /* views */,
 				764E60512468384300F6BC07 /* Cera Pro */,
 			);
@@ -253,8 +279,21 @@
 			children = (
 				345F15482459D5D9003EE819 /* WebKit.framework */,
 				345F14FE24573819003EE819 /* CloudKit.framework */,
+				5850DD5C17BD4E16DFDBE827 /* Pods_Scar.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7607122A24793C9E00B29C2C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7607123324793FE900B29C2C /* Movie.swift */,
+				7607122B24793C9E00B29C2C /* ReachabilityManager.swift */,
+				7607122C24793C9E00B29C2C /* Network.swift */,
+				7607122D24793C9E00B29C2C /* MovieAPI.swift */,
+				7607122E24793C9E00B29C2C /* ModelMapperHelper.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		764E60512468384300F6BC07 /* Cera Pro */ = {
@@ -292,9 +331,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 345F14F32457380A003EE819 /* Build configuration list for PBXNativeTarget "Scar" */;
 			buildPhases = (
+				D76744AB9BBBF55DC3659269 /* [CP] Check Pods Manifest.lock */,
 				345F14C524573808003EE819 /* Sources */,
 				345F14C624573808003EE819 /* Frameworks */,
 				345F14C724573808003EE819 /* Resources */,
+				7F0D884F227242251E29A937 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -424,12 +465,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F0D884F227242251E29A937 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scar/Pods-Scar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scar/Pods-Scar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scar/Pods-Scar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D76744AB9BBBF55DC3659269 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		345F14C524573808003EE819 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				76E9F0FF245B214B00D4921E /* ChooseShape.swift in Sources */,
+				7607122F24793C9E00B29C2C /* ReachabilityManager.swift in Sources */,
 				76F08B41245DF8B2002A6F19 /* StepCollage.swift in Sources */,
 				6BAD16A32464A53200859C79 /* Cella1.swift in Sources */,
 				76C14725246026BB00DAD927 /* AddInsights.swift in Sources */,
@@ -438,7 +522,9 @@
 				6BAD16A52464A53A00859C79 /* Cella2.swift in Sources */,
 				342BF2CC2460D006004CD081 /* CollectionViewCell1.swift in Sources */,
 				342BF26C245DDA19004CD081 /* CaricaImage.swift in Sources */,
+				7607123024793C9E00B29C2C /* Network.swift in Sources */,
 				76F08B3B245DEFCC002A6F19 /* Password.swift in Sources */,
+				7607123224793C9E00B29C2C /* ModelMapperHelper.swift in Sources */,
 				6BAD16A72464A54600859C79 /* Cella3.swift in Sources */,
 				342BF2CE2460D025004CD081 /* ViewControllerInitial.swift in Sources */,
 				345F14D124573808003EE819 /* ViewController.swift in Sources */,
@@ -446,6 +532,7 @@
 				76C13DEB245B2FAE00D1AE9F /* TakePicture.swift in Sources */,
 				6B01C79A2461A7980040EA77 /* PrimaTutorial.swift in Sources */,
 				345F14CD24573808003EE819 /* AppDelegate.swift in Sources */,
+				7607123424793FE900B29C2C /* Movie.swift in Sources */,
 				76F08B39245DEE8C002A6F19 /* Schermata1.swift in Sources */,
 				76C7D47C2466F19C00E82414 /* TableViewActivity.swift in Sources */,
 				345F14CF24573808003EE819 /* SceneDelegate.swift in Sources */,
@@ -456,6 +543,7 @@
 				76C13DE9245B2B3100D1AE9F /* ChooseTexture.swift in Sources */,
 				342BF26E245DDA34004CD081 /* CollectionViewCell.swift in Sources */,
 				342BF26A245DD9EC004CD081 /* SecretCollection.swift in Sources */,
+				7607123124793C9E00B29C2C /* MovieAPI.swift in Sources */,
 				76F8FF152458AFDB00E50D7F /* Collage.swift in Sources */,
 				76C13DE7245B255C00D1AE9F /* ChoosePalette.swift in Sources */,
 				7668C1402469D3960099FD11 /* Slide.swift in Sources */,
@@ -630,6 +718,7 @@
 		};
 		345F14F42457380A003EE819 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B92244740DB141A2DB6E5D60 /* Pods-Scar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Scar/Scar.entitlements;
@@ -651,6 +740,7 @@
 		};
 		345F14F52457380A003EE819 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 001AF5F9EE058CBD1BA893F4 /* Pods-Scar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Scar/Scar.entitlements;

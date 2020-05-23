@@ -6,9 +6,14 @@
 //  Copyright © 2020 Mattia Cardone. All rights reserved.
 //
 
+import ViewAnimator
+import RxSwift
+import RxCocoa
+import SDWebImage
 import Foundation
 import UIKit
 import SQLite3
+
 
 class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelegate{
 
@@ -28,6 +33,8 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     var db: OpaquePointer?
     var stmt: OpaquePointer?
     static var j = 0
+
+
 
     var selected : [String] = ["","","","","",""]
     
@@ -166,7 +173,8 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        var db: OpaquePointer?
+    
+        
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
 
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard1))
@@ -183,6 +191,8 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             let day = components.day ?? 0
             let hour = components.hour ?? 0
             let minute = components.minute ?? 0
+            
+     
                    
             //Si connette al DB
             let fileURL = try!
@@ -204,14 +214,10 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
              }
              
              //Inserisce Valore. Va nel tutorial
-//             var stmt: OpaquePointer?
              var queryString = "INSERT INTO Collage(valore) VALUES ('si');"
              sqlite3_prepare(db, queryString, -1, &stmt, nil)
              sqlite3_step(stmt)
              print("Saved successfully")
-            
-            
-            
             
             //Elimina Tabella. Quando Spostiamo le due funzioni successive nel tutorial non serve piu
             if sqlite3_exec(db, "DROP TABLE Week", nil, nil, nil) != SQLITE_OK {
@@ -286,13 +292,14 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             print("Saved successfully")
         }
     }
+        
     
     @objc func dismissKeyboard1() {
         if self.view.frame.origin.y != 0{
-        self.view.frame.origin.y += 150
+            self.view.frame.origin.y += 150
         }
-       view.endEditing(true)
-       }
+        view.endEditing(true)
+    }
     
     @objc func keyboardWillShow(notification: NSNotification) {
         if ((notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue) != nil {
@@ -303,80 +310,86 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 8
-        }
+        return 8
+    }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             
-           if indexPath.row == 0 {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as? Cella1 else {
+        if indexPath.row == 0 {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as? Cella1 else
+            {
                 return UITableViewCell()
             }
             cell.Hi.text = "Hi, \(String(describing: nome1.text).dropFirst(10).dropLast(2))!"
             return cell
-            
         }else if indexPath.row == 1{
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
-                   return UITableViewCell()
-               }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else
+            {
+                return UITableViewCell()
+            }
             cell.button.setTitle("TEDx", for: .normal)
             cell.button.tag = 0
-               return cell
-           }else if indexPath.row == 2{
-           guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
-                      return UITableViewCell()
-                  }
-                  cell.button.setTitle("Movies&TVShows", for: .normal)
-                  cell.button.tag = 1
-                  return cell
-              }else if indexPath.row == 3{
-              guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
-                         return UITableViewCell()
-                     }
-                     cell.button.setTitle("Articles", for: .normal)
-                     cell.button.tag = 2
-                     return cell
-                 }else if indexPath.row == 4{
-                 guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
-                            return UITableViewCell()
-                        }
-                        cell.button.setTitle("Books", for: .normal)
-                        cell.button.tag = 3
-                        return cell
-                    }else if indexPath.row == 5{
-                    guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
-                               return UITableViewCell()
-                           }
-                           cell.button.setTitle("Inspiring People", for: .normal)
-                            cell.button.tag = 4
-                           return cell
-                       }else if indexPath.row == 6{
-                       guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else {
-                                  return UITableViewCell()
-                              }
-                              cell.button.setTitle("Podcasts", for: .normal)
-                                cell.button.tag = 5
-                              return cell
-                          }else{
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell3") as? Cella3 else {
-                          return UITableViewCell()
-                      }
-                      return cell
+            return cell
+        }else if indexPath.row == 2{
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else
+            {
+                return UITableViewCell()
             }
-    }
-        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            if(indexPath.row == 0){
-                           return 120
-                       }
-            if(indexPath.row == 7){
-                return 200
+            cell.button.setTitle("Movies&TVShows", for: .normal)
+            cell.button.tag = 1
+            return cell
+        }else if indexPath.row == 3{
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else
+            {
+                return UITableViewCell()
             }
-            return 100
+            cell.button.setTitle("Articles", for: .normal)
+            cell.button.tag = 2
+            return cell
+        }else if indexPath.row == 4{
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else
+            {
+                return UITableViewCell()
+            }
+            cell.button.setTitle("Books", for: .normal)
+            cell.button.tag = 3
+            return cell
+        }else if indexPath.row == 5{
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else
+            {
+                return UITableViewCell()
+            }
+            cell.button.setTitle("Inspiring People", for: .normal)
+            cell.button.tag = 4
+            return cell
+        }else if indexPath.row == 6{
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else
+            {
+                return UITableViewCell()
+            }
+            cell.button.setTitle("Podcasts", for: .normal)
+            cell.button.tag = 5
+            return cell
+        }else{
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell3") as? Cella3 else
+            {
+                return UITableViewCell()
+            }
+            return cell
         }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if(indexPath.row == 0){
+            return 120
+        }
+        if(indexPath.row == 7){
+            return 200
+        }
+        return 100
+    }
         
-        override func didReceiveMemoryWarning() {
-               super.didReceiveMemoryWarning()
-           }
-    
-    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 }

@@ -60,6 +60,7 @@ var structIns = [ins(
 class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate {
     
     static var insights: [String] = ["","","","","",""]
+    static var film: [String] = ["the%20theory%20of%20everything","shallow%20Hal","orange%20is%20new%20black","the%20shape%20of%20water","unBreakable","pose","border","glow","hairspray","unorthodox"]
     var contenuto: [Cont] = []
     
     let light = Notification.Name(rawValue: NotificationKey)
@@ -93,10 +94,14 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
 
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        
         let cell = myCollectionView.dequeueReusableCell(withReuseIdentifier: "ins", for: indexPath) as! InightsCollection
-        cell.image.image = UIImage(named: contenuto[indexPath.row].image)
+        if(imgButt == "SeeMoreMovies"){
+            if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
+                cell.image.image = UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent(Schermata2.film[indexPath.row] + ".png").path)
+            }
+        }else{
+            cell.image.image = UIImage(named: contenuto[indexPath.row].image)
+        }
         cell.title.text = contenuto[indexPath.row].title
         cell.label.text = contenuto[indexPath.row].descr
         cell.fonte.text = contenuto[indexPath.row].fonte
