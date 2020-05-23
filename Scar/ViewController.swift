@@ -28,6 +28,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     override func viewDidLoad() {
         super.viewDidLoad()
         pictureScars.image = ViewController.imageScars
+        pictureScars.layer.borderWidth = 1
+        pictureScars.layer.borderColor = CGColor(srgbRed: 0.112, green: 0.112, blue: 0.112, alpha: 1)
     }
     
     @IBAction func changeBrush(_ sender: UISlider) {
