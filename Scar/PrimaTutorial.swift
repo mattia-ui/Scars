@@ -159,10 +159,27 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         traslate(view: domande3, aCircleTime: 0.1, to: -828)
         traslate(view: button3, aCircleTime: 0.1, to: -828)
         
-       let queryString = "UPDATE Insights SET b1 = '\(selected[0])',b2 = '\(selected[1])',b3 = '\(selected[2])',b4 = '\(selected[3])',b5 = '\(selected[4])', b6 = '\(selected[5])';"
+        let queryString = "UPDATE Insights SET b1 = '\(selected[0])',b2 = '\(selected[1])',b3 = '\(selected[2])',b4 = '\(selected[3])',b5 = '\(selected[4])', b6 = '\(selected[5])';"
                    sqlite3_prepare(db, queryString, -1, &stmt, nil)
                    sqlite3_step(stmt)
-
+        
+        //Elimina Tabella. Quando Spostiamo le due funzioni successive nel tutorial non serve piu
+        if sqlite3_exec(db, "DROP TABLE Nome", nil, nil, nil) != SQLITE_OK {
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error creating table: \(errmsg)")
+        }
+                   
+        //Crea Tabella. Per valore che dice se mostrare Weekly
+        if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS Nome (id INTEGER PRIMARY KEY AUTOINCREMENT,nome TEXT)", nil, nil, nil) != SQLITE_OK {
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error creating table: \(errmsg)")
+        }
+                    
+        //Inserisce Valore. Va nel tutorial
+        let queryString1 = "INSERT INTO Nome(nome) VALUES ('\(nome1.text)');"
+        sqlite3_prepare(db, queryString1, -1, &stmt, nil)
+        sqlite3_step(stmt)
+        print("Saved successfully")
     }
     
     
@@ -201,6 +218,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
                 print("error opening database")
             }
             
+            
             //Elimina Tabella. Quando Spostiamo le due funzioni successive nel tutorial non serve piu
             if sqlite3_exec(db, "DROP TABLE Collage", nil, nil, nil) != SQLITE_OK {
                 let errmsg = String(cString: sqlite3_errmsg(db)!)
@@ -218,6 +236,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
              sqlite3_prepare(db, queryString, -1, &stmt, nil)
              sqlite3_step(stmt)
              print("Saved successfully")
+            
             
             //Elimina Tabella. Quando Spostiamo le due funzioni successive nel tutorial non serve piu
             if sqlite3_exec(db, "DROP TABLE Week", nil, nil, nil) != SQLITE_OK {
