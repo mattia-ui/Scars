@@ -37,6 +37,8 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     @IBOutlet weak var titleW: UILabel!
     @IBOutlet weak var imageW: UIImageView!
     @IBOutlet weak var descW: UILabel!
+    @IBOutlet weak var nome: UILabel!
+    @IBOutlet weak var imagineOrario: UIImageView!
     
     let light = Notification.Name(rawValue: NotificationKey2)
     
@@ -115,6 +117,14 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         let hour2 = components2.hour ?? 0
         let minute2 = components2.minute ?? 0
         
+        if(hour2 > 12){
+            imagineOrario.image = UIImage(named: "")
+        } else if (hour2 > 19){
+            imagineOrario.image = UIImage(named: "")
+        }else{
+            imagineOrario.image = UIImage(named: "")
+        }
+        
         //Si connette al DB
         let fileURL = try!
         FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
@@ -124,7 +134,21 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         
         //Recupera Valore
         var stmt: OpaquePointer?
-        var queryString = "SELECT * FROM Date"
+        var queryString = "SELECT * FROM Nome"
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+        let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error preparing insert: \(errmsg)")
+            return
+        }
+        var nomeData = ""
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            nomeData = String(cString: sqlite3_column_text(stmt, 1))
+        }
+        nome.text = nomeData
+
+        
+        //Recupera Valore
+        queryString = "SELECT * FROM Date"
         if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
         let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("error preparing insert: \(errmsg)")
