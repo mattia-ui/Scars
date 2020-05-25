@@ -207,7 +207,7 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         
         Schermata1.weekly = weeklyInfo[w]
         imageW.image = UIImage(named: Schermata1.weekly.image)
-        titleW.text = Schermata1.weekly.title
+//        titleW.text = Schermata1.weekly.title
         descW.text = Schermata1.weekly.descr
         
         //Recupera Valore
