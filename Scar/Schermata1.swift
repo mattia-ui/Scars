@@ -32,6 +32,7 @@ let NotificationKey2 = "co.seanallen.Side2"
 
 class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    @IBOutlet weak var orarioSetUp: UILabel!
     var i = 1
     @IBOutlet weak var activity: UICollectionView!
     @IBOutlet weak var titleW: UILabel!
@@ -118,11 +119,15 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         let minute2 = components2.minute ?? 0
         
         if(hour2 > 12){
-            imagineOrario.image = UIImage(named: "")
+            imagineOrario.image = UIImage(named: "Afternoon")
+            orarioSetUp.text = "Good Afternoon,"
+            
         } else if (hour2 > 19){
-            imagineOrario.image = UIImage(named: "")
+            imagineOrario.image = UIImage(named: "Evening")
+            orarioSetUp.text = "Good Evening,"
         }else{
-            imagineOrario.image = UIImage(named: "")
+            imagineOrario.image = UIImage(named: "Morning")
+            orarioSetUp.text = "Good Morning,"
         }
         
         //Si connette al DB
