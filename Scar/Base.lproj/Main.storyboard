@@ -14,11 +14,11 @@
         <array key="Cera Pro Light.otf">
             <string>CeraPro-Light</string>
         </array>
+        <array key="Cera Pro Medium Italic.otf">
+            <string>CeraPro-MediumItalic</string>
+        </array>
         <array key="Cera Pro Medium.otf">
             <string>CeraPro-Medium</string>
-        </array>
-        <array key="Cera Pro Regular Italic.otf">
-            <string>CeraPro-Italic</string>
         </array>
         <array key="Cera Pro Regular.otf">
             <string>CeraPro-Regular</string>
@@ -1535,8 +1535,8 @@ tips and inspirational contents for you!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready for a boost of self-esteem?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOt-Hk-MoG">
-                                <rect key="frame" x="22" y="206" width="281" height="18"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Italic" family="Cera Pro" pointSize="18"/>
+                                <rect key="frame" x="22" y="206" width="284" height="18"/>
+                                <fontDescription key="fontDescription" name="CeraPro-MediumItalic" family="Cera Pro" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1629,9 +1629,6 @@ tips and inspirational contents for you!</string>
                                     <constraint firstAttribute="width" constant="414" id="Dy4-lR-KRM"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nav1-1" translatesAutoresizingMaskIntoConstraints="NO" id="IRL-vy-kpc">
-                                <rect key="frame" x="0.0" y="41" width="414" height="143"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg9-aS-nb6">
                                 <rect key="frame" x="22" y="141" width="10" height="20"/>
                                 <constraints>
@@ -1643,14 +1640,19 @@ tips and inspirational contents for you!</string>
                                     <action selector="back:" destination="5W6-fN-tNa" eventType="touchUpInside" id="0RW-O1-qDG"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav1" translatesAutoresizingMaskIntoConstraints="NO" id="IRL-vy-kpc">
+                                <rect key="frame" x="49" y="118" width="277" height="57"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Yg9-aS-nb6" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" constant="53" id="1Fl-g5-aIn"/>
                             <constraint firstItem="aRI-Cd-2hP" firstAttribute="trailing" secondItem="bTK-SO-FHz" secondAttribute="trailing" id="7c2-k8-SAH"/>
+                            <constraint firstItem="Zqp-a9-CTC" firstAttribute="top" secondItem="IRL-vy-kpc" secondAttribute="bottom" constant="10" id="BCs-nI-qxb"/>
                             <constraint firstItem="Zqp-a9-CTC" firstAttribute="centerX" secondItem="TZg-6g-tU7" secondAttribute="centerX" id="Gzi-hd-0Jg"/>
                             <constraint firstItem="aRI-Cd-2hP" firstAttribute="leading" secondItem="bTK-SO-FHz" secondAttribute="leading" id="Mzq-cx-pae"/>
+                            <constraint firstItem="bTK-SO-FHz" firstAttribute="trailing" secondItem="IRL-vy-kpc" secondAttribute="trailing" constant="88" id="Rzu-K0-2y8"/>
                             <constraint firstItem="Yg9-aS-nb6" firstAttribute="leading" secondItem="bTK-SO-FHz" secondAttribute="leading" constant="22" id="SkS-tB-gOR"/>
                             <constraint firstItem="IRL-vy-kpc" firstAttribute="leading" secondItem="Yg9-aS-nb6" secondAttribute="trailing" constant="17" id="kxm-bp-zh2"/>
                             <constraint firstItem="IRL-vy-kpc" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" constant="30" id="ngb-AN-vhh"/>
@@ -2459,7 +2461,7 @@ tips and inspirational contents for you!</string>
         <image name="lettsego" width="194" height="55"/>
         <image name="linea" width="371" height="1"/>
         <image name="marble" width="168" height="168"/>
-        <image name="nav1-1" width="414" height="143"/>
+        <image name="nav1" width="273" height="57"/>
         <image name="nextazzurro" width="182" height="55"/>
         <image name="noAzzurro" width="120" height="55"/>
         <image name="nonselezionato" width="374" height="76"/>
