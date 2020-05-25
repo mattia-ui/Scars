@@ -183,7 +183,7 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         while(sqlite3_step(stmt) == SQLITE_ROW){
             w = Int(String(cString: sqlite3_column_text(stmt, 1))) ?? 0
         }
-        numeroWeek.text = "n.\(w)"
+        numeroWeek.text = "n.\(w + 1)"
         
         if(month2 > m || day2 > day){
             queryString = "UPDATE Date SET mese = '\(month2)', giorno = '\(day2)', ora = '\(hour2)', minuti = '\(minute2)';"
