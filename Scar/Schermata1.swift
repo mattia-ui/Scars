@@ -149,8 +149,9 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         while(sqlite3_step(stmt) == SQLITE_ROW){
             nomeData = String(cString: sqlite3_column_text(stmt, 1))
         }
-        nome.text = nomeData
-
+        
+        nome.text = String(nomeData.dropFirst(9))
+        
         
         //Recupera Valore
         queryString = "SELECT * FROM Date"
