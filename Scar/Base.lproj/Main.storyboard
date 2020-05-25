@@ -796,7 +796,7 @@ Masterpiece!</string>
             <objects>
                 <viewController id="lfU-OF-Bud" customClass="ChooseTexture" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pnh-IU-Nic">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jE3-g0-hTy">
@@ -1407,16 +1407,16 @@ tips and inspirational contents for you!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yHf-AX-5ZQ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="239"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="237"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Good " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wg-V5-aIC">
-                                <rect key="frame" x="22" y="139" width="69" height="38"/>
+                                <rect key="frame" x="22" y="139" width="67" height="36"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v02-uU-l8R">
-                                <rect key="frame" x="22" y="250" width="63" height="33"/>
+                                <rect key="frame" x="22" y="248" width="59" height="31.5"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="27"/>
                                 <color key="textColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1488,20 +1488,20 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Weekly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puv-vE-VcP">
-                                <rect key="frame" x="22" y="442" width="95" height="27"/>
+                                <rect key="frame" x="22" y="442" width="95" height="31.5"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="27"/>
                                 <color key="textColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYq-XF-b71">
-                                <rect key="frame" x="310.5" y="92.5" width="83" height="30"/>
+                                <rect key="frame" x="310.5" y="92.5" width="83" height="28"/>
                                 <state key="normal" title="PrivateZone"/>
                                 <connections>
                                     <action selector="secret:" destination="bpt-qr-c5A" eventType="touchUpInside" id="Qcm-Mf-hv2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Nice work! Keep on going" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71W-Ns-qfS">
-                                <rect key="frame" x="22" y="280" width="238.5" height="20"/>
+                                <rect key="frame" x="22" y="276.5" width="231" height="23.5"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="20"/>
                                 <color key="textColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1534,20 +1534,20 @@ tips and inspirational contents for you!</string>
                                 <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready for a boost of self-esteem?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOt-Hk-MoG">
-                                <rect key="frame" x="22" y="206" width="284" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ready for a boost of self-esteem?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOt-Hk-MoG">
+                                <rect key="frame" x="22" y="206" width="273.5" height="18"/>
                                 <fontDescription key="fontDescription" name="CeraPro-MediumItalic" family="Cera Pro" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week n." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anp-qr-svT">
-                                <rect key="frame" x="120" y="452" width="65" height="17"/>
+                                <rect key="frame" x="120" y="452" width="65" height="20"/>
                                 <fontDescription key="fontDescription" name="CeraPro-MediumItalic" family="Cera Pro" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZ3-f6-Ny2">
-                                <rect key="frame" x="22" y="150" width="113" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZ3-f6-Ny2">
+                                <rect key="frame" x="22" y="150" width="110.5" height="45"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1851,7 +1851,7 @@ tips and inspirational contents for you!</string>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ymt-6W-zKb"/>
                             </scrollView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u6C-90-pJx">
-                                <rect key="frame" x="0.0" y="272.5" width="414" height="592"/>
+                                <rect key="frame" x="0.0" y="266" width="414" height="592"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="jtl-uh-CSj"/>
@@ -1892,7 +1892,7 @@ tips and inspirational contents for you!</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqz-fq-sWa">
-                                                    <rect key="frame" x="36" y="31" width="330" height="35"/>
+                                                    <rect key="frame" x="36" y="31" width="330" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="330" id="NTQ-QT-qDo"/>
                                                     </constraints>
@@ -1901,7 +1901,7 @@ tips and inspirational contents for you!</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9q-2C-HRN">
-                                                    <rect key="frame" x="36" y="72" width="326" height="17.5"/>
+                                                    <rect key="frame" x="36" y="67" width="326" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="326" id="UQj-58-Xgz"/>
                                                     </constraints>
@@ -1962,7 +1962,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCe-mq-vgd">
-                                <rect key="frame" x="22" y="146" width="132.5" height="44.5"/>
+                                <rect key="frame" x="22" y="146" width="140" height="38"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2020,7 +2020,7 @@ tips and inspirational contents for you!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhW-b9-vYz">
-                                <rect key="frame" x="15" y="264.5" width="386" height="76"/>
+                                <rect key="frame" x="15" y="254" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2033,7 +2033,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7I-AD-BUJ">
-                                <rect key="frame" x="15" y="362.5" width="386" height="76"/>
+                                <rect key="frame" x="15" y="352" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2046,7 +2046,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzd-QM-ZsD">
-                                <rect key="frame" x="15" y="460.5" width="386" height="76"/>
+                                <rect key="frame" x="15" y="450" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2059,7 +2059,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yP-st-eET">
-                                <rect key="frame" x="15" y="166.5" width="386" height="76"/>
+                                <rect key="frame" x="15" y="156" width="386" height="76"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
@@ -2074,7 +2074,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZk-O6-Ha0">
-                                <rect key="frame" x="15" y="656.5" width="386" height="76"/>
+                                <rect key="frame" x="15" y="646" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2087,7 +2087,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaW-2m-fzZ">
-                                <rect key="frame" x="15" y="558.5" width="386" height="76"/>
+                                <rect key="frame" x="15" y="548" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2100,13 +2100,13 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalize your insights section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLV-JE-bPB">
-                                <rect key="frame" x="22" y="83.5" width="372" height="26"/>
+                                <rect key="frame" x="22" y="77" width="372" height="22"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Interests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICX-Lj-BMb">
-                                <rect key="frame" x="22" y="32" width="372" height="44.5"/>
+                                <rect key="frame" x="22" y="32" width="372" height="38"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
