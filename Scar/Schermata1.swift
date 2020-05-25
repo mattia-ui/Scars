@@ -150,7 +150,7 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
             nomeData = String(cString: sqlite3_column_text(stmt, 1))
         }
         
-        nome.text = String(nomeData.dropFirst(9))
+        nome.text = String(nomeData.dropFirst(9).dropLast(2))
         
         
         //Recupera Valore
