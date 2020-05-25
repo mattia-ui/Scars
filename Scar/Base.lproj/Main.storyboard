@@ -1535,7 +1535,7 @@ tips and inspirational contents for you!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week n." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anp-qr-svT">
-                                <rect key="frame" x="120" y="479" width="81" height="17"/>
+                                <rect key="frame" x="117" y="478" width="81" height="17"/>
                                 <fontDescription key="fontDescription" name="CeraPro-MediumItalic" family="Cera Pro" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1554,13 +1554,13 @@ tips and inspirational contents for you!</string>
                             <constraint firstItem="fYq-XF-b71" firstAttribute="top" secondItem="M1P-wk-6qy" secondAttribute="top" constant="4.5" id="2To-am-a7H"/>
                             <constraint firstItem="v02-uU-l8R" firstAttribute="top" secondItem="yHf-AX-5ZQ" secondAttribute="bottom" constant="21" id="4aB-mP-0vg"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="bottom" secondItem="mqk-Ya-Xpd" secondAttribute="bottom" constant="18" id="55E-kN-LLE"/>
-                            <constraint firstItem="anp-qr-svT" firstAttribute="top" secondItem="fWY-uv-LMG" secondAttribute="bottom" constant="29" id="5NU-7R-N7k"/>
+                            <constraint firstItem="anp-qr-svT" firstAttribute="top" secondItem="fWY-uv-LMG" secondAttribute="bottom" constant="28" id="5NU-7R-N7k"/>
                             <constraint firstItem="v02-uU-l8R" firstAttribute="top" secondItem="0Wg-V5-aIC" secondAttribute="bottom" constant="83" id="5oq-uj-UTB"/>
                             <constraint firstItem="fWY-uv-LMG" firstAttribute="trailing" secondItem="M1P-wk-6qy" secondAttribute="trailing" constant="4" id="6hI-hY-Zey"/>
-                            <constraint firstItem="anp-qr-svT" firstAttribute="leading" secondItem="puv-vE-VcP" secondAttribute="trailing" constant="3" id="6i3-lq-s7T"/>
+                            <constraint firstItem="anp-qr-svT" firstAttribute="leading" secondItem="puv-vE-VcP" secondAttribute="trailing" id="6i3-lq-s7T"/>
                             <constraint firstItem="mqk-Ya-Xpd" firstAttribute="leading" secondItem="61N-a8-v0d" secondAttribute="trailing" id="75L-HV-7Dg"/>
                             <constraint firstItem="cZ3-f6-Ny2" firstAttribute="top" secondItem="fYq-XF-b71" secondAttribute="bottom" constant="27.5" id="9s4-Ex-m2B"/>
-                            <constraint firstItem="mqk-Ya-Xpd" firstAttribute="leading" secondItem="anp-qr-svT" secondAttribute="trailing" id="BhD-ui-LMj"/>
+                            <constraint firstItem="mqk-Ya-Xpd" firstAttribute="leading" secondItem="anp-qr-svT" secondAttribute="trailing" constant="3" id="BhD-ui-LMj"/>
                             <constraint firstItem="fYq-XF-b71" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="M1P-wk-6qy" secondAttribute="leading" id="DMm-7b-Gci"/>
                             <constraint firstItem="hOt-Hk-MoG" firstAttribute="leading" secondItem="v02-uU-l8R" secondAttribute="leading" id="DRU-cK-Hfu"/>
                             <constraint firstItem="puv-vE-VcP" firstAttribute="top" secondItem="fWY-uv-LMG" secondAttribute="bottom" constant="19" id="Gnr-vP-aQl"/>
