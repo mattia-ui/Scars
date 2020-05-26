@@ -47,22 +47,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7Ov-gi-Skw">
-                                <rect key="frame" x="0.0" y="783" width="212" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7Ov-gi-Skw">
+                                <rect key="frame" x="116" y="717" width="182" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Elabora disegno">
+                                <state key="normal" image="submitAzzurro">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="drawElaboration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nvb-Ps-QCM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Leg-nv-08a">
-                                <rect key="frame" x="211" y="783" width="203" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Leg-nv-08a">
+                                <rect key="frame" x="333" y="212" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Reset disegno">
+                                <state key="normal" image="Reset">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -70,9 +68,12 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="1" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="Fim-d8-yE7">
-                                <rect key="frame" x="-2" y="755" width="418" height="30"/>
+                                <rect key="frame" x="-75" y="435" width="261" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="minimumTrackTintColor" red="0.93333333333333335" green="0.92941176470588238" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.6705882352941176" green="0.86274509803921573" blue="0.99215686274509807" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" red="0.93333333333333335" green="0.92941176470588238" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <action selector="changeBrush:" destination="BYZ-38-t0r" eventType="valueChanged" id="3il-de-iq6"/>
                                 </connections>
@@ -88,6 +89,7 @@
                         <outlet property="elaboraDisegno" destination="7Ov-gi-Skw" id="SZf-Pq-wW4"/>
                         <outlet property="pictureScars" destination="ns4-Sj-bJV" id="7Te-6s-L6w"/>
                         <outlet property="resetDis" destination="Leg-nv-08a" id="Fdy-nj-iVe"/>
+                        <outlet property="slider" destination="Fim-d8-yE7" id="57a-oT-OQI"/>
                         <outlet property="tempDrawScars" destination="Y7q-Le-8bb" id="P4K-uF-JWT"/>
                     </connections>
                 </viewController>
@@ -220,10 +222,11 @@
                                 <rect key="frame" x="22" y="677" width="371" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpE-XT-qrG">
-                                <rect key="frame" x="116" y="752" width="182" height="55"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpE-XT-qrG">
+                                <rect key="frame" x="116" y="753" width="182" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Start"/>
+                                <state key="normal" image="Start"/>
+                                <state key="disabled" image="StartSpento"/>
                                 <connections>
                                     <action selector="startPressed:" destination="w7d-Tn-c1A" eventType="touchUpInside" id="58j-MS-1wl"/>
                                 </connections>
@@ -307,12 +310,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3A-U0-X4D">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3A-U0-X4D">
                                                     <rect key="frame" x="116" y="73" width="182" height="55"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" image="done">
                                                         <color key="titleColor" red="0.91372543569999998" green="0.91366583109999999" blue="0.91764795779999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </state>
+                                                    <state key="disabled" image="DoneSpento"/>
                                                     <connections>
                                                         <action selector="donePressed:" destination="w7d-Tn-c1A" eventType="touchUpInside" id="sHU-66-vKH"/>
                                                     </connections>
@@ -320,7 +324,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="done" destination="V3A-U0-X4D" id="tex-je-zT9"/>
+                                            <outlet property="done" destination="V3A-U0-X4D" id="RpU-nI-Ysz"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -462,11 +466,11 @@ Masterpiece!</string>
                                 <rect key="frame" x="23" y="614" width="84" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Te-rI-HPa">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Te-rI-HPa">
                                 <rect key="frame" x="116" y="707.5" width="182" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="nextazzurro"/>
-                                <state key="disabled" image="nextazzurro"/>
+                                <state key="disabled" image="nextAzzurroSpento"/>
                                 <connections>
                                     <segue destination="My5-jh-AI2" kind="show" id="PBJ-nY-4jd"/>
                                 </connections>
@@ -582,11 +586,11 @@ Masterpiece!</string>
                                     <action selector="chooseSquare:" destination="My5-jh-AI2" eventType="touchUpInside" id="pvb-Pg-YGa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwR-8A-D92">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwR-8A-D92">
                                 <rect key="frame" x="116" y="707.5" width="182" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="nextazzurro"/>
-                                <state key="disabled" image="nextazzurro"/>
+                                <state key="disabled" image="nextAzzurroSpento"/>
                                 <state key="selected" image="nextazzurro"/>
                                 <connections>
                                     <segue destination="lYX-Go-SkF" kind="push" id="DuD-b2-eFA"/>
@@ -771,11 +775,11 @@ Masterpiece!</string>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2t-hU-7Lg">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2t-hU-7Lg">
                                 <rect key="frame" x="116" y="707" width="184" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="nextazzurro"/>
-                                <state key="disabled" image="nextazzurro"/>
+                                <state key="disabled" image="nextAzzurroSpento"/>
                                 <connections>
                                     <segue destination="lfU-OF-Bud" kind="push" id="mjP-6E-I86"/>
                                 </connections>
@@ -802,7 +806,7 @@ Masterpiece!</string>
             <objects>
                 <viewController id="lfU-OF-Bud" customClass="ChooseTexture" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pnh-IU-Nic">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jE3-g0-hTy">
@@ -813,15 +817,15 @@ Masterpiece!</string>
                                         <rect key="frame" x="22" y="419" width="75" height="76"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crater" translatesAutoresizingMaskIntoConstraints="NO" id="3Uf-Yt-Gwb">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Crater" translatesAutoresizingMaskIntoConstraints="NO" id="3Uf-Yt-Gwb">
                                         <rect key="frame" x="22" y="332" width="75" height="75"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sea" translatesAutoresizingMaskIntoConstraints="NO" id="YBv-BC-Bzc">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sea" translatesAutoresizingMaskIntoConstraints="NO" id="YBv-BC-Bzc">
                                         <rect key="frame" x="22" y="244" width="75" height="76"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" image="wood" translatesAutoresizingMaskIntoConstraints="NO" id="SNQ-KO-nnh">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" image="Wood" translatesAutoresizingMaskIntoConstraints="NO" id="SNQ-KO-nnh">
                                         <rect key="frame" x="22" y="594" width="75" height="75"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -899,11 +903,11 @@ Masterpiece!</string>
                                             <action selector="chooseZigZag:" destination="My5-jh-AI2" eventType="touchUpInside" id="UY8-Lb-vTp"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4O-Qz-X11">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4O-Qz-X11">
                                         <rect key="frame" x="116" y="707" width="182" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="submitAzzurro"/>
-                                        <state key="disabled" image="submitAzzurro"/>
+                                        <state key="disabled" image="submitAzzurroSpento"/>
                                         <connections>
                                             <action selector="pressed:" destination="lfU-OF-Bud" eventType="touchUpInside" id="vHt-cq-KD0"/>
                                         </connections>
@@ -1091,8 +1095,8 @@ your body and others’s bodies.</string>
                                 <rect key="frame" x="-47" y="288" width="508" height="516"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group 175" translatesAutoresizingMaskIntoConstraints="NO" id="tCs-c9-ky0">
-                                <rect key="frame" x="0.0" y="804" width="414" height="92"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tabBar" translatesAutoresizingMaskIntoConstraints="NO" id="tCs-c9-ky0">
+                                <rect key="frame" x="0.0" y="779" width="414" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="illustrazione3" translatesAutoresizingMaskIntoConstraints="NO" id="hAV-t5-bhq">
@@ -2009,7 +2013,7 @@ tips and inspirational contents for you!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhW-b9-vYz">
-                                <rect key="frame" x="15" y="254" width="386" height="76"/>
+                                <rect key="frame" x="15" y="264.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2022,7 +2026,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7I-AD-BUJ">
-                                <rect key="frame" x="15" y="352" width="386" height="76"/>
+                                <rect key="frame" x="15" y="362.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2035,7 +2039,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzd-QM-ZsD">
-                                <rect key="frame" x="15" y="450" width="386" height="76"/>
+                                <rect key="frame" x="15" y="460.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2048,7 +2052,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yP-st-eET">
-                                <rect key="frame" x="15" y="156" width="386" height="76"/>
+                                <rect key="frame" x="15" y="166.5" width="386" height="76"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
@@ -2063,7 +2067,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZk-O6-Ha0">
-                                <rect key="frame" x="15" y="646" width="386" height="76"/>
+                                <rect key="frame" x="15" y="656.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2076,7 +2080,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaW-2m-fzZ">
-                                <rect key="frame" x="15" y="548" width="386" height="76"/>
+                                <rect key="frame" x="15" y="558.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2089,13 +2093,13 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalize your insights section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLV-JE-bPB">
-                                <rect key="frame" x="22" y="77" width="372" height="22"/>
+                                <rect key="frame" x="22" y="83.5" width="372" height="26"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Interests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICX-Lj-BMb">
-                                <rect key="frame" x="22" y="32" width="372" height="38"/>
+                                <rect key="frame" x="22" y="32" width="372" height="44.5"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2257,10 +2261,10 @@ tips and inspirational contents for you!</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1275"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CLu-Up-FUB">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1275"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1183"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iaf-1g-HK7">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1275"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1183"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is your #skinsugi!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcg-DQ-JRd">
                                                         <rect key="frame" x="22" y="88" width="392" height="80"/>
@@ -2293,18 +2297,124 @@ tips and inspirational contents for you!</string>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" image="download"/>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igl-LE-bMi">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igl-LE-bMi">
                                                         <rect key="frame" x="22" y="717" width="370" height="258"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="The pattern in the large circle describes ">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <font key="NSFont" size="20" name="CeraPro-Light"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="your personality">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <font key="NSFont" size="20" name="CeraPro-Medium"/>
+                                                                    <font key="NSOriginalFont" size="20" name="CeraPro-Medium"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content=" and the color inside represents ">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <font key="NSFont" size="20" name="CeraPro-Light"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="the way you want to look">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <font key="NSFont" size="20" name="CeraPro-Medium"/>
+                                                                    <font key="NSOriginalFont" size="20" name="CeraPro-Medium"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment>
+                                                                <string key="content"> from the outside. 
+
+The two shapes on the outside recount </string>
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <font key="NSFont" size="20" name="CeraPro-Light"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="the way you would like to be">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <font key="NSFont" size="20" name="CeraPro-Medium"/>
+                                                                    <font key="NSOriginalFont" size="20" name="CeraPro-Medium"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content=" and the texture inside represents ">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <font key="NSFont" size="20" name="CeraPro-Light"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="the perception you have of your sign">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <font key="NSFont" size="20" name="CeraPro-Medium"/>
+                                                                    <font key="NSOriginalFont" size="20" name="CeraPro-Medium"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content=", that is in gold and occupies the center of the image, as ">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <font key="NSFont" size="20" name="CeraPro-Light"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="Kintsugi art ">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <font key="NSFont" size="20" name="CeraPro-Medium"/>
+                                                                    <font key="NSOriginalFont" size="20" name="CeraPro-Medium"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="teaches">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <font key="NSFont" size="20" name="CeraPro-Light"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discover more about Kinsugi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntc-NU-ZMR">
-                                                        <rect key="frame" x="22" y="994" width="269" height="20"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntc-NU-ZMR">
+                                                        <rect key="frame" x="22" y="994" width="271" height="26"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="20"/>
-                                                        <color key="textColor" red="0.6705882352941176" green="0.86274509803921573" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Discover more">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.6705882352941176" green="0.86274509803921573" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <font key="NSFont" size="20" name="CeraPro-Medium"/>
+                                                                    <integer key="NSUnderline" value="1"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content=" ">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.6705882352941176" green="0.86274509803921573" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <font key="NSFont" size="26" name="CeraPro-Medium"/>
+                                                                    <integer key="NSUnderline" value="1"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="about Kinsugi">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.6705882352941176" green="0.86274509803921573" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <font key="NSFont" size="20" name="CeraPro-Medium"/>
+                                                                    <integer key="NSUnderline" value="1"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTA-bJ-RLx">
@@ -2318,7 +2428,7 @@ tips and inspirational contents for you!</string>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="1275" id="uuD-zX-MIP"/>
+                                                    <constraint firstAttribute="height" constant="1183" id="Pgo-83-146"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -2346,6 +2456,7 @@ tips and inspirational contents for you!</string>
                     </view>
                     <size key="freeformSize" width="414" height="1275"/>
                     <connections>
+                        <outlet property="label" destination="Igl-LE-bMi" id="pGf-Vi-YLg"/>
                         <outlet property="scarsImage" destination="jgS-5L-Xg9" id="dQi-iA-lec"/>
                         <outlet property="screen" destination="zQL-vM-xeu" id="UxM-DD-97H"/>
                         <outlet property="top" destination="Q2H-9g-FGd" id="Z93-Vl-7Ij"/>
@@ -2353,7 +2464,7 @@ tips and inspirational contents for you!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOi-Iq-BeJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7291" y="1561"/>
+            <point key="canvasLocation" x="7289.8550724637689" y="1560.6026785714284"/>
         </scene>
         <!--Share Page-->
         <scene sceneID="MAA-cj-BQ7">
@@ -2367,10 +2478,10 @@ tips and inspirational contents for you!</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1691"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="22s-NT-cwB">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1745"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1653"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEw-87-8Pl">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1745"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1653"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instagram power!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Grm-fg-a3p">
                                                         <rect key="frame" x="22" y="88" width="414" height="38"/>
@@ -2383,11 +2494,11 @@ tips and inspirational contents for you!</string>
                                                         <rect key="frame" x="102" y="168.5" width="210" height="203"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yy9-H0-njk">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yy9-H0-njk">
                                                         <rect key="frame" x="22" y="421" width="370" height="253"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="20"/>
+                                                        <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="illustrazioneCollage" translatesAutoresizingMaskIntoConstraints="NO" id="wLi-qF-dST">
@@ -2431,26 +2542,40 @@ tips and inspirational contents for you!</string>
                                                         <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ks-8R-CwO">
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ks-8R-CwO">
                                                         <rect key="frame" x="144" y="1315" width="126" height="32"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
-                                                        <state key="normal" title="Copy caption">
-                                                            <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Copy caption">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <font key="NSFont" size="20" name="CeraPro-Regular"/>
+                                                                        <integer key="NSUnderline" value="1"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
                                                         </state>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UN9-uJ-1tT">
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UN9-uJ-1tT">
                                                         <rect key="frame" x="172" y="1587" width="71" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-LightItalic" family="Cera Pro" pointSize="18"/>
-                                                        <state key="normal" title="Not now">
-                                                            <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Not now">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <font key="NSFont" size="18" name="CeraPro-LightItalic"/>
+                                                                        <integer key="NSUnderline" value="1"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
                                                         </state>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="1745" id="fV0-45-kSs"/>
+                                                    <constraint firstAttribute="height" constant="1653" id="DiE-x2-Az0"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -2480,6 +2605,7 @@ tips and inspirational contents for you!</string>
                     <size key="freeformSize" width="414" height="1745"/>
                     <connections>
                         <outlet property="descriptionField" destination="hfa-1t-x6z" id="ImJ-tb-K7Q"/>
+                        <outlet property="label" destination="Yy9-H0-njk" id="s4Z-27-lWH"/>
                         <outlet property="screen" destination="WQJ-Vl-Xrs" id="M0x-Yh-A7P"/>
                     </connections>
                 </viewController>
@@ -2493,6 +2619,8 @@ tips and inspirational contents for you!</string>
         <segue reference="s1A-7h-Aw8"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Crater" width="168" height="168"/>
+        <image name="DoneSpento" width="182" height="55"/>
         <image name="Group 175" width="414" height="93"/>
         <image name="Group 48" width="508" height="518"/>
         <image name="IllustrazioneSchermata3" width="370" height="404"/>
@@ -2505,15 +2633,18 @@ tips and inspirational contents for you!</string>
         <image name="ProceedAzzurro" width="182" height="55"/>
         <image name="QuestionAcceso" width="261" height="71"/>
         <image name="QuestionSpento" width="261" height="71"/>
+        <image name="Reset" width="50" height="50"/>
+        <image name="Sea" width="168" height="168"/>
         <image name="SeeMore" width="79" height="18"/>
         <image name="Start" width="182" height="55"/>
+        <image name="StartSpento" width="182" height="55"/>
         <image name="TCAzz" width="230" height="230"/>
         <image name="Textile" width="168" height="168"/>
+        <image name="Wood" width="168" height="168"/>
         <image name="aggiungiInsight" width="32" height="25"/>
         <image name="cc" width="128" height="128"/>
         <image name="checked" width="35" height="33"/>
         <image name="circle" width="68" height="68"/>
-        <image name="crater" width="168" height="168"/>
         <image name="deselected" width="374" height="76"/>
         <image name="div" width="415" height="144"/>
         <image name="done" width="182" height="55"/>
@@ -2526,13 +2657,13 @@ tips and inspirational contents for you!</string>
         <image name="linea" width="371" height="1"/>
         <image name="marble" width="168" height="168"/>
         <image name="nav1-2" width="415" height="143"/>
+        <image name="nextAzzurroSpento" width="182" height="55"/>
         <image name="nextazzurro" width="182" height="55"/>
         <image name="noAzzurro" width="120" height="55"/>
         <image name="nonselezionato" width="374" height="76"/>
         <image name="primaPalette" width="87" height="87"/>
         <image name="readyViola" width="182" height="55"/>
         <image name="rectangle" width="80" height="55"/>
-        <image name="sea" width="168" height="168"/>
         <image name="secondaPalette" width="87" height="87"/>
         <image name="selected" width="374" height="76"/>
         <image name="selezionato" width="374" height="76"/>
@@ -2542,10 +2673,11 @@ tips and inspirational contents for you!</string>
         <image name="square" width="66" height="65"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="submitAzzurro" width="182" height="55"/>
+        <image name="submitAzzurroSpento" width="182" height="55"/>
+        <image name="tabBar" width="414" height="116"/>
         <image name="terzaPalette" width="87" height="87"/>
         <image name="triangle" width="74" height="69"/>
         <image name="unchecked" width="34" height="32"/>
-        <image name="wood" width="168" height="168"/>
         <image name="yesAzzurro" width="112" height="55"/>
         <image name="zigzag" width="89" height="42"/>
     </resources>

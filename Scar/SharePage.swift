@@ -18,6 +18,7 @@ class SharePage: UIViewController, UITextFieldDelegate{
     var img = UIImage()
     @IBOutlet weak var screen: UIImageView!
     @IBOutlet weak var descriptionField: UITextField!
+    @IBOutlet weak var label: UILabel!
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,6 +33,76 @@ class SharePage: UIViewController, UITextFieldDelegate{
                view.addGestureRecognizer(tap)
                descriptionField.smartInsertDeleteType = UITextSmartInsertDeleteType.no
                descriptionField.delegate = self
+        
+         var  normalText = "Sharing your emotions with others is \nvery important for your "
+         var normalString = NSMutableAttributedString(string:normalText)
+         let attributedString = NSMutableAttributedString(string:normalText)
+         
+         var boldText = "emotional state,\n"
+             var attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+            let attributedString2 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
+         attributedString.append(attributedString2)
+
+
+                 normalText = "it "
+                 normalString = NSMutableAttributedString(string:normalText)
+
+                attributedString.append(normalString)
+                
+                 boldText = "increases self-esteem"
+                 attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+                
+                let attributedString3 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
+                
+                attributedString.append(attributedString3)
+          
+         normalText = ", decreases \ninsecurities, and makes you understand\nthat "
+          normalString = NSMutableAttributedString(string:normalText)
+
+         attributedString.append(normalString)
+         
+         boldText = "you are not alone"
+          attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+         
+         let attributedString4 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
+         
+         attributedString.append(attributedString4)
+         
+         normalText = ", ever.\n\n "
+          normalString = NSMutableAttributedString(string:normalText)
+
+         attributedString.append(normalString)
+         
+         normalText = "What are you waiting for?\nTell your story and share it on "
+          normalString = NSMutableAttributedString(string:normalText)
+
+         attributedString.append(normalString)
+         
+         boldText = "Instagram\n"
+          attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+         
+         let attributedString6 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
+         
+         attributedString.append(attributedString6)
+         
+         normalText = "with the hashtag "
+                 normalString = NSMutableAttributedString(string:normalText)
+
+                attributedString.append(normalString)
+        
+        boldText = "#skinsugi "
+                 attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+                
+                let attributedString7 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
+                
+                attributedString.append(attributedString7)
+        
+        normalText = "or send it to\nus anonymously, you can be inspiring\neven without showing your name! "
+                        normalString = NSMutableAttributedString(string:normalText)
+
+                       attributedString.append(normalString)
+                       
+                       label.attributedText = attributedString
     }
     @objc func dismissKeyboard() {
          view.endEditing(true)

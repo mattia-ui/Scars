@@ -19,4 +19,12 @@ class Cella3: UITableViewCell{
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
+    func attiva(){
+        if(done.isEnabled){
+            done.isEnabled = false
+        }else{
+            done.isEnabled = true
+        }
+    }
 }

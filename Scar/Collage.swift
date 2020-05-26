@@ -114,6 +114,7 @@ var structTopImageType = [topImage(
 class Collage: UIViewController, UITextFieldDelegate  {
     
     @IBOutlet weak var scarsImage: UIImageView!
+    @IBOutlet weak var label: UILabel!
     
     @IBOutlet weak var top: UIImageView!
     @IBOutlet weak var screen: UIImageView!
@@ -619,6 +620,71 @@ class Collage: UIViewController, UITextFieldDelegate  {
             
         screen.image = cropBottomImage(image: view.snapshot() ?? UIImage())
 //      screen.image = view.snapshot()
+        
+        var  normalText = "The pattern in the large circle describes\n"
+        var normalString = NSMutableAttributedString(string:normalText)
+        let attributedString = NSMutableAttributedString(string:normalText)
+        
+        var boldText = "your personality "
+            var attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+           let attributedString2 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
+        attributedString.append(attributedString2)
+
+
+                normalText = "and the color inside \nrepresents "
+                normalString = NSMutableAttributedString(string:normalText)
+
+               attributedString.append(normalString)
+               
+                boldText = "the way you want to look\n"
+                attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+               
+               let attributedString3 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
+               
+               attributedString.append(attributedString3)
+         
+        normalText = "from the outside. \n\nThe two shapes on the outside recount\n"
+         normalString = NSMutableAttributedString(string:normalText)
+
+        attributedString.append(normalString)
+        
+        boldText = "the way you would like to be "
+         attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+        
+        let attributedString4 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
+        
+        attributedString.append(attributedString4)
+        
+        normalText = "and the \ntexture inside represents "
+         normalString = NSMutableAttributedString(string:normalText)
+
+        attributedString.append(normalString)
+        
+        boldText = "the \nperception you have of your sign, "
+        attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+       
+       let attributedString5 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
+       
+       attributedString.append(attributedString5)
+        
+        normalText = "that\nis in gold and occupies the center of \nthe image, as "
+         normalString = NSMutableAttributedString(string:normalText)
+
+        attributedString.append(normalString)
+        
+        boldText = "Kintsugi art "
+         attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+        
+        let attributedString6 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
+        
+        attributedString.append(attributedString6)
+        
+        normalText = "teaches! "
+                normalString = NSMutableAttributedString(string:normalText)
+
+               attributedString.append(normalString)
+                      
+                      label.attributedText = attributedString
     }
         
     func mergeTwoImages(principale: UIImage, aggiunta: UIImage, x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat){

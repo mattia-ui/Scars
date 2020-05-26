@@ -37,6 +37,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
 
 
     var selected : [String] = ["","","","","",""]
+    var counter = 0
     
     func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
         print(view.frame.origin.x)
@@ -49,6 +50,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
 
         var temp : [String] = []
         if sender.isSelected {
+            counter -= 1
             sender.isSelected = false
             for i in 0...selected.count - 1{
                 if(selected[i] != String(sender.title(for: .normal)!)){
@@ -59,6 +61,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             selected = temp
             selected.append("")
         } else {
+            counter += 1
             sender.isSelected = true
             selected[PrimaTutorial.j] = String(String(sender.title(for: .normal) ?? ""))
             PrimaTutorial.j  = PrimaTutorial.j  + 1
@@ -67,6 +70,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         for k in 0...selected.count - 1{
             print(selected[k])
         }
+        controllo2()
     }
     
     @IBAction func startPressed(_ sender: UIButton) {
@@ -317,6 +321,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         if self.view.frame.origin.y != 0{
             self.view.frame.origin.y += 150
         }
+        controllo()
         view.endEditing(true)
     }
     
@@ -326,6 +331,18 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
                 self.view.frame.origin.y -= 150
             }
         }
+    }
+    
+    func controllo(){
+        if(nome1.text != ""){
+            button1.isEnabled = true
+        } else{
+            button1.isEnabled = false
+
+        }
+    }
+    func controllo2(){
+        TableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -393,6 +410,11 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell3") as? Cella3 else
             {
                 return UITableViewCell()
+            }
+            if(counter != 0){
+                cell.done.isEnabled = true
+            } else{
+                cell.done.isEnabled = false
             }
             return cell
         }

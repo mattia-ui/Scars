@@ -23,7 +23,12 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     var opacity: CGFloat = 1.0
     var swiped = false
     var points = [CGPoint] ()
-
+    @IBOutlet weak var slider: UISlider!{
+        didSet{
+            slider.transform = CGAffineTransform(rotationAngle: CGFloat.pi + CGFloat.pi/2)
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +53,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     func drawLine(from fromPoint: CGPoint, to toPoint: CGPoint) {
         points.append(fromPoint)
         
-        if(toPoint.y < 800){
+        if(toPoint.y < 684 && toPoint.y > 215 && toPoint.x > 34 && toPoint.x < 380){
             UIGraphicsBeginImageContext(view.frame.size)
             guard let context = UIGraphicsGetCurrentContext() else {
                 return
