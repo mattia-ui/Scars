@@ -1,19 +1,14 @@
-//
-//  PrimaTutorial.swift
-//  Scar
-//
-//  Created by Silvio Cresci on 05/05/2020.
-//  Copyright © 2020 Mattia Cardone. All rights reserved.
-//
-
+import UIKit
 import ViewAnimator
+import ObjectMapper
 import RxSwift
 import RxCocoa
 import SDWebImage
-import Foundation
-import UIKit
 import SQLite3
 
+protocol MovieListViewControllerDelegate: class {
+  func didSelect(movie selectedMovie: Movie)
+}
 
 class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelegate{
 
@@ -34,7 +29,9 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     var stmt: OpaquePointer?
     static var j = 0
 
-
+    fileprivate var movies = [Movie]()
+    let imageView = UIImageView()
+    let maskView = UIImageView()
 
     var selected : [String] = ["","","","","",""]
     var counter = 0
@@ -163,6 +160,19 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         traslate(view: domande3, aCircleTime: 0.1, to: -828)
         traslate(view: button3, aCircleTime: 0.1, to: -828)
         
+
+        fetchMovies(nome: "the%20theory%20of%20everything", tipo:"movie", yImg: 340)
+        fetchMovies(nome: "shallow%20Hal", tipo:"movie", yImg: 150)
+        fetchMovies(nome: "orange%20is%20new%20black", tipo:"tv", yImg: 220)
+        fetchMovies(nome: "the%20shape%20of%20water", tipo:"movie", yImg: 120)
+        fetchMovies(nome: "unBreakable", tipo:"tv", yImg: 200)
+        fetchMovies(nome: "pose", tipo:"tv", yImg: 20)
+        fetchMovies(nome: "border", tipo:"movie", yImg: 130)
+        fetchMovies(nome: "glow", tipo:"tv", yImg: 320)
+        fetchMovies(nome: "hairspray", tipo:"movie", yImg: 300)
+        fetchMovies(nome: "unorthodox", tipo:"tv", yImg: 100)
+
+        
         let queryString = "UPDATE Insights SET b1 = '\(selected[0])',b2 = '\(selected[1])',b3 = '\(selected[2])',b4 = '\(selected[3])',b5 = '\(selected[4])', b6 = '\(selected[5])';"
                    sqlite3_prepare(db, queryString, -1, &stmt, nil)
                    sqlite3_step(stmt)
@@ -194,6 +204,8 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
+
     
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -429,6 +441,94 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         }
         return 100
     }
+    
+    public func fetchMovies(nome: String, tipo: String, yImg: Int) {
+          fetchPopularMovies(nome: nome, tipo: tipo) {(movies, error) in
+              self.updateView(with: movies, yImg: yImg, nome: nome)
+          }
+      }
+          
+      func fetchPopularMovies(nome: String, tipo: String, completion: @escaping ([Movie], Error?) -> Void) {
+          guard ReachabilityManager.shared.isReachable() else {
+              return
+          }
+          
+          MovieAPI.getPopularMovies(nome: nome, tipo: tipo) { (response, error) in
+              guard error == nil else {
+                  completion([], error)
+                  return
+              }
+            
+              guard let results = response?["results"] as? [[String: Any]] else {
+                  let err = NSError(domain: "Произошла ошибка", code: 0, userInfo: nil)
+                  completion([], err)
+                  return
+              }
+            
+              let movies = Mapper<Movie>().mapArray(JSONArray: results)
+              completion(movies, nil)
+          }
+      }
+          
+      func updateView(with movies: [Movie], yImg: Int, nome: String) {
+                       
+          self.movies = movies
+          var movie = movies[0]
+          if (nome == "border"){
+              movie = movies[7]
+          }
+               
+          guard let posterImageURL = movie.posterImageURL else { return }
+          let posterURL = URL(string: API.imageURL + posterImageURL)
+          let data = try? Data(contentsOf: posterURL!)
+          let image = UIImage(data: data!)
+               
+          let filtroView = UIImageView()
+          filtroView.image = UIImage(named: "filtro")
+               
+          let lineaView = UIImageView()
+          lineaView.image = UIImage(named: "linea-1")
+               
+          var size = CGSize(width: 370, height: 121)
+          UIGraphicsBeginImageContext(size)
+               
+          var areaPrincipale = CGRect(x: 0, y: 0 - yImg  , width: 370, height: 570)
+          let areaSecondaria = CGRect(x: 0, y: 0, width: 370, height: 121)
+
+          image?.draw(in: areaPrincipale)
+          filtroView.image?.draw(in: areaSecondaria)
+               
+          var finalImage = UIGraphicsGetImageFromCurrentImageContext()
+          UIGraphicsEndImageContext()
+               
+          var bgImage = UIImageView(image: finalImage)
+               
+          size = CGSize(width: 370, height: 125)
+          UIGraphicsBeginImageContext(size)
+
+          areaPrincipale = CGRect(x: 0, y: 0, width: 370, height: 121)
+          let areaTerzaria = CGRect(x: 126, y: 118, width: 122, height: 7)
+
+          bgImage.image?.draw(in: areaPrincipale)
+          lineaView.image?.draw(in: areaTerzaria)
+
+          finalImage = UIGraphicsGetImageFromCurrentImageContext()
+          UIGraphicsEndImageContext()
+          
+          bgImage = UIImageView(image: finalImage)
+               
+          if let image = bgImage.image {
+              if let data = image.pngData() {
+                  let filename = getDocumentsDirectory().appendingPathComponent(nome + ".png")
+                  try? data.write(to: filename)
+              }
+          }
+      }
+           
+      func getDocumentsDirectory() -> URL {
+          let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+          return paths[0]
+      }
         
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

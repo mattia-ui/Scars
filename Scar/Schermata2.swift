@@ -139,6 +139,8 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
+
         caricaInfo()
 
         if(Schermata2.insights[0] != ""){

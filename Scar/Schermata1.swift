@@ -282,7 +282,9 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        overrideUserInterfaceStyle = .light
+
+        overrideUserInterfaceStyle = .light   
         UserDefaults.standard.set(true, forKey: "LaunchedBefore")
         let layout = UICollectionViewFlowLayout()
         

@@ -16,6 +16,8 @@ class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePick
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
+
         
         self.tabBarController?.tabBar.isHidden = false
         

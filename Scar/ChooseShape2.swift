@@ -13,7 +13,7 @@ class ChooseShape2: UIViewController  {
    
     override func viewDidLoad() {
         nex.isEnabled = false
-        
+        overrideUserInterfaceStyle = .light
         
         var boldText = "Which of these shapes represents "
         var attributedString = NSMutableAttributedString(string:boldText)

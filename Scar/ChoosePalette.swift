@@ -12,6 +12,7 @@ import CloudKit
 class ChoosePalette: UIViewController  {
    
     override func viewDidLoad() {
+        overrideUserInterfaceStyle = .light
         nex.isEnabled = false
         
         let boldText = "With which of these color palettes\n"

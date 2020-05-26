@@ -40,6 +40,8 @@ class SecretCollection: UIViewController, UICollectionViewDataSource, UICollecti
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
+
         _ = UIScreen.main.bounds.width/3 - 5
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 20, left: 3, bottom: 10, right: 0)

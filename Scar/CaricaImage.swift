@@ -16,6 +16,7 @@ class CaricaImage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
         imageSelected.image = SecretCollection.allImages?[id]
         testo.text = SecretCollection.allDescr?[id]
     }

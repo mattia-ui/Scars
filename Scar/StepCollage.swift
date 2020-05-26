@@ -12,7 +12,8 @@ import CloudKit
 class StepCollage: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        overrideUserInterfaceStyle = .light
+
         self.tabBarController?.tabBar.isHidden = false
     }
     override func viewWillAppear(_ animated: Bool) {

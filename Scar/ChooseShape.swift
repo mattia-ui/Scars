@@ -12,6 +12,7 @@ import CloudKit
 class ChooseShape: UIViewController  {
    
     override func viewDidLoad() {
+        overrideUserInterfaceStyle = .light
         nex.isEnabled = false
 
         var boldText = "Which of these shapes represents "

@@ -24,6 +24,8 @@ class AddInsights: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
+
         AddInsights.j = 0
         for i in 0...Schermata2.insights.count - 1{
              if(Schermata2.insights[i] == "TEDx"){

@@ -125,6 +125,8 @@ class ViewControllerInitial: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
+
         imageNav.image = UIImage(named: sfondiNav[id1])
         slides = createSlides()
         setupSlideScrollView(slides: slides)

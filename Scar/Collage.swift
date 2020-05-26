@@ -131,7 +131,8 @@ class Collage: UIViewController, UITextFieldDelegate  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        overrideUserInterfaceStyle = .light
+
         if(ChooseShape.shape1 == "square"){
             if(ChoosePalette.color == "cool"){
                 let randomInt = Int.random(in: 0..<4)

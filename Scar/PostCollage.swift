@@ -36,6 +36,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
         
         var db: OpaquePointer?
         var stmt: OpaquePointer?

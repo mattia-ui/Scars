@@ -12,6 +12,7 @@ import CloudKit
 class ChooseTexture: UIViewController  {
    
     override func viewDidLoad() {
+        overrideUserInterfaceStyle = .light
         nex.isEnabled = false
         
        var boldText = "Touch "
