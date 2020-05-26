@@ -25,6 +25,7 @@
 		6B01C79A2461A7980040EA77 /* PrimaTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01C7992461A7980040EA77 /* PrimaTutorial.swift */; };
 		6B01C79C2461A7BC0040EA77 /* SecondaTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01C79B2461A7BC0040EA77 /* SecondaTutorial.swift */; };
 		6B01C79E2461A7D90040EA77 /* TerzaTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01C79D2461A7D90040EA77 /* TerzaTutorial.swift */; };
+		6B29F0B3247D21A6008B8D49 /* SharePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B29F0B2247D21A6008B8D49 /* SharePage.swift */; };
 		6BAD16A32464A53200859C79 /* Cella1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD16A22464A53200859C79 /* Cella1.swift */; };
 		6BAD16A52464A53A00859C79 /* Cella2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD16A42464A53A00859C79 /* Cella2.swift */; };
 		6BAD16A72464A54600859C79 /* Cella3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD16A62464A54600859C79 /* Cella3.swift */; };
@@ -111,6 +112,7 @@
 		6B01C7992461A7980040EA77 /* PrimaTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaTutorial.swift; sourceTree = "<group>"; };
 		6B01C79B2461A7BC0040EA77 /* SecondaTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaTutorial.swift; sourceTree = "<group>"; };
 		6B01C79D2461A7D90040EA77 /* TerzaTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerzaTutorial.swift; sourceTree = "<group>"; };
+		6B29F0B2247D21A6008B8D49 /* SharePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePage.swift; sourceTree = "<group>"; };
 		6BAD16A22464A53200859C79 /* Cella1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cella1.swift; sourceTree = "<group>"; };
 		6BAD16A42464A53A00859C79 /* Cella2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cella2.swift; sourceTree = "<group>"; };
 		6BAD16A62464A54600859C79 /* Cella3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cella3.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 				6BAD16A42464A53A00859C79 /* Cella2.swift */,
 				6BAD16A62464A54600859C79 /* Cella3.swift */,
 				345F14D224573808003EE819 /* Main.storyboard */,
+				6B29F0B2247D21A6008B8D49 /* SharePage.swift */,
 				345F14D724573809003EE819 /* LaunchScreen.storyboard */,
 				345F14DA24573809003EE819 /* Info.plist */,
 				345F14D524573809003EE819 /* Assets.xcassets */,
@@ -516,6 +519,7 @@
 				7607122F24793C9E00B29C2C /* ReachabilityManager.swift in Sources */,
 				76F08B41245DF8B2002A6F19 /* StepCollage.swift in Sources */,
 				6BAD16A32464A53200859C79 /* Cella1.swift in Sources */,
+				6B29F0B3247D21A6008B8D49 /* SharePage.swift in Sources */,
 				76C14725246026BB00DAD927 /* AddInsights.swift in Sources */,
 				76CD0C292459C65800E9CA9B /* IstaPage.swift in Sources */,
 				6B01C79E2461A7D90040EA77 /* TerzaTutorial.swift in Sources */,
