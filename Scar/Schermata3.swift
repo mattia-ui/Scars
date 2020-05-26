@@ -18,7 +18,7 @@ class Schermata3: UIViewController {
 //           navigationController?.setNavigationBarHidden(true, animated: animated)
 //       }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidLoad() {
         var db: OpaquePointer?
         var stmt: OpaquePointer?
 
