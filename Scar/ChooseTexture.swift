@@ -94,6 +94,7 @@ class ChooseTexture: UIViewController  {
             marble.isSelected = false
             nex.isEnabled = true
             ChooseTexture.texture1 = "sea"
+            
         }
     }
     

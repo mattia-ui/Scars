@@ -70,7 +70,7 @@ class ViewControllerInitial: UIViewController, UIScrollViewDelegate {
     var id1: Int!
     var attivita: [ContenutoStruct] = []
     var slides:[Slide] = []
-    var sfondi: [String] = ["background","background2","background3","background4","background5","BackDo","background7","background8","background9"]
+    var sfondi: [String] = ["background","background2","background3","BackTake","background5","BackDo","background7","background8","background9"]
     var sfondiNav: [String] = ["nav1-2","nav2-1","nav3-1","nav4-1","nav9-1","nav6-1","nav7-1","nav8-1","nav5-1"]
     @IBOutlet weak var scrollView: UIScrollView!{
         didSet{ scrollView.delegate = self }
