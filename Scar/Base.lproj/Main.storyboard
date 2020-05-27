@@ -102,7 +102,7 @@
             <objects>
                 <viewController storyboardIdentifier="postCollage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GG3-f1-cQ8" customClass="PostCollage" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XOD-ds-Jxc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nrD-Zz-bfZ">
@@ -409,7 +409,7 @@ How you think others see it?</string>
             <objects>
                 <viewController id="xs9-hS-2dx" customClass="ChooseShape" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Srd-Ly-JAO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 1/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUp-S9-4CD">
@@ -544,7 +544,7 @@ How you think others see it?</string>
             <objects>
                 <viewController id="My5-jh-AI2" customClass="ChooseShape2" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mat-fe-5YN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wSE-1b-OHo">
@@ -670,7 +670,7 @@ How you think others see it?</string>
             <objects>
                 <viewController id="lYX-Go-SkF" customClass="ChoosePalette" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UH4-Nu-LfI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="m8e-tD-btm">
@@ -778,7 +778,7 @@ How you think others see it?</string>
             <objects>
                 <viewController id="lfU-OF-Bud" customClass="ChooseTexture" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pnh-IU-Nic">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jE3-g0-hTy">
@@ -978,7 +978,7 @@ all the answers you gave?</string>
             <objects>
                 <viewController id="hvR-kH-wNA" customClass="TakePicture" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vEG-89-kEc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Snap it!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiM-zE-6gR">
@@ -1498,16 +1498,16 @@ tips and inspirational contents for you!</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="249" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61N-a8-v0d">
-                                <rect key="frame" x="22" y="496" width="179" height="314"/>
+                                <rect key="frame" x="22" y="484" width="187" height="310"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="179" id="bcJ-4q-dkF"/>
+                                    <constraint firstAttribute="width" constant="187" id="bcJ-4q-dkF"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Qua ci vanno le stronzate di francesca">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="18" name="CeraPro-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.75" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -1543,7 +1543,7 @@ tips and inspirational contents for you!</string>
                             <constraint firstItem="v02-uU-l8R" firstAttribute="top" secondItem="0Wg-V5-aIC" secondAttribute="bottom" constant="83" id="5oq-uj-UTB"/>
                             <constraint firstItem="fWY-uv-LMG" firstAttribute="trailing" secondItem="M1P-wk-6qy" secondAttribute="trailing" constant="4" id="6hI-hY-Zey"/>
                             <constraint firstItem="anp-qr-svT" firstAttribute="leading" secondItem="puv-vE-VcP" secondAttribute="trailing" id="6i3-lq-s7T"/>
-                            <constraint firstItem="mqk-Ya-Xpd" firstAttribute="leading" secondItem="61N-a8-v0d" secondAttribute="trailing" constant="16" id="75L-HV-7Dg"/>
+                            <constraint firstItem="mqk-Ya-Xpd" firstAttribute="leading" secondItem="61N-a8-v0d" secondAttribute="trailing" constant="8" id="75L-HV-7Dg"/>
                             <constraint firstItem="cZ3-f6-Ny2" firstAttribute="top" secondItem="fYq-XF-b71" secondAttribute="bottom" constant="27.5" id="9s4-Ex-m2B"/>
                             <constraint firstItem="mqk-Ya-Xpd" firstAttribute="leading" secondItem="anp-qr-svT" secondAttribute="trailing" constant="19" id="BhD-ui-LMj"/>
                             <constraint firstItem="fYq-XF-b71" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="M1P-wk-6qy" secondAttribute="leading" id="DMm-7b-Gci"/>
@@ -1561,7 +1561,7 @@ tips and inspirational contents for you!</string>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="v02-uU-l8R" secondAttribute="trailing" symbolic="YES" id="dFZ-0v-SjE"/>
                             <constraint firstItem="yHf-AX-5ZQ" firstAttribute="trailing" secondItem="M1P-wk-6qy" secondAttribute="trailing" id="gaU-aF-OlE"/>
                             <constraint firstItem="fWY-uv-LMG" firstAttribute="top" secondItem="71W-Ns-qfS" secondAttribute="bottom" constant="7" id="gqN-eb-fR5"/>
-                            <constraint firstItem="61N-a8-v0d" firstAttribute="top" secondItem="puv-vE-VcP" secondAttribute="bottom" constant="-10" id="k6a-dc-Oec"/>
+                            <constraint firstItem="61N-a8-v0d" firstAttribute="top" secondItem="puv-vE-VcP" secondAttribute="bottom" constant="-22" id="k6a-dc-Oec"/>
                             <constraint firstItem="v02-uU-l8R" firstAttribute="top" secondItem="hOt-Hk-MoG" secondAttribute="bottom" constant="36" id="lNM-V0-ZzG"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="71W-Ns-qfS" secondAttribute="trailing" symbolic="YES" id="lmD-iH-apv"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="trailing" secondItem="fYq-XF-b71" secondAttribute="trailing" constant="20.5" id="lwc-TO-Rh6"/>
@@ -1569,7 +1569,7 @@ tips and inspirational contents for you!</string>
                             <constraint firstItem="cZ3-f6-Ny2" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="22" id="nQa-Vr-Lr7"/>
                             <constraint firstItem="puv-vE-VcP" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="22" id="pfr-a4-bwV"/>
                             <constraint firstItem="0Wg-V5-aIC" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="22" id="t3q-em-Eya"/>
-                            <constraint firstItem="M1P-wk-6qy" firstAttribute="bottom" secondItem="61N-a8-v0d" secondAttribute="bottom" constant="3" id="t3z-yR-D8y"/>
+                            <constraint firstItem="M1P-wk-6qy" firstAttribute="bottom" secondItem="61N-a8-v0d" secondAttribute="bottom" constant="19" id="t3z-yR-D8y"/>
                             <constraint firstItem="mqk-Ya-Xpd" firstAttribute="top" secondItem="fWY-uv-LMG" secondAttribute="bottom" constant="18" id="u6V-hw-4an"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="trailing" secondItem="mqk-Ya-Xpd" secondAttribute="trailing" constant="14" id="uca-0e-KCi"/>
                         </constraints>
@@ -2571,7 +2571,7 @@ The two shapes on the outside recount </string>
         <scene sceneID="W8f-g5-dAb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IJb-tc-tn9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="Item3" id="GwK-cS-gpB"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="Item3" id="GwK-cS-gpB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZvP-fn-jib">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -2589,7 +2589,7 @@ The two shapes on the outside recount </string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="s1A-7h-Aw8"/>
-        <segue reference="Cab-pX-8BL"/>
+        <segue reference="GPg-NV-9UE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Crater" width="168" height="168"/>
