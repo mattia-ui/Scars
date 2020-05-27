@@ -118,14 +118,14 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
 //           return count <= 250
 //       }
     
-    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        
-        guard let textFieldText = descriptionField.text,
-                  let rangeOfTextToReplace = Range(range, in: textFieldText) else {return false}
-                  let substringToReplace = textFieldText[rangeOfTextToReplace]
-                  let count = textFieldText.count - substringToReplace.count + text.count
-                  return count <= 250
-    }
+//    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+//
+//        guard let textFieldText = descriptionField.text,
+//                  let rangeOfTextToReplace = Range(range, in: textFieldText) else {return false}
+//                  let substringToReplace = textFieldText[rangeOfTextToReplace]
+//                  let count = textFieldText.count - substringToReplace.count + text.count
+//                  return count <= 250
+//    }
     
 //    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
 //
@@ -144,6 +144,36 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
 //        }
 //        return false
 //    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText newText: String) -> Bool {
+            
+            var nsString:NSString = ""
+                   
+            if textView.text != nil  && newText != "" {
+                nsString = textView.text! as NSString
+                nsString = nsString.replacingCharacters(in: range, with: newText) as NSString
+            }   else if (newText == "") && textView.text != ""  {
+                nsString = textView.text! as NSString
+                nsString = nsString.replacingCharacters(in: range, with: newText) as NSString
+                       
+            } else if (newText == "") && textView.text == "" {
+                textView.text = ""
+            }
+
+           guard textView.text != nil else { return true }
+           let currentText = nsString as NSString
+        descriptionField.text = String(String(descriptionField.text).dropLast(10))
+        descriptionField.text += "\(newText) #skinsugi"
+//           countLabel.text = "\(textView.text.count + (newText.count - range.length))/250"
+                   
+           return currentText.length <= 249
+            
+            
+    //        countLabel.text = "\(answerText.text.count + (newText.count - range.length))/250"
+    //        countLabel.textColor = darkGrey
+    //        countLabel.font = UIFont(name: "NewYorkMedium-Regular", size: 16)
+    //        return answerText.text.count + (newText.count - range.length) <= 249
+        }
 
     
     @IBAction func shareUnkown(_ sender: Any) {
