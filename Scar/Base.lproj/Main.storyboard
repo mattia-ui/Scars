@@ -1949,7 +1949,7 @@ tips and inspirational contents for you!</string>
                                                 <constraint firstItem="0zm-hy-VyW" firstAttribute="leading" secondItem="huF-rN-Wyo" secondAttribute="leading" constant="157" id="z3e-Qu-ElP"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" red="0.99607843139999996" green="0.90588235289999997" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="customSize" width="412" height="85"/>
                                         <connections>
                                             <outlet property="image" destination="0zm-hy-VyW" id="VX0-p6-tud"/>
@@ -2536,7 +2536,7 @@ The two shapes on the outside recount </string>
                                                                 <fragment content="Copy caption">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                        <font key="NSFont" size="20" name="CeraPro-LightItalic"/>
+                                                                        <font key="NSFont" metaFont="system" size="20"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         <integer key="NSUnderline" value="1"/>
                                                                     </attributes>
@@ -2555,7 +2555,7 @@ The two shapes on the outside recount </string>
                                                                 <fragment content="Not now">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <font key="NSFont" size="20" name="CeraPro-LightItalic"/>
+                                                                        <font key="NSFont" metaFont="system" size="20"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         <integer key="NSUnderline" value="1"/>
                                                                     </attributes>
