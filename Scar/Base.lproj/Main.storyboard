@@ -2489,13 +2489,6 @@ The two shapes on the outside recount </string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hfa-1t-x6z">
-                                                        <rect key="frame" x="22" y="1098" width="370" height="205"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edT-gu-EJb">
                                                         <rect key="frame" x="128" y="1396" width="158" height="55"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2549,6 +2542,14 @@ The two shapes on the outside recount </string>
                                                             </attributedString>
                                                         </state>
                                                     </button>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P7L-nb-SEH">
+                                                        <rect key="frame" x="22" y="1098" width="370" height="205"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
@@ -2581,14 +2582,14 @@ The two shapes on the outside recount </string>
                     <navigationItem key="navigationItem" id="AB4-Y0-vVi"/>
                     <size key="freeformSize" width="414" height="1745"/>
                     <connections>
-                        <outlet property="descriptionField" destination="hfa-1t-x6z" id="ImJ-tb-K7Q"/>
+                        <outlet property="descriptionField" destination="P7L-nb-SEH" id="1Iw-Rj-sVY"/>
                         <outlet property="label" destination="Yy9-H0-njk" id="s4Z-27-lWH"/>
                         <outlet property="screen" destination="WQJ-Vl-Xrs" id="M0x-Yh-A7P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1lV-U4-8uB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7125" y="2277"/>
+            <point key="canvasLocation" x="7124.6376811594209" y="2276.4508928571427"/>
         </scene>
         <!--Item-->
         <scene sceneID="W8f-g5-dAb">
