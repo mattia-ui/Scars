@@ -1929,14 +1929,14 @@ tips and inspirational contents for you!</string>
                                             <rect key="frame" x="0.0" y="0.0" width="412" height="85"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tmb" translatesAutoresizingMaskIntoConstraints="NO" id="0zm-hy-VyW">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zm-hy-VyW">
                                                     <rect key="frame" x="157" y="8" width="92" height="19"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="19" id="BKk-xZ-jf6"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6t-hC-bz4">
-                                                    <rect key="frame" x="185" y="35" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6t-hC-bz4">
+                                                    <rect key="frame" x="206" y="35" width="0.0" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -2694,7 +2694,6 @@ The two shapes on the outside recount </string>
         <image name="submitAzzurroSpento" width="182" height="55"/>
         <image name="tabBar" width="414" height="116"/>
         <image name="terzaPalette" width="87" height="87"/>
-        <image name="tmb" width="92" height="12"/>
         <image name="triangle" width="74" height="69"/>
         <image name="unchecked" width="34" height="32"/>
         <image name="yesAzzurro" width="112" height="55"/>
