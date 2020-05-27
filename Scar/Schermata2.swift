@@ -112,7 +112,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
             let footerView = myCollectionView.dequeueReusableCell(withReuseIdentifier: "footer", for: indexPath) as! FooterCollectionView
             if(imgButt == "SeeMoreMovies"){
                 footerView.image.image = UIImage(named: "tmb")
-                footerView.text.text = "This product uses the TMDb API but is not endorsed or certified by TMDb."
+                footerView.text.text = "This product uses the TMDb API but\nis not endorsed or certified by TMDb."
             }else if(imgButt == "SeeMore"){
                 footerView.image.image = UIImage(named: "tedx")
                 footerView.text.text = "This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives4.0 International License "
