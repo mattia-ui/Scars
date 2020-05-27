@@ -223,6 +223,13 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
             self.navigationController?.pushViewController(secondVC, animated: true)
         }
     }
+    @IBAction func copys(_ sender: AnyObject) {
+        
+        UIPasteboard.general.string = descriptionField.text
+        let ac = UIAlertController(title: "Description Copied", message: "Your description was copied successfully", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        present(ac, animated: true)
+    }
     
     @IBAction func shareImg(_ sender: Any) {
         let firstActivityItem = "\(String(describing: descriptionField))"
