@@ -10,14 +10,14 @@ import UIKit
 import CloudKit
 import SQLite3
 
-class SharePage: UIViewController, UITextFieldDelegate{
+class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
     
     
     let dataBase = CKContainer.default().publicCloudDatabase
 
     var img = UIImage()
     @IBOutlet weak var screen: UIImageView!
-    @IBOutlet weak var descriptionField: UITextField!
+    @IBOutlet weak var descriptionField: UITextView!
     @IBOutlet weak var label: UILabel!
     
     
@@ -110,13 +110,40 @@ class SharePage: UIViewController, UITextFieldDelegate{
          view.endEditing(true)
      }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-           guard let textFieldText = descriptionField.text,
-           let rangeOfTextToReplace = Range(range, in: textFieldText) else {return false}
-           let substringToReplace = textFieldText[rangeOfTextToReplace]
-           let count = textFieldText.count - substringToReplace.count + string.count
-           return count <= 250
-       }
+//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//           guard let textFieldText = descriptionField.text,
+//           let rangeOfTextToReplace = Range(range, in: textFieldText) else {return false}
+//           let substringToReplace = textFieldText[rangeOfTextToReplace]
+//           let count = textFieldText.count - substringToReplace.count + string.count
+//           return count <= 250
+//       }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        
+        guard let textFieldText = descriptionField.text,
+                  let rangeOfTextToReplace = Range(range, in: textFieldText) else {return false}
+                  let substringToReplace = textFieldText[rangeOfTextToReplace]
+                  let count = textFieldText.count - substringToReplace.count + text.count
+                  return count <= 250
+    }
+    
+//    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+//
+//        if !text.isEmpty {
+//            amountTypedString += text
+//            let newString = amountTypedString + "kr"
+//            myTextView.text = newString
+//        } else {
+//            amountTypedString = String(amountTypedString.characters.dropLast())
+//            if amountTypedString.characters.count > 0 {
+//                let newString = amountTypedString + "kr"
+//                myTextView.text = newString
+//            } else {
+//                myTextView.text = "0kr"
+//            }
+//        }
+//        return false
+//    }
 
     
     @IBAction func shareUnkown(_ sender: Any) {
