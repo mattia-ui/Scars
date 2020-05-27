@@ -355,6 +355,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     }
     func controllo2(){
         TableView.reloadData()
+
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -376,6 +377,12 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
                 return UITableViewCell()
             }
             cell.button.setTitle("TEDx", for: .normal)
+            cell.button.isSelected = false
+            for i in 0...selected.count - 1 {
+                if(selected[i] == "TEDx"){
+                    cell.button.isSelected = true
+                }
+            }
             cell.button.tag = 0
             return cell
         }else if indexPath.row == 2{
@@ -384,6 +391,12 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
                 return UITableViewCell()
             }
             cell.button.setTitle("Movies&TVShows", for: .normal)
+            cell.button.isSelected = false
+            for i in 0...selected.count - 1 {
+                if(selected[i] == "Movies&TVShows"){
+                    cell.button.isSelected = true
+                }
+            }
             cell.button.tag = 1
             return cell
         }else if indexPath.row == 3{
@@ -392,6 +405,12 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
                 return UITableViewCell()
             }
             cell.button.setTitle("Articles", for: .normal)
+            cell.button.isSelected = false
+            for i in 0...selected.count - 1 {
+                if(selected[i] == "Articles"){
+                    cell.button.isSelected = true
+                }
+            }
             cell.button.tag = 2
             return cell
         }else if indexPath.row == 4{
@@ -400,6 +419,12 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
                 return UITableViewCell()
             }
             cell.button.setTitle("Books", for: .normal)
+            cell.button.isSelected = false
+            for i in 0...selected.count - 1 {
+                if(selected[i] == "Books"){
+                    cell.button.isSelected = true
+                }
+            }
             cell.button.tag = 3
             return cell
         }else if indexPath.row == 5{
@@ -408,6 +433,12 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
                 return UITableViewCell()
             }
             cell.button.setTitle("Inspiring People", for: .normal)
+            cell.button.isSelected = false
+            for i in 0...selected.count - 1 {
+                if(selected[i] == "Inspiring People"){
+                    cell.button.isSelected = true
+                }
+            }
             cell.button.tag = 4
             return cell
         }else if indexPath.row == 6{
@@ -416,6 +447,12 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
                 return UITableViewCell()
             }
             cell.button.setTitle("Podcasts", for: .normal)
+            cell.button.isSelected = false
+            for i in 0...selected.count - 1 {
+                if(selected[i] == "Podcasts"){
+                    cell.button.isSelected = true
+                }
+            }
             cell.button.tag = 5
             return cell
         }else{
