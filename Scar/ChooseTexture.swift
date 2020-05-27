@@ -34,6 +34,9 @@ class ChooseTexture: UIViewController  {
                label.attributedText = attributedString
         
         
+        
+        
+        
     }
 
     @IBOutlet weak var sea: UIButton!
@@ -73,6 +76,9 @@ class ChooseTexture: UIViewController  {
 //        no.isHidden = false
         
         view2.isHidden = false
+        
+        results?.text = (String(describing: ChooseShape.shape1).dropFirst(10).dropLast(2))+" - \(String(describing: ChooseShape2.shape2).dropFirst(10).dropLast(2)) - \(String(describing: ChoosePalette.color).dropFirst(10).dropLast(2)) - \(String(describing: ChooseTexture.texture1).dropFirst(10).dropLast(2))"
+
         
 //        let blurEffect3 = UIBlurEffect(style: UIBlurEffect.Style.light)
 //                let blurEffectView3 = UIVisualEffectView(effect: blurEffect3)
