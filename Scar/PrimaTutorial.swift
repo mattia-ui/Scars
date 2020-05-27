@@ -70,6 +70,10 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         controllo2()
     }
     
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
     @IBAction func startPressed(_ sender: UIButton) {
         if(nome1.text == ""){
             
@@ -205,7 +209,9 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
-
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
     
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
