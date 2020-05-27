@@ -373,9 +373,9 @@ How you think others see it?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-fI-qoJ">
-                                <rect key="frame" x="929" y="752" width="194" height="55"/>
+                                <rect key="frame" x="929" y="753" width="194" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="lettsego"/>
+                                <state key="normal" image="Let'sgo"/>
                                 <connections>
                                     <segue destination="uc2-fZ-Jab" kind="show" id="S6c-zV-Y2y"/>
                                 </connections>
@@ -2627,7 +2627,7 @@ The two shapes on the outside recount </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="s1A-7h-Aw8"/>
+        <segue reference="wd9-1W-xO2"/>
         <segue reference="Cab-pX-8BL"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -2638,6 +2638,7 @@ The two shapes on the outside recount </string>
         <image name="Item1" width="29" height="27"/>
         <image name="Item2" width="26" height="22"/>
         <image name="Item3" width="29" height="29"/>
+        <image name="Let'sgo" width="194" height="55"/>
         <image name="Lettsegoazzurro" width="182" height="55"/>
         <image name="Marble" width="168" height="168"/>
         <image name="Onboarding1" width="3740" height="1350"/>
@@ -2666,7 +2667,6 @@ The two shapes on the outside recount </string>
         <image name="illustrazione3" width="376" height="444"/>
         <image name="illustrazioneCollage" width="414" height="262"/>
         <image name="insight5" width="370" height="131"/>
-        <image name="lettsego" width="194" height="55"/>
         <image name="linea" width="371" height="1"/>
         <image name="nav1-2" width="415" height="143"/>
         <image name="nextAzzurroSpento" width="182" height="55"/>

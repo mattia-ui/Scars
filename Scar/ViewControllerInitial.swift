@@ -182,7 +182,7 @@ class ViewControllerInitial: UIViewController, UIScrollViewDelegate {
             numberL = attivita[i].righe
         }
             
-        let image = UIImage(named: "button-1") as UIImage?
+        let image = UIImage(named: "MarkAsDone") as UIImage?
         let button = UIButton(type: UIButton.ButtonType.custom) as UIButton
         button.frame = CGRect(x: 84, y: 20 *  CGFloat(numberL) + 50, width: 244, height: 55)
         button.setImage(image, for: .normal)
