@@ -779,7 +779,7 @@ How you think others see it?</string>
             <objects>
                 <viewController id="lfU-OF-Bud" customClass="ChooseTexture" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pnh-IU-Nic">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jE3-g0-hTy">
@@ -1817,44 +1817,22 @@ tips and inspirational contents for you!</string>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Aen-nI-X0u"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ymt-6W-zKb"/>
                             </scrollView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u6C-90-pJx">
-                                <rect key="frame" x="0.0" y="266" width="414" height="592"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u6C-90-pJx">
+                                <rect key="frame" x="0.0" y="266" width="414" height="547"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="jtl-uh-CSj"/>
-                                    <constraint firstAttribute="height" constant="592" id="rtK-vE-PGW"/>
+                                    <constraint firstAttribute="height" constant="547" id="rtK-vE-PGW"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7Av-WO-Uyr">
                                     <size key="itemSize" width="412" height="363"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="50" height="50"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eix-Yp-2oL">
-                                        <rect key="frame" x="1" y="0.0" width="412" height="85"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="huF-rN-Wyo" customClass="FooterCollectionView" customModule="Scar" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="412" height="85"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tmb" translatesAutoresizingMaskIntoConstraints="NO" id="0zm-hy-VyW">
-                                                    <rect key="frame" x="157" y="8" width="92" height="19"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6t-hC-bz4">
-                                                    <rect key="frame" x="185" y="35" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="412" height="85"/>
-                                    </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" restorationIdentifier="ins" reuseIdentifier="ins" id="tBk-G5-O86" customClass="InightsCollection" customModule="Scar" customModuleProvider="target">
-                                        <rect key="frame" x="1" y="95" width="412" height="363"/>
+                                        <rect key="frame" x="1" y="0.0" width="412" height="363"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="insightsCell" insetsLayoutMarginsFromSafeArea="NO" id="xtB-u9-g6l">
                                             <rect key="frame" x="0.0" y="0.0" width="412" height="363"/>
@@ -1944,7 +1922,45 @@ tips and inspirational contents for you!</string>
                                             <outlet property="title" destination="eqz-fq-sWa" id="y3a-JC-mvq"/>
                                         </connections>
                                     </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="footer" id="eix-Yp-2oL" customClass="FooterCollectionView" customModule="Scar" customModuleProvider="target">
+                                        <rect key="frame" x="1" y="373" width="412" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="huF-rN-Wyo">
+                                            <rect key="frame" x="0.0" y="0.0" width="412" height="85"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tmb" translatesAutoresizingMaskIntoConstraints="NO" id="0zm-hy-VyW">
+                                                    <rect key="frame" x="157" y="8" width="92" height="19"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="19" id="BKk-xZ-jf6"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6t-hC-bz4">
+                                                    <rect key="frame" x="185" y="35" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0zm-hy-VyW" firstAttribute="top" secondItem="huF-rN-Wyo" secondAttribute="topMargin" id="CAe-xw-IV9"/>
+                                                <constraint firstItem="l6t-hC-bz4" firstAttribute="top" secondItem="0zm-hy-VyW" secondAttribute="bottom" constant="8" id="FNA-NZ-P1p"/>
+                                                <constraint firstItem="l6t-hC-bz4" firstAttribute="centerX" secondItem="huF-rN-Wyo" secondAttribute="centerX" id="VJe-Pf-lPX"/>
+                                                <constraint firstItem="0zm-hy-VyW" firstAttribute="leading" secondItem="huF-rN-Wyo" secondAttribute="leading" constant="157" id="z3e-Qu-ElP"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" red="0.99607843139999996" green="0.90588235289999997" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="customSize" width="412" height="85"/>
+                                        <connections>
+                                            <outlet property="image" destination="0zm-hy-VyW" id="VX0-p6-tud"/>
+                                            <outlet property="text" destination="l6t-hC-bz4" id="vVh-cU-yuX"/>
+                                        </connections>
+                                    </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kt2-RQ-q2f">
+                                    <rect key="frame" x="0.0" y="458" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="Aa9-1L-etK" id="ULO-xT-xTb"/>
                                     <outlet property="delegate" destination="Aa9-1L-etK" id="OIh-yg-nxO"/>
@@ -1968,13 +1984,13 @@ tips and inspirational contents for you!</string>
                             <constraint firstItem="RZj-ub-Qfp" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="-32" id="Lgw-CJ-BHB"/>
                             <constraint firstItem="ZS4-u3-Tl0" firstAttribute="top" secondItem="MOo-wB-kmc" secondAttribute="bottom" constant="28" id="Pp6-Uj-8hY"/>
                             <constraint firstItem="9Ch-hi-KT7" firstAttribute="trailing" secondItem="MOo-wB-kmc" secondAttribute="trailing" constant="26" id="VYE-Aj-B2S"/>
-                            <constraint firstItem="u6C-90-pJx" firstAttribute="top" secondItem="ZS4-u3-Tl0" secondAttribute="bottom" constant="1" id="Y3f-RT-jW6"/>
+                            <constraint firstItem="u6C-90-pJx" firstAttribute="top" secondItem="ZS4-u3-Tl0" secondAttribute="bottom" id="Y3f-RT-jW6"/>
                             <constraint firstItem="mCe-mq-vgd" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="58" id="aDc-kV-piZ"/>
                             <constraint firstItem="MOo-wB-kmc" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="58" id="fz1-9n-uFF"/>
                             <constraint firstItem="ZS4-u3-Tl0" firstAttribute="top" secondItem="mCe-mq-vgd" secondAttribute="bottom" constant="27" id="gcf-GI-WQW"/>
                             <constraint firstItem="RZj-ub-Qfp" firstAttribute="leading" secondItem="u6C-90-pJx" secondAttribute="leading" constant="-13" id="h5F-ch-vYB"/>
                             <constraint firstItem="u6C-90-pJx" firstAttribute="leading" secondItem="9Ch-hi-KT7" secondAttribute="leading" id="pw4-nK-1q3"/>
-                            <constraint firstItem="u6C-90-pJx" firstAttribute="top" secondItem="ZS4-u3-Tl0" secondAttribute="bottom" constant="1" id="ut0-dH-ues"/>
+                            <constraint firstItem="u6C-90-pJx" firstAttribute="top" secondItem="ZS4-u3-Tl0" secondAttribute="bottom" id="ut0-dH-ues"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Ch-hi-KT7"/>
                     </view>
@@ -2009,7 +2025,7 @@ tips and inspirational contents for you!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhW-b9-vYz">
-                                <rect key="frame" x="15" y="254" width="386" height="76"/>
+                                <rect key="frame" x="15" y="264.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2022,7 +2038,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7I-AD-BUJ">
-                                <rect key="frame" x="15" y="352" width="386" height="76"/>
+                                <rect key="frame" x="15" y="362.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2035,7 +2051,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzd-QM-ZsD">
-                                <rect key="frame" x="15" y="450" width="386" height="76"/>
+                                <rect key="frame" x="15" y="460.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2048,7 +2064,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yP-st-eET">
-                                <rect key="frame" x="15" y="156" width="386" height="76"/>
+                                <rect key="frame" x="15" y="166.5" width="386" height="76"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
@@ -2063,7 +2079,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZk-O6-Ha0">
-                                <rect key="frame" x="15" y="646" width="386" height="76"/>
+                                <rect key="frame" x="15" y="656.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2076,7 +2092,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaW-2m-fzZ">
-                                <rect key="frame" x="15" y="548" width="386" height="76"/>
+                                <rect key="frame" x="15" y="558.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2089,13 +2105,13 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalize your insights section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLV-JE-bPB">
-                                <rect key="frame" x="22" y="77" width="372" height="22"/>
+                                <rect key="frame" x="22" y="83.5" width="372" height="26"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Interests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICX-Lj-BMb">
-                                <rect key="frame" x="22" y="32" width="372" height="38"/>
+                                <rect key="frame" x="22" y="32" width="372" height="44.5"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

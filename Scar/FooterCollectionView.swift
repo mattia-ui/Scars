@@ -9,5 +9,6 @@
 import UIKit
 
 class FooterCollectionView: UICollectionViewCell {
-    
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var text: UILabel!
 }
