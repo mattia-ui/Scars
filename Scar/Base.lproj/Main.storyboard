@@ -1612,8 +1612,8 @@ tips and inspirational contents for you!</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nav1-2" translatesAutoresizingMaskIntoConstraints="NO" id="IRL-vy-kpc">
                                 <rect key="frame" x="0.0" y="40" width="414" height="176"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg9-aS-nb6">
-                                <rect key="frame" x="22" y="139" width="10" height="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg9-aS-nb6">
+                                <rect key="frame" x="22" y="131" width="17" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="BBY-dP-QTs"/>
                                     <constraint firstAttribute="width" constant="10" id="qre-qh-atK"/>

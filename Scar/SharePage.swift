@@ -162,7 +162,7 @@ class SharePage: UIViewController, UITextFieldDelegate{
         
         DispatchQueue.main.async{
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let secondVC = storyboard.instantiateViewController(withIdentifier: "settoreImage")  as! Schermata3
+            let secondVC = storyboard.instantiateViewController(withIdentifier: "postCollage")  as! PostCollage
             self.navigationController?.pushViewController(secondVC, animated: true)
         }
     }
