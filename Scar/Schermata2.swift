@@ -112,14 +112,23 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
             let footerView = myCollectionView.dequeueReusableCell(withReuseIdentifier: "footer", for: indexPath) as! FooterCollectionView
             if(imgButt == "SeeMoreMovies"){
                 footerView.image.image = UIImage(named: "tmb")
-                footerView.text.text = "This product uses the TMDb API but is not endorsed or certified by TMDb."
+                footerView.text.text = "This product uses the TMDb API but\nis not endorsed or certified by TMDb."
             }else if(imgButt == "SeeMore"){
                 footerView.image.image = UIImage(named: "tedx")
-                footerView.text.text = "This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives4.0 International License "
+                let attributedString = NSMutableAttributedString(string: "This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives4.0 International License ")
+                attributedString.addAttribute(.link, value:"https://creativecommons.org/licenses/by-nc-nd/4.0/", range: NSRange(location: 30, length: 82))
+                footerView.text.attributedText = attributedString
+            } else {
+                footerView.text.text = ""
             }
             return footerView
         }
         fatalError()
+    }
+    
+    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+        UIApplication.shared.open(URL)
+        return false
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -138,6 +147,11 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
             cell.div.image = UIImage(named: "divisore")
         } else {
             cell.div.image = UIImage(named: "")
+        }
+        if(imgButt == "SeeMoreMovies" || imgButt == "SeeMore"){
+            if(indexPath.row == contenuto.count - 1){
+                cell.div.image = UIImage(named: "divisore")
+            }
         }
         if(imgButt == "SeeMoreMovies"){
             if(indexPath.row < Schermata2.film.count){
