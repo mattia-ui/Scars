@@ -77,7 +77,7 @@ class ChooseTexture: UIViewController  {
         
         view2.isHidden = false
         
-        results?.text = (String(describing: ChooseShape.shape1).dropFirst(10).dropLast(2))+" - \(String(describing: ChooseShape2.shape2).dropFirst(10).dropLast(2)) - \(String(describing: ChoosePalette.color).dropFirst(10).dropLast(2)) - \(String(describing: ChooseTexture.texture1).dropFirst(10).dropLast(2))"
+        results?.text = (String(describing: ChooseShape.shape1).dropFirst(10).dropLast(2).capitalized)+" - \(String(describing: ChooseShape2.shape2).dropFirst(10).dropLast(2).capitalized) - \(String(describing: ChoosePalette.color).dropFirst(10).dropLast(2).capitalized) - \(String(describing: ChooseTexture.texture1).dropFirst(10).dropLast(2).capitalized)"
 
         
 //        let blurEffect3 = UIBlurEffect(style: UIBlurEffect.Style.light)

@@ -109,128 +109,6 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        
-        var db: OpaquePointer?
-        let dateNow = Date()
-        let calendar2 = Calendar.current
-        let components2 = calendar2.dateComponents([.year, .month, .day, .hour, .minute, .second, .weekday], from: dateNow)
-        let month2 = components2.month ?? 0
-        let day2 = components2.day ?? 0
-        let hour2 = components2.hour ?? 0
-        let minute2 = components2.minute ?? 0
-        
-        if(hour2 > 12){
-            imagineOrario.image = UIImage(named: "Afternoon")
-            orarioSetUp.text = "Good Afternoon,"
-            
-        } else if (hour2 > 19){
-            imagineOrario.image = UIImage(named: "Evening")
-            orarioSetUp.text = "Good Evening,"
-        }else{
-            imagineOrario.image = UIImage(named: "Morning")
-            orarioSetUp.text = "Good Morning,"
-        }
-        
-        //Si connette al DB
-        let fileURL = try!
-        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
-        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
-            print("error opening database")
-        }
-        
-        //Recupera Valore
-        var stmt: OpaquePointer?
-        var queryString = "SELECT * FROM Nome"
-        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
-        let errmsg = String(cString: sqlite3_errmsg(db)!)
-            print("error preparing insert: \(errmsg)")
-            return
-        }
-        var nomeData = ""
-        while(sqlite3_step(stmt) == SQLITE_ROW){
-            nomeData = String(cString: sqlite3_column_text(stmt, 1))
-        }
-        
-        nome.text = String(nomeData.dropFirst(10).dropLast(2)) + "!"
-        
-        
-        //Recupera Valore
-        queryString = "SELECT * FROM Date"
-        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
-        let errmsg = String(cString: sqlite3_errmsg(db)!)
-            print("error preparing insert: \(errmsg)")
-            return
-        }
-        
-        var m = 0, day = 0, h = 0, min = 0
-        while(sqlite3_step(stmt) == SQLITE_ROW && m < 1){
-            m = Int(String(cString: sqlite3_column_text(stmt, 1))) ?? 0
-            day = Int(String(cString: sqlite3_column_text(stmt, 2))) ?? 0
-            h = Int(String(cString: sqlite3_column_text(stmt, 3))) ?? 0
-            min = Int(String(cString: sqlite3_column_text(stmt, 4))) ?? 0
-        }
-        
-        //Recupera Valore
-        queryString = "SELECT * FROM Week"
-        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
-        let errmsg = String(cString: sqlite3_errmsg(db)!)
-            print("error preparing insert: \(errmsg)")
-            return
-        }
-        
-        var w = 0
-        let week = Calendar.current.component(.weekday, from: dateNow)
-        while(sqlite3_step(stmt) == SQLITE_ROW){
-            w = Int(String(cString: sqlite3_column_text(stmt, 1))) ?? 0
-        }
-        numeroWeek.text = "n.\(w + 1)"
-        
-        if(month2 > m || day2 > day){
-            queryString = "UPDATE Date SET mese = '\(month2)', giorno = '\(day2)', ora = '\(hour2)', minuti = '\(minute2)';"
-            sqlite3_prepare(db, queryString, -1, &stmt, nil)
-            sqlite3_step(stmt)
-            print("Saved successfully")
-            
-            queryString = "UPDATE InfoSchermata1 SET c1 = 'unchecked', c2 = 'unchecked', c3 = 'unchecked', c4 = 'unchecked', c5 = 'unchecked', c6 = 'unchecked';"
-            sqlite3_prepare(db, queryString, -1, &stmt, nil)
-            sqlite3_step(stmt)
-            print("Saved successfully")
-            
-            if(week == 1){
-                w = w + 1
-                queryString = "UPDATE Week SET valore = '\(w)';"
-                sqlite3_prepare(db, queryString, -1, &stmt, nil)
-                sqlite3_step(stmt)
-                print("Saved successfully")
-            }
-        }
-        
-        Schermata1.weekly = weeklyInfo[w]
-        imageW.image = UIImage(named: Schermata1.weekly.image)
-//        titleW.text = Schermata1.weekly.title
-        descW.text = Schermata1.weekly.descr
-        
-        //Recupera Valore
-        queryString = "SELECT * FROM InfoSchermata1"
-        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
-        let errmsg = String(cString: sqlite3_errmsg(db)!)
-            print("error preparing insert: \(errmsg)")
-            return
-        }
-        
-        while(sqlite3_step(stmt) == SQLITE_ROW){
-            Schermata1.allImages[0] = String(cString: sqlite3_column_text(stmt, 1))
-            Schermata1.allImages[1] = String(cString: sqlite3_column_text(stmt, 2))
-            Schermata1.allImages[2] = String(cString: sqlite3_column_text(stmt, 3))
-            Schermata1.allImages[3] = String(cString: sqlite3_column_text(stmt, 4))
-            Schermata1.allImages[4] = String(cString: sqlite3_column_text(stmt, 5))
-            Schermata1.allImages[5] = String(cString: sqlite3_column_text(stmt, 6))
-            Schermata1.allImages[6] = String(cString: sqlite3_column_text(stmt, 7))
-            Schermata1.allImages[7] = String(cString: sqlite3_column_text(stmt, 8))
-            Schermata1.allImages[8] = String(cString: sqlite3_column_text(stmt, 9))
-        }
-        update2()
-        createObservers()
     }
 
     @objc func update(notification: NSNotification) {
@@ -288,6 +166,125 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         UserDefaults.standard.set(true, forKey: "LaunchedBefore")
         let layout = UICollectionViewFlowLayout()
         
+        var db: OpaquePointer?
+        let dateNow = Date()
+        let calendar2 = Calendar.current
+        let components2 = calendar2.dateComponents([.year, .month, .day, .hour, .minute, .second, .weekday], from: dateNow)
+        let month2 = components2.month ?? 0
+        let day2 = components2.day ?? 0
+        let hour2 = components2.hour ?? 0
+        let minute2 = components2.minute ?? 0
+                
+        if(hour2 > 12){
+            imagineOrario.image = UIImage(named: "Afternoon")
+            orarioSetUp.text = "Good Afternoon,"
+        } else if (hour2 > 19){
+            imagineOrario.image = UIImage(named: "Evening")
+            orarioSetUp.text = "Good Evening,"
+        }else{
+            imagineOrario.image = UIImage(named: "Morning")
+            orarioSetUp.text = "Good Morning,"
+        }
+                
+        //Si connette al DB
+        let fileURL = try!
+        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+            print("error opening database")
+        }
+                
+        //Recupera Valore
+        var stmt: OpaquePointer?
+        var queryString = "SELECT * FROM Nome"
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error preparing insert: \(errmsg)")
+            return
+        }
+        var nomeData = ""
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            nomeData = String(cString: sqlite3_column_text(stmt, 1))
+        }
+                
+        nome.text = String(nomeData.dropFirst(10).dropLast(2)) + "!"
+                
+        //Recupera Valore
+        queryString = "SELECT * FROM Date"
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error preparing insert: \(errmsg)")
+            return
+        }
+                
+        var m = 0, day = 0, h = 0, min = 0
+        while(sqlite3_step(stmt) == SQLITE_ROW && m < 1){
+            m = Int(String(cString: sqlite3_column_text(stmt, 1))) ?? 0
+            day = Int(String(cString: sqlite3_column_text(stmt, 2))) ?? 0
+            h = Int(String(cString: sqlite3_column_text(stmt, 3))) ?? 0
+            min = Int(String(cString: sqlite3_column_text(stmt, 4))) ?? 0
+        }
+                
+        //Recupera Valore
+        queryString = "SELECT * FROM Week"
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error preparing insert: \(errmsg)")
+            return
+        }
+                
+        var w = 0
+        let week = Calendar.current.component(.weekday, from: dateNow)
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            w = Int(String(cString: sqlite3_column_text(stmt, 1))) ?? 0
+        }
+        numeroWeek.text = "n.\(w + 1)"
+                
+        if(month2 > m || day2 > day){
+            queryString = "UPDATE Date SET mese = '\(month2)', giorno = '\(day2)', ora = '\(hour2)', minuti = '\(minute2)';"
+            sqlite3_prepare(db, queryString, -1, &stmt, nil)
+            sqlite3_step(stmt)
+            print("Saved successfully")
+                    
+            queryString = "UPDATE InfoSchermata1 SET c1 = 'unchecked', c2 = 'unchecked', c3 = 'unchecked', c4 = 'unchecked', c5 = 'unchecked', c6 = 'unchecked';"
+            sqlite3_prepare(db, queryString, -1, &stmt, nil)
+            sqlite3_step(stmt)
+            print("Saved successfully")
+                    
+            if(week == 1){
+                w = w + 1
+                queryString = "UPDATE Week SET valore = '\(w)';"
+                sqlite3_prepare(db, queryString, -1, &stmt, nil)
+                sqlite3_step(stmt)
+                print("Saved successfully")
+            }
+        }
+                
+        Schermata1.weekly = weeklyInfo[w]
+        imageW.image = UIImage(named: Schermata1.weekly.image)
+//        titleW.text = Schermata1.weekly.title
+        descW.text = Schermata1.weekly.descr
+                
+        //Recupera Valore
+        queryString = "SELECT * FROM InfoSchermata1"
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error preparing insert: \(errmsg)")
+            return
+        }
+                
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            Schermata1.allImages[0] = String(cString: sqlite3_column_text(stmt, 1))
+            Schermata1.allImages[1] = String(cString: sqlite3_column_text(stmt, 2))
+            Schermata1.allImages[2] = String(cString: sqlite3_column_text(stmt, 3))
+            Schermata1.allImages[3] = String(cString: sqlite3_column_text(stmt, 4))
+            Schermata1.allImages[4] = String(cString: sqlite3_column_text(stmt, 5))
+            Schermata1.allImages[5] = String(cString: sqlite3_column_text(stmt, 6))
+            Schermata1.allImages[6] = String(cString: sqlite3_column_text(stmt, 7))
+            Schermata1.allImages[7] = String(cString: sqlite3_column_text(stmt, 8))
+            Schermata1.allImages[8] = String(cString: sqlite3_column_text(stmt, 9))
+        }
+        update2()
+        createObservers()
     }
     
     @objc func go(sender : MyTapGesture) {
