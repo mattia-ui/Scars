@@ -39,7 +39,8 @@ var structIns = [ins(
         Cont(image: "insight3", title:"Unbreakable Kimmy Schmidt", descr: "Titus is overweight, black, and gay, and he never feels lesser for it. Kimmy is also body-positive, she doesn't see size or imperfections. We could all afford to be that way!", fonte:"", link: "https://www.youtube.com/watch?v=Hl4bOuGNMwo"), Cont(image: "insight4", title:"\n\n POSE", descr: "American drama television series about New York City's African-American and Latino LGBTQ and gender-nonconforming ballroom culture scene in the 1980s. Is this enough?", fonte:"", link: "https://www.youtube.com/watch?v=_t4YuPXdLZw"),
         Cont(image: "insight4", title:"\n\nBorder", descr: "Penelope is a modern romantic tale about a young aristocratic heiress born under a curse that can only be broken when she finds true love with 'one who will accept her as one of their own.'", fonte:"", link: "https://www.youtube.com/watch?v=QMs28A1s1OA"),
         Cont(image: "insight4", title:"\n\nGlow", descr: "They were a real group of women wrestlers, made up of women in every different race and size. Body positivity means accepting there are different bodies and that they are all beautiful!", fonte:"", link: "https://www.youtube.com/watch?v=wnKEoXbBTEw"), Cont(image: "insight4", title:"\n\nHairspray", descr: "Ricki Lake, aka Tracy Turnblad, has always been a body positive icon, in Hairspray she fights the shocking segregation enforced by her favorite TV show after she wins a chance to dance on it.", fonte:"", link: "https://www.youtube.com/watch?v=SUoG7mqCixI"),
-        Cont(image: "insight4", title:"\n\nUnorthodox", descr: "Esty is living unhappily in an arranged marriage and an ultra-Orthodox community, she runs away to discover life outside her community and rejecting all of the beliefs she grew up with.", fonte:"", link: "https://www.youtube.com/watch?v=-zVhRId0BTw")],
+        Cont(image: "insight4", title:"\n\nUnorthodox", descr: "Esty is living unhappily in an arranged marriage and an ultra-Orthodox community, she runs away to discover life outside her community and rejecting all of the beliefs she grew up with.", fonte:"", link: "https://www.youtube.com/watch?v=-zVhRId0BTw"),
+        Cont(image: "tmb", title:"", descr: "", fonte:"", link: "")],
     mov:[
         Cont(image: "InsightA6", title:"My scars: journey to body acceptance", descr: "'My accidental fall into boiling water happened at home, when I was three. I ended up in hospital on life support. Many operations followed….'", fonte:"From Sylvia Mac on mentalhealth.org", link: "https://www.mentalhealth.org.uk/stories/my-scars-journey-body-acceptance"),
         Cont(image: "InsightA1", title:"How Scars Affect Psychosocial Well-Being", descr: "'…the psychosocial impact of scarring from the treatment of facial skin cancers has been shown to affect the young, old, male and female alike.'", fonte:"From Katie Delach on pennmedicine.org", link: "https://www.pennmedicine.org/news/news-blog/2015/may/beyond-skin-deep-how-scars-aff"), Cont(image: "InsightA3", title:"The effects of scars on mind", descr: "'The research suggests a healthy body image and high self-esteem can lead to you feeling good about yourself.'", fonte:"On nourisilmd.co.uk", link: "https://www.nourisilmd.co.uk/effects-of-scars-on-the-mind/"),
@@ -110,13 +111,6 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = myCollectionView.dequeueReusableCell(withReuseIdentifier: "ins", for: indexPath) as! InightsCollection
-        if(imgButt == "SeeMoreMovies"){
-            if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
-                cell.image.image = UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent(Schermata2.film[indexPath.row] + ".png").path)
-            }
-        }else{
-            cell.image.image = UIImage(named: contenuto[indexPath.row].image)
-        }
         cell.title.text = contenuto[indexPath.row].title
         cell.label.text = contenuto[indexPath.row].descr
         cell.fonte.text = contenuto[indexPath.row].fonte
@@ -127,9 +121,26 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         let image = UIImage(named: imgButt)
         cell.button.setImage(image, for: .normal)
         if(indexPath.row < contenuto.count - 1){
-            cell.div.image = UIImage(named: "divisore")
+            if(imgButt == "SeeMoreMovies" && indexPath.row == Schermata2.film.count - 1 ){
+                    cell.div.image = UIImage(named: "")
+            } else {
+                    cell.div.image = UIImage(named: "divisore")
+            }
         } else {
             cell.div.image = UIImage(named: "")
+        }
+        if(imgButt == "SeeMoreMovies"){
+            if(indexPath.row < Schermata2.film.count){
+                if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
+                    cell.image.image = UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent(Schermata2.film[indexPath.row] + ".png").path)
+                } else {}
+            } else {
+                cell.image.image = UIImage(named: contenuto[indexPath.row].image)
+                let image = UIImage(named: "")
+                cell.button.setImage(image, for: .normal)
+            }
+        } else {
+            cell.image.image = UIImage(named: contenuto[indexPath.row].image)
         }
         return cell
     }
