@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9C-PY-zlv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9C-PY-zlv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -2394,24 +2394,10 @@ The two shapes on the outside recount </string>
                                                         <rect key="frame" x="22" y="994" width="271" height="26"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <attributedString key="attributedText">
-                                                            <fragment content="Discover more">
+                                                            <fragment content="Discover more about Kinsugi">
                                                                 <attributes>
                                                                     <color key="NSColor" red="0.6705882352941176" green="0.86274509803921573" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                    <font key="NSFont" metaFont="system" size="20"/>
-                                                                    <integer key="NSUnderline" value="1"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content=" ">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.6705882352941176" green="0.86274509803921573" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                    <font key="NSFont" metaFont="system" size="26"/>
-                                                                    <integer key="NSUnderline" value="1"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="about Kinsugi">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.6705882352941176" green="0.86274509803921573" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                    <font key="NSFont" metaFont="system" size="20"/>
+                                                                    <font key="NSFont" size="20" name="CeraPro-Regular"/>
                                                                     <integer key="NSUnderline" value="1"/>
                                                                 </attributes>
                                                             </fragment>
@@ -2543,8 +2529,8 @@ The two shapes on the outside recount </string>
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content="Copy caption">
                                                                     <attributes>
-                                                                        <color key="NSColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                        <font key="NSFont" metaFont="system" size="20"/>
+                                                                        <color key="NSColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" size="20" name="CeraPro-Regular"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         <integer key="NSUnderline" value="1"/>
                                                                     </attributes>
@@ -2563,7 +2549,7 @@ The two shapes on the outside recount </string>
                                                                 <fragment content="Not now">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <font key="NSFont" metaFont="system" size="20"/>
+                                                                        <font key="NSFont" size="20" name="CeraPro-Regular"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         <integer key="NSUnderline" value="1"/>
                                                                     </attributes>
