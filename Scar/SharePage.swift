@@ -163,6 +163,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
            guard textView.text != nil else { return true }
            let currentText = nsString as NSString
         descriptionField.text = String(String(descriptionField.text).dropLast(10))
+        descriptionField.font = UIFont(name: "CeraPro-Medium-Italic", size: 20)
         descriptionField.text += "\(newText) #skinsugi"
 //           countLabel.text = "\(textView.text.count + (newText.count - range.length))/250"
                    
