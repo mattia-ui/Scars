@@ -44,6 +44,16 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
         
+        miniSym.layer.borderWidth = 0.6
+        miniSym.layer.borderColor = (UIColor.init(named: "#2E2933")?.cgColor)
+        miniSym.layer.cornerRadius = 15
+//        miniSym.layer.masksToBounds = true
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 3
+        layout.minimumLineSpacing = 3
+        
+        myCollectionView.collectionViewLayout = layout
         
         var db: OpaquePointer?
         var stmt: OpaquePointer?
