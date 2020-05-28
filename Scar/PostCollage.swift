@@ -39,19 +39,19 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
     }
 
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
         
         miniSym.layer.borderWidth = 0.6
+        miniSym.layer.masksToBounds = true
         miniSym.layer.borderColor = (UIColor.init(named: "#2E2933")?.cgColor)
-        miniSym.layer.cornerRadius = 15
-//        miniSym.layer.masksToBounds = true
-        
+        miniSym.layer.cornerRadius = miniSym.frame.size.width/2
+        miniSym.clipsToBounds = true
         if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
         miniSym.image = UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent("collage").path)
         }
+        
         
         let layout = UICollectionViewFlowLayout()
         layout.minimumInteritemSpacing = 3
