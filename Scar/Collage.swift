@@ -620,6 +620,12 @@ class Collage: UIViewController, UITextFieldDelegate  {
         
             
         screen.image = cropBottomImage(image: view.snapshot() ?? UIImage())
+        if let image = screen.image {
+            if let data = image.pngData() {
+                let filename = getDocumentsDirectory().appendingPathComponent("collage")
+                try? data.write(to: filename)
+            }
+        }
 //      screen.image = view.snapshot()
         
         var  normalText = "The pattern in the large circle describes\n"
@@ -731,6 +737,11 @@ class Collage: UIViewController, UITextFieldDelegate  {
 
 
         }
+    }
+    
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
     }
     
 }
