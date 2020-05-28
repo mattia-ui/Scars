@@ -53,11 +53,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         }
         
         
-        let layout = UICollectionViewFlowLayout()
-        layout.minimumInteritemSpacing = 3
-        layout.minimumLineSpacing = 3
         
-        myCollectionView.collectionViewLayout = layout
         
         var db: OpaquePointer?
         var stmt: OpaquePointer?
@@ -89,13 +85,14 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         if(d == "si"){}
         else {
             viewL.isHidden = true
-            _ = UIScreen.main.bounds.width/3 - 5
+            _ = UIScreen.main.bounds.width/3 - 3
             let layout = UICollectionViewFlowLayout()
-            layout.sectionInset = UIEdgeInsets(top: 20, left: 3, bottom: 10, right: 0)
-            layout.itemSize = CGSize(width: 115, height: 115)
-            layout.minimumLineSpacing = 5
-            layout.minimumInteritemSpacing = 5
+            layout.sectionInset = UIEdgeInsets(top: 20, left: 7, bottom: 5, right: 7)
+            layout.itemSize = CGSize(width: 129, height: 129)
+            layout.minimumLineSpacing = 3
+            layout.minimumInteritemSpacing = 1
             myCollectionView.collectionViewLayout = layout
+
         
             let dataBase = CKContainer.default().publicCloudDatabase
             let predicate = NSPredicate(value: true)
