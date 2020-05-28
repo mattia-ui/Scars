@@ -10,5 +10,10 @@ import UIKit
 
 class FooterCollectionView: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var text: UILabel!
+    @IBOutlet weak var text: UITextView!
+    
+    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+        UIApplication.shared.open(URL)
+        return false
+    }
 }
