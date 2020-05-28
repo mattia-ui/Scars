@@ -15,12 +15,15 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
     static var allImages: [UIImage]? = []
     @IBOutlet weak var viewL: UIView!
      var m = 0
+    @IBOutlet weak var miniSym: UIImageView!
     
     @IBOutlet weak var myCollectionView: UICollectionView!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
+//        let sh = Collage()
+//        miniSym.image = sh.screen?.image
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -29,14 +32,18 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! CollectionViewCell
+        cell.layer.borderColor = (UIColor.init(named: "#2E2933")?.cgColor)
+        cell.layer.borderWidth = 0.8
         cell.myImageView.image = SecretCollection.allImages?[indexPath.row]
         return cell
     }
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
+        
         
         var db: OpaquePointer?
         var stmt: OpaquePointer?

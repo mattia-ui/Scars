@@ -24,6 +24,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         screen.image = img
+
     }
     
     override func viewDidLoad() {
@@ -223,6 +224,10 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let secondVC = storyboard.instantiateViewController(withIdentifier: "postCollage")  as! PostCollage
             self.navigationController?.pushViewController(secondVC, animated: true)
+            
+            let PS = PostCollage()
+            PS.miniSym.image = self.img
+
         }
     }
     @IBAction func copys(_ sender: AnyObject) {
@@ -275,6 +280,10 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let secondVC = storyboard.instantiateViewController(withIdentifier: "postCollage")  as! PostCollage
         self.navigationController?.pushViewController(secondVC, animated: true)
+        
+        let PS = PostCollage()
+        PS.miniSym.image = self.img
+
     }
 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9C-PY-zlv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9C-PY-zlv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -102,13 +102,30 @@
             <objects>
                 <viewController storyboardIdentifier="postCollage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GG3-f1-cQ8" customClass="PostCollage" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XOD-ds-Jxc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nrD-Zz-bfZ">
-                                <rect key="frame" x="20" y="86" width="374" height="724"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navInsta" translatesAutoresizingMaskIntoConstraints="NO" id="CVc-ep-RVc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="nyz-SP-8JV"/>
+                                    <constraint firstAttribute="width" constant="414" id="raO-wN-XEM"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2-" translatesAutoresizingMaskIntoConstraints="NO" id="Cc2-aZ-ghq">
+                                <rect key="frame" x="321" y="87" width="54" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="aD6-zQ-YU2"/>
+                                    <constraint firstAttribute="height" constant="54" id="fx5-iv-JtB"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nrD-Zz-bfZ">
+                                <rect key="frame" x="20" y="193" width="374" height="617"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="617" id="E3c-yu-Yrv"/>
+                                    <constraint firstAttribute="width" constant="374" id="Xdz-9O-Tzb"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XkC-uk-eSx">
                                     <size key="itemSize" width="115" height="115"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -174,17 +191,30 @@ Masterpiece!</string>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nrD-Zz-bfZ" firstAttribute="top" secondItem="CVc-ep-RVc" secondAttribute="bottom" constant="8" id="5gg-Hu-6df"/>
+                            <constraint firstItem="Cc2-aZ-ghq" firstAttribute="top" secondItem="neX-xS-Nid" secondAttribute="top" constant="87" id="5ik-QD-qKN"/>
+                            <constraint firstItem="Cc2-aZ-ghq" firstAttribute="leading" secondItem="neX-xS-Nid" secondAttribute="leading" constant="321" id="Em2-Tt-cWk"/>
+                            <constraint firstItem="nrD-Zz-bfZ" firstAttribute="leading" secondItem="neX-xS-Nid" secondAttribute="leading" constant="20" id="MRQ-SS-YMh"/>
+                            <constraint firstItem="neX-xS-Nid" firstAttribute="trailing" secondItem="nrD-Zz-bfZ" secondAttribute="trailing" constant="20" id="V9k-9e-7Bh"/>
+                            <constraint firstItem="neX-xS-Nid" firstAttribute="trailing" secondItem="Cc2-aZ-ghq" secondAttribute="trailing" constant="39" id="WKb-4m-e9u"/>
+                            <constraint firstItem="CVc-ep-RVc" firstAttribute="trailing" secondItem="neX-xS-Nid" secondAttribute="trailing" id="WjX-tp-nrN"/>
+                            <constraint firstItem="neX-xS-Nid" firstAttribute="bottom" secondItem="Cc2-aZ-ghq" secondAttribute="bottom" constant="667" id="XnU-xc-zEZ"/>
+                            <constraint firstItem="CVc-ep-RVc" firstAttribute="top" secondItem="neX-xS-Nid" secondAttribute="top" id="n6n-bR-Uj8"/>
+                            <constraint firstItem="CVc-ep-RVc" firstAttribute="leading" secondItem="neX-xS-Nid" secondAttribute="leading" id="nqN-ik-KHg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="neX-xS-Nid"/>
                     </view>
                     <navigationItem key="navigationItem" id="PSD-kx-GFI"/>
                     <connections>
+                        <outlet property="miniSym" destination="Cc2-aZ-ghq" id="goM-Sb-L5z"/>
                         <outlet property="myCollectionView" destination="nrD-Zz-bfZ" id="Jy4-K9-NGG"/>
                         <outlet property="viewL" destination="y8C-NL-mQ0" id="c2i-jo-Z5x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kWN-Gg-7Wb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="657.97101449275362" y="1560.9375"/>
+            <point key="canvasLocation" x="656.52173913043487" y="1560.9375"/>
         </scene>
         <!--Prima Tutorial-->
         <scene sceneID="7e0-CN-NnR">
@@ -779,7 +809,7 @@ How you think others see it?</string>
             <objects>
                 <viewController id="lfU-OF-Bud" customClass="ChooseTexture" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pnh-IU-Nic">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jE3-g0-hTy">
@@ -2634,10 +2664,12 @@ The two shapes on the outside recount </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="nIG-wF-CdU"/>
         <segue reference="wd9-1W-xO2"/>
         <segue reference="Cab-pX-8BL"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="2-" width="101.5" height="101.5"/>
         <image name="Crater" width="168" height="168"/>
         <image name="DoneSpento" width="182" height="55"/>
         <image name="Group 48" width="508" height="518"/>
@@ -2676,6 +2708,7 @@ The two shapes on the outside recount </string>
         <image name="insight5" width="370" height="131"/>
         <image name="linea" width="371" height="1"/>
         <image name="nav1-2" width="415" height="143"/>
+        <image name="navInsta" width="415" height="185"/>
         <image name="nextAzzurroSpento" width="182" height="55"/>
         <image name="nextazzurro" width="182" height="55"/>
         <image name="noAzzurro" width="120" height="55"/>
