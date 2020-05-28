@@ -46,7 +46,7 @@ class Schermata3: UIViewController {
         
         
         //Confronta Valore
-        if(d == "si"){
+        if(d == "no"){
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let secondVC = storyboard.instantiateViewController(withIdentifier: "stepCollage")  as! StepCollage
             self.navigationController?.pushViewController(secondVC, animated: true)

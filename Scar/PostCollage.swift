@@ -49,6 +49,10 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         miniSym.layer.cornerRadius = 15
 //        miniSym.layer.masksToBounds = true
         
+        if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
+        miniSym.image = UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent("collage").path)
+        }
+        
         let layout = UICollectionViewFlowLayout()
         layout.minimumInteritemSpacing = 3
         layout.minimumLineSpacing = 3
