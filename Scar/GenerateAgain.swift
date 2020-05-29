@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SQLite3
 
 class GenerateAgain: UIViewController {
     
@@ -31,6 +32,7 @@ class GenerateAgain: UIViewController {
         img.clipsToBounds = true
         if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
                    img.image = UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent("collage").path)?.imageWithInsets(insets: UIEdgeInsets(top: 40, left: 75, bottom: 65, right: 75))
+        }
             
         var  normalText = "The pattern in the large circle describes\n"
                 var normalString = NSMutableAttributedString(string:normalText)
@@ -154,7 +156,7 @@ class GenerateAgain: UIViewController {
                       attributedString13.append(normalString)
                       
                       lab5.attributedText = attributedString13
-        }
+        
     }
     @IBAction func saveImg(_ sender: UIButton) {
         UIImageWriteToSavedPhotosAlbum(img.image!, nil, nil, nil)

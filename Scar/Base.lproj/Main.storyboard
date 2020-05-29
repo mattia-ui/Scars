@@ -2538,9 +2538,12 @@ The two shapes on the outside recount </string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1010"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oBT-Cb-SzO">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oBT-Cb-SzO">
                                 <rect key="frame" x="-2" y="-2" width="418" height="141"/>
                                 <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="141" id="L5P-sq-V8P"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruy-fP-Hij">
                                 <rect key="frame" x="20" y="95" width="25" height="25"/>
@@ -2557,16 +2560,16 @@ The two shapes on the outside recount </string>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Od6-K9-A9R">
-                                <rect key="frame" x="0.0" y="139" width="414" height="925"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Od6-K9-A9R">
+                                <rect key="frame" x="0.0" y="139" width="414" height="871"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iCq-ef-AHR">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="925"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="833"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4g-6M-RhD">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="925"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="833"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WGR-6v-NNj">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CAr" translatesAutoresizingMaskIntoConstraints="NO" id="WGR-6v-NNj">
                                                         <rect key="frame" x="102" y="25" width="210" height="216"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
@@ -2633,7 +2636,7 @@ The two shapes on the outside recount </string>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="925" id="ARc-EC-yZK"/>
+                                                    <constraint firstAttribute="height" constant="833" id="Rew-hg-Elf"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -2652,9 +2655,12 @@ The two shapes on the outside recount </string>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="oBT-Cb-SzO" firstAttribute="centerX" secondItem="Od6-K9-A9R" secondAttribute="centerX" id="1n2-eV-lQe"/>
+                            <constraint firstItem="oBT-Cb-SzO" firstAttribute="top" secondItem="MnJ-Ms-dNu" secondAttribute="topMargin" constant="-2" id="COq-jD-2ji"/>
                             <constraint firstItem="Od6-K9-A9R" firstAttribute="top" secondItem="oBT-Cb-SzO" secondAttribute="bottom" id="NPv-HL-JnI"/>
                             <constraint firstItem="Od6-K9-A9R" firstAttribute="trailing" secondItem="FWq-hm-a7e" secondAttribute="trailing" id="PmX-nd-wiG"/>
                             <constraint firstItem="Od6-K9-A9R" firstAttribute="leading" secondItem="FWq-hm-a7e" secondAttribute="leading" id="g0w-Ug-pny"/>
+                            <constraint firstItem="oBT-Cb-SzO" firstAttribute="leading" secondItem="MnJ-Ms-dNu" secondAttribute="leadingMargin" constant="-22" id="wvC-oe-VAw"/>
                             <constraint firstAttribute="bottom" secondItem="Od6-K9-A9R" secondAttribute="bottom" id="xST-RR-bMS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FWq-hm-a7e"/>
@@ -2856,6 +2862,7 @@ The two shapes on the outside recount </string>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2-" width="101.5" height="101.5"/>
+        <image name="CAr" width="267" height="267"/>
         <image name="Crater" width="168" height="168"/>
         <image name="DoneSpento" width="182" height="55"/>
         <image name="GenerateAgain" width="263" height="55"/>
