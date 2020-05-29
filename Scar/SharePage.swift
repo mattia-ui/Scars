@@ -115,22 +115,25 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
     }
     
     func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
-           if (i == 0){
-               descriptionField.text = ""
-               i = i + 1
-           }
-           return true
-       }
+        if (i == 0){
+            descriptionField.text = ""
+            i = i + 1
+        }
+        return true
+    }
        
-       func textViewDidChange(_ textView: UITextView) {
-           let t = descriptionField.text.dropLast(12)
-            descriptionField.font = UIFont(name: "CeraPro-Light", size: 20)
-           descriptionField.text = t + " - #skinsugi"
-           let arbitraryValue: Int = t.count
-           if let newPosition = descriptionField.position(from: descriptionField.beginningOfDocument, offset: arbitraryValue) {
-               descriptionField.selectedTextRange = textView.textRange(from: newPosition, to: newPosition)
-           }
-       }
+    func textViewDidChange(_ textView: UITextView) {
+        var t = descriptionField.text.dropLast(12)
+        if(t.count > 2100){
+            t = t.dropLast(t.count - 2100)
+        }
+        descriptionField.font = UIFont(name: "CeraPro-Light", size: 20)
+        descriptionField.text = t + " - #skinsugi"
+        let arbitraryValue: Int = t.count
+        if let newPosition = descriptionField.position(from: descriptionField.beginningOfDocument, offset: arbitraryValue) {
+            descriptionField.selectedTextRange = textView.textRange(from: newPosition, to: newPosition)
+        }
+    }
     
     
 //    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText newText: String) -> Bool {
