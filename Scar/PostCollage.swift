@@ -33,7 +33,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! CollectionViewCell
         cell.layer.borderColor = (UIColor.init(named: "#2E2933")?.cgColor)
-        cell.layer.borderWidth = 0.8
+        cell.layer.borderWidth = 0.3
         cell.myImageView.image = SecretCollection.allImages?[indexPath.row]
         return cell
     }
@@ -43,7 +43,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
         
-        miniSym.layer.borderWidth = 0.6
+        miniSym.layer.borderWidth = 0.3
         miniSym.layer.masksToBounds = true
         miniSym.layer.borderColor = (UIColor.init(named: "#2E2933")?.cgColor)
         miniSym.layer.cornerRadius = miniSym.frame.size.width/2
@@ -87,8 +87,8 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
             viewL.isHidden = true
             _ = UIScreen.main.bounds.width/3 - 3
             let layout = UICollectionViewFlowLayout()
-            layout.sectionInset = UIEdgeInsets(top: 20, left: 7, bottom: 5, right: 7)
-            layout.itemSize = CGSize(width: 129, height: 129)
+            layout.sectionInset = UIEdgeInsets(top: 17, left: 7, bottom: 17, right: 7)
+            layout.itemSize = CGSize(width: 131, height: 127)
             layout.minimumLineSpacing = 3
             layout.minimumInteritemSpacing = 1
             myCollectionView.collectionViewLayout = layout
