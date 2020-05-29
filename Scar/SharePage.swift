@@ -211,9 +211,9 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
         print("Saved successfully")
         
         DispatchQueue.main.async{
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let secondVC = storyboard.instantiateViewController(withIdentifier: "postCollage")  as! PostCollage
-            self.navigationController?.pushViewController(secondVC, animated: true)
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let secondVC = storyboard.instantiateViewController(withIdentifier: "postCollage")  as! PostCollage
+//            self.navigationController?.pushViewController(secondVC, animated: true)
             
 //            let PS = PostCollage()
 //            PS.miniSym.image = self.img
@@ -274,6 +274,11 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
         let PS = PostCollage()
         PS.miniSym.image = self.img
 
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "blur"){
+            (segue.destination as! PostCollage).blur = 1
+        }
     }
 }
 

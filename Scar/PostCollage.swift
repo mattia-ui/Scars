@@ -12,19 +12,46 @@ import SQLite3
 
 class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    var blur = 0
+    @IBOutlet weak var viewPerBlur: UIView!
+    @IBOutlet weak var viewSulBlur: UIView!
     static var allImages: [UIImage]? = []
     @IBOutlet weak var viewL: UIView!
      var m = 0
     @IBOutlet weak var miniSym: UIImageView!
     
     @IBOutlet weak var myCollectionView: UICollectionView!
-    
+     var blurEffect = UIBlurEffect()
+      var blurEffectView = UIVisualEffectView()
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
+        if(blur == 1){
+           blurEffect = UIBlurEffect(style: UIBlurEffect.Style.light)
+          blurEffectView = UIVisualEffectView(effect: blurEffect)
+            blurEffectView.frame = viewPerBlur.bounds
+            blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            blurEffectView.alpha = 1
+            viewPerBlur.addSubview(blurEffectView)
+            viewSulBlur.isHidden = false
+            self.tabBarController?.tabBar.isHidden = true
+            
+            let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.tapped))
+                   view.addGestureRecognizer(tap)
+        }
+        
+      
 //        let sh = Collage()
 //        miniSym.image = sh.screen?.image
     }
+    @objc func tapped(){
+        viewSulBlur.isHidden = true
+        blurEffectView.alpha = 0
+        viewPerBlur.addSubview(blurEffectView)
+        self.tabBarController?.tabBar.isHidden = false
+        blur = 0
+
+          }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return SecretCollection.allImages?.count ?? 0
@@ -37,6 +64,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         cell.myImageView.image = SecretCollection.allImages?[indexPath.row]
         return cell
     }
+    
 
     
     override func viewDidLoad() {
@@ -50,6 +78,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         miniSym.clipsToBounds = true
         if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
             miniSym.image = UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent("collage").path)?.imageWithInsets(insets: UIEdgeInsets(top: 40, left: 75, bottom: 65, right: 75))
+            viewSulBlur.isHidden = true
            
         }
         
