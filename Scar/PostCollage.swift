@@ -49,7 +49,8 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         miniSym.layer.cornerRadius = miniSym.frame.size.width/2
         miniSym.clipsToBounds = true
         if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
-        miniSym.image = UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent("collage").path)
+            miniSym.image = UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent("collage").path)?.imageWithInsets(insets: UIEdgeInsets(top: 40, left: 75, bottom: 65, right: 75))
+           
         }
         
         
@@ -118,4 +119,16 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
     }
 }
 
-
+extension UIImage {
+func imageWithInsets(insets: UIEdgeInsets) -> UIImage? {
+    UIGraphicsBeginImageContextWithOptions(
+        CGSize(width: self.size.width + insets.left + insets.right,
+               height: self.size.height + insets.top + insets.bottom), false, self.scale)
+    let _ = UIGraphicsGetCurrentContext()
+    let origin = CGPoint(x: insets.left, y: insets.top)
+    self.draw(at: origin)
+    let imageWithInsets = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+    return imageWithInsets
+}
+}
