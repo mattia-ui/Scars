@@ -65,7 +65,12 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         return cell
     }
     
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        _ = tapGestureRecognizer.view as! UIImageView
 
+        performSegue(withIdentifier: "vai", sender: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,6 +84,10 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
             miniSym.image = UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent("collage").path)?.imageWithInsets(insets: UIEdgeInsets(top: 40, left: 75, bottom: 65, right: 75))
             viewSulBlur.isHidden = true
+            
+            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+            miniSym.isUserInteractionEnabled = true
+            miniSym.addGestureRecognizer(tapGestureRecognizer)
            
         }
         
