@@ -92,7 +92,7 @@
 		342BF26D245DDA34004CD081 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		342BF2CB2460D006004CD081 /* CollectionViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell1.swift; sourceTree = "<group>"; };
 		342BF2CD2460D025004CD081 /* ViewControllerInitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInitial.swift; sourceTree = "<group>"; };
-		345F14C924573808003EE819 /* Scar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		345F14C924573808003EE819 /* Skinsugi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skinsugi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		345F14CC24573808003EE819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		345F14CE24573808003EE819 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		345F14D024573808003EE819 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -208,7 +208,7 @@
 		345F14CA24573808003EE819 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				345F14C924573808003EE819 /* Scar.app */,
+				345F14C924573808003EE819 /* Skinsugi.app */,
 				345F14DF24573809003EE819 /* ScarTests.xctest */,
 				345F14EA24573809003EE819 /* ScarUITests.xctest */,
 			);
@@ -349,7 +349,7 @@
 			);
 			name = Scar;
 			productName = Scar;
-			productReference = 345F14C924573808003EE819 /* Scar.app */;
+			productReference = 345F14C924573808003EE819 /* Skinsugi.app */;
 			productType = "com.apple.product-type.application";
 		};
 		345F14DE24573809003EE819 /* ScarTests */ = {
@@ -740,7 +740,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.coders.uragans.Scar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Skinsugi;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -762,7 +762,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.coders.uragans.Scar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Skinsugi;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
