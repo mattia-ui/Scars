@@ -23,6 +23,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     var opacity: CGFloat = 1.0
     var swiped = false
     var points = [CGPoint] ()
+    
     @IBOutlet weak var slider: UISlider!{
         didSet{
             slider.transform = CGAffineTransform(rotationAngle: CGFloat.pi + CGFloat.pi/2)
@@ -46,6 +47,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     //Cancella disegno.
     @IBAction func resetDraw(_ sender: Any) {
+        elaboraDisegno.isEnabled = false
         tempDrawScars.image = nil
         points = []
     }
@@ -76,6 +78,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             tempDrawScars.alpha = opacity
         
             UIGraphicsEndImageContext()
+            elaboraDisegno.isEnabled = true
         }
     }
       
@@ -83,6 +86,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         guard let touch = touches.first else {return}
         swiped = false
         lastPoint = touch.location(in: view)
+        slider.isHidden = true
+        resetDis.isHidden = true
     }
       
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -97,6 +102,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         if !swiped {// draw a single point
             drawLine(from: lastPoint, to: lastPoint)
         }
+        slider.isHidden = false
+        resetDis.isHidden = false
     }
     
     //Elabora foto.

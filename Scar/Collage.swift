@@ -744,6 +744,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
         return paths[0]
     }
     
+    @IBAction func saveScreen(_ sender: Any) {
+        UIImageWriteToSavedPhotosAlbum(screen.image!, nil, nil, nil)
+    }
 }
 
 

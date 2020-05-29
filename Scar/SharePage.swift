@@ -19,7 +19,9 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
     @IBOutlet weak var screen: UIImageView!
     @IBOutlet weak var descriptionField: UITextView!
     @IBOutlet weak var label: UILabel!
-    
+   
+    var i = 0
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -107,76 +109,61 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
                        
                        label.attributedText = attributedString
     }
+    
     @objc func dismissKeyboard() {
          view.endEditing(true)
-     }
+    }
     
-//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-//           guard let textFieldText = descriptionField.text,
-//           let rangeOfTextToReplace = Range(range, in: textFieldText) else {return false}
-//           let substringToReplace = textFieldText[rangeOfTextToReplace]
-//           let count = textFieldText.count - substringToReplace.count + string.count
-//           return count <= 250
-//       }
+    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
+           if (i == 0){
+               descriptionField.text = ""
+               i = i + 1
+           }
+           return true
+       }
+       
+       func textViewDidChange(_ textView: UITextView) {
+           let t = descriptionField.text.dropLast(12)
+            descriptionField.font = UIFont(name: "CeraPro-Light", size: 20)
+           descriptionField.text = t + " - #skinsugi"
+           let arbitraryValue: Int = t.count
+           if let newPosition = descriptionField.position(from: descriptionField.beginningOfDocument, offset: arbitraryValue) {
+               descriptionField.selectedTextRange = textView.textRange(from: newPosition, to: newPosition)
+           }
+       }
     
-//    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+    
+//    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText newText: String) -> Bool {
 //
-//        guard let textFieldText = descriptionField.text,
-//                  let rangeOfTextToReplace = Range(range, in: textFieldText) else {return false}
-//                  let substringToReplace = textFieldText[rangeOfTextToReplace]
-//                  let count = textFieldText.count - substringToReplace.count + text.count
-//                  return count <= 250
-//    }
-    
-//    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+//            var nsString:NSString = ""
 //
-//        if !text.isEmpty {
-//            amountTypedString += text
-//            let newString = amountTypedString + "kr"
-//            myTextView.text = newString
-//        } else {
-//            amountTypedString = String(amountTypedString.characters.dropLast())
-//            if amountTypedString.characters.count > 0 {
-//                let newString = amountTypedString + "kr"
-//                myTextView.text = newString
-//            } else {
-//                myTextView.text = "0kr"
+//            if textView.text != nil  && newText != "" {
+//                nsString = textView.text! as NSString
+//                nsString = nsString.replacingCharacters(in: range, with: newText) as NSString
+//            }   else if (newText == "") && textView.text != ""  {
+//                nsString = textView.text! as NSString
+//                nsString = nsString.replacingCharacters(in: range, with: newText) as NSString
+//
+//            } else if (newText == "") && textView.text == "" {
+//                textView.text = ""
 //            }
-//        }
-//        return false
-//    }
-    
-    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText newText: String) -> Bool {
-            
-            var nsString:NSString = ""
-                   
-            if textView.text != nil  && newText != "" {
-                nsString = textView.text! as NSString
-                nsString = nsString.replacingCharacters(in: range, with: newText) as NSString
-            }   else if (newText == "") && textView.text != ""  {
-                nsString = textView.text! as NSString
-                nsString = nsString.replacingCharacters(in: range, with: newText) as NSString
-                       
-            } else if (newText == "") && textView.text == "" {
-                textView.text = ""
-            }
-
-           guard textView.text != nil else { return true }
-           let currentText = nsString as NSString
+//
+//           guard textView.text != nil else { return true }
+//           let currentText = nsString as NSString
 //        descriptionField.text = String(String(descriptionField.text).dropLast(11))
-        descriptionField.font = UIFont(name: "CeraPro-Light", size: 20)
-        descriptionField.text = "\(String(describing: descriptionField.text).dropFirst(9).dropLast(13)) #skinsugi"
-        
+//        descriptionField.font = UIFont(name: "CeraPro-Light", size: 20)
+//        descriptionField.text = "\(String(describing: descriptionField.text).dropFirst(9).dropLast(13)) #skinsugi"
+//
 //           countLabel.text = "\(textView.text.count + (newText.count - range.length))/250"
-                   
-           return currentText.length <= 249
-            
-            
-    //        countLabel.text = "\(answerText.text.count + (newText.count - range.length))/250"
-    //        countLabel.textColor = darkGrey
-    //        countLabel.font = UIFont(name: "NewYorkMedium-Regular", size: 16)
-    //        return answerText.text.count + (newText.count - range.length) <= 249
-        }
+//
+//           return currentText.length <= 249
+//
+//
+//    //        countLabel.text = "\(answerText.text.count + (newText.count - range.length))/250"
+//    //        countLabel.textColor = darkGrey
+//    //        countLabel.font = UIFont(name: "NewYorkMedium-Regular", size: 16)
+//    //        return answerText.text.count + (newText.count - range.length) <= 249
+//        }
 
     
     @IBAction func shareUnkown(_ sender: Any) {
