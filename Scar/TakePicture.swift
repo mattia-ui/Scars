@@ -13,6 +13,7 @@ class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePick
     var imagePicker: UIImagePickerController!
     
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var label2: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,21 +22,47 @@ class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePick
         
         self.tabBarController?.tabBar.isHidden = false
         
-        let boldText = "Take a picture of your indelible sign\n"
-        let attributedString = NSMutableAttributedString(string:boldText)
+        
 
-        let normalText = "to draw "
+        let normalText = "Draw the shape "
         let attrs = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 22, weight: .medium)]
-        let normalString = NSMutableAttributedString(string:normalText, attributes:attrs)
+        let attributedString = NSMutableAttributedString(string:normalText, attributes:attrs)
+        
+        let boldText = "of your indelible sign,or help yourself taking a "
+        let normalString = NSMutableAttributedString(string:boldText)
 
                attributedString.append(normalString)
         
-        let boldText2 = "its shape."
-        let attributedString2 = NSMutableAttributedString(string:boldText2)
+        let boldText2 = "picture "
+        let attributedString2 = NSMutableAttributedString(string:boldText2, attributes:attrs)
         
         attributedString.append(attributedString2)
         
+        let boldText1 = "of it to better "
+        let normalString1 = NSMutableAttributedString(string:boldText1)
+
+               attributedString.append(normalString1)
+        
+        let boldText3 = "trace it. \n"
+        let attributedString3 = NSMutableAttributedString(string:boldText3, attributes:attrs)
+        
+        attributedString.append(attributedString3)
+        
+        
                label.attributedText = attributedString
+        
+        let normalText2 = "Don’t worry"
+        let attrs2 = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 18, weight: .medium)]
+        let attributedString4 = NSMutableAttributedString(string:normalText2, attributes:attrs2)
+        
+        
+        let boldText4 = ", the picture you make won’t be stored in the app!"
+        let normalString3 = NSMutableAttributedString(string:boldText4)
+
+               attributedString4.append(normalString3)
+
+        
+               label2.attributedText = attributedString4
     }
     
     //Fai la foto.
