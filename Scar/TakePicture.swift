@@ -52,7 +52,7 @@ class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePick
                label.attributedText = attributedString
         
         let normalText2 = "Don’t worry"
-        let attrs2 = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 18, weight: .medium)]
+        let attrs2 = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 18, weight: .bold)]
         let attributedString4 = NSMutableAttributedString(string:normalText2, attributes:attrs2)
         
         
