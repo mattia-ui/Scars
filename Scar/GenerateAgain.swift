@@ -162,4 +162,8 @@ class GenerateAgain: UIViewController {
         UIImageWriteToSavedPhotosAlbum(img.image!, nil, nil, nil)
 
     }
+    @IBAction func share(_ sender: Any) {
+    }
+    @IBAction func generate(_ sender: Any) {
+    }
 }
