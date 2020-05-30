@@ -107,21 +107,22 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         
         //Recupera Valore
         var d = ""
-        let queryString = "SELECT * FROM Collage"
+        let queryString = "SELECT * FROM Collage Where id = 1"
         if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("error preparing insert: \(errmsg)")
             return
         }
-        while(sqlite3_step(stmt) == SQLITE_ROW && m < 1){
+        while(sqlite3_step(stmt) == SQLITE_ROW){
             d = String(cString: sqlite3_column_text(stmt, 1))
-            m = m + 1
             print(d)
         }
         
         
         //Confronta Valore
-        if(d == "si"){}
+        if(d == "si"){
+            viewL.isHidden = false
+        }
         else {
             viewL.isHidden = true
             _ = UIScreen.main.bounds.width/3 - 3
@@ -140,6 +141,8 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
                 if  error != nil {print("errore")}
                 else {
                     if results!.count > 0 {
+                        SecretCollection.allDescr?.removeAll()
+                        SecretCollection.allImages?.removeAll()
                         for i in 0...results!.count-1{
                             let record = results![i]
                             DispatchQueue.main.async{
