@@ -277,10 +277,32 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
         PS.miniSym.image = self.img
 
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "blur"){
             (segue.destination as! PostCollage).blur = 1
         }
+    }
+    
+    @IBAction func notNow(_ sender: Any) {
+        //Si connette al DB
+        var db: OpaquePointer?
+        let fileURL = try!
+        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+            print("error opening database")
+        }
+                      
+        //Update Valore
+        var stmt: OpaquePointer?
+        let queryString = "UPDATE Collage SET valore = 'no' WHERE id = 1;"
+        sqlite3_prepare(db, queryString, -1, &stmt, nil)
+        sqlite3_step(stmt)
+        print("Saved successfully")
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let secondVC = storyboard.instantiateViewController(withIdentifier: "postCollage")  as! PostCollage
+        self.navigationController?.pushViewController(secondVC, animated: true)
     }
 }
 
