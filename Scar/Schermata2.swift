@@ -370,7 +370,8 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
                 contenuto = structIns[0].books
                 self.imgButt = "SeeMorePodcast"
             }
-           
+
+
             b1.isSelected = true
             b2.isSelected = false
             b3.isSelected = false
