@@ -1956,7 +1956,7 @@ tips and inspirational contents for you!</string>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdk-F6-xZK">
-                                                    <rect key="frame" x="36" y="142" width="326" height="153"/>
+                                                    <rect key="frame" x="36" y="132" width="326" height="153"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Label">
                                                             <attributes>
@@ -1987,7 +1987,7 @@ tips and inspirational contents for you!</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxG-uB-0dh">
-                                                    <rect key="frame" x="303" y="287" width="81" height="32"/>
+                                                    <rect key="frame" x="303" y="277" width="81" height="32"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="81" id="3K9-UI-gKZ"/>
                                                         <constraint firstAttribute="height" constant="32" id="4C3-zK-qBT"/>
@@ -1995,7 +1995,7 @@ tips and inspirational contents for you!</string>
                                                     <state key="normal" image="SeeMore"/>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cSJ-OP-IOa">
-                                                    <rect key="frame" x="0.0" y="331" width="412" height="18"/>
+                                                    <rect key="frame" x="0.0" y="321" width="412" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="412" id="8Zl-Se-A3b"/>
                                                         <constraint firstAttribute="height" constant="18" id="YIn-kP-87G"/>
@@ -2014,9 +2014,9 @@ tips and inspirational contents for you!</string>
                                                 <constraint firstItem="cSJ-OP-IOa" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" id="d6D-w3-wea"/>
                                                 <constraint firstItem="vxG-uB-0dh" firstAttribute="top" secondItem="pdk-F6-xZK" secondAttribute="bottom" constant="-8" id="el3-nD-KkK"/>
                                                 <constraint firstItem="eqz-fq-sWa" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" constant="36" id="gHA-Fb-WyI"/>
-                                                <constraint firstItem="pdk-F6-xZK" firstAttribute="top" secondItem="9o9-F3-Tem" secondAttribute="bottom" constant="8" id="hgd-JF-oI2"/>
+                                                <constraint firstItem="pdk-F6-xZK" firstAttribute="top" secondItem="9o9-F3-Tem" secondAttribute="bottom" constant="-2" id="hgd-JF-oI2"/>
                                                 <constraint firstAttribute="trailing" secondItem="cSJ-OP-IOa" secondAttribute="trailing" id="kAL-X0-VwJ"/>
-                                                <constraint firstAttribute="bottom" secondItem="cSJ-OP-IOa" secondAttribute="bottom" constant="14" id="sV8-6E-ru4"/>
+                                                <constraint firstAttribute="bottom" secondItem="cSJ-OP-IOa" secondAttribute="bottom" constant="24" id="sV8-6E-ru4"/>
                                                 <constraint firstItem="y9q-2C-HRN" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" constant="36" id="uLJ-En-nv0"/>
                                                 <constraint firstItem="eqz-fq-sWa" firstAttribute="trailing" secondItem="pdk-F6-xZK" secondAttribute="trailing" constant="4" id="zOH-2m-1VX"/>
                                             </constraints>
