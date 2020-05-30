@@ -57,7 +57,7 @@ var structIns = [ins(
         Cont(image: "InsightB10", title:"The Gifts of Imperfection…", descr: "Now more than ever, we all need to cultivate feelings of self-esteem, acceptance and love for ourselves. This book is a motivational guide on self-esteem and personal growth.", fonte:"Brené Brown", link: "https://www.goodreads.com/book/show/18780189-the-gifts-of-imperfection?from_search=true&from_srp=true&qid=WXeja0uwGw&rank=1"),
         Cont(image: "InsightB11", title:"Women fighters. From the project: invisible body disabilities", descr: "Women Fighters was born to help people accept their bodies, not be ashamed, breaking down the barriers of prejudice, incomprehension and superficiality through the art of photography.", fonte:"Chiara De Marchi", link: "http://www.invisiblebodydisabilities.org/the-book-old/women-fighters/")],
     artists:[
-        Cont(image: "InsightI6", title:"\nClaudia Sahuquillo", descr: "Claudia is an artist from Barcelona. She believes in the naked body of women as a way to celebrate the female existence, to stand up, to break the stablished rules and to be the revolution. ", fonte:"", link: "https://www.instagram.com/claudiasahuquillo/?hl=it"),
+        Cont(image: "InsightI6", title:"\n Claudia Sahuquillo", descr: "Claudia is an artist from Barcelona. She believes in the naked body of women as a way to celebrate the female existence, to stand up, to break the stablished rules and to be the revolution. ", fonte:"", link: "https://www.instagram.com/claudiasahuquillo/?hl=it"),
         Cont(image: "InsightI2", title:"\nErin Stewart", descr: "Erin grew up in the woods of Virginia catching fireflies. She loves using her background in journalism to research and write fiction based on real life. A heart failure survivor and adoptive mother, she believes life throws plot twists and people in our path for a reason, always. Scars Like Wings is her debut novel.", fonte:"", link: "https://www.instagram.com/erin_n_stewart/"),
         Cont(image: "InsightI1", title:"\nSuzon Lagarde", descr: "Suzon is an emerging artist based in London. She creates little worlds in paint; observations from life meeting with treasured memories and dreamt presences.", fonte:"", link: "https://www.instagram.com/suzonlagarde/"),
         Cont(image: "InsightI3", title:"\nAngela Bianchi", descr: "Angela has a scar too. As a personal image consultant she thoughtfully creates and personalizes experiences to help people become independent through personal styling and body acceptance.", fonte:"", link: "https://www.instagram.com/angelabianchivirgoimage/"),
@@ -177,8 +177,9 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         } else {
             cell.image.image = UIImage(named: contenuto[indexPath.row].image)
         }
+        let tap1 = MyTap(target: self, action: #selector(self.goLink(sender:)))
         cell.image.isUserInteractionEnabled = true
-        cell.image.addGestureRecognizer(tap)
+        cell.image.addGestureRecognizer(tap1)
         
         return cell
     }
