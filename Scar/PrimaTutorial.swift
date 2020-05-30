@@ -10,7 +10,7 @@ protocol MovieListViewControllerDelegate: class {
   func didSelect(movie selectedMovie: Movie)
 }
 
-class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelegate{
+class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelegate,UITextFieldDelegate{
 
     @IBOutlet weak var illustrazione: UIImageView!
     @IBOutlet weak var welcome: UILabel!
@@ -41,6 +41,15 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         UIView.animate(withDuration: aCircleTime, animations: {
             () -> Void in view.transform = CGAffineTransform(translationX: to, y: 0)
         })
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if self.view.frame.origin.y != 0{
+            self.view.frame.origin.y += 150
+        }
+        controllo()
+        self.view.endEditing(true)
+        return false
     }
     
     @IBAction func buttonCellPressed(_ sender: UIButton) {
@@ -212,6 +221,8 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
 
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard1))
         view.addGestureRecognizer(tap)
+        
+        self.nome1.delegate = self
         
         if UserDefaults.standard.bool(forKey: "LaunchedBefore") {
             self.performSegue(withIdentifier: "notFirst", sender: self)
