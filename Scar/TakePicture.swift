@@ -43,17 +43,17 @@ class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePick
 
                attributedString.append(normalString1)
         
-        let boldText3 = "trace it. \n"
+        let boldText3 = "trace it."
         let attributedString3 = NSMutableAttributedString(string:boldText3, attributes:attrs)
         
         attributedString.append(attributedString3)
         
         
-               label.attributedText = attributedString
+        label.attributedText = attributedString
         
         let normalText2 = "Don’t worry"
-        let attrs2 = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 18, weight: .bold)]
-        let attributedString4 = NSMutableAttributedString(string:normalText2, attributes:attrs2)
+        let attrs2 = [NSAttributedString.Key.font : UIFont(name: "CeraPro-MediumItalic", size: 18)]
+        let attributedString4 = NSMutableAttributedString(string:normalText2, attributes:attrs2 as [NSAttributedString.Key : Any])
         
         
         let boldText4 = ", the picture you make won’t be stored in the app!"

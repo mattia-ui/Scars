@@ -637,7 +637,7 @@ How you think others see it?</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 2/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxd-xB-7qe">
-                                <rect key="frame" x="22" y="94" width="238" height="55"/>
+                                <rect key="frame" x="22" y="98" width="238" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1050,7 +1050,7 @@ all the answers you gave?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the way!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiM-zE-6gR">
-                                <rect key="frame" x="22" y="85" width="302" height="38"/>
+                                <rect key="frame" x="22" y="67" width="302" height="38"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -1072,7 +1072,7 @@ all the answers you gave?</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yE5-lk-76G">
-                                <rect key="frame" x="21" y="138" width="374" height="22"/>
+                                <rect key="frame" x="21" y="120" width="374" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="V0V-pX-TFq"/>
                                 </constraints>
@@ -1091,8 +1091,11 @@ all the answers you gave?</string>
                                 <rect key="frame" x="58" y="318" width="301" height="257"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTB-8f-OJj">
-                                <rect key="frame" x="22" y="164" width="370" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTB-8f-OJj">
+                                <rect key="frame" x="22" y="146" width="370" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="370" id="Fe7-cV-Fyj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="CeraPro-LightItalic" family="Cera Pro" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1104,7 +1107,7 @@ all the answers you gave?</string>
                             <constraint firstItem="gNw-Zb-woE" firstAttribute="trailing" secondItem="AiM-zE-6gR" secondAttribute="trailing" constant="90" id="LGf-nb-XpK"/>
                             <constraint firstItem="kTB-8f-OJj" firstAttribute="top" secondItem="yE5-lk-76G" secondAttribute="bottom" constant="4" id="Lg5-1h-nY0"/>
                             <constraint firstItem="yE5-lk-76G" firstAttribute="top" secondItem="AiM-zE-6gR" secondAttribute="bottom" constant="15" id="P2b-na-uSZ"/>
-                            <constraint firstItem="AiM-zE-6gR" firstAttribute="top" secondItem="gNw-Zb-woE" secondAttribute="top" constant="85" id="SrS-EL-WWN"/>
+                            <constraint firstItem="AiM-zE-6gR" firstAttribute="top" secondItem="gNw-Zb-woE" secondAttribute="top" constant="67" id="SrS-EL-WWN"/>
                             <constraint firstItem="yE5-lk-76G" firstAttribute="top" secondItem="AiM-zE-6gR" secondAttribute="bottom" constant="15" id="W16-zs-GRx"/>
                             <constraint firstItem="yE5-lk-76G" firstAttribute="leading" secondItem="gNw-Zb-woE" secondAttribute="leading" constant="21" id="Xna-xM-jiA"/>
                             <constraint firstItem="gNw-Zb-woE" firstAttribute="trailing" secondItem="kTB-8f-OJj" secondAttribute="trailing" constant="22" id="bUL-6L-Wau"/>
@@ -2891,7 +2894,6 @@ The two shapes on the outside recount </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mjP-6E-I86"/>
         <segue reference="wd9-1W-xO2"/>
         <segue reference="Cab-pX-8BL"/>
     </inferredMetricsTieBreakers>
