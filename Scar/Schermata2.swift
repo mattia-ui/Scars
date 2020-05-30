@@ -177,6 +177,8 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         } else {
             cell.image.image = UIImage(named: contenuto[indexPath.row].image)
         }
+        cell.image.isUserInteractionEnabled = true
+        cell.image.addGestureRecognizer(tap)
         
         return cell
     }
