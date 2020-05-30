@@ -68,6 +68,14 @@ class AddInsights: UIViewController {
     @IBAction func podcast(_ sender: UIButton) {
         var temp: [String] = []
         
+        var ok = 0
+        if pod.isSelected {ok = ok + 1}
+        if well.isSelected {ok = ok + 1}
+        if art.isSelected {ok = ok + 1}
+        if artist.isSelected {ok = ok + 1}
+        if books.isSelected {ok = ok + 1}
+        if mov.isSelected {ok = ok + 1}
+        
         //Si connette al DB
         let fileURL = try!
         FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
@@ -76,27 +84,31 @@ class AddInsights: UIViewController {
         }
         
         if sender.isSelected {
-            pod.isSelected = false
-            for i in 0...Schermata2.insights.count - 1{
-                if(Schermata2.insights[i] != "TEDx" && Schermata2.insights[i] != ""){
-                    temp.append(Schermata2.insights[i])
+            if(ok != 1){
+                pod.isSelected = false
+                for i in 0...Schermata2.insights.count - 1{
+                    if(Schermata2.insights[i] != "TEDx" && Schermata2.insights[i] != ""){
+                        temp.append(Schermata2.insights[i])
+                    }
                 }
-            }
-            AddInsights.j = AddInsights.j - 1
-            Schermata2.insights = temp
-            for i in 0..<6 - Schermata2.insights.count{
-                Schermata2.insights.append("")
-            }
+                AddInsights.j = AddInsights.j - 1
+                Schermata2.insights = temp
+                for i in 0..<6 - Schermata2.insights.count{
+                    Schermata2.insights.append("")
+                }
                   
-            for i in 0..<Schermata2.insights.count{
-                print(Schermata2.insights[i])
+                for i in 0..<Schermata2.insights.count{
+                    print(Schermata2.insights[i])
+                }
+            
+            
+                let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b6 = '\(Schermata2.insights[5])';"
+                sqlite3_prepare(db, queryString, -1, &stmt, nil)
+                sqlite3_step(stmt)
+                print("Saved successfully")
             }
-            
-            
-            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b6 = '\(Schermata2.insights[5])';"
-            sqlite3_prepare(db, queryString, -1, &stmt, nil)
-            sqlite3_step(stmt)
-            print("Saved successfully")
+            let name = Notification.Name(rawValue: NotificationKey)
+            NotificationCenter.default.post(name: name, object: nil)
         } else {
             pod.isSelected = true
     
@@ -116,10 +128,20 @@ class AddInsights: UIViewController {
             print("Saved successfully")
             AddInsights.j = AddInsights.j + 1
         }
+        let name = Notification.Name(rawValue: NotificationKey)
+        NotificationCenter.default.post(name: name, object: nil)
     }
     
     @IBAction func wellbein(_ sender: UIButton) {
         var temp: [String] = []
+        
+        var ok = 0
+        if pod.isSelected {ok = ok + 1}
+        if well.isSelected {ok = ok + 1}
+        if art.isSelected {ok = ok + 1}
+        if artist.isSelected {ok = ok + 1}
+        if books.isSelected {ok = ok + 1}
+        if mov.isSelected {ok = ok + 1}
         
         //Si connette al DB
         let fileURL = try!
@@ -129,27 +151,31 @@ class AddInsights: UIViewController {
         }
         
         if sender.isSelected {
-            well.isSelected = false
+            if(ok != 1){
+                well.isSelected = false
                 for i in 0...Schermata2.insights.count - 1{
                     if(Schermata2.insights[i] != "Movies&TVShows" && Schermata2.insights[i] != ""){
-                    temp.append(Schermata2.insights[i])
+                        temp.append(Schermata2.insights[i])
+                    }
                 }
-            }
-            AddInsights.j = AddInsights.j - 1
-            Schermata2.insights = temp
-            for i in 0..<6 - Schermata2.insights.count{
-                Schermata2.insights.append("")
-            }
+                AddInsights.j = AddInsights.j - 1
+                Schermata2.insights = temp
+                for i in 0..<6 - Schermata2.insights.count{
+                    Schermata2.insights.append("")
+                }
             
-            for i in 0..<Schermata2.insights.count{
-                print(Schermata2.insights[i])
-            }
+                for i in 0..<Schermata2.insights.count{
+                    print(Schermata2.insights[i])
+                }
                   
             
-            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b6 = '\(Schermata2.insights[5])';"
-            sqlite3_prepare(db, queryString, -1, &stmt, nil)
-            sqlite3_step(stmt)
-            print("Saved successfully")
+                let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b6 = '\(Schermata2.insights[5])';"
+                sqlite3_prepare(db, queryString, -1, &stmt, nil)
+                sqlite3_step(stmt)
+                print("Saved successfully")
+            }
+            let name = Notification.Name(rawValue: NotificationKey)
+            NotificationCenter.default.post(name: name, object: nil)
         } else {
             well.isSelected = true
                
@@ -169,10 +195,20 @@ class AddInsights: UIViewController {
             print("Saved successfully")
             AddInsights.j = AddInsights.j + 1
         }
+        let name = Notification.Name(rawValue: NotificationKey)
+        NotificationCenter.default.post(name: name, object: nil)
     }
     
     @IBAction func movies(_ sender: UIButton) {
         var temp: [String] = []
+        
+        var ok = 0
+        if pod.isSelected {ok = ok + 1}
+        if well.isSelected {ok = ok + 1}
+        if art.isSelected {ok = ok + 1}
+        if artist.isSelected {ok = ok + 1}
+        if books.isSelected {ok = ok + 1}
+        if mov.isSelected {ok = ok + 1}
         
         //Si connette al DB
         let fileURL = try!
@@ -182,27 +218,31 @@ class AddInsights: UIViewController {
         }
         
         if sender.isSelected {
-            mov.isSelected = false
-            for i in 0...Schermata2.insights.count - 1{
-                if(Schermata2.insights[i] != "Articles" && Schermata2.insights[i] != ""){
-                    temp.append(Schermata2.insights[i])
+            if(ok != 1){
+                mov.isSelected = false
+                for i in 0...Schermata2.insights.count - 1{
+                    if(Schermata2.insights[i] != "Articles" && Schermata2.insights[i] != ""){
+                        temp.append(Schermata2.insights[i])
+                    }
                 }
-            }
-            AddInsights.j = AddInsights.j - 1
-            Schermata2.insights = temp
-            for i in 0..<6 - Schermata2.insights.count{
-                Schermata2.insights.append("")
-            }
+                AddInsights.j = AddInsights.j - 1
+                Schermata2.insights = temp
+                for i in 0..<6 - Schermata2.insights.count{
+                    Schermata2.insights.append("")
+                }
             
             
-            for i in 0..<Schermata2.insights.count{
-                print(Schermata2.insights[i])
-            }
+                for i in 0..<Schermata2.insights.count{
+                    print(Schermata2.insights[i])
+                }
             
-            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b6 = '\(Schermata2.insights[5])';"
-            sqlite3_prepare(db, queryString, -1, &stmt, nil)
-            sqlite3_step(stmt)
-            print("Saved successfully")
+                let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b6 = '\(Schermata2.insights[5])';"
+                sqlite3_prepare(db, queryString, -1, &stmt, nil)
+                sqlite3_step(stmt)
+                print("Saved successfully")
+            }
+            let name = Notification.Name(rawValue: NotificationKey)
+            NotificationCenter.default.post(name: name, object: nil)
         } else {
             mov.isSelected = true
             
@@ -222,10 +262,20 @@ class AddInsights: UIViewController {
             print("Saved successfully")
             AddInsights.j = AddInsights.j + 1
         }
+        let name = Notification.Name(rawValue: NotificationKey)
+        NotificationCenter.default.post(name: name, object: nil)
     }
     
     @IBAction func articols(_ sender: UIButton) {
         var temp: [String] = []
+        
+        var ok = 0
+        if pod.isSelected {ok = ok + 1}
+        if well.isSelected {ok = ok + 1}
+        if art.isSelected {ok = ok + 1}
+        if artist.isSelected {ok = ok + 1}
+        if books.isSelected {ok = ok + 1}
+        if mov.isSelected {ok = ok + 1}
         
         //Si connette al DB
         let fileURL = try!
@@ -235,27 +285,31 @@ class AddInsights: UIViewController {
         }
         
         if sender.isSelected {
-            art.isSelected = false
-            for i in 0...Schermata2.insights.count - 1{
-                if(Schermata2.insights[i] != "Books" && Schermata2.insights[i] != ""){
-                    temp.append(Schermata2.insights[i])
+            if(ok != 1){
+                art.isSelected = false
+                for i in 0...Schermata2.insights.count - 1{
+                    if(Schermata2.insights[i] != "Books" && Schermata2.insights[i] != ""){
+                        temp.append(Schermata2.insights[i])
+                    }
                 }
-            }
-            AddInsights.j = AddInsights.j - 1
-            Schermata2.insights = temp
-            for i in 0..<6 - Schermata2.insights.count{
-                Schermata2.insights.append("")
-            }
+                AddInsights.j = AddInsights.j - 1
+                Schermata2.insights = temp
+                for i in 0..<6 - Schermata2.insights.count{
+                    Schermata2.insights.append("")
+                }
             
             
-            for i in 0..<Schermata2.insights.count{
-                print(Schermata2.insights[i])
-            }
+                for i in 0..<Schermata2.insights.count{
+                    print(Schermata2.insights[i])
+                }
             
-            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b6 = '\(Schermata2.insights[5])';"
-            sqlite3_prepare(db, queryString, -1, &stmt, nil)
-            sqlite3_step(stmt)
-            print("Saved successfully")
+                let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b6 = '\(Schermata2.insights[5])';"
+                sqlite3_prepare(db, queryString, -1, &stmt, nil)
+                sqlite3_step(stmt)
+                print("Saved successfully")
+            }
+            let name = Notification.Name(rawValue: NotificationKey)
+            NotificationCenter.default.post(name: name, object: nil)
         } else {
             art.isSelected = true
             
@@ -275,10 +329,20 @@ class AddInsights: UIViewController {
             print("Saved successfully")
             AddInsights.j = AddInsights.j + 1
         }
+        let name = Notification.Name(rawValue: NotificationKey)
+        NotificationCenter.default.post(name: name, object: nil)
     }
     
     @IBAction func artist(_ sender: UIButton) {
         var temp: [String] = []
+        
+        var ok = 0
+        if pod.isSelected {ok = ok + 1}
+        if well.isSelected {ok = ok + 1}
+        if art.isSelected {ok = ok + 1}
+        if artist.isSelected {ok = ok + 1}
+        if books.isSelected {ok = ok + 1}
+        if mov.isSelected {ok = ok + 1}
         
         //Si connette al DB
         let fileURL = try!
@@ -288,27 +352,31 @@ class AddInsights: UIViewController {
         }
         
         if sender.isSelected {
-            artist.isSelected = false
-            for i in 0...Schermata2.insights.count - 1{
-                if(Schermata2.insights[i] != "Inspiring People" && Schermata2.insights[i] != ""){
-                    temp.append(Schermata2.insights[i])
+            if(ok != 1){
+                artist.isSelected = false
+                for i in 0...Schermata2.insights.count - 1{
+                    if(Schermata2.insights[i] != "Inspiring People" && Schermata2.insights[i] != ""){
+                        temp.append(Schermata2.insights[i])
+                    }
                 }
-            }
-            AddInsights.j = AddInsights.j - 1
-            Schermata2.insights = temp
-            for i in 0..<6 - Schermata2.insights.count{
-                Schermata2.insights.append("")
-            }
+                AddInsights.j = AddInsights.j - 1
+                Schermata2.insights = temp
+                for i in 0..<6 - Schermata2.insights.count{
+                    Schermata2.insights.append("")
+                }
                
             
-            for i in 0..<Schermata2.insights.count{
-                print(Schermata2.insights[i])
-            }
+                for i in 0..<Schermata2.insights.count{
+                    print(Schermata2.insights[i])
+                }
             
-            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b6 = '\(Schermata2.insights[5])';"
-            sqlite3_prepare(db, queryString, -1, &stmt, nil)
-            sqlite3_step(stmt)
-            print("Saved successfully")
+                let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b6 = '\(Schermata2.insights[5])';"
+                sqlite3_prepare(db, queryString, -1, &stmt, nil)
+                sqlite3_step(stmt)
+                print("Saved successfully")
+            }
+            let name = Notification.Name(rawValue: NotificationKey)
+            NotificationCenter.default.post(name: name, object: nil)
         } else {
             artist.isSelected = true
             
@@ -328,10 +396,20 @@ class AddInsights: UIViewController {
             print("Saved successfully")
             AddInsights.j = AddInsights.j + 1
         }
+        let name = Notification.Name(rawValue: NotificationKey)
+        NotificationCenter.default.post(name: name, object: nil)
     }
     
     @IBAction func books(_ sender: UIButton) {
         var temp: [String] = []
+        
+        var ok = 0
+        if pod.isSelected {ok = ok + 1}
+        if well.isSelected {ok = ok + 1}
+        if art.isSelected {ok = ok + 1}
+        if artist.isSelected {ok = ok + 1}
+        if books.isSelected {ok = ok + 1}
+        if mov.isSelected {ok = ok + 1}
         
         //Si connette al DB
         let fileURL = try!
@@ -342,27 +420,31 @@ class AddInsights: UIViewController {
         }
             
         if sender.isSelected {
-            books.isSelected = false
-            for i in 0...Schermata2.insights.count - 1{
-                if(Schermata2.insights[i] != "Podcasts" && Schermata2.insights[i] != ""){
-                    temp.append(Schermata2.insights[i])
+            if(ok != 1){
+                books.isSelected = false
+                for i in 0...Schermata2.insights.count - 1{
+                    if(Schermata2.insights[i] != "Podcasts" && Schermata2.insights[i] != ""){
+                        temp.append(Schermata2.insights[i])
+                    }
                 }
-            }
-            AddInsights.j = AddInsights.j - 1
-            Schermata2.insights = temp
-            for i in 0..<6 - Schermata2.insights.count{
-                Schermata2.insights.append("")
-            }
+                AddInsights.j = AddInsights.j - 1
+                Schermata2.insights = temp
+                for _ in 0..<6 - Schermata2.insights.count{
+                    Schermata2.insights.append("")
+                }
                
             
-            for i in 0..<Schermata2.insights.count{
-                print(Schermata2.insights[i])
-            }
+                for i in 0..<Schermata2.insights.count{
+                    print(Schermata2.insights[i])
+                }
                 
-            let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b6 = '\(Schermata2.insights[5])';"
-            sqlite3_prepare(db, queryString, -1, &stmt, nil)
-            sqlite3_step(stmt)
-            print("Saved successfully")
+                let queryString = "UPDATE Insights SET b1 = '\(Schermata2.insights[0])', b2 = '\(Schermata2.insights[1])', b3 = '\(Schermata2.insights[2])', b4 = '\(Schermata2.insights[3])', b5 = '\(Schermata2.insights[4])', b6 = '\(Schermata2.insights[5])';"
+                sqlite3_prepare(db, queryString, -1, &stmt, nil)
+                sqlite3_step(stmt)
+                print("Saved successfully")
+            }
+            let name = Notification.Name(rawValue: NotificationKey)
+            NotificationCenter.default.post(name: name, object: nil)
         } else {
             books.isSelected = true
                 
@@ -382,7 +464,8 @@ class AddInsights: UIViewController {
             print("Saved successfully")
             AddInsights.j = AddInsights.j + 1
         }
-        
+        let name = Notification.Name(rawValue: NotificationKey)
+        NotificationCenter.default.post(name: name, object: nil)
     }
 }
 
