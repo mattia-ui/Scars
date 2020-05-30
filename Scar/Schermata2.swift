@@ -132,6 +132,12 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
                 )
                 attributedString.addAttribute(.link, value:"https://creativecommons.org/licenses/by-nc-nd/4.0/", range: NSRange(location: 30, length: 82))
                 footerView.text.attributedText = attributedString
+            } else if(imgButt == "SeeMoreBooks"){
+                footerView.image.image = UIImage(named: "goodreeds")
+                footerView.text.text = ""
+            } else if(imgButt == "SeeMorePodcast"){
+                footerView.image.image = UIImage(named: "Spotify")
+                footerView.text.text = ""
             } else {
                 footerView.text.text = ""
             }
