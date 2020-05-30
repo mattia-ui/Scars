@@ -162,8 +162,49 @@ class GenerateAgain: UIViewController {
         UIImageWriteToSavedPhotosAlbum(img.image!, nil, nil, nil)
 
     }
+    
     @IBAction func share(_ sender: Any) {
+        let firstActivityItem = ""
+        let secondActivityItem : NSURL = NSURL(string: "http//:hangme")!
+        let image : UIImage =  img.image!
+        let activityViewController : UIActivityViewController = UIActivityViewController(
+            activityItems: [firstActivityItem, secondActivityItem, image], applicationActivities: nil)
+            activityViewController.popoverPresentationController?.sourceView = (sender as! UIButton)
+            activityViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection.up
+            activityViewController.popoverPresentationController?.sourceRect = CGRect(x: 150, y: 150, width: 0, height: 0)
+            activityViewController.excludedActivityTypes = [
+                 UIActivity.ActivityType.postToWeibo,
+                 UIActivity.ActivityType.print,
+                 UIActivity.ActivityType.assignToContact,
+                 UIActivity.ActivityType.saveToCameraRoll,
+                 UIActivity.ActivityType.addToReadingList,
+                 UIActivity.ActivityType.postToFlickr,
+                 UIActivity.ActivityType.postToVimeo,
+                 UIActivity.ActivityType.postToTencentWeibo,
+                 UIActivity.ActivityType.postToFacebook,
+                 UIActivity.ActivityType.postToTwitter,
+            ]
+             
+            self.present(activityViewController, animated: true, completion: nil)
     }
+    
     @IBAction func generate(_ sender: Any) {
+        //Si connette al DB
+        var db: OpaquePointer?
+        let fileURL = try!
+        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+            print("error opening database")
+        }
+        
+        var stmt: OpaquePointer?
+        let queryString = "UPDATE Collage SET valore = 'si' WHERE id = 1;"
+        sqlite3_prepare(db, queryString, -1, &stmt, nil)
+        sqlite3_step(stmt)
+        print("Saved successfully")
+               
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let secondVC = storyboard.instantiateViewController(withIdentifier: "postCollage")  as! PostCollage
+        self.navigationController?.pushViewController(secondVC, animated: true)
     }
 }
