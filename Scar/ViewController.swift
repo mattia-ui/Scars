@@ -16,6 +16,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBOutlet weak var pictureScars: UIImageView!
     @IBOutlet weak var tempDrawScars: UIImageView!
 
+    @IBOutlet weak var subTitle: UILabel!
+    
     static var imageScars: UIImage!
     var lastPoint = CGPoint.zero
     var color = UIColor.black
@@ -34,7 +36,22 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
+        
+        let boldText1 = "Trace and"
+        let normalString2 = NSMutableAttributedString(string:boldText1)
+        
+        let normalText1 = " fill your sign"
+        let attrs2 = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 22)]
+        let attributedString = NSMutableAttributedString(string:normalText1, attributes:attrs2 as [NSAttributedString.Key : Any])
+        
+        normalString2.append(attributedString)
+        
+        let boldText2 = " shape."
+        let normalString3 = NSMutableAttributedString(string:boldText2)
 
+            normalString2.append(normalString3)
+            subTitle.attributedText = normalString2
+        
         pictureScars.image = ViewController.imageScars
         pictureScars.layer.borderWidth = 1
         pictureScars.layer.borderColor = CGColor(srgbRed: 0.112, green: 0.112, blue: 0.112, alpha: 1)
