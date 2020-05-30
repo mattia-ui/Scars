@@ -211,6 +211,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backM" translatesAutoresizingMaskIntoConstraints="NO" id="zKV-vd-0Ud">
+                                        <rect key="frame" x="0.0" y="0.0" width="435" height="842"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bri-Aq-9dp">
                                         <rect key="frame" x="22" y="98" width="335" height="96"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -220,10 +224,6 @@ Masterpiece!</string>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IllustrazioneSchermata3" translatesAutoresizingMaskIntoConstraints="NO" id="zKV-vd-0Ud">
-                                        <rect key="frame" x="23" y="251" width="370" height="404"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cj-VA-9NZ">
                                         <rect key="frame" x="115" y="695" width="186" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1668,7 +1668,7 @@ tips and inspirational contents for you!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zqp-a9-CTC">
-                                <rect key="frame" x="0.0" y="214" width="414" height="685"/>
+                                <rect key="frame" x="0.0" y="220" width="414" height="679"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="8Nk-kU-HSs"/>
                                     <constraint firstAttribute="height" constant="663" id="eTf-WS-spw"/>
@@ -1677,10 +1677,10 @@ tips and inspirational contents for you!</string>
                                 <viewLayoutGuide key="frameLayoutGuide" id="EgR-fQ-y8p"/>
                             </scrollView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nav1-2" translatesAutoresizingMaskIntoConstraints="NO" id="IRL-vy-kpc">
-                                <rect key="frame" x="0.0" y="55" width="414" height="176"/>
+                                <rect key="frame" x="0.0" y="60" width="414" height="176"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg9-aS-nb6">
-                                <rect key="frame" x="20" y="146" width="25" height="37"/>
+                                <rect key="frame" x="20" y="151" width="25" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="BBY-dP-QTs"/>
                                     <constraint firstAttribute="width" constant="25" id="qre-qh-atK"/>
@@ -1694,12 +1694,12 @@ tips and inspirational contents for you!</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Yg9-aS-nb6" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" constant="58" id="1Fl-g5-aIn"/>
+                            <constraint firstItem="Yg9-aS-nb6" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" constant="63" id="1Fl-g5-aIn"/>
                             <constraint firstItem="Zqp-a9-CTC" firstAttribute="centerX" secondItem="TZg-6g-tU7" secondAttribute="centerX" id="Gzi-hd-0Jg"/>
                             <constraint firstItem="Yg9-aS-nb6" firstAttribute="leading" secondItem="bTK-SO-FHz" secondAttribute="leading" constant="20" id="SkS-tB-gOR"/>
-                            <constraint firstItem="Zqp-a9-CTC" firstAttribute="top" secondItem="IRL-vy-kpc" secondAttribute="bottom" constant="-17" id="VzF-vA-SfR"/>
+                            <constraint firstItem="Zqp-a9-CTC" firstAttribute="top" secondItem="IRL-vy-kpc" secondAttribute="bottom" constant="-16" id="VzF-vA-SfR"/>
                             <constraint firstItem="IRL-vy-kpc" firstAttribute="trailing" secondItem="bTK-SO-FHz" secondAttribute="trailing" id="X4I-Ae-Ps5"/>
-                            <constraint firstItem="IRL-vy-kpc" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" constant="-33" id="iUO-2u-6IG"/>
+                            <constraint firstItem="IRL-vy-kpc" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" constant="-28" id="iUO-2u-6IG"/>
                             <constraint firstItem="IRL-vy-kpc" firstAttribute="leading" secondItem="bTK-SO-FHz" secondAttribute="leading" id="ysG-oQ-WKe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bTK-SO-FHz"/>
@@ -2867,7 +2867,6 @@ The two shapes on the outside recount </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mjP-6E-I86"/>
         <segue reference="wd9-1W-xO2"/>
         <segue reference="Cab-pX-8BL"/>
     </inferredMetricsTieBreakers>
@@ -2879,7 +2878,6 @@ The two shapes on the outside recount </string>
         <image name="GenerateAgain" width="263" height="55"/>
         <image name="Group 48" width="508" height="518"/>
         <image name="IllustrazionePerBlur" width="370" height="600"/>
-        <image name="IllustrazioneSchermata3" width="370" height="404"/>
         <image name="Item1" width="29" height="27"/>
         <image name="Item2" width="26" height="22"/>
         <image name="Item3" width="29" height="29"/>
@@ -2902,6 +2900,7 @@ The two shapes on the outside recount </string>
         <image name="Wood" width="168" height="168"/>
         <image name="aggiungiInsight" width="32" height="25"/>
         <image name="backArrow" width="14" height="25"/>
+        <image name="backM" width="414" height="896"/>
         <image name="cc" width="128" height="128"/>
         <image name="checked" width="35" height="33"/>
         <image name="circle" width="68" height="68"/>
