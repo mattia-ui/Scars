@@ -183,6 +183,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
             cell.image.image = UIImage(named: contenuto[indexPath.row].image)
         }
         let tap1 = MyTap(target: self, action: #selector(self.goLink(sender:)))
+        tap1.link = contenuto[indexPath.row].link
         cell.image.isUserInteractionEnabled = true
         cell.image.addGestureRecognizer(tap1)
         
