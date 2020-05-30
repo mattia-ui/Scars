@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9C-PY-zlv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9C-PY-zlv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -34,7 +34,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="Draw" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Draw" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,7 +100,7 @@
         <!--Post Collage-->
         <scene sceneID="rdl-Dj-3pS">
             <objects>
-                <viewController storyboardIdentifier="postCollage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GG3-f1-cQ8" customClass="PostCollage" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="postCollage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GG3-f1-cQ8" customClass="PostCollage" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XOD-ds-Jxc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,7 +122,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="myCell" id="cBR-UM-1Zb" customClass="CollectionViewCell" customModule="Scar" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="myCell" id="cBR-UM-1Zb" customClass="CollectionViewCell" customModule="Skinsugi" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="3" width="145" height="145"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OWj-JY-Kmd">
@@ -256,7 +256,7 @@ Masterpiece!</string>
         <!--Prima Tutorial-->
         <scene sceneID="7e0-CN-NnR">
             <objects>
-                <viewController id="w7d-Tn-c1A" customClass="PrimaTutorial" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="w7d-Tn-c1A" customClass="PrimaTutorial" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mv5-VB-TpB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -327,7 +327,7 @@ Masterpiece!</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell1" rowHeight="120" id="Q0F-YJ-7d9" customClass="Cella1" customModule="Scar" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell1" rowHeight="120" id="Q0F-YJ-7d9" customClass="Cella1" customModule="Skinsugi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q0F-YJ-7d9" id="tAq-I3-Gpy">
@@ -357,7 +357,7 @@ Masterpiece!</string>
                                             <outlet property="frase" destination="SzM-f1-Yon" id="MWB-82-WVM"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell2" rowHeight="100" id="Odx-4k-Ygl" customClass="Cella2" customModule="Scar" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell2" rowHeight="100" id="Odx-4k-Ygl" customClass="Cella2" customModule="Skinsugi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="148" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Odx-4k-Ygl" id="z3Q-oM-gjf">
@@ -385,7 +385,7 @@ Masterpiece!</string>
                                             <outlet property="button" destination="dCf-Wr-8Gn" id="HLK-gP-tU2"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell3" rowHeight="200" id="B7d-lg-0DN" customClass="Cella3" customModule="Scar" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell3" rowHeight="200" id="B7d-lg-0DN" customClass="Cella3" customModule="Skinsugi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="248" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B7d-lg-0DN" id="vQO-Sv-XsO">
@@ -475,7 +475,7 @@ How you think others see it?</string>
         <!--Choose Shape-->
         <scene sceneID="6Ts-LR-Gd3">
             <objects>
-                <viewController id="xs9-hS-2dx" customClass="ChooseShape" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xs9-hS-2dx" customClass="ChooseShape" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Srd-Ly-JAO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -610,7 +610,7 @@ How you think others see it?</string>
         <!--Choose Shape2-->
         <scene sceneID="OD2-EG-cs0">
             <objects>
-                <viewController id="My5-jh-AI2" customClass="ChooseShape2" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="My5-jh-AI2" customClass="ChooseShape2" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mat-fe-5YN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -736,7 +736,7 @@ How you think others see it?</string>
         <!--Choose Palette-->
         <scene sceneID="3qS-Xv-YA4">
             <objects>
-                <viewController id="lYX-Go-SkF" customClass="ChoosePalette" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lYX-Go-SkF" customClass="ChoosePalette" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UH4-Nu-LfI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -844,7 +844,7 @@ How you think others see it?</string>
         <!--Choose Texture-->
         <scene sceneID="Wxd-iF-v1Z">
             <objects>
-                <viewController id="lfU-OF-Bud" customClass="ChooseTexture" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lfU-OF-Bud" customClass="ChooseTexture" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pnh-IU-Nic">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1044,7 +1044,7 @@ all the answers you gave?</string>
         <!--Take Picture-->
         <scene sceneID="Jl4-hx-3m8">
             <objects>
-                <viewController id="hvR-kH-wNA" customClass="TakePicture" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hvR-kH-wNA" customClass="TakePicture" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vEG-89-kEc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1102,7 +1102,7 @@ all the answers you gave?</string>
         <!--Seconda Tutorial-->
         <scene sceneID="7mQ-lE-ldW">
             <objects>
-                <viewController id="uc2-fZ-Jab" customClass="SecondaTutorial" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uc2-fZ-Jab" customClass="SecondaTutorial" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iue-cf-wZh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1173,7 +1173,7 @@ your body and others’s bodies.</string>
         <!--Terza Tutorial-->
         <scene sceneID="Uj9-xb-V9c">
             <objects>
-                <viewController id="1qk-lX-Jh4" customClass="TerzaTutorial" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1qk-lX-Jh4" customClass="TerzaTutorial" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ULA-lm-g1f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1272,7 +1272,7 @@ tips and inspirational contents for you!</string>
         <!--Password-->
         <scene sceneID="8kN-9H-Qr9">
             <objects>
-                <viewController storyboardIdentifier="pass" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yUW-Sd-l6b" customClass="Password" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="pass" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yUW-Sd-l6b" customClass="Password" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GeQ-G8-jl7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1310,7 +1310,7 @@ tips and inspirational contents for you!</string>
         <!--Secret Collection-->
         <scene sceneID="qjI-eq-ejK">
             <objects>
-                <viewController storyboardIdentifier="collection" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g4r-8M-0U1" customClass="SecretCollection" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="collection" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g4r-8M-0U1" customClass="SecretCollection" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ceZ-Uo-O8G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1325,7 +1325,7 @@ tips and inspirational contents for you!</string>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCell" id="gIL-x7-jMY" customClass="CollectionViewCell" customModule="Scar" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCell" id="gIL-x7-jMY" customClass="CollectionViewCell" customModule="Skinsugi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aQw-CN-cVk">
@@ -1381,7 +1381,7 @@ tips and inspirational contents for you!</string>
         <!--Carica Image-->
         <scene sceneID="rJD-Qr-TLn">
             <objects>
-                <viewController storyboardIdentifier="image" id="cgj-06-g3C" customClass="CaricaImage" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="image" id="cgj-06-g3C" customClass="CaricaImage" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uqc-bG-sTi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1452,7 +1452,7 @@ tips and inspirational contents for you!</string>
         <!--Schermata1-->
         <scene sceneID="HeO-9e-5mn">
             <objects>
-                <viewController storyboardIdentifier="collectionInitial" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bpt-qr-c5A" customClass="Schermata1" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="collectionInitial" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bpt-qr-c5A" customClass="Schermata1" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4YE-cF-0EA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1487,7 +1487,7 @@ tips and inspirational contents for you!</string>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" restorationIdentifier="myCell" reuseIdentifier="myCell" id="DOL-XC-LhE" customClass="CollectionViewCell1" customModule="Scar" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" restorationIdentifier="myCell" reuseIdentifier="myCell" id="DOL-XC-LhE" customClass="CollectionViewCell1" customModule="Skinsugi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="4" width="176" height="125"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dPQ-80-aLg">
@@ -1662,7 +1662,7 @@ tips and inspirational contents for you!</string>
         <!--View Controller Initial-->
         <scene sceneID="OZx-Q6-BQc">
             <objects>
-                <viewController storyboardIdentifier="imageColl" id="5W6-fN-tNa" customClass="ViewControllerInitial" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="imageColl" id="5W6-fN-tNa" customClass="ViewControllerInitial" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TZg-6g-tU7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1717,7 +1717,7 @@ tips and inspirational contents for you!</string>
         <!--Insights-->
         <scene sceneID="i97-yh-FCQ">
             <objects>
-                <viewController id="Aa9-1L-etK" customClass="Schermata2" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Aa9-1L-etK" customClass="Schermata2" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k0H-CH-ZUa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1899,7 +1899,7 @@ tips and inspirational contents for you!</string>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" restorationIdentifier="ins" reuseIdentifier="ins" id="tBk-G5-O86" customClass="InightsCollection" customModule="Scar" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" restorationIdentifier="ins" reuseIdentifier="ins" id="tBk-G5-O86" customClass="InightsCollection" customModule="Skinsugi" customModuleProvider="target">
                                         <rect key="frame" x="1" y="0.0" width="412" height="363"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="insightsCell" insetsLayoutMarginsFromSafeArea="NO" id="xtB-u9-g6l">
@@ -1990,7 +1990,7 @@ tips and inspirational contents for you!</string>
                                             <outlet property="title" destination="eqz-fq-sWa" id="y3a-JC-mvq"/>
                                         </connections>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="footer" id="eix-Yp-2oL" customClass="FooterCollectionView" customModule="Scar" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="footer" id="eix-Yp-2oL" customClass="FooterCollectionView" customModule="Skinsugi" customModuleProvider="target">
                                         <rect key="frame" x="1" y="373" width="412" height="67"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="huF-rN-Wyo">
@@ -2102,13 +2102,13 @@ tips and inspirational contents for you!</string>
         <!--Add Insights-->
         <scene sceneID="Woi-j5-aN0">
             <objects>
-                <viewController id="pxK-AG-QlA" customClass="AddInsights" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pxK-AG-QlA" customClass="AddInsights" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hoX-51-YQu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhW-b9-vYz">
-                                <rect key="frame" x="15" y="254" width="386" height="76"/>
+                                <rect key="frame" x="15" y="264.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2121,7 +2121,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7I-AD-BUJ">
-                                <rect key="frame" x="15" y="352" width="386" height="76"/>
+                                <rect key="frame" x="15" y="362.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2134,7 +2134,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzd-QM-ZsD">
-                                <rect key="frame" x="15" y="450" width="386" height="76"/>
+                                <rect key="frame" x="15" y="460.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2147,7 +2147,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yP-st-eET">
-                                <rect key="frame" x="15" y="156" width="386" height="76"/>
+                                <rect key="frame" x="15" y="166.5" width="386" height="76"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
@@ -2162,7 +2162,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZk-O6-Ha0">
-                                <rect key="frame" x="15" y="646" width="386" height="76"/>
+                                <rect key="frame" x="15" y="656.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2175,7 +2175,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaW-2m-fzZ">
-                                <rect key="frame" x="15" y="548" width="386" height="76"/>
+                                <rect key="frame" x="15" y="558.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2188,13 +2188,13 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalize your insights section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLV-JE-bPB">
-                                <rect key="frame" x="22" y="77" width="372" height="22"/>
+                                <rect key="frame" x="22" y="83.5" width="372" height="26"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Interests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICX-Lj-BMb">
-                                <rect key="frame" x="22" y="32" width="372" height="38"/>
+                                <rect key="frame" x="22" y="32" width="372" height="44.5"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2328,7 +2328,7 @@ tips and inspirational contents for you!</string>
         <!--Collage-->
         <scene sceneID="OKi-3h-q0R">
             <objects>
-                <viewController storyboardIdentifier="Collage" id="3Kp-ef-EWY" customClass="Collage" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Collage" id="3Kp-ef-EWY" customClass="Collage" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uAv-wX-fWj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1275"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2536,7 +2536,7 @@ The two shapes on the outside recount </string>
             <objects>
                 <viewController id="gSf-qA-Glv" customClass="GenerateAgain" customModule="Skinsugi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MnJ-Ms-dNu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1010"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1064"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oBT-Cb-SzO">
@@ -2686,7 +2686,7 @@ The two shapes on the outside recount </string>
         <!--Share Page-->
         <scene sceneID="MAA-cj-BQ7">
             <objects>
-                <viewController id="LDR-hH-uX6" customClass="SharePage" customModule="Scar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LDR-hH-uX6" customClass="SharePage" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="haL-L1-cYc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1691"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
