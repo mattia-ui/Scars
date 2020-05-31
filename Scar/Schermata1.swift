@@ -22,7 +22,7 @@ struct WeeklyStruct {
 }
 
 var weeklyInfo: [WeeklyStruct] = [
-    WeeklyStruct(title:"Read a good book",descr: "Did you know that reading reduces stress levels, improves mood and is very good for your mind? What are you waiting for? Choose something you like and start reading it.", image:"Weekly3"),
+    WeeklyStruct(title:"Read a good book",descr: "Did you know that reading reduces stress levels, improves mood and is very good for your mind? What are you waiting for? Choose something you like and start reading it.", image:"Weekly1"),
     WeeklyStruct(title:"Follow a passion, dedicate yourself to a hobby",descr: "If you love something, why not do it? There is no room for criticism here, there is only you and your passions. Be positive, be creative and enjoy it.", image:"Weekly2"),
     WeeklyStruct(title:"Try new things, get out of your comfort zone",descr: "Did you know that a comfort zone is a self-imposed boundary that a person refuses to cross? What are you waiting for? Try new flavors, wear new colors and do something you've never done before!", image:"Weekly3"),
     WeeklyStruct(title:"Become aware of your difficulties",descr: "A. Einstein said: ‘If you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid.’ Accept your limits but after a failure always be ready to rediscover yourself again.", image:"Weekly4"),  WeeklyStruct(title:"List the things you like about your body",descr: "Today remember that there is no one else in the world who is just like you. The things that make you unique are what make you special. Think about what you love most about yourself and be proud of it!", image:"Weekly5"),
