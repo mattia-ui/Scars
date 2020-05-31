@@ -722,7 +722,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
     }
     
     func cropBottomImage(image: UIImage) -> UIImage {
-        let height = CGFloat(850)
+        let height = CGFloat(800)
         print(image.size.width)
         let rect = CGRect(x: 0, y: 400, width: 850, height: height)
         return cropImage(image: image, toRect: rect)
