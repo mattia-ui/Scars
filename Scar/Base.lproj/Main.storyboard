@@ -2581,23 +2581,15 @@ The two shapes on the outside recount </string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="918"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hht-L1-G5R">
-                                <rect key="frame" x="-2" y="-2" width="418" height="141"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YourMasterpieceNav" translatesAutoresizingMaskIntoConstraints="NO" id="hht-L1-G5R">
+                                <rect key="frame" x="-2" y="-12" width="418" height="141"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="141" id="9Wv-hP-spC"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Masterpiece" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVu-dk-z6v">
-                                <rect key="frame" x="50" y="89" width="293" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="36"/>
-                                <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayK-bN-Qsf">
-                                <rect key="frame" x="17" y="96" width="25" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayK-bN-Qsf">
+                                <rect key="frame" x="13" y="84" width="14" height="25"/>
                                 <state key="normal" image="backArrow"/>
                                 <connections>
                                     <segue destination="GG3-f1-cQ8" kind="show" id="AIj-6n-atw"/>
@@ -2707,10 +2699,13 @@ The two shapes on the outside recount </string>
                             <constraint firstAttribute="bottom" secondItem="pcE-Dh-ylJ" secondAttribute="bottom" id="7FF-fI-mo3"/>
                             <constraint firstItem="hht-L1-G5R" firstAttribute="centerX" secondItem="pcE-Dh-ylJ" secondAttribute="centerX" id="CGW-k8-tAF"/>
                             <constraint firstItem="pcE-Dh-ylJ" firstAttribute="leading" secondItem="ngy-Yb-mrA" secondAttribute="leading" id="CJs-au-1Hd"/>
-                            <constraint firstItem="pcE-Dh-ylJ" firstAttribute="top" secondItem="hht-L1-G5R" secondAttribute="bottom" id="DEv-au-vfB"/>
+                            <constraint firstItem="pcE-Dh-ylJ" firstAttribute="top" secondItem="hht-L1-G5R" secondAttribute="bottom" constant="10" id="DEv-au-vfB"/>
                             <constraint firstItem="hht-L1-G5R" firstAttribute="leading" secondItem="tPo-Gd-3ON" secondAttribute="leadingMargin" constant="-22" id="HLu-6R-fj1"/>
-                            <constraint firstItem="hht-L1-G5R" firstAttribute="top" secondItem="tPo-Gd-3ON" secondAttribute="topMargin" constant="-2" id="JE1-eg-k83"/>
+                            <constraint firstItem="hht-L1-G5R" firstAttribute="top" secondItem="tPo-Gd-3ON" secondAttribute="topMargin" constant="-12" id="JE1-eg-k83"/>
+                            <constraint firstItem="ayK-bN-Qsf" firstAttribute="leading" secondItem="ngy-Yb-mrA" secondAttribute="leading" constant="13" id="Kp3-ub-c05"/>
                             <constraint firstItem="pcE-Dh-ylJ" firstAttribute="trailing" secondItem="ngy-Yb-mrA" secondAttribute="trailing" id="Obn-OJ-Pbc"/>
+                            <constraint firstItem="ayK-bN-Qsf" firstAttribute="top" secondItem="ngy-Yb-mrA" secondAttribute="top" constant="84" id="lId-tB-Ihs"/>
+                            <constraint firstItem="pcE-Dh-ylJ" firstAttribute="top" secondItem="ayK-bN-Qsf" secondAttribute="bottom" constant="30" id="uCr-CS-D5i"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ngy-Yb-mrA"/>
                     </view>
@@ -2729,7 +2724,7 @@ The two shapes on the outside recount </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zpO-py-ubT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1751" y="1584"/>
+            <point key="canvasLocation" x="1750.7246376811595" y="1583.7053571428571"/>
         </scene>
         <!--Share Page-->
         <scene sceneID="MAA-cj-BQ7">
@@ -2940,6 +2935,7 @@ The two shapes on the outside recount </string>
         <image name="TCAzz" width="230" height="230"/>
         <image name="Textile" width="168" height="168"/>
         <image name="Wood" width="168" height="168"/>
+        <image name="YourMasterpieceNav" width="415" height="140"/>
         <image name="aggiungiInsight" width="32" height="25"/>
         <image name="backArrow" width="14" height="25"/>
         <image name="backM" width="414" height="896"/>

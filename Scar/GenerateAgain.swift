@@ -22,8 +22,8 @@ class GenerateAgain: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageNav.layer.borderWidth = 0.5
-        imageNav.layer.borderColor = CGColor(srgbRed: 0.46, green: 0.41, blue: 0.51, alpha: 1)
+//        imageNav.layer.borderWidth = 0.5
+//        imageNav.layer.borderColor = CGColor(srgbRed: 0.46, green: 0.41, blue: 0.51, alpha: 1)
         
         img.layer.borderWidth = 0.5
         img.layer.masksToBounds = true
