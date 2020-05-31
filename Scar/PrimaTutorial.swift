@@ -24,6 +24,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var frase3: UILabel!
     @IBOutlet weak var domande3: UILabel!
     @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var gif: UIImageView!
     
     var db: OpaquePointer?
     var stmt: OpaquePointer?
@@ -215,7 +216,8 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
-    
+        
+        gif.loadGif(name: "TimelineAnimated")
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
 
@@ -582,3 +584,4 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         super.didReceiveMemoryWarning()
     }
 }
+
