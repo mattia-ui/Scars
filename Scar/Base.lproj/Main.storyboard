@@ -2696,6 +2696,7 @@ The two shapes on the outside recount </string>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="hht-L1-G5R" firstAttribute="top" secondItem="tPo-Gd-3ON" secondAttribute="top" constant="-2" id="77Z-WI-suz"/>
                             <constraint firstAttribute="bottom" secondItem="pcE-Dh-ylJ" secondAttribute="bottom" id="7FF-fI-mo3"/>
                             <constraint firstItem="hht-L1-G5R" firstAttribute="centerX" secondItem="pcE-Dh-ylJ" secondAttribute="centerX" id="CGW-k8-tAF"/>
                             <constraint firstItem="pcE-Dh-ylJ" firstAttribute="leading" secondItem="ngy-Yb-mrA" secondAttribute="leading" id="CJs-au-1Hd"/>
