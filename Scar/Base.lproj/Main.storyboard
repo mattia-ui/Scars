@@ -350,14 +350,14 @@ Masterpiece!</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi, Sigafreda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywt-KN-qf8">
-                                                    <rect key="frame" x="34" y="11" width="211" height="35"/>
+                                                    <rect key="frame" x="22" y="14" width="229" height="38"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="35"/>
+                                                    <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                                     <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzM-f1-Yon">
-                                                    <rect key="frame" x="34" y="65" width="346" height="22"/>
+                                                    <rect key="frame" x="22" y="61" width="346" height="22"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <string key="text">Tell us what inspires you the most.
 </string>
@@ -390,6 +390,7 @@ Masterpiece!</string>
                                                     <state key="selected" backgroundImage="selected">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <state key="highlighted" backgroundImage="deselected"/>
                                                     <connections>
                                                         <action selector="buttonCellPressed:" destination="w7d-Tn-c1A" eventType="touchUpInside" id="7XY-r6-6KF"/>
                                                     </connections>
@@ -408,7 +409,7 @@ Masterpiece!</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3A-U0-X4D">
-                                                    <rect key="frame" x="116" y="73" width="182" height="55"/>
+                                                    <rect key="frame" x="116" y="86" width="182" height="55"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" image="done">
                                                         <color key="titleColor" red="0.91372543569999998" green="0.91366583109999999" blue="0.91764795779999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -445,19 +446,19 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
-                                <rect key="frame" x="850" y="601" width="312" height="66"/>
+                                <rect key="frame" x="850" y="601" width="346" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">How you feel about your scar?
+                                <string key="text">How do you feel about your scar?
 
-How you think others see it?</string>
+How do you think others see it?</string>
                                 <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-fI-qoJ">
-                                <rect key="frame" x="929" y="754" width="194" height="55"/>
+                                <rect key="frame" x="929" y="755" width="194" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="lettsego"/>
+                                <state key="normal" image="Let'sgo"/>
                                 <connections>
                                     <segue destination="uc2-fZ-Jab" kind="show" id="S6c-zV-Y2y"/>
                                 </connections>
@@ -2939,7 +2940,7 @@ The two shapes on the outside recount </string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="O1h-M3-5IE"/>
-        <segue reference="s1A-7h-Aw8"/>
+        <segue reference="wd9-1W-xO2"/>
         <segue reference="rkX-St-HZF"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -2953,6 +2954,7 @@ The two shapes on the outside recount </string>
         <image name="Item1" width="29" height="27"/>
         <image name="Item2" width="26" height="22"/>
         <image name="Item3" width="29" height="29"/>
+        <image name="Let'sgo" width="194" height="55"/>
         <image name="Lettsegoazzurro" width="182" height="55"/>
         <image name="MakePhoto" width="98" height="94"/>
         <image name="Marble" width="168" height="168"/>
@@ -2986,7 +2988,6 @@ The two shapes on the outside recount </string>
         <image name="illustrazione3" width="376" height="444"/>
         <image name="illustrazioneCollage" width="414" height="262"/>
         <image name="insight5" width="370" height="131"/>
-        <image name="lettsego" width="194" height="55"/>
         <image name="linea" width="371" height="1"/>
         <image name="nav1-2" width="415" height="143"/>
         <image name="navInsta" width="415" height="185"/>
