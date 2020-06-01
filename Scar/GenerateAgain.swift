@@ -166,30 +166,30 @@ class GenerateAgain: UIViewController {
 
     }
     
-    @IBAction func share(_ sender: Any) {
-        let firstActivityItem = ""
-        let secondActivityItem : NSURL = NSURL(string: "http//:hangme")!
-        let image : UIImage =  img.image!
-        let activityViewController : UIActivityViewController = UIActivityViewController(
-            activityItems: [firstActivityItem, secondActivityItem, image], applicationActivities: nil)
-            activityViewController.popoverPresentationController?.sourceView = (sender as! UIButton)
-            activityViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection.up
-            activityViewController.popoverPresentationController?.sourceRect = CGRect(x: 150, y: 150, width: 0, height: 0)
-            activityViewController.excludedActivityTypes = [
-                 UIActivity.ActivityType.postToWeibo,
-                 UIActivity.ActivityType.print,
-                 UIActivity.ActivityType.assignToContact,
-                 UIActivity.ActivityType.saveToCameraRoll,
-                 UIActivity.ActivityType.addToReadingList,
-                 UIActivity.ActivityType.postToFlickr,
-                 UIActivity.ActivityType.postToVimeo,
-                 UIActivity.ActivityType.postToTencentWeibo,
-                 UIActivity.ActivityType.postToFacebook,
-                 UIActivity.ActivityType.postToTwitter,
-            ]
-             
-            self.present(activityViewController, animated: true, completion: nil)
-    }
+//    @IBAction func share(_ sender: Any) {
+//        let firstActivityItem = ""
+//        let secondActivityItem : NSURL = NSURL(string: "http//:hangme")!
+//        let image : UIImage =  img.image!
+//        let activityViewController : UIActivityViewController = UIActivityViewController(
+//            activityItems: [firstActivityItem, secondActivityItem, image], applicationActivities: nil)
+//            activityViewController.popoverPresentationController?.sourceView = (sender as! UIButton)
+//            activityViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection.up
+//            activityViewController.popoverPresentationController?.sourceRect = CGRect(x: 150, y: 150, width: 0, height: 0)
+//            activityViewController.excludedActivityTypes = [
+//                 UIActivity.ActivityType.postToWeibo,
+//                 UIActivity.ActivityType.print,
+//                 UIActivity.ActivityType.assignToContact,
+//                 UIActivity.ActivityType.saveToCameraRoll,
+//                 UIActivity.ActivityType.addToReadingList,
+//                 UIActivity.ActivityType.postToFlickr,
+//                 UIActivity.ActivityType.postToVimeo,
+//                 UIActivity.ActivityType.postToTencentWeibo,
+//                 UIActivity.ActivityType.postToFacebook,
+//                 UIActivity.ActivityType.postToTwitter,
+//            ]
+//
+//            self.present(activityViewController, animated: true, completion: nil)
+//    }
     
     @IBAction func generate(_ sender: Any) {
         //Si connette al DB
@@ -209,5 +209,11 @@ class GenerateAgain: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let secondVC = storyboard.instantiateViewController(withIdentifier: "postCollage")  as! PostCollage
         self.navigationController?.pushViewController(secondVC, animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "passa"){
+            (segue.destination as! SharePage).img = img.image ?? UIImage()
+        }
     }
 }
