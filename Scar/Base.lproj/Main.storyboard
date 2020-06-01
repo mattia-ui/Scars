@@ -2389,14 +2389,16 @@ tips and inspirational contents for you!</string>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iaf-1g-HK7">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1183"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is your #skinsugi!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcg-DQ-JRd">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is your #skinsugi!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcg-DQ-JRd">
                                                         <rect key="frame" x="22" y="62" width="392" height="80"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="yfh-jR-shP"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Discover more about your Masterpiece" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z49-kW-QRd">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover more about your Masterpiece" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z49-kW-QRd" userLabel="Discover1">
                                                         <rect key="frame" x="22" y="150" width="324" height="18"/>
                                                         <fontDescription key="fontDescription" name="CeraPro-LightItalic" family="Cera Pro" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -2415,14 +2417,18 @@ tips and inspirational contents for you!</string>
                                                         <rect key="frame" x="7" y="201" width="400" height="400"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DtU-42-1mO">
-                                                        <rect key="frame" x="180" y="601" width="54" height="54"/>
+                                                        <rect key="frame" x="180" y="611" width="54" height="54"/>
                                                         <state key="normal" image="download"/>
                                                         <connections>
                                                             <action selector="saveScreen:" destination="3Kp-ef-EWY" eventType="touchUpInside" id="rc6-IS-Gz8"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igl-LE-bMi">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igl-LE-bMi">
                                                         <rect key="frame" x="22" y="702" width="370" height="258"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="370" id="5SK-gT-it4"/>
+                                                            <constraint firstAttribute="height" constant="258" id="cyy-r7-gad"/>
+                                                        </constraints>
                                                         <attributedString key="attributedText">
                                                             <fragment content="The pattern in the large circle describes ">
                                                                 <attributes>
@@ -2512,13 +2518,13 @@ The two shapes on the outside recount </string>
                                                         </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntc-NU-ZMR">
-                                                        <rect key="frame" x="22" y="979" width="271" height="26"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntc-NU-ZMR" userLabel="Discover2">
+                                                        <rect key="frame" x="22" y="979" width="266" height="20"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Discover more about Kinsugi">
                                                                 <attributes>
                                                                     <color key="NSColor" red="0.6705882352941176" green="0.86274509803921573" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                    <font key="NSFont" metaFont="system" size="20"/>
+                                                                    <font key="NSFont" size="20" name="CeraPro-Regular"/>
                                                                     <integer key="NSUnderline" value="1"/>
                                                                 </attributes>
                                                             </fragment>
@@ -2536,24 +2542,30 @@ The two shapes on the outside recount </string>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstItem="DtU-42-1mO" firstAttribute="centerX" secondItem="Iaf-1g-HK7" secondAttribute="centerX" id="70M-Cj-8S1"/>
+                                                    <constraint firstItem="Z49-kW-QRd" firstAttribute="top" secondItem="tcg-DQ-JRd" secondAttribute="bottom" constant="8" id="8hf-hN-kpi"/>
+                                                    <constraint firstItem="tcg-DQ-JRd" firstAttribute="leading" secondItem="Z49-kW-QRd" secondAttribute="leading" id="ABr-ox-awG"/>
                                                     <constraint firstItem="DtU-42-1mO" firstAttribute="centerX" secondItem="Igl-LE-bMi" secondAttribute="centerX" id="AQ9-Kn-1qy"/>
                                                     <constraint firstItem="jgS-5L-Xg9" firstAttribute="leading" secondItem="zQL-vM-xeu" secondAttribute="leading" id="DtC-xe-1xV"/>
                                                     <constraint firstItem="jgS-5L-Xg9" firstAttribute="top" secondItem="Z49-kW-QRd" secondAttribute="bottom" constant="34" id="DvE-by-qAX"/>
+                                                    <constraint firstItem="Z49-kW-QRd" firstAttribute="leading" secondItem="Iaf-1g-HK7" secondAttribute="leading" constant="22" id="GXe-gE-eqo"/>
                                                     <constraint firstItem="jgS-5L-Xg9" firstAttribute="bottom" secondItem="Q2H-9g-FGd" secondAttribute="bottom" id="Gtv-4u-aU4"/>
-                                                    <constraint firstItem="jTA-bJ-RLx" firstAttribute="top" secondItem="Ntc-NU-ZMR" secondAttribute="bottom" constant="58" id="PGO-n4-f6l"/>
                                                     <constraint firstItem="jgS-5L-Xg9" firstAttribute="leading" secondItem="Q2H-9g-FGd" secondAttribute="leading" id="PWx-xL-GZY"/>
                                                     <constraint firstAttribute="height" constant="1183" id="Pgo-83-146"/>
                                                     <constraint firstItem="jgS-5L-Xg9" firstAttribute="top" secondItem="Iaf-1g-HK7" secondAttribute="top" constant="202" id="WPG-bs-8Zo"/>
                                                     <constraint firstItem="DtU-42-1mO" firstAttribute="centerX" secondItem="jgS-5L-Xg9" secondAttribute="centerX" id="XQd-60-rZE"/>
                                                     <constraint firstAttribute="bottom" secondItem="jTA-bJ-RLx" secondAttribute="bottom" constant="65" id="YeQ-Md-GK4"/>
-                                                    <constraint firstAttribute="bottom" secondItem="DtU-42-1mO" secondAttribute="bottom" constant="528" id="ZBi-dU-XZC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="DtU-42-1mO" secondAttribute="bottom" constant="518" id="ZBi-dU-XZC"/>
                                                     <constraint firstItem="jgS-5L-Xg9" firstAttribute="top" secondItem="Q2H-9g-FGd" secondAttribute="top" id="eEx-Xx-heh"/>
                                                     <constraint firstItem="DtU-42-1mO" firstAttribute="centerX" secondItem="jTA-bJ-RLx" secondAttribute="centerX" id="gTn-gu-fOT"/>
-                                                    <constraint firstItem="DtU-42-1mO" firstAttribute="top" secondItem="zQL-vM-xeu" secondAttribute="bottom" id="isR-MH-RlN"/>
+                                                    <constraint firstItem="Ntc-NU-ZMR" firstAttribute="leading" secondItem="Iaf-1g-HK7" secondAttribute="leading" constant="22" id="htT-in-7jk"/>
+                                                    <constraint firstItem="DtU-42-1mO" firstAttribute="top" secondItem="zQL-vM-xeu" secondAttribute="bottom" constant="10" id="isR-MH-RlN"/>
+                                                    <constraint firstItem="Z49-kW-QRd" firstAttribute="leading" secondItem="Iaf-1g-HK7" secondAttribute="leading" constant="22" id="jMZ-wS-oxM"/>
                                                     <constraint firstItem="jgS-5L-Xg9" firstAttribute="leading" secondItem="Iaf-1g-HK7" secondAttribute="leading" constant="7" id="q1f-ge-Z7i"/>
                                                     <constraint firstItem="DtU-42-1mO" firstAttribute="centerX" secondItem="zQL-vM-xeu" secondAttribute="centerX" id="qlf-nc-6h2"/>
-                                                    <constraint firstItem="Igl-LE-bMi" firstAttribute="top" secondItem="DtU-42-1mO" secondAttribute="bottom" constant="47" id="rXm-ef-bll"/>
+                                                    <constraint firstItem="Igl-LE-bMi" firstAttribute="top" secondItem="DtU-42-1mO" secondAttribute="bottom" constant="37" id="rXm-ef-bll"/>
                                                     <constraint firstItem="DtU-42-1mO" firstAttribute="centerX" secondItem="Q2H-9g-FGd" secondAttribute="centerX" id="vMF-TH-5SW"/>
+                                                    <constraint firstItem="Ntc-NU-ZMR" firstAttribute="top" secondItem="Igl-LE-bMi" secondAttribute="bottom" constant="19" id="xtX-BV-jUA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="tcg-DQ-JRd" secondAttribute="trailing" id="z2r-Hl-EvR"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -2821,8 +2833,8 @@ The two shapes on the outside recount </string>
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content="Copy caption">
                                                                     <attributes>
-                                                                        <color key="NSColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <font key="NSFont" metaFont="system" size="20"/>
+                                                                        <color key="NSColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <font key="NSFont" size="20" name="CeraPro-Regular"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         <integer key="NSUnderline" value="1"/>
                                                                     </attributes>
@@ -2834,14 +2846,15 @@ The two shapes on the outside recount </string>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UN9-uJ-1tT">
-                                                        <rect key="frame" x="169" y="1567" width="79" height="32"/>
+                                                        <rect key="frame" x="169" y="1578" width="79" height="32"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal">
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content="Not now">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <font key="NSFont" metaFont="system" size="20"/>
+                                                                        <font key="NSFont" size="20" name="CeraPro-LightItalic"/>
+                                                                        <font key="NSOriginalFont" size="18" name="CeraPro-LightItalic"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         <integer key="NSUnderline" value="1"/>
                                                                     </attributes>
@@ -2923,7 +2936,7 @@ The two shapes on the outside recount </string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="s1A-7h-Aw8"/>
-        <segue reference="AIj-6n-atw"/>
+        <segue reference="rkX-St-HZF"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2-" width="101.5" height="101.5"/>
