@@ -746,6 +746,9 @@ class Collage: UIViewController, UITextFieldDelegate  {
     
     @IBAction func saveScreen(_ sender: Any) {
         UIImageWriteToSavedPhotosAlbum(screen.image!, nil, nil, nil)
+        let ac = UIAlertController(title: "Masterpiece saved!", message: "Your Masterpiece was copied successfully", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        present(ac, animated: true)
     }
 }
 

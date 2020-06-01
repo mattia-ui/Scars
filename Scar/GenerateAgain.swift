@@ -160,6 +160,9 @@ class GenerateAgain: UIViewController {
     }
     @IBAction func saveImg(_ sender: UIButton) {
         UIImageWriteToSavedPhotosAlbum(img.image!, nil, nil, nil)
+        let ac = UIAlertController(title: "Masterpiece saved!", message: "Your Masterpiece was copied successfully", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        present(ac, animated: true)
 
     }
     
