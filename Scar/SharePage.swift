@@ -110,6 +110,24 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
                        attributedString.append(normalString)
                        
                        label.attributedText = attributedString
+        
+        var  normalText2 = "Tell your story behind your indelible sign here…  - "
+                var normalString2 = NSMutableAttributedString(string:normalText2)
+                    let attrs3 = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Light", size: 20)]
+                let attributedString20 = NSMutableAttributedString(string:String(normalText2), attributes:attrs3 as [NSAttributedString.Key : Any])
+                
+        let boldText2 = "#skinsugi "
+        let attrs2 = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Regular", size: 20)]
+                   let attributedString21 = NSMutableAttributedString(string:boldText2, attributes:attrs2 as [NSAttributedString.Key : Any])
+                attributedString20.append(attributedString21)
+
+
+                normalText2 = "(max 249 character)"
+                normalString2 = NSMutableAttributedString(string:normalText2)
+                let attrs4 = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Light", size: 20)]
+                let attributedString22 = NSMutableAttributedString(string:String(normalText2), attributes:attrs4 as [NSAttributedString.Key : Any])
+               attributedString20.append(attributedString22)
+        descriptionField.attributedText = attributedString20
     }
     
     @objc func dismissKeyboard() {
@@ -136,7 +154,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
         let attributedString = NSMutableAttributedString(string:String(normalText), attributes:attrs2 as [NSAttributedString.Key : Any])
         
         let boldText = " - #skinsugi"
-        let attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+        let attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Regular", size: 20)]
            let attributedString2 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
         attributedString.append(attributedString2)
         
