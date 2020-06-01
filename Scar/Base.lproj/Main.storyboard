@@ -2421,8 +2421,8 @@ tips and inspirational contents for you!</string>
                                                             <action selector="saveScreen:" destination="3Kp-ef-EWY" eventType="touchUpInside" id="rc6-IS-Gz8"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igl-LE-bMi">
-                                                        <rect key="frame" x="22" y="702" width="370" height="258"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igl-LE-bMi">
+                                                        <rect key="frame" x="22" y="702" width="370" height="243.5"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="The pattern in the large circle describes ">
                                                                 <attributes>
@@ -2512,8 +2512,8 @@ The two shapes on the outside recount </string>
                                                         </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntc-NU-ZMR">
-                                                        <rect key="frame" x="22" y="979" width="271" height="26"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntc-NU-ZMR">
+                                                        <rect key="frame" x="22" y="981" width="248" height="24"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Discover more about Kinsugi">
                                                                 <attributes>
@@ -2553,7 +2553,9 @@ The two shapes on the outside recount </string>
                                                     <constraint firstItem="jgS-5L-Xg9" firstAttribute="leading" secondItem="Iaf-1g-HK7" secondAttribute="leading" constant="7" id="q1f-ge-Z7i"/>
                                                     <constraint firstItem="DtU-42-1mO" firstAttribute="centerX" secondItem="zQL-vM-xeu" secondAttribute="centerX" id="qlf-nc-6h2"/>
                                                     <constraint firstItem="Igl-LE-bMi" firstAttribute="top" secondItem="DtU-42-1mO" secondAttribute="bottom" constant="47" id="rXm-ef-bll"/>
+                                                    <constraint firstItem="Ntc-NU-ZMR" firstAttribute="leading" secondItem="Iaf-1g-HK7" secondAttribute="leading" constant="22" id="t7g-H8-SQd"/>
                                                     <constraint firstItem="DtU-42-1mO" firstAttribute="centerX" secondItem="Q2H-9g-FGd" secondAttribute="centerX" id="vMF-TH-5SW"/>
+                                                    <constraint firstItem="Igl-LE-bMi" firstAttribute="leading" secondItem="Iaf-1g-HK7" secondAttribute="leading" constant="22" id="wE4-sM-5Qg"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -2923,7 +2925,7 @@ The two shapes on the outside recount </string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="s1A-7h-Aw8"/>
-        <segue reference="AIj-6n-atw"/>
+        <segue reference="rkX-St-HZF"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2-" width="101.5" height="101.5"/>
