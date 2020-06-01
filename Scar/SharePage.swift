@@ -122,7 +122,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
                 attributedString20.append(attributedString21)
 
 
-                normalText2 = "(max 249 character)"
+                normalText2 = "(max 249 characters)"
                 normalString2 = NSMutableAttributedString(string:normalText2)
                 let attrs4 = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Light", size: 20)]
                 let attributedString22 = NSMutableAttributedString(string:String(normalText2), attributes:attrs4 as [NSAttributedString.Key : Any])
