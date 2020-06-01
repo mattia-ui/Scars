@@ -130,8 +130,19 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
             t = t.dropLast(t.count - 2100)
         }
         
+        let  normalText = t
+        _ = NSMutableAttributedString(string:String(normalText))
+            let attrs2 = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Light", size: 20)]
+        let attributedString = NSMutableAttributedString(string:String(normalText), attributes:attrs2 as [NSAttributedString.Key : Any])
+        
+        let boldText = " - #skinsugi"
+        let attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+           let attributedString2 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
+        attributedString.append(attributedString2)
+        
         descriptionField.font = UIFont(name: "CeraPro-Light", size: 20)
-        descriptionField.text = t + " - #skinsugi"
+        descriptionField.attributedText = attributedString
+        
         let arbitraryValue: Int = t.count
         if let newPosition = descriptionField.position(from: descriptionField.beginningOfDocument, offset: arbitraryValue) {
             descriptionField.selectedTextRange = textView.textRange(from: newPosition, to: newPosition)
