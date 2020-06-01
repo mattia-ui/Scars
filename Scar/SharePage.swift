@@ -129,6 +129,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
         if(t.count > 2100){
             t = t.dropLast(t.count - 2100)
         }
+        
         descriptionField.font = UIFont(name: "CeraPro-Light", size: 20)
         descriptionField.text = t + " - #skinsugi"
         let arbitraryValue: Int = t.count
