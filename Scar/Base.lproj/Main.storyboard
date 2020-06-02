@@ -117,7 +117,7 @@
             <objects>
                 <viewController storyboardIdentifier="postCollage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GG3-f1-cQ8" customClass="PostCollage" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XOD-ds-Jxc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s7X-yK-cdq">
@@ -498,7 +498,7 @@ How do you think others see it?</string>
             <objects>
                 <viewController id="xs9-hS-2dx" customClass="ChooseShape" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Srd-Ly-JAO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 1/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUp-S9-4CD">
@@ -633,7 +633,7 @@ How do you think others see it?</string>
             <objects>
                 <viewController id="My5-jh-AI2" customClass="ChooseShape2" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mat-fe-5YN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wSE-1b-OHo">
@@ -759,7 +759,7 @@ How do you think others see it?</string>
             <objects>
                 <viewController id="lYX-Go-SkF" customClass="ChoosePalette" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UH4-Nu-LfI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="m8e-tD-btm">
@@ -867,7 +867,7 @@ How do you think others see it?</string>
             <objects>
                 <viewController id="lfU-OF-Bud" customClass="ChooseTexture" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pnh-IU-Nic">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jE3-g0-hTy">
@@ -878,19 +878,19 @@ How do you think others see it?</string>
                                         <rect key="frame" x="22" y="422" width="75" height="76"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Crater" translatesAutoresizingMaskIntoConstraints="NO" id="3Uf-Yt-Gwb">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crater" translatesAutoresizingMaskIntoConstraints="NO" id="3Uf-Yt-Gwb">
                                         <rect key="frame" x="22" y="335" width="75" height="75"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sea" translatesAutoresizingMaskIntoConstraints="NO" id="YBv-BC-Bzc">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sea" translatesAutoresizingMaskIntoConstraints="NO" id="YBv-BC-Bzc">
                                         <rect key="frame" x="22" y="247" width="75" height="76"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" image="Wood" translatesAutoresizingMaskIntoConstraints="NO" id="SNQ-KO-nnh">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" image="wood" translatesAutoresizingMaskIntoConstraints="NO" id="SNQ-KO-nnh">
                                         <rect key="frame" x="22" y="597" width="75" height="75"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Marble" translatesAutoresizingMaskIntoConstraints="NO" id="57U-4M-5nY">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="marble" translatesAutoresizingMaskIntoConstraints="NO" id="57U-4M-5nY">
                                         <rect key="frame" x="22" y="510" width="75" height="75"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -1067,11 +1067,11 @@ all the answers you gave?</string>
             <objects>
                 <viewController id="hvR-kH-wNA" customClass="TakePicture" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vEG-89-kEc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the way!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiM-zE-6gR">
-                                <rect key="frame" x="22" y="154" width="302" height="38"/>
+                                <rect key="frame" x="22" y="66" width="302" height="38"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -1093,7 +1093,7 @@ all the answers you gave?</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yE5-lk-76G">
-                                <rect key="frame" x="21" y="207" width="374" height="22"/>
+                                <rect key="frame" x="21" y="119" width="374" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="V0V-pX-TFq"/>
                                 </constraints>
@@ -1113,7 +1113,7 @@ all the answers you gave?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTB-8f-OJj">
-                                <rect key="frame" x="22" y="235" width="370" height="18"/>
+                                <rect key="frame" x="22" y="147" width="370" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="370" id="Fe7-cV-Fyj"/>
                                 </constraints>
@@ -2610,25 +2610,25 @@ The two shapes on the outside recount </string>
             <objects>
                 <viewController id="q9l-GE-q4m" customClass="GenerateAgain" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tPo-Gd-3ON">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="972"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="918"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YourMasterpieceNav" translatesAutoresizingMaskIntoConstraints="NO" id="hht-L1-G5R">
-                                <rect key="frame" x="-2" y="72" width="418" height="141"/>
+                                <rect key="frame" x="-2" y="-16" width="418" height="141"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="141" id="KYa-pY-heR"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayK-bN-Qsf">
-                                <rect key="frame" x="13" y="163" width="14" height="35"/>
+                                <rect key="frame" x="13" y="75" width="14" height="35"/>
                                 <state key="normal" image="backArrow"/>
                                 <connections>
                                     <segue destination="GG3-f1-cQ8" kind="show" id="AIj-6n-atw"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcE-Dh-ylJ">
-                                <rect key="frame" x="0.0" y="225" width="414" height="747"/>
+                                <rect key="frame" x="0.0" y="137" width="414" height="781"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kut-iV-ZUw">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="833"/>
@@ -2764,11 +2764,11 @@ The two shapes on the outside recount </string>
             <objects>
                 <viewController id="LDR-hH-uX6" customClass="SharePage" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="haL-L1-cYc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1745"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1691"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ir-as-X4c">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1745"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1691"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="22s-NT-cwB">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1653"/>
@@ -2776,63 +2776,60 @@ The two shapes on the outside recount </string>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEw-87-8Pl">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1653"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instagram power!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Grm-fg-a3p">
-                                                        <rect key="frame" x="22" y="73" width="414" height="38"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram power!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Grm-fg-a3p">
+                                                        <rect key="frame" x="22" y="73" width="318" height="38"/>
                                                         <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQJ-Vl-Xrs">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WQJ-Vl-Xrs">
                                                         <rect key="frame" x="102" y="158.5" width="210" height="203"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="203" id="cPO-KA-xrR"/>
+                                                        </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yy9-H0-njk">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yy9-H0-njk">
                                                         <rect key="frame" x="22" y="388" width="370" height="253"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="253" id="8tH-sb-RGN"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="20"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="illustrazioneCollage" translatesAutoresizingMaskIntoConstraints="NO" id="wLi-qF-dST">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="illustrazioneCollage" translatesAutoresizingMaskIntoConstraints="NO" id="wLi-qF-dST">
                                                         <rect key="frame" x="0.0" y="697" width="414" height="262"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Be an inspiration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLh-Ts-cbd">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Be an inspiration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLh-Ts-cbd">
                                                         <rect key="frame" x="22" y="1021" width="213" height="27"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="27"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edT-gu-EJb">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edT-gu-EJb">
                                                         <rect key="frame" x="128" y="1368" width="158" height="55"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" image="shareAzzurro"/>
                                                         <connections>
                                                             <action selector="shareImg:" destination="LDR-hH-uX6" eventType="touchUpInside" id="EgW-tv-pVw"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eN-Y8-iqG">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eN-Y8-iqG">
                                                         <rect key="frame" x="73" y="1451" width="268" height="55"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" image="shareAnonymously"/>
                                                         <connections>
                                                             <action selector="shareUnkown:" destination="LDR-hH-uX6" eventType="touchUpInside" id="nlb-ss-uUh"/>
                                                             <segue destination="GG3-f1-cQ8" kind="show" identifier="blur" id="rkX-St-HZF"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(We will publish it on our profile)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzJ-Ev-OB7">
-                                                        <rect key="frame" x="88" y="1515" width="239" height="16"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(We will publish it on our profile)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzJ-Ev-OB7">
+                                                        <rect key="frame" x="87.5" y="1515" width="239" height="16"/>
                                                         <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="16"/>
                                                         <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ks-8R-CwO">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ks-8R-CwO">
                                                         <rect key="frame" x="144" y="1287" width="126" height="32"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal">
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content="Copy caption">
@@ -2869,9 +2866,8 @@ The two shapes on the outside recount </string>
                                                             <action selector="notNow:" destination="LDR-hH-uX6" eventType="touchUpInside" id="MQp-7j-GuB"/>
                                                         </connections>
                                                     </button>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Tell your story behind your indelible sign here…  - #skinsugi (max 249 character)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P7L-nb-SEH">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Tell your story behind your indelible sign here…  - #skinsugi (max 249 character)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P7L-nb-SEH">
                                                         <rect key="frame" x="22" y="1069" width="370" height="205"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="20"/>
@@ -2880,7 +2876,34 @@ The two shapes on the outside recount </string>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
+                                                    <constraint firstItem="P7L-nb-SEH" firstAttribute="leading" secondItem="xEw-87-8Pl" secondAttribute="leading" constant="22" id="1o1-ie-z3q"/>
+                                                    <constraint firstItem="Grm-fg-a3p" firstAttribute="top" secondItem="xEw-87-8Pl" secondAttribute="top" constant="73" id="4AL-GQ-uo3"/>
+                                                    <constraint firstItem="1ks-8R-CwO" firstAttribute="centerX" secondItem="3eN-Y8-iqG" secondAttribute="centerX" id="4Qb-Nh-pCh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="P7L-nb-SEH" secondAttribute="trailing" constant="22" id="8Ym-d7-TEr"/>
+                                                    <constraint firstItem="1ks-8R-CwO" firstAttribute="top" secondItem="P7L-nb-SEH" secondAttribute="bottom" constant="13" id="8Z2-wG-t9A"/>
+                                                    <constraint firstItem="WQJ-Vl-Xrs" firstAttribute="leading" secondItem="xEw-87-8Pl" secondAttribute="leading" constant="102" id="ACa-Ak-83b"/>
+                                                    <constraint firstItem="pzJ-Ev-OB7" firstAttribute="top" secondItem="3eN-Y8-iqG" secondAttribute="bottom" constant="9" id="Cw2-hK-KPk"/>
+                                                    <constraint firstItem="Yy9-H0-njk" firstAttribute="leading" secondItem="xEw-87-8Pl" secondAttribute="leading" constant="22" id="DbG-mX-Bfc"/>
                                                     <constraint firstAttribute="height" constant="1653" id="DiE-x2-Az0"/>
+                                                    <constraint firstItem="XLh-Ts-cbd" firstAttribute="leading" secondItem="xEw-87-8Pl" secondAttribute="leading" constant="22" id="Fsh-aP-otp"/>
+                                                    <constraint firstItem="3eN-Y8-iqG" firstAttribute="top" secondItem="edT-gu-EJb" secondAttribute="bottom" constant="28" id="HbW-Iq-dgJ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="1ks-8R-CwO" secondAttribute="bottom" constant="334" id="Hcz-AY-msX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="XLh-Ts-cbd" secondAttribute="trailing" constant="179" id="He3-KB-8kx"/>
+                                                    <constraint firstAttribute="trailing" secondItem="wLi-qF-dST" secondAttribute="trailing" id="LGc-XL-d7H"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Yy9-H0-njk" secondAttribute="trailing" constant="22" id="MOD-bz-e5C"/>
+                                                    <constraint firstItem="1ks-8R-CwO" firstAttribute="top" secondItem="P7L-nb-SEH" secondAttribute="bottom" constant="13" id="PSs-zB-b4M"/>
+                                                    <constraint firstItem="1ks-8R-CwO" firstAttribute="centerX" secondItem="edT-gu-EJb" secondAttribute="centerX" id="QjC-Zx-alA"/>
+                                                    <constraint firstItem="Grm-fg-a3p" firstAttribute="leading" secondItem="xEw-87-8Pl" secondAttribute="leading" constant="22" id="RJb-WR-mHc"/>
+                                                    <constraint firstItem="1ks-8R-CwO" firstAttribute="centerX" secondItem="pzJ-Ev-OB7" secondAttribute="centerX" id="U4g-ga-rLv"/>
+                                                    <constraint firstItem="1ks-8R-CwO" firstAttribute="centerX" secondItem="P7L-nb-SEH" secondAttribute="centerX" id="WJN-Be-fqb"/>
+                                                    <constraint firstItem="WQJ-Vl-Xrs" firstAttribute="top" secondItem="Grm-fg-a3p" secondAttribute="bottom" constant="47.5" id="Y9G-7Q-lvw"/>
+                                                    <constraint firstItem="Yy9-H0-njk" firstAttribute="top" secondItem="WQJ-Vl-Xrs" secondAttribute="bottom" constant="26.5" id="eyf-EV-qXj"/>
+                                                    <constraint firstItem="P7L-nb-SEH" firstAttribute="top" secondItem="XLh-Ts-cbd" secondAttribute="bottom" constant="21" id="iGm-EG-sdp"/>
+                                                    <constraint firstItem="XLh-Ts-cbd" firstAttribute="top" secondItem="wLi-qF-dST" secondAttribute="bottom" constant="62" id="ia6-UP-lF3"/>
+                                                    <constraint firstItem="wLi-qF-dST" firstAttribute="top" secondItem="Yy9-H0-njk" secondAttribute="bottom" constant="56" id="nOZ-jn-0Nz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="WQJ-Vl-Xrs" secondAttribute="trailing" constant="102" id="o4m-tp-ktQ"/>
+                                                    <constraint firstItem="wLi-qF-dST" firstAttribute="leading" secondItem="xEw-87-8Pl" secondAttribute="leading" id="rXy-Y6-Hgo"/>
+                                                    <constraint firstItem="edT-gu-EJb" firstAttribute="top" secondItem="1ks-8R-CwO" secondAttribute="bottom" constant="49" id="xFV-my-L1e"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -2941,12 +2964,11 @@ The two shapes on the outside recount </string>
     <inferredMetricsTieBreakers>
         <segue reference="O1h-M3-5IE"/>
         <segue reference="wd9-1W-xO2"/>
-        <segue reference="GPg-NV-9UE"/>
+        <segue reference="Cab-pX-8BL"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2-" width="101.5" height="101.5"/>
         <image name="CAr" width="267" height="267"/>
-        <image name="Crater" width="168" height="168"/>
         <image name="DoneSpento" width="182" height="55"/>
         <image name="GenerateAgain" width="263" height="55"/>
         <image name="Group 48" width="508" height="518"/>
@@ -2957,13 +2979,11 @@ The two shapes on the outside recount </string>
         <image name="Let'sgo" width="194" height="55"/>
         <image name="Lettsegoazzurro" width="182" height="55"/>
         <image name="MakePhoto" width="98" height="94"/>
-        <image name="Marble" width="168" height="168"/>
         <image name="Onboarding1" width="3740" height="1350"/>
         <image name="ProceedAzzurro" width="182" height="55"/>
         <image name="QuestionAcceso" width="261" height="71"/>
         <image name="QuestionSpento" width="261" height="71"/>
         <image name="Reset" width="50" height="50"/>
-        <image name="Sea" width="168" height="168"/>
         <image name="SeeMore" width="82" height="18"/>
         <image name="ShareLungo" width="263" height="55"/>
         <image name="Skip" width="98" height="94"/>
@@ -2971,7 +2991,6 @@ The two shapes on the outside recount </string>
         <image name="StartSpento" width="182" height="55"/>
         <image name="TCAzz" width="230" height="230"/>
         <image name="Textile" width="168" height="168"/>
-        <image name="Wood" width="168" height="168"/>
         <image name="YourMasterpieceNav" width="415" height="140"/>
         <image name="aggiungiInsight" width="32" height="25"/>
         <image name="backArrow" width="14" height="25"/>
@@ -2979,6 +2998,7 @@ The two shapes on the outside recount </string>
         <image name="cc" width="128" height="128"/>
         <image name="checked" width="35" height="33"/>
         <image name="circle" width="68" height="68"/>
+        <image name="crater" width="168" height="168"/>
         <image name="deselected" width="374" height="76"/>
         <image name="div" width="415" height="144"/>
         <image name="done" width="182" height="55"/>
@@ -2989,6 +3009,7 @@ The two shapes on the outside recount </string>
         <image name="illustrazioneCollage" width="414" height="262"/>
         <image name="insight5" width="370" height="131"/>
         <image name="linea" width="371" height="1"/>
+        <image name="marble" width="168" height="168"/>
         <image name="nav1-2" width="415" height="143"/>
         <image name="navInsta" width="415" height="185"/>
         <image name="nextAzzurroSpento" width="182" height="55"/>
@@ -2998,6 +3019,7 @@ The two shapes on the outside recount </string>
         <image name="primaPalette" width="87" height="87"/>
         <image name="readyViola" width="182" height="55"/>
         <image name="rectangle" width="80" height="55"/>
+        <image name="sea" width="168" height="168"/>
         <image name="secondaPalette" width="87" height="87"/>
         <image name="selected" width="374" height="76"/>
         <image name="selezionato" width="374" height="76"/>
@@ -3011,6 +3033,7 @@ The two shapes on the outside recount </string>
         <image name="terzaPalette" width="87" height="87"/>
         <image name="triangle" width="74" height="69"/>
         <image name="unchecked" width="34" height="32"/>
+        <image name="wood" width="168" height="168"/>
         <image name="yesAzzurro" width="112" height="55"/>
         <image name="zigzag" width="89" height="42"/>
     </resources>

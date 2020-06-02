@@ -75,7 +75,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
          
          attributedString.append(attributedString4)
          
-         normalText = ", ever.\n\n "
+         normalText = ", ever.\n\n"
           normalString = NSMutableAttributedString(string:normalText)
 
          attributedString.append(normalString)
