@@ -1728,7 +1728,7 @@ tips and inspirational contents for you!</string>
                                 <rect key="frame" x="0.0" y="65" width="414" height="176"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg9-aS-nb6">
-                                <rect key="frame" x="20" y="156" width="25" height="37"/>
+                                <rect key="frame" x="20" y="154" width="25" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="BBY-dP-QTs"/>
                                     <constraint firstAttribute="width" constant="25" id="qre-qh-atK"/>
@@ -1742,10 +1742,10 @@ tips and inspirational contents for you!</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Yg9-aS-nb6" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" constant="68" id="1Fl-g5-aIn"/>
+                            <constraint firstItem="Yg9-aS-nb6" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" constant="66" id="1Fl-g5-aIn"/>
                             <constraint firstItem="Zqp-a9-CTC" firstAttribute="centerX" secondItem="TZg-6g-tU7" secondAttribute="centerX" id="Gzi-hd-0Jg"/>
                             <constraint firstItem="Yg9-aS-nb6" firstAttribute="leading" secondItem="bTK-SO-FHz" secondAttribute="leading" constant="20" id="SkS-tB-gOR"/>
-                            <constraint firstItem="Zqp-a9-CTC" firstAttribute="top" secondItem="IRL-vy-kpc" secondAttribute="bottom" constant="-21" id="VzF-vA-SfR"/>
+                            <constraint firstItem="Zqp-a9-CTC" firstAttribute="top" secondItem="IRL-vy-kpc" secondAttribute="bottom" constant="-17" id="VzF-vA-SfR"/>
                             <constraint firstItem="IRL-vy-kpc" firstAttribute="trailing" secondItem="bTK-SO-FHz" secondAttribute="trailing" id="X4I-Ae-Ps5"/>
                             <constraint firstItem="IRL-vy-kpc" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" constant="-23" id="iUO-2u-6IG"/>
                             <constraint firstItem="IRL-vy-kpc" firstAttribute="leading" secondItem="bTK-SO-FHz" secondAttribute="leading" id="ysG-oQ-WKe"/>
@@ -2156,7 +2156,7 @@ tips and inspirational contents for you!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhW-b9-vYz">
-                                <rect key="frame" x="15" y="254" width="386" height="76"/>
+                                <rect key="frame" x="15" y="264.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2169,7 +2169,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7I-AD-BUJ">
-                                <rect key="frame" x="15" y="352" width="386" height="76"/>
+                                <rect key="frame" x="15" y="362.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2182,7 +2182,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzd-QM-ZsD">
-                                <rect key="frame" x="15" y="450" width="386" height="76"/>
+                                <rect key="frame" x="15" y="460.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2195,7 +2195,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yP-st-eET">
-                                <rect key="frame" x="15" y="156" width="386" height="76"/>
+                                <rect key="frame" x="15" y="166.5" width="386" height="76"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
@@ -2210,7 +2210,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZk-O6-Ha0">
-                                <rect key="frame" x="15" y="646" width="386" height="76"/>
+                                <rect key="frame" x="15" y="656.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2223,7 +2223,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaW-2m-fzZ">
-                                <rect key="frame" x="15" y="548" width="386" height="76"/>
+                                <rect key="frame" x="15" y="558.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2236,13 +2236,13 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalize your insights section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLV-JE-bPB">
-                                <rect key="frame" x="22" y="77" width="372" height="22"/>
+                                <rect key="frame" x="22" y="83.5" width="372" height="26"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Interests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICX-Lj-BMb">
-                                <rect key="frame" x="22" y="32" width="372" height="38"/>
+                                <rect key="frame" x="22" y="32" width="372" height="44.5"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2764,7 +2764,7 @@ The two shapes on the outside recount </string>
             <objects>
                 <viewController id="LDR-hH-uX6" customClass="SharePage" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="haL-L1-cYc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1691"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1745"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ir-as-X4c">
