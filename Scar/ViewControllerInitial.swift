@@ -82,7 +82,7 @@ class ViewControllerInitial: UIViewController, UIScrollViewDelegate {
     @IBAction func back(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let secondVC = storyboard.instantiateViewController(withIdentifier: "collectionInitial")  as! Schermata1
-        self.navigationController?.view.semanticContentAttribute = .forceLeftToRight
+        self.navigationController?.view.semanticContentAttribute = .forceRightToLeft
         self.navigationController?.pushViewController(secondVC, animated: true)
     }
     
