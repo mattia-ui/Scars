@@ -18,7 +18,7 @@ class ChoosePalette: UIViewController  {
         let boldText = "With which of these color palettes\n"
         let attributedString = NSMutableAttributedString(string:boldText)
 
-        let normalText = "do you dress more??"
+        let normalText = "do you dress more?"
         let attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 22)]
         let normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
 

@@ -211,6 +211,13 @@ class GenerateAgain: UIViewController {
         self.navigationController?.pushViewController(secondVC, animated: true)
     }
     
+    @IBAction func backB(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let secondVC = storyboard.instantiateViewController(withIdentifier: "postCollage")  as! PostCollage
+        self.navigationController?.view.semanticContentAttribute = .forceRightToLeft
+        self.navigationController?.pushViewController(secondVC, animated: true)
+        
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "passa"){
             (segue.destination as! SharePage).img = img.image ?? UIImage()
