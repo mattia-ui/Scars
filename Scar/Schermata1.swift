@@ -114,7 +114,7 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: animated);
+        self.navigationController?.setNavigationBarHidden(true, animated: animated);
         super.viewWillDisappear(animated)
     }
 
