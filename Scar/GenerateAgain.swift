@@ -25,13 +25,13 @@ class GenerateAgain: UIViewController {
 //        imageNav.layer.borderWidth = 0.5
 //        imageNav.layer.borderColor = CGColor(srgbRed: 0.46, green: 0.41, blue: 0.51, alpha: 1)
         
-        img.layer.borderWidth = 0.5
+        img.layer.borderWidth = 0.4
         img.layer.masksToBounds = true
         img.layer.borderColor = (UIColor.init(named: "#2E2933")?.cgColor)
         img.layer.cornerRadius = img.frame.size.width/2
         img.clipsToBounds = true
         if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
-                   img.image = UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent("collage").path)?.imageWithInsets(insets: UIEdgeInsets(top: 40, left: 75, bottom: 65, right: 75))
+                   img.image = UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent("collage").path)?.imageWithInsets(insets: UIEdgeInsets(top: 65, left: 65, bottom: 65, right: 65))
         }
             
         var  normalText = "The pattern in the large circle describes\n"

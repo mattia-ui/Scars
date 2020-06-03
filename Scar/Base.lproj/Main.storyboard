@@ -2649,7 +2649,7 @@ The two shapes on the outside recount </string>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ah-eg-FqR">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="833"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CAr" translatesAutoresizingMaskIntoConstraints="NO" id="MFk-3D-1XX">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CAr" translatesAutoresizingMaskIntoConstraints="NO" id="MFk-3D-1XX">
                                                         <rect key="frame" x="102" y="25" width="210" height="216"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
