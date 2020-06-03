@@ -82,7 +82,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         miniSym.layer.cornerRadius = miniSym.frame.size.width/2
         miniSym.clipsToBounds = true
         if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
-            miniSym.image = UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent("collage").path)?.imageWithInsets(insets: UIEdgeInsets(top: 55, left: 65, bottom: 65, right: 65))
+            miniSym.image = UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent("collage").path)?.imageWithInsets(insets: UIEdgeInsets(top: 65, left: 65, bottom: 65, right: 65))
             viewSulBlur.isHidden = true
             
             let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))

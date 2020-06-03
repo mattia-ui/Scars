@@ -2041,7 +2041,6 @@ tips and inspirational contents for you!</string>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <size key="customSize" width="412" height="363"/>
                                         <connections>
                                             <outlet property="button" destination="vxG-uB-0dh" id="g2s-hP-B5K"/>
                                             <outlet property="div" destination="cSJ-OP-IOa" id="k5E-uR-RpU"/>
