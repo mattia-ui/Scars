@@ -24,7 +24,6 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var frase3: UILabel!
     @IBOutlet weak var domande3: UILabel!
     @IBOutlet weak var button3: UIButton!
-    @IBOutlet weak var gif: UIImageView!
     
     var db: OpaquePointer?
     var stmt: OpaquePointer?
@@ -100,32 +99,32 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             traslate(view: button3, aCircleTime: 0.2, to: -100)
             sleep(UInt32(0.2))
             
-            traslate(view: illustrazione, aCircleTime: 0.4, to: -364)
-            traslate(view: welcome, aCircleTime: 0.4, to: -364)
-            traslate(view: frase1, aCircleTime: 0.4, to: -364)
-            traslate(view: linea, aCircleTime: 0.4, to: -364)
-            traslate(view: domanda1, aCircleTime: 0.4, to: -364)
-            traslate(view: nome1, aCircleTime: 0.4, to: -364)
-            traslate(view: button1, aCircleTime: 0.4, to: -364)
-            traslate(view: TableView, aCircleTime: 0.4, to: -364)
-            traslate(view: LastStep, aCircleTime: 0.4, to: -364)
-            traslate(view: frase3, aCircleTime: 0.4, to: -364)
-            traslate(view: domande3, aCircleTime: 0.4, to: -364)
-            traslate(view: button3, aCircleTime: 0.4, to: -364)
+            traslate(view: illustrazione, aCircleTime: 0.4, to: -(UIScreen.main.bounds.width - 50))
+            traslate(view: welcome, aCircleTime: 0.4, to: -(UIScreen.main.bounds.width - 50))
+            traslate(view: frase1, aCircleTime: 0.4, to: -(UIScreen.main.bounds.width - 50))
+            traslate(view: linea, aCircleTime: 0.4, to: -(UIScreen.main.bounds.width - 50))
+            traslate(view: domanda1, aCircleTime: 0.4, to: -(UIScreen.main.bounds.width - 50))
+            traslate(view: nome1, aCircleTime: 0.4, to: -(UIScreen.main.bounds.width - 50))
+            traslate(view: button1, aCircleTime: 0.4, to: -(UIScreen.main.bounds.width - 50))
+            traslate(view: TableView, aCircleTime: 0.4, to: -(UIScreen.main.bounds.width - 50))
+            traslate(view: LastStep, aCircleTime: 0.4, to: -(UIScreen.main.bounds.width - 50))
+            traslate(view: frase3, aCircleTime: 0.4, to: -(UIScreen.main.bounds.width - 50))
+            traslate(view: domande3, aCircleTime: 0.4, to: -(UIScreen.main.bounds.width - 50))
+            traslate(view: button3, aCircleTime: 0.4, to: -(UIScreen.main.bounds.width - 50))
             sleep(UInt32(0.4))
 
-            traslate(view: illustrazione, aCircleTime: 0.1, to: -414)
-            traslate(view: welcome, aCircleTime: 0.1, to: -414)
-            traslate(view: frase1, aCircleTime: 0.1, to: -414)
-            traslate(view: domanda1, aCircleTime: 0.1, to: -414)
-            traslate(view: nome1, aCircleTime: 0.1, to: -414)
-            traslate(view: linea, aCircleTime: 0.1, to: -414)
-            traslate(view: button1, aCircleTime: 0.1, to: -414)
-            traslate(view: TableView, aCircleTime: 0.1, to: -414)
-            traslate(view: LastStep, aCircleTime: 0.1, to: -414)
-            traslate(view: frase3, aCircleTime: 0.1, to: -414)
-            traslate(view: domande3, aCircleTime: 0.1, to: -414)
-            traslate(view: button3, aCircleTime: 0.1, to: -414)
+            traslate(view: illustrazione, aCircleTime: 0.1, to: -UIScreen.main.bounds.width)
+            traslate(view: welcome, aCircleTime: 0.1, to: -UIScreen.main.bounds.width)
+            traslate(view: frase1, aCircleTime: 0.1, to: -UIScreen.main.bounds.width)
+            traslate(view: domanda1, aCircleTime: 0.1, to: -UIScreen.main.bounds.width)
+            traslate(view: nome1, aCircleTime: 0.1, to: -UIScreen.main.bounds.width)
+            traslate(view: linea, aCircleTime: 0.1, to: -UIScreen.main.bounds.width)
+            traslate(view: button1, aCircleTime: 0.1, to: -UIScreen.main.bounds.width)
+            traslate(view: TableView, aCircleTime: 0.1, to: -UIScreen.main.bounds.width)
+            traslate(view: LastStep, aCircleTime: 0.1, to: -UIScreen.main.bounds.width)
+            traslate(view: frase3, aCircleTime: 0.1, to: -UIScreen.main.bounds.width)
+            traslate(view: domande3, aCircleTime: 0.1, to: -UIScreen.main.bounds.width)
+            traslate(view: button3, aCircleTime: 0.1, to: -UIScreen.main.bounds.width)
         }
         
     }
@@ -144,32 +143,33 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         traslate(view: button3, aCircleTime: 0.2, to: -514)
         sleep(UInt32(0.2))
         
-        traslate(view: illustrazione, aCircleTime: 0.4, to: -778)
-        traslate(view: welcome, aCircleTime: 0.4, to: -778)
-        traslate(view: frase1, aCircleTime: 0.4, to: -778)
-        traslate(view: domanda1, aCircleTime: 0.4, to: -778)
-        traslate(view: nome1, aCircleTime: 0.4, to: -778)
-        traslate(view: linea, aCircleTime: 0.4, to: -778)
-        traslate(view: button1, aCircleTime: 0.4, to: -778)
-        traslate(view: TableView, aCircleTime: 0.4, to: -778)
-        traslate(view: LastStep, aCircleTime: 0.4, to: -778)
-        traslate(view: frase3, aCircleTime: 0.4, to: -778)
-        traslate(view: domande3, aCircleTime: 0.4, to: -778)
-        traslate(view: button3, aCircleTime: 0.4, to: -778)
+        traslate(view: illustrazione, aCircleTime: 0.4, to: -((UIScreen.main.bounds.width*2) - 50))
+        traslate(view: welcome, aCircleTime: 0.4, to: -((UIScreen.main.bounds.width*2) - 50))
+        traslate(view: frase1, aCircleTime: 0.4, to: -((UIScreen.main.bounds.width*2) - 50))
+        traslate(view: domanda1, aCircleTime: 0.4, to: -((UIScreen.main.bounds.width*2) - 50))
+        traslate(view: nome1, aCircleTime: 0.4, to: -((UIScreen.main.bounds.width*2) - 50))
+        traslate(view: linea, aCircleTime: 0.4, to: -((UIScreen.main.bounds.width*2) - 50))
+        traslate(view: button1, aCircleTime: 0.4, to: -((UIScreen.main.bounds.width*2) - 50))
+        traslate(view: TableView, aCircleTime: 0.4, to: -((UIScreen.main.bounds.width*2) - 50))
+        traslate(view: LastStep, aCircleTime: 0.4, to: -((UIScreen.main.bounds.width*2) - 50))
+        traslate(view: frase3, aCircleTime: 0.4, to: -((UIScreen.main.bounds.width*2) - 50))
+        traslate(view: domande3, aCircleTime: 0.4, to: -((UIScreen.main.bounds.width*2) - 50))
+        traslate(view: button3, aCircleTime: 0.4, to: -((UIScreen.main.bounds.width*2) - 50))
         sleep(UInt32(0.4))
 
-        traslate(view: illustrazione, aCircleTime: 0.1, to: -828)
-        traslate(view: welcome, aCircleTime: 0.1, to: -828)
-        traslate(view: frase1, aCircleTime: 0.1, to: -828)
-        traslate(view: domanda1, aCircleTime: 0.1, to: -828)
-        traslate(view: nome1, aCircleTime: 0.1, to: -828)
-        traslate(view: linea, aCircleTime: 0.1, to: -828)
-        traslate(view: button1, aCircleTime: 0.1, to: -828)
-        traslate(view: TableView, aCircleTime: 0.1, to: -828)
-        traslate(view: LastStep, aCircleTime: 0.1, to: -828)
-        traslate(view: frase3, aCircleTime: 0.1, to: -828)
-        traslate(view: domande3, aCircleTime: 0.1, to: -828)
-        traslate(view: button3, aCircleTime: 0.1, to: -828)
+        traslate(view: illustrazione, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
+        traslate(view: welcome, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
+        traslate(view: frase1, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
+        traslate(view: domanda1, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
+        traslate(view: nome1, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
+        traslate(view: linea, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
+        traslate(view: button1, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
+        traslate(view: TableView, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
+        traslate(view: LastStep, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
+        traslate(view: frase3, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
+        traslate(view: domande3, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
+        traslate(view: button3, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
+        button3.frame.origin.x = (UIScreen.main.bounds.width / 2) - 91
         
 
         fetchMovies(nome: "the%20theory%20of%20everything", tipo:"movie", yImg: 340)
@@ -216,9 +216,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
-        
-        gif.loadGif(name: "TimelineAnimated")
-        
+                
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
 
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard1))
@@ -376,7 +374,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            
+                    
         if indexPath.row == 0 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as? Cella1 else
             {
@@ -478,6 +476,8 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             } else{
                 cell.done.isEnabled = false
             }
+            
+            cell.done.frame.origin.x = (UIScreen.main.bounds.width / 2) - 91
             return cell
         }
     }
@@ -489,7 +489,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         if(indexPath.row == 7){
             return 200
         }
-        return 100
+        return UIScreen.main.bounds.width / 4
     }
     
     public func fetchMovies(nome: String, tipo: String, yImg: Int) {
