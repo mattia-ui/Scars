@@ -124,6 +124,7 @@ class ViewControllerInitial: UIViewController, UIScrollViewDelegate {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -194,3 +195,4 @@ class ViewControllerInitial: UIViewController, UIScrollViewDelegate {
         scrollView.contentSize = CGSize(width: view.frame.width , height: 20 * CGFloat(numberL) + 133)
     }
 }
+

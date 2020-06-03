@@ -303,7 +303,9 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let secondVC = storyboard.instantiateViewController(withIdentifier: "imageColl")  as! ViewControllerInitial
         secondVC.id1 = sender.id
+        self.navigationController?.view.semanticContentAttribute = .forceLeftToRight
         self.navigationController?.pushViewController(secondVC, animated: true)
+       
     }
     
 }
