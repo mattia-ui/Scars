@@ -277,7 +277,7 @@ Masterpiece!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Onboarding1" translatesAutoresizingMaskIntoConstraints="NO" id="abm-bl-K38">
-                                <rect key="frame" x="0.0" y="0.0" width="1244" height="447"/>
+                                <rect key="frame" x="0.0" y="-5" width="1244" height="447"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is Skinsugi!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gas-gh-7sj">
                                 <rect key="frame" x="22" y="471" width="384" height="56"/>
@@ -334,13 +334,13 @@ Masterpiece!</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, Sigafreda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ywt-KN-qf8">
-                                                    <rect key="frame" x="22" y="14" width="228.5" height="38"/>
+                                                    <rect key="frame" x="22" y="14" width="219" height="44.5"/>
                                                     <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                                     <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SzM-f1-Yon">
-                                                    <rect key="frame" x="22" y="61" width="346" height="22"/>
+                                                    <rect key="frame" x="22" y="67.5" width="337.5" height="26"/>
                                                     <string key="text">Tell us what inspires you the most.
 </string>
                                                     <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
@@ -453,7 +453,7 @@ How do you think others see it?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-fI-qoJ">
-                                <rect key="frame" x="929" y="755" width="194" height="55"/>
+                                <rect key="frame" x="929" y="761" width="194" height="55"/>
                                 <state key="normal" image="Let'sgo"/>
                                 <connections>
                                     <segue destination="uc2-fZ-Jab" kind="show" id="S6c-zV-Y2y"/>
@@ -906,7 +906,7 @@ How do you think others see it?</string>
             <objects>
                 <viewController id="lfU-OF-Bud" customClass="ChooseTexture" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pnh-IU-Nic">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jE3-g0-hTy">
@@ -1944,7 +1944,7 @@ tips and inspirational contents for you!</string>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="PdY-XF-ifH" firstAttribute="centerY" secondItem="2cz-hS-iGh" secondAttribute="centerY" id="0Vw-Xu-24R"/>
-                                    <constraint firstItem="rnF-9K-8Qw" firstAttribute="leading" secondItem="dSy-AZ-0Wf" secondAttribute="trailing" constant="8" id="4Or-f0-WmY"/>
+                                    <constraint firstItem="rnF-9K-8Qw" firstAttribute="leading" secondItem="dSy-AZ-0Wf" secondAttribute="trailing" constant="31" id="4Or-f0-WmY"/>
                                     <constraint firstItem="PdY-XF-ifH" firstAttribute="centerX" secondItem="usK-xr-joa" secondAttribute="centerX" id="5l3-It-Y0y"/>
                                     <constraint firstItem="4mN-US-bx1" firstAttribute="centerX" secondItem="rnF-9K-8Qw" secondAttribute="centerX" id="7Ul-zm-KXs"/>
                                     <constraint firstItem="ekF-6R-Q59" firstAttribute="centerX" secondItem="o2l-Y5-5Ra" secondAttribute="centerX" id="9nr-ce-CPo"/>
@@ -1952,13 +1952,12 @@ tips and inspirational contents for you!</string>
                                     <constraint firstItem="2w2-2K-Ag7" firstAttribute="centerY" secondItem="2cz-hS-iGh" secondAttribute="centerY" id="BDf-Q2-EtO"/>
                                     <constraint firstItem="c1y-0b-Q2T" firstAttribute="centerY" secondItem="DWf-U8-k4A" secondAttribute="centerY" id="Bka-SW-jjc"/>
                                     <constraint firstItem="ekF-6R-Q59" firstAttribute="centerY" secondItem="2cz-hS-iGh" secondAttribute="centerY" id="C9R-7s-35L"/>
-                                    <constraint firstItem="c1y-0b-Q2T" firstAttribute="leading" secondItem="o2l-Y5-5Ra" secondAttribute="trailing" constant="8" id="DHl-JL-7R3"/>
+                                    <constraint firstItem="c1y-0b-Q2T" firstAttribute="leading" secondItem="o2l-Y5-5Ra" secondAttribute="trailing" constant="31" id="DHl-JL-7R3"/>
                                     <constraint firstItem="rnF-9K-8Qw" firstAttribute="centerY" secondItem="DWf-U8-k4A" secondAttribute="centerY" id="Dqy-qh-qwO"/>
                                     <constraint firstItem="2cz-hS-iGh" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="39" id="EQT-EG-Uzm"/>
                                     <constraint firstItem="dSy-AZ-0Wf" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="12" id="IJi-tW-WAo"/>
                                     <constraint firstItem="o2l-Y5-5Ra" firstAttribute="centerY" secondItem="DWf-U8-k4A" secondAttribute="centerY" id="JhX-hQ-fIB"/>
                                     <constraint firstItem="usK-xr-joa" firstAttribute="centerY" secondItem="DWf-U8-k4A" secondAttribute="centerY" id="KEU-Gd-qXm"/>
-                                    <constraint firstItem="o2l-Y5-5Ra" firstAttribute="leading" secondItem="usK-xr-joa" secondAttribute="trailing" constant="8" id="Mqb-Fi-G1R"/>
                                     <constraint firstItem="nFb-B9-lwF" firstAttribute="top" secondItem="c1y-0b-Q2T" secondAttribute="bottom" constant="5" id="O8S-CP-TwJ"/>
                                     <constraint firstItem="dSy-AZ-0Wf" firstAttribute="centerY" secondItem="DWf-U8-k4A" secondAttribute="centerY" id="P1N-Qa-r4V"/>
                                     <constraint firstItem="4mN-US-bx1" firstAttribute="centerY" secondItem="2cz-hS-iGh" secondAttribute="centerY" id="Pn3-se-QK9"/>
@@ -1970,10 +1969,9 @@ tips and inspirational contents for you!</string>
                                     <constraint firstItem="o2l-Y5-5Ra" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="12" id="dOx-UU-vY5"/>
                                     <constraint firstItem="rnF-9K-8Qw" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="13" id="eAj-hp-aOW"/>
                                     <constraint firstAttribute="height" constant="54" id="eSC-bn-eG6"/>
-                                    <constraint firstItem="c1y-0b-Q2T" firstAttribute="leading" secondItem="o2l-Y5-5Ra" secondAttribute="trailing" constant="8" id="k0Z-Yt-TA5"/>
-                                    <constraint firstItem="o2l-Y5-5Ra" firstAttribute="leading" secondItem="usK-xr-joa" secondAttribute="trailing" constant="8" id="m5Y-Ld-G7T"/>
-                                    <constraint firstItem="dSy-AZ-0Wf" firstAttribute="leading" secondItem="DWf-U8-k4A" secondAttribute="trailing" constant="12" id="qBM-CC-VqN"/>
-                                    <constraint firstItem="usK-xr-joa" firstAttribute="leading" secondItem="rnF-9K-8Qw" secondAttribute="trailing" constant="12" id="ryq-hX-h3Q"/>
+                                    <constraint firstItem="o2l-Y5-5Ra" firstAttribute="leading" secondItem="usK-xr-joa" secondAttribute="trailing" constant="31" id="m5Y-Ld-G7T"/>
+                                    <constraint firstItem="dSy-AZ-0Wf" firstAttribute="leading" secondItem="DWf-U8-k4A" secondAttribute="trailing" constant="31" id="qBM-CC-VqN"/>
+                                    <constraint firstItem="usK-xr-joa" firstAttribute="leading" secondItem="rnF-9K-8Qw" secondAttribute="trailing" constant="31" id="ryq-hX-h3Q"/>
                                     <constraint firstItem="ekF-6R-Q59" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="39" id="u3p-D3-bD2"/>
                                     <constraint firstItem="usK-xr-joa" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="12" id="wrC-mf-yps"/>
                                     <constraint firstAttribute="width" constant="394" id="wvQ-4v-gJ0"/>
@@ -2207,7 +2205,7 @@ tips and inspirational contents for you!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhW-b9-vYz">
-                                <rect key="frame" x="15" y="254" width="386" height="76"/>
+                                <rect key="frame" x="15" y="264.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2220,7 +2218,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7I-AD-BUJ">
-                                <rect key="frame" x="15" y="352" width="386" height="76"/>
+                                <rect key="frame" x="15" y="362.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2233,7 +2231,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzd-QM-ZsD">
-                                <rect key="frame" x="15" y="450" width="386" height="76"/>
+                                <rect key="frame" x="15" y="460.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2246,7 +2244,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yP-st-eET">
-                                <rect key="frame" x="15" y="156" width="386" height="76"/>
+                                <rect key="frame" x="15" y="166.5" width="386" height="76"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
@@ -2261,7 +2259,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZk-O6-Ha0">
-                                <rect key="frame" x="15" y="646" width="386" height="76"/>
+                                <rect key="frame" x="15" y="656.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2274,7 +2272,7 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaW-2m-fzZ">
-                                <rect key="frame" x="15" y="548" width="386" height="76"/>
+                                <rect key="frame" x="15" y="558.5" width="386" height="76"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="nonselezionato">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2287,13 +2285,13 @@ tips and inspirational contents for you!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalize your insights section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLV-JE-bPB">
-                                <rect key="frame" x="22" y="77" width="372" height="22"/>
+                                <rect key="frame" x="22" y="83.5" width="372" height="26"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Interests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICX-Lj-BMb">
-                                <rect key="frame" x="22" y="32" width="372" height="38"/>
+                                <rect key="frame" x="22" y="32" width="372" height="44.5"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
