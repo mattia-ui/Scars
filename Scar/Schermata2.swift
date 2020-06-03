@@ -37,7 +37,6 @@ var structIns = [ins(
         Cont(image: "insight3", title:"The Theory Of Everything", descr: "It explores the most significant moments in Stephen Hawking’s life and elevates an atmosphere pleasing to its viewer, narrating every event of the plot, be it positive or negative.", fonte:"", link: "https://www.youtube.com/watch?v=Salz7uGp72c"), Cont(image: "insight3", title:"\n\nShallow Hal", descr: "A shallow man falls in love with a 300-pound woman because of her inner beauty. One day, the self-help guru Tony Robbins hypnotizes him into recognizing only the inner beauty of women.", fonte:"", link: "https://www.youtube.com/watch?v=ZZWvgEOoV3U"),
         Cont(image: "insight4", title:"Orange Is The New Black", descr: "This show has one of the most diverse casts on TV, with different ethnicities and sizes. Every character is uniquely themselves, portraying every different kind of body type.", fonte:"", link: "https://www.youtube.com/watch?v=vY0qzXi5oJg"), Cont(image: "insight4", title:"\n\nThe Shape Of Water", descr: "This show has one of the most diverse casts on TV, with different ethnicities and sizes. Every character is uniquely themselves, portraying every different kind of body type.", fonte:"", link: "https://www.youtube.com/watch?v=XFYWazblaUA"),
         Cont(image: "insight3", title:"Unbreakable Kimmy Schmidt", descr: "Titus is overweight, black, and gay, and he never feels lesser for it. Kimmy is also body-positive, she doesn't see size or imperfections. We could all afford to be that way!", fonte:"", link: "https://www.youtube.com/watch?v=Hl4bOuGNMwo"), Cont(image: "insight4", title:"\n\n POSE", descr: "American drama television series about New York City's African-American and Latino LGBTQ and gender-nonconforming ballroom culture scene in the 1980s. Is this enough?", fonte:"", link: "https://www.youtube.com/watch?v=_t4YuPXdLZw"),
-        Cont(image: "insight4", title:"\n\nBorder", descr: "Penelope is a modern romantic tale about a young aristocratic heiress born under a curse that can only be broken when she finds true love with 'one who will accept her as one of their own.'", fonte:"", link: "https://www.youtube.com/watch?v=QMs28A1s1OA"),
         Cont(image: "insight4", title:"\n\nGlow", descr: "They were a real group of women wrestlers, made up of women in every different race and size. Body positivity means accepting there are different bodies and that they are all beautiful!", fonte:"", link: "https://www.youtube.com/watch?v=wnKEoXbBTEw"), Cont(image: "insight4", title:"\n\nHairspray", descr: "Ricki Lake, aka Tracy Turnblad, has always been a body positive icon, in Hairspray she fights the shocking segregation enforced by her favorite TV show after she wins a chance to dance on it.", fonte:"", link: "https://www.youtube.com/watch?v=SUoG7mqCixI"),
         Cont(image: "insight4", title:"\n\nUnorthodox", descr: "Esty is living unhappily in an arranged marriage and an ultra-Orthodox community, she runs away to discover life outside her community and rejecting all of the beliefs she grew up with.", fonte:"", link: "https://www.youtube.com/watch?v=-zVhRId0BTw")],
     mov:[
@@ -84,7 +83,7 @@ var structIns = [ins(
 class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate {
     
     static var insights: [String] = ["","","","","",""]
-    static var film: [String] = ["the%20theory%20of%20everything","shallow%20Hal","orange%20is%20new%20black","the%20shape%20of%20water","unBreakable","pose","border","glow","hairspray","unorthodox"]
+    static var film: [String] = ["the%20theory%20of%20everything","shallow%20Hal","orange%20is%20new%20black","the%20shape%20of%20water","unBreakable","pose","glow","hairspray","unorthodox"]
     var contenuto: [Cont] = []
     
     let light = Notification.Name(rawValue: NotificationKey)
@@ -166,7 +165,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         } else {
             cell.div.image = UIImage(named: "")
         }
-        if(imgButt == "SeeMoreMovies" || imgButt == "SeeMore"){
+        if(imgButt == "SeeMoreMovies" || imgButt == "SeeMore" || imgButt == "SeeMoreBooks" || imgButt == "SeeMorePodcast"){
             if(indexPath.row == contenuto.count - 1){
                 cell.div.image = UIImage(named: "divisore")
             }
@@ -206,7 +205,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
                 contenuto = structIns[0].pod
                 self.imgButt = "SeeMore"
             }
-            if(Schermata2.insights[0] == "Movies&TVShows"){
+            if(Schermata2.insights[0] == "Movies & TV Shows"){
                 contenuto = structIns[0].well
                 self.imgButt = "SeeMoreMovies"
             }
@@ -361,7 +360,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
                 contenuto = structIns[0].pod
                 self.imgButt = "SeeMore"
             }
-            if(Schermata2.insights[0] == "Movies&TVShows"){
+            if(Schermata2.insights[0] == "Movies & TV Shows"){
                 contenuto = structIns[0].well
                 self.imgButt = "SeeMoreMovies"
             }
@@ -421,7 +420,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
             contenuto = structIns[0].pod
             self.imgButt = "SeeMore"
         }
-        if(sender.titleLabel?.text == "Movies&TVShows"){
+        if(sender.titleLabel?.text == "Movies & TV Shows"){
             contenuto = structIns[0].well
             self.imgButt = "SeeMoreMovies"
         }

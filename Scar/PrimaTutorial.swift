@@ -178,7 +178,6 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         fetchMovies(nome: "the%20shape%20of%20water", tipo:"movie", yImg: 120)
         fetchMovies(nome: "unBreakable", tipo:"tv", yImg: 200)
         fetchMovies(nome: "pose", tipo:"tv", yImg: 20)
-        fetchMovies(nome: "border", tipo:"movie", yImg: 130)
         fetchMovies(nome: "glow", tipo:"tv", yImg: 320)
         fetchMovies(nome: "hairspray", tipo:"movie", yImg: 300)
         fetchMovies(nome: "unorthodox", tipo:"tv", yImg: 100)
@@ -401,10 +400,10 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             {
                 return UITableViewCell()
             }
-            cell.button.setTitle("Movies&TVShows", for: .normal)
+            cell.button.setTitle("Movies & TV Shows", for: .normal)
             cell.button.isSelected = false
             for i in 0...selected.count - 1 {
-                if(selected[i] == "Movies&TVShows"){
+                if(selected[i] == "Movies & TV Shows"){
                     cell.button.isSelected = true
                 }
             }

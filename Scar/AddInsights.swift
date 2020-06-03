@@ -33,7 +33,7 @@ class AddInsights: UIViewController {
                 pod.isSelected = true
             }
             
-            if(Schermata2.insights[i] == "Movies&TVShows"){
+            if(Schermata2.insights[i] == "Movies & TV Shows"){
                 AddInsights.j = AddInsights.j + 1
                 well.isSelected = true
             }
@@ -154,7 +154,7 @@ class AddInsights: UIViewController {
             if(ok != 1){
                 well.isSelected = false
                 for i in 0...Schermata2.insights.count - 1{
-                    if(Schermata2.insights[i] != "Movies&TVShows" && Schermata2.insights[i] != ""){
+                    if(Schermata2.insights[i] != "Movies & TV Shows" && Schermata2.insights[i] != ""){
                         temp.append(Schermata2.insights[i])
                     }
                 }
@@ -189,7 +189,7 @@ class AddInsights: UIViewController {
                 case 4: ins = "b5"
                 default: ins = "b6"
             }
-            let queryString = "UPDATE Insights SET \(ins) = 'Movies&TVShows';"
+            let queryString = "UPDATE Insights SET \(ins) = 'Movies & TV Shows';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
