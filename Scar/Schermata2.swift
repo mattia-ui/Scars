@@ -205,7 +205,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
                 contenuto = structIns[0].pod
                 self.imgButt = "SeeMore"
             }
-            if(Schermata2.insights[0] == "Movies & TV Shows"){
+            if(Schermata2.insights[0] == "Movies and Series"){
                 contenuto = structIns[0].well
                 self.imgButt = "SeeMoreMovies"
             }
@@ -360,7 +360,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
                 contenuto = structIns[0].pod
                 self.imgButt = "SeeMore"
             }
-            if(Schermata2.insights[0] == "Movies & TV Shows"){
+            if(Schermata2.insights[0] == "Movies and Series"){
                 contenuto = structIns[0].well
                 self.imgButt = "SeeMoreMovies"
             }
@@ -420,7 +420,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
             contenuto = structIns[0].pod
             self.imgButt = "SeeMore"
         }
-        if(sender.titleLabel?.text == "Movies & TV Shows"){
+        if(sender.titleLabel?.text == "Movies and Series"){
             contenuto = structIns[0].well
             self.imgButt = "SeeMoreMovies"
         }

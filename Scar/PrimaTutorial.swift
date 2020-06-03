@@ -400,10 +400,10 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             {
                 return UITableViewCell()
             }
-            cell.button.setTitle("Movies & TV Shows", for: .normal)
+            cell.button.setTitle("Movies and Series", for: .normal)
             cell.button.isSelected = false
             for i in 0...selected.count - 1 {
-                if(selected[i] == "Movies & TV Shows"){
+                if(selected[i] == "Movies and Series"){
                     cell.button.isSelected = true
                 }
             }
