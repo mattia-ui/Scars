@@ -2301,6 +2301,7 @@ you can change the way you look at
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="height" constant="701" id="2zg-Jl-V7A"/>
                                                     <constraint firstItem="yhW-b9-vYz" firstAttribute="trailing" secondItem="M7I-AD-BUJ" secondAttribute="trailing" id="AUC-2L-tr5"/>
                                                     <constraint firstItem="kzd-QM-ZsD" firstAttribute="leading" secondItem="gaW-2m-fzZ" secondAttribute="leading" id="Ej6-Rv-xeQ"/>
                                                     <constraint firstItem="yhW-b9-vYz" firstAttribute="leading" secondItem="M7I-AD-BUJ" secondAttribute="leading" id="FLM-M7-7bc"/>
@@ -2325,11 +2326,13 @@ you can change the way you look at
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="6Wk-a2-Mlz" secondAttribute="trailing" id="2kj-QC-geJ"/>
-                                    <constraint firstItem="6Wk-a2-Mlz" firstAttribute="top" secondItem="Kib-bj-Bci" secondAttribute="top" id="Ds5-dD-N6P"/>
-                                    <constraint firstItem="6Wk-a2-Mlz" firstAttribute="bottom" secondItem="4XE-rC-9Gh" secondAttribute="bottom" id="Lww-l7-JBf"/>
+                                    <constraint firstItem="6Wk-a2-Mlz" firstAttribute="leading" secondItem="Kib-bj-Bci" secondAttribute="leading" id="2rA-8T-ytX"/>
+                                    <constraint firstItem="Kib-bj-Bci" firstAttribute="trailing" secondItem="6Wk-a2-Mlz" secondAttribute="trailing" id="56l-Cd-DKd"/>
+                                    <constraint firstItem="6Wk-a2-Mlz" firstAttribute="width" secondItem="4XE-rC-9Gh" secondAttribute="width" id="5Hh-jY-rvh"/>
+                                    <constraint firstItem="6Wk-a2-Mlz" firstAttribute="top" secondItem="Kib-bj-Bci" secondAttribute="top" id="GKo-M9-zbM"/>
                                     <constraint firstAttribute="bottom" secondItem="6Wk-a2-Mlz" secondAttribute="bottom" id="ejb-CT-6FU"/>
+                                    <constraint firstItem="Kib-bj-Bci" firstAttribute="bottom" secondItem="6Wk-a2-Mlz" secondAttribute="bottom" id="lkT-WN-85Y"/>
                                     <constraint firstItem="6Wk-a2-Mlz" firstAttribute="centerX" secondItem="IQ3-xZ-aUr" secondAttribute="centerX" id="rTR-WX-0IN"/>
-                                    <constraint firstItem="6Wk-a2-Mlz" firstAttribute="leading" secondItem="4XE-rC-9Gh" secondAttribute="leading" id="sUp-zB-mM5"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Kib-bj-Bci"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="4XE-rC-9Gh"/>
