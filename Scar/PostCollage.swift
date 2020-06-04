@@ -20,6 +20,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
      var m = 0
     @IBOutlet weak var miniSym: UIImageView!
     
+    @IBOutlet weak var gif: UIImageView!
     @IBOutlet weak var myCollectionView: UICollectionView!
      var blurEffect = UIBlurEffect()
       var blurEffectView = UIVisualEffectView()
@@ -76,6 +77,8 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
         
+        gif.isHidden = false
+        
         miniSym.layer.borderWidth = 0.3
         miniSym.layer.masksToBounds = true
         miniSym.layer.borderColor = (UIColor.init(named: "#2E2933")?.cgColor)
@@ -125,6 +128,8 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         }
         else {
             viewL.isHidden = true
+            self.gif.loadGif(name: "TimelineAnimated")
+
             _ = UIScreen.main.bounds.width/3 - 3
             let layout = UICollectionViewFlowLayout()
             layout.sectionInset = UIEdgeInsets(top: 17, left: 7, bottom: 17, right: 7)
@@ -145,7 +150,9 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
                         SecretCollection.allImages?.removeAll()
                         for i in 0...results!.count-1{
                             let record = results![i]
-                            DispatchQueue.main.async{
+                            let seconds = 4.0
+                            DispatchQueue.main.asyncAfter(deadline: .now() + seconds){
+                                self.gif.isHidden = true
                                 let d = record.object(forKey: "Description") as! String
                                 SecretCollection.allDescr?.append(d)
                                 let image = record.object(forKey: "Photo") as! CKAsset

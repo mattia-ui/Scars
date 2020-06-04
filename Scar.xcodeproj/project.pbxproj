@@ -226,8 +226,6 @@
 		345F14CB24573808003EE819 /* Scar */ = {
 			isa = PBXGroup;
 			children = (
-				6BA9C37E24890B94006AA395 /* TimelineAnimated.gif */,
-				345F14FC24573816003EE819 /* Scar.entitlements */,
 				345F14CC24573808003EE819 /* AppDelegate.swift */,
 				76C14724246026BB00DAD927 /* AddInsights.swift */,
 				342BF2CB2460D006004CD081 /* CollectionViewCell1.swift */,
@@ -266,6 +264,8 @@
 				345F14D224573808003EE819 /* Main.storyboard */,
 				345F14D724573809003EE819 /* LaunchScreen.storyboard */,
 				345F14DA24573809003EE819 /* Info.plist */,
+				6BA9C37E24890B94006AA395 /* TimelineAnimated.gif */,
+				345F14FC24573816003EE819 /* Scar.entitlements */,
 				345F14D524573809003EE819 /* Assets.xcassets */,
 				7607122A24793C9E00B29C2C /* Network */,
 				7668C13D2469D3960099FD11 /* views */,
