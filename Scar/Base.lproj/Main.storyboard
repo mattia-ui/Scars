@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uc2-fZ-Jab">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Aa9-1L-etK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -1972,18 +1972,14 @@ you can change the way you look at
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" restorationIdentifier="ins" reuseIdentifier="ins" id="tBk-G5-O86" customClass="InightsCollection" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="1" y="0.0" width="412" height="363"/>
+                                        <rect key="frame" x="0.5" y="0.0" width="413" height="363"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="insightsCell" insetsLayoutMarginsFromSafeArea="NO" id="xtB-u9-g6l">
-                                            <rect key="frame" x="0.0" y="0.0" width="412" height="363"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="413" height="363"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="insight5" translatesAutoresizingMaskIntoConstraints="NO" id="9o9-F3-Tem">
-                                                    <rect key="frame" x="0.0" y="0.0" width="412" height="134"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="134" id="7Cq-2X-H47"/>
-                                                        <constraint firstAttribute="width" constant="412" id="gef-G6-TSz"/>
-                                                    </constraints>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="insight5" translatesAutoresizingMaskIntoConstraints="NO" id="9o9-F3-Tem">
+                                                    <rect key="frame" x="23" y="0.0" width="370" height="134"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdk-F6-xZK">
                                                     <rect key="frame" x="36" y="132" width="326" height="153"/>
@@ -2025,7 +2021,7 @@ you can change the way you look at
                                                     <state key="normal" image="SeeMore"/>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cSJ-OP-IOa">
-                                                    <rect key="frame" x="0.0" y="321" width="412" height="18"/>
+                                                    <rect key="frame" x="0.0" y="321" width="413" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="412" id="8Zl-Se-A3b"/>
                                                         <constraint firstAttribute="height" constant="18" id="YIn-kP-87G"/>
@@ -2034,24 +2030,27 @@ you can change the way you look at
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="9o9-F3-Tem" firstAttribute="top" secondItem="xtB-u9-g6l" secondAttribute="top" id="G6B-gS-2DU"/>
+                                                <constraint firstItem="9o9-F3-Tem" firstAttribute="centerX" secondItem="xtB-u9-g6l" secondAttribute="centerX" id="LnY-Co-qNh"/>
                                                 <constraint firstItem="cSJ-OP-IOa" firstAttribute="top" secondItem="vxG-uB-0dh" secondAttribute="bottom" constant="12" id="M2q-4C-drs"/>
-                                                <constraint firstItem="9o9-F3-Tem" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" id="Mr3-gh-wzR"/>
-                                                <constraint firstAttribute="trailing" secondItem="9o9-F3-Tem" secondAttribute="trailing" id="Naw-EN-2dI"/>
+                                                <constraint firstAttribute="trailing" secondItem="9o9-F3-Tem" secondAttribute="trailing" constant="20" id="Naw-EN-2dI"/>
                                                 <constraint firstItem="vxG-uB-0dh" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" constant="303" id="PKe-uZ-IjQ"/>
                                                 <constraint firstItem="eqz-fq-sWa" firstAttribute="top" secondItem="xtB-u9-g6l" secondAttribute="top" constant="31" id="WPy-ak-IpQ"/>
                                                 <constraint firstItem="pdk-F6-xZK" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" constant="36" id="Wfr-iE-G7M"/>
+                                                <constraint firstItem="9o9-F3-Tem" firstAttribute="height" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="0.369146" id="akv-7a-afT"/>
                                                 <constraint firstItem="y9q-2C-HRN" firstAttribute="top" secondItem="eqz-fq-sWa" secondAttribute="bottom" constant="6" id="cRB-8A-IN0"/>
                                                 <constraint firstItem="cSJ-OP-IOa" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" id="d6D-w3-wea"/>
                                                 <constraint firstItem="vxG-uB-0dh" firstAttribute="top" secondItem="pdk-F6-xZK" secondAttribute="bottom" constant="-8" id="el3-nD-KkK"/>
                                                 <constraint firstItem="eqz-fq-sWa" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" constant="36" id="gHA-Fb-WyI"/>
                                                 <constraint firstItem="pdk-F6-xZK" firstAttribute="top" secondItem="9o9-F3-Tem" secondAttribute="bottom" constant="-2" id="hgd-JF-oI2"/>
                                                 <constraint firstAttribute="trailing" secondItem="cSJ-OP-IOa" secondAttribute="trailing" id="kAL-X0-VwJ"/>
+                                                <constraint firstItem="9o9-F3-Tem" firstAttribute="width" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="370:363" id="kN1-uX-3C4"/>
                                                 <constraint firstAttribute="bottom" secondItem="cSJ-OP-IOa" secondAttribute="bottom" constant="24" id="sV8-6E-ru4"/>
                                                 <constraint firstItem="y9q-2C-HRN" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" constant="36" id="uLJ-En-nv0"/>
                                                 <constraint firstItem="eqz-fq-sWa" firstAttribute="trailing" secondItem="pdk-F6-xZK" secondAttribute="trailing" constant="4" id="zOH-2m-1VX"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="413" height="363"/>
                                         <connections>
                                             <outlet property="button" destination="vxG-uB-0dh" id="g2s-hP-B5K"/>
                                             <outlet property="div" destination="cSJ-OP-IOa" id="k5E-uR-RpU"/>
@@ -2129,9 +2128,11 @@ you can change the way you look at
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="u6C-90-pJx" firstAttribute="height" secondItem="k0H-CH-ZUa" secondAttribute="height" multiplier="0.654018" id="075-nf-1c1"/>
                             <constraint firstItem="RZj-ub-Qfp" firstAttribute="trailing" secondItem="u6C-90-pJx" secondAttribute="trailing" constant="7" id="2gk-7h-Ibn"/>
                             <constraint firstItem="9Ch-hi-KT7" firstAttribute="trailing" secondItem="MOo-wB-kmc" secondAttribute="trailing" constant="26" id="30v-eM-y4r"/>
                             <constraint firstItem="mCe-mq-vgd" firstAttribute="leading" secondItem="9Ch-hi-KT7" secondAttribute="leading" constant="22" id="3hD-vc-1ar"/>
+                            <constraint firstItem="u6C-90-pJx" firstAttribute="height" secondItem="k0H-CH-ZUa" secondAttribute="height" multiplier="0.654018" id="6EH-yo-oSu"/>
                             <constraint firstItem="9Ch-hi-KT7" firstAttribute="trailing" secondItem="ZS4-u3-Tl0" secondAttribute="trailing" id="6Ia-Vs-q9u"/>
                             <constraint firstItem="ZS4-u3-Tl0" firstAttribute="leading" secondItem="9Ch-hi-KT7" secondAttribute="leading" constant="20" id="AsW-yc-bW2"/>
                             <constraint firstItem="MOo-wB-kmc" firstAttribute="top" secondItem="mCe-mq-vgd" secondAttribute="top" id="Ht0-60-ABg"/>
@@ -2140,6 +2141,7 @@ you can change the way you look at
                             <constraint firstItem="ZS4-u3-Tl0" firstAttribute="top" secondItem="MOo-wB-kmc" secondAttribute="bottom" constant="26" id="Qf8-Hx-BiM"/>
                             <constraint firstItem="u6C-90-pJx" firstAttribute="top" secondItem="ZS4-u3-Tl0" secondAttribute="bottom" constant="2" id="Y3f-RT-jW6"/>
                             <constraint firstItem="mCe-mq-vgd" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="53" id="aDc-kV-piZ"/>
+                            <constraint firstItem="u6C-90-pJx" firstAttribute="width" secondItem="k0H-CH-ZUa" secondAttribute="width" id="bEr-DO-5ZQ"/>
                             <constraint firstItem="ZS4-u3-Tl0" firstAttribute="top" secondItem="mCe-mq-vgd" secondAttribute="bottom" constant="28" id="gcf-GI-WQW"/>
                             <constraint firstItem="RZj-ub-Qfp" firstAttribute="leading" secondItem="u6C-90-pJx" secondAttribute="leading" constant="-13" id="h5F-ch-vYB"/>
                             <constraint firstItem="MOo-wB-kmc" firstAttribute="bottom" secondItem="mCe-mq-vgd" secondAttribute="bottom" id="kla-M3-vWs"/>
