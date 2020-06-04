@@ -1779,7 +1779,7 @@ you can change the way you look at
                                 </constraints>
                                 <state key="normal" image="aggiungiInsight"/>
                                 <connections>
-                                    <segue destination="pxK-AG-QlA" kind="presentation" id="wfk-88-tG1"/>
+                                    <segue destination="b4u-8k-aGN" kind="presentation" id="BEr-NF-uoY"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZS4-u3-Tl0">
@@ -2142,28 +2142,30 @@ you can change the way you look at
             </objects>
             <point key="canvasLocation" x="-2462.3188405797105" y="1558.9285714285713"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Insights-->
         <scene sceneID="aOY-6a-rG9">
             <objects>
-                <viewController id="b4u-8k-aGN" sceneMemberID="viewController">
+                <viewController id="b4u-8k-aGN" customClass="AddInsights" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TVe-nO-WyI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Interests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0m-rX-KH1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Interests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0m-rX-KH1">
                                 <rect key="frame" x="22" y="32" width="372" height="40.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Personalize your insights section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuu-lj-8sf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalize your insights section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuu-lj-8sf">
                                 <rect key="frame" x="20" y="77" width="372" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="OYB-ej-wEi"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fur-PP-xsc">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fur-PP-xsc">
                                 <rect key="frame" x="0.0" y="108" width="414" height="734"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ruZ-7W-OOb">
@@ -2181,10 +2183,10 @@ you can change the way you look at
                                                             <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <state key="selected" backgroundImage="selezionato">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="wellbein:" destination="pxK-AG-QlA" eventType="touchUpInside" id="aoz-l4-fMh"/>
+                                                            <action selector="wellbein:" destination="b4u-8k-aGN" eventType="touchUpInside" id="kQ6-45-OHm"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJ3-P7-iDQ">
@@ -2196,10 +2198,10 @@ you can change the way you look at
                                                             <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <state key="selected" backgroundImage="selezionato">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="movies:" destination="pxK-AG-QlA" eventType="touchUpInside" id="Qaw-Fv-WfE"/>
+                                                            <action selector="movies:" destination="b4u-8k-aGN" eventType="touchUpInside" id="Jbs-Tr-d9V"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veU-J5-GIh">
@@ -2211,10 +2213,10 @@ you can change the way you look at
                                                             <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <state key="selected" backgroundImage="selezionato">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="articols:" destination="pxK-AG-QlA" eventType="touchUpInside" id="t5c-XV-Ae4"/>
+                                                            <action selector="articols:" destination="b4u-8k-aGN" eventType="touchUpInside" id="vfB-5C-FWT"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTP-eF-fNy">
@@ -2226,11 +2228,10 @@ you can change the way you look at
                                                             <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <state key="selected" backgroundImage="selezionato">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="functionOnAnotherView:" destination="kOP-8S-voN" eventType="touchUpInside" id="T1I-UR-7c1"/>
-                                                            <action selector="podcast:" destination="pxK-AG-QlA" eventType="touchUpInside" id="Ggh-d7-fAy"/>
+                                                            <action selector="podcast:" destination="b4u-8k-aGN" eventType="touchUpInside" id="L3M-Nw-PQf"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0L-qT-zEJ">
@@ -2242,10 +2243,10 @@ you can change the way you look at
                                                             <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <state key="selected" backgroundImage="selezionato">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="books:" destination="pxK-AG-QlA" eventType="touchUpInside" id="Okt-vq-CFL"/>
+                                                            <action selector="books:" destination="b4u-8k-aGN" eventType="touchUpInside" id="9oX-xm-z1c"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Pu-dL-LBl">
@@ -2257,10 +2258,10 @@ you can change the way you look at
                                                             <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <state key="selected" backgroundImage="selezionato">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="artist:" destination="pxK-AG-QlA" eventType="touchUpInside" id="GJo-1q-okV"/>
+                                                            <action selector="artist:" destination="b4u-8k-aGN" eventType="touchUpInside" id="hNt-24-tbc"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -2291,9 +2292,9 @@ you can change the way you look at
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="ruZ-7W-OOb" firstAttribute="top" secondItem="5nG-VF-cmO" secondAttribute="top" id="1KP-wi-fmc"/>
-                                    <constraint firstItem="ruZ-7W-OOb" firstAttribute="bottom" secondItem="5nG-VF-cmO" secondAttribute="bottom" constant="734" id="TOe-oT-n9u"/>
+                                    <constraint firstItem="ruZ-7W-OOb" firstAttribute="bottom" secondItem="5nG-VF-cmO" secondAttribute="bottom" id="TOe-oT-n9u"/>
                                     <constraint firstItem="ruZ-7W-OOb" firstAttribute="leading" secondItem="5nG-VF-cmO" secondAttribute="leading" id="VWl-8S-r7w"/>
-                                    <constraint firstItem="ruZ-7W-OOb" firstAttribute="trailing" secondItem="5nG-VF-cmO" secondAttribute="trailing" constant="414" id="icl-a3-LB6"/>
+                                    <constraint firstItem="ruZ-7W-OOb" firstAttribute="trailing" secondItem="5nG-VF-cmO" secondAttribute="trailing" id="icl-a3-LB6"/>
                                     <constraint firstItem="ruZ-7W-OOb" firstAttribute="width" secondItem="5TI-32-wih" secondAttribute="width" id="xp3-Tx-Gc3"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="5nG-VF-cmO"/>
@@ -2302,21 +2303,28 @@ you can change the way you look at
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="T0m-rX-KH1" firstAttribute="top" secondItem="94C-Hj-IFg" secondAttribute="top" constant="32" id="C7W-ir-BRc"/>
                             <constraint firstItem="I0L-qT-zEJ" firstAttribute="height" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="0.0902613" id="CDT-bj-gnV"/>
                             <constraint firstItem="fur-PP-xsc" firstAttribute="top" secondItem="uuu-lj-8sf" secondAttribute="bottom" id="Fyg-lL-HaR"/>
+                            <constraint firstItem="T0m-rX-KH1" firstAttribute="trailing" secondItem="TVe-nO-WyI" secondAttribute="trailingMargin" id="Gzf-0z-wce"/>
                             <constraint firstItem="4Pu-dL-LBl" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="193:421" id="Hj1-4m-suM"/>
                             <constraint firstItem="fur-PP-xsc" firstAttribute="trailing" secondItem="94C-Hj-IFg" secondAttribute="trailing" id="LGU-za-Vxf"/>
                             <constraint firstItem="fur-PP-xsc" firstAttribute="leading" secondItem="94C-Hj-IFg" secondAttribute="leading" id="Mgg-mt-Ltj"/>
                             <constraint firstItem="cFX-az-RWs" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="193:421" id="SoM-AZ-6ax"/>
                             <constraint firstItem="4Pu-dL-LBl" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="width" multiplier="0.932367" id="TtT-FH-Try"/>
+                            <constraint firstItem="uuu-lj-8sf" firstAttribute="top" secondItem="T0m-rX-KH1" secondAttribute="bottom" constant="4.5" id="Ufm-RE-for"/>
                             <constraint firstItem="I0L-qT-zEJ" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="193:421" id="VOy-Rv-Bzg"/>
+                            <constraint firstItem="T0m-rX-KH1" firstAttribute="leading" secondItem="94C-Hj-IFg" secondAttribute="leading" constant="22" id="ZYl-Z4-prZ"/>
                             <constraint firstItem="veU-J5-GIh" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="width" multiplier="0.932367" id="a2W-3g-Gc8"/>
                             <constraint firstItem="cJ3-P7-iDQ" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="193:421" id="a9x-ia-IVl"/>
                             <constraint firstAttribute="bottom" secondItem="fur-PP-xsc" secondAttribute="bottom" id="b7f-fR-sED"/>
+                            <constraint firstItem="uuu-lj-8sf" firstAttribute="top" secondItem="TVe-nO-WyI" secondAttribute="top" constant="77" id="cNq-1x-wj4"/>
                             <constraint firstItem="4Pu-dL-LBl" firstAttribute="height" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="0.0902613" id="gAV-4k-hTd"/>
+                            <constraint firstItem="94C-Hj-IFg" firstAttribute="trailing" secondItem="uuu-lj-8sf" secondAttribute="trailing" constant="22" id="hlm-j2-aOe"/>
                             <constraint firstItem="veU-J5-GIh" firstAttribute="height" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="0.0902613" id="lEK-IN-bh4"/>
                             <constraint firstItem="I0L-qT-zEJ" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="width" multiplier="0.932367" id="lcV-jj-rJy"/>
                             <constraint firstItem="cJ3-P7-iDQ" firstAttribute="height" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="0.0902613" id="mY0-W1-hTv"/>
+                            <constraint firstItem="uuu-lj-8sf" firstAttribute="leading" secondItem="TVe-nO-WyI" secondAttribute="leadingMargin" id="oTQ-qX-fH0"/>
                             <constraint firstItem="sTP-eF-fNy" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="width" multiplier="0.932367" id="p2T-PB-kan"/>
                             <constraint firstItem="cFX-az-RWs" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="width" multiplier="0.932367" id="p9Q-Jg-FNX"/>
                             <constraint firstItem="cFX-az-RWs" firstAttribute="height" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="0.0902613" id="q4I-vC-TMX"/>
@@ -2326,218 +2334,18 @@ you can change the way you look at
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="94C-Hj-IFg"/>
                     </view>
+                    <connections>
+                        <outlet property="art" destination="veU-J5-GIh" id="vLD-sy-iju"/>
+                        <outlet property="artist" destination="4Pu-dL-LBl" id="4n0-dN-irA"/>
+                        <outlet property="books" destination="I0L-qT-zEJ" id="XVI-VL-qqJ"/>
+                        <outlet property="mov" destination="cJ3-P7-iDQ" id="TL3-Qc-6Qm"/>
+                        <outlet property="pod" destination="sTP-eF-fNy" id="l5O-7n-JZl"/>
+                        <outlet property="well" destination="cFX-az-RWs" id="uhD-h7-aCw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UcN-ov-mCC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1759.4202898550725" y="1560.9375"/>
-        </scene>
-        <!--Add Insights-->
-        <scene sceneID="Woi-j5-aN0">
-            <objects>
-                <viewController id="pxK-AG-QlA" customClass="AddInsights" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hoX-51-YQu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalize your insights section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLV-JE-bPB">
-                                <rect key="frame" x="22" y="77" width="372" height="22"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Interests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICX-Lj-BMb">
-                                <rect key="frame" x="22" y="32" width="372" height="38"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQ3-xZ-aUr">
-                                <rect key="frame" x="0.0" y="107" width="414" height="701"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6Wk-a2-Mlz">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="701"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEt-1W-uWH">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="701"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhW-b9-vYz">
-                                                        <rect key="frame" x="15" y="137" width="386" height="76"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
-                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="Movies and Series" backgroundImage="nonselezionato">
-                                                            <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        </state>
-                                                        <state key="selected" backgroundImage="selezionato">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="wellbein:" destination="pxK-AG-QlA" eventType="touchUpInside" id="hqW-l6-MIj"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7I-AD-BUJ">
-                                                        <rect key="frame" x="15" y="235" width="386" height="76"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
-                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="Articles" backgroundImage="nonselezionato">
-                                                            <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        </state>
-                                                        <state key="selected" backgroundImage="selezionato">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="movies:" destination="pxK-AG-QlA" eventType="touchUpInside" id="VAr-sd-trc"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzd-QM-ZsD">
-                                                        <rect key="frame" x="15" y="333" width="386" height="76"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
-                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="Books" backgroundImage="nonselezionato">
-                                                            <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        </state>
-                                                        <state key="selected" backgroundImage="selezionato">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="articols:" destination="pxK-AG-QlA" eventType="touchUpInside" id="PdH-f5-Wdl"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yP-st-eET">
-                                                        <rect key="frame" x="15" y="39" width="386" height="76"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
-                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="TEDx" backgroundImage="nonselezionato">
-                                                            <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        </state>
-                                                        <state key="selected" backgroundImage="selezionato">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="functionOnAnotherView:" destination="kOP-8S-voN" eventType="touchUpInside" id="Mit-9t-FLD"/>
-                                                            <action selector="podcast:" destination="pxK-AG-QlA" eventType="touchUpInside" id="lv1-hv-BHP"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZk-O6-Ha0">
-                                                        <rect key="frame" x="15" y="529" width="386" height="76"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
-                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="Podcast" backgroundImage="nonselezionato">
-                                                            <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        </state>
-                                                        <state key="selected" backgroundImage="selezionato">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="books:" destination="pxK-AG-QlA" eventType="touchUpInside" id="YJX-hb-RvR"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaW-2m-fzZ">
-                                                        <rect key="frame" x="15" y="431" width="386" height="76"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
-                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="Inspiring People" backgroundImage="nonselezionato">
-                                                            <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        </state>
-                                                        <state key="selected" backgroundImage="selezionato">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="artist:" destination="pxK-AG-QlA" eventType="touchUpInside" id="ERk-dG-C3x"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="701" id="2zg-Jl-V7A"/>
-                                                    <constraint firstItem="yhW-b9-vYz" firstAttribute="trailing" secondItem="M7I-AD-BUJ" secondAttribute="trailing" id="AUC-2L-tr5"/>
-                                                    <constraint firstItem="kzd-QM-ZsD" firstAttribute="leading" secondItem="gaW-2m-fzZ" secondAttribute="leading" id="Ej6-Rv-xeQ"/>
-                                                    <constraint firstItem="yhW-b9-vYz" firstAttribute="leading" secondItem="M7I-AD-BUJ" secondAttribute="leading" id="FLM-M7-7bc"/>
-                                                    <constraint firstItem="yhW-b9-vYz" firstAttribute="top" secondItem="1yP-st-eET" secondAttribute="bottom" constant="22" id="IH5-uk-kfu"/>
-                                                    <constraint firstItem="kzd-QM-ZsD" firstAttribute="trailing" secondItem="gaW-2m-fzZ" secondAttribute="trailing" id="Kyb-fW-r34"/>
-                                                    <constraint firstItem="1yP-st-eET" firstAttribute="leading" secondItem="yhW-b9-vYz" secondAttribute="leading" id="RkZ-2Y-b3Y"/>
-                                                    <constraint firstItem="gaW-2m-fzZ" firstAttribute="trailing" secondItem="aZk-O6-Ha0" secondAttribute="trailing" id="V8X-zZ-SbE"/>
-                                                    <constraint firstItem="M7I-AD-BUJ" firstAttribute="trailing" secondItem="kzd-QM-ZsD" secondAttribute="trailing" id="Vi0-Ip-Ddl"/>
-                                                    <constraint firstItem="kzd-QM-ZsD" firstAttribute="top" secondItem="M7I-AD-BUJ" secondAttribute="bottom" constant="22" id="eSx-Wm-6wi"/>
-                                                    <constraint firstItem="M7I-AD-BUJ" firstAttribute="leading" secondItem="kzd-QM-ZsD" secondAttribute="leading" id="h5X-jX-SV7"/>
-                                                    <constraint firstItem="gaW-2m-fzZ" firstAttribute="top" secondItem="kzd-QM-ZsD" secondAttribute="bottom" constant="22" id="hhj-DW-kf5"/>
-                                                    <constraint firstItem="aZk-O6-Ha0" firstAttribute="top" secondItem="gaW-2m-fzZ" secondAttribute="bottom" constant="22" id="lbM-3j-Jbb"/>
-                                                    <constraint firstItem="M7I-AD-BUJ" firstAttribute="top" secondItem="yhW-b9-vYz" secondAttribute="bottom" constant="22" id="ltx-tQ-Lkc"/>
-                                                    <constraint firstItem="1yP-st-eET" firstAttribute="leading" secondItem="EEt-1W-uWH" secondAttribute="leading" constant="15" id="mcq-19-PbN"/>
-                                                    <constraint firstItem="1yP-st-eET" firstAttribute="trailing" secondItem="yhW-b9-vYz" secondAttribute="trailing" id="raP-b1-QMI"/>
-                                                    <constraint firstItem="gaW-2m-fzZ" firstAttribute="leading" secondItem="aZk-O6-Ha0" secondAttribute="leading" id="u5d-6f-ne7"/>
-                                                    <constraint firstItem="1yP-st-eET" firstAttribute="top" secondItem="EEt-1W-uWH" secondAttribute="top" constant="39" id="ymh-oT-D4h"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="6Wk-a2-Mlz" secondAttribute="trailing" id="2kj-QC-geJ"/>
-                                    <constraint firstItem="6Wk-a2-Mlz" firstAttribute="leading" secondItem="Kib-bj-Bci" secondAttribute="leading" id="2rA-8T-ytX"/>
-                                    <constraint firstItem="Kib-bj-Bci" firstAttribute="trailing" secondItem="6Wk-a2-Mlz" secondAttribute="trailing" id="56l-Cd-DKd"/>
-                                    <constraint firstItem="6Wk-a2-Mlz" firstAttribute="width" secondItem="4XE-rC-9Gh" secondAttribute="width" id="5Hh-jY-rvh"/>
-                                    <constraint firstItem="6Wk-a2-Mlz" firstAttribute="top" secondItem="Kib-bj-Bci" secondAttribute="top" id="GKo-M9-zbM"/>
-                                    <constraint firstAttribute="bottom" secondItem="6Wk-a2-Mlz" secondAttribute="bottom" id="ejb-CT-6FU"/>
-                                    <constraint firstItem="Kib-bj-Bci" firstAttribute="bottom" secondItem="6Wk-a2-Mlz" secondAttribute="bottom" id="lkT-WN-85Y"/>
-                                    <constraint firstItem="6Wk-a2-Mlz" firstAttribute="centerX" secondItem="IQ3-xZ-aUr" secondAttribute="centerX" id="rTR-WX-0IN"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="Kib-bj-Bci"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="4XE-rC-9Gh"/>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="IQ3-xZ-aUr" firstAttribute="centerX" secondItem="hoX-51-YQu" secondAttribute="centerX" id="23e-qg-7fb"/>
-                            <constraint firstItem="1yP-st-eET" firstAttribute="height" secondItem="hoX-51-YQu" secondAttribute="height" multiplier="0.0902613" id="2Mt-JL-4hg"/>
-                            <constraint firstItem="yhW-b9-vYz" firstAttribute="height" secondItem="hoX-51-YQu" secondAttribute="height" multiplier="0.0902613" id="2uD-aZ-VbM"/>
-                            <constraint firstItem="ICX-Lj-BMb" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="width" multiplier="0.898551" id="6C8-b3-U3x"/>
-                            <constraint firstItem="M7I-AD-BUJ" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="width" multiplier="0.932367" id="8yb-md-I9I"/>
-                            <constraint firstItem="IQ3-xZ-aUr" firstAttribute="top" secondItem="DLV-JE-bPB" secondAttribute="bottom" constant="8" id="ACU-Se-2d2"/>
-                            <constraint firstItem="1yP-st-eET" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="width" multiplier="0.932367" id="CHl-ng-c0c"/>
-                            <constraint firstItem="aZk-O6-Ha0" firstAttribute="height" secondItem="hoX-51-YQu" secondAttribute="height" multiplier="0.0902613" id="CVP-XB-Y4x"/>
-                            <constraint firstItem="ICX-Lj-BMb" firstAttribute="trailing" secondItem="hoX-51-YQu" secondAttribute="trailingMargin" id="Dyy-yJ-hk9"/>
-                            <constraint firstItem="M7I-AD-BUJ" firstAttribute="height" secondItem="hoX-51-YQu" secondAttribute="height" multiplier="0.0902613" id="ERF-fK-N40"/>
-                            <constraint firstItem="gaW-2m-fzZ" firstAttribute="height" secondItem="hoX-51-YQu" secondAttribute="height" multiplier="0.0902613" id="Igp-9w-qhc"/>
-                            <constraint firstItem="DLV-JE-bPB" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="width" multiplier="0.898551" id="Luq-XT-Qw5"/>
-                            <constraint firstItem="aZk-O6-Ha0" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="height" multiplier="193:421" id="NE9-h2-9nv"/>
-                            <constraint firstItem="kzd-QM-ZsD" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="width" multiplier="0.932367" id="OO4-94-ZnO"/>
-                            <constraint firstItem="ICX-Lj-BMb" firstAttribute="height" secondItem="hoX-51-YQu" secondAttribute="height" multiplier="0.0451306" id="RGS-mp-GJI"/>
-                            <constraint firstItem="gaW-2m-fzZ" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="width" multiplier="0.932367" id="RvP-L1-5g2"/>
-                            <constraint firstItem="aZk-O6-Ha0" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="width" multiplier="0.932367" id="SCC-5x-3yp"/>
-                            <constraint firstItem="kzd-QM-ZsD" firstAttribute="height" secondItem="hoX-51-YQu" secondAttribute="height" multiplier="0.0902613" id="ZyV-s4-eWN"/>
-                            <constraint firstItem="ICX-Lj-BMb" firstAttribute="leading" secondItem="DLV-JE-bPB" secondAttribute="leading" id="aFG-62-saU"/>
-                            <constraint firstItem="DLV-JE-bPB" firstAttribute="height" secondItem="hoX-51-YQu" secondAttribute="height" multiplier="0.0261283" id="d59-DK-XQh"/>
-                            <constraint firstItem="ICX-Lj-BMb" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" constant="22" id="d6w-35-Avx"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="IQ3-xZ-aUr" secondAttribute="bottom" id="ffS-uz-9LG"/>
-                            <constraint firstItem="gaW-2m-fzZ" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="height" multiplier="193:421" id="g8Q-cW-Gx5"/>
-                            <constraint firstItem="DLV-JE-bPB" firstAttribute="top" secondItem="ICX-Lj-BMb" secondAttribute="bottom" constant="7" id="j5e-Ib-vQo"/>
-                            <constraint firstItem="IQ3-xZ-aUr" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" id="kPk-mH-d0h"/>
-                            <constraint firstItem="ICX-Lj-BMb" firstAttribute="trailing" secondItem="DLV-JE-bPB" secondAttribute="trailing" id="mHp-Xm-aD0"/>
-                            <constraint firstItem="yhW-b9-vYz" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="width" multiplier="0.932367" id="mbd-ts-Ggl"/>
-                            <constraint firstItem="ICX-Lj-BMb" firstAttribute="top" secondItem="vTd-oq-JON" secondAttribute="top" constant="32" id="nNT-8c-3iA"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="vTd-oq-JON"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="USb-Vd-vYd"/>
-                    <connections>
-                        <outlet property="art" destination="kzd-QM-ZsD" id="l0I-Fx-zbO"/>
-                        <outlet property="artist" destination="gaW-2m-fzZ" id="xRl-mr-w67"/>
-                        <outlet property="books" destination="aZk-O6-Ha0" id="hIi-VL-8BP"/>
-                        <outlet property="mov" destination="M7I-AD-BUJ" id="itK-VG-tle"/>
-                        <outlet property="pod" destination="1yP-st-eET" id="hzK-lX-t7n"/>
-                        <outlet property="well" destination="yhW-b9-vYz" id="n1T-Zo-yIO"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KdF-Dn-BGp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="kOP-8S-voN" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="-1065.217391304348" y="1558.9285714285713"/>
         </scene>
         <!--Activities-->
         <scene sceneID="VAp-f4-Cly">
