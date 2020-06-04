@@ -15,8 +15,25 @@ class SecondaTutorial : UIViewController {
     @IBOutlet weak var tab: UIImageView!
     @IBOutlet weak var TiziaBionda: UIImageView!
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var hashtag: UIImageView!
     
-    var cont = 0 
+    var cont = 0
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+       var i = 1
+        Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { timer in
+            if(i == 80){
+                i = 1
+            }
+            self.hashtag.image = UIImage(named: "hashtag_\(i)")
+            i += 1
+            
+        }
+        
+        
+        
+    }
     
     override func viewDidLoad() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
@@ -55,7 +72,7 @@ class SecondaTutorial : UIViewController {
 //                self.SecondaLabel.alpha = 0
 //                self.TerzaLabel.alpha = 0
                 self.TiziaViola.alpha = 0
-               self.tab.alpha = 0
+               self.hashtag.alpha = 0
 //            }
             PrimaLabel.text = "Time to explore"
             SecondaLabel.text = "Activities and Insights"
