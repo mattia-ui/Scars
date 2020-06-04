@@ -1779,7 +1779,7 @@ you can change the way you look at
                                 </constraints>
                                 <state key="normal" image="aggiungiInsight"/>
                                 <connections>
-                                    <segue destination="pxK-AG-QlA" kind="presentation" id="14X-2c-NEC"/>
+                                    <segue destination="pxK-AG-QlA" kind="presentation" id="wfk-88-tG1"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZS4-u3-Tl0">
@@ -2142,6 +2142,195 @@ you can change the way you look at
             </objects>
             <point key="canvasLocation" x="-2462.3188405797105" y="1558.9285714285713"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="aOY-6a-rG9">
+            <objects>
+                <viewController id="b4u-8k-aGN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TVe-nO-WyI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Interests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0m-rX-KH1">
+                                <rect key="frame" x="22" y="32" width="372" height="40.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Personalize your insights section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuu-lj-8sf">
+                                <rect key="frame" x="20" y="77" width="372" height="31"/>
+                                <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fur-PP-xsc">
+                                <rect key="frame" x="0.0" y="108" width="414" height="734"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ruZ-7W-OOb">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="734"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPU-LR-H0s">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="734"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFX-az-RWs">
+                                                        <rect key="frame" x="14" y="147" width="386" height="76"/>
+                                                        <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="Movies and Series" backgroundImage="nonselezionato">
+                                                            <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <state key="selected" backgroundImage="selezionato">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="wellbein:" destination="pxK-AG-QlA" eventType="touchUpInside" id="aoz-l4-fMh"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJ3-P7-iDQ">
+                                                        <rect key="frame" x="14" y="245" width="386" height="76"/>
+                                                        <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="Articles" backgroundImage="nonselezionato">
+                                                            <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <state key="selected" backgroundImage="selezionato">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="movies:" destination="pxK-AG-QlA" eventType="touchUpInside" id="Qaw-Fv-WfE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veU-J5-GIh">
+                                                        <rect key="frame" x="14" y="343" width="386" height="76"/>
+                                                        <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="Books" backgroundImage="nonselezionato">
+                                                            <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <state key="selected" backgroundImage="selezionato">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="articols:" destination="pxK-AG-QlA" eventType="touchUpInside" id="t5c-XV-Ae4"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTP-eF-fNy">
+                                                        <rect key="frame" x="14" y="49" width="386" height="76"/>
+                                                        <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="TEDx" backgroundImage="nonselezionato">
+                                                            <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <state key="selected" backgroundImage="selezionato">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="functionOnAnotherView:" destination="kOP-8S-voN" eventType="touchUpInside" id="T1I-UR-7c1"/>
+                                                            <action selector="podcast:" destination="pxK-AG-QlA" eventType="touchUpInside" id="Ggh-d7-fAy"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0L-qT-zEJ">
+                                                        <rect key="frame" x="14" y="539" width="386" height="76"/>
+                                                        <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="Podcast" backgroundImage="nonselezionato">
+                                                            <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <state key="selected" backgroundImage="selezionato">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="books:" destination="pxK-AG-QlA" eventType="touchUpInside" id="Okt-vq-CFL"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Pu-dL-LBl">
+                                                        <rect key="frame" x="14" y="441" width="386" height="76"/>
+                                                        <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="Inspiring People" backgroundImage="nonselezionato">
+                                                            <color key="titleColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <state key="selected" backgroundImage="selezionato">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="artist:" destination="pxK-AG-QlA" eventType="touchUpInside" id="GJo-1q-okV"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="veU-J5-GIh" firstAttribute="top" secondItem="cJ3-P7-iDQ" secondAttribute="bottom" constant="22" id="0yF-9Z-Xhp"/>
+                                                    <constraint firstItem="sTP-eF-fNy" firstAttribute="trailing" secondItem="cFX-az-RWs" secondAttribute="trailing" id="2EZ-Kx-xRd"/>
+                                                    <constraint firstItem="4Pu-dL-LBl" firstAttribute="top" secondItem="veU-J5-GIh" secondAttribute="bottom" constant="22" id="4Wh-rA-Jaa"/>
+                                                    <constraint firstItem="sTP-eF-fNy" firstAttribute="leading" secondItem="lPU-LR-H0s" secondAttribute="leading" constant="14" id="5MB-vn-pjc"/>
+                                                    <constraint firstItem="cFX-az-RWs" firstAttribute="trailing" secondItem="cJ3-P7-iDQ" secondAttribute="trailing" id="DBL-zv-Gjt"/>
+                                                    <constraint firstItem="cJ3-P7-iDQ" firstAttribute="trailing" secondItem="veU-J5-GIh" secondAttribute="trailing" id="DXe-dN-0ej"/>
+                                                    <constraint firstItem="veU-J5-GIh" firstAttribute="trailing" secondItem="4Pu-dL-LBl" secondAttribute="trailing" id="LDk-ad-kuN"/>
+                                                    <constraint firstItem="4Pu-dL-LBl" firstAttribute="leading" secondItem="I0L-qT-zEJ" secondAttribute="leading" id="RKW-h2-nWD"/>
+                                                    <constraint firstItem="cJ3-P7-iDQ" firstAttribute="top" secondItem="cFX-az-RWs" secondAttribute="bottom" constant="22" id="RWy-My-fQ6"/>
+                                                    <constraint firstItem="I0L-qT-zEJ" firstAttribute="top" secondItem="4Pu-dL-LBl" secondAttribute="bottom" constant="22" id="XGO-Ge-ZiD"/>
+                                                    <constraint firstItem="veU-J5-GIh" firstAttribute="leading" secondItem="4Pu-dL-LBl" secondAttribute="leading" id="Xdn-ck-5XS"/>
+                                                    <constraint firstItem="4Pu-dL-LBl" firstAttribute="trailing" secondItem="I0L-qT-zEJ" secondAttribute="trailing" id="a6u-7d-jQM"/>
+                                                    <constraint firstItem="cFX-az-RWs" firstAttribute="top" secondItem="sTP-eF-fNy" secondAttribute="bottom" constant="22" id="cjf-ZW-nZ7"/>
+                                                    <constraint firstItem="cFX-az-RWs" firstAttribute="leading" secondItem="cJ3-P7-iDQ" secondAttribute="leading" id="dAT-Ov-0wc"/>
+                                                    <constraint firstItem="sTP-eF-fNy" firstAttribute="top" secondItem="lPU-LR-H0s" secondAttribute="top" constant="49" id="dua-Gz-pUr"/>
+                                                    <constraint firstItem="sTP-eF-fNy" firstAttribute="leading" secondItem="cFX-az-RWs" secondAttribute="leading" id="jBE-gf-yBp"/>
+                                                    <constraint firstItem="cJ3-P7-iDQ" firstAttribute="leading" secondItem="veU-J5-GIh" secondAttribute="leading" id="uLt-cY-1je"/>
+                                                    <constraint firstAttribute="height" constant="734" id="wWy-wa-YDf"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ruZ-7W-OOb" firstAttribute="top" secondItem="5nG-VF-cmO" secondAttribute="top" id="1KP-wi-fmc"/>
+                                    <constraint firstItem="ruZ-7W-OOb" firstAttribute="bottom" secondItem="5nG-VF-cmO" secondAttribute="bottom" constant="734" id="TOe-oT-n9u"/>
+                                    <constraint firstItem="ruZ-7W-OOb" firstAttribute="leading" secondItem="5nG-VF-cmO" secondAttribute="leading" id="VWl-8S-r7w"/>
+                                    <constraint firstItem="ruZ-7W-OOb" firstAttribute="trailing" secondItem="5nG-VF-cmO" secondAttribute="trailing" constant="414" id="icl-a3-LB6"/>
+                                    <constraint firstItem="ruZ-7W-OOb" firstAttribute="width" secondItem="5TI-32-wih" secondAttribute="width" id="xp3-Tx-Gc3"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="5nG-VF-cmO"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="5TI-32-wih"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="I0L-qT-zEJ" firstAttribute="height" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="0.0902613" id="CDT-bj-gnV"/>
+                            <constraint firstItem="fur-PP-xsc" firstAttribute="top" secondItem="uuu-lj-8sf" secondAttribute="bottom" id="Fyg-lL-HaR"/>
+                            <constraint firstItem="4Pu-dL-LBl" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="193:421" id="Hj1-4m-suM"/>
+                            <constraint firstItem="fur-PP-xsc" firstAttribute="trailing" secondItem="94C-Hj-IFg" secondAttribute="trailing" id="LGU-za-Vxf"/>
+                            <constraint firstItem="fur-PP-xsc" firstAttribute="leading" secondItem="94C-Hj-IFg" secondAttribute="leading" id="Mgg-mt-Ltj"/>
+                            <constraint firstItem="cFX-az-RWs" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="193:421" id="SoM-AZ-6ax"/>
+                            <constraint firstItem="4Pu-dL-LBl" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="width" multiplier="0.932367" id="TtT-FH-Try"/>
+                            <constraint firstItem="I0L-qT-zEJ" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="193:421" id="VOy-Rv-Bzg"/>
+                            <constraint firstItem="veU-J5-GIh" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="width" multiplier="0.932367" id="a2W-3g-Gc8"/>
+                            <constraint firstItem="cJ3-P7-iDQ" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="193:421" id="a9x-ia-IVl"/>
+                            <constraint firstAttribute="bottom" secondItem="fur-PP-xsc" secondAttribute="bottom" id="b7f-fR-sED"/>
+                            <constraint firstItem="4Pu-dL-LBl" firstAttribute="height" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="0.0902613" id="gAV-4k-hTd"/>
+                            <constraint firstItem="veU-J5-GIh" firstAttribute="height" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="0.0902613" id="lEK-IN-bh4"/>
+                            <constraint firstItem="I0L-qT-zEJ" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="width" multiplier="0.932367" id="lcV-jj-rJy"/>
+                            <constraint firstItem="cJ3-P7-iDQ" firstAttribute="height" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="0.0902613" id="mY0-W1-hTv"/>
+                            <constraint firstItem="sTP-eF-fNy" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="width" multiplier="0.932367" id="p2T-PB-kan"/>
+                            <constraint firstItem="cFX-az-RWs" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="width" multiplier="0.932367" id="p9Q-Jg-FNX"/>
+                            <constraint firstItem="cFX-az-RWs" firstAttribute="height" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="0.0902613" id="q4I-vC-TMX"/>
+                            <constraint firstItem="cJ3-P7-iDQ" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="width" multiplier="0.932367" id="rCM-1N-xJy"/>
+                            <constraint firstItem="sTP-eF-fNy" firstAttribute="height" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="0.0902613" id="v9r-G5-fJ0"/>
+                            <constraint firstItem="veU-J5-GIh" firstAttribute="width" secondItem="TVe-nO-WyI" secondAttribute="height" multiplier="193:421" id="xmT-Tk-hIW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="94C-Hj-IFg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UcN-ov-mCC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1759.4202898550725" y="1560.9375"/>
+        </scene>
         <!--Add Insights-->
         <scene sceneID="Woi-j5-aN0">
             <objects>
@@ -2162,42 +2351,6 @@ you can change the way you look at
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Podcasts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCO-IH-dct">
-                                <rect key="frame" x="41" y="673" width="92" height="22"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inspiring People" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNm-Qf-5Tl">
-                                <rect key="frame" x="41" y="575" width="163.5" height="22"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Books" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBw-pU-Hzy">
-                                <rect key="frame" x="41" y="477" width="62" height="22"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Articles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1H3-XO-3Jq">
-                                <rect key="frame" x="41" y="379" width="76.5" height="22"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEDx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZv-xW-yc5">
-                                <rect key="frame" x="41" y="183" width="51.5" height="22"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movies and Series" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daM-Gz-AwK">
-                                <rect key="frame" x="41" y="281" width="181.5" height="22"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQ3-xZ-aUr">
                                 <rect key="frame" x="0.0" y="107" width="414" height="701"/>
                                 <subviews>
@@ -2208,7 +2361,7 @@ you can change the way you look at
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="701"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhW-b9-vYz">
-                                                        <rect key="frame" x="15" y="147" width="386" height="76"/>
+                                                        <rect key="frame" x="15" y="137" width="386" height="76"/>
                                                         <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -2223,7 +2376,7 @@ you can change the way you look at
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7I-AD-BUJ">
-                                                        <rect key="frame" x="15" y="245" width="386" height="76"/>
+                                                        <rect key="frame" x="15" y="235" width="386" height="76"/>
                                                         <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -2238,7 +2391,7 @@ you can change the way you look at
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzd-QM-ZsD">
-                                                        <rect key="frame" x="15" y="343" width="386" height="76"/>
+                                                        <rect key="frame" x="15" y="333" width="386" height="76"/>
                                                         <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -2253,7 +2406,7 @@ you can change the way you look at
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yP-st-eET">
-                                                        <rect key="frame" x="15" y="49" width="386" height="76"/>
+                                                        <rect key="frame" x="15" y="39" width="386" height="76"/>
                                                         <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -2269,7 +2422,7 @@ you can change the way you look at
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZk-O6-Ha0">
-                                                        <rect key="frame" x="15" y="539" width="386" height="76"/>
+                                                        <rect key="frame" x="15" y="529" width="386" height="76"/>
                                                         <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -2284,7 +2437,7 @@ you can change the way you look at
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaW-2m-fzZ">
-                                                        <rect key="frame" x="15" y="441" width="386" height="76"/>
+                                                        <rect key="frame" x="15" y="431" width="386" height="76"/>
                                                         <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -2318,7 +2471,7 @@ you can change the way you look at
                                                     <constraint firstItem="1yP-st-eET" firstAttribute="leading" secondItem="EEt-1W-uWH" secondAttribute="leading" constant="15" id="mcq-19-PbN"/>
                                                     <constraint firstItem="1yP-st-eET" firstAttribute="trailing" secondItem="yhW-b9-vYz" secondAttribute="trailing" id="raP-b1-QMI"/>
                                                     <constraint firstItem="gaW-2m-fzZ" firstAttribute="leading" secondItem="aZk-O6-Ha0" secondAttribute="leading" id="u5d-6f-ne7"/>
-                                                    <constraint firstItem="1yP-st-eET" firstAttribute="top" secondItem="EEt-1W-uWH" secondAttribute="top" constant="49" id="ymh-oT-D4h"/>
+                                                    <constraint firstItem="1yP-st-eET" firstAttribute="top" secondItem="EEt-1W-uWH" secondAttribute="top" constant="39" id="ymh-oT-D4h"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -2345,41 +2498,29 @@ you can change the way you look at
                             <constraint firstItem="yhW-b9-vYz" firstAttribute="height" secondItem="hoX-51-YQu" secondAttribute="height" multiplier="0.0902613" id="2uD-aZ-VbM"/>
                             <constraint firstItem="ICX-Lj-BMb" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="width" multiplier="0.898551" id="6C8-b3-U3x"/>
                             <constraint firstItem="M7I-AD-BUJ" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="width" multiplier="0.932367" id="8yb-md-I9I"/>
-                            <constraint firstItem="SNm-Qf-5Tl" firstAttribute="leading" secondItem="iCO-IH-dct" secondAttribute="leading" id="9jg-10-xhP"/>
                             <constraint firstItem="IQ3-xZ-aUr" firstAttribute="top" secondItem="DLV-JE-bPB" secondAttribute="bottom" constant="8" id="ACU-Se-2d2"/>
                             <constraint firstItem="1yP-st-eET" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="width" multiplier="0.932367" id="CHl-ng-c0c"/>
                             <constraint firstItem="aZk-O6-Ha0" firstAttribute="height" secondItem="hoX-51-YQu" secondAttribute="height" multiplier="0.0902613" id="CVP-XB-Y4x"/>
                             <constraint firstItem="ICX-Lj-BMb" firstAttribute="trailing" secondItem="hoX-51-YQu" secondAttribute="trailingMargin" id="Dyy-yJ-hk9"/>
                             <constraint firstItem="M7I-AD-BUJ" firstAttribute="height" secondItem="hoX-51-YQu" secondAttribute="height" multiplier="0.0902613" id="ERF-fK-N40"/>
-                            <constraint firstItem="iCO-IH-dct" firstAttribute="top" secondItem="SNm-Qf-5Tl" secondAttribute="bottom" constant="76" id="Hb6-iE-P0B"/>
                             <constraint firstItem="gaW-2m-fzZ" firstAttribute="height" secondItem="hoX-51-YQu" secondAttribute="height" multiplier="0.0902613" id="Igp-9w-qhc"/>
-                            <constraint firstItem="1H3-XO-3Jq" firstAttribute="top" secondItem="daM-Gz-AwK" secondAttribute="bottom" constant="76" id="JOD-w0-TEZ"/>
-                            <constraint firstItem="SNm-Qf-5Tl" firstAttribute="top" secondItem="DBw-pU-Hzy" secondAttribute="bottom" constant="76" id="KoL-xW-8du"/>
                             <constraint firstItem="DLV-JE-bPB" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="width" multiplier="0.898551" id="Luq-XT-Qw5"/>
                             <constraint firstItem="aZk-O6-Ha0" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="height" multiplier="193:421" id="NE9-h2-9nv"/>
                             <constraint firstItem="kzd-QM-ZsD" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="width" multiplier="0.932367" id="OO4-94-ZnO"/>
                             <constraint firstItem="ICX-Lj-BMb" firstAttribute="height" secondItem="hoX-51-YQu" secondAttribute="height" multiplier="0.0451306" id="RGS-mp-GJI"/>
                             <constraint firstItem="gaW-2m-fzZ" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="width" multiplier="0.932367" id="RvP-L1-5g2"/>
                             <constraint firstItem="aZk-O6-Ha0" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="width" multiplier="0.932367" id="SCC-5x-3yp"/>
-                            <constraint firstItem="tZv-xW-yc5" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" constant="41" id="WzZ-4K-j2z"/>
                             <constraint firstItem="kzd-QM-ZsD" firstAttribute="height" secondItem="hoX-51-YQu" secondAttribute="height" multiplier="0.0902613" id="ZyV-s4-eWN"/>
                             <constraint firstItem="ICX-Lj-BMb" firstAttribute="leading" secondItem="DLV-JE-bPB" secondAttribute="leading" id="aFG-62-saU"/>
-                            <constraint firstItem="tZv-xW-yc5" firstAttribute="leading" secondItem="daM-Gz-AwK" secondAttribute="leading" id="bLH-vY-dDi"/>
                             <constraint firstItem="DLV-JE-bPB" firstAttribute="height" secondItem="hoX-51-YQu" secondAttribute="height" multiplier="0.0261283" id="d59-DK-XQh"/>
                             <constraint firstItem="ICX-Lj-BMb" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" constant="22" id="d6w-35-Avx"/>
-                            <constraint firstItem="DBw-pU-Hzy" firstAttribute="top" secondItem="1H3-XO-3Jq" secondAttribute="bottom" constant="76" id="e57-5D-i4f"/>
                             <constraint firstAttribute="bottomMargin" secondItem="IQ3-xZ-aUr" secondAttribute="bottom" id="ffS-uz-9LG"/>
                             <constraint firstItem="gaW-2m-fzZ" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="height" multiplier="193:421" id="g8Q-cW-Gx5"/>
                             <constraint firstItem="DLV-JE-bPB" firstAttribute="top" secondItem="ICX-Lj-BMb" secondAttribute="bottom" constant="7" id="j5e-Ib-vQo"/>
-                            <constraint firstItem="1H3-XO-3Jq" firstAttribute="leading" secondItem="DBw-pU-Hzy" secondAttribute="leading" id="jj3-O3-UtA"/>
                             <constraint firstItem="IQ3-xZ-aUr" firstAttribute="leading" secondItem="vTd-oq-JON" secondAttribute="leading" id="kPk-mH-d0h"/>
                             <constraint firstItem="ICX-Lj-BMb" firstAttribute="trailing" secondItem="DLV-JE-bPB" secondAttribute="trailing" id="mHp-Xm-aD0"/>
                             <constraint firstItem="yhW-b9-vYz" firstAttribute="width" secondItem="hoX-51-YQu" secondAttribute="width" multiplier="0.932367" id="mbd-ts-Ggl"/>
-                            <constraint firstItem="daM-Gz-AwK" firstAttribute="top" secondItem="tZv-xW-yc5" secondAttribute="bottom" constant="76" id="nJD-E9-jib"/>
                             <constraint firstItem="ICX-Lj-BMb" firstAttribute="top" secondItem="vTd-oq-JON" secondAttribute="top" constant="32" id="nNT-8c-3iA"/>
-                            <constraint firstItem="tZv-xW-yc5" firstAttribute="top" secondItem="DLV-JE-bPB" secondAttribute="bottom" constant="84" id="rRO-dk-p1i"/>
-                            <constraint firstItem="daM-Gz-AwK" firstAttribute="leading" secondItem="1H3-XO-3Jq" secondAttribute="leading" id="tj0-xG-p44"/>
-                            <constraint firstItem="DBw-pU-Hzy" firstAttribute="leading" secondItem="SNm-Qf-5Tl" secondAttribute="leading" id="vcs-56-TUi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vTd-oq-JON"/>
                     </view>
