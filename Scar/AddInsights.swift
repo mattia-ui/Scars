@@ -17,6 +17,7 @@ class AddInsights: UIViewController {
     @IBOutlet weak var art: UIButton!
     @IBOutlet weak var artist: UIButton!
     @IBOutlet weak var books: UIButton!
+    @IBOutlet weak var scroll: UIScrollView!
     
     static var j: Int = 0
     var db: OpaquePointer?
@@ -25,6 +26,13 @@ class AddInsights: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
+        
+        if(UIScreen.main.bounds.height > 700){
+            scroll.isScrollEnabled = false
+        } else {
+            scroll.isScrollEnabled = true
+
+        }
 
         AddInsights.j = 0
         for i in 0...Schermata2.insights.count - 1{
