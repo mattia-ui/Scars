@@ -192,7 +192,11 @@ class ViewControllerInitial: UIViewController, UIScrollViewDelegate {
         button.addTarget(self, action: "done:", for: UIControl.Event.touchUpInside)
         scrollView.addSubview(button)
         
-        scrollView.contentSize = CGSize(width: view.frame.width , height: 20 * CGFloat(numberL) + 133)
+        if(UIScreen.main.bounds.height > 700){
+            scrollView.contentSize = CGSize(width: view.frame.width , height: 20 * CGFloat(numberL) + 133)
+        } else {
+            scrollView.contentSize = CGSize(width: view.frame.width , height: 20 * CGFloat(numberL) + 133 * 2)
+        }
     }
 }
 
