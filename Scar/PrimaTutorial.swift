@@ -479,7 +479,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if(indexPath.row == 0){
-            return 120
+            return 140
         }
         if(indexPath.row == 7){
             return 200
