@@ -187,10 +187,10 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         let hour2 = components2.hour ?? 0
         let minute2 = components2.minute ?? 0
                 
-        if(hour2 > 14){
+        if(hour2 >= 14 && hour2 < 20){
             imagineOrario.image = UIImage(named: "Afternoon")
             orarioSetUp.text = "Good Afternoon,"
-        } else if (hour2 > 20 && hour2 < 5){
+        } else if (hour2 >= 20 && hour2 < 5){
             imagineOrario.image = UIImage(named: "Evening")
             orarioSetUp.text = "Good Evening,"
         }else{
