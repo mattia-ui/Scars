@@ -97,13 +97,6 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         return cell
     }
         
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            
-        let cellWidth = 163
-        let cellHeight = 115
-        return CGSize(width: cellWidth, height: cellHeight)
-    }
-    
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if (kind == UICollectionView.elementKindSectionFooter) {
             let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "CartFooterCollectionReusableView", for: indexPath)
