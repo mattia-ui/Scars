@@ -80,7 +80,7 @@ var structIns = [ins(
  
  */
 
-class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate {
+class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     static var insights: [String] = ["","","","","",""]
     static var film: [String] = ["the%20theory%20of%20everything","shallow%20Hal","orange%20is%20new%20black","the%20shape%20of%20water","unBreakable","pose","glow","hairspray","unorthodox"]
@@ -115,6 +115,13 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         return contenuto.count
     }
 
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+        let height = view.frame.size.height
+        let width = view.frame.size.width
+        return CGSize(width: width, height: height * 0.4)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if (kind == UICollectionView.elementKindSectionFooter) {
             let footerView = myCollectionView.dequeueReusableCell(withReuseIdentifier: "footer", for: indexPath) as! FooterCollectionView
@@ -179,6 +186,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         } else {
             cell.image.image = UIImage(named: contenuto[indexPath.row].image)
         }
+        
         let tap1 = MyTap(target: self, action: #selector(self.goLink(sender:)))
         tap1.link = contenuto[indexPath.row].link
         cell.image.isUserInteractionEnabled = true
