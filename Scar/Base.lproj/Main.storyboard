@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9C-PY-zlv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -2075,7 +2075,7 @@ you can change the way you look at
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="div" translatesAutoresizingMaskIntoConstraints="NO" id="RZj-ub-Qfp">
-                                <rect key="frame" x="-13" y="52" width="434" height="198"/>
+                                <rect key="frame" x="-13" y="51" width="434" height="198"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="434" id="M45-wa-wld"/>
                                     <constraint firstAttribute="height" constant="198" id="sX7-Cq-hPS"/>
@@ -2416,7 +2416,7 @@ you can change the way you look at
                             <constraint firstItem="ZS4-u3-Tl0" firstAttribute="leading" secondItem="9Ch-hi-KT7" secondAttribute="leading" constant="20" id="AsW-yc-bW2"/>
                             <constraint firstItem="MOo-wB-kmc" firstAttribute="top" secondItem="mCe-mq-vgd" secondAttribute="top" id="Ht0-60-ABg"/>
                             <constraint firstItem="9Ch-hi-KT7" firstAttribute="trailing" secondItem="u6C-90-pJx" secondAttribute="trailing" id="ID5-bh-Cva"/>
-                            <constraint firstItem="RZj-ub-Qfp" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="-36" id="Lgw-CJ-BHB"/>
+                            <constraint firstItem="RZj-ub-Qfp" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="-37" id="Lgw-CJ-BHB"/>
                             <constraint firstItem="ZS4-u3-Tl0" firstAttribute="top" secondItem="MOo-wB-kmc" secondAttribute="bottom" constant="26" id="Qf8-Hx-BiM"/>
                             <constraint firstItem="u6C-90-pJx" firstAttribute="top" secondItem="ZS4-u3-Tl0" secondAttribute="bottom" constant="2" id="Y3f-RT-jW6"/>
                             <constraint firstItem="mCe-mq-vgd" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="53" id="aDc-kV-piZ"/>
