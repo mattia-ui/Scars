@@ -562,7 +562,7 @@ How do you think others see it?</string>
                             <constraint firstItem="zi4-9B-9mn" firstAttribute="centerX" secondItem="sCS-4W-8wn" secondAttribute="centerX" id="ZEo-mD-WZK"/>
                             <constraint firstItem="XKi-Ot-7SM" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" constant="89" id="adW-BM-viN"/>
                             <constraint firstItem="Gas-gh-7sj" firstAttribute="trailing" secondItem="Jjs-7W-cLo" secondAttribute="trailing" id="bJv-xX-v5h"/>
-                            <constraint firstItem="JrA-Yx-juQ" firstAttribute="trailing" secondItem="zi4-9B-9mn" secondAttribute="trailing" id="dOe-eg-SaH"/>
+                            <constraint firstItem="JrA-Yx-juQ" firstAttribute="trailing" secondItem="zi4-9B-9mn" secondAttribute="trailing" constant="-1" id="dOe-eg-SaH"/>
                             <constraint firstItem="vH6-gT-4jz" firstAttribute="top" secondItem="WDJ-6S-5Y3" secondAttribute="top" id="eGz-6O-JbV"/>
                             <constraint firstItem="gQb-mA-l8B" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" constant="42" id="eIE-R0-Fyo"/>
                             <constraint firstItem="Jjs-7W-cLo" firstAttribute="leading" secondItem="JrA-Yx-juQ" secondAttribute="leading" id="fYI-Lj-Azb"/>
