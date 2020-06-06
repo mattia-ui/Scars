@@ -10,7 +10,7 @@ class SecondaTutorial : UIViewController {
     
     @IBOutlet weak var PrimaLabel: UILabel!
     @IBOutlet weak var SecondaLabel: UILabel!
-    @IBOutlet weak var TerzaLabel: UILabel!
+    @IBOutlet weak var TerzaLabel: UITextView!
     @IBOutlet weak var TiziaViola: UIImageView!
     @IBOutlet weak var tab: UIImageView!
     @IBOutlet weak var TiziaBionda: UIImageView!

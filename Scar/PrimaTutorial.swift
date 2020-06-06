@@ -25,6 +25,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var domande3: UILabel!
     @IBOutlet weak var button3: UIButton!
     
+    
     var db: OpaquePointer?
     var stmt: OpaquePointer?
     static var j = 0
@@ -210,11 +211,24 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewWillAppear(_ animated: Bool) {
            super.viewWillAppear(animated)
            navigationController?.setNavigationBarHidden(true, animated: animated)
+        if(view.frame.width == 375){
+            for constraint in button3.constraints {
+                print(constraint.identifier ?? "cane")
+                   if constraint.identifier == "center"{
+                    print("EEEEEEE")
+                       constraint.constant = 800
+                    
+                   }
+            }
+            button3.updateConstraints()
+        }
        }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
+        
+        
                 
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
 
