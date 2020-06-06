@@ -376,6 +376,8 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
                 return UITableViewCell()
             }
             cell.Hi.text = "Hi, \(String(describing: nome1.text).dropFirst(10).dropLast(2))!"
+            cell.selectionStyle = .none
+
             return cell
         }else if indexPath.row == 1{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else
@@ -390,6 +392,8 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
                 }
             }
             cell.button.tag = 0
+            cell.selectionStyle = .none
+
             return cell
         }else if indexPath.row == 2{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else
@@ -404,6 +408,8 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
                 }
             }
             cell.button.tag = 1
+            cell.selectionStyle = .none
+
             return cell
         }else if indexPath.row == 3{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else
@@ -418,6 +424,8 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
                 }
             }
             cell.button.tag = 2
+            cell.selectionStyle = .none
+
             return cell
         }else if indexPath.row == 4{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else
@@ -432,6 +440,8 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
                 }
             }
             cell.button.tag = 3
+            cell.selectionStyle = .none
+
             return cell
         }else if indexPath.row == 5{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else
@@ -446,6 +456,8 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
                 }
             }
             cell.button.tag = 4
+            cell.selectionStyle = .none
+
             return cell
         }else if indexPath.row == 6{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2") as? Cella2 else
@@ -460,6 +472,8 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
                 }
             }
             cell.button.tag = 5
+            cell.selectionStyle = .none
+
             return cell
         }else{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell3") as? Cella3 else
@@ -473,6 +487,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             }
             
             cell.done.frame.origin.x = (UIScreen.main.bounds.width / 2) - 91
+            cell.selectionStyle = .none
             return cell
         }
     }
