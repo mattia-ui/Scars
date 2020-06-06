@@ -361,7 +361,7 @@ Masterpiece!</string>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-gT-4jz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-gT-4jz">
                                 <rect key="frame" x="848" y="536" width="303" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
@@ -392,7 +392,7 @@ Masterpiece!</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PtS-SF-yl7">
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PtS-SF-yl7">
                                 <rect key="frame" x="414" y="447" width="414" height="452"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -495,7 +495,7 @@ Masterpiece!</string>
                                     <outlet property="delegate" destination="w7d-Tn-c1A" id="33q-Uo-jSE"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Last step" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gQb-mA-l8B">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last step" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gQb-mA-l8B">
                                 <rect key="frame" x="850" y="489" width="205" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="205" id="RAB-jc-mIn"/>
@@ -504,13 +504,13 @@ Masterpiece!</string>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WDJ-6S-5Y3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WDJ-6S-5Y3">
                                 <rect key="frame" x="850" y="536" width="314" height="19"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="19"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
                                 <rect key="frame" x="850" y="601" width="346" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="346" id="WAl-jz-akH"/>
@@ -529,8 +529,8 @@ How do you think others see it?</string>
                                     <segue destination="uc2-fZ-Jab" kind="show" id="S6c-zV-Y2y"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="My name is..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zi4-9B-9mn">
-                                <rect key="frame" x="20" y="643" width="381" height="37"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="My name is..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zi4-9B-9mn">
+                                <rect key="frame" x="20" y="643" width="382" height="37"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -542,7 +542,7 @@ How do you think others see it?</string>
                             <constraint firstItem="Gas-gh-7sj" firstAttribute="baseline" secondItem="gQb-mA-l8B" secondAttribute="baseline" id="1Sk-Ta-WQi"/>
                             <constraint firstItem="JrA-Yx-juQ" firstAttribute="top" secondItem="Jjs-7W-cLo" secondAttribute="bottom" constant="46" id="2fF-Lg-PdJ"/>
                             <constraint firstItem="JrA-Yx-juQ" firstAttribute="centerX" secondItem="sCS-4W-8wn" secondAttribute="centerX" id="2uE-dG-tb3"/>
-                            <constraint firstItem="PtS-SF-yl7" firstAttribute="leading" secondItem="Gas-gh-7sj" secondAttribute="trailing" constant="8" id="35g-O4-Ks2"/>
+                            <constraint firstItem="PtS-SF-yl7" firstAttribute="leading" secondItem="qOs-Jh-MnI" secondAttribute="trailing" id="35g-O4-Ks2"/>
                             <constraint firstItem="PtS-SF-yl7" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" id="4eC-lf-oEE"/>
                             <constraint firstItem="XKi-Ot-7SM" firstAttribute="leading" secondItem="Jjs-7W-cLo" secondAttribute="trailing" constant="30" id="5pX-QP-Tzt"/>
                             <constraint firstItem="WDJ-6S-5Y3" firstAttribute="leading" secondItem="4a5-lJ-QbO" secondAttribute="leading" id="8CV-dS-dUr"/>
@@ -558,7 +558,6 @@ How do you think others see it?</string>
                             <constraint firstItem="zPR-fI-qoJ" firstAttribute="leading" secondItem="Mv5-VB-TpB" secondAttribute="leading" constant="929" id="Osc-TX-68e"/>
                             <constraint firstItem="sCS-4W-8wn" firstAttribute="top" secondItem="JrA-Yx-juQ" secondAttribute="bottom" constant="53" id="Te5-bj-gVo"/>
                             <constraint firstItem="qOs-Jh-MnI" firstAttribute="bottom" secondItem="ZpE-XT-qrG" secondAttribute="bottom" constant="51" id="Thd-zo-tTp"/>
-                            <constraint firstItem="PtS-SF-yl7" firstAttribute="leading" secondItem="JrA-Yx-juQ" secondAttribute="trailing" constant="13" id="XtJ-gb-u1a"/>
                             <constraint firstItem="ZpE-XT-qrG" firstAttribute="top" secondItem="zi4-9B-9mn" secondAttribute="bottom" constant="76" id="YDi-jn-Dxc"/>
                             <constraint firstItem="zi4-9B-9mn" firstAttribute="centerX" secondItem="sCS-4W-8wn" secondAttribute="centerX" id="ZEo-mD-WZK"/>
                             <constraint firstItem="XKi-Ot-7SM" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" constant="89" id="adW-BM-viN"/>
