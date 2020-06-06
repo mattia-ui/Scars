@@ -303,8 +303,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
         let secondVC = storyboard.instantiateViewController(withIdentifier: "postCollage")  as! PostCollage
         self.navigationController?.pushViewController(secondVC, animated: true)
         
-        let PS = PostCollage()
-        PS.miniSym.image = self.img
+
 
     }
     
