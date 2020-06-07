@@ -162,7 +162,7 @@ extension UIImage {
             // At it's delay in cs
             let delaySeconds = UIImage.delayForImageAtIndex(Int(i),
                 source: source)
-            delays.append(Int(delaySeconds * 1000.0)) // Seconds to ms
+            delays.append(Int(delaySeconds * 500.0)) // Seconds to ms
         }
 
         // Calculate full duration

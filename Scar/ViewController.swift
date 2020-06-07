@@ -55,6 +55,12 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         pictureScars.image = ViewController.imageScars
         pictureScars.layer.borderWidth = 1
         pictureScars.layer.borderColor = CGColor(srgbRed: 0.112, green: 0.112, blue: 0.112, alpha: 1)
+        
+        resetDis.frame.origin.x = pictureScars.frame.origin.x  + (pictureScars.frame.size.width - resetDis.frame.width - 10)
+        
+        elaboraDisegno.frame.origin.y = pictureScars.frame.origin.y + pictureScars.frame.size.height + 22
+        elaboraDisegno.frame.origin.x = pictureScars.frame.origin.x + (pictureScars.frame.size.width/2 - elaboraDisegno.frame.size.width/2)
+        
     }
     
     @IBAction func changeBrush(_ sender: UISlider) {
