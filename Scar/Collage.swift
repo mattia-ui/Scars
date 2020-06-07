@@ -730,7 +730,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
         }
 //            iphone XS
         else{
-           let rect = CGRect(x: 0, y: 500, width: 950, height: 1500)
+           let rect = CGRect(x: 0, y: 560, width: 1150, height: 1120)
            return cropImage(image: image, toRect: rect)
         }
        
