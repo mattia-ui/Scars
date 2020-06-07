@@ -100,11 +100,9 @@
                             <constraint firstItem="iYI-gG-qQg" firstAttribute="trailing" secondItem="Leg-nv-08a" secondAttribute="trailing" id="4uf-Jo-sWw"/>
                             <constraint firstItem="dJF-ko-yfI" firstAttribute="leading" secondItem="iYI-gG-qQg" secondAttribute="leading" id="5RO-90-ZwQ"/>
                             <constraint firstItem="Fim-d8-yE7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-93" id="6YA-6L-nhi"/>
-                            <constraint firstItem="7Ov-gi-Skw" firstAttribute="height" secondItem="Y7q-Le-8bb" secondAttribute="height" multiplier="0.0613839" id="ApN-t2-OEs"/>
                             <constraint firstItem="Y7q-Le-8bb" firstAttribute="centerX" secondItem="dJF-ko-yfI" secondAttribute="centerX" id="G5t-Gx-tM2"/>
                             <constraint firstItem="dJF-ko-yfI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.903382" id="IBa-Zl-uP0"/>
                             <constraint firstItem="ns4-Sj-bJV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="KPB-8d-IYk"/>
-                            <constraint firstItem="Leg-nv-08a" firstAttribute="width" secondItem="Y7q-Le-8bb" secondAttribute="width" multiplier="0.120773" id="LON-sN-OWi"/>
                             <constraint firstItem="iYI-gG-qQg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="98" id="MrV-aa-DVC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ns4-Sj-bJV" secondAttribute="trailing" constant="26" id="UaR-qM-aFf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fim-d8-yE7" secondAttribute="trailing" constant="230" id="VKP-sb-xgd"/>
@@ -118,10 +116,8 @@
                             <constraint firstItem="ns4-Sj-bJV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.884058" id="fAS-ga-tYE"/>
                             <constraint firstItem="dJF-ko-yfI" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0424107" id="hRC-GX-VsM"/>
                             <constraint firstItem="Fim-d8-yE7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0323661" id="iZa-kg-ACI"/>
-                            <constraint firstItem="Leg-nv-08a" firstAttribute="height" secondItem="Y7q-Le-8bb" secondAttribute="height" multiplier="0.0558036" id="kAW-TF-zmy"/>
                             <constraint firstAttribute="bottom" secondItem="Y7q-Le-8bb" secondAttribute="bottom" id="mn8-hV-rK4"/>
                             <constraint firstItem="dJF-ko-yfI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="o7N-q8-Hta"/>
-                            <constraint firstItem="7Ov-gi-Skw" firstAttribute="width" secondItem="Y7q-Le-8bb" secondAttribute="width" multiplier="0.439614" id="pjf-Js-PgV"/>
                             <constraint firstItem="iYI-gG-qQg" firstAttribute="top" secondItem="dJF-ko-yfI" secondAttribute="bottom" constant="8" id="sti-zW-bYJ"/>
                             <constraint firstItem="Y7q-Le-8bb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vXE-fp-WVh"/>
                             <constraint firstItem="Y7q-Le-8bb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xSF-wv-6kP"/>
@@ -150,7 +146,7 @@
             <objects>
                 <viewController storyboardIdentifier="postCollage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GG3-f1-cQ8" customClass="PostCollage" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XOD-ds-Jxc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7X-yK-cdq">
@@ -3213,7 +3209,7 @@ The two shapes on the outside recount </string>
             <objects>
                 <viewController id="LDR-hH-uX6" customClass="SharePage" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="haL-L1-cYc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1691"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1745"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ir-as-X4c">
@@ -3453,7 +3449,6 @@ The two shapes on the outside recount </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OUv-pG-RjL"/>
         <segue reference="O1h-M3-5IE"/>
         <segue reference="wd9-1W-xO2"/>
         <segue reference="rkX-St-HZF"/>
