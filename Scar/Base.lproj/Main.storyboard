@@ -2088,7 +2088,7 @@ you can change the way you look at
                                 <rect key="frame" x="0.0" y="65" width="414" height="176"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg9-aS-nb6">
-                                <rect key="frame" x="20" y="154" width="25" height="37"/>
+                                <rect key="frame" x="15" y="154" width="25" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="BBY-dP-QTs"/>
                                     <constraint firstAttribute="width" constant="25" id="qre-qh-atK"/>
@@ -2104,7 +2104,7 @@ you can change the way you look at
                         <constraints>
                             <constraint firstItem="Yg9-aS-nb6" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" constant="66" id="1Fl-g5-aIn"/>
                             <constraint firstItem="Zqp-a9-CTC" firstAttribute="centerX" secondItem="TZg-6g-tU7" secondAttribute="centerX" id="Gzi-hd-0Jg"/>
-                            <constraint firstItem="Yg9-aS-nb6" firstAttribute="leading" secondItem="bTK-SO-FHz" secondAttribute="leading" constant="20" id="SkS-tB-gOR"/>
+                            <constraint firstItem="Yg9-aS-nb6" firstAttribute="leading" secondItem="bTK-SO-FHz" secondAttribute="leading" constant="15" id="SkS-tB-gOR"/>
                             <constraint firstItem="Zqp-a9-CTC" firstAttribute="top" secondItem="IRL-vy-kpc" secondAttribute="bottom" constant="-17" id="VzF-vA-SfR"/>
                             <constraint firstItem="IRL-vy-kpc" firstAttribute="trailing" secondItem="bTK-SO-FHz" secondAttribute="trailing" id="X4I-Ae-Ps5"/>
                             <constraint firstItem="IRL-vy-kpc" firstAttribute="top" secondItem="bTK-SO-FHz" secondAttribute="top" constant="-23" id="iUO-2u-6IG"/>
