@@ -81,29 +81,56 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     func drawLine(from fromPoint: CGPoint, to toPoint: CGPoint) {
         points.append(fromPoint)
         
-        if(toPoint.y < 684 && toPoint.y > 215 && toPoint.x > 34 && toPoint.x < 380){
-            UIGraphicsBeginImageContext(view.frame.size)
-            guard let context = UIGraphicsGetCurrentContext() else {
-                return
+        if(view.frame.width == 414){
+            if(toPoint.y < 684 && toPoint.y > 215 && toPoint.x > 34 && toPoint.x < 380){
+                UIGraphicsBeginImageContext(view.frame.size)
+                guard let context = UIGraphicsGetCurrentContext() else {
+                    return
+                }
+                tempDrawScars.image?.draw(in: view.bounds)
+            
+                context.move(to: fromPoint)
+                context.addLine(to: toPoint)
+            
+                context.setLineCap(.round)
+                context.setBlendMode(.normal)
+                context.setLineWidth(brushWidth)
+                context.setStrokeColor(color.cgColor)
+            
+                context.strokePath()
+            
+                tempDrawScars.image = UIGraphicsGetImageFromCurrentImageContext()
+                tempDrawScars.alpha = opacity
+            
+                UIGraphicsEndImageContext()
+                elaboraDisegno.isEnabled = true
             }
-            tempDrawScars.image?.draw(in: view.bounds)
-        
-            context.move(to: fromPoint)
-            context.addLine(to: toPoint)
-        
-            context.setLineCap(.round)
-            context.setBlendMode(.normal)
-            context.setLineWidth(brushWidth)
-            context.setStrokeColor(color.cgColor)
-        
-            context.strokePath()
-        
-            tempDrawScars.image = UIGraphicsGetImageFromCurrentImageContext()
-            tempDrawScars.alpha = opacity
-        
-            UIGraphicsEndImageContext()
-            elaboraDisegno.isEnabled = true
+        }else{
+            if(toPoint.y < 634 && toPoint.y > 185 && toPoint.x > 34 && toPoint.x < 340){
+                UIGraphicsBeginImageContext(view.frame.size)
+                guard let context = UIGraphicsGetCurrentContext() else {
+                    return
+                }
+                tempDrawScars.image?.draw(in: view.bounds)
+            
+                context.move(to: fromPoint)
+                context.addLine(to: toPoint)
+            
+                context.setLineCap(.round)
+                context.setBlendMode(.normal)
+                context.setLineWidth(brushWidth)
+                context.setStrokeColor(color.cgColor)
+            
+                context.strokePath()
+            
+                tempDrawScars.image = UIGraphicsGetImageFromCurrentImageContext()
+                tempDrawScars.alpha = opacity
+            
+                UIGraphicsEndImageContext()
+                elaboraDisegno.isEnabled = true
+            }
         }
+        
     }
       
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
