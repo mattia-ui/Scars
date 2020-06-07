@@ -10,8 +10,9 @@ import UIKit
 import CloudKit
 import SQLite3
 
-class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet weak var navInsta: UIImageView!
     var blur = 0
     @IBOutlet weak var viewPerBlur: UIView!
     @IBOutlet weak var viewSulBlur: UIView!
@@ -51,8 +52,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         viewPerBlur.addSubview(blurEffectView)
         self.tabBarController?.tabBar.isHidden = false
         blur = 0
-
-          }
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return SecretCollection.allImages?.count ?? 0
@@ -64,6 +64,12 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         cell.layer.borderWidth = 0.3
         cell.myImageView.image = SecretCollection.allImages?[indexPath.row]
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+        let width = view.frame.size.width / 3.2
+        return CGSize(width: width, height: width)
     }
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
@@ -84,6 +90,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         miniSym.layer.borderColor = (UIColor.init(named: "#2E2933")?.cgColor)
         miniSym.layer.cornerRadius = miniSym.frame.size.width/2
         miniSym.clipsToBounds = true
+        miniSym.frame.origin.x = navInsta.frame.width - 100
         if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
             miniSym.image = UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent("collage").path)?.imageWithInsets(insets: UIEdgeInsets(top: 65, left: 65, bottom: 65, right: 65))
             viewSulBlur.isHidden = true
