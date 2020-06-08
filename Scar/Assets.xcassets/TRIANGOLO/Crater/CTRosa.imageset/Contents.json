@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "CTRosa.pdf",
+      "filename" : "CTRosa.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "CTRosa@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "CTRosa@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

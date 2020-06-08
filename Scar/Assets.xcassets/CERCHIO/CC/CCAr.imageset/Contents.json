@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "CTRoss.png",
+      "filename" : "CCAr.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "CTRoss@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "CTRoss@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
