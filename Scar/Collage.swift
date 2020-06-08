@@ -119,6 +119,8 @@ class Collage: UIViewController, UITextFieldDelegate  {
     @IBOutlet weak var mediumLink: UILabel!
     @IBOutlet weak var top: UIImageView!
     @IBOutlet weak var screen: UIImageView!
+    @IBOutlet weak var imgSP: UIImageView!
+    @IBOutlet weak var imgSG: UIImageView!
     var imgPrincipale:UIImage?
     var nomeImgPrincipale:String!
     var imgSecondaria:UIImage?
@@ -600,21 +602,26 @@ class Collage: UIViewController, UITextFieldDelegate  {
             }
         }
     
-        let randomSize = Int.random(in: 5..<16)
+        let randomSize = Int.random(in: 1..<4)
         let randomPos = Int.random(in: 0..<4)
         let posizioneGx = [30,0,160,0]
         let posizioneGy = [0,30,0,150]
         let posizionePx = [180,230,50,235]
         let posizionePy = [220,175,220,55]
         
-        
-        if(ChooseShape2.shape2 != "rect"){
-            mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: imgSecondaria ?? UIImage(), x: CGFloat(posizioneGx[randomPos]), y: CGFloat(posizioneGy[randomPos]), width: CGFloat(65 + randomSize), height: CGFloat(65 + randomSize))
-            mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: imgSecondaria ?? UIImage(), x: CGFloat(posizionePx[randomPos]), y: CGFloat(posizionePy[randomPos]), width: CGFloat(45 - randomSize), height: CGFloat(45 - randomSize))
-        } else {
-            mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: imgSecondaria ?? UIImage(), x: CGFloat(posizioneGx[randomPos]), y: CGFloat(posizioneGy[randomPos]), width: CGFloat(100 + randomSize), height: CGFloat(65 + randomSize))
-            mergeTwoImages(principale: imgPrincipale ?? UIImage(), aggiunta: imgSecondaria ?? UIImage(), x: CGFloat(posizionePx[randomPos] - 20), y: CGFloat(posizionePy[randomPos]), width: CGFloat(60 - randomSize), height: CGFloat(45 - randomSize))
-        }
+        var tG = CGAffineTransform.identity
+        tG = tG.scaledBy(x: CGFloat(randomSize), y: CGFloat(randomSize))
+        tG = tG.translatedBy(x: CGFloat(posizioneGx[randomPos]) + top.frame.origin.x, y: CGFloat(posizioneGy[randomPos]) + top.frame.origin.y)
+        imgSG.transform = tG
+        imgSG.image = imgSecondaria
+
+        var tP = CGAffineTransform.identity
+        tP = tP.scaledBy(x: CGFloat(randomSize), y: CGFloat(randomSize))
+        tP = tP.translatedBy(x: CGFloat(posizionePx[randomPos]) + top.frame.origin.x, y: CGFloat(posizionePy[randomPos]) + top.frame.origin.y)
+        imgSP.transform = tP
+        imgSP.image = imgSecondaria
+
+        top.image = imgPrincipale
         
         if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
             scarsImage.image = UIImage(named: "2-.jpg")

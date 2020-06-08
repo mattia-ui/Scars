@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -40,10 +40,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ns4-Sj-bJV">
-                                <rect key="frame" x="22" y="220" width="366" height="542"/>
+                                <rect key="frame" x="22" y="219" width="366" height="524"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y7q-Le-8bb">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="927"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7Ov-gi-Skw">
                                 <rect key="frame" x="116" y="722" width="182" height="55"/>
@@ -66,7 +66,7 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="1" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="Fim-d8-yE7">
-                                <rect key="frame" x="-75" y="435" width="261" height="31"/>
+                                <rect key="frame" x="-75" y="435" width="261" height="30"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="WOE-BQ-aor"/>
@@ -85,7 +85,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="iYI-gG-qQg">
-                                <rect key="frame" x="20" y="186" width="363" height="23"/>
+                                <rect key="frame" x="20" y="186" width="363" height="22"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -389,7 +389,7 @@ Masterpiece!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Onboarding1" translatesAutoresizingMaskIntoConstraints="NO" id="abm-bl-K38">
-                                <rect key="frame" x="0.0" y="-5" width="1244" height="447"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1244" height="447"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is Skinsugi!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gas-gh-7sj">
                                 <rect key="frame" x="22" y="471" width="384" height="56"/>
@@ -404,7 +404,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-gT-4jz">
-                                <rect key="frame" x="848" y="531" width="303" height="23"/>
+                                <rect key="frame" x="848" y="536" width="303" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -435,7 +435,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PtS-SF-yl7">
-                                <rect key="frame" x="414" y="442" width="414" height="457"/>
+                                <rect key="frame" x="414" y="447" width="414" height="452"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell1" rowHeight="120" id="Q0F-YJ-7d9" customClass="Cella1" customModule="Skinsugi" customModuleProvider="target">
@@ -446,13 +446,13 @@ Masterpiece!</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, Sigafreda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ywt-KN-qf8">
-                                                    <rect key="frame" x="22" y="34" width="219" height="44.5"/>
+                                                    <rect key="frame" x="22" y="34" width="228.5" height="38"/>
                                                     <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                                     <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SzM-f1-Yon">
-                                                    <rect key="frame" x="22" y="92.5" width="337.5" height="26"/>
+                                                    <rect key="frame" x="22" y="86" width="346" height="22"/>
                                                     <string key="text">Tell us what inspires you the most.
 </string>
                                                     <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
@@ -546,7 +546,7 @@ Masterpiece!</string>
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last step" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gQb-mA-l8B">
-                                <rect key="frame" x="850" y="484" width="205" height="35.5"/>
+                                <rect key="frame" x="850" y="489" width="205" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="205" id="RAB-jc-mIn"/>
                                 </constraints>
@@ -555,13 +555,13 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WDJ-6S-5Y3">
-                                <rect key="frame" x="850" y="531" width="304" height="22.5"/>
+                                <rect key="frame" x="850" y="536" width="314" height="19"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="19"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
-                                <rect key="frame" x="850" y="596" width="346" height="77"/>
+                                <rect key="frame" x="850" y="601" width="346" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="346" id="WAl-jz-akH"/>
                                 </constraints>
@@ -573,7 +573,7 @@ How do you think others see it?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-fI-qoJ">
-                                <rect key="frame" x="929" y="761" width="194" height="55"/>
+                                <rect key="frame" x="929" y="755" width="194" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" identifier="larg" id="R1p-r1-OP1"/>
                                     <constraint firstAttribute="height" constant="55" identifier="altezza" id="g45-2c-k21"/>
@@ -1033,7 +1033,7 @@ How do you think others see it?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="m8e-tD-btm">
-                                <rect key="frame" x="129" y="284.5" width="261" height="71"/>
+                                <rect key="frame" x="134.5" y="320.5" width="278" height="75.5"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Cool colors" backgroundImage="QuestionSpento">
@@ -1048,7 +1048,7 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Hot-ON-zvu">
-                                <rect key="frame" x="129" y="403.5" width="261" height="71"/>
+                                <rect key="frame" x="134.5" y="445" width="278" height="75.5"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Warm colors" backgroundImage="QuestionSpento">
@@ -1063,7 +1063,7 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="53f-Wh-VQP">
-                                <rect key="frame" x="129" y="521" width="261" height="71"/>
+                                <rect key="frame" x="134.5" y="567" width="278" height="75.5"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Neutrals" backgroundImage="QuestionSpento">
@@ -1078,28 +1078,28 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secondaPalette" translatesAutoresizingMaskIntoConstraints="NO" id="XXN-5B-Ifl">
-                                <rect key="frame" x="18" y="395.5" width="87" height="87"/>
+                                <rect key="frame" x="18" y="436.5" width="92.5" height="92.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="primaPalette" translatesAutoresizingMaskIntoConstraints="NO" id="TDh-Qc-oA1">
-                                <rect key="frame" x="18" y="276.5" width="87" height="87"/>
+                                <rect key="frame" x="18" y="312" width="92.5" height="92.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="terzaPalette" translatesAutoresizingMaskIntoConstraints="NO" id="cJg-DJ-qS8">
-                                <rect key="frame" x="18" y="514.5" width="87" height="87"/>
+                                <rect key="frame" x="18" y="561" width="92.5" height="92.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 3/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="daP-9o-FJm">
-                                <rect key="frame" x="22" y="101" width="235" height="51"/>
+                                <rect key="frame" x="22" y="127.5" width="250" height="54.5"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="uW9-br-Aoz">
-                                <rect key="frame" x="22" y="159" width="374" height="85"/>
+                                <rect key="frame" x="22" y="189" width="398" height="90.5"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2t-hU-7Lg">
-                                <rect key="frame" x="116" y="711" width="184" height="55"/>
+                                <rect key="frame" x="116" y="761.5" width="196" height="58.5"/>
                                 <state key="normal" title="Button" image="nextazzurro"/>
                                 <state key="disabled" image="nextAzzurroSpento"/>
                                 <connections>
@@ -1179,25 +1179,25 @@ How do you think others see it?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jE3-g0-hTy">
-                                <rect key="frame" x="0.0" y="88" width="440.5" height="896.5"/>
+                                <rect key="frame" x="0.0" y="88" width="0.0" height="0.0"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Textile" translatesAutoresizingMaskIntoConstraints="NO" id="eP9-YF-Agc">
-                                        <rect key="frame" x="22" y="458" width="80" height="81"/>
+                                        <rect key="frame" x="22" y="-141.5" width="0.0" height="0.0"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crater" translatesAutoresizingMaskIntoConstraints="NO" id="3Uf-Yt-Gwb">
-                                        <rect key="frame" x="22" y="367" width="80" height="79.5"/>
+                                        <rect key="frame" x="22" y="-153" width="0.0" height="0.0"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sea" translatesAutoresizingMaskIntoConstraints="NO" id="YBv-BC-Bzc">
-                                        <rect key="frame" x="22" y="273.5" width="80" height="81"/>
+                                        <rect key="frame" x="22" y="-165.5" width="0.0" height="0.0"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="wood" translatesAutoresizingMaskIntoConstraints="NO" id="SNQ-KO-nnh">
-                                        <rect key="frame" x="22" y="643.5" width="80" height="79.5"/>
+                                        <rect key="frame" x="22" y="-117" width="0.0" height="0.0"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marble" translatesAutoresizingMaskIntoConstraints="NO" id="57U-4M-5nY">
-                                        <rect key="frame" x="22" y="551.5" width="80" height="80"/>
+                                        <rect key="frame" x="22" y="-129" width="0.0" height="0.0"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nTf-2F-YIf">
-                                        <rect key="frame" x="135" y="645.5" width="278" height="75.5"/>
+                                        <rect key="frame" x="55" y="-117" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Wood" backgroundImage="QuestionSpento">
@@ -1210,7 +1210,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kqu-2o-qXn">
-                                        <rect key="frame" x="135" y="274" width="278" height="75.5"/>
+                                        <rect key="frame" x="55" y="-165" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Sea" backgroundImage="QuestionSpento">
@@ -1223,7 +1223,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="CrL-CA-bOp">
-                                        <rect key="frame" x="135" y="367" width="278" height="75.5"/>
+                                        <rect key="frame" x="55" y="-153" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Crater" backgroundImage="QuestionSpento">
@@ -1236,7 +1236,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="YRS-3h-hAc">
-                                        <rect key="frame" x="135" y="461" width="278" height="75.5"/>
+                                        <rect key="frame" x="55" y="-141.5" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Textile fiber" backgroundImage="QuestionSpento">
@@ -1249,7 +1249,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bxN-yg-fPW">
-                                        <rect key="frame" x="135" y="553.5" width="278" height="75.5"/>
+                                        <rect key="frame" x="55" y="-129" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Marble" backgroundImage="QuestionSpento">
@@ -1262,7 +1262,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4O-Qz-X11">
-                                        <rect key="frame" x="123.5" y="761" width="193.5" height="58.5"/>
+                                        <rect key="frame" x="0.0" y="-77" width="0.0" height="0.0"/>
                                         <state key="normal" title="Button" image="submitAzzurro"/>
                                         <state key="disabled" image="submitAzzurroSpento"/>
                                         <connections>
@@ -1270,13 +1270,13 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 4/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Lej-tX-y6u">
-                                        <rect key="frame" x="22" y="118" width="252.5" height="51"/>
+                                        <rect key="frame" x="22" y="-179.5" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="mIk-Xe-oy0">
-                                        <rect key="frame" x="22" y="174" width="406.5" height="90.5"/>
+                                        <rect key="frame" x="22" y="-174.5" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -1352,16 +1352,15 @@ How do you think others see it?</string>
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaT-OJ-lJp">
-                                <rect key="frame" x="0.0" y="0.0" width="440.5" height="896"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submit answers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="iqq-Hd-Wwa">
-                                        <rect key="frame" x="87" y="324" width="251.5" height="34"/>
+                                        <rect key="frame" x="76" y="324" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="32"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="kHH-QA-nou">
-                                        <rect key="frame" x="76" y="372" width="273.5" height="47"/>
+                                        <rect key="frame" x="76" y="338" width="0.0" height="0.0"/>
                                         <string key="text">Are you sure about 
 all the answers you gave?</string>
                                         <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
@@ -1369,20 +1368,20 @@ all the answers you gave?</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forma1 - Forma2 - Palette - Texture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="RDd-Fb-aqK">
-                                        <rect key="frame" x="0.0" y="450" width="440.5" height="21"/>
+                                        <rect key="frame" x="0.0" y="369" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="20"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOD-j0-7tp">
-                                        <rect key="frame" x="74" y="507" width="124.5" height="58.5"/>
+                                        <rect key="frame" x="74" y="405" width="0.0" height="0.0"/>
                                         <state key="normal" title=" " image="yesAzzurro"/>
                                         <connections>
                                             <segue destination="hvR-kH-wNA" kind="show" id="2x3-ds-s6Q"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tz3-ol-La9">
-                                        <rect key="frame" x="227.5" y="507" width="133" height="58.5"/>
+                                        <rect key="frame" x="103" y="405" width="0.0" height="0.0"/>
                                         <state key="normal" title=" " image="noAzzurro"/>
                                         <connections>
                                             <segue destination="GG3-f1-cQ8" kind="show" id="Cab-pX-8BL"/>
@@ -1472,36 +1471,36 @@ all the answers you gave?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the way!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="AiM-zE-6gR">
-                                <rect key="frame" x="22" y="82" width="302" height="38"/>
+                                <rect key="frame" x="22" y="102.5" width="321.5" height="40"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsH-Wf-de9">
-                                <rect key="frame" x="74.5" y="652" width="98" height="94"/>
+                                <rect key="frame" x="78" y="699" width="104.5" height="100"/>
                                 <state key="normal" image="MakePhoto"/>
                                 <connections>
                                     <action selector="addImage:" destination="hvR-kH-wNA" eventType="touchUpInside" id="05I-u2-MLy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3D-GU-hSB">
-                                <rect key="frame" x="242.5" y="652" width="98" height="94"/>
+                                <rect key="frame" x="257" y="699" width="104" height="100"/>
                                 <state key="normal" image="Skip"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="TlC-WV-Ndb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(If you remember the shape already)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="cpF-cN-5d5">
-                                <rect key="frame" x="74.5" y="770" width="266" height="16"/>
+                                <rect key="frame" x="78" y="823" width="283" height="17"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="16"/>
                                 <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weekly1" translatesAutoresizingMaskIntoConstraints="NO" id="ZhO-SO-6sM">
-                                <rect key="frame" x="69" y="301" width="276" height="318"/>
+                                <rect key="frame" x="69" y="323.5" width="296" height="342.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="kTB-8f-OJj">
-                                <rect key="frame" x="22" y="232" width="375" height="61"/>
+                                <rect key="frame" x="22" y="254.5" width="399" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="2UC-Oq-LIj"/>
                                 </constraints>
@@ -1510,7 +1509,7 @@ all the answers you gave?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="yE5-lk-76G">
-                                <rect key="frame" x="22" y="128" width="374" height="96"/>
+                                <rect key="frame" x="22" y="150.5" width="398" height="96"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="cSS-h1-VwA"/>
                                 </constraints>
@@ -2784,26 +2783,26 @@ you can change the way you look at
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TCAzz" translatesAutoresizingMaskIntoConstraints="NO" id="Q2H-9g-FGd">
-                                                        <rect key="frame" x="7" y="202" width="400" height="400"/>
+                                                        <rect key="frame" x="72" y="202" width="270" height="270"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jgS-5L-Xg9">
-                                                        <rect key="frame" x="65" y="202" width="279" height="400"/>
+                                                        <rect key="frame" x="145" y="202" width="125" height="270"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
                                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cc" translatesAutoresizingMaskIntoConstraints="NO" id="zQL-vM-xeu">
-                                                        <rect key="frame" x="7" y="201" width="400" height="400"/>
+                                                        <rect key="frame" x="72" y="202" width="270" height="270"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DtU-42-1mO">
-                                                        <rect key="frame" x="180" y="611" width="54" height="54"/>
+                                                        <rect key="frame" x="180" y="501" width="54" height="54"/>
                                                         <state key="normal" image="download"/>
                                                         <connections>
                                                             <action selector="saveScreen:" destination="3Kp-ef-EWY" eventType="touchUpInside" id="rc6-IS-Gz8"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Igl-LE-bMi">
-                                                        <rect key="frame" x="22" y="702" width="370" height="258"/>
+                                                        <rect key="frame" x="22" y="617" width="370" height="258"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="The pattern in the large circle describes ">
                                                                 <attributes>
@@ -2894,12 +2893,12 @@ The two shapes on the outside recount </string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ntc-NU-ZMR" userLabel="Discover2">
-                                                        <rect key="frame" x="22" y="979" width="248" height="24"/>
+                                                        <rect key="frame" x="22" y="931" width="248" height="24"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Discover more about Kinsugi">
                                                                 <attributes>
                                                                     <color key="NSColor" red="0.6705882352941176" green="0.86274509803921573" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                    <font key="NSFont" size="20" name="CeraPro-Regular"/>
+                                                                    <font key="NSFont" metaFont="system" size="20"/>
                                                                     <integer key="NSUnderline" value="1"/>
                                                                 </attributes>
                                                             </fragment>
@@ -2907,7 +2906,7 @@ The two shapes on the outside recount </string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTA-bJ-RLx">
-                                                        <rect key="frame" x="116" y="1063" width="182" height="55"/>
+                                                        <rect key="frame" x="116" y="1031" width="182" height="55"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="55" id="EFw-W6-v2j"/>
                                                             <constraint firstAttribute="width" constant="182" id="Hwg-2J-AJL"/>
@@ -2917,36 +2916,46 @@ The two shapes on the outside recount </string>
                                                             <segue destination="LDR-hH-uX6" kind="show" identifier="jamm" id="47n-ms-sJd"/>
                                                         </connections>
                                                     </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHV-UC-arC">
+                                                        <rect key="frame" x="72" y="202" width="80" height="80"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="raZ-zi-IBM">
+                                                        <rect key="frame" x="291" y="421" width="50" height="50"/>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="Igl-LE-bMi" firstAttribute="top" secondItem="DtU-42-1mO" secondAttribute="bottom" constant="37" id="1eK-Tv-f22"/>
+                                                    <constraint firstItem="Igl-LE-bMi" firstAttribute="top" secondItem="DtU-42-1mO" secondAttribute="bottom" constant="62" id="1eK-Tv-f22"/>
                                                     <constraint firstItem="tcg-DQ-JRd" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.0676247" id="2Iv-c1-SwO"/>
-                                                    <constraint firstItem="jgS-5L-Xg9" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.673913" id="9d1-hm-uOj"/>
+                                                    <constraint firstItem="raZ-zi-IBM" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.169082" id="34S-YG-bAE"/>
+                                                    <constraint firstItem="jgS-5L-Xg9" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.673913" constant="-153.99998199999999" id="9d1-hm-uOj"/>
                                                     <constraint firstItem="Z49-kW-QRd" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.0152156" id="A0X-zO-Vml"/>
                                                     <constraint firstItem="Igl-LE-bMi" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="370:1183" id="BD8-Q4-1rf"/>
-                                                    <constraint firstItem="jgS-5L-Xg9" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="279:1183" id="Df1-QH-Olb"/>
-                                                    <constraint firstItem="zQL-vM-xeu" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.966184" id="ECZ-rn-ZKa"/>
-                                                    <constraint firstItem="DtU-42-1mO" firstAttribute="top" secondItem="jgS-5L-Xg9" secondAttribute="bottom" constant="9" id="GKq-o6-IQD"/>
+                                                    <constraint firstItem="jgS-5L-Xg9" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="279:1183" constant="-154" id="Df1-QH-Olb"/>
+                                                    <constraint firstItem="zQL-vM-xeu" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.966184" constant="-130.00017600000001" id="ECZ-rn-ZKa"/>
+                                                    <constraint firstItem="raZ-zi-IBM" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.0591716" id="Ffs-WG-6GY"/>
+                                                    <constraint firstItem="DtU-42-1mO" firstAttribute="top" secondItem="jgS-5L-Xg9" secondAttribute="bottom" constant="29" id="GKq-o6-IQD"/>
                                                     <constraint firstItem="Z49-kW-QRd" firstAttribute="top" secondItem="tcg-DQ-JRd" secondAttribute="bottom" constant="8" id="GbN-7o-GRL"/>
                                                     <constraint firstItem="Ntc-NU-ZMR" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="248:1183" id="JuJ-3P-Q6E"/>
+                                                    <constraint firstItem="VHV-UC-arC" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.241546" id="KZt-Ko-7CD"/>
                                                     <constraint firstItem="DtU-42-1mO" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="54:1183" id="L31-OY-0Vd"/>
-                                                    <constraint firstItem="DtU-42-1mO" firstAttribute="top" secondItem="zQL-vM-xeu" secondAttribute="bottom" constant="10" id="NJ5-tj-bbd"/>
+                                                    <constraint firstItem="DtU-42-1mO" firstAttribute="top" secondItem="zQL-vM-xeu" secondAttribute="bottom" constant="29" id="NJ5-tj-bbd"/>
                                                     <constraint firstItem="Ntc-NU-ZMR" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.0202874" id="NYk-Ft-jt8"/>
                                                     <constraint firstItem="tcg-DQ-JRd" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.94686" id="Oh1-h3-d26"/>
-                                                    <constraint firstItem="Ntc-NU-ZMR" firstAttribute="top" secondItem="Igl-LE-bMi" secondAttribute="bottom" constant="19" id="Rzc-d7-TmW"/>
+                                                    <constraint firstItem="VHV-UC-arC" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.0845309" id="PHP-UB-nQ3"/>
+                                                    <constraint firstItem="Ntc-NU-ZMR" firstAttribute="top" secondItem="Igl-LE-bMi" secondAttribute="bottom" constant="56" id="Rzc-d7-TmW"/>
                                                     <constraint firstItem="Igl-LE-bMi" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.21809" id="S1a-lp-0He"/>
-                                                    <constraint firstItem="jgS-5L-Xg9" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.338123" id="SAA-4L-sNH"/>
-                                                    <constraint firstItem="Q2H-9g-FGd" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="400:1183" id="UWV-5z-ckO"/>
+                                                    <constraint firstItem="jgS-5L-Xg9" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.338123" constant="-129.99950899999999" id="SAA-4L-sNH"/>
+                                                    <constraint firstItem="Q2H-9g-FGd" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="400:1183" constant="-130" id="UWV-5z-ckO"/>
                                                     <constraint firstItem="Q2H-9g-FGd" firstAttribute="centerX" secondItem="DtU-42-1mO" secondAttribute="centerX" id="UaT-WI-LCL"/>
                                                     <constraint firstItem="Q2H-9g-FGd" firstAttribute="top" secondItem="Z49-kW-QRd" secondAttribute="bottom" constant="34" id="Uus-aU-03V"/>
                                                     <constraint firstItem="tcg-DQ-JRd" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="56:169" id="Vvs-4Y-ffL"/>
                                                     <constraint firstItem="Q2H-9g-FGd" firstAttribute="top" secondItem="jgS-5L-Xg9" secondAttribute="top" id="WWU-8s-tgk"/>
-                                                    <constraint firstItem="zQL-vM-xeu" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="400:1183" id="XIg-HX-anC"/>
-                                                    <constraint firstItem="jgS-5L-Xg9" firstAttribute="leading" secondItem="Iaf-1g-HK7" secondAttribute="leading" constant="65" id="Xs4-fD-DCX"/>
+                                                    <constraint firstItem="zQL-vM-xeu" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="400:1183" constant="-130" id="XIg-HX-anC"/>
+                                                    <constraint firstItem="jgS-5L-Xg9" firstAttribute="leading" secondItem="Iaf-1g-HK7" secondAttribute="leading" constant="145" id="Xs4-fD-DCX"/>
                                                     <constraint firstItem="Igl-LE-bMi" firstAttribute="leading" secondItem="Ntc-NU-ZMR" secondAttribute="leading" id="ZeU-Mi-hvp"/>
-                                                    <constraint firstItem="zQL-vM-xeu" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.338123" id="awI-IX-mus"/>
-                                                    <constraint firstItem="DtU-42-1mO" firstAttribute="top" secondItem="jgS-5L-Xg9" secondAttribute="bottom" constant="9" id="bUO-sj-CWy"/>
+                                                    <constraint firstItem="zQL-vM-xeu" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.338123" constant="-129.99950899999999" id="awI-IX-mus"/>
+                                                    <constraint firstItem="DtU-42-1mO" firstAttribute="top" secondItem="jgS-5L-Xg9" secondAttribute="bottom" constant="29" id="bUO-sj-CWy"/>
                                                     <constraint firstItem="DtU-42-1mO" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="54:1183" id="dOd-Ld-c8O"/>
                                                     <constraint firstItem="jgS-5L-Xg9" firstAttribute="top" secondItem="Z49-kW-QRd" secondAttribute="bottom" constant="34" id="dd5-2D-QtZ"/>
                                                     <constraint firstItem="tcg-DQ-JRd" firstAttribute="top" secondItem="Iaf-1g-HK7" secondAttribute="top" constant="62" id="dmK-k9-Bn4"/>
@@ -2954,16 +2963,16 @@ The two shapes on the outside recount </string>
                                                     <constraint firstItem="Z49-kW-QRd" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.782609" id="eqV-bC-ITV"/>
                                                     <constraint firstItem="zQL-vM-xeu" firstAttribute="leading" secondItem="Q2H-9g-FGd" secondAttribute="leading" id="f8k-94-IJU"/>
                                                     <constraint firstItem="zQL-vM-xeu" firstAttribute="centerX" secondItem="Iaf-1g-HK7" secondAttribute="centerX" id="gnn-lx-k71"/>
-                                                    <constraint firstItem="jTA-bJ-RLx" firstAttribute="top" secondItem="Ntc-NU-ZMR" secondAttribute="bottom" constant="60" id="hHq-HY-91j"/>
+                                                    <constraint firstItem="jTA-bJ-RLx" firstAttribute="top" secondItem="Ntc-NU-ZMR" secondAttribute="bottom" constant="76" id="hHq-HY-91j"/>
                                                     <constraint firstItem="Z49-kW-QRd" firstAttribute="leading" secondItem="Igl-LE-bMi" secondAttribute="leading" id="iz1-Tx-aII"/>
-                                                    <constraint firstItem="Q2H-9g-FGd" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.966184" id="j1C-Pr-lU8"/>
+                                                    <constraint firstItem="Q2H-9g-FGd" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.966184" constant="-130.00017600000001" id="j1C-Pr-lU8"/>
                                                     <constraint firstItem="DtU-42-1mO" firstAttribute="centerX" secondItem="Igl-LE-bMi" secondAttribute="centerX" id="kFU-Vr-cdb"/>
-                                                    <constraint firstItem="Q2H-9g-FGd" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.338123" id="kQL-e6-vax"/>
-                                                    <constraint firstItem="DtU-42-1mO" firstAttribute="top" secondItem="Q2H-9g-FGd" secondAttribute="bottom" constant="9" id="lhI-xx-f1h"/>
+                                                    <constraint firstItem="Q2H-9g-FGd" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.338123" constant="-129.99950899999999" id="kQL-e6-vax"/>
+                                                    <constraint firstItem="DtU-42-1mO" firstAttribute="top" secondItem="Q2H-9g-FGd" secondAttribute="bottom" constant="29" id="lhI-xx-f1h"/>
                                                     <constraint firstItem="Z49-kW-QRd" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="324:1183" id="mSV-eQ-zZL"/>
                                                     <constraint firstItem="Igl-LE-bMi" firstAttribute="centerX" secondItem="jTA-bJ-RLx" secondAttribute="centerX" id="seX-vS-9nv"/>
                                                     <constraint firstItem="Igl-LE-bMi" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.89372" id="tjA-Lf-qMt"/>
-                                                    <constraint firstItem="zQL-vM-xeu" firstAttribute="top" secondItem="Z49-kW-QRd" secondAttribute="bottom" constant="33" id="uE5-83-t3T"/>
+                                                    <constraint firstItem="zQL-vM-xeu" firstAttribute="top" secondItem="Z49-kW-QRd" secondAttribute="bottom" constant="34" id="uE5-83-t3T"/>
                                                     <constraint firstItem="Ntc-NU-ZMR" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.599034" id="uMs-uT-aeu"/>
                                                     <constraint firstItem="DtU-42-1mO" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.0456467" id="yqi-KD-j15"/>
                                                 </constraints>
@@ -2993,6 +3002,8 @@ The two shapes on the outside recount </string>
                     </view>
                     <size key="freeformSize" width="414" height="1275"/>
                     <connections>
+                        <outlet property="imgSG" destination="VHV-UC-arC" id="2ek-0O-imq"/>
+                        <outlet property="imgSP" destination="raZ-zi-IBM" id="72H-MY-Sh3"/>
                         <outlet property="label" destination="Igl-LE-bMi" id="pGf-Vi-YLg"/>
                         <outlet property="mediumLink" destination="Ntc-NU-ZMR" id="SmB-0b-ewH"/>
                         <outlet property="scarsImage" destination="jgS-5L-Xg9" id="dQi-iA-lec"/>
@@ -3280,7 +3291,7 @@ The two shapes on the outside recount </string>
                                                                 <fragment content="Copy caption">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                        <font key="NSFont" size="20" name="CeraPro-Regular"/>
+                                                                        <font key="NSFont" metaFont="system" size="20"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         <integer key="NSUnderline" value="1"/>
                                                                     </attributes>
@@ -3301,7 +3312,7 @@ The two shapes on the outside recount </string>
                                                                 <fragment content="Not now">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <font key="NSFont" size="20" name="CeraPro-LightItalic"/>
+                                                                        <font key="NSFont" metaFont="system" size="20"/>
                                                                         <font key="NSOriginalFont" metaFont="system" size="18"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         <integer key="NSUnderline" value="1"/>
