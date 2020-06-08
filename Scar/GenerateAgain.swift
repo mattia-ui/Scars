@@ -128,7 +128,7 @@ class GenerateAgain: UIViewController {
                        attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 18)]
                       let attributedString11 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
-                       normalText = ": leader - focussed"
+                       normalText = ": leader - focused"
                        normalString = NSMutableAttributedString(string:normalText)
 
                       attributedString11.append(normalString)
