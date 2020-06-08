@@ -138,7 +138,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
         self.mediumLink.isUserInteractionEnabled = true
         let tapgesture = MyTap1(target: self, action: #selector((tappedOnLabel(sender: ))))
         tapgesture.numberOfTapsRequired = 1
-        tapgesture.link = "https://medium.com/@skinsugi/e6ed203ad939"
+        tapgesture.link = "https://medium.com/@skinsugi/the-ancient-art-of-kintsugi-e6ed203ad939"
         self.mediumLink.addGestureRecognizer(tapgesture)
         
         if(ChooseShape.shape1 == "square"){
