@@ -116,6 +116,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
     @IBOutlet weak var scarsImage: UIImageView!
     @IBOutlet weak var label: UILabel!
     
+    @IBOutlet weak var mediumLink: UILabel!
     @IBOutlet weak var top: UIImageView!
     @IBOutlet weak var screen: UIImageView!
     var imgPrincipale:UIImage?
@@ -132,6 +133,11 @@ class Collage: UIViewController, UITextFieldDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
+        self.mediumLink.isUserInteractionEnabled = true
+        let tapgesture = MyTap1(target: self, action: #selector((tappedOnLabel(sender: ))))
+        tapgesture.numberOfTapsRequired = 1
+        tapgesture.link = "https://medium.com/@skinsugi/e6ed203ad939"
+        self.mediumLink.addGestureRecognizer(tapgesture)
         
         if(ChooseShape.shape1 == "square"){
             if(ChoosePalette.color == "cool"){
@@ -736,6 +742,14 @@ class Collage: UIViewController, UITextFieldDelegate  {
        
     }
     
+    @objc func tappedOnLabel(sender : MyTap) {
+        
+        if let url = NSURL(string: sender.link){
+            UIApplication.shared.open(url as URL)
+        }
+        
+    }
+    
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -769,6 +783,10 @@ extension UIView {
         UIGraphicsEndImageContext()
         return img
     }
+}
+
+class MyTap1: UITapGestureRecognizer {
+    var link = String()
 }
 
 /*
