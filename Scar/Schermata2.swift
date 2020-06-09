@@ -136,7 +136,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
                 paragraphStyle.alignment = NSTextAlignment.center
                 let attributedString = NSMutableAttributedString(string: "This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives4.0 International License ")
                 attributedString.setAttributes(
-                    [NSAttributedString.Key.font : UIFont(name: "CeraPro-Light", size: CGFloat(9.0))!,
+                    [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: CGFloat(9.0))!,
                      NSAttributedString.Key.foregroundColor : UIColor(red: 112 / 255.0, green: 112 / 255.0, blue: 112 / 255.0, alpha: 1.0),
                      NSAttributedString.Key.paragraphStyle : paragraphStyle
                     ], range: NSRange(location:0 , length:111)
@@ -275,17 +275,17 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
             scroll.contentSize = CGSize(width: somma, height: 10)
             
             b1.isSelected = true
-            b1.titleLabel?.font = UIFont(name: "CeraPro-Medium", size: 22)
+            b1.titleLabel?.font = UIFont(name: "Nexa Bold", size: 22)
             b2.isSelected = false
-            b2.titleLabel?.font = UIFont(name: "CeraPro-Regular", size: 22)
+            b2.titleLabel?.font = UIFont(name: "Nexa Light", size: 22)
             b3.isSelected = false
-            b3.titleLabel?.font = UIFont(name: "CeraPro-Regular", size: 22)
+            b3.titleLabel?.font = UIFont(name: "Nexa Light", size: 22)
             b4.isSelected = false
-            b4.titleLabel?.font = UIFont(name: "CeraPro-Regular", size: 22)
+            b4.titleLabel?.font = UIFont(name: "Nexa Light", size: 22)
             b5.isSelected = false
-            b5.titleLabel?.font = UIFont(name: "CeraPro-Regular", size: 22)
+            b5.titleLabel?.font = UIFont(name: "Nexa Light", size: 22)
             b6.isSelected = false
-            b6.titleLabel?.font = UIFont(name: "CeraPro-Regular", size: 22)
+            b6.titleLabel?.font = UIFont(name: "Nexa Light", size: 22)
             myCollectionView.reloadData()
         }
         createObservers()
@@ -393,17 +393,17 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
 
 
             b1.isSelected = true
-            b1.titleLabel?.font = UIFont(name: "CeraPro-Medium", size: 22)
+            b1.titleLabel?.font = UIFont(name: "Nexa Bold", size: 22)
             b2.isSelected = false
-            b2.titleLabel?.font = UIFont(name: "CeraPro-Regular", size: 22)
+            b2.titleLabel?.font = UIFont(name: "Nexa Light", size: 22)
             b3.isSelected = false
-            b3.titleLabel?.font = UIFont(name: "CeraPro-Regular", size: 22)
+            b3.titleLabel?.font = UIFont(name: "Nexa Light", size: 22)
             b4.isSelected = false
-            b4.titleLabel?.font = UIFont(name: "CeraPro-Regular", size: 22)
+            b4.titleLabel?.font = UIFont(name: "Nexa Light", size: 22)
             b5.isSelected = false
-            b5.titleLabel?.font = UIFont(name: "CeraPro-Regular", size: 22)
+            b5.titleLabel?.font = UIFont(name: "Nexa Light", size: 22)
             b6.isSelected = false
-            b6.titleLabel?.font = UIFont(name: "CeraPro-Regular", size: 22)
+            b6.titleLabel?.font = UIFont(name: "Nexa Light", size: 22)
             myCollectionView.reloadData()
         }
     }
@@ -411,19 +411,19 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
     @IBAction func setTable(_ sender: UIButton) {
         if !sender.isSelected {
             b1.isSelected = false
-            b1.titleLabel?.font = UIFont(name: "CeraPro-Regular", size: 22)
+            b1.titleLabel?.font = UIFont(name: "Nexa Light", size: 22)
             b2.isSelected = false
-            b2.titleLabel?.font = UIFont(name: "CeraPro-Regular", size: 22)
+            b2.titleLabel?.font = UIFont(name: "Nexa Light", size: 22)
             b3.isSelected = false
-            b3.titleLabel?.font = UIFont(name: "CeraPro-Regular", size: 22)
+            b3.titleLabel?.font = UIFont(name: "Nexa Light", size: 22)
             b4.isSelected = false
-            b4.titleLabel?.font = UIFont(name: "CeraPro-Regular", size: 22)
+            b4.titleLabel?.font = UIFont(name: "Nexa Light", size: 22)
             b5.isSelected = false
-            b5.titleLabel?.font = UIFont(name: "CeraPro-Regular", size: 22)
+            b5.titleLabel?.font = UIFont(name: "Nexa Light", size: 22)
             b6.isSelected = false
-            b6.titleLabel?.font = UIFont(name: "CeraPro-Regular", size: 22)
+            b6.titleLabel?.font = UIFont(name: "Nexa Light", size: 22)
             sender.isSelected = true
-            sender.titleLabel?.font = UIFont(name: "CeraPro-Medium", size: 22)
+            sender.titleLabel?.font = UIFont(name: "Nexa Bold", size: 22)
         }
         
         if(sender.titleLabel?.text == "TEDx"){

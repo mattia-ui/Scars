@@ -20,9 +20,6 @@
         <array key="Cera Pro Medium.otf">
             <string>CeraPro-Medium</string>
         </array>
-        <array key="Cera Pro Regular.otf">
-            <string>CeraPro-Regular</string>
-        </array>
         <array key="Nexa Bold.otf">
             <string>NexaBold</string>
         </array>
@@ -282,16 +279,20 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backM" translatesAutoresizingMaskIntoConstraints="NO" id="zKV-vd-0Ud">
                                         <rect key="frame" x="23" y="246" width="370" height="430"/>
                                     </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueCircle" translatesAutoresizingMaskIntoConstraints="NO" id="H28-4N-94N">
+                                        <rect key="frame" x="253" y="-93" width="232" height="232"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Bri-Aq-9dp">
                                         <rect key="frame" x="22" y="88" width="259" height="85"/>
                                         <string key="text">Create your 
 Masterpiece!</string>
-                                        <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
+                                        <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cj-VA-9NZ">
-                                        <rect key="frame" x="116" y="722" width="182" height="58.5"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cj-VA-9NZ">
+                                        <rect key="frame" x="116" y="718" width="182" height="58.5"/>
                                         <state key="normal" title="Button" image="Lettsegoazzurro"/>
                                         <connections>
                                             <segue destination="xs9-hS-2dx" kind="show" id="nIG-wF-CdU"/>
@@ -2403,14 +2404,14 @@ your body and others’s bodies.</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0zm-hy-VyW">
-                                                    <rect key="frame" x="162" y="0.0" width="72" height="19"/>
+                                                    <rect key="frame" x="162" y="-1" width="72" height="19"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="19" id="BKk-xZ-jf6"/>
                                                         <constraint firstAttribute="width" constant="72" id="DO4-xi-LOk"/>
                                                     </constraints>
                                                 </imageView>
                                                 <textView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kqL-Oo-zSr">
-                                                    <rect key="frame" x="38" y="19" width="338" height="69"/>
+                                                    <rect key="frame" x="38" y="14" width="338" height="69"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="69" id="KUX-O2-i6L"/>
                                                         <constraint firstAttribute="width" constant="338" id="gZm-yh-0Yy"/>
@@ -2428,12 +2429,12 @@ your body and others’s bodies.</string>
                                                 </textView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="kqL-Oo-zSr" secondAttribute="bottom" id="0gg-z8-ehA"/>
+                                                <constraint firstAttribute="bottom" secondItem="kqL-Oo-zSr" secondAttribute="bottom" constant="5" id="0gg-z8-ehA"/>
                                                 <constraint firstItem="kqL-Oo-zSr" firstAttribute="leading" secondItem="huF-rN-Wyo" secondAttribute="leading" constant="38" id="B7c-fZ-sYQ"/>
-                                                <constraint firstItem="0zm-hy-VyW" firstAttribute="top" secondItem="huF-rN-Wyo" secondAttribute="topMargin" constant="-8" id="CAe-xw-IV9"/>
+                                                <constraint firstItem="0zm-hy-VyW" firstAttribute="top" secondItem="huF-rN-Wyo" secondAttribute="topMargin" constant="-9" id="CAe-xw-IV9"/>
                                                 <constraint firstAttribute="trailing" secondItem="kqL-Oo-zSr" secondAttribute="trailing" constant="36" id="Eg9-qU-wi3"/>
-                                                <constraint firstItem="kqL-Oo-zSr" firstAttribute="top" secondItem="0zm-hy-VyW" secondAttribute="bottom" id="JCG-tH-PUD"/>
-                                                <constraint firstAttribute="bottom" secondItem="kqL-Oo-zSr" secondAttribute="bottom" id="M4s-IJ-iK8"/>
+                                                <constraint firstItem="kqL-Oo-zSr" firstAttribute="top" secondItem="0zm-hy-VyW" secondAttribute="bottom" constant="-4" id="JCG-tH-PUD"/>
+                                                <constraint firstAttribute="bottom" secondItem="kqL-Oo-zSr" secondAttribute="bottom" constant="5" id="M4s-IJ-iK8"/>
                                                 <constraint firstItem="0zm-hy-VyW" firstAttribute="leading" secondItem="huF-rN-Wyo" secondAttribute="leading" constant="162" id="z3e-Qu-ElP"/>
                                             </constraints>
                                         </collectionViewCellContentView>
@@ -2517,7 +2518,7 @@ your body and others’s bodies.</string>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Interests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0m-rX-KH1">
                                 <rect key="frame" x="22" y="32" width="372" height="40.5"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
+                                <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2526,7 +2527,7 @@ your body and others’s bodies.</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="OYB-ej-wEi"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2541,7 +2542,7 @@ your body and others’s bodies.</string>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFX-az-RWs">
                                                         <rect key="frame" x="14" y="147" width="386" height="76"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="Movies and Series" backgroundImage="nonselezionato">
@@ -2556,7 +2557,7 @@ your body and others’s bodies.</string>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJ3-P7-iDQ">
                                                         <rect key="frame" x="14" y="245" width="386" height="76"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="Articles" backgroundImage="nonselezionato">
@@ -2571,7 +2572,7 @@ your body and others’s bodies.</string>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veU-J5-GIh">
                                                         <rect key="frame" x="14" y="343" width="386" height="76"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="Books" backgroundImage="nonselezionato">
@@ -2586,7 +2587,7 @@ your body and others’s bodies.</string>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTP-eF-fNy">
                                                         <rect key="frame" x="14" y="49" width="386" height="76"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="TEDx" backgroundImage="nonselezionato">
@@ -2601,7 +2602,7 @@ your body and others’s bodies.</string>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0L-qT-zEJ">
                                                         <rect key="frame" x="14" y="539" width="386" height="76"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="Podcast" backgroundImage="nonselezionato">
@@ -2616,7 +2617,7 @@ your body and others’s bodies.</string>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Pu-dL-LBl">
                                                         <rect key="frame" x="14" y="441" width="386" height="76"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="Inspiring People" backgroundImage="nonselezionato">
@@ -3468,6 +3469,7 @@ The two shapes on the outside recount </string>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2-" width="101.5" height="101.5"/>
+        <image name="BlueCircle" width="232" height="232"/>
         <image name="CAr" width="267" height="267"/>
         <image name="Done" width="182" height="55"/>
         <image name="DoneN" width="182" height="55"/>
