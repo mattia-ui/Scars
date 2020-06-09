@@ -602,13 +602,13 @@ class Collage: UIViewController, UITextFieldDelegate  {
             }
         }
     
-        let randomSize = Int.random(in: 1..<4)
+        let randomSize = Float.random(in: 1..<1.05)
         let randomPos = Int.random(in: 0..<4)
-        let posizioneGx = [30,0,160,0]
-        let posizioneGy = [0,30,0,150]
-        let posizionePx = [180,230,50,235]
-        let posizionePy = [220,175,220,55]
-        
+        let posizioneGx = [30,0,160,-20]
+        let posizioneGy = [-20,20,-20,150]
+        let posizionePx = [180,200,30,220]
+        let posizionePy = [190,170,190,50]
+           
         var tG = CGAffineTransform.identity
         tG = tG.scaledBy(x: CGFloat(randomSize), y: CGFloat(randomSize))
         tG = tG.translatedBy(x: CGFloat(posizioneGx[randomPos]) + top.frame.origin.x, y: CGFloat(posizioneGy[randomPos]) + top.frame.origin.y)
