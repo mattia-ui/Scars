@@ -37,10 +37,10 @@
 		7607123124793C9E00B29C2C /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607122D24793C9E00B29C2C /* MovieAPI.swift */; };
 		7607123224793C9E00B29C2C /* ModelMapperHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607122E24793C9E00B29C2C /* ModelMapperHelper.swift */; };
 		7607123424793FE900B29C2C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607123324793FE900B29C2C /* Movie.swift */; };
-		764B4DC6248FE76300F1C784 /* Nexa Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764B4DC2248FE76200F1C784 /* Nexa Bold.otf */; };
-		764B4DC7248FE76300F1C784 /* NexaTextDemo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 764B4DC3248FE76200F1C784 /* NexaTextDemo-Light.ttf */; };
-		764B4DC8248FE76300F1C784 /* Nexa Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764B4DC4248FE76200F1C784 /* Nexa Light.otf */; };
-		764B4DC9248FE76300F1C784 /* Nexa W01 Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764B4DC5248FE76300F1C784 /* Nexa W01 Heavy.otf */; };
+		764B4DD0248FE86600F1C784 /* NexaTextDemo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 764B4DCB248FE83F00F1C784 /* NexaTextDemo-Light.ttf */; };
+		764B4DD1248FE86800F1C784 /* Nexa Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764B4DCC248FE83F00F1C784 /* Nexa Bold.otf */; };
+		764B4DD2248FE86C00F1C784 /* Nexa W01 Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764B4DCD248FE83F00F1C784 /* Nexa W01 Heavy.otf */; };
+		764B4DD3248FE86E00F1C784 /* Nexa Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764B4DCE248FE83F00F1C784 /* Nexa Light.otf */; };
 		764E605E2468384300F6BC07 /* Cera Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764E60522468384300F6BC07 /* Cera Pro Light.otf */; };
 		764E605F2468384300F6BC07 /* Cera Pro Thin Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764E60532468384300F6BC07 /* Cera Pro Thin Italic.otf */; };
 		764E60602468384300F6BC07 /* Cera Pro Regular Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764E60542468384300F6BC07 /* Cera Pro Regular Italic.otf */; };
@@ -117,10 +117,6 @@
 		345F14FC24573816003EE819 /* Scar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scar.entitlements; sourceTree = "<group>"; };
 		345F14FE24573819003EE819 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		345F15482459D5D9003EE819 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		34CF8A61248FDFA000A68B74 /* NexaTextDemo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NexaTextDemo-Light.ttf"; sourceTree = "<group>"; };
-		34CF8A62248FDFA000A68B74 /* Nexa Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Bold.otf"; sourceTree = "<group>"; };
-		34CF8A63248FDFA000A68B74 /* Nexa W01 Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa W01 Heavy.otf"; sourceTree = "<group>"; };
-		34CF8A64248FDFA100A68B74 /* Nexa Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Light.otf"; sourceTree = "<group>"; };
 		5850DD5C17BD4E16DFDBE827 /* Pods_Scar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B01C7992461A7980040EA77 /* PrimaTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaTutorial.swift; sourceTree = "<group>"; };
 		6B01C79B2461A7BC0040EA77 /* SecondaTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaTutorial.swift; sourceTree = "<group>"; };
@@ -137,10 +133,10 @@
 		7607122D24793C9E00B29C2C /* MovieAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
 		7607122E24793C9E00B29C2C /* ModelMapperHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelMapperHelper.swift; sourceTree = "<group>"; };
 		7607123324793FE900B29C2C /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		764B4DC2248FE76200F1C784 /* Nexa Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Bold.otf"; sourceTree = "<group>"; };
-		764B4DC3248FE76200F1C784 /* NexaTextDemo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NexaTextDemo-Light.ttf"; sourceTree = "<group>"; };
-		764B4DC4248FE76200F1C784 /* Nexa Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Light.otf"; sourceTree = "<group>"; };
-		764B4DC5248FE76300F1C784 /* Nexa W01 Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa W01 Heavy.otf"; sourceTree = "<group>"; };
+		764B4DCB248FE83F00F1C784 /* NexaTextDemo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NexaTextDemo-Light.ttf"; sourceTree = "<group>"; };
+		764B4DCC248FE83F00F1C784 /* Nexa Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Bold.otf"; sourceTree = "<group>"; };
+		764B4DCD248FE83F00F1C784 /* Nexa W01 Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa W01 Heavy.otf"; sourceTree = "<group>"; };
+		764B4DCE248FE83F00F1C784 /* Nexa Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Light.otf"; sourceTree = "<group>"; };
 		764E60522468384300F6BC07 /* Cera Pro Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Light.otf"; sourceTree = "<group>"; };
 		764E60532468384300F6BC07 /* Cera Pro Thin Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Thin Italic.otf"; sourceTree = "<group>"; };
 		764E60542468384300F6BC07 /* Cera Pro Regular Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Regular Italic.otf"; sourceTree = "<group>"; };
@@ -216,10 +212,6 @@
 		345F14C024573808003EE819 = {
 			isa = PBXGroup;
 			children = (
-				764B4DC2248FE76200F1C784 /* Nexa Bold.otf */,
-				764B4DC4248FE76200F1C784 /* Nexa Light.otf */,
-				764B4DC5248FE76300F1C784 /* Nexa W01 Heavy.otf */,
-				764B4DC3248FE76200F1C784 /* NexaTextDemo-Light.ttf */,
 				345F14CB24573808003EE819 /* Scar */,
 				345F14E224573809003EE819 /* ScarTests */,
 				345F14ED24573809003EE819 /* ScarUITests */,
@@ -283,7 +275,7 @@
 				6BA9C37E24890B94006AA395 /* TimelineAnimated.gif */,
 				345F14FC24573816003EE819 /* Scar.entitlements */,
 				345F14D524573809003EE819 /* Assets.xcassets */,
-				34CF8A58248F947200A68B74 /* Nexa Font */,
+				764B4DCA248FE83F00F1C784 /* Nexa Font */,
 				7607122A24793C9E00B29C2C /* Network */,
 				7668C13D2469D3960099FD11 /* views */,
 				764E60512468384300F6BC07 /* Cera Pro */,
@@ -319,18 +311,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		34CF8A58248F947200A68B74 /* Nexa Font */ = {
-			isa = PBXGroup;
-			children = (
-				34CF8A62248FDFA000A68B74 /* Nexa Bold.otf */,
-				34CF8A64248FDFA100A68B74 /* Nexa Light.otf */,
-				34CF8A63248FDFA000A68B74 /* Nexa W01 Heavy.otf */,
-				34CF8A61248FDFA000A68B74 /* NexaTextDemo-Light.ttf */,
-			);
-			name = "Nexa Font";
-			path = "../../../../Downloads/Nexa Font";
-			sourceTree = "<group>";
-		};
 		7607122A24793C9E00B29C2C /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +321,17 @@
 				7607122E24793C9E00B29C2C /* ModelMapperHelper.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		764B4DCA248FE83F00F1C784 /* Nexa Font */ = {
+			isa = PBXGroup;
+			children = (
+				764B4DCB248FE83F00F1C784 /* NexaTextDemo-Light.ttf */,
+				764B4DCC248FE83F00F1C784 /* Nexa Bold.otf */,
+				764B4DCD248FE83F00F1C784 /* Nexa W01 Heavy.otf */,
+				764B4DCE248FE83F00F1C784 /* Nexa Light.otf */,
+			);
+			path = "Nexa Font";
 			sourceTree = "<group>";
 		};
 		764E60512468384300F6BC07 /* Cera Pro */ = {
@@ -477,11 +468,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				764B4DC6248FE76300F1C784 /* Nexa Bold.otf in Resources */,
-				764B4DC7248FE76300F1C784 /* NexaTextDemo-Light.ttf in Resources */,
-				764B4DC8248FE76300F1C784 /* Nexa Light.otf in Resources */,
-				764B4DC9248FE76300F1C784 /* Nexa W01 Heavy.otf in Resources */,
 				764E605F2468384300F6BC07 /* Cera Pro Thin Italic.otf in Resources */,
+				764B4DD1248FE86800F1C784 /* Nexa Bold.otf in Resources */,
+				764B4DD2248FE86C00F1C784 /* Nexa W01 Heavy.otf in Resources */,
+				764B4DD3248FE86E00F1C784 /* Nexa Light.otf in Resources */,
+				764B4DD0248FE86600F1C784 /* NexaTextDemo-Light.ttf in Resources */,
 				345F14D924573809003EE819 /* LaunchScreen.storyboard in Resources */,
 				764E605E2468384300F6BC07 /* Cera Pro Light.otf in Resources */,
 				764E60662468384300F6BC07 /* Cera Pro Medium Italic.otf in Resources */,
