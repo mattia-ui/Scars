@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -28,6 +28,18 @@
         </array>
         <array key="Cera Pro Regular.otf">
             <string>CeraPro-Regular</string>
+        </array>
+        <array key="Nexa Bold.otf">
+            <string>NexaBold</string>
+        </array>
+        <array key="Nexa Light.otf">
+            <string>NexaLight</string>
+        </array>
+        <array key="Nexa W01 Heavy.otf">
+            <string>NexaW01-Heavy</string>
+        </array>
+        <array key="NexaTextDemo-Light.ttf">
+            <string>NexaTextDemo-Light</string>
         </array>
     </customFonts>
     <scenes>
@@ -150,13 +162,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7X-yK-cdq">
-                                <rect key="frame" x="0.0" y="88" width="414" height="1867.5"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="896"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navInsta" translatesAutoresizingMaskIntoConstraints="NO" id="CVc-ep-RVc">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="408"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="196"/>
                                     </imageView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nrD-Zz-bfZ">
-                                        <rect key="frame" x="0.0" y="408" width="414" height="1459.5"/>
+                                        <rect key="frame" x="0.0" y="196" width="414" height="700"/>
                                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="5" minimumInteritemSpacing="3" id="XkC-uk-eSx">
                                             <size key="itemSize" width="145" height="145"/>
@@ -202,7 +214,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xph-ou-FkU">
-                                        <rect key="frame" x="0.0" y="408" width="414" height="1459.5"/>
+                                        <rect key="frame" x="0.0" y="196" width="414" height="700"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -231,19 +243,19 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1JF-r6-XHa">
-                                <rect key="frame" x="0.0" y="88" width="414" height="1867.5"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="896"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IllustrazionePerBlur" translatesAutoresizingMaskIntoConstraints="NO" id="7Iq-1d-X4P">
-                                        <rect key="frame" x="22" y="544" width="370" height="1331"/>
+                                        <rect key="frame" x="22" y="453" width="370" height="638.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submitted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="b13-TX-EGq">
-                                        <rect key="frame" x="128" y="324" width="152" height="71"/>
+                                        <rect key="frame" x="128" y="324" width="152" height="34"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="32"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for sharing your masterpiece with us!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Y2D-IT-Jem">
-                                        <rect key="frame" x="71" y="411" width="266" height="104"/>
+                                        <rect key="frame" x="71" y="374" width="266" height="50"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -274,10 +286,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backM" translatesAutoresizingMaskIntoConstraints="NO" id="zKV-vd-0Ud">
-                                        <rect key="frame" x="23" y="338.5" width="370" height="896"/>
+                                        <rect key="frame" x="23" y="246" width="370" height="430"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Bri-Aq-9dp">
-                                        <rect key="frame" x="22" y="88" width="259" height="177.5"/>
+                                        <rect key="frame" x="22" y="88" width="259" height="85"/>
                                         <string key="text">Create your 
 Masterpiece!</string>
                                         <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
@@ -285,7 +297,7 @@ Masterpiece!</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cj-VA-9NZ">
-                                        <rect key="frame" x="116" y="1280.5" width="182" height="122"/>
+                                        <rect key="frame" x="116" y="722" width="182" height="58.5"/>
                                         <state key="normal" title="Button" image="Lettsegoazzurro"/>
                                         <connections>
                                             <segue destination="xs9-hS-2dx" kind="show" id="nIG-wF-CdU"/>
@@ -389,29 +401,29 @@ Masterpiece!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Onboarding1" translatesAutoresizingMaskIntoConstraints="NO" id="abm-bl-K38">
-                                <rect key="frame" x="0.0" y="0.0" width="1244" height="447"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1271" height="447"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is Skinsugi!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gas-gh-7sj">
-                                <rect key="frame" x="22" y="471" width="384" height="56"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
+                                <rect key="frame" x="20" y="471" width="384" height="56"/>
+                                <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                 <color key="textColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="We are glad that you came to us." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jjs-7W-cLo">
-                                <rect key="frame" x="22" y="536" width="384" height="22"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
+                                <rect key="frame" x="20" y="536" width="384" height="35"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-gT-4jz">
-                                <rect key="frame" x="848" y="536" width="303" height="23"/>
+                                <rect key="frame" x="848" y="531" width="303" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What's your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JrA-Yx-juQ">
-                                <rect key="frame" x="22" y="604" width="379" height="22"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JrA-Yx-juQ">
+                                <rect key="frame" x="20" y="604" width="379" height="22"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -421,16 +433,16 @@ Masterpiece!</string>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpE-XT-qrG">
                                 <rect key="frame" x="116" y="756" width="182" height="55"/>
                                 <state key="normal" image="Start"/>
-                                <state key="disabled" image="StartSpento"/>
+                                <state key="disabled" image="StartN"/>
                                 <connections>
                                     <action selector="startPressed:" destination="w7d-Tn-c1A" eventType="touchUpInside" id="58j-MS-1wl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKi-Ot-7SM">
-                                <rect key="frame" x="436" y="536" width="292" height="23"/>
+                                <rect key="frame" x="446" y="536" width="292" height="23"/>
                                 <string key="text">Tell us what inspires you the most.
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -446,16 +458,16 @@ Masterpiece!</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, Sigafreda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ywt-KN-qf8">
-                                                    <rect key="frame" x="22" y="34" width="228.5" height="38"/>
-                                                    <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
+                                                    <rect key="frame" x="22" y="34" width="244" height="49"/>
+                                                    <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                                     <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SzM-f1-Yon">
-                                                    <rect key="frame" x="22" y="86" width="346" height="22"/>
+                                                    <rect key="frame" x="22" y="97" width="349" height="22"/>
                                                     <string key="text">Tell us what inspires you the most.
 </string>
-                                                    <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
+                                                    <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
                                                     <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -481,7 +493,7 @@ Masterpiece!</string>
                                             <subviews>
                                                 <button opaque="NO" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCf-Wr-8Gn">
                                                     <rect key="frame" x="20" y="12" width="374" height="76"/>
-                                                    <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="22"/>
+                                                    <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
                                                     <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="Button" backgroundImage="deselected">
                                                         <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -515,10 +527,10 @@ Masterpiece!</string>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3A-U0-X4D">
                                                     <rect key="frame" x="116" y="86" width="182" height="55"/>
-                                                    <state key="normal" image="done">
+                                                    <state key="normal" image="Done">
                                                         <color key="titleColor" red="0.91372543569999998" green="0.91366583109999999" blue="0.91764795779999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </state>
-                                                    <state key="disabled" image="DoneSpento"/>
+                                                    <state key="disabled" image="DoneN"/>
                                                     <connections>
                                                         <action selector="donePressed:" destination="w7d-Tn-c1A" eventType="touchUpInside" id="sHU-66-vKH"/>
                                                     </connections>
@@ -546,34 +558,34 @@ Masterpiece!</string>
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last step" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gQb-mA-l8B">
-                                <rect key="frame" x="850" y="489" width="205" height="38"/>
+                                <rect key="frame" x="850" y="489" width="205" height="51.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="205" id="RAB-jc-mIn"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="40"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WDJ-6S-5Y3">
-                                <rect key="frame" x="850" y="536" width="314" height="19"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="19"/>
+                                <rect key="frame" x="850" y="550" width="317.5" height="19"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="19"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
-                                <rect key="frame" x="850" y="601" width="346" height="66"/>
+                                <rect key="frame" x="850" y="596" width="346" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="346" id="WAl-jz-akH"/>
                                 </constraints>
                                 <string key="text">How do you feel about your sign?
 
 How do you think others see it?</string>
-                                <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-fI-qoJ">
-                                <rect key="frame" x="929" y="755" width="194" height="55"/>
+                                <rect key="frame" x="929" y="750" width="194" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" identifier="larg" id="R1p-r1-OP1"/>
                                     <constraint firstAttribute="height" constant="55" identifier="altezza" id="g45-2c-k21"/>
@@ -584,21 +596,27 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="My name is..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zi4-9B-9mn">
-                                <rect key="frame" x="20" y="643" width="382" height="37"/>
+                                <rect key="frame" x="18" y="643" width="382" height="37"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OZC-Pr-TMi">
+                                <rect key="frame" x="394" y="490" width="20" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="gQb-mA-l8B" firstAttribute="leading" secondItem="PtS-SF-yl7" secondAttribute="trailing" constant="22" id="192-5P-GGC"/>
-                            <constraint firstItem="Gas-gh-7sj" firstAttribute="baseline" secondItem="gQb-mA-l8B" secondAttribute="baseline" id="1Sk-Ta-WQi"/>
-                            <constraint firstItem="JrA-Yx-juQ" firstAttribute="top" secondItem="Jjs-7W-cLo" secondAttribute="bottom" constant="46" id="2fF-Lg-PdJ"/>
-                            <constraint firstItem="JrA-Yx-juQ" firstAttribute="centerX" secondItem="sCS-4W-8wn" secondAttribute="centerX" id="2uE-dG-tb3"/>
+                            <constraint firstItem="Gas-gh-7sj" firstAttribute="baseline" secondItem="gQb-mA-l8B" secondAttribute="baseline" constant="-6" id="1Sk-Ta-WQi"/>
+                            <constraint firstItem="JrA-Yx-juQ" firstAttribute="top" secondItem="Jjs-7W-cLo" secondAttribute="bottom" constant="33" id="2fF-Lg-PdJ"/>
+                            <constraint firstItem="JrA-Yx-juQ" firstAttribute="centerX" secondItem="sCS-4W-8wn" secondAttribute="centerX" constant="-1.5" id="2uE-dG-tb3"/>
                             <constraint firstItem="PtS-SF-yl7" firstAttribute="leading" secondItem="qOs-Jh-MnI" secondAttribute="trailing" id="35g-O4-Ks2"/>
                             <constraint firstItem="PtS-SF-yl7" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" id="4eC-lf-oEE"/>
-                            <constraint firstItem="XKi-Ot-7SM" firstAttribute="leading" secondItem="Jjs-7W-cLo" secondAttribute="trailing" constant="30" id="5pX-QP-Tzt"/>
+                            <constraint firstItem="XKi-Ot-7SM" firstAttribute="leading" secondItem="Jjs-7W-cLo" secondAttribute="trailing" constant="42" id="5pX-QP-Tzt"/>
                             <constraint firstItem="WDJ-6S-5Y3" firstAttribute="leading" secondItem="4a5-lJ-QbO" secondAttribute="leading" id="8CV-dS-dUr"/>
                             <constraint firstAttribute="bottomMargin" secondItem="PtS-SF-yl7" secondAttribute="bottom" constant="-37" id="B46-la-Mym"/>
                             <constraint firstItem="PtS-SF-yl7" firstAttribute="width" secondItem="Mv5-VB-TpB" secondAttribute="width" id="CCD-ik-khv"/>
@@ -608,29 +626,29 @@ How do you think others see it?</string>
                             <constraint firstItem="zPR-fI-qoJ" firstAttribute="top" secondItem="4a5-lJ-QbO" secondAttribute="bottom" constant="88" id="KXx-FC-h7V"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sCS-4W-8wn" secondAttribute="trailing" constant="-8" id="L9r-d9-ewm"/>
                             <constraint firstItem="Jjs-7W-cLo" firstAttribute="top" secondItem="Gas-gh-7sj" secondAttribute="bottom" constant="9" id="LVL-hV-8WN"/>
-                            <constraint firstItem="Jjs-7W-cLo" firstAttribute="baseline" secondItem="XKi-Ot-7SM" secondAttribute="firstBaseline" id="Myj-5J-z9R"/>
+                            <constraint firstItem="Jjs-7W-cLo" firstAttribute="baseline" secondItem="XKi-Ot-7SM" secondAttribute="firstBaseline" constant="16.5" id="Myj-5J-z9R"/>
                             <constraint firstItem="zPR-fI-qoJ" firstAttribute="leading" secondItem="Mv5-VB-TpB" secondAttribute="leading" constant="929" identifier="center" id="Osc-TX-68e"/>
                             <constraint firstItem="sCS-4W-8wn" firstAttribute="top" secondItem="JrA-Yx-juQ" secondAttribute="bottom" constant="53" id="Te5-bj-gVo"/>
                             <constraint firstItem="qOs-Jh-MnI" firstAttribute="bottom" secondItem="ZpE-XT-qrG" secondAttribute="bottom" constant="51" id="Thd-zo-tTp"/>
                             <constraint firstItem="ZpE-XT-qrG" firstAttribute="top" secondItem="zi4-9B-9mn" secondAttribute="bottom" constant="76" id="YDi-jn-Dxc"/>
-                            <constraint firstItem="zi4-9B-9mn" firstAttribute="centerX" secondItem="sCS-4W-8wn" secondAttribute="centerX" id="ZEo-mD-WZK"/>
+                            <constraint firstItem="zi4-9B-9mn" firstAttribute="centerX" secondItem="sCS-4W-8wn" secondAttribute="centerX" constant="-2" id="ZEo-mD-WZK"/>
                             <constraint firstItem="XKi-Ot-7SM" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" constant="89" id="adW-BM-viN"/>
                             <constraint firstItem="Gas-gh-7sj" firstAttribute="trailing" secondItem="Jjs-7W-cLo" secondAttribute="trailing" id="bJv-xX-v5h"/>
                             <constraint firstItem="JrA-Yx-juQ" firstAttribute="trailing" secondItem="zi4-9B-9mn" secondAttribute="trailing" constant="-1" id="dOe-eg-SaH"/>
-                            <constraint firstItem="vH6-gT-4jz" firstAttribute="top" secondItem="WDJ-6S-5Y3" secondAttribute="top" id="eGz-6O-JbV"/>
+                            <constraint firstItem="vH6-gT-4jz" firstAttribute="top" secondItem="WDJ-6S-5Y3" secondAttribute="top" constant="-19" id="eGz-6O-JbV"/>
                             <constraint firstItem="gQb-mA-l8B" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" constant="42" id="eIE-R0-Fyo"/>
                             <constraint firstItem="Jjs-7W-cLo" firstAttribute="leading" secondItem="JrA-Yx-juQ" secondAttribute="leading" id="fYI-Lj-Azb"/>
                             <constraint firstItem="Gas-gh-7sj" firstAttribute="leading" secondItem="Jjs-7W-cLo" secondAttribute="leading" id="fa9-Ej-WKF"/>
                             <constraint firstItem="abm-bl-K38" firstAttribute="leading" secondItem="qOs-Jh-MnI" secondAttribute="leading" id="iHq-Ga-Ji2"/>
-                            <constraint firstItem="zi4-9B-9mn" firstAttribute="leading" secondItem="sCS-4W-8wn" secondAttribute="leading" id="l4c-OD-4vd"/>
+                            <constraint firstItem="zi4-9B-9mn" firstAttribute="leading" secondItem="sCS-4W-8wn" secondAttribute="leading" constant="-2" id="l4c-OD-4vd"/>
                             <constraint firstItem="4a5-lJ-QbO" firstAttribute="top" secondItem="vH6-gT-4jz" secondAttribute="bottom" constant="42" id="lTp-dE-hKg"/>
                             <constraint firstItem="abm-bl-K38" firstAttribute="height" secondItem="Mv5-VB-TpB" secondAttribute="height" multiplier="0.498884" id="p49-Dj-Jxw"/>
                             <constraint firstItem="gQb-mA-l8B" firstAttribute="leading" secondItem="WDJ-6S-5Y3" secondAttribute="leading" id="t1a-cW-gNt"/>
                             <constraint firstItem="ZpE-XT-qrG" firstAttribute="centerX" secondItem="Mv5-VB-TpB" secondAttribute="centerX" id="tW0-8i-s71"/>
                             <constraint firstItem="Gas-gh-7sj" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" constant="24" id="x2y-lK-BWr"/>
-                            <constraint firstItem="abm-bl-K38" firstAttribute="width" secondItem="Mv5-VB-TpB" secondAttribute="width" multiplier="3.00483" id="yM6-hk-M8F"/>
+                            <constraint firstItem="abm-bl-K38" firstAttribute="width" secondItem="Mv5-VB-TpB" secondAttribute="width" multiplier="3.00483" constant="27.00037999999995" id="yM6-hk-M8F"/>
                             <constraint firstItem="XKi-Ot-7SM" firstAttribute="baseline" secondItem="vH6-gT-4jz" secondAttribute="baseline" id="yys-ab-pst"/>
-                            <constraint firstItem="zi4-9B-9mn" firstAttribute="leading" secondItem="Mv5-VB-TpB" secondAttribute="leadingMargin" id="zJq-iT-dN3"/>
+                            <constraint firstItem="zi4-9B-9mn" firstAttribute="leading" secondItem="Mv5-VB-TpB" secondAttribute="leadingMargin" constant="-2" id="zJq-iT-dN3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qOs-Jh-MnI"/>
                     </view>
@@ -664,28 +682,28 @@ How do you think others see it?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="RUp-S9-4CD">
-                                <rect key="frame" x="22.5" y="104" width="227" height="44"/>
+                                <rect key="frame" x="10.5" y="124.5" width="241.5" height="47"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="VbA-c6-b5q">
-                                <rect key="frame" x="22.5" y="157" width="369" height="67"/>
+                                <rect key="frame" x="10.5" y="180.5" width="393" height="71"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="bAp-lc-87B">
-                                <rect key="frame" x="24" y="342" width="88" height="55"/>
+                                <rect key="frame" x="24" y="375" width="93.5" height="58.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="fiA-MW-TuO">
-                                <rect key="frame" x="30" y="511.5" width="68" height="68"/>
+                                <rect key="frame" x="30" y="553" width="72.5" height="72.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zigzag" translatesAutoresizingMaskIntoConstraints="NO" id="rJl-hD-wwg">
-                                <rect key="frame" x="23" y="615" width="84" height="36"/>
+                                <rect key="frame" x="23" y="662" width="89.5" height="38.5"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Te-rI-HPa">
-                                <rect key="frame" x="116" y="708.5" width="182" height="55"/>
+                                <rect key="frame" x="110" y="759" width="194" height="58.5"/>
                                 <state key="normal" title="Button" image="nextazzurro"/>
                                 <state key="disabled" image="nextAzzurroSpento"/>
                                 <connections>
@@ -693,13 +711,13 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle" translatesAutoresizingMaskIntoConstraints="NO" id="VsF-9m-vhn">
-                                <rect key="frame" x="27" y="423" width="74" height="69"/>
+                                <rect key="frame" x="27" y="460" width="78.5" height="73.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="SPF-T2-Ny5">
-                                <rect key="frame" x="31" y="248" width="66" height="65"/>
+                                <rect key="frame" x="31.5" y="276" width="70" height="69"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="A3T-Ks-YCR">
-                                <rect key="frame" x="130.5" y="245" width="261" height="71"/>
+                                <rect key="frame" x="125.5" y="272.5" width="278" height="76"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -711,7 +729,7 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RcF-Kg-Q4p">
-                                <rect key="frame" x="130.5" y="510" width="261" height="71"/>
+                                <rect key="frame" x="125.5" y="551.5" width="278" height="75.5"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -723,7 +741,7 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cj7-a4-0Xz">
-                                <rect key="frame" x="130.5" y="334" width="261" height="71"/>
+                                <rect key="frame" x="125.5" y="366.5" width="278" height="75.5"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -735,7 +753,7 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="61O-Bn-xRC">
-                                <rect key="frame" x="130.5" y="597.5" width="261" height="71"/>
+                                <rect key="frame" x="125.5" y="643.5" width="278" height="75.5"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -747,7 +765,7 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DJU-JS-gID">
-                                <rect key="frame" x="130.5" y="422" width="261" height="71"/>
+                                <rect key="frame" x="125.5" y="459" width="278" height="75.5"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -853,7 +871,7 @@ How do you think others see it?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wSE-1b-OHo">
-                                <rect key="frame" x="125.5" y="275.5" width="278" height="76"/>
+                                <rect key="frame" x="130.5" y="248" width="261" height="71"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -863,7 +881,7 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwR-8A-D92">
-                                <rect key="frame" x="110" y="760" width="194" height="58.5"/>
+                                <rect key="frame" x="116" y="709.5" width="182" height="55"/>
                                 <state key="normal" title="Button" image="nextazzurro"/>
                                 <state key="disabled" image="nextAzzurroSpento"/>
                                 <state key="selected" image="nextazzurro"/>
@@ -872,34 +890,34 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 2/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Uxd-xB-7qe">
-                                <rect key="frame" x="10.5" y="116.5" width="253.5" height="59"/>
+                                <rect key="frame" x="22.5" y="98" width="238" height="55"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="MH9-I4-rkS">
-                                <rect key="frame" x="10.5" y="177.5" width="393" height="90"/>
+                                <rect key="frame" x="22.5" y="155" width="369" height="85"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="xuO-Ut-Xmp">
-                                <rect key="frame" x="24" y="378" width="93.5" height="58.5"/>
+                                <rect key="frame" x="24" y="345" width="88" height="55"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="jAF-iZ-Q55">
-                                <rect key="frame" x="30" y="556" width="72.5" height="72.5"/>
+                                <rect key="frame" x="30" y="514.5" width="68" height="68"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zigzag" translatesAutoresizingMaskIntoConstraints="NO" id="CmV-SR-trQ">
-                                <rect key="frame" x="23" y="665" width="89.5" height="38.5"/>
+                                <rect key="frame" x="23" y="618" width="84" height="36"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle" translatesAutoresizingMaskIntoConstraints="NO" id="z4P-mb-XrO">
-                                <rect key="frame" x="27" y="463" width="78.5" height="73.5"/>
+                                <rect key="frame" x="27" y="426" width="74" height="69"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="6Kw-k6-rOH">
-                                <rect key="frame" x="31.5" y="279" width="70" height="69"/>
+                                <rect key="frame" x="31" y="251" width="66" height="65"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="idm-Vm-ofd">
-                                <rect key="frame" x="125.5" y="369.5" width="278" height="75.5"/>
+                                <rect key="frame" x="130.5" y="337" width="261" height="71"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -909,7 +927,7 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="IPH-La-4u4">
-                                <rect key="frame" x="125.5" y="646.5" width="278" height="75.5"/>
+                                <rect key="frame" x="130.5" y="600.5" width="261" height="71"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -919,7 +937,7 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uCS-Vx-npP">
-                                <rect key="frame" x="125.5" y="462" width="278" height="75.5"/>
+                                <rect key="frame" x="130.5" y="425" width="261" height="71"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -929,7 +947,7 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="B71-RY-kN2">
-                                <rect key="frame" x="125.5" y="554.5" width="278" height="75.5"/>
+                                <rect key="frame" x="130.5" y="513" width="261" height="71"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -1033,7 +1051,7 @@ How do you think others see it?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="m8e-tD-btm">
-                                <rect key="frame" x="134.5" y="320.5" width="278" height="75.5"/>
+                                <rect key="frame" x="129" y="284.5" width="261" height="71"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Cool colors" backgroundImage="QuestionSpento">
@@ -1048,7 +1066,7 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Hot-ON-zvu">
-                                <rect key="frame" x="134.5" y="445" width="278" height="75.5"/>
+                                <rect key="frame" x="129" y="403.5" width="261" height="71"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Warm colors" backgroundImage="QuestionSpento">
@@ -1063,7 +1081,7 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="53f-Wh-VQP">
-                                <rect key="frame" x="134.5" y="567" width="278" height="75.5"/>
+                                <rect key="frame" x="129" y="521" width="261" height="71"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Neutrals" backgroundImage="QuestionSpento">
@@ -1078,28 +1096,28 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secondaPalette" translatesAutoresizingMaskIntoConstraints="NO" id="XXN-5B-Ifl">
-                                <rect key="frame" x="18" y="436.5" width="92.5" height="92.5"/>
+                                <rect key="frame" x="18" y="395.5" width="87" height="87"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="primaPalette" translatesAutoresizingMaskIntoConstraints="NO" id="TDh-Qc-oA1">
-                                <rect key="frame" x="18" y="312" width="92.5" height="92.5"/>
+                                <rect key="frame" x="18" y="276.5" width="87" height="87"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="terzaPalette" translatesAutoresizingMaskIntoConstraints="NO" id="cJg-DJ-qS8">
-                                <rect key="frame" x="18" y="561" width="92.5" height="92.5"/>
+                                <rect key="frame" x="18" y="514.5" width="87" height="87"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 3/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="daP-9o-FJm">
-                                <rect key="frame" x="22" y="127.5" width="250" height="54.5"/>
+                                <rect key="frame" x="22" y="101" width="235" height="51"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="uW9-br-Aoz">
-                                <rect key="frame" x="22" y="189" width="398" height="90.5"/>
+                                <rect key="frame" x="22" y="159" width="374" height="85"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2t-hU-7Lg">
-                                <rect key="frame" x="116" y="761.5" width="196" height="58.5"/>
+                                <rect key="frame" x="116" y="711" width="184" height="55"/>
                                 <state key="normal" title="Button" image="nextazzurro"/>
                                 <state key="disabled" image="nextAzzurroSpento"/>
                                 <connections>
@@ -1179,25 +1197,25 @@ How do you think others see it?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jE3-g0-hTy">
-                                <rect key="frame" x="0.0" y="88" width="0.0" height="0.0"/>
+                                <rect key="frame" x="0.0" y="88" width="440.5" height="896.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Textile" translatesAutoresizingMaskIntoConstraints="NO" id="eP9-YF-Agc">
-                                        <rect key="frame" x="22" y="-141.5" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="22" y="458" width="80" height="81"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crater" translatesAutoresizingMaskIntoConstraints="NO" id="3Uf-Yt-Gwb">
-                                        <rect key="frame" x="22" y="-153" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="22" y="367" width="80" height="79.5"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sea" translatesAutoresizingMaskIntoConstraints="NO" id="YBv-BC-Bzc">
-                                        <rect key="frame" x="22" y="-165.5" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="22" y="273.5" width="80" height="81"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="wood" translatesAutoresizingMaskIntoConstraints="NO" id="SNQ-KO-nnh">
-                                        <rect key="frame" x="22" y="-117" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="22" y="643.5" width="80" height="79.5"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marble" translatesAutoresizingMaskIntoConstraints="NO" id="57U-4M-5nY">
-                                        <rect key="frame" x="22" y="-129" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="22" y="551.5" width="80" height="80"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nTf-2F-YIf">
-                                        <rect key="frame" x="55" y="-117" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="135" y="645.5" width="278" height="75.5"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Wood" backgroundImage="QuestionSpento">
@@ -1210,7 +1228,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kqu-2o-qXn">
-                                        <rect key="frame" x="55" y="-165" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="135" y="274" width="278" height="75.5"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Sea" backgroundImage="QuestionSpento">
@@ -1223,7 +1241,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="CrL-CA-bOp">
-                                        <rect key="frame" x="55" y="-153" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="135" y="367" width="278" height="75.5"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Crater" backgroundImage="QuestionSpento">
@@ -1236,7 +1254,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="YRS-3h-hAc">
-                                        <rect key="frame" x="55" y="-141.5" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="135" y="461" width="278" height="75.5"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Textile fiber" backgroundImage="QuestionSpento">
@@ -1249,7 +1267,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bxN-yg-fPW">
-                                        <rect key="frame" x="55" y="-129" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="135" y="553.5" width="278" height="75.5"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Marble" backgroundImage="QuestionSpento">
@@ -1262,7 +1280,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4O-Qz-X11">
-                                        <rect key="frame" x="0.0" y="-77" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="123.5" y="761" width="193.5" height="58.5"/>
                                         <state key="normal" title="Button" image="submitAzzurro"/>
                                         <state key="disabled" image="submitAzzurroSpento"/>
                                         <connections>
@@ -1270,13 +1288,13 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 4/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Lej-tX-y6u">
-                                        <rect key="frame" x="22" y="-179.5" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="22" y="118" width="252.5" height="51"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="mIk-Xe-oy0">
-                                        <rect key="frame" x="22" y="-174.5" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="22" y="174" width="406.5" height="90.5"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -1352,15 +1370,16 @@ How do you think others see it?</string>
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaT-OJ-lJp">
+                                <rect key="frame" x="0.0" y="0.0" width="440.5" height="896"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submit answers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="iqq-Hd-Wwa">
-                                        <rect key="frame" x="76" y="324" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="87" y="324" width="251.5" height="34"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="32"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="kHH-QA-nou">
-                                        <rect key="frame" x="76" y="338" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="76" y="372" width="273.5" height="47"/>
                                         <string key="text">Are you sure about 
 all the answers you gave?</string>
                                         <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
@@ -1368,20 +1387,20 @@ all the answers you gave?</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forma1 - Forma2 - Palette - Texture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="RDd-Fb-aqK">
-                                        <rect key="frame" x="0.0" y="369" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="450" width="440.5" height="21"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="20"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOD-j0-7tp">
-                                        <rect key="frame" x="74" y="405" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="74" y="507" width="124.5" height="58.5"/>
                                         <state key="normal" title=" " image="yesAzzurro"/>
                                         <connections>
                                             <segue destination="hvR-kH-wNA" kind="show" id="2x3-ds-s6Q"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tz3-ol-La9">
-                                        <rect key="frame" x="103" y="405" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="227.5" y="507" width="133" height="58.5"/>
                                         <state key="normal" title=" " image="noAzzurro"/>
                                         <connections>
                                             <segue destination="GG3-f1-cQ8" kind="show" id="Cab-pX-8BL"/>
@@ -1576,28 +1595,28 @@ all the answers you gave?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Before starting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kk1-iP-iA2">
-                                <rect key="frame" x="22" y="90" width="369" height="38"/>
+                                <rect key="frame" x="22" y="90" width="369" height="47"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="K1n-3R-npH"/>
+                                    <constraint firstAttribute="height" constant="47" id="K1n-3R-npH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
+                                <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#skinsugi is a place to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Pt-cQ-xmf">
-                                <rect key="frame" x="22" y="134" width="287" height="22"/>
+                                <rect key="frame" x="22" y="141" width="286" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="JDC-LS-hhj"/>
+                                    <constraint firstAttribute="height" constant="25" id="JDC-LS-hhj"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 48" translatesAutoresizingMaskIntoConstraints="NO" id="qyN-qn-MDu">
-                                <rect key="frame" x="-47" y="286" width="508" height="518"/>
+                                <rect key="frame" x="-47" y="289" width="508" height="515"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="illustrazione3" translatesAutoresizingMaskIntoConstraints="NO" id="hAV-t5-bhq">
-                                <rect key="frame" x="17" y="274" width="375" height="442"/>
+                                <rect key="frame" x="17" y="277" width="378" height="439"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDm-7l-7cl">
                                 <rect key="frame" x="116" y="752" width="182" height="55"/>
@@ -1610,59 +1629,45 @@ all the answers you gave?</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ixb-PM-dG4">
-                                <rect key="frame" x="304" y="729" width="110" height="142"/>
+                                <rect key="frame" x="281" y="711" width="131" height="160"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg2-FW-cMy">
-                                <rect key="frame" x="22" y="182" width="378" height="84"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg2-FW-cMy">
+                                <rect key="frame" x="20" y="170" width="378" height="105"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="yRs-Rh-rVW"/>
+                                    <constraint firstAttribute="height" constant="105" id="yRs-Rh-rVW"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">By telling the story of your indelible sign
+                                <string key="text">By telling the story of your indelible sign
 you can change the way you look at
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.6588235294117647" green="0.6588235294117647" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="20" name="CeraPro-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="your body and others’s bodies.">
-                                        <attributes>
-                                            <color key="NSColor" red="0.6588235294117647" green="0.6588235294117647" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="20" name="CeraPro-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+your body and others’s bodies.</string>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aDm-7l-7cl" firstAttribute="top" secondItem="hAV-t5-bhq" secondAttribute="bottom" constant="36" id="0j1-iN-yAO"/>
-                            <constraint firstItem="cg2-FW-cMy" firstAttribute="leading" secondItem="6Pt-cQ-xmf" secondAttribute="leading" id="11y-LT-GMj"/>
-                            <constraint firstItem="ixb-PM-dG4" firstAttribute="leading" secondItem="aDm-7l-7cl" secondAttribute="trailing" constant="6" id="56Z-5d-mSI"/>
-                            <constraint firstItem="cg2-FW-cMy" firstAttribute="top" secondItem="6Pt-cQ-xmf" secondAttribute="bottom" constant="26" id="5rW-no-eXY"/>
+                            <constraint firstItem="cg2-FW-cMy" firstAttribute="leading" secondItem="6Pt-cQ-xmf" secondAttribute="leading" constant="-2" id="11y-LT-GMj"/>
+                            <constraint firstItem="ixb-PM-dG4" firstAttribute="leading" secondItem="aDm-7l-7cl" secondAttribute="trailing" constant="-17" id="56Z-5d-mSI"/>
+                            <constraint firstItem="cg2-FW-cMy" firstAttribute="top" secondItem="6Pt-cQ-xmf" secondAttribute="bottom" constant="4" id="5rW-no-eXY"/>
                             <constraint firstItem="kk1-iP-iA2" firstAttribute="top" secondItem="Iue-cf-wZh" secondAttribute="top" constant="90" id="7ym-xA-BqC"/>
                             <constraint firstItem="kk1-iP-iA2" firstAttribute="centerX" secondItem="Iue-cf-wZh" secondAttribute="centerX" id="8js-B1-cSf"/>
                             <constraint firstItem="kk1-iP-iA2" firstAttribute="leading" secondItem="6Pt-cQ-xmf" secondAttribute="leading" id="8v3-HF-ZHZ"/>
-                            <constraint firstItem="ixb-PM-dG4" firstAttribute="trailing" secondItem="l8Y-Og-dtE" secondAttribute="trailing" id="BtH-tG-jW7"/>
+                            <constraint firstItem="ixb-PM-dG4" firstAttribute="trailing" secondItem="l8Y-Og-dtE" secondAttribute="trailing" constant="-2" id="BtH-tG-jW7"/>
                             <constraint firstItem="l8Y-Og-dtE" firstAttribute="bottom" secondItem="aDm-7l-7cl" secondAttribute="bottom" constant="55" id="Hso-9S-wiu"/>
                             <constraint firstAttribute="bottomMargin" secondItem="ixb-PM-dG4" secondAttribute="bottom" constant="-9" id="MiA-pd-YJx"/>
-                            <constraint firstItem="l8Y-Og-dtE" firstAttribute="trailing" secondItem="cg2-FW-cMy" secondAttribute="trailing" constant="14" id="Rri-N3-iXl"/>
-                            <constraint firstItem="hAV-t5-bhq" firstAttribute="top" secondItem="cg2-FW-cMy" secondAttribute="bottom" constant="8" id="XQh-qk-WrY"/>
+                            <constraint firstItem="l8Y-Og-dtE" firstAttribute="trailing" secondItem="cg2-FW-cMy" secondAttribute="trailing" constant="16" id="Rri-N3-iXl"/>
+                            <constraint firstItem="hAV-t5-bhq" firstAttribute="top" secondItem="cg2-FW-cMy" secondAttribute="bottom" constant="2" id="XQh-qk-WrY"/>
                             <constraint firstItem="kk1-iP-iA2" firstAttribute="centerX" secondItem="qyN-qn-MDu" secondAttribute="centerX" id="bSD-uA-TGr"/>
                             <constraint firstItem="kk1-iP-iA2" firstAttribute="leading" secondItem="l8Y-Og-dtE" secondAttribute="leading" constant="22" id="dWK-Dx-Ety"/>
                             <constraint firstItem="aDm-7l-7cl" firstAttribute="centerX" secondItem="Iue-cf-wZh" secondAttribute="centerX" id="fa8-nF-GHL"/>
-                            <constraint firstItem="qyN-qn-MDu" firstAttribute="top" secondItem="cg2-FW-cMy" secondAttribute="bottom" constant="20" id="l6g-lf-hnC"/>
-                            <constraint firstItem="6Pt-cQ-xmf" firstAttribute="top" secondItem="kk1-iP-iA2" secondAttribute="bottom" constant="6" id="mKf-uz-BHW"/>
+                            <constraint firstItem="qyN-qn-MDu" firstAttribute="top" secondItem="cg2-FW-cMy" secondAttribute="bottom" constant="14" id="l6g-lf-hnC"/>
+                            <constraint firstItem="6Pt-cQ-xmf" firstAttribute="top" secondItem="kk1-iP-iA2" secondAttribute="bottom" constant="4" id="mKf-uz-BHW"/>
                             <constraint firstItem="hAV-t5-bhq" firstAttribute="leading" secondItem="l8Y-Og-dtE" secondAttribute="leading" constant="17" id="mNp-gf-w05"/>
-                            <constraint firstItem="kk1-iP-iA2" firstAttribute="trailing" secondItem="hAV-t5-bhq" secondAttribute="trailing" id="rRc-dx-esk"/>
+                            <constraint firstItem="kk1-iP-iA2" firstAttribute="trailing" secondItem="hAV-t5-bhq" secondAttribute="trailing" constant="-3" id="rRc-dx-esk"/>
                             <constraint firstItem="l8Y-Og-dtE" firstAttribute="bottom" secondItem="qyN-qn-MDu" secondAttribute="bottom" constant="58" id="rz2-vE-4pt"/>
-                            <constraint firstItem="ixb-PM-dG4" firstAttribute="top" secondItem="hAV-t5-bhq" secondAttribute="bottom" constant="13" id="tCu-2a-CAm"/>
+                            <constraint firstItem="ixb-PM-dG4" firstAttribute="top" secondItem="hAV-t5-bhq" secondAttribute="bottom" constant="-5" id="tCu-2a-CAm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="l8Y-Og-dtE"/>
                     </view>
@@ -2139,7 +2144,7 @@ you can change the way you look at
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOo-wB-kmc">
-                                <rect key="frame" x="352" y="141" width="36" height="40"/>
+                                <rect key="frame" x="352" y="141" width="36" height="46.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="36" id="g7T-Mg-eUZ"/>
                                 </constraints>
@@ -2296,7 +2301,7 @@ you can change the way you look at
                                 <viewLayoutGuide key="frameLayoutGuide" id="ymt-6W-zKb"/>
                             </scrollView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u6C-90-pJx">
-                                <rect key="frame" x="0.0" y="263" width="414" height="586"/>
+                                <rect key="frame" x="0.0" y="269.5" width="414" height="586"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="jtl-uh-CSj"/>
@@ -2456,7 +2461,7 @@ you can change the way you look at
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCe-mq-vgd">
-                                <rect key="frame" x="22" y="141" width="140" height="38"/>
+                                <rect key="frame" x="22" y="141" width="132.5" height="44.5"/>
                                 <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -3464,20 +3469,21 @@ The two shapes on the outside recount </string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="47n-ms-sJd"/>
-        <segue reference="wd9-1W-xO2"/>
+        <segue reference="s1A-7h-Aw8"/>
         <segue reference="GPg-NV-9UE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2-" width="101.5" height="101.5"/>
         <image name="CAr" width="267" height="267"/>
-        <image name="DoneSpento" width="182" height="55"/>
+        <image name="Done" width="182" height="55"/>
+        <image name="DoneN" width="182" height="55"/>
         <image name="GenerateAgain" width="263" height="55"/>
         <image name="Group 48" width="508" height="518"/>
         <image name="IllustrazionePerBlur" width="370" height="600"/>
         <image name="Item1" width="29" height="27"/>
         <image name="Item2" width="26" height="22"/>
         <image name="Item3" width="29" height="29"/>
-        <image name="Let'sgo" width="194" height="55"/>
+        <image name="Let'sgo" width="196" height="55"/>
         <image name="Lettsegoazzurro" width="182" height="55"/>
         <image name="MakePhoto" width="98" height="94"/>
         <image name="Onboarding1" width="3740" height="1350"/>
@@ -3489,7 +3495,7 @@ The two shapes on the outside recount </string>
         <image name="ShareLungo" width="263" height="55"/>
         <image name="Skip" width="98" height="94"/>
         <image name="Start" width="182" height="55"/>
-        <image name="StartSpento" width="182" height="55"/>
+        <image name="StartN" width="182" height="55"/>
         <image name="TCAzz" width="230" height="230"/>
         <image name="Textile" width="168" height="168"/>
         <image name="Weekly1" width="185" height="300"/>
@@ -3503,7 +3509,6 @@ The two shapes on the outside recount </string>
         <image name="crater" width="168" height="168"/>
         <image name="deselected" width="374" height="76"/>
         <image name="div" width="415" height="144"/>
-        <image name="done" width="182" height="55"/>
         <image name="download" width="54" height="54"/>
         <image name="frecciaBack" width="14" height="25"/>
         <image name="illustrazione3" width="376" height="444"/>

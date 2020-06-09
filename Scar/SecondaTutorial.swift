@@ -41,6 +41,7 @@ class SecondaTutorial : UIViewController {
         TerzaLabel.text = "By telling the story of your indelible sign you can change the way you look at your body and others’s bodies."
         TiziaBionda.alpha = 0
         button.alpha = 0
+        
     }
     
     @objc func handleTap(){

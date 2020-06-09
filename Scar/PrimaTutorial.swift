@@ -370,7 +370,6 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             button1.isEnabled = true
         } else{
             button1.isEnabled = false
-
         }
     }
     func controllo2(){

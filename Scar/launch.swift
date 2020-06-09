@@ -20,7 +20,8 @@ class launch: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.img.loadGif(name: "TimelineAnimated")
-        let seconds = 4.0
+        
+        let seconds = 2.5
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             if UserDefaults.standard.bool(forKey: "LaunchedBefore") {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -33,6 +34,7 @@ class launch: UIViewController{
                 self.navigationController?.view.semanticContentAttribute = .forceLeftToRight
                 self.navigationController?.pushViewController(secondVC, animated: true)
             }
+            
         }
     }
 }
