@@ -17,14 +17,8 @@
         <array key="Cera Pro Light.otf">
             <string>CeraPro-Light</string>
         </array>
-        <array key="Cera Pro Medium Italic.otf">
-            <string>CeraPro-MediumItalic</string>
-        </array>
         <array key="Cera Pro Medium.otf">
             <string>CeraPro-Medium</string>
-        </array>
-        <array key="Cera Pro Regular Italic.otf">
-            <string>CeraPro-Italic</string>
         </array>
         <array key="Cera Pro Regular.otf">
             <string>CeraPro-Regular</string>
@@ -401,7 +395,7 @@ Masterpiece!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Onboarding1" translatesAutoresizingMaskIntoConstraints="NO" id="abm-bl-K38">
-                                <rect key="frame" x="0.0" y="-6.5" width="1271" height="447"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1271" height="447"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is Skinsugi!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gas-gh-7sj">
                                 <rect key="frame" x="20" y="471" width="384" height="56"/>
@@ -416,13 +410,13 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-gT-4jz">
-                                <rect key="frame" x="848" y="527.5" width="303" height="23"/>
+                                <rect key="frame" x="848" y="531" width="303" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JrA-Yx-juQ">
-                                <rect key="frame" x="20" y="600" width="379" height="26"/>
+                                <rect key="frame" x="20" y="604" width="379" height="22"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -447,7 +441,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PtS-SF-yl7">
-                                <rect key="frame" x="414" y="440.5" width="414" height="458.5"/>
+                                <rect key="frame" x="414" y="447" width="414" height="452"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell1" rowHeight="120" id="Q0F-YJ-7d9" customClass="Cella1" customModule="Skinsugi" customModuleProvider="target">
@@ -458,13 +452,13 @@ Masterpiece!</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, Sigafreda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ywt-KN-qf8">
-                                                    <rect key="frame" x="22" y="34" width="219" height="44.5"/>
+                                                    <rect key="frame" x="22" y="34" width="244" height="49"/>
                                                     <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                                     <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SzM-f1-Yon">
-                                                    <rect key="frame" x="22" y="92.5" width="337.5" height="26"/>
+                                                    <rect key="frame" x="22" y="97" width="349" height="22"/>
                                                     <string key="text">Tell us what inspires you the most.
 </string>
                                                     <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
@@ -558,7 +552,7 @@ Masterpiece!</string>
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last step" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gQb-mA-l8B">
-                                <rect key="frame" x="850" y="482.5" width="205" height="47"/>
+                                <rect key="frame" x="850" y="489" width="205" height="51.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="205" id="RAB-jc-mIn"/>
                                 </constraints>
@@ -567,13 +561,13 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WDJ-6S-5Y3">
-                                <rect key="frame" x="850" y="546.5" width="304" height="22.5"/>
+                                <rect key="frame" x="850" y="550" width="317.5" height="19"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="19"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
-                                <rect key="frame" x="850" y="592.5" width="346" height="77"/>
+                                <rect key="frame" x="850" y="596" width="346" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="346" id="WAl-jz-akH"/>
                                 </constraints>
@@ -585,7 +579,7 @@ How do you think others see it?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-fI-qoJ">
-                                <rect key="frame" x="929" y="757.5" width="194" height="55"/>
+                                <rect key="frame" x="929" y="750" width="194" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" identifier="larg" id="R1p-r1-OP1"/>
                                     <constraint firstAttribute="height" constant="55" identifier="altezza" id="g45-2c-k21"/>
@@ -1878,14 +1872,14 @@ your body and others’s bodies.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="241.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Good " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wg-V5-aIC">
-                                <rect key="frame" x="25" y="116" width="281" height="24"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="24"/>
+                                <rect key="frame" x="25" y="113.5" width="281" height="24"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v02-uU-l8R">
-                                <rect key="frame" x="22" y="266" width="372" height="25.5"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="25"/>
+                                <rect key="frame" x="22" y="252.5" width="372" height="42"/>
+                                <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="25"/>
                                 <color key="textColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
@@ -1946,12 +1940,12 @@ your body and others’s bodies.</string>
                                     <outlet property="dataSource" destination="bpt-qr-c5A" id="87F-LV-qUa"/>
                                 </connections>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puv-vE-VcP">
-                                <rect key="frame" x="25" y="508.5" width="78" height="25.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" misplaced="YES" text="Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puv-vE-VcP">
+                                <rect key="frame" x="25" y="494" width="78" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="78" id="EN3-B6-WJe"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="25"/>
                                 <color key="textColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1965,8 +1959,8 @@ your body and others’s bodies.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Nice work! Keep on going" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71W-Ns-qfS">
-                                <rect key="frame" x="22" y="305" width="372" height="18"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="18"/>
+                                <rect key="frame" x="22" y="300" width="372" height="24"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                 <color key="textColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1982,7 +1976,7 @@ your body and others’s bodies.</string>
                                     <fragment content="Qua ci vanno le stronzate di francesca">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name="CeraPro-Light"/>
+                                            <font key="NSFont" size="18" name="NexaLight"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1990,20 +1984,20 @@ your body and others’s bodies.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Ready for a boost of self-esteem?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOt-Hk-MoG">
-                                <rect key="frame" x="25" y="200" width="369" height="37"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Italic" family="Cera Pro" pointSize="18"/>
+                                <rect key="frame" x="25" y="199.5" width="369" height="37"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZ3-f6-Ny2">
-                                <rect key="frame" x="25" y="140" width="281" height="45"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="45"/>
+                                <rect key="frame" x="25" y="137.5" width="281" height="58"/>
+                                <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week n." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anp-qr-svT">
-                                <rect key="frame" x="102" y="508" width="98.5" height="26"/>
-                                <fontDescription key="fontDescription" name="CeraPro-MediumItalic" family="Cera Pro" pointSize="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Week n." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anp-qr-svT">
+                                <rect key="frame" x="102" y="494" width="99" height="40"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="26"/>
                                 <color key="textColor" red="0.1808693707" green="0.16262713070000001" blue="0.2000525594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2012,14 +2006,14 @@ your body and others’s bodies.</string>
                         <constraints>
                             <constraint firstItem="hOt-Hk-MoG" firstAttribute="width" secondItem="4YE-cF-0EA" secondAttribute="width" multiplier="0.678744" constant="88" id="0UG-me-Ck7"/>
                             <constraint firstItem="fYq-XF-b71" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="310.5" id="0sB-JG-82v"/>
-                            <constraint firstItem="v02-uU-l8R" firstAttribute="height" secondItem="4YE-cF-0EA" secondAttribute="height" multiplier="0.0284598" id="2EH-rR-HME"/>
-                            <constraint firstItem="v02-uU-l8R" firstAttribute="bottom" secondItem="71W-Ns-qfS" secondAttribute="top" constant="-13.5" id="2bs-0E-JY2"/>
+                            <constraint firstItem="v02-uU-l8R" firstAttribute="height" secondItem="4YE-cF-0EA" secondAttribute="height" multiplier="0.0284598" constant="16.500019200000001" id="2EH-rR-HME"/>
+                            <constraint firstItem="v02-uU-l8R" firstAttribute="bottom" secondItem="71W-Ns-qfS" secondAttribute="top" constant="-5.5" id="2bs-0E-JY2"/>
                             <constraint firstItem="fWY-uv-LMG" firstAttribute="bottom" secondItem="mqk-Ya-Xpd" secondAttribute="top" constant="-33" id="3ST-nY-jpc"/>
                             <constraint firstItem="yHf-AX-5ZQ" firstAttribute="trailing" secondItem="M1P-wk-6qy" secondAttribute="trailing" id="3Yz-IQ-97l"/>
                             <constraint firstItem="hOt-Hk-MoG" firstAttribute="height" secondItem="4YE-cF-0EA" secondAttribute="height" multiplier="0.0412946" id="5ar-FZ-2Wc"/>
                             <constraint firstItem="yHf-AX-5ZQ" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" id="6Ck-wp-b0i"/>
                             <constraint firstItem="cZ3-f6-Ny2" firstAttribute="width" secondItem="4YE-cF-0EA" secondAttribute="width" multiplier="0.678744" id="6sm-pf-b87"/>
-                            <constraint firstItem="71W-Ns-qfS" firstAttribute="height" secondItem="4YE-cF-0EA" secondAttribute="height" multiplier="0.0200893" id="87N-pv-Hvt"/>
+                            <constraint firstItem="71W-Ns-qfS" firstAttribute="height" secondItem="4YE-cF-0EA" secondAttribute="height" multiplier="0.0200893" constant="5.9999871999999996" id="87N-pv-Hvt"/>
                             <constraint firstItem="cZ3-f6-Ny2" firstAttribute="trailing" secondItem="hOt-Hk-MoG" secondAttribute="trailing" constant="-88" id="8BW-MW-nJU"/>
                             <constraint firstItem="61N-a8-v0d" firstAttribute="top" secondItem="puv-vE-VcP" secondAttribute="bottom" constant="-7" id="9n8-Mh-iBB"/>
                             <constraint firstItem="mqk-Ya-Xpd" firstAttribute="height" secondItem="4YE-cF-0EA" secondAttribute="height" multiplier="0.334821" constant="-21" id="Cfz-WQ-RVs"/>
@@ -2034,14 +2028,14 @@ your body and others’s bodies.</string>
                             <constraint firstItem="yHf-AX-5ZQ" firstAttribute="width" secondItem="4YE-cF-0EA" secondAttribute="width" id="JHc-Uf-y1L"/>
                             <constraint firstItem="puv-vE-VcP" firstAttribute="leading" secondItem="hOt-Hk-MoG" secondAttribute="leading" id="LXs-8X-56z"/>
                             <constraint firstItem="hOt-Hk-MoG" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="25" id="Lb5-7N-fuB"/>
-                            <constraint firstItem="cZ3-f6-Ny2" firstAttribute="bottom" secondItem="hOt-Hk-MoG" secondAttribute="top" constant="-15" id="LdB-Ve-2kB"/>
+                            <constraint firstItem="cZ3-f6-Ny2" firstAttribute="bottom" secondItem="hOt-Hk-MoG" secondAttribute="top" constant="-4" id="LdB-Ve-2kB"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="trailing" secondItem="mqk-Ya-Xpd" secondAttribute="trailing" constant="10" id="Lyd-65-nFh"/>
                             <constraint firstItem="0Wg-V5-aIC" firstAttribute="width" secondItem="4YE-cF-0EA" secondAttribute="width" multiplier="0.678744" id="Mle-SM-UF4"/>
                             <constraint firstItem="mqk-Ya-Xpd" firstAttribute="leading" secondItem="61N-a8-v0d" secondAttribute="trailing" constant="1" id="NAd-O3-rhW"/>
                             <constraint firstItem="fYq-XF-b71" firstAttribute="top" secondItem="4YE-cF-0EA" secondAttribute="topMargin" constant="-0.5" id="PIh-FU-cd4"/>
                             <constraint firstItem="61N-a8-v0d" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="24" id="QYJ-bE-krj"/>
-                            <constraint firstItem="71W-Ns-qfS" firstAttribute="bottom" secondItem="fWY-uv-LMG" secondAttribute="top" constant="-11" id="Tfp-Xh-dNz"/>
-                            <constraint firstItem="hOt-Hk-MoG" firstAttribute="bottom" secondItem="v02-uU-l8R" secondAttribute="top" constant="-29" id="XUQ-4s-JRi"/>
+                            <constraint firstItem="71W-Ns-qfS" firstAttribute="bottom" secondItem="fWY-uv-LMG" secondAttribute="top" constant="-10" id="Tfp-Xh-dNz"/>
+                            <constraint firstItem="hOt-Hk-MoG" firstAttribute="bottom" secondItem="v02-uU-l8R" secondAttribute="top" constant="-16" id="XUQ-4s-JRi"/>
                             <constraint firstItem="cZ3-f6-Ny2" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="25" id="Xsm-Rj-Li5"/>
                             <constraint firstItem="0Wg-V5-aIC" firstAttribute="height" secondItem="4YE-cF-0EA" secondAttribute="height" multiplier="0.0267857" id="Ykp-ew-iiL"/>
                             <constraint firstItem="0Wg-V5-aIC" firstAttribute="bottom" secondItem="cZ3-f6-Ny2" secondAttribute="top" id="bx5-CO-bHA"/>
@@ -2137,14 +2131,14 @@ your body and others’s bodies.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="div" translatesAutoresizingMaskIntoConstraints="NO" id="RZj-ub-Qfp">
-                                <rect key="frame" x="-13" y="51" width="434" height="198"/>
+                                <rect key="frame" x="-13" y="61" width="434" height="198"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="434" id="M45-wa-wld"/>
                                     <constraint firstAttribute="height" constant="198" id="sX7-Cq-hPS"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOo-wB-kmc">
-                                <rect key="frame" x="352" y="141" width="36" height="46.5"/>
+                                <rect key="frame" x="352" y="141" width="36" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="36" id="g7T-Mg-eUZ"/>
                                 </constraints>
@@ -2301,7 +2295,7 @@ your body and others’s bodies.</string>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ymt-6W-zKb"/>
                             </scrollView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u6C-90-pJx">
-                                <rect key="frame" x="0.0" y="269.5" width="414" height="586"/>
+                                <rect key="frame" x="0.0" y="274" width="414" height="586"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="jtl-uh-CSj"/>
@@ -2330,7 +2324,7 @@ your body and others’s bodies.</string>
                                                         <fragment content="Label">
                                                             <attributes>
                                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="18" name="CeraPro-Light"/>
+                                                                <font key="NSFont" size="18" name="NexaTextDemo-Light"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
@@ -2339,7 +2333,7 @@ your body and others’s bodies.</string>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="y9q-2C-HRN">
                                                     <rect key="frame" x="36" y="85" width="326" height="15"/>
-                                                    <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2360,7 +2354,7 @@ your body and others’s bodies.</string>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eqz-fq-sWa">
                                                     <rect key="frame" x="36" y="21" width="330" height="58"/>
-                                                    <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="30"/>
+                                                    <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="30"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2425,7 +2419,7 @@ your body and others’s bodies.</string>
                                                         <fragment content="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
                                                             <attributes>
                                                                 <color key="NSColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="9" name="CeraPro-Light"/>
+                                                                <font key="NSFont" size="9" name="NexaTextDemo-Light"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
@@ -2461,8 +2455,8 @@ your body and others’s bodies.</string>
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCe-mq-vgd">
-                                <rect key="frame" x="22" y="141" width="132.5" height="44.5"/>
-                                <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="38"/>
+                                <rect key="frame" x="22" y="141" width="145" height="49"/>
+                                <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2478,7 +2472,7 @@ your body and others’s bodies.</string>
                             <constraint firstItem="ZS4-u3-Tl0" firstAttribute="leading" secondItem="9Ch-hi-KT7" secondAttribute="leading" constant="20" id="AsW-yc-bW2"/>
                             <constraint firstItem="MOo-wB-kmc" firstAttribute="top" secondItem="mCe-mq-vgd" secondAttribute="top" id="Ht0-60-ABg"/>
                             <constraint firstItem="9Ch-hi-KT7" firstAttribute="trailing" secondItem="u6C-90-pJx" secondAttribute="trailing" id="ID5-bh-Cva"/>
-                            <constraint firstItem="RZj-ub-Qfp" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="-37" id="Lgw-CJ-BHB"/>
+                            <constraint firstItem="RZj-ub-Qfp" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="-27" id="Lgw-CJ-BHB"/>
                             <constraint firstItem="ZS4-u3-Tl0" firstAttribute="top" secondItem="MOo-wB-kmc" secondAttribute="bottom" constant="26" id="Qf8-Hx-BiM"/>
                             <constraint firstItem="u6C-90-pJx" firstAttribute="top" secondItem="ZS4-u3-Tl0" secondAttribute="bottom" constant="2" id="Y3f-RT-jW6"/>
                             <constraint firstItem="mCe-mq-vgd" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="53" id="aDc-kV-piZ"/>
