@@ -37,6 +37,10 @@
 		7607123124793C9E00B29C2C /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607122D24793C9E00B29C2C /* MovieAPI.swift */; };
 		7607123224793C9E00B29C2C /* ModelMapperHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607122E24793C9E00B29C2C /* ModelMapperHelper.swift */; };
 		7607123424793FE900B29C2C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607123324793FE900B29C2C /* Movie.swift */; };
+		764B4DC6248FE76300F1C784 /* Nexa Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764B4DC2248FE76200F1C784 /* Nexa Bold.otf */; };
+		764B4DC7248FE76300F1C784 /* NexaTextDemo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 764B4DC3248FE76200F1C784 /* NexaTextDemo-Light.ttf */; };
+		764B4DC8248FE76300F1C784 /* Nexa Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764B4DC4248FE76200F1C784 /* Nexa Light.otf */; };
+		764B4DC9248FE76300F1C784 /* Nexa W01 Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764B4DC5248FE76300F1C784 /* Nexa W01 Heavy.otf */; };
 		764E605E2468384300F6BC07 /* Cera Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764E60522468384300F6BC07 /* Cera Pro Light.otf */; };
 		764E605F2468384300F6BC07 /* Cera Pro Thin Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764E60532468384300F6BC07 /* Cera Pro Thin Italic.otf */; };
 		764E60602468384300F6BC07 /* Cera Pro Regular Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 764E60542468384300F6BC07 /* Cera Pro Regular Italic.otf */; };
@@ -133,6 +137,10 @@
 		7607122D24793C9E00B29C2C /* MovieAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
 		7607122E24793C9E00B29C2C /* ModelMapperHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelMapperHelper.swift; sourceTree = "<group>"; };
 		7607123324793FE900B29C2C /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		764B4DC2248FE76200F1C784 /* Nexa Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Bold.otf"; sourceTree = "<group>"; };
+		764B4DC3248FE76200F1C784 /* NexaTextDemo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NexaTextDemo-Light.ttf"; sourceTree = "<group>"; };
+		764B4DC4248FE76200F1C784 /* Nexa Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Light.otf"; sourceTree = "<group>"; };
+		764B4DC5248FE76300F1C784 /* Nexa W01 Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa W01 Heavy.otf"; sourceTree = "<group>"; };
 		764E60522468384300F6BC07 /* Cera Pro Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Light.otf"; sourceTree = "<group>"; };
 		764E60532468384300F6BC07 /* Cera Pro Thin Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Thin Italic.otf"; sourceTree = "<group>"; };
 		764E60542468384300F6BC07 /* Cera Pro Regular Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Regular Italic.otf"; sourceTree = "<group>"; };
@@ -208,6 +216,10 @@
 		345F14C024573808003EE819 = {
 			isa = PBXGroup;
 			children = (
+				764B4DC2248FE76200F1C784 /* Nexa Bold.otf */,
+				764B4DC4248FE76200F1C784 /* Nexa Light.otf */,
+				764B4DC5248FE76300F1C784 /* Nexa W01 Heavy.otf */,
+				764B4DC3248FE76200F1C784 /* NexaTextDemo-Light.ttf */,
 				345F14CB24573808003EE819 /* Scar */,
 				345F14E224573809003EE819 /* ScarTests */,
 				345F14ED24573809003EE819 /* ScarUITests */,
@@ -465,6 +477,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				764B4DC6248FE76300F1C784 /* Nexa Bold.otf in Resources */,
+				764B4DC7248FE76300F1C784 /* NexaTextDemo-Light.ttf in Resources */,
+				764B4DC8248FE76300F1C784 /* Nexa Light.otf in Resources */,
+				764B4DC9248FE76300F1C784 /* Nexa W01 Heavy.otf in Resources */,
 				764E605F2468384300F6BC07 /* Cera Pro Thin Italic.otf in Resources */,
 				345F14D924573809003EE819 /* LaunchScreen.storyboard in Resources */,
 				764E605E2468384300F6BC07 /* Cera Pro Light.otf in Resources */,
