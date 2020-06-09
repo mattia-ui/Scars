@@ -22,10 +22,6 @@
 		345F14EF24573809003EE819 /* ScarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F14EE24573809003EE819 /* ScarUITests.swift */; };
 		345F14FF24573819003EE819 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345F14FE24573819003EE819 /* CloudKit.framework */; };
 		345F15492459D5D9003EE819 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345F15482459D5D9003EE819 /* WebKit.framework */; };
-		34CF8A5D248F947200A68B74 /* NexaTextDemo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34CF8A59248F947200A68B74 /* NexaTextDemo-Light.ttf */; };
-		34CF8A5E248F947200A68B74 /* Nexa Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 34CF8A5A248F947200A68B74 /* Nexa Bold.otf */; };
-		34CF8A5F248F947200A68B74 /* Nexa W01 Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 34CF8A5B248F947200A68B74 /* Nexa W01 Heavy.otf */; };
-		34CF8A60248F947200A68B74 /* Nexa Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 34CF8A5C248F947200A68B74 /* Nexa Light.otf */; };
 		6B01C79A2461A7980040EA77 /* PrimaTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01C7992461A7980040EA77 /* PrimaTutorial.swift */; };
 		6B01C79C2461A7BC0040EA77 /* SecondaTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01C79B2461A7BC0040EA77 /* SecondaTutorial.swift */; };
 		6B01C79E2461A7D90040EA77 /* TerzaTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01C79D2461A7D90040EA77 /* TerzaTutorial.swift */; };
@@ -117,10 +113,10 @@
 		345F14FC24573816003EE819 /* Scar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scar.entitlements; sourceTree = "<group>"; };
 		345F14FE24573819003EE819 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		345F15482459D5D9003EE819 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		34CF8A59248F947200A68B74 /* NexaTextDemo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NexaTextDemo-Light.ttf"; sourceTree = "<group>"; };
-		34CF8A5A248F947200A68B74 /* Nexa Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Bold.otf"; sourceTree = "<group>"; };
-		34CF8A5B248F947200A68B74 /* Nexa W01 Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa W01 Heavy.otf"; sourceTree = "<group>"; };
-		34CF8A5C248F947200A68B74 /* Nexa Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Light.otf"; sourceTree = "<group>"; };
+		34CF8A61248FDFA000A68B74 /* NexaTextDemo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NexaTextDemo-Light.ttf"; sourceTree = "<group>"; };
+		34CF8A62248FDFA000A68B74 /* Nexa Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Bold.otf"; sourceTree = "<group>"; };
+		34CF8A63248FDFA000A68B74 /* Nexa W01 Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa W01 Heavy.otf"; sourceTree = "<group>"; };
+		34CF8A64248FDFA100A68B74 /* Nexa Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Light.otf"; sourceTree = "<group>"; };
 		5850DD5C17BD4E16DFDBE827 /* Pods_Scar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B01C7992461A7980040EA77 /* PrimaTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaTutorial.swift; sourceTree = "<group>"; };
 		6B01C79B2461A7BC0040EA77 /* SecondaTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaTutorial.swift; sourceTree = "<group>"; };
@@ -314,10 +310,10 @@
 		34CF8A58248F947200A68B74 /* Nexa Font */ = {
 			isa = PBXGroup;
 			children = (
-				34CF8A59248F947200A68B74 /* NexaTextDemo-Light.ttf */,
-				34CF8A5A248F947200A68B74 /* Nexa Bold.otf */,
-				34CF8A5B248F947200A68B74 /* Nexa W01 Heavy.otf */,
-				34CF8A5C248F947200A68B74 /* Nexa Light.otf */,
+				34CF8A62248FDFA000A68B74 /* Nexa Bold.otf */,
+				34CF8A64248FDFA100A68B74 /* Nexa Light.otf */,
+				34CF8A63248FDFA000A68B74 /* Nexa W01 Heavy.otf */,
+				34CF8A61248FDFA000A68B74 /* NexaTextDemo-Light.ttf */,
 			);
 			name = "Nexa Font";
 			path = "../../../../Downloads/Nexa Font";
@@ -472,10 +468,8 @@
 				764E605F2468384300F6BC07 /* Cera Pro Thin Italic.otf in Resources */,
 				345F14D924573809003EE819 /* LaunchScreen.storyboard in Resources */,
 				764E605E2468384300F6BC07 /* Cera Pro Light.otf in Resources */,
-				34CF8A5D248F947200A68B74 /* NexaTextDemo-Light.ttf in Resources */,
 				764E60662468384300F6BC07 /* Cera Pro Medium Italic.otf in Resources */,
 				764E60622468384300F6BC07 /* Cera Pro Regular.otf in Resources */,
-				34CF8A5F248F947200A68B74 /* Nexa W01 Heavy.otf in Resources */,
 				764E60602468384300F6BC07 /* Cera Pro Regular Italic.otf in Resources */,
 				764E60612468384300F6BC07 /* Cera Pro Black Italic.otf in Resources */,
 				764E60632468384300F6BC07 /* Cera Pro Bold Italic.otf in Resources */,
@@ -487,9 +481,7 @@
 				764E60642468384300F6BC07 /* Cera Pro Bold.otf in Resources */,
 				345F14D424573808003EE819 /* Main.storyboard in Resources */,
 				764E60672468384300F6BC07 /* Cera Pro Thin.otf in Resources */,
-				34CF8A5E248F947200A68B74 /* Nexa Bold.otf in Resources */,
 				764E60682468384300F6BC07 /* Cera Pro Light Italic.otf in Resources */,
-				34CF8A60248F947200A68B74 /* Nexa Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
