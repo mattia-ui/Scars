@@ -646,7 +646,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
 //      screen.image = view.snapshot()
         var fontSize : CGFloat = 20
         if(view.frame.width == 375){
-            fontSize = 18
+            fontSize = 19
         }
         var  normalText = "The pattern in the large circle describes\n"
         var normalString = NSMutableAttributedString(string:normalText)

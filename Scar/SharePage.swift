@@ -127,7 +127,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
                 let attrs4 = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Light", size: 20)]
                 let attributedString22 = NSMutableAttributedString(string:String(normalText2), attributes:attrs4 as [NSAttributedString.Key : Any])
                attributedString20.append(attributedString22)
-        descriptionField.attributedText = attributedString20
+//        descriptionField.attributedText = attributedString20
     }
     
     @objc func dismissKeyboard() {
