@@ -41,90 +41,95 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
                descriptionField.smartInsertDeleteType = UITextSmartInsertDeleteType.no
                descriptionField.delegate = self
         
+        var fontSize : CGFloat = 20
+        if(view.frame.width == 375){
+            fontSize = 18
+        }
+        
          var  normalText = "Sharing your emotions with others is \nvery important for your "
-         var normalString = NSMutableAttributedString(string:normalText)
-         let attributedString = NSMutableAttributedString(string:normalText)
+          var attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: fontSize)]
+         let attributedString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
          
          var boldText = "emotional state,\n"
-             var attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 20)]
+              attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: fontSize)]
             let attributedString2 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
          attributedString.append(attributedString2)
 
 
                  normalText = "it "
-                 normalString = NSMutableAttributedString(string:normalText)
-
-                attributedString.append(normalString)
+                attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: fontSize)]
+                 let attributedString30 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
+                attributedString.append(attributedString30)
                 
                  boldText = "increases self-esteem"
-                 attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 20)]
+                 attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: fontSize)]
                 
                 let attributedString3 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
                 
                 attributedString.append(attributedString3)
           
          normalText = ", decreases \ninsecurities, and makes you understand\nthat "
-          normalString = NSMutableAttributedString(string:normalText)
-
-         attributedString.append(normalString)
+          attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: fontSize)]
+           let attributedString31 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
+          attributedString.append(attributedString31)
          
          boldText = "you are not alone"
-          attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 20)]
+          attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: fontSize)]
          
          let attributedString4 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
          
          attributedString.append(attributedString4)
          
          normalText = ", ever.\n\n"
-          normalString = NSMutableAttributedString(string:normalText)
-
-         attributedString.append(normalString)
+          attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: fontSize)]
+           let attributedString32 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
+          attributedString.append(attributedString32)
          
          normalText = "What are you waiting for?\nTell your story and share it on "
-          normalString = NSMutableAttributedString(string:normalText)
-
-         attributedString.append(normalString)
+          attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: fontSize)]
+           let attributedString33 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
+          attributedString.append(attributedString33)
          
          boldText = "Instagram\n"
-          attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 20)]
+          attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: fontSize)]
          
          let attributedString6 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
          
          attributedString.append(attributedString6)
          
          normalText = "with the hashtag "
-                 normalString = NSMutableAttributedString(string:normalText)
-
-                attributedString.append(normalString)
+                attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: fontSize)]
+                  let attributedString34 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
+                 attributedString.append(attributedString34)
         
         boldText = "#skinsugi "
-                 attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 20)]
+                 attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: fontSize)]
                 
                 let attributedString7 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
                 
                 attributedString.append(attributedString7)
         
         normalText = "or send it to\nus anonymously, you can be inspiring\neven without showing your name! "
-                        normalString = NSMutableAttributedString(string:normalText)
-
-                       attributedString.append(normalString)
+                    attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: fontSize)]
+                         let attributedString25 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
+                        attributedString.append(attributedString25)
                        
                        label.attributedText = attributedString
         
         var  normalText2 = "Tell your story behind your indelible sign here…  - "
                 var normalString2 = NSMutableAttributedString(string:normalText2)
-                    let attrs3 = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: 20)]
+                    let attrs3 = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: fontSize)]
                 let attributedString20 = NSMutableAttributedString(string:String(normalText2), attributes:attrs3 as [NSAttributedString.Key : Any])
                 
         let boldText2 = "#skinsugi "
-        let attrs2 = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 20)]
+        let attrs2 = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: fontSize)]
                    let attributedString21 = NSMutableAttributedString(string:boldText2, attributes:attrs2 as [NSAttributedString.Key : Any])
                 attributedString20.append(attributedString21)
 
 
                 normalText2 = "(max 249 characters)"
                 normalString2 = NSMutableAttributedString(string:normalText2)
-                let attrs4 = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: 20)]
+                let attrs4 = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: fontSize)]
                 let attributedString22 = NSMutableAttributedString(string:String(normalText2), attributes:attrs4 as [NSAttributedString.Key : Any])
                attributedString20.append(attributedString22)
 //        descriptionField.attributedText = attributedString20
