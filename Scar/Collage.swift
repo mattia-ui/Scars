@@ -644,13 +644,16 @@ class Collage: UIViewController, UITextFieldDelegate  {
             }
         }
 //      screen.image = view.snapshot()
-        
+        var fontSize : CGFloat = 20
+        if(view.frame.width == 375){
+            fontSize = 18
+        }
         var  normalText = "The pattern in the large circle describes\n"
         var normalString = NSMutableAttributedString(string:normalText)
         let attributedString = NSMutableAttributedString(string:normalText)
         
         var boldText = "your personality "
-            var attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+            var attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: fontSize)]
            let attributedString2 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
         attributedString.append(attributedString2)
 
@@ -661,7 +664,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                attributedString.append(normalString)
                
                 boldText = "the way you want to look\n"
-                attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+                attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: fontSize)]
                
                let attributedString3 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
                
@@ -673,7 +676,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
         attributedString.append(normalString)
         
         boldText = "the way you would like to be "
-         attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+         attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: fontSize)]
         
         let attributedString4 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
         
@@ -685,7 +688,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
         attributedString.append(normalString)
         
         boldText = "the \nperception you have of your sign, "
-        attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+        attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: fontSize)]
        
        let attributedString5 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
        
@@ -697,7 +700,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
         attributedString.append(normalString)
         
         boldText = "Kintsugi art "
-         attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+         attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: fontSize)]
         
         let attributedString6 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
         
