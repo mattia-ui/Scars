@@ -46,7 +46,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
          let attributedString = NSMutableAttributedString(string:normalText)
          
          var boldText = "emotional state,\n"
-             var attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+             var attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 20)]
             let attributedString2 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
          attributedString.append(attributedString2)
 
@@ -57,7 +57,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
                 attributedString.append(normalString)
                 
                  boldText = "increases self-esteem"
-                 attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+                 attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 20)]
                 
                 let attributedString3 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
                 
@@ -69,7 +69,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
          attributedString.append(normalString)
          
          boldText = "you are not alone"
-          attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+          attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 20)]
          
          let attributedString4 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
          
@@ -86,7 +86,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
          attributedString.append(normalString)
          
          boldText = "Instagram\n"
-          attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+          attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 20)]
          
          let attributedString6 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
          
@@ -98,7 +98,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
                 attributedString.append(normalString)
         
         boldText = "#skinsugi "
-                 attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+                 attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 20)]
                 
                 let attributedString7 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
                 
@@ -113,18 +113,18 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
         
         var  normalText2 = "Tell your story behind your indelible sign here…  - "
                 var normalString2 = NSMutableAttributedString(string:normalText2)
-                    let attrs3 = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Light", size: 20)]
+                    let attrs3 = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: 20)]
                 let attributedString20 = NSMutableAttributedString(string:String(normalText2), attributes:attrs3 as [NSAttributedString.Key : Any])
                 
         let boldText2 = "#skinsugi "
-        let attrs2 = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Regular", size: 20)]
+        let attrs2 = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 20)]
                    let attributedString21 = NSMutableAttributedString(string:boldText2, attributes:attrs2 as [NSAttributedString.Key : Any])
                 attributedString20.append(attributedString21)
 
 
                 normalText2 = "(max 249 characters)"
                 normalString2 = NSMutableAttributedString(string:normalText2)
-                let attrs4 = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Light", size: 20)]
+                let attrs4 = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: 20)]
                 let attributedString22 = NSMutableAttributedString(string:String(normalText2), attributes:attrs4 as [NSAttributedString.Key : Any])
                attributedString20.append(attributedString22)
         descriptionField.attributedText = attributedString20
@@ -150,15 +150,15 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
         
         let  normalText = t
         _ = NSMutableAttributedString(string:String(normalText))
-            let attrs2 = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Light", size: 20)]
+            let attrs2 = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: 20)]
         let attributedString = NSMutableAttributedString(string:String(normalText), attributes:attrs2 as [NSAttributedString.Key : Any])
         
         let boldText = " - #skinsugi"
-        let attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Regular", size: 20)]
+        let attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 20)]
            let attributedString2 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
         attributedString.append(attributedString2)
         
-        descriptionField.font = UIFont(name: "CeraPro-Light", size: 20)
+        descriptionField.font = UIFont(name: "Nexa Light", size: 20)
         descriptionField.attributedText = attributedString
         
         let arbitraryValue: Int = t.count

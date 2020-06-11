@@ -396,7 +396,7 @@ Masterpiece!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Onboarding1" translatesAutoresizingMaskIntoConstraints="NO" id="abm-bl-K38">
-                                <rect key="frame" x="0.0" y="0.0" width="1271" height="447"/>
+                                <rect key="frame" x="0.0" y="-6.5" width="1271" height="447"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is Skinsugi!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gas-gh-7sj">
                                 <rect key="frame" x="20" y="471" width="384" height="56"/>
@@ -411,13 +411,13 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-gT-4jz">
-                                <rect key="frame" x="848" y="531" width="303" height="23"/>
+                                <rect key="frame" x="848" y="527.5" width="303" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JrA-Yx-juQ">
-                                <rect key="frame" x="20" y="604" width="379" height="22"/>
+                                <rect key="frame" x="20" y="600" width="379" height="26"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -442,7 +442,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PtS-SF-yl7">
-                                <rect key="frame" x="414" y="447" width="414" height="452"/>
+                                <rect key="frame" x="414" y="440.5" width="414" height="458.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell1" rowHeight="120" id="Q0F-YJ-7d9" customClass="Cella1" customModule="Skinsugi" customModuleProvider="target">
@@ -453,13 +453,13 @@ Masterpiece!</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, Sigafreda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ywt-KN-qf8">
-                                                    <rect key="frame" x="22" y="34" width="244" height="49"/>
+                                                    <rect key="frame" x="22" y="34" width="219" height="44.5"/>
                                                     <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                                     <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SzM-f1-Yon">
-                                                    <rect key="frame" x="22" y="97" width="349" height="22"/>
+                                                    <rect key="frame" x="22" y="92.5" width="337.5" height="26"/>
                                                     <string key="text">Tell us what inspires you the most.
 </string>
                                                     <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
@@ -553,7 +553,7 @@ Masterpiece!</string>
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last step" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gQb-mA-l8B">
-                                <rect key="frame" x="850" y="489" width="205" height="51.5"/>
+                                <rect key="frame" x="850" y="482.5" width="205" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="205" id="RAB-jc-mIn"/>
                                 </constraints>
@@ -562,13 +562,13 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WDJ-6S-5Y3">
-                                <rect key="frame" x="850" y="550" width="317.5" height="19"/>
+                                <rect key="frame" x="850" y="546.5" width="304" height="22.5"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="19"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
-                                <rect key="frame" x="850" y="596" width="346" height="66"/>
+                                <rect key="frame" x="850" y="592.5" width="346" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="346" id="WAl-jz-akH"/>
                                 </constraints>
@@ -580,7 +580,7 @@ How do you think others see it?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-fI-qoJ">
-                                <rect key="frame" x="929" y="750" width="194" height="55"/>
+                                <rect key="frame" x="929" y="757.5" width="194" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" identifier="larg" id="R1p-r1-OP1"/>
                                     <constraint firstAttribute="height" constant="55" identifier="altezza" id="g45-2c-k21"/>
