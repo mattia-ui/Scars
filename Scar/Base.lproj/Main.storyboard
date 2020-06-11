@@ -48,7 +48,7 @@
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7Ov-gi-Skw">
                                 <rect key="frame" x="116" y="722" width="182" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="submitAzzurro">
+                                <state key="normal" image="SubmitRosa">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -2906,7 +2906,7 @@ The two shapes on the outside recount </string>
                                                             <constraint firstAttribute="height" constant="55" id="EFw-W6-v2j"/>
                                                             <constraint firstAttribute="width" constant="182" id="Hwg-2J-AJL"/>
                                                         </constraints>
-                                                        <state key="normal" image="ProceedAzzurro"/>
+                                                        <state key="normal" image="ProceedRosa"/>
                                                         <connections>
                                                             <segue destination="LDR-hH-uX6" kind="show" identifier="jamm" id="47n-ms-sJd"/>
                                                         </connections>
@@ -3084,14 +3084,14 @@ The two shapes on the outside recount </string>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96F-Fh-WzS">
                                                         <rect key="frame" x="75.5" y="704" width="263" height="55"/>
-                                                        <state key="normal" image="ShareLungo"/>
+                                                        <state key="normal" image="SharegrandeRosa"/>
                                                         <connections>
                                                             <segue destination="LDR-hH-uX6" kind="show" identifier="passa" id="O1h-M3-5IE"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rv3-hB-tkJ">
                                                         <rect key="frame" x="75.5" y="784" width="263" height="55"/>
-                                                        <state key="normal" image="GenerateAgain"/>
+                                                        <state key="normal" image="GenerateAgainRosa"/>
                                                         <connections>
                                                             <action selector="generate:" destination="q9l-GE-q4m" eventType="touchUpInside" id="Rr5-OZ-6ha"/>
                                                         </connections>
@@ -3257,14 +3257,14 @@ The two shapes on the outside recount </string>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edT-gu-EJb">
                                                         <rect key="frame" x="128" y="1368" width="158" height="55"/>
-                                                        <state key="normal" image="shareAzzurro"/>
+                                                        <state key="normal" image="ShareRosa"/>
                                                         <connections>
                                                             <action selector="shareImg:" destination="LDR-hH-uX6" eventType="touchUpInside" id="EgW-tv-pVw"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eN-Y8-iqG">
                                                         <rect key="frame" x="73" y="1451" width="268" height="55"/>
-                                                        <state key="normal" image="shareAnonymously"/>
+                                                        <state key="normal" image="ShareARosa"/>
                                                         <connections>
                                                             <action selector="shareUnkown:" destination="LDR-hH-uX6" eventType="touchUpInside" id="nlb-ss-uUh"/>
                                                             <segue destination="GG3-f1-cQ8" kind="show" identifier="blur" id="rkX-St-HZF"/>
@@ -3460,7 +3460,7 @@ The two shapes on the outside recount </string>
     <inferredMetricsTieBreakers>
         <segue reference="47n-ms-sJd"/>
         <segue reference="wd9-1W-xO2"/>
-        <segue reference="rqq-x5-KjR"/>
+        <segue reference="rkX-St-HZF"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2-" width="101.5" height="101.5"/>
@@ -3468,7 +3468,7 @@ The two shapes on the outside recount </string>
         <image name="CAr" width="267" height="267"/>
         <image name="Done" width="182" height="55"/>
         <image name="DoneN" width="182" height="55"/>
-        <image name="GenerateAgain" width="263" height="55"/>
+        <image name="GenerateAgainRosa" width="263" height="55"/>
         <image name="GoMaterpieceRosa" width="182" height="55"/>
         <image name="Group 48" width="508" height="518"/>
         <image name="IllustrazionePerBlur" width="370" height="600"/>
@@ -3482,12 +3482,14 @@ The two shapes on the outside recount </string>
         <image name="NextRosaNS" width="182" height="55"/>
         <image name="NoRosa" width="120" height="55"/>
         <image name="Onboarding1" width="3740" height="1350"/>
-        <image name="ProceedAzzurro" width="182" height="55"/>
+        <image name="ProceedRosa" width="182" height="55"/>
         <image name="QuestionAcceso" width="261" height="71"/>
         <image name="QuestionSpento" width="261" height="71"/>
         <image name="Reset" width="50" height="50"/>
         <image name="SeeMore" width="82" height="18"/>
-        <image name="ShareLungo" width="263" height="55"/>
+        <image name="ShareARosa" width="268" height="55"/>
+        <image name="ShareRosa" width="158" height="55"/>
+        <image name="SharegrandeRosa" width="263" height="55"/>
         <image name="Skip" width="98" height="94"/>
         <image name="Start-1" width="182" height="55"/>
         <image name="StartN" width="182" height="55"/>
@@ -3522,11 +3524,8 @@ The two shapes on the outside recount </string>
         <image name="secondaPalette" width="87" height="87"/>
         <image name="selected" width="374" height="76"/>
         <image name="selezionato" width="374" height="76"/>
-        <image name="shareAnonymously" width="268" height="55"/>
-        <image name="shareAzzurro" width="158" height="55"/>
         <image name="square" width="66" height="65"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
-        <image name="submitAzzurro" width="182" height="55"/>
         <image name="terzaPalette" width="87" height="87"/>
         <image name="triangle" width="74" height="69"/>
         <image name="unchecked" width="34" height="32"/>
