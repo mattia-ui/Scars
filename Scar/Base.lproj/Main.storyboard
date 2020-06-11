@@ -1483,20 +1483,20 @@ all the answers you gave?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the way!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="AiM-zE-6gR">
-                                <rect key="frame" x="22" y="82" width="302" height="38"/>
+                                <rect key="frame" x="22" y="107" width="302" height="38"/>
                                 <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsH-Wf-de9">
-                                <rect key="frame" x="74.5" y="652" width="98" height="94"/>
+                                <rect key="frame" x="74.5" y="654" width="98" height="94"/>
                                 <state key="normal" image="MakePhoto"/>
                                 <connections>
                                     <action selector="addImage:" destination="hvR-kH-wNA" eventType="touchUpInside" id="05I-u2-MLy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3D-GU-hSB">
-                                <rect key="frame" x="242.5" y="652" width="98" height="94"/>
+                                <rect key="frame" x="242.5" y="654" width="98" height="94"/>
                                 <state key="normal" image="Skip"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="TlC-WV-Ndb"/>
@@ -1509,10 +1509,10 @@ all the answers you gave?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weekly1" translatesAutoresizingMaskIntoConstraints="NO" id="ZhO-SO-6sM">
-                                <rect key="frame" x="69" y="301" width="276" height="318"/>
+                                <rect key="frame" x="69" y="329" width="276" height="309"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="kTB-8f-OJj">
-                                <rect key="frame" x="22" y="232" width="375" height="61"/>
+                                <rect key="frame" x="22" y="254" width="375" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="2UC-Oq-LIj"/>
                                 </constraints>
@@ -1521,7 +1521,7 @@ all the answers you gave?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="yE5-lk-76G">
-                                <rect key="frame" x="22" y="128" width="374" height="96"/>
+                                <rect key="frame" x="22" y="153" width="374" height="96"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="cSS-h1-VwA"/>
                                 </constraints>
@@ -1535,7 +1535,7 @@ all the answers you gave?</string>
                             <constraint firstItem="kTB-8f-OJj" firstAttribute="width" secondItem="vEG-89-kEc" secondAttribute="height" multiplier="375:842" id="0s4-l8-tVb"/>
                             <constraint firstItem="XsH-Wf-de9" firstAttribute="width" secondItem="vEG-89-kEc" secondAttribute="width" multiplier="0.236715" id="0vF-5p-g2D"/>
                             <constraint firstItem="XsH-Wf-de9" firstAttribute="height" secondItem="vEG-89-kEc" secondAttribute="height" multiplier="0.111639" id="1R6-Fx-wC8"/>
-                            <constraint firstItem="ZhO-SO-6sM" firstAttribute="height" secondItem="vEG-89-kEc" secondAttribute="height" multiplier="0.448931" constant="-60" id="2gN-Hf-Foo"/>
+                            <constraint firstItem="ZhO-SO-6sM" firstAttribute="height" secondItem="vEG-89-kEc" secondAttribute="height" multiplier="0.448931" constant="-68.99990200000002" id="2gN-Hf-Foo"/>
                             <constraint firstItem="AiM-zE-6gR" firstAttribute="width" secondItem="vEG-89-kEc" secondAttribute="width" multiplier="0.729469" id="5Ib-Dz-9r2"/>
                             <constraint firstItem="J3D-GU-hSB" firstAttribute="width" secondItem="vEG-89-kEc" secondAttribute="width" multiplier="0.236715" id="6B7-W8-XeT"/>
                             <constraint firstItem="kTB-8f-OJj" firstAttribute="leading" secondItem="vEG-89-kEc" secondAttribute="leadingMargin" constant="2" id="8sl-te-WJa"/>
@@ -1547,8 +1547,8 @@ all the answers you gave?</string>
                             <constraint firstItem="XsH-Wf-de9" firstAttribute="leading" secondItem="cpF-cN-5d5" secondAttribute="leading" id="Ohq-8Q-FUP"/>
                             <constraint firstItem="cpF-cN-5d5" firstAttribute="width" secondItem="vEG-89-kEc" secondAttribute="height" multiplier="133:421" id="UfW-cx-fnR"/>
                             <constraint firstItem="J3D-GU-hSB" firstAttribute="trailing" secondItem="cpF-cN-5d5" secondAttribute="trailing" id="X2J-uK-ZOm"/>
-                            <constraint firstItem="kTB-8f-OJj" firstAttribute="top" secondItem="yE5-lk-76G" secondAttribute="bottom" constant="8" id="aZD-bw-sT0"/>
-                            <constraint firstItem="ZhO-SO-6sM" firstAttribute="top" secondItem="kTB-8f-OJj" secondAttribute="bottom" constant="8" id="apz-FI-0nM"/>
+                            <constraint firstItem="kTB-8f-OJj" firstAttribute="top" secondItem="yE5-lk-76G" secondAttribute="bottom" constant="5" id="aZD-bw-sT0"/>
+                            <constraint firstItem="ZhO-SO-6sM" firstAttribute="top" secondItem="kTB-8f-OJj" secondAttribute="bottom" constant="14" id="apz-FI-0nM"/>
                             <constraint firstItem="yE5-lk-76G" firstAttribute="top" secondItem="AiM-zE-6gR" secondAttribute="bottom" constant="8" id="b1A-sr-e4U"/>
                             <constraint firstItem="ZhO-SO-6sM" firstAttribute="width" secondItem="vEG-89-kEc" secondAttribute="width" multiplier="0.751208" constant="-35" id="bY5-2T-Ah3"/>
                             <constraint firstItem="yE5-lk-76G" firstAttribute="trailing" secondItem="kTB-8f-OJj" secondAttribute="trailing" constant="-1" id="dZw-8O-mY6"/>
@@ -1559,9 +1559,9 @@ all the answers you gave?</string>
                             <constraint firstItem="yE5-lk-76G" firstAttribute="width" secondItem="vEG-89-kEc" secondAttribute="height" multiplier="187:421" id="jXC-ab-cZj"/>
                             <constraint firstItem="kTB-8f-OJj" firstAttribute="centerX" secondItem="cpF-cN-5d5" secondAttribute="centerX" constant="2" id="m54-Ra-DXx"/>
                             <constraint firstItem="XsH-Wf-de9" firstAttribute="width" secondItem="vEG-89-kEc" secondAttribute="height" multiplier="49:421" id="nCy-Xg-pwN"/>
-                            <constraint firstItem="XsH-Wf-de9" firstAttribute="top" secondItem="ZhO-SO-6sM" secondAttribute="bottom" constant="33" id="ogn-tk-X8d"/>
+                            <constraint firstItem="XsH-Wf-de9" firstAttribute="top" secondItem="ZhO-SO-6sM" secondAttribute="bottom" constant="16" id="ogn-tk-X8d"/>
                             <constraint firstItem="XsH-Wf-de9" firstAttribute="top" secondItem="J3D-GU-hSB" secondAttribute="top" id="rL7-7g-d1K"/>
-                            <constraint firstItem="cpF-cN-5d5" firstAttribute="top" secondItem="XsH-Wf-de9" secondAttribute="bottom" constant="24" id="rNn-OK-1QM"/>
+                            <constraint firstItem="cpF-cN-5d5" firstAttribute="top" secondItem="XsH-Wf-de9" secondAttribute="bottom" constant="22" id="rNn-OK-1QM"/>
                             <constraint firstItem="ZhO-SO-6sM" firstAttribute="leading" secondItem="gNw-Zb-woE" secondAttribute="leading" constant="69" id="ru1-88-ZMi"/>
                             <constraint firstItem="kTB-8f-OJj" firstAttribute="width" secondItem="vEG-89-kEc" secondAttribute="width" multiplier="0.905797" id="x5Y-yX-tTe"/>
                             <constraint firstItem="AiM-zE-6gR" firstAttribute="leading" secondItem="gNw-Zb-woE" secondAttribute="leading" constant="22" id="zSI-AD-Ekp"/>
@@ -3461,6 +3461,7 @@ The two shapes on the outside recount </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="nIG-wF-CdU"/>
         <segue reference="47n-ms-sJd"/>
         <segue reference="wd9-1W-xO2"/>
         <segue reference="Cab-pX-8BL"/>
