@@ -2080,7 +2080,7 @@ your body and others’s bodies.</string>
                                 <viewLayoutGuide key="contentLayoutGuide" id="EuJ-gc-azU"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="EgR-fQ-y8p"/>
                             </scrollView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="MirrorWork" translatesAutoresizingMaskIntoConstraints="NO" id="IRL-vy-kpc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="MirrorWork1" translatesAutoresizingMaskIntoConstraints="NO" id="IRL-vy-kpc">
                                 <rect key="frame" x="0.0" y="65" width="414" height="176"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg9-aS-nb6">
@@ -3018,7 +3018,7 @@ The two shapes on the outside recount </string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1146"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YourMasterpieceNav" translatesAutoresizingMaskIntoConstraints="NO" id="hht-L1-G5R">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YourMasterpiece" translatesAutoresizingMaskIntoConstraints="NO" id="hht-L1-G5R">
                                 <rect key="frame" x="-2" y="-16" width="418" height="141"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
@@ -3047,50 +3047,50 @@ The two shapes on the outside recount </string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6d8-3F-j68">
-                                                        <rect key="frame" x="22" y="301" width="370" height="258"/>
+                                                        <rect key="frame" x="22" y="281" width="370" height="258"/>
                                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="RSS-Ai-3RQ">
-                                                        <rect key="frame" x="23" y="556" width="300" height="30"/>
+                                                        <rect key="frame" x="23" y="531" width="300" height="30"/>
                                                         <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="sdA-YO-mSp">
-                                                        <rect key="frame" x="23" y="583" width="300" height="30"/>
+                                                        <rect key="frame" x="23" y="558" width="300" height="30"/>
                                                         <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="qyw-FH-8KI">
-                                                        <rect key="frame" x="23" y="613" width="300" height="30"/>
+                                                        <rect key="frame" x="23" y="588" width="300" height="30"/>
                                                         <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="lya-o0-lqI">
-                                                        <rect key="frame" x="23" y="638" width="300" height="30"/>
+                                                        <rect key="frame" x="23" y="613" width="300" height="30"/>
                                                         <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="0bX-Ee-U2N">
-                                                        <rect key="frame" x="23" y="663" width="300" height="30"/>
+                                                        <rect key="frame" x="23" y="638" width="300" height="30"/>
                                                         <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96F-Fh-WzS">
-                                                        <rect key="frame" x="75.5" y="711" width="263" height="55"/>
+                                                        <rect key="frame" x="75.5" y="704" width="263" height="55"/>
                                                         <state key="normal" image="ShareLungo"/>
                                                         <connections>
                                                             <segue destination="LDR-hH-uX6" kind="show" identifier="passa" id="O1h-M3-5IE"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rv3-hB-tkJ">
-                                                        <rect key="frame" x="75.5" y="791" width="263" height="55"/>
+                                                        <rect key="frame" x="75.5" y="784" width="263" height="55"/>
                                                         <state key="normal" image="GenerateAgain"/>
                                                         <connections>
                                                             <action selector="generate:" destination="q9l-GE-q4m" eventType="touchUpInside" id="Rr5-OZ-6ha"/>
@@ -3123,7 +3123,7 @@ The two shapes on the outside recount </string>
                                                     <constraint firstItem="RSS-Ai-3RQ" firstAttribute="leading" secondItem="sdA-YO-mSp" secondAttribute="leading" id="G2P-Uw-yTj"/>
                                                     <constraint firstItem="6d8-3F-j68" firstAttribute="height" secondItem="4ah-eg-FqR" secondAttribute="height" multiplier="0.250729" id="G3P-Kf-16X"/>
                                                     <constraint firstItem="sdA-YO-mSp" firstAttribute="height" secondItem="4ah-eg-FqR" secondAttribute="height" multiplier="0.0204082" constant="8.9999621999999988" id="JlB-uB-rdl"/>
-                                                    <constraint firstItem="RSS-Ai-3RQ" firstAttribute="top" secondItem="6d8-3F-j68" secondAttribute="bottom" constant="-3" id="M6B-AF-R6f"/>
+                                                    <constraint firstItem="RSS-Ai-3RQ" firstAttribute="top" secondItem="6d8-3F-j68" secondAttribute="bottom" constant="-8" id="M6B-AF-R6f"/>
                                                     <constraint firstItem="lya-o0-lqI" firstAttribute="top" secondItem="qyw-FH-8KI" secondAttribute="bottom" constant="-5" id="OFx-k5-hEn"/>
                                                     <constraint firstItem="Rv3-hB-tkJ" firstAttribute="top" secondItem="96F-Fh-WzS" secondAttribute="bottom" constant="25" id="P0o-P1-M0i"/>
                                                     <constraint firstItem="Rv3-hB-tkJ" firstAttribute="centerX" secondItem="4ah-eg-FqR" secondAttribute="centerX" id="QKd-t8-ktN"/>
@@ -3131,7 +3131,7 @@ The two shapes on the outside recount </string>
                                                     <constraint firstItem="sdA-YO-mSp" firstAttribute="leading" secondItem="qyw-FH-8KI" secondAttribute="leading" id="Rbq-I1-qUm"/>
                                                     <constraint firstItem="lya-o0-lqI" firstAttribute="leading" secondItem="0bX-Ee-U2N" secondAttribute="leading" id="SA1-BA-me6"/>
                                                     <constraint firstAttribute="height" constant="1029" id="SD6-jD-Kgm"/>
-                                                    <constraint firstItem="6d8-3F-j68" firstAttribute="top" secondItem="MFk-3D-1XX" secondAttribute="bottom" constant="66" id="SVo-S5-53o"/>
+                                                    <constraint firstItem="6d8-3F-j68" firstAttribute="top" secondItem="MFk-3D-1XX" secondAttribute="bottom" constant="46" id="SVo-S5-53o"/>
                                                     <constraint firstItem="qyw-FH-8KI" firstAttribute="leading" secondItem="lya-o0-lqI" secondAttribute="leading" id="SgL-Gl-wnD"/>
                                                     <constraint firstItem="MFk-3D-1XX" firstAttribute="centerX" secondItem="4ah-eg-FqR" secondAttribute="centerX" id="awk-vH-Waw"/>
                                                     <constraint firstItem="6d8-3F-j68" firstAttribute="width" secondItem="4ah-eg-FqR" secondAttribute="width" multiplier="0.89372" id="dW3-Hd-HF8"/>
@@ -3141,7 +3141,7 @@ The two shapes on the outside recount </string>
                                                     <constraint firstItem="RSS-Ai-3RQ" firstAttribute="height" secondItem="4ah-eg-FqR" secondAttribute="height" multiplier="0.0204082" constant="8.9999621999999988" id="ehh-pV-1gm"/>
                                                     <constraint firstItem="MFk-3D-1XX" firstAttribute="top" secondItem="4ah-eg-FqR" secondAttribute="top" constant="25" id="g5C-RW-Bwq"/>
                                                     <constraint firstItem="RSS-Ai-3RQ" firstAttribute="leading" secondItem="4ah-eg-FqR" secondAttribute="leading" constant="23" id="gWf-lJ-cT9"/>
-                                                    <constraint firstItem="6d8-3F-j68" firstAttribute="top" secondItem="yqT-va-4UR" secondAttribute="bottom" constant="66" id="khs-zc-CXG"/>
+                                                    <constraint firstItem="6d8-3F-j68" firstAttribute="top" secondItem="yqT-va-4UR" secondAttribute="bottom" constant="46" id="khs-zc-CXG"/>
                                                     <constraint firstItem="MFk-3D-1XX" firstAttribute="centerX" secondItem="6d8-3F-j68" secondAttribute="centerX" id="leb-Wz-TQk"/>
                                                     <constraint firstItem="96F-Fh-WzS" firstAttribute="height" secondItem="4ah-eg-FqR" secondAttribute="height" multiplier="0.05345" id="lki-NL-LtT"/>
                                                     <constraint firstItem="sdA-YO-mSp" firstAttribute="width" secondItem="4ah-eg-FqR" secondAttribute="height" multiplier="100:343" id="mJO-Cf-39a"/>
@@ -3153,7 +3153,7 @@ The two shapes on the outside recount </string>
                                                     <constraint firstItem="lya-o0-lqI" firstAttribute="width" secondItem="4ah-eg-FqR" secondAttribute="height" multiplier="100:343" id="t2J-Y6-1zf"/>
                                                     <constraint firstItem="qyw-FH-8KI" firstAttribute="height" secondItem="4ah-eg-FqR" secondAttribute="height" multiplier="0.0204082" constant="8.9999621999999988" id="tNv-oj-tdB"/>
                                                     <constraint firstItem="96F-Fh-WzS" firstAttribute="width" secondItem="4ah-eg-FqR" secondAttribute="height" multiplier="263:1029" id="uUT-4C-jJl"/>
-                                                    <constraint firstItem="96F-Fh-WzS" firstAttribute="top" secondItem="0bX-Ee-U2N" secondAttribute="bottom" constant="18" id="vq8-wm-b1j"/>
+                                                    <constraint firstItem="96F-Fh-WzS" firstAttribute="top" secondItem="0bX-Ee-U2N" secondAttribute="bottom" constant="36" id="vq8-wm-b1j"/>
                                                     <constraint firstItem="96F-Fh-WzS" firstAttribute="width" secondItem="4ah-eg-FqR" secondAttribute="width" multiplier="0.635266" id="xio-Ap-Dbh"/>
                                                 </constraints>
                                             </view>
@@ -3477,7 +3477,7 @@ The two shapes on the outside recount </string>
         <image name="Let'sgo" width="196" height="55"/>
         <image name="Lettsegoazzurro" width="182" height="55"/>
         <image name="MakePhoto" width="98" height="94"/>
-        <image name="MirrorWork" width="415" height="144"/>
+        <image name="MirrorWork1" width="415" height="144"/>
         <image name="Onboarding1" width="3740" height="1350"/>
         <image name="ProceedAzzurro" width="182" height="55"/>
         <image name="QuestionAcceso" width="261" height="71"/>
@@ -3491,7 +3491,7 @@ The two shapes on the outside recount </string>
         <image name="TCAzz" width="230" height="230"/>
         <image name="Textile" width="168" height="168"/>
         <image name="Weekly1" width="185" height="300"/>
-        <image name="YourMasterpieceNav" width="415" height="140"/>
+        <image name="YourMasterpiece" width="415" height="140"/>
         <image name="aggiungiInsight" width="32" height="25"/>
         <image name="backArrow" width="14" height="25"/>
         <image name="backM" width="414" height="896"/>
