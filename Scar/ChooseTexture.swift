@@ -19,7 +19,7 @@ class ChooseTexture: UIViewController  {
          var attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 22)]
         let attributedString = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
-       let  normalText = "your indelible sign, which of\n these textures "
+       let  normalText = "your indelible sign, which of\nthese textures "
         let normalString = NSMutableAttributedString(string:normalText)
 
         attributedString.append(normalString)

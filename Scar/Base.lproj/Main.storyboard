@@ -11,9 +11,6 @@
         <array key="Cera Pro Bold.otf">
             <string>CeraPro-Bold</string>
         </array>
-        <array key="Cera Pro Light Italic.otf">
-            <string>CeraPro-LightItalic</string>
-        </array>
         <array key="Cera Pro Light.otf">
             <string>CeraPro-Light</string>
         </array>
@@ -153,13 +150,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7X-yK-cdq">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1867.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navInsta" translatesAutoresizingMaskIntoConstraints="NO" id="CVc-ep-RVc">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="408"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
                                     </imageView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nrD-Zz-bfZ">
-                                        <rect key="frame" x="0.0" y="408" width="414" height="1459.5"/>
+                                        <rect key="frame" x="0.0" y="184" width="414" height="658"/>
                                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="5" minimumInteritemSpacing="3" id="XkC-uk-eSx">
                                             <size key="itemSize" width="145" height="145"/>
@@ -205,7 +202,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xph-ou-FkU">
-                                        <rect key="frame" x="0.0" y="408" width="414" height="1459.5"/>
+                                        <rect key="frame" x="0.0" y="184" width="414" height="658"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -218,7 +215,7 @@
                                     <constraint firstItem="Xph-ou-FkU" firstAttribute="leading" secondItem="s7X-yK-cdq" secondAttribute="leading" id="IIt-uE-3m4"/>
                                     <constraint firstItem="Xph-ou-FkU" firstAttribute="height" secondItem="s7X-yK-cdq" secondAttribute="height" multiplier="0.781473" id="KIa-Jn-VJr"/>
                                     <constraint firstAttribute="trailing" secondItem="nrD-Zz-bfZ" secondAttribute="trailing" id="KbX-X4-TL2"/>
-                                    <constraint firstItem="nrD-Zz-bfZ" firstAttribute="top" secondItem="Cc2-aZ-ghq" secondAttribute="bottom" constant="44" id="Px6-kR-kRh"/>
+                                    <constraint firstItem="nrD-Zz-bfZ" firstAttribute="top" secondItem="Cc2-aZ-ghq" secondAttribute="bottom" constant="54" id="Px6-kR-kRh"/>
                                     <constraint firstAttribute="trailing" secondItem="CVc-ep-RVc" secondAttribute="trailing" id="VWv-AD-S9O"/>
                                     <constraint firstItem="Xph-ou-FkU" firstAttribute="top" secondItem="CVc-ep-RVc" secondAttribute="bottom" id="WdR-zK-ls5"/>
                                     <constraint firstItem="nrD-Zz-bfZ" firstAttribute="top" secondItem="CVc-ep-RVc" secondAttribute="bottom" id="XOv-BS-gB0"/>
@@ -234,20 +231,20 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1JF-r6-XHa">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1867.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IllustrazionePerBlur" translatesAutoresizingMaskIntoConstraints="NO" id="7Iq-1d-X4P">
-                                        <rect key="frame" x="22" y="544" width="370" height="1331"/>
+                                        <rect key="frame" x="22" y="448" width="370" height="600"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submitted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="b13-TX-EGq">
-                                        <rect key="frame" x="128" y="324" width="152" height="71"/>
-                                        <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="32"/>
+                                        <rect key="frame" x="128" y="324" width="152" height="32"/>
+                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="32"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for sharing your masterpiece with us!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Y2D-IT-Jem">
-                                        <rect key="frame" x="71" y="411" width="266" height="104"/>
-                                        <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
+                                        <rect key="frame" x="71" y="372" width="266" height="47"/>
+                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -277,22 +274,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backM" translatesAutoresizingMaskIntoConstraints="NO" id="zKV-vd-0Ud">
-                                        <rect key="frame" x="23" y="338.5" width="370" height="896"/>
+                                        <rect key="frame" x="23" y="241" width="370" height="404"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueCircle" translatesAutoresizingMaskIntoConstraints="NO" id="H28-4N-94N">
                                         <rect key="frame" x="253" y="-93" width="232" height="232"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Bri-Aq-9dp">
-                                        <rect key="frame" x="22" y="88" width="259" height="177.5"/>
+                                        <rect key="frame" x="22" y="61" width="259" height="177.5"/>
                                         <string key="text">Create your 
 Masterpiece!</string>
                                         <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cj-VA-9NZ">
-                                        <rect key="frame" x="116" y="718" width="182" height="58.5"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cj-VA-9NZ">
+                                        <rect key="frame" x="116" y="658" width="182" height="58.5"/>
                                         <state key="normal" title="Button" image="Lettsegoazzurro"/>
                                         <connections>
                                             <segue destination="xs9-hS-2dx" kind="show" id="nIG-wF-CdU"/>
@@ -302,21 +299,21 @@ Masterpiece!</string>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="5cj-VA-9NZ" firstAttribute="width" secondItem="y8C-NL-mQ0" secondAttribute="width" multiplier="0.439614" id="6Jd-aA-UTZ"/>
-                                    <constraint firstItem="Bri-Aq-9dp" firstAttribute="top" secondItem="y8C-NL-mQ0" secondAttribute="top" constant="88" id="ER5-wX-iA7"/>
-                                    <constraint firstItem="zKV-vd-0Ud" firstAttribute="top" secondItem="Bri-Aq-9dp" secondAttribute="bottom" constant="73" id="FDB-3H-uCL"/>
+                                    <constraint firstItem="Bri-Aq-9dp" firstAttribute="top" secondItem="y8C-NL-mQ0" secondAttribute="top" constant="61" id="ER5-wX-iA7"/>
+                                    <constraint firstItem="zKV-vd-0Ud" firstAttribute="top" secondItem="Bri-Aq-9dp" secondAttribute="bottom" constant="2.5" id="FDB-3H-uCL"/>
                                     <constraint firstAttribute="trailing" secondItem="zKV-vd-0Ud" secondAttribute="trailing" constant="21" id="Kja-zG-uiY"/>
                                     <constraint firstItem="Bri-Aq-9dp" firstAttribute="leading" secondItem="y8C-NL-mQ0" secondAttribute="leading" constant="22" id="LS1-Mb-jDU"/>
-                                    <constraint firstItem="5cj-VA-9NZ" firstAttribute="top" secondItem="zKV-vd-0Ud" secondAttribute="bottom" constant="46" id="NFd-C8-d66"/>
+                                    <constraint firstItem="5cj-VA-9NZ" firstAttribute="top" secondItem="zKV-vd-0Ud" secondAttribute="bottom" constant="13" id="NFd-C8-d66"/>
                                     <constraint firstAttribute="trailing" secondItem="Bri-Aq-9dp" secondAttribute="trailing" constant="133" id="Pr2-8Q-kel"/>
                                     <constraint firstItem="5cj-VA-9NZ" firstAttribute="centerX" secondItem="y8C-NL-mQ0" secondAttribute="centerX" id="QGf-u7-J14"/>
-                                    <constraint firstAttribute="bottom" secondItem="5cj-VA-9NZ" secondAttribute="bottom" constant="96" id="TML-wq-KGc"/>
-                                    <constraint firstItem="Bri-Aq-9dp" firstAttribute="height" secondItem="y8C-NL-mQ0" secondAttribute="height" multiplier="0.0950119" id="ZZp-ZT-Z6q"/>
-                                    <constraint firstItem="zKV-vd-0Ud" firstAttribute="top" secondItem="Bri-Aq-9dp" secondAttribute="bottom" constant="73" id="bAl-Ec-utR"/>
+                                    <constraint firstAttribute="bottom" secondItem="5cj-VA-9NZ" secondAttribute="bottom" constant="125.5" id="TML-wq-KGc"/>
+                                    <constraint firstItem="Bri-Aq-9dp" firstAttribute="height" secondItem="y8C-NL-mQ0" secondAttribute="height" multiplier="0.0950119" constant="97.499980199999996" id="ZZp-ZT-Z6q"/>
+                                    <constraint firstItem="zKV-vd-0Ud" firstAttribute="top" secondItem="Bri-Aq-9dp" secondAttribute="bottom" constant="2.5" id="bAl-Ec-utR"/>
                                     <constraint firstItem="zKV-vd-0Ud" firstAttribute="leading" secondItem="y8C-NL-mQ0" secondAttribute="leading" constant="23" id="h4U-3b-kO7"/>
                                     <constraint firstItem="zKV-vd-0Ud" firstAttribute="height" secondItem="y8C-NL-mQ0" secondAttribute="height" multiplier="0.47981" id="hLU-uk-L4H"/>
-                                    <constraint firstItem="5cj-VA-9NZ" firstAttribute="height" secondItem="y8C-NL-mQ0" secondAttribute="height" multiplier="0.0653207" id="jl5-6u-vfo"/>
+                                    <constraint firstItem="5cj-VA-9NZ" firstAttribute="height" secondItem="y8C-NL-mQ0" secondAttribute="height" multiplier="0.0653207" constant="3.4999706000000046" id="jl5-6u-vfo"/>
                                     <constraint firstItem="zKV-vd-0Ud" firstAttribute="width" secondItem="y8C-NL-mQ0" secondAttribute="width" multiplier="0.89372" id="skT-Ou-Nhw"/>
-                                    <constraint firstItem="5cj-VA-9NZ" firstAttribute="top" secondItem="zKV-vd-0Ud" secondAttribute="bottom" constant="46" id="wLS-RB-kn1"/>
+                                    <constraint firstItem="5cj-VA-9NZ" firstAttribute="top" secondItem="zKV-vd-0Ud" secondAttribute="bottom" constant="13" id="wLS-RB-kn1"/>
                                     <constraint firstItem="Bri-Aq-9dp" firstAttribute="width" secondItem="y8C-NL-mQ0" secondAttribute="width" multiplier="0.625604" id="xLD-rN-cTW"/>
                                 </constraints>
                             </view>
@@ -396,7 +393,7 @@ Masterpiece!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Onboarding1" translatesAutoresizingMaskIntoConstraints="NO" id="abm-bl-K38">
-                                <rect key="frame" x="0.0" y="-6.5" width="1271" height="447"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1271" height="447"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is Skinsugi!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gas-gh-7sj">
                                 <rect key="frame" x="20" y="471" width="384" height="56"/>
@@ -411,13 +408,13 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-gT-4jz">
-                                <rect key="frame" x="848" y="527.5" width="303" height="23"/>
+                                <rect key="frame" x="848" y="531" width="303" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JrA-Yx-juQ">
-                                <rect key="frame" x="20" y="600" width="379" height="26"/>
+                                <rect key="frame" x="20" y="604" width="379" height="22"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -442,7 +439,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PtS-SF-yl7">
-                                <rect key="frame" x="414" y="440.5" width="414" height="458.5"/>
+                                <rect key="frame" x="414" y="447" width="414" height="452"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell1" rowHeight="120" id="Q0F-YJ-7d9" customClass="Cella1" customModule="Skinsugi" customModuleProvider="target">
@@ -453,13 +450,13 @@ Masterpiece!</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, Sigafreda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ywt-KN-qf8">
-                                                    <rect key="frame" x="22" y="34" width="219" height="44.5"/>
+                                                    <rect key="frame" x="22" y="34" width="244" height="49"/>
                                                     <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                                     <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SzM-f1-Yon">
-                                                    <rect key="frame" x="22" y="92.5" width="337.5" height="26"/>
+                                                    <rect key="frame" x="22" y="97" width="349" height="22"/>
                                                     <string key="text">Tell us what inspires you the most.
 </string>
                                                     <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
@@ -553,7 +550,7 @@ Masterpiece!</string>
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last step" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gQb-mA-l8B">
-                                <rect key="frame" x="850" y="482.5" width="205" height="47"/>
+                                <rect key="frame" x="850" y="489" width="205" height="51.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="205" id="RAB-jc-mIn"/>
                                 </constraints>
@@ -562,13 +559,13 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WDJ-6S-5Y3">
-                                <rect key="frame" x="850" y="546.5" width="304" height="22.5"/>
+                                <rect key="frame" x="850" y="550" width="317.5" height="19"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="19"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
-                                <rect key="frame" x="850" y="592.5" width="346" height="77"/>
+                                <rect key="frame" x="850" y="596" width="346" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="346" id="WAl-jz-akH"/>
                                 </constraints>
@@ -580,7 +577,7 @@ How do you think others see it?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-fI-qoJ">
-                                <rect key="frame" x="929" y="757.5" width="194" height="55"/>
+                                <rect key="frame" x="929" y="750" width="194" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" identifier="larg" id="R1p-r1-OP1"/>
                                     <constraint firstAttribute="height" constant="55" identifier="altezza" id="g45-2c-k21"/>
@@ -1483,20 +1480,20 @@ all the answers you gave?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the way!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="AiM-zE-6gR">
-                                <rect key="frame" x="22" y="82" width="302" height="38"/>
+                                <rect key="frame" x="22" y="107" width="302" height="38"/>
                                 <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsH-Wf-de9">
-                                <rect key="frame" x="74.5" y="652" width="98" height="94"/>
+                                <rect key="frame" x="74.5" y="654" width="98" height="94"/>
                                 <state key="normal" image="MakePhoto"/>
                                 <connections>
                                     <action selector="addImage:" destination="hvR-kH-wNA" eventType="touchUpInside" id="05I-u2-MLy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3D-GU-hSB">
-                                <rect key="frame" x="242.5" y="652" width="98" height="94"/>
+                                <rect key="frame" x="242.5" y="654" width="98" height="94"/>
                                 <state key="normal" image="Skip"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="TlC-WV-Ndb"/>
@@ -1509,10 +1506,10 @@ all the answers you gave?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weekly1" translatesAutoresizingMaskIntoConstraints="NO" id="ZhO-SO-6sM">
-                                <rect key="frame" x="69" y="301" width="276" height="318"/>
+                                <rect key="frame" x="69" y="329" width="276" height="309"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="kTB-8f-OJj">
-                                <rect key="frame" x="22" y="232" width="375" height="61"/>
+                                <rect key="frame" x="22" y="254" width="375" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="2UC-Oq-LIj"/>
                                 </constraints>
@@ -1521,7 +1518,7 @@ all the answers you gave?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="yE5-lk-76G">
-                                <rect key="frame" x="22" y="128" width="374" height="96"/>
+                                <rect key="frame" x="22" y="153" width="374" height="96"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="cSS-h1-VwA"/>
                                 </constraints>
@@ -1535,7 +1532,7 @@ all the answers you gave?</string>
                             <constraint firstItem="kTB-8f-OJj" firstAttribute="width" secondItem="vEG-89-kEc" secondAttribute="height" multiplier="375:842" id="0s4-l8-tVb"/>
                             <constraint firstItem="XsH-Wf-de9" firstAttribute="width" secondItem="vEG-89-kEc" secondAttribute="width" multiplier="0.236715" id="0vF-5p-g2D"/>
                             <constraint firstItem="XsH-Wf-de9" firstAttribute="height" secondItem="vEG-89-kEc" secondAttribute="height" multiplier="0.111639" id="1R6-Fx-wC8"/>
-                            <constraint firstItem="ZhO-SO-6sM" firstAttribute="height" secondItem="vEG-89-kEc" secondAttribute="height" multiplier="0.448931" constant="-60" id="2gN-Hf-Foo"/>
+                            <constraint firstItem="ZhO-SO-6sM" firstAttribute="height" secondItem="vEG-89-kEc" secondAttribute="height" multiplier="0.448931" constant="-68.99990200000002" id="2gN-Hf-Foo"/>
                             <constraint firstItem="AiM-zE-6gR" firstAttribute="width" secondItem="vEG-89-kEc" secondAttribute="width" multiplier="0.729469" id="5Ib-Dz-9r2"/>
                             <constraint firstItem="J3D-GU-hSB" firstAttribute="width" secondItem="vEG-89-kEc" secondAttribute="width" multiplier="0.236715" id="6B7-W8-XeT"/>
                             <constraint firstItem="kTB-8f-OJj" firstAttribute="leading" secondItem="vEG-89-kEc" secondAttribute="leadingMargin" constant="2" id="8sl-te-WJa"/>
@@ -1547,8 +1544,8 @@ all the answers you gave?</string>
                             <constraint firstItem="XsH-Wf-de9" firstAttribute="leading" secondItem="cpF-cN-5d5" secondAttribute="leading" id="Ohq-8Q-FUP"/>
                             <constraint firstItem="cpF-cN-5d5" firstAttribute="width" secondItem="vEG-89-kEc" secondAttribute="height" multiplier="133:421" id="UfW-cx-fnR"/>
                             <constraint firstItem="J3D-GU-hSB" firstAttribute="trailing" secondItem="cpF-cN-5d5" secondAttribute="trailing" id="X2J-uK-ZOm"/>
-                            <constraint firstItem="kTB-8f-OJj" firstAttribute="top" secondItem="yE5-lk-76G" secondAttribute="bottom" constant="8" id="aZD-bw-sT0"/>
-                            <constraint firstItem="ZhO-SO-6sM" firstAttribute="top" secondItem="kTB-8f-OJj" secondAttribute="bottom" constant="8" id="apz-FI-0nM"/>
+                            <constraint firstItem="kTB-8f-OJj" firstAttribute="top" secondItem="yE5-lk-76G" secondAttribute="bottom" constant="5" id="aZD-bw-sT0"/>
+                            <constraint firstItem="ZhO-SO-6sM" firstAttribute="top" secondItem="kTB-8f-OJj" secondAttribute="bottom" constant="14" id="apz-FI-0nM"/>
                             <constraint firstItem="yE5-lk-76G" firstAttribute="top" secondItem="AiM-zE-6gR" secondAttribute="bottom" constant="8" id="b1A-sr-e4U"/>
                             <constraint firstItem="ZhO-SO-6sM" firstAttribute="width" secondItem="vEG-89-kEc" secondAttribute="width" multiplier="0.751208" constant="-35" id="bY5-2T-Ah3"/>
                             <constraint firstItem="yE5-lk-76G" firstAttribute="trailing" secondItem="kTB-8f-OJj" secondAttribute="trailing" constant="-1" id="dZw-8O-mY6"/>
@@ -1559,9 +1556,9 @@ all the answers you gave?</string>
                             <constraint firstItem="yE5-lk-76G" firstAttribute="width" secondItem="vEG-89-kEc" secondAttribute="height" multiplier="187:421" id="jXC-ab-cZj"/>
                             <constraint firstItem="kTB-8f-OJj" firstAttribute="centerX" secondItem="cpF-cN-5d5" secondAttribute="centerX" constant="2" id="m54-Ra-DXx"/>
                             <constraint firstItem="XsH-Wf-de9" firstAttribute="width" secondItem="vEG-89-kEc" secondAttribute="height" multiplier="49:421" id="nCy-Xg-pwN"/>
-                            <constraint firstItem="XsH-Wf-de9" firstAttribute="top" secondItem="ZhO-SO-6sM" secondAttribute="bottom" constant="33" id="ogn-tk-X8d"/>
+                            <constraint firstItem="XsH-Wf-de9" firstAttribute="top" secondItem="ZhO-SO-6sM" secondAttribute="bottom" constant="16" id="ogn-tk-X8d"/>
                             <constraint firstItem="XsH-Wf-de9" firstAttribute="top" secondItem="J3D-GU-hSB" secondAttribute="top" id="rL7-7g-d1K"/>
-                            <constraint firstItem="cpF-cN-5d5" firstAttribute="top" secondItem="XsH-Wf-de9" secondAttribute="bottom" constant="24" id="rNn-OK-1QM"/>
+                            <constraint firstItem="cpF-cN-5d5" firstAttribute="top" secondItem="XsH-Wf-de9" secondAttribute="bottom" constant="22" id="rNn-OK-1QM"/>
                             <constraint firstItem="ZhO-SO-6sM" firstAttribute="leading" secondItem="gNw-Zb-woE" secondAttribute="leading" constant="69" id="ru1-88-ZMi"/>
                             <constraint firstItem="kTB-8f-OJj" firstAttribute="width" secondItem="vEG-89-kEc" secondAttribute="width" multiplier="0.905797" id="x5Y-yX-tTe"/>
                             <constraint firstItem="AiM-zE-6gR" firstAttribute="leading" secondItem="gNw-Zb-woE" secondAttribute="leading" constant="22" id="zSI-AD-Ekp"/>
@@ -3051,37 +3048,37 @@ The two shapes on the outside recount </string>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6d8-3F-j68">
                                                         <rect key="frame" x="22" y="301" width="370" height="258"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="RSS-Ai-3RQ">
                                                         <rect key="frame" x="23" y="563" width="300" height="21"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-LightItalic" family="Cera Pro" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="sdA-YO-mSp">
                                                         <rect key="frame" x="23" y="588" width="300" height="21"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-LightItalic" family="Cera Pro" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="qyw-FH-8KI">
                                                         <rect key="frame" x="23" y="613" width="300" height="21"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-LightItalic" family="Cera Pro" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="lya-o0-lqI">
                                                         <rect key="frame" x="23" y="638" width="300" height="21"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-LightItalic" family="Cera Pro" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="0bX-Ee-U2N">
                                                         <rect key="frame" x="23" y="663" width="300" height="21"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-LightItalic" family="Cera Pro" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3245,7 +3242,7 @@ The two shapes on the outside recount </string>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yy9-H0-njk">
                                                         <rect key="frame" x="22" y="388" width="370" height="253"/>
-                                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="20"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3461,7 +3458,7 @@ The two shapes on the outside recount </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="47n-ms-sJd"/>
+        <segue reference="O1h-M3-5IE"/>
         <segue reference="wd9-1W-xO2"/>
         <segue reference="rkX-St-HZF"/>
     </inferredMetricsTieBreakers>

@@ -25,10 +25,10 @@ class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePick
         
 
         let normalText = "Draw the shape "
-        let attrs = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 22, weight: .medium)]
+         let attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 22)]
         let attributedString = NSMutableAttributedString(string:normalText, attributes:attrs)
         
-        let boldText = "of your indelible sign,or help yourself taking a "
+        let boldText = "of your indelible sign, or help yourself taking a "
         let normalString = NSMutableAttributedString(string:boldText)
 
                attributedString.append(normalString)
@@ -52,7 +52,7 @@ class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePick
         label.attributedText = attributedString
         
         let normalText2 = "Don’t worry"
-        let attrs2 = [NSAttributedString.Key.font : UIFont(name: "CeraPro-MediumItalic", size: 18)]
+        let attrs2 = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 18)]
         let attributedString4 = NSMutableAttributedString(string:normalText2, attributes:attrs2 as [NSAttributedString.Key : Any])
         
         
