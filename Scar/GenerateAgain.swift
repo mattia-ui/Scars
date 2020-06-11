@@ -39,7 +39,7 @@ class GenerateAgain: UIViewController {
                 let attributedString = NSMutableAttributedString(string:normalText)
                 
                 var boldText = "your personality "
-                    var attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+                    var attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 20)]
                    let attributedString2 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
                 attributedString.append(attributedString2)
 
@@ -50,7 +50,7 @@ class GenerateAgain: UIViewController {
                        attributedString.append(normalString)
                        
                         boldText = "the way you want to look\n"
-                        attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+                        attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 20)]
                        
                        let attributedString3 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
                        
@@ -62,7 +62,7 @@ class GenerateAgain: UIViewController {
                 attributedString.append(normalString)
                 
                 boldText = "the way you would like to be "
-                 attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+                 attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 20)]
                 
                 let attributedString4 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
                 
@@ -75,7 +75,7 @@ class GenerateAgain: UIViewController {
                 
                 
                 boldText = "the \nperception you have of your sign"
-                 attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+                 attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 20)]
                 
                 let attributedString6 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
                 
@@ -87,7 +87,7 @@ class GenerateAgain: UIViewController {
                        attributedString.append(normalString)
                
                boldText = "Kintsugi art "
-                        attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 20)]
+                        attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 20)]
                        
                        let attributedString7 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
                        
@@ -103,7 +103,7 @@ class GenerateAgain: UIViewController {
 
             
             boldText = "Circle"
-                       attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 18)]
+                       attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 18)]
                       let attributedString9 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
                        normalText = ": empathic - sociable"
@@ -114,7 +114,7 @@ class GenerateAgain: UIViewController {
                       lab1.attributedText = attributedString9
             
             boldText = "Zig Zag"
-                       attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 18)]
+                       attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 18)]
                       let attributedString10 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
                        normalText = ": creative - aspiring"
@@ -125,7 +125,7 @@ class GenerateAgain: UIViewController {
                       lab2.attributedText = attributedString10
             
             boldText = "Triangle"
-                       attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 18)]
+                       attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 18)]
                       let attributedString11 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
                        normalText = ": leader - focused"
@@ -136,7 +136,7 @@ class GenerateAgain: UIViewController {
                       lab3.attributedText = attributedString11
             
             boldText = "Rectangle"
-                       attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 18)]
+                       attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 18)]
                       let attributedString12 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
                        normalText = ": curious - confused"
@@ -147,7 +147,7 @@ class GenerateAgain: UIViewController {
                       lab4.attributedText = attributedString12
             
             boldText = "Square"
-                       attrs = [NSAttributedString.Key.font : UIFont(name: "CeraPro-Medium", size: 18)]
+                       attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 18)]
                       let attributedString13 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
                        normalText = ": careful - analytic"
