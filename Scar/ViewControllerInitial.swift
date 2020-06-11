@@ -71,7 +71,7 @@ class ViewControllerInitial: UIViewController, UIScrollViewDelegate {
     var attivita: [ContenutoStruct] = []
     var slides:[Slide] = []
     var sfondi: [String] = ["background","background2","background3","BackTake","background5","BackDo1","background7","background8","background9"]
-    var sfondiNav: [String] = ["MirrorWork","TheJournal","TakeAWalk","BeInspired","EnjoySunlight","DoExercise","ASmile","DailyGoals","Meditate"]
+    var sfondiNav: [String] = ["MirrorWork1","TheJournal1","TakeAWalk","BeInspired","EnjoySunlight","DoExercise","ASmile","DailyGoals","Meditate"]
     @IBOutlet weak var scrollView: UIScrollView!{
         didSet{ scrollView.delegate = self }
     }
