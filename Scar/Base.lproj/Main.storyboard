@@ -290,7 +290,7 @@ Masterpiece!</string>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cj-VA-9NZ">
                                         <rect key="frame" x="116" y="658" width="182" height="58.5"/>
-                                        <state key="normal" title="Button" image="Lettsegoazzurro"/>
+                                        <state key="normal" title="Button" image="GoMaterpieceRosa"/>
                                         <connections>
                                             <segue destination="xs9-hS-2dx" kind="show" id="nIG-wF-CdU"/>
                                         </connections>
@@ -696,8 +696,8 @@ How do you think others see it?</string>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Te-rI-HPa">
                                 <rect key="frame" x="116" y="708.5" width="182" height="55"/>
-                                <state key="normal" title="Button" image="nextazzurro"/>
-                                <state key="disabled" image="nextAzzurroSpento"/>
+                                <state key="normal" title="Button" image="NextRosa"/>
+                                <state key="disabled" image="NextRosaNS"/>
                                 <connections>
                                     <segue destination="My5-jh-AI2" kind="show" id="PBJ-nY-4jd"/>
                                 </connections>
@@ -874,8 +874,8 @@ How do you think others see it?</string>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwR-8A-D92">
                                 <rect key="frame" x="116" y="709.5" width="182" height="55"/>
-                                <state key="normal" title="Button" image="nextazzurro"/>
-                                <state key="disabled" image="nextAzzurroSpento"/>
+                                <state key="normal" title="Button" image="NextRosa"/>
+                                <state key="disabled" image="NextRosaNS"/>
                                 <state key="selected" image="nextazzurro"/>
                                 <connections>
                                     <segue destination="lYX-Go-SkF" kind="push" id="DuD-b2-eFA"/>
@@ -1110,8 +1110,8 @@ How do you think others see it?</string>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2t-hU-7Lg">
                                 <rect key="frame" x="116" y="711" width="184" height="55"/>
-                                <state key="normal" title="Button" image="nextazzurro"/>
-                                <state key="disabled" image="nextAzzurroSpento"/>
+                                <state key="normal" title="Button" image="NextRosa"/>
+                                <state key="disabled" image="NextRosaNS"/>
                                 <connections>
                                     <segue destination="lfU-OF-Bud" kind="push" id="mjP-6E-I86"/>
                                 </connections>
@@ -1272,8 +1272,8 @@ How do you think others see it?</string>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4O-Qz-X11">
                                         <rect key="frame" x="0.0" y="-77" width="0.0" height="0.0"/>
-                                        <state key="normal" title="Button" image="submitAzzurro"/>
-                                        <state key="disabled" image="submitAzzurroSpento"/>
+                                        <state key="normal" title="Button" image="SubmitRosa"/>
+                                        <state key="disabled" image="SubmitRosaNS"/>
                                         <connections>
                                             <action selector="pressed:" destination="lfU-OF-Bud" eventType="touchUpInside" id="vHt-cq-KD0"/>
                                         </connections>
@@ -1384,16 +1384,16 @@ all the answers you gave?</string>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOD-j0-7tp">
                                         <rect key="frame" x="74" y="405" width="0.0" height="0.0"/>
-                                        <state key="normal" title=" " image="yesAzzurro"/>
+                                        <state key="normal" title=" " image="NoRosa"/>
                                         <connections>
-                                            <segue destination="hvR-kH-wNA" kind="show" id="2x3-ds-s6Q"/>
+                                            <segue destination="GG3-f1-cQ8" kind="show" id="rqq-x5-KjR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tz3-ol-La9">
                                         <rect key="frame" x="103" y="405" width="0.0" height="0.0"/>
-                                        <state key="normal" title=" " image="noAzzurro"/>
+                                        <state key="normal" title=" " image="yesRosa"/>
                                         <connections>
-                                            <segue destination="GG3-f1-cQ8" kind="show" id="Cab-pX-8BL"/>
+                                            <segue destination="hvR-kH-wNA" kind="show" id="0sY-Oe-LsQ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -3460,7 +3460,7 @@ The two shapes on the outside recount </string>
     <inferredMetricsTieBreakers>
         <segue reference="47n-ms-sJd"/>
         <segue reference="wd9-1W-xO2"/>
-        <segue reference="rkX-St-HZF"/>
+        <segue reference="rqq-x5-KjR"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2-" width="101.5" height="101.5"/>
@@ -3469,15 +3469,18 @@ The two shapes on the outside recount </string>
         <image name="Done" width="182" height="55"/>
         <image name="DoneN" width="182" height="55"/>
         <image name="GenerateAgain" width="263" height="55"/>
+        <image name="GoMaterpieceRosa" width="182" height="55"/>
         <image name="Group 48" width="508" height="518"/>
         <image name="IllustrazionePerBlur" width="370" height="600"/>
         <image name="Item1" width="29" height="27"/>
         <image name="Item2" width="26" height="22"/>
         <image name="Item3" width="29" height="29"/>
         <image name="Let'sgo" width="196" height="55"/>
-        <image name="Lettsegoazzurro" width="182" height="55"/>
         <image name="MakePhoto" width="98" height="94"/>
         <image name="MirrorWork1" width="415" height="144"/>
+        <image name="NextRosa" width="182" height="55"/>
+        <image name="NextRosaNS" width="182" height="55"/>
+        <image name="NoRosa" width="120" height="55"/>
         <image name="Onboarding1" width="3740" height="1350"/>
         <image name="ProceedAzzurro" width="182" height="55"/>
         <image name="QuestionAcceso" width="261" height="71"/>
@@ -3488,6 +3491,8 @@ The two shapes on the outside recount </string>
         <image name="Skip" width="98" height="94"/>
         <image name="Start-1" width="182" height="55"/>
         <image name="StartN" width="182" height="55"/>
+        <image name="SubmitRosa" width="182" height="55"/>
+        <image name="SubmitRosaNS" width="182" height="55"/>
         <image name="TCAzz" width="230" height="230"/>
         <image name="Textile" width="168" height="168"/>
         <image name="Weekly1" width="185" height="300"/>
@@ -3508,9 +3513,7 @@ The two shapes on the outside recount </string>
         <image name="linea" width="371" height="1"/>
         <image name="marble" width="168" height="168"/>
         <image name="navInsta" width="415" height="185"/>
-        <image name="nextAzzurroSpento" width="182" height="55"/>
         <image name="nextazzurro" width="182" height="55"/>
-        <image name="noAzzurro" width="120" height="55"/>
         <image name="nonselezionato" width="374" height="76"/>
         <image name="primaPalette" width="87" height="87"/>
         <image name="readyViola" width="182" height="55"/>
@@ -3524,12 +3527,11 @@ The two shapes on the outside recount </string>
         <image name="square" width="66" height="65"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="submitAzzurro" width="182" height="55"/>
-        <image name="submitAzzurroSpento" width="182" height="55"/>
         <image name="terzaPalette" width="87" height="87"/>
         <image name="triangle" width="74" height="69"/>
         <image name="unchecked" width="34" height="32"/>
         <image name="wood" width="168" height="168"/>
-        <image name="yesAzzurro" width="112" height="55"/>
+        <image name="yesRosa" width="112" height="55"/>
         <image name="zigzag" width="89" height="42"/>
     </resources>
 </document>
