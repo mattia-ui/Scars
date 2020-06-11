@@ -746,13 +746,12 @@ class Collage: UIViewController, UITextFieldDelegate  {
     func cropBottomImage(image: UIImage) -> UIImage {
 //        iphone XR
         if(view.frame.width == 414){
-            let height = CGFloat(800)
-           let rect = CGRect(x: 0, y: 400, width: 850, height: height)
+           let rect = CGRect(x: 115, y: 375, width: 600, height: 600)
            return cropImage(image: image, toRect: rect)
         }
 //            iphone XS
         else{
-           let rect = CGRect(x: 0, y: 560, width: 1150, height: 1120)
+           let rect = CGRect(x: 165, y: 530, width: 800, height: 800)
            return cropImage(image: image, toRect: rect)
         }
        
