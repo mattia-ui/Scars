@@ -11,9 +11,6 @@
         <array key="Cera Pro Bold.otf">
             <string>CeraPro-Bold</string>
         </array>
-        <array key="Cera Pro Light Italic.otf">
-            <string>CeraPro-LightItalic</string>
-        </array>
         <array key="Cera Pro Light.otf">
             <string>CeraPro-Light</string>
         </array>
@@ -241,13 +238,13 @@
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submitted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="b13-TX-EGq">
                                         <rect key="frame" x="128" y="324" width="152" height="32"/>
-                                        <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="32"/>
+                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="32"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for sharing your masterpiece with us!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Y2D-IT-Jem">
                                         <rect key="frame" x="71" y="372" width="266" height="47"/>
-                                        <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -3051,37 +3048,37 @@ The two shapes on the outside recount </string>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6d8-3F-j68">
                                                         <rect key="frame" x="22" y="301" width="370" height="258"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="RSS-Ai-3RQ">
                                                         <rect key="frame" x="23" y="563" width="300" height="21"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-LightItalic" family="Cera Pro" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="sdA-YO-mSp">
                                                         <rect key="frame" x="23" y="588" width="300" height="21"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-LightItalic" family="Cera Pro" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="qyw-FH-8KI">
                                                         <rect key="frame" x="23" y="613" width="300" height="21"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-LightItalic" family="Cera Pro" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="lya-o0-lqI">
                                                         <rect key="frame" x="23" y="638" width="300" height="21"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-LightItalic" family="Cera Pro" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="0bX-Ee-U2N">
                                                         <rect key="frame" x="23" y="663" width="300" height="21"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-LightItalic" family="Cera Pro" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3245,7 +3242,7 @@ The two shapes on the outside recount </string>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yy9-H0-njk">
                                                         <rect key="frame" x="22" y="388" width="370" height="253"/>
-                                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="20"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3461,10 +3458,9 @@ The two shapes on the outside recount </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nIG-wF-CdU"/>
-        <segue reference="47n-ms-sJd"/>
+        <segue reference="O1h-M3-5IE"/>
         <segue reference="wd9-1W-xO2"/>
-        <segue reference="Cab-pX-8BL"/>
+        <segue reference="rkX-St-HZF"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2-" width="101.5" height="101.5"/>
