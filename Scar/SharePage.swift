@@ -34,7 +34,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
         overrideUserInterfaceStyle = .light
 
         screen.layer.borderWidth = 0.5
-               screen.layer.borderColor = CGColor(srgbRed: 0.46, green: 0.41, blue: 0.51, alpha: 1)
+        screen.layer.borderColor = CGColor(srgbRed: 0.46, green: 0.41, blue: 0.51, alpha: 1)
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
                view.addGestureRecognizer(tap)
