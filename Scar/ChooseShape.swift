@@ -85,11 +85,7 @@ class ChooseShape: UIViewController  {
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
-
-    }
+    
     
     @IBOutlet weak var label: UILabel!
     
@@ -101,6 +97,36 @@ class ChooseShape: UIViewController  {
     @IBOutlet weak var nex: UIButton!
     
     static var shape1: String!
+    
+    @IBOutlet weak var vertical: UIStackView!
+    @IBOutlet weak var h1: UIStackView!
+    @IBOutlet weak var h2: UIStackView!
+    @IBOutlet weak var h3: UIStackView!
+    @IBOutlet weak var h4: UIStackView!
+    @IBOutlet weak var h5: UIStackView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        if(view.frame.width == 414){
+//            h1.spacing = 33
+//            h2.spacing = 26
+//            h3.spacing = 29
+//            h4.spacing = 32
+//            h5.spacing = 23
+        } else if(view.frame.width == 375){
+            h1.spacing = 23
+            h2.spacing = 16
+            h3.spacing = 19
+            h4.spacing = 22
+            h5.spacing = 13
+        }
+        if(view.frame.height == 812){
+            vertical.spacing = 15
+        }else if(view.frame.height == 667){
+            vertical.spacing = 8
+        }
+    }
     
     @IBAction func chooseSquare(_ sender: UIButton) {
         if sender.isSelected {

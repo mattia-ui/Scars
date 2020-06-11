@@ -40,7 +40,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ns4-Sj-bJV">
-                                <rect key="frame" x="22" y="175" width="366" height="524"/>
+                                <rect key="frame" x="22" y="219" width="366" height="524"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y7q-Le-8bb">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -79,13 +79,13 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trace it!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="dJF-ko-yfI">
-                                <rect key="frame" x="20" y="96" width="374" height="38"/>
+                                <rect key="frame" x="20" y="140" width="374" height="38"/>
                                 <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="iYI-gG-qQg">
-                                <rect key="frame" x="20" y="142" width="363" height="22"/>
+                                <rect key="frame" x="20" y="186" width="363" height="22"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -146,17 +146,17 @@
             <objects>
                 <viewController storyboardIdentifier="postCollage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GG3-f1-cQ8" customClass="PostCollage" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XOD-ds-Jxc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7X-yK-cdq">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="896"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navInsta" translatesAutoresizingMaskIntoConstraints="NO" id="CVc-ep-RVc">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="196"/>
                                     </imageView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nrD-Zz-bfZ">
-                                        <rect key="frame" x="0.0" y="184" width="414" height="658"/>
+                                        <rect key="frame" x="0.0" y="196" width="414" height="700"/>
                                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="5" minimumInteritemSpacing="3" id="XkC-uk-eSx">
                                             <size key="itemSize" width="145" height="145"/>
@@ -202,7 +202,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xph-ou-FkU">
-                                        <rect key="frame" x="0.0" y="184" width="414" height="658"/>
+                                        <rect key="frame" x="0.0" y="196" width="414" height="700"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -231,19 +231,19 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1JF-r6-XHa">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="896"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IllustrazionePerBlur" translatesAutoresizingMaskIntoConstraints="NO" id="7Iq-1d-X4P">
-                                        <rect key="frame" x="22" y="448" width="370" height="600"/>
+                                        <rect key="frame" x="22" y="453" width="370" height="638.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submitted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="b13-TX-EGq">
-                                        <rect key="frame" x="128" y="324" width="152" height="32"/>
+                                        <rect key="frame" x="128" y="324" width="152" height="34"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="32"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for sharing your masterpiece with us!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Y2D-IT-Jem">
-                                        <rect key="frame" x="71" y="372" width="266" height="47"/>
+                                        <rect key="frame" x="71" y="374" width="266" height="50"/>
                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -274,14 +274,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backM" translatesAutoresizingMaskIntoConstraints="NO" id="zKV-vd-0Ud">
-                                        <rect key="frame" x="23" y="241" width="370" height="404"/>
+                                        <rect key="frame" x="23" y="246" width="370" height="430"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueCircle" translatesAutoresizingMaskIntoConstraints="NO" id="H28-4N-94N">
                                         <rect key="frame" x="253" y="-93" width="232" height="232"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Bri-Aq-9dp">
-                                        <rect key="frame" x="22" y="61" width="259" height="177.5"/>
+                                        <rect key="frame" x="22" y="61" width="259" height="182.5"/>
                                         <string key="text">Create your 
 Masterpiece!</string>
                                         <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
@@ -289,7 +289,7 @@ Masterpiece!</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cj-VA-9NZ">
-                                        <rect key="frame" x="116" y="658" width="182" height="58.5"/>
+                                        <rect key="frame" x="116" y="689" width="182" height="62"/>
                                         <state key="normal" title="Button" image="GoMaterpieceRosa"/>
                                         <connections>
                                             <segue destination="xs9-hS-2dx" kind="show" id="nIG-wF-CdU"/>
@@ -670,11 +670,14 @@ How do you think others see it?</string>
             <objects>
                 <viewController id="xs9-hS-2dx" customClass="ChooseShape" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Srd-Ly-JAO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="RUp-S9-4CD">
                                 <rect key="frame" x="22.5" y="104" width="227" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="BUg-wI-S0T"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -685,181 +688,206 @@ How do you think others see it?</string>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="bAp-lc-87B">
-                                <rect key="frame" x="24" y="342" width="88" height="55"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="fiA-MW-TuO">
-                                <rect key="frame" x="30" y="511.5" width="68" height="68"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zigzag" translatesAutoresizingMaskIntoConstraints="NO" id="rJl-hD-wwg">
-                                <rect key="frame" x="23" y="615" width="84" height="36"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Te-rI-HPa">
-                                <rect key="frame" x="116" y="708.5" width="182" height="55"/>
+                                <rect key="frame" x="116" y="708" width="182" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="UnM-PI-eHz"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="NextRosa"/>
                                 <state key="disabled" image="NextRosaNS"/>
                                 <connections>
                                     <segue destination="My5-jh-AI2" kind="show" id="PBJ-nY-4jd"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle" translatesAutoresizingMaskIntoConstraints="NO" id="VsF-9m-vhn">
-                                <rect key="frame" x="27" y="423" width="74" height="69"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="SPF-T2-Ny5">
-                                <rect key="frame" x="31" y="248" width="66" height="65"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="A3T-Ks-YCR">
-                                <rect key="frame" x="130.5" y="245" width="261" height="71"/>
-                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
-                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" backgroundImage="QuestionSpento"/>
-                                <state key="selected" backgroundImage="QuestionAcceso">
-                                    <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="chooseSquare:" destination="xs9-hS-2dx" eventType="touchUpInside" id="2j9-zi-hhX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RcF-Kg-Q4p">
-                                <rect key="frame" x="130.5" y="510" width="261" height="71"/>
-                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
-                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" backgroundImage="QuestionSpento"/>
-                                <state key="selected" backgroundImage="QuestionAcceso">
-                                    <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="chooseCircle:" destination="xs9-hS-2dx" eventType="touchUpInside" id="0HE-XA-v9D"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cj7-a4-0Xz">
-                                <rect key="frame" x="130.5" y="334" width="261" height="71"/>
-                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
-                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" backgroundImage="QuestionSpento"/>
-                                <state key="selected" backgroundImage="QuestionAcceso">
-                                    <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="chooseRect:" destination="xs9-hS-2dx" eventType="touchUpInside" id="lxu-qg-SGZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="61O-Bn-xRC">
-                                <rect key="frame" x="130.5" y="597.5" width="261" height="71"/>
-                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
-                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" backgroundImage="QuestionSpento"/>
-                                <state key="selected" backgroundImage="QuestionAcceso">
-                                    <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="chooseZigZag:" destination="xs9-hS-2dx" eventType="touchUpInside" id="kP5-67-Epy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DJU-JS-gID">
-                                <rect key="frame" x="130.5" y="422" width="261" height="71"/>
-                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
-                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" backgroundImage="QuestionSpento"/>
-                                <state key="selected" backgroundImage="QuestionAcceso">
-                                    <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="chooseTriangle:" destination="xs9-hS-2dx" eventType="touchUpInside" id="7xr-3y-1dk"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="8Lu-VZ-BEw">
+                                <rect key="frame" x="15.5" y="245" width="383" height="427"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="J4w-EO-tk2">
+                                        <rect key="frame" x="0.0" y="0.0" width="383" height="71"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="SPF-T2-Ny5">
+                                                <rect key="frame" x="0.0" y="0.0" width="66" height="71"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="A3T-Ks-YCR">
+                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
+                                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" backgroundImage="QuestionSpento"/>
+                                                <state key="selected" backgroundImage="QuestionAcceso">
+                                                    <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="chooseSquare:" destination="xs9-hS-2dx" eventType="touchUpInside" id="2j9-zi-hhX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="k8w-aV-QhV">
+                                        <rect key="frame" x="0.0" y="89" width="383" height="71"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="bAp-lc-87B">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="71"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cj7-a4-0Xz">
+                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
+                                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" backgroundImage="QuestionSpento"/>
+                                                <state key="selected" backgroundImage="QuestionAcceso">
+                                                    <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="chooseRect:" destination="xs9-hS-2dx" eventType="touchUpInside" id="lxu-qg-SGZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="Qar-eD-Goy">
+                                        <rect key="frame" x="0.0" y="178" width="383" height="71"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle" translatesAutoresizingMaskIntoConstraints="NO" id="VsF-9m-vhn">
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="71"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DJU-JS-gID">
+                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
+                                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" backgroundImage="QuestionSpento"/>
+                                                <state key="selected" backgroundImage="QuestionAcceso">
+                                                    <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="chooseTriangle:" destination="xs9-hS-2dx" eventType="touchUpInside" id="7xr-3y-1dk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="ccL-KK-HpV">
+                                        <rect key="frame" x="0.0" y="267" width="383" height="71"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="fiA-MW-TuO">
+                                                <rect key="frame" x="0.0" y="0.0" width="68" height="71"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RcF-Kg-Q4p">
+                                                <rect key="frame" x="113" y="0.0" width="270" height="71"/>
+                                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" backgroundImage="QuestionSpento"/>
+                                                <state key="selected" backgroundImage="QuestionAcceso">
+                                                    <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="chooseCircle:" destination="xs9-hS-2dx" eventType="touchUpInside" id="0HE-XA-v9D"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="YGB-Vn-uNM">
+                                        <rect key="frame" x="0.0" y="356" width="383" height="71"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zigzag" translatesAutoresizingMaskIntoConstraints="NO" id="rJl-hD-wwg">
+                                                <rect key="frame" x="0.0" y="0.0" width="89" height="71"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="61O-Bn-xRC">
+                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
+                                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" backgroundImage="QuestionSpento"/>
+                                                <state key="selected" backgroundImage="QuestionAcceso">
+                                                    <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="chooseZigZag:" destination="xs9-hS-2dx" eventType="touchUpInside" id="kP5-67-Epy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="5Te-rI-HPa" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="91:421" id="1zG-BX-dLP"/>
-                            <constraint firstItem="DJU-JS-gID" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.084323" id="4Pf-KT-PT5"/>
-                            <constraint firstItem="bAp-lc-87B" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0653207" id="5PI-ty-jhS"/>
-                            <constraint firstAttribute="bottom" secondItem="5Te-rI-HPa" secondAttribute="bottom" constant="78.5" id="6F0-cA-83n"/>
-                            <constraint firstItem="VbA-c6-b5q" firstAttribute="top" secondItem="RUp-S9-4CD" secondAttribute="bottom" constant="9" id="6yb-WL-k9w"/>
-                            <constraint firstItem="VbA-c6-b5q" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.891304" id="7zE-Ow-jJY"/>
-                            <constraint firstItem="61O-Bn-xRC" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.084323" id="8J1-dX-XP4"/>
-                            <constraint firstItem="DJU-JS-gID" firstAttribute="top" secondItem="cj7-a4-0Xz" secondAttribute="bottom" constant="17" id="8bm-nB-kVh"/>
-                            <constraint firstItem="bAp-lc-87B" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.21256" id="9Fj-uN-bfV"/>
-                            <constraint firstItem="RcF-Kg-Q4p" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.084323" id="ACu-yE-Vny"/>
-                            <constraint firstItem="61O-Bn-xRC" firstAttribute="top" secondItem="RcF-Kg-Q4p" secondAttribute="bottom" constant="16.5" id="AOb-Jw-vdp"/>
-                            <constraint firstItem="VsF-9m-vhn" firstAttribute="centerX" secondItem="fiA-MW-TuO" secondAttribute="centerX" id="B7H-63-VQi"/>
-                            <constraint firstItem="rJl-hD-wwg" firstAttribute="centerY" secondItem="61O-Bn-xRC" secondAttribute="centerY" id="BtB-40-6h6"/>
-                            <constraint firstItem="VbA-c6-b5q" firstAttribute="trailing" secondItem="A3T-Ks-YCR" secondAttribute="trailing" id="C68-T7-wSv"/>
-                            <constraint firstItem="cj7-a4-0Xz" firstAttribute="leading" secondItem="DJU-JS-gID" secondAttribute="leading" id="CY1-98-fR1"/>
-                            <constraint firstItem="fiA-MW-TuO" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="34:421" id="E5r-W8-PKc"/>
-                            <constraint firstItem="61O-Bn-xRC" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.630435" id="FAH-zi-Qdb"/>
-                            <constraint firstItem="RUp-S9-4CD" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.548309" id="GkC-GC-Pra"/>
-                            <constraint firstItem="SPF-T2-Ny5" firstAttribute="centerY" secondItem="A3T-Ks-YCR" secondAttribute="centerY" id="JU4-Q6-YqU"/>
-                            <constraint firstItem="cj7-a4-0Xz" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.630435" id="OPa-xP-fQ8"/>
-                            <constraint firstItem="bAp-lc-87B" firstAttribute="leading" secondItem="XMW-B1-A0M" secondAttribute="leading" constant="24" id="Ra6-J4-saR"/>
-                            <constraint firstItem="rJl-hD-wwg" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0427553" id="Sht-1d-K6M"/>
-                            <constraint firstItem="5Te-rI-HPa" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0653207" id="U8l-3P-gua"/>
-                            <constraint firstItem="VbA-c6-b5q" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="369:842" id="UG5-le-EZt"/>
-                            <constraint firstItem="A3T-Ks-YCR" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="261:842" id="WJz-b6-tSN"/>
-                            <constraint firstItem="5Te-rI-HPa" firstAttribute="top" secondItem="61O-Bn-xRC" secondAttribute="bottom" constant="40" id="XHi-Xf-c6g"/>
-                            <constraint firstItem="RcF-Kg-Q4p" firstAttribute="top" secondItem="DJU-JS-gID" secondAttribute="bottom" constant="17" id="XIq-lU-Au9"/>
-                            <constraint firstItem="A3T-Ks-YCR" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.630435" id="Yba-G3-0Ms"/>
-                            <constraint firstItem="RcF-Kg-Q4p" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="261:842" id="Z1g-hJ-eoV"/>
-                            <constraint firstItem="VbA-c6-b5q" firstAttribute="centerX" secondItem="5Te-rI-HPa" secondAttribute="centerX" id="ZsR-oe-dUT"/>
-                            <constraint firstItem="cj7-a4-0Xz" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="261:842" id="aSY-hQ-5Qv"/>
-                            <constraint firstItem="SPF-T2-Ny5" firstAttribute="centerX" secondItem="VsF-9m-vhn" secondAttribute="centerX" id="asI-Am-OUf"/>
-                            <constraint firstItem="VbA-c6-b5q" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0795724" id="aup-aA-Mqn"/>
-                            <constraint firstItem="bAp-lc-87B" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="44:421" id="bhd-CC-rhP"/>
-                            <constraint firstItem="5Te-rI-HPa" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.439614" id="cQF-Mg-qYr"/>
-                            <constraint firstItem="RUp-S9-4CD" firstAttribute="leading" secondItem="VbA-c6-b5q" secondAttribute="leading" id="cU2-yk-oG7"/>
-                            <constraint firstItem="VsF-9m-vhn" firstAttribute="leading" secondItem="XMW-B1-A0M" secondAttribute="leading" constant="27" id="cn0-hF-YJE"/>
-                            <constraint firstItem="SPF-T2-Ny5" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="33:421" id="d2N-Fc-kcq"/>
-                            <constraint firstItem="A3T-Ks-YCR" firstAttribute="leading" secondItem="cj7-a4-0Xz" secondAttribute="leading" id="ehF-Gf-nWv"/>
-                            <constraint firstItem="rJl-hD-wwg" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="42:421" id="fW9-k0-WtU"/>
-                            <constraint firstItem="cj7-a4-0Xz" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.084323" id="fbA-qx-jZe"/>
-                            <constraint firstItem="SPF-T2-Ny5" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.15942" id="ffM-l4-a6k"/>
-                            <constraint firstItem="bAp-lc-87B" firstAttribute="centerY" secondItem="cj7-a4-0Xz" secondAttribute="centerY" id="gSo-pJ-vVy"/>
-                            <constraint firstItem="SPF-T2-Ny5" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0771971" id="hCL-EJ-l5Q"/>
-                            <constraint firstItem="VsF-9m-vhn" firstAttribute="centerY" secondItem="DJU-JS-gID" secondAttribute="centerY" id="hND-pn-AoX"/>
-                            <constraint firstItem="VbA-c6-b5q" firstAttribute="centerX" secondItem="Srd-Ly-JAO" secondAttribute="centerX" id="jAs-bN-gg0"/>
-                            <constraint firstItem="61O-Bn-xRC" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="261:842" id="jxU-ek-bgh"/>
-                            <constraint firstItem="fiA-MW-TuO" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0807601" id="kNr-PH-Ueg"/>
-                            <constraint firstItem="DJU-JS-gID" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="261:842" id="lQ7-JF-VeZ"/>
-                            <constraint firstItem="A3T-Ks-YCR" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.084323" id="ldn-LT-qyM"/>
-                            <constraint firstItem="RUp-S9-4CD" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="227:842" id="mUZ-zf-WTg"/>
-                            <constraint firstItem="RcF-Kg-Q4p" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.630435" id="myc-Kg-WIO"/>
-                            <constraint firstItem="rJl-hD-wwg" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.202899" id="ncX-4m-jqw"/>
-                            <constraint firstItem="VsF-9m-vhn" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0819477" id="ofT-YY-62C"/>
-                            <constraint firstItem="DJU-JS-gID" firstAttribute="leading" secondItem="RcF-Kg-Q4p" secondAttribute="leading" id="otQ-gj-2dS"/>
-                            <constraint firstItem="fiA-MW-TuO" firstAttribute="centerY" secondItem="RcF-Kg-Q4p" secondAttribute="centerY" id="pC4-Vs-je7"/>
-                            <constraint firstItem="cj7-a4-0Xz" firstAttribute="top" secondItem="A3T-Ks-YCR" secondAttribute="bottom" constant="18" id="rvO-fy-1S5"/>
-                            <constraint firstItem="DJU-JS-gID" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.630435" id="urA-55-r3b"/>
-                            <constraint firstItem="A3T-Ks-YCR" firstAttribute="top" secondItem="VbA-c6-b5q" secondAttribute="bottom" constant="21" id="vyO-oh-Jct"/>
-                            <constraint firstItem="VsF-9m-vhn" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="37:421" id="w92-RQ-iQj"/>
-                            <constraint firstItem="VsF-9m-vhn" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.178744" id="wIi-70-zLe"/>
-                            <constraint firstItem="RUp-S9-4CD" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0522565" id="wf6-gu-WKF"/>
-                            <constraint firstItem="rJl-hD-wwg" firstAttribute="leading" secondItem="XMW-B1-A0M" secondAttribute="leading" constant="23" id="xDm-xd-Dat"/>
-                            <constraint firstItem="RcF-Kg-Q4p" firstAttribute="leading" secondItem="61O-Bn-xRC" secondAttribute="leading" id="yvC-mu-e32"/>
-                            <constraint firstItem="fiA-MW-TuO" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.164251" id="ze7-wt-cgY"/>
+                            <constraint firstItem="fiA-MW-TuO" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="17:224" id="2jv-bt-xAc"/>
+                            <constraint firstItem="VbA-c6-b5q" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0747768" id="2wJ-xp-gcC"/>
+                            <constraint firstItem="VbA-c6-b5q" firstAttribute="centerX" secondItem="5Te-rI-HPa" secondAttribute="centerX" id="3y5-yp-JmA"/>
+                            <constraint firstItem="8Lu-VZ-BEw" firstAttribute="centerX" secondItem="Srd-Ly-JAO" secondAttribute="centerX" id="6y8-Wt-t3v"/>
+                            <constraint firstItem="RUp-S9-4CD" firstAttribute="leading" secondItem="VbA-c6-b5q" secondAttribute="leading" id="7fm-xB-Gcq"/>
+                            <constraint firstItem="rJl-hD-wwg" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0792411" id="9Ak-0P-EX0"/>
+                            <constraint firstItem="fiA-MW-TuO" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.164251" id="AKY-p8-hvG"/>
+                            <constraint firstItem="SPF-T2-Ny5" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="33:448" id="AdF-oI-jOy"/>
+                            <constraint firstItem="RcF-Kg-Q4p" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.652174" id="Cfd-4t-8JP"/>
+                            <constraint firstItem="VsF-9m-vhn" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="37:448" id="DTH-2v-zsU"/>
+                            <constraint firstItem="DJU-JS-gID" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="271:896" id="FpW-IG-vtG"/>
+                            <constraint firstItem="bAp-lc-87B" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0792411" id="GZC-pv-sjN"/>
+                            <constraint firstItem="A3T-Ks-YCR" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.654589" id="Grh-lW-5Xj"/>
+                            <constraint firstItem="5Te-rI-HPa" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.439614" id="HZn-Zs-B2U"/>
+                            <constraint firstItem="A3T-Ks-YCR" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="271:896" id="HkB-PU-SlL"/>
+                            <constraint firstItem="cj7-a4-0Xz" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="271:896" id="J3R-qs-I9U"/>
+                            <constraint firstItem="8Lu-VZ-BEw" firstAttribute="top" secondItem="VbA-c6-b5q" secondAttribute="bottom" constant="21" id="K0L-Sq-tTX"/>
+                            <constraint firstItem="8Lu-VZ-BEw" firstAttribute="leading" secondItem="XMW-B1-A0M" secondAttribute="leading" constant="15.5" id="LCN-aD-cFF"/>
+                            <constraint firstItem="rJl-hD-wwg" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.214976" id="NMS-Qo-6oP"/>
+                            <constraint firstItem="cj7-a4-0Xz" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.654589" id="OIa-lf-1ca"/>
+                            <constraint firstItem="RUp-S9-4CD" firstAttribute="leading" secondItem="XMW-B1-A0M" secondAttribute="leading" constant="22.5" id="OPY-qb-0LN"/>
+                            <constraint firstItem="RUp-S9-4CD" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0491071" id="PqM-tx-Hcy"/>
+                            <constraint firstItem="bAp-lc-87B" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="5:56" id="S4p-4q-9u9"/>
+                            <constraint firstItem="fiA-MW-TuO" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0792411" id="TMb-yx-E7R"/>
+                            <constraint firstItem="61O-Bn-xRC" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.654589" id="TNI-jw-8QO"/>
+                            <constraint firstItem="DJU-JS-gID" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0792411" id="U6k-lo-65a"/>
+                            <constraint firstItem="RUp-S9-4CD" firstAttribute="top" secondItem="XMW-B1-A0M" secondAttribute="top" constant="16" id="W6p-nQ-SXO"/>
+                            <constraint firstItem="RUp-S9-4CD" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="227:896" id="WsE-aA-59w"/>
+                            <constraint firstItem="bAp-lc-87B" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.193237" id="Wso-EI-m7Q"/>
+                            <constraint firstItem="5Te-rI-HPa" firstAttribute="top" secondItem="8Lu-VZ-BEw" secondAttribute="bottom" constant="36" id="WzW-dh-ipQ"/>
+                            <constraint firstItem="VsF-9m-vhn" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0792411" id="b1D-Be-spD"/>
+                            <constraint firstItem="RcF-Kg-Q4p" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="135:448" id="biH-tB-eaF"/>
+                            <constraint firstItem="DJU-JS-gID" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.654589" id="bx8-EZ-ZVP"/>
+                            <constraint firstItem="SPF-T2-Ny5" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.15942" id="eJa-jI-K1e"/>
+                            <constraint firstItem="61O-Bn-xRC" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0792411" id="eJo-Z5-0xD"/>
+                            <constraint firstItem="VbA-c6-b5q" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.891304" id="eZr-nD-PfZ"/>
+                            <constraint firstItem="5Te-rI-HPa" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="13:64" id="f7L-yX-dCn"/>
+                            <constraint firstItem="SPF-T2-Ny5" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0792411" id="f94-f1-L4X"/>
+                            <constraint firstItem="5Te-rI-HPa" firstAttribute="leading" secondItem="XMW-B1-A0M" secondAttribute="leading" constant="116" id="gHJ-vF-ETu"/>
+                            <constraint firstItem="RUp-S9-4CD" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.548309" id="ioG-KA-JDa"/>
+                            <constraint firstItem="61O-Bn-xRC" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="271:896" id="jMq-Ux-rS3"/>
+                            <constraint firstItem="rJl-hD-wwg" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="89:896" id="jYj-U1-n9w"/>
+                            <constraint firstItem="cj7-a4-0Xz" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0792411" id="kbT-IA-iJ4"/>
+                            <constraint firstItem="VbA-c6-b5q" firstAttribute="top" secondItem="RUp-S9-4CD" secondAttribute="bottom" constant="9" id="nWE-Tm-2Y7"/>
+                            <constraint firstItem="VbA-c6-b5q" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="369:896" id="pFc-YA-JXX"/>
+                            <constraint firstItem="5Te-rI-HPa" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0613839" id="rFf-1X-uVt"/>
+                            <constraint firstItem="VbA-c6-b5q" firstAttribute="centerX" secondItem="Srd-Ly-JAO" secondAttribute="centerX" id="trO-RP-oLj"/>
+                            <constraint firstItem="VsF-9m-vhn" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.178744" id="uVH-Fb-rjZ"/>
+                            <constraint firstItem="A3T-Ks-YCR" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0792411" id="wpS-Qc-ZCH"/>
+                            <constraint firstItem="XMW-B1-A0M" firstAttribute="trailing" secondItem="RUp-S9-4CD" secondAttribute="trailing" constant="164.5" id="xxe-jy-5EZ"/>
+                            <constraint firstItem="RcF-Kg-Q4p" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0792411" id="yhf-zG-apu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XMW-B1-A0M"/>
                     </view>
                     <navigationItem key="navigationItem" id="eOt-ry-lny"/>
                     <connections>
                         <outlet property="circle" destination="RcF-Kg-Q4p" id="5M4-cH-IRb"/>
+                        <outlet property="h1" destination="J4w-EO-tk2" id="vEh-VT-wJa"/>
+                        <outlet property="h2" destination="k8w-aV-QhV" id="K8K-9O-zNq"/>
+                        <outlet property="h3" destination="Qar-eD-Goy" id="5Qn-zN-uce"/>
+                        <outlet property="h4" destination="ccL-KK-HpV" id="qzi-4g-m9k"/>
+                        <outlet property="h5" destination="YGB-Vn-uNM" id="QaM-Zk-9Nx"/>
                         <outlet property="label" destination="VbA-c6-b5q" id="LEA-5d-NAO"/>
                         <outlet property="nex" destination="5Te-rI-HPa" id="b5L-vI-cqT"/>
                         <outlet property="rect" destination="cj7-a4-0Xz" id="VBE-1i-Khc"/>
                         <outlet property="square" destination="A3T-Ks-YCR" id="kCC-IA-lxd"/>
                         <outlet property="triangle" destination="DJU-JS-gID" id="qES-gc-bzH"/>
+                        <outlet property="vertical" destination="8Lu-VZ-BEw" id="Rkb-GI-z0t"/>
                         <outlet property="zigZag" destination="61O-Bn-xRC" id="oaK-YL-vAh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9nl-tQ-2tI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="657.97101449275362" y="2276.7857142857142"/>
+            <point key="canvasLocation" x="656.52173913043487" y="2276.7857142857142"/>
         </scene>
         <!--Choose Shape2-->
         <scene sceneID="OD2-EG-cs0">
             <objects>
                 <viewController id="My5-jh-AI2" customClass="ChooseShape2" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mat-fe-5YN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wSE-1b-OHo">
@@ -1039,7 +1067,7 @@ How do you think others see it?</string>
             <objects>
                 <viewController id="lYX-Go-SkF" customClass="ChoosePalette" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UH4-Nu-LfI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="m8e-tD-btm">
@@ -1185,28 +1213,29 @@ How do you think others see it?</string>
             <objects>
                 <viewController id="lfU-OF-Bud" customClass="ChooseTexture" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pnh-IU-Nic">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jE3-g0-hTy">
+                                <rect key="frame" x="0.0" y="44" width="328" height="667.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Textile" translatesAutoresizingMaskIntoConstraints="NO" id="eP9-YF-Agc">
-                                        <rect key="frame" x="22" y="-141.5" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="22" y="305" width="59.5" height="60"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crater" translatesAutoresizingMaskIntoConstraints="NO" id="3Uf-Yt-Gwb">
-                                        <rect key="frame" x="22" y="-153" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="22" y="234" width="59.5" height="59.5"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sea" translatesAutoresizingMaskIntoConstraints="NO" id="YBv-BC-Bzc">
-                                        <rect key="frame" x="22" y="-165.5" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="22" y="161.5" width="59.5" height="60"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="wood" translatesAutoresizingMaskIntoConstraints="NO" id="SNQ-KO-nnh">
-                                        <rect key="frame" x="22" y="-117" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="22" y="449" width="59.5" height="59.5"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marble" translatesAutoresizingMaskIntoConstraints="NO" id="57U-4M-5nY">
-                                        <rect key="frame" x="22" y="-129" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="22" y="377.5" width="59.5" height="59.5"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nTf-2F-YIf">
-                                        <rect key="frame" x="55" y="-117" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="114.5" y="450.5" width="207" height="56.5"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Wood" backgroundImage="QuestionSpento">
@@ -1219,7 +1248,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kqu-2o-qXn">
-                                        <rect key="frame" x="55" y="-165" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="114.5" y="162" width="207" height="56"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Sea" backgroundImage="QuestionSpento">
@@ -1232,7 +1261,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="CrL-CA-bOp">
-                                        <rect key="frame" x="55" y="-153" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="114.5" y="234" width="207" height="56"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Crater" backgroundImage="QuestionSpento">
@@ -1245,7 +1274,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="YRS-3h-hAc">
-                                        <rect key="frame" x="55" y="-141.5" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="114.5" y="307" width="207" height="56"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Textile fiber" backgroundImage="QuestionSpento">
@@ -1258,7 +1287,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bxN-yg-fPW">
-                                        <rect key="frame" x="55" y="-129" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="114.5" y="379" width="207" height="56.5"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Marble" backgroundImage="QuestionSpento">
@@ -1271,7 +1300,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4O-Qz-X11">
-                                        <rect key="frame" x="0.0" y="-77" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="92" y="547" width="144" height="43.5"/>
                                         <state key="normal" title="Button" image="SubmitRosa"/>
                                         <state key="disabled" image="SubmitRosaNS"/>
                                         <connections>
@@ -1279,13 +1308,13 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 4/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Lej-tX-y6u">
-                                        <rect key="frame" x="22" y="-179.5" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="22" y="42" width="188" height="38"/>
                                         <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="mIk-Xe-oy0">
-                                        <rect key="frame" x="22" y="-174.5" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="22" y="85" width="303" height="67.5"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -1361,15 +1390,16 @@ How do you think others see it?</string>
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaT-OJ-lJp">
+                                <rect key="frame" x="0.0" y="0.0" width="328" height="667"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submit answers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="iqq-Hd-Wwa">
-                                        <rect key="frame" x="76" y="324" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="84.5" y="324" width="187" height="25.5"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="32"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="kHH-QA-nou">
-                                        <rect key="frame" x="76" y="338" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="76" y="363.5" width="203.5" height="34.5"/>
                                         <string key="text">Are you sure about 
 all the answers you gave?</string>
                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
@@ -1377,20 +1407,20 @@ all the answers you gave?</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forma1 - Forma2 - Palette - Texture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="RDd-Fb-aqK">
-                                        <rect key="frame" x="0.0" y="369" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="429" width="328" height="16"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOD-j0-7tp">
-                                        <rect key="frame" x="74" y="405" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="74" y="481" width="92.5" height="43.5"/>
                                         <state key="normal" title=" " image="NoRosa"/>
                                         <connections>
                                             <segue destination="GG3-f1-cQ8" kind="show" id="rqq-x5-KjR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tz3-ol-La9">
-                                        <rect key="frame" x="103" y="405" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="195.5" y="481" width="99" height="43.5"/>
                                         <state key="normal" title=" " image="yesRosa"/>
                                         <connections>
                                             <segue destination="hvR-kH-wNA" kind="show" id="0sY-Oe-LsQ"/>
@@ -1476,40 +1506,40 @@ all the answers you gave?</string>
             <objects>
                 <viewController id="hvR-kH-wNA" customClass="TakePicture" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vEG-89-kEc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the way!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="AiM-zE-6gR">
-                                <rect key="frame" x="22" y="107" width="302" height="38"/>
+                                <rect key="frame" x="22" y="127.5" width="321.5" height="40"/>
                                 <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsH-Wf-de9">
-                                <rect key="frame" x="74.5" y="654" width="98" height="94"/>
+                                <rect key="frame" x="78" y="701" width="104.5" height="100"/>
                                 <state key="normal" image="MakePhoto"/>
                                 <connections>
                                     <action selector="addImage:" destination="hvR-kH-wNA" eventType="touchUpInside" id="05I-u2-MLy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3D-GU-hSB">
-                                <rect key="frame" x="242.5" y="654" width="98" height="94"/>
+                                <rect key="frame" x="257" y="701" width="104" height="100"/>
                                 <state key="normal" image="Skip"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="TlC-WV-Ndb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(If you remember the shape already)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="cpF-cN-5d5">
-                                <rect key="frame" x="74.5" y="770" width="266" height="16"/>
+                                <rect key="frame" x="78" y="823" width="283" height="17"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="16"/>
                                 <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weekly1" translatesAutoresizingMaskIntoConstraints="NO" id="ZhO-SO-6sM">
-                                <rect key="frame" x="69" y="329" width="276" height="309"/>
+                                <rect key="frame" x="69" y="351.5" width="296" height="333.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="kTB-8f-OJj">
-                                <rect key="frame" x="22" y="254" width="375" height="61"/>
+                                <rect key="frame" x="22" y="276.5" width="399" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="2UC-Oq-LIj"/>
                                 </constraints>
@@ -1518,7 +1548,7 @@ all the answers you gave?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="yE5-lk-76G">
-                                <rect key="frame" x="22" y="153" width="374" height="96"/>
+                                <rect key="frame" x="22" y="175.5" width="398" height="96"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="cSS-h1-VwA"/>
                                 </constraints>
@@ -3015,22 +3045,22 @@ The two shapes on the outside recount </string>
             <objects>
                 <viewController id="q9l-GE-q4m" customClass="GenerateAgain" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tPo-Gd-3ON">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1146"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YourMasterpiece" translatesAutoresizingMaskIntoConstraints="NO" id="hht-L1-G5R">
-                                <rect key="frame" x="-2" y="-16" width="418" height="141"/>
+                                <rect key="frame" x="-2" y="28" width="418" height="142.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayK-bN-Qsf">
-                                <rect key="frame" x="16" y="75" width="14" height="35"/>
+                                <rect key="frame" x="16" y="119" width="14" height="36.5"/>
                                 <state key="normal" image="backArrow"/>
                                 <connections>
                                     <action selector="backB:" destination="q9l-GE-q4m" eventType="touchUpInside" id="m6c-aa-ad3"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcE-Dh-ylJ">
-                                <rect key="frame" x="0.0" y="137" width="414" height="965"/>
+                                <rect key="frame" x="0.0" y="182.5" width="414" height="958.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kut-iV-ZUw">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1029"/>
@@ -3460,7 +3490,7 @@ The two shapes on the outside recount </string>
     <inferredMetricsTieBreakers>
         <segue reference="47n-ms-sJd"/>
         <segue reference="wd9-1W-xO2"/>
-        <segue reference="rkX-St-HZF"/>
+        <segue reference="GPg-NV-9UE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2-" width="101.5" height="101.5"/>
