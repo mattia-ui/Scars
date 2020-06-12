@@ -1903,8 +1903,8 @@ your body and others’s bodies.</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yHf-AX-5ZQ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="241.5"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Good " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wg-V5-aIC">
-                                <rect key="frame" x="25" y="113.5" width="281" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" misplaced="YES" text="Good " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wg-V5-aIC">
+                                <rect key="frame" x="25" y="118" width="281" height="34"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -2016,7 +2016,7 @@ your body and others’s bodies.</string>
                                     <fragment content="Qua ci vanno le stronzate di francesca">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" metaFont="system" size="18"/>
+                                            <font key="NSFont" size="18" name="NexaLight"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -2025,12 +2025,12 @@ your body and others’s bodies.</string>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Ready for a boost of self-esteem?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOt-Hk-MoG">
                                 <rect key="frame" x="25" y="199.5" width="369" height="37"/>
-                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZ3-f6-Ny2">
-                                <rect key="frame" x="25" y="137.5" width="281" height="58"/>
+                                <rect key="frame" x="25" y="144.5" width="281" height="58"/>
                                 <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2068,7 +2068,7 @@ your body and others’s bodies.</string>
                             <constraint firstItem="yHf-AX-5ZQ" firstAttribute="width" secondItem="4YE-cF-0EA" secondAttribute="width" id="JHc-Uf-y1L"/>
                             <constraint firstItem="puv-vE-VcP" firstAttribute="leading" secondItem="hOt-Hk-MoG" secondAttribute="leading" id="LXs-8X-56z"/>
                             <constraint firstItem="hOt-Hk-MoG" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="25" id="Lb5-7N-fuB"/>
-                            <constraint firstItem="cZ3-f6-Ny2" firstAttribute="bottom" secondItem="hOt-Hk-MoG" secondAttribute="top" constant="-4" id="LdB-Ve-2kB"/>
+                            <constraint firstItem="cZ3-f6-Ny2" firstAttribute="bottom" secondItem="hOt-Hk-MoG" secondAttribute="top" constant="3" id="LdB-Ve-2kB"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="trailing" secondItem="mqk-Ya-Xpd" secondAttribute="trailing" constant="10" id="Lyd-65-nFh"/>
                             <constraint firstItem="0Wg-V5-aIC" firstAttribute="width" secondItem="4YE-cF-0EA" secondAttribute="width" multiplier="0.678744" id="Mle-SM-UF4"/>
                             <constraint firstItem="mqk-Ya-Xpd" firstAttribute="leading" secondItem="61N-a8-v0d" secondAttribute="trailing" constant="1" id="NAd-O3-rhW"/>
@@ -2078,7 +2078,7 @@ your body and others’s bodies.</string>
                             <constraint firstItem="hOt-Hk-MoG" firstAttribute="bottom" secondItem="v02-uU-l8R" secondAttribute="top" constant="-16" id="XUQ-4s-JRi"/>
                             <constraint firstItem="cZ3-f6-Ny2" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="25" id="Xsm-Rj-Li5"/>
                             <constraint firstItem="0Wg-V5-aIC" firstAttribute="height" secondItem="4YE-cF-0EA" secondAttribute="height" multiplier="0.0267857" id="Ykp-ew-iiL"/>
-                            <constraint firstItem="0Wg-V5-aIC" firstAttribute="bottom" secondItem="cZ3-f6-Ny2" secondAttribute="top" id="bx5-CO-bHA"/>
+                            <constraint firstItem="0Wg-V5-aIC" firstAttribute="bottom" secondItem="cZ3-f6-Ny2" secondAttribute="top" constant="7.5" id="bx5-CO-bHA"/>
                             <constraint firstItem="fWY-uv-LMG" firstAttribute="height" secondItem="4YE-cF-0EA" secondAttribute="height" multiplier="0.141741" constant="38.000063999999995" id="chg-Wh-WsP"/>
                             <constraint firstItem="mqk-Ya-Xpd" firstAttribute="width" secondItem="4YE-cF-0EA" secondAttribute="width" multiplier="0.456522" id="g8D-Ll-sdW"/>
                             <constraint firstItem="v02-uU-l8R" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="22" id="gPt-S2-ARn"/>
@@ -3502,7 +3502,6 @@ The two shapes on the outside recount </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mjP-6E-I86"/>
         <segue reference="47n-ms-sJd"/>
         <segue reference="wd9-1W-xO2"/>
         <segue reference="rqq-x5-KjR"/>
