@@ -31,8 +31,39 @@ class ChoosePalette: UIViewController  {
     @IBOutlet weak var cool: UIButton!
     @IBOutlet weak var warm: UIButton!
     @IBOutlet weak var neutral: UIButton!
+    @IBOutlet weak var cold: UIImageView!
+    @IBOutlet weak var warmt: UIImageView!
+    @IBOutlet weak var mammt: UIImageView!
+    
+    
     @IBOutlet weak var nex: UIButton!
+    @IBOutlet weak var question: UILabel!
     static var color: String!
+    
+    func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
+        print(view.frame.origin.x)
+        UIView.animate(withDuration: aCircleTime, animations: {
+            () -> Void in view.transform = CGAffineTransform(translationX: 0, y: to)
+        })
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+
+                if(view.frame.height == 812){
+                }else if(view.frame.height == 667){
+                    traslate(view: question, aCircleTime: 0, to: -22)
+                    traslate(view: label, aCircleTime: 0, to: -25)
+                    traslate(view: nex, aCircleTime: 0, to: -91)
+                    traslate(view: cool, aCircleTime: 0, to: -25)
+                    traslate(view: warm, aCircleTime: 0, to: -25)
+                    traslate(view: neutral, aCircleTime: 0, to: -25)
+                    traslate(view: cold, aCircleTime: 0, to: -25)
+                    traslate(view: warmt, aCircleTime: 0, to: -25)
+                    traslate(view: mammt, aCircleTime: 0, to: -25)
+                }
+    }
     
     @IBAction func chooseCool(_ sender: UIButton) {
         if sender.isSelected {
