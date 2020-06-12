@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -393,7 +393,7 @@ Masterpiece!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Onboarding1" translatesAutoresizingMaskIntoConstraints="NO" id="abm-bl-K38">
-                                <rect key="frame" x="0.0" y="0.0" width="1271" height="447"/>
+                                <rect key="frame" x="0.0" y="-6.5" width="1271" height="447"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is Skinsugi!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gas-gh-7sj">
                                 <rect key="frame" x="20" y="471" width="384" height="56"/>
@@ -408,13 +408,13 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-gT-4jz">
-                                <rect key="frame" x="848" y="531" width="303" height="23"/>
+                                <rect key="frame" x="848" y="527.5" width="303" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JrA-Yx-juQ">
-                                <rect key="frame" x="20" y="604" width="379" height="22"/>
+                                <rect key="frame" x="20" y="600" width="379" height="26"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -439,7 +439,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PtS-SF-yl7">
-                                <rect key="frame" x="414" y="447" width="414" height="452"/>
+                                <rect key="frame" x="414" y="440.5" width="414" height="458.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell1" rowHeight="120" id="Q0F-YJ-7d9" customClass="Cella1" customModule="Skinsugi" customModuleProvider="target">
@@ -450,13 +450,13 @@ Masterpiece!</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, Sigafreda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ywt-KN-qf8">
-                                                    <rect key="frame" x="22" y="34" width="244" height="49"/>
+                                                    <rect key="frame" x="22" y="34" width="219" height="44.5"/>
                                                     <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                                     <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SzM-f1-Yon">
-                                                    <rect key="frame" x="22" y="97" width="349" height="22"/>
+                                                    <rect key="frame" x="22" y="92.5" width="337.5" height="26"/>
                                                     <string key="text">Tell us what inspires you the most.
 </string>
                                                     <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
@@ -550,7 +550,7 @@ Masterpiece!</string>
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last step" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gQb-mA-l8B">
-                                <rect key="frame" x="850" y="489" width="205" height="51.5"/>
+                                <rect key="frame" x="850" y="482.5" width="205" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="205" id="RAB-jc-mIn"/>
                                 </constraints>
@@ -559,13 +559,13 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WDJ-6S-5Y3">
-                                <rect key="frame" x="850" y="550" width="317.5" height="19"/>
+                                <rect key="frame" x="850" y="546.5" width="304" height="22.5"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="19"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
-                                <rect key="frame" x="850" y="596" width="346" height="66"/>
+                                <rect key="frame" x="850" y="592.5" width="346" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="346" id="WAl-jz-akH"/>
                                 </constraints>
@@ -577,7 +577,7 @@ How do you think others see it?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-fI-qoJ">
-                                <rect key="frame" x="929" y="750" width="194" height="55"/>
+                                <rect key="frame" x="929" y="757.5" width="194" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" identifier="larg" id="R1p-r1-OP1"/>
                                     <constraint firstAttribute="height" constant="55" identifier="altezza" id="g45-2c-k21"/>
@@ -1221,7 +1221,7 @@ How do you think others see it?</string>
             <objects>
                 <viewController id="lfU-OF-Bud" customClass="ChooseTexture" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pnh-IU-Nic">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jE3-g0-hTy">
@@ -2016,7 +2016,7 @@ your body and others’s bodies.</string>
                                     <fragment content="Qua ci vanno le stronzate di francesca">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name="NexaLight"/>
+                                            <font key="NSFont" metaFont="system" size="18"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -2355,7 +2355,7 @@ your body and others’s bodies.</string>
                                             <rect key="frame" x="0.0" y="0.0" width="413" height="363"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9o9-F3-Tem">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9o9-F3-Tem">
                                                     <rect key="frame" x="20" y="0.0" width="373" height="134"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pdk-F6-xZK">
@@ -2371,7 +2371,7 @@ your body and others’s bodies.</string>
                                                     </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="y9q-2C-HRN">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="y9q-2C-HRN">
                                                     <rect key="frame" x="36" y="85" width="326" height="15"/>
                                                     <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2379,10 +2379,6 @@ your body and others’s bodies.</string>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxG-uB-0dh">
                                                     <rect key="frame" x="303" y="277" width="81" height="32"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="81" id="3K9-UI-gKZ"/>
-                                                        <constraint firstAttribute="height" constant="32" id="4C3-zK-qBT"/>
-                                                    </constraints>
                                                     <state key="normal" image="SeeMore"/>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cSJ-OP-IOa">
@@ -2392,7 +2388,7 @@ your body and others’s bodies.</string>
                                                         <constraint firstAttribute="height" constant="18" id="YIn-kP-87G"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eqz-fq-sWa">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="eqz-fq-sWa">
                                                     <rect key="frame" x="36" y="21" width="330" height="58"/>
                                                     <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="30"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2401,6 +2397,7 @@ your body and others’s bodies.</string>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="vxG-uB-0dh" secondAttribute="trailing" constant="29" id="8Ef-17-Ldy"/>
+                                                <constraint firstItem="9o9-F3-Tem" firstAttribute="width" secondItem="xtB-u9-g6l" secondAttribute="width" multiplier="0.903148" id="AE8-dS-cXn"/>
                                                 <constraint firstItem="9o9-F3-Tem" firstAttribute="top" secondItem="xtB-u9-g6l" secondAttribute="top" id="G6B-gS-2DU"/>
                                                 <constraint firstItem="y9q-2C-HRN" firstAttribute="height" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="0.0413223" id="Jgb-t4-H5Z"/>
                                                 <constraint firstItem="9o9-F3-Tem" firstAttribute="centerX" secondItem="xtB-u9-g6l" secondAttribute="centerX" id="LnY-Co-qNh"/>
@@ -2414,13 +2411,16 @@ your body and others’s bodies.</string>
                                                 <constraint firstItem="9o9-F3-Tem" firstAttribute="height" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="0.369146" id="akv-7a-afT"/>
                                                 <constraint firstItem="y9q-2C-HRN" firstAttribute="top" secondItem="eqz-fq-sWa" secondAttribute="bottom" constant="6" id="cRB-8A-IN0"/>
                                                 <constraint firstItem="cSJ-OP-IOa" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" id="d6D-w3-wea"/>
+                                                <constraint firstItem="vxG-uB-0dh" firstAttribute="width" secondItem="xtB-u9-g6l" secondAttribute="width" multiplier="0.196126" id="eHa-1r-eox"/>
                                                 <constraint firstItem="vxG-uB-0dh" firstAttribute="top" secondItem="pdk-F6-xZK" secondAttribute="bottom" constant="-8" id="el3-nD-KkK"/>
                                                 <constraint firstItem="eqz-fq-sWa" firstAttribute="width" secondItem="xtB-u9-g6l" secondAttribute="width" multiplier="0.799031" id="g1Y-aS-6Ep"/>
                                                 <constraint firstItem="eqz-fq-sWa" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" constant="36" id="gHA-Fb-WyI"/>
                                                 <constraint firstItem="pdk-F6-xZK" firstAttribute="top" secondItem="9o9-F3-Tem" secondAttribute="bottom" constant="-2" id="hgd-JF-oI2"/>
                                                 <constraint firstAttribute="trailing" secondItem="cSJ-OP-IOa" secondAttribute="trailing" id="kAL-X0-VwJ"/>
+                                                <constraint firstItem="eqz-fq-sWa" firstAttribute="height" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="0.15978" id="oZe-xh-otH"/>
                                                 <constraint firstAttribute="bottom" secondItem="cSJ-OP-IOa" secondAttribute="bottom" constant="24" id="sV8-6E-ru4"/>
                                                 <constraint firstItem="y9q-2C-HRN" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" constant="36" id="uLJ-En-nv0"/>
+                                                <constraint firstItem="vxG-uB-0dh" firstAttribute="height" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="0.0881543" id="wSb-QO-IPr"/>
                                                 <constraint firstItem="eqz-fq-sWa" firstAttribute="trailing" secondItem="pdk-F6-xZK" secondAttribute="trailing" constant="-12" id="zOH-2m-1VX"/>
                                             </constraints>
                                         </collectionViewCellContentView>

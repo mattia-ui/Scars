@@ -27,7 +27,7 @@ class AddInsights: UIViewController {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
         
-        if(UIScreen.main.bounds.height > 700){
+        if(UIScreen.main.bounds.height > 800){
             scroll.isScrollEnabled = false
         } else {
             scroll.isScrollEnabled = true
