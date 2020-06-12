@@ -150,13 +150,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7X-yK-cdq">
-                                <rect key="frame" x="0.0" y="88" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="1867.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navInsta" translatesAutoresizingMaskIntoConstraints="NO" id="CVc-ep-RVc">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="196"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="408"/>
                                     </imageView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nrD-Zz-bfZ">
-                                        <rect key="frame" x="0.0" y="196" width="414" height="700"/>
+                                        <rect key="frame" x="0.0" y="408" width="414" height="1459.5"/>
                                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="5" minimumInteritemSpacing="3" id="XkC-uk-eSx">
                                             <size key="itemSize" width="145" height="145"/>
@@ -202,7 +202,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xph-ou-FkU">
-                                        <rect key="frame" x="0.0" y="196" width="414" height="700"/>
+                                        <rect key="frame" x="0.0" y="408" width="414" height="1459.5"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -231,19 +231,19 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1JF-r6-XHa">
-                                <rect key="frame" x="0.0" y="88" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="1867.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IllustrazionePerBlur" translatesAutoresizingMaskIntoConstraints="NO" id="7Iq-1d-X4P">
-                                        <rect key="frame" x="22" y="453" width="370" height="638.5"/>
+                                        <rect key="frame" x="22" y="544" width="370" height="1331"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submitted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="b13-TX-EGq">
-                                        <rect key="frame" x="128" y="324" width="152" height="34"/>
+                                        <rect key="frame" x="128" y="324" width="152" height="71"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="32"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for sharing your masterpiece with us!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Y2D-IT-Jem">
-                                        <rect key="frame" x="71" y="374" width="266" height="50"/>
+                                        <rect key="frame" x="71" y="411" width="266" height="104"/>
                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -274,14 +274,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backM" translatesAutoresizingMaskIntoConstraints="NO" id="zKV-vd-0Ud">
-                                        <rect key="frame" x="23" y="246" width="370" height="430"/>
+                                        <rect key="frame" x="23" y="338.5" width="370" height="896"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueCircle" translatesAutoresizingMaskIntoConstraints="NO" id="H28-4N-94N">
                                         <rect key="frame" x="253" y="-93" width="232" height="232"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Bri-Aq-9dp">
-                                        <rect key="frame" x="22" y="61" width="259" height="182.5"/>
+                                        <rect key="frame" x="22" y="61" width="259" height="275"/>
                                         <string key="text">Create your 
 Masterpiece!</string>
                                         <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
@@ -289,7 +289,7 @@ Masterpiece!</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cj-VA-9NZ">
-                                        <rect key="frame" x="116" y="689" width="182" height="62"/>
+                                        <rect key="frame" x="116" y="1247.5" width="182" height="125.5"/>
                                         <state key="normal" title="Button" image="GoMaterpieceRosa"/>
                                         <connections>
                                             <segue destination="xs9-hS-2dx" kind="show" id="nIG-wF-CdU"/>
@@ -674,25 +674,19 @@ How do you think others see it?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="RUp-S9-4CD">
-                                <rect key="frame" x="22.5" y="104" width="227" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="BUg-wI-S0T"/>
-                                </constraints>
+                                <rect key="frame" x="22.5" y="146.5" width="227" height="49"/>
                                 <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="VbA-c6-b5q">
-                                <rect key="frame" x="22.5" y="157" width="369" height="67"/>
+                                <rect key="frame" x="22.5" y="204.5" width="369" height="74.5"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Te-rI-HPa">
-                                <rect key="frame" x="116" y="708" width="182" height="55"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="UnM-PI-eHz"/>
-                                </constraints>
+                                <rect key="frame" x="116" y="803.5" width="182" height="61.5"/>
                                 <state key="normal" title="Button" image="NextRosa"/>
                                 <state key="disabled" image="NextRosaNS"/>
                                 <connections>
@@ -700,16 +694,16 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="8Lu-VZ-BEw">
-                                <rect key="frame" x="15.5" y="245" width="383" height="427"/>
+                                <rect key="frame" x="15.5" y="300" width="413.5" height="467.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="J4w-EO-tk2">
-                                        <rect key="frame" x="0.0" y="0.0" width="383" height="71"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="413.5" height="79.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="SPF-T2-Ny5">
-                                                <rect key="frame" x="0.0" y="0.0" width="66" height="71"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="66" height="79.5"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="A3T-Ks-YCR">
-                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
+                                                <rect key="frame" x="112" y="0.0" width="301.5" height="79.5"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -723,13 +717,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="k8w-aV-QhV">
-                                        <rect key="frame" x="0.0" y="89" width="383" height="71"/>
+                                        <rect key="frame" x="0.0" y="97.5" width="413.5" height="79"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="bAp-lc-87B">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="71"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="79"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cj7-a4-0Xz">
-                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
+                                                <rect key="frame" x="112" y="0.0" width="301.5" height="79"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -743,13 +737,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="Qar-eD-Goy">
-                                        <rect key="frame" x="0.0" y="178" width="383" height="71"/>
+                                        <rect key="frame" x="0.0" y="194.5" width="413.5" height="79"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle" translatesAutoresizingMaskIntoConstraints="NO" id="VsF-9m-vhn">
-                                                <rect key="frame" x="0.0" y="0.0" width="74" height="71"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="79"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DJU-JS-gID">
-                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
+                                                <rect key="frame" x="112" y="0.0" width="301.5" height="79"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -763,13 +757,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="ccL-KK-HpV">
-                                        <rect key="frame" x="0.0" y="267" width="383" height="71"/>
+                                        <rect key="frame" x="0.0" y="291.5" width="413.5" height="79"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="fiA-MW-TuO">
-                                                <rect key="frame" x="0.0" y="0.0" width="68" height="71"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="68" height="79"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RcF-Kg-Q4p">
-                                                <rect key="frame" x="113" y="0.0" width="270" height="71"/>
+                                                <rect key="frame" x="113" y="0.0" width="300.5" height="79"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -783,13 +777,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="YGB-Vn-uNM">
-                                        <rect key="frame" x="0.0" y="356" width="383" height="71"/>
+                                        <rect key="frame" x="0.0" y="388.5" width="413.5" height="79"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zigzag" translatesAutoresizingMaskIntoConstraints="NO" id="rJl-hD-wwg">
-                                                <rect key="frame" x="0.0" y="0.0" width="89" height="71"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="89" height="79"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="61O-Bn-xRC">
-                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
+                                                <rect key="frame" x="112" y="0.0" width="301.5" height="79"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -807,53 +801,39 @@ How do you think others see it?</string>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="fiA-MW-TuO" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="17:224" id="2jv-bt-xAc"/>
                             <constraint firstItem="VbA-c6-b5q" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0747768" id="2wJ-xp-gcC"/>
-                            <constraint firstItem="VbA-c6-b5q" firstAttribute="centerX" secondItem="5Te-rI-HPa" secondAttribute="centerX" id="3y5-yp-JmA"/>
                             <constraint firstItem="8Lu-VZ-BEw" firstAttribute="centerX" secondItem="Srd-Ly-JAO" secondAttribute="centerX" id="6y8-Wt-t3v"/>
                             <constraint firstItem="RUp-S9-4CD" firstAttribute="leading" secondItem="VbA-c6-b5q" secondAttribute="leading" id="7fm-xB-Gcq"/>
                             <constraint firstItem="rJl-hD-wwg" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0792411" id="9Ak-0P-EX0"/>
                             <constraint firstItem="fiA-MW-TuO" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.164251" id="AKY-p8-hvG"/>
-                            <constraint firstItem="SPF-T2-Ny5" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="33:448" id="AdF-oI-jOy"/>
                             <constraint firstItem="RcF-Kg-Q4p" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.652174" id="Cfd-4t-8JP"/>
-                            <constraint firstItem="VsF-9m-vhn" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="37:448" id="DTH-2v-zsU"/>
-                            <constraint firstItem="DJU-JS-gID" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="271:896" id="FpW-IG-vtG"/>
                             <constraint firstItem="bAp-lc-87B" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0792411" id="GZC-pv-sjN"/>
                             <constraint firstItem="A3T-Ks-YCR" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.654589" id="Grh-lW-5Xj"/>
                             <constraint firstItem="5Te-rI-HPa" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.439614" id="HZn-Zs-B2U"/>
-                            <constraint firstItem="A3T-Ks-YCR" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="271:896" id="HkB-PU-SlL"/>
-                            <constraint firstItem="cj7-a4-0Xz" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="271:896" id="J3R-qs-I9U"/>
                             <constraint firstItem="8Lu-VZ-BEw" firstAttribute="top" secondItem="VbA-c6-b5q" secondAttribute="bottom" constant="21" id="K0L-Sq-tTX"/>
                             <constraint firstItem="8Lu-VZ-BEw" firstAttribute="leading" secondItem="XMW-B1-A0M" secondAttribute="leading" constant="15.5" id="LCN-aD-cFF"/>
                             <constraint firstItem="rJl-hD-wwg" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.214976" id="NMS-Qo-6oP"/>
                             <constraint firstItem="cj7-a4-0Xz" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.654589" id="OIa-lf-1ca"/>
                             <constraint firstItem="RUp-S9-4CD" firstAttribute="leading" secondItem="XMW-B1-A0M" secondAttribute="leading" constant="22.5" id="OPY-qb-0LN"/>
                             <constraint firstItem="RUp-S9-4CD" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0491071" id="PqM-tx-Hcy"/>
-                            <constraint firstItem="bAp-lc-87B" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="5:56" id="S4p-4q-9u9"/>
                             <constraint firstItem="fiA-MW-TuO" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0792411" id="TMb-yx-E7R"/>
                             <constraint firstItem="61O-Bn-xRC" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.654589" id="TNI-jw-8QO"/>
                             <constraint firstItem="DJU-JS-gID" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0792411" id="U6k-lo-65a"/>
-                            <constraint firstItem="RUp-S9-4CD" firstAttribute="top" secondItem="XMW-B1-A0M" secondAttribute="top" constant="16" id="W6p-nQ-SXO"/>
-                            <constraint firstItem="RUp-S9-4CD" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="227:896" id="WsE-aA-59w"/>
                             <constraint firstItem="bAp-lc-87B" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.193237" id="Wso-EI-m7Q"/>
                             <constraint firstItem="5Te-rI-HPa" firstAttribute="top" secondItem="8Lu-VZ-BEw" secondAttribute="bottom" constant="36" id="WzW-dh-ipQ"/>
                             <constraint firstItem="VsF-9m-vhn" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0792411" id="b1D-Be-spD"/>
                             <constraint firstItem="RcF-Kg-Q4p" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="135:448" id="biH-tB-eaF"/>
                             <constraint firstItem="DJU-JS-gID" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.654589" id="bx8-EZ-ZVP"/>
+                            <constraint firstItem="XMW-B1-A0M" firstAttribute="bottom" secondItem="5Te-rI-HPa" secondAttribute="bottom" constant="50" id="dOn-q4-RtZ"/>
                             <constraint firstItem="SPF-T2-Ny5" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.15942" id="eJa-jI-K1e"/>
                             <constraint firstItem="61O-Bn-xRC" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0792411" id="eJo-Z5-0xD"/>
                             <constraint firstItem="VbA-c6-b5q" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.891304" id="eZr-nD-PfZ"/>
-                            <constraint firstItem="5Te-rI-HPa" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="13:64" id="f7L-yX-dCn"/>
                             <constraint firstItem="SPF-T2-Ny5" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0792411" id="f94-f1-L4X"/>
                             <constraint firstItem="5Te-rI-HPa" firstAttribute="leading" secondItem="XMW-B1-A0M" secondAttribute="leading" constant="116" id="gHJ-vF-ETu"/>
                             <constraint firstItem="RUp-S9-4CD" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.548309" id="ioG-KA-JDa"/>
-                            <constraint firstItem="61O-Bn-xRC" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="271:896" id="jMq-Ux-rS3"/>
-                            <constraint firstItem="rJl-hD-wwg" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="89:896" id="jYj-U1-n9w"/>
                             <constraint firstItem="cj7-a4-0Xz" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0792411" id="kbT-IA-iJ4"/>
                             <constraint firstItem="VbA-c6-b5q" firstAttribute="top" secondItem="RUp-S9-4CD" secondAttribute="bottom" constant="9" id="nWE-Tm-2Y7"/>
-                            <constraint firstItem="VbA-c6-b5q" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="369:896" id="pFc-YA-JXX"/>
                             <constraint firstItem="5Te-rI-HPa" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0613839" id="rFf-1X-uVt"/>
-                            <constraint firstItem="VbA-c6-b5q" firstAttribute="centerX" secondItem="Srd-Ly-JAO" secondAttribute="centerX" id="trO-RP-oLj"/>
                             <constraint firstItem="VsF-9m-vhn" firstAttribute="width" secondItem="Srd-Ly-JAO" secondAttribute="width" multiplier="0.178744" id="uVH-Fb-rjZ"/>
                             <constraint firstItem="A3T-Ks-YCR" firstAttribute="height" secondItem="Srd-Ly-JAO" secondAttribute="height" multiplier="0.0792411" id="wpS-Qc-ZCH"/>
                             <constraint firstItem="XMW-B1-A0M" firstAttribute="trailing" secondItem="RUp-S9-4CD" secondAttribute="trailing" constant="164.5" id="xxe-jy-5EZ"/>
@@ -871,6 +851,7 @@ How do you think others see it?</string>
                         <outlet property="h5" destination="YGB-Vn-uNM" id="QaM-Zk-9Nx"/>
                         <outlet property="label" destination="VbA-c6-b5q" id="LEA-5d-NAO"/>
                         <outlet property="nex" destination="5Te-rI-HPa" id="b5L-vI-cqT"/>
+                        <outlet property="question" destination="RUp-S9-4CD" id="ns7-8u-s3H"/>
                         <outlet property="rect" destination="cj7-a4-0Xz" id="VBE-1i-Khc"/>
                         <outlet property="square" destination="A3T-Ks-YCR" id="kCC-IA-lxd"/>
                         <outlet property="triangle" destination="DJU-JS-gID" id="qES-gc-bzH"/>
@@ -891,7 +872,7 @@ How do you think others see it?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wSE-1b-OHo">
-                                <rect key="frame" x="130.5" y="248" width="261" height="71"/>
+                                <rect key="frame" x="125.5" y="275.5" width="278" height="76"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -901,7 +882,7 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwR-8A-D92">
-                                <rect key="frame" x="116" y="709.5" width="182" height="55"/>
+                                <rect key="frame" x="110" y="760" width="194" height="58.5"/>
                                 <state key="normal" title="Button" image="NextRosa"/>
                                 <state key="disabled" image="NextRosaNS"/>
                                 <state key="selected" image="nextazzurro"/>
@@ -910,34 +891,34 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 2/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Uxd-xB-7qe">
-                                <rect key="frame" x="22.5" y="98" width="238" height="55"/>
+                                <rect key="frame" x="10.5" y="116.5" width="253.5" height="59"/>
                                 <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="MH9-I4-rkS">
-                                <rect key="frame" x="22.5" y="155" width="369" height="85"/>
+                                <rect key="frame" x="10.5" y="177.5" width="393" height="90"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="xuO-Ut-Xmp">
-                                <rect key="frame" x="24" y="345" width="88" height="55"/>
+                                <rect key="frame" x="24" y="378" width="93.5" height="58.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="jAF-iZ-Q55">
-                                <rect key="frame" x="30" y="514.5" width="68" height="68"/>
+                                <rect key="frame" x="30" y="556" width="72.5" height="72.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zigzag" translatesAutoresizingMaskIntoConstraints="NO" id="CmV-SR-trQ">
-                                <rect key="frame" x="23" y="618" width="84" height="36"/>
+                                <rect key="frame" x="23" y="665" width="89.5" height="38.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle" translatesAutoresizingMaskIntoConstraints="NO" id="z4P-mb-XrO">
-                                <rect key="frame" x="27" y="426" width="74" height="69"/>
+                                <rect key="frame" x="27" y="463" width="78.5" height="73.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="6Kw-k6-rOH">
-                                <rect key="frame" x="31" y="251" width="66" height="65"/>
+                                <rect key="frame" x="31.5" y="279" width="70" height="69"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="idm-Vm-ofd">
-                                <rect key="frame" x="130.5" y="337" width="261" height="71"/>
+                                <rect key="frame" x="125.5" y="369.5" width="278" height="75.5"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -947,7 +928,7 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="IPH-La-4u4">
-                                <rect key="frame" x="130.5" y="600.5" width="261" height="71"/>
+                                <rect key="frame" x="125.5" y="646.5" width="278" height="75.5"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -957,7 +938,7 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uCS-Vx-npP">
-                                <rect key="frame" x="130.5" y="425" width="261" height="71"/>
+                                <rect key="frame" x="125.5" y="462" width="278" height="75.5"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -967,7 +948,7 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="B71-RY-kN2">
-                                <rect key="frame" x="130.5" y="513" width="261" height="71"/>
+                                <rect key="frame" x="125.5" y="554.5" width="278" height="75.5"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -1071,7 +1052,7 @@ How do you think others see it?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="m8e-tD-btm">
-                                <rect key="frame" x="129" y="284.5" width="261" height="71"/>
+                                <rect key="frame" x="134.5" y="320.5" width="278" height="75.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Cool colors" backgroundImage="QuestionSpento">
@@ -1086,7 +1067,7 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Hot-ON-zvu">
-                                <rect key="frame" x="129" y="403.5" width="261" height="71"/>
+                                <rect key="frame" x="134.5" y="445" width="278" height="75.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Warm colors" backgroundImage="QuestionSpento">
@@ -1101,7 +1082,7 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="53f-Wh-VQP">
-                                <rect key="frame" x="129" y="521" width="261" height="71"/>
+                                <rect key="frame" x="134.5" y="567" width="278" height="75.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Neutrals" backgroundImage="QuestionSpento">
@@ -1116,28 +1097,28 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secondaPalette" translatesAutoresizingMaskIntoConstraints="NO" id="XXN-5B-Ifl">
-                                <rect key="frame" x="18" y="395.5" width="87" height="87"/>
+                                <rect key="frame" x="18" y="436.5" width="92.5" height="92.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="primaPalette" translatesAutoresizingMaskIntoConstraints="NO" id="TDh-Qc-oA1">
-                                <rect key="frame" x="18" y="276.5" width="87" height="87"/>
+                                <rect key="frame" x="18" y="312" width="92.5" height="92.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="terzaPalette" translatesAutoresizingMaskIntoConstraints="NO" id="cJg-DJ-qS8">
-                                <rect key="frame" x="18" y="514.5" width="87" height="87"/>
+                                <rect key="frame" x="18" y="561" width="92.5" height="92.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 3/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="daP-9o-FJm">
-                                <rect key="frame" x="22" y="101" width="235" height="51"/>
+                                <rect key="frame" x="22" y="127.5" width="250" height="54.5"/>
                                 <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="uW9-br-Aoz">
-                                <rect key="frame" x="22" y="159" width="374" height="85"/>
+                                <rect key="frame" x="22" y="189" width="398" height="90.5"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2t-hU-7Lg">
-                                <rect key="frame" x="116" y="711" width="184" height="55"/>
+                                <rect key="frame" x="116" y="761.5" width="196" height="58.5"/>
                                 <state key="normal" title="Button" image="NextRosa"/>
                                 <state key="disabled" image="NextRosaNS"/>
                                 <connections>
@@ -1213,29 +1194,29 @@ How do you think others see it?</string>
             <objects>
                 <viewController id="lfU-OF-Bud" customClass="ChooseTexture" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pnh-IU-Nic">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jE3-g0-hTy">
-                                <rect key="frame" x="0.0" y="44" width="328" height="667.5"/>
+                                <rect key="frame" x="0.0" y="88" width="0.0" height="0.0"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Textile" translatesAutoresizingMaskIntoConstraints="NO" id="eP9-YF-Agc">
-                                        <rect key="frame" x="22" y="305" width="59.5" height="60"/>
+                                        <rect key="frame" x="22" y="-141.5" width="0.0" height="0.0"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crater" translatesAutoresizingMaskIntoConstraints="NO" id="3Uf-Yt-Gwb">
-                                        <rect key="frame" x="22" y="234" width="59.5" height="59.5"/>
+                                        <rect key="frame" x="22" y="-153" width="0.0" height="0.0"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sea" translatesAutoresizingMaskIntoConstraints="NO" id="YBv-BC-Bzc">
-                                        <rect key="frame" x="22" y="161.5" width="59.5" height="60"/>
+                                        <rect key="frame" x="22" y="-165.5" width="0.0" height="0.0"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="wood" translatesAutoresizingMaskIntoConstraints="NO" id="SNQ-KO-nnh">
-                                        <rect key="frame" x="22" y="449" width="59.5" height="59.5"/>
+                                        <rect key="frame" x="22" y="-117" width="0.0" height="0.0"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marble" translatesAutoresizingMaskIntoConstraints="NO" id="57U-4M-5nY">
-                                        <rect key="frame" x="22" y="377.5" width="59.5" height="59.5"/>
+                                        <rect key="frame" x="22" y="-129" width="0.0" height="0.0"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nTf-2F-YIf">
-                                        <rect key="frame" x="114.5" y="450.5" width="207" height="56.5"/>
+                                        <rect key="frame" x="55" y="-117" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Wood" backgroundImage="QuestionSpento">
@@ -1248,7 +1229,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kqu-2o-qXn">
-                                        <rect key="frame" x="114.5" y="162" width="207" height="56"/>
+                                        <rect key="frame" x="55" y="-165" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Sea" backgroundImage="QuestionSpento">
@@ -1261,7 +1242,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="CrL-CA-bOp">
-                                        <rect key="frame" x="114.5" y="234" width="207" height="56"/>
+                                        <rect key="frame" x="55" y="-153" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Crater" backgroundImage="QuestionSpento">
@@ -1274,7 +1255,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="YRS-3h-hAc">
-                                        <rect key="frame" x="114.5" y="307" width="207" height="56"/>
+                                        <rect key="frame" x="55" y="-141.5" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Textile fiber" backgroundImage="QuestionSpento">
@@ -1287,7 +1268,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bxN-yg-fPW">
-                                        <rect key="frame" x="114.5" y="379" width="207" height="56.5"/>
+                                        <rect key="frame" x="55" y="-129" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Marble" backgroundImage="QuestionSpento">
@@ -1300,7 +1281,7 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4O-Qz-X11">
-                                        <rect key="frame" x="92" y="547" width="144" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="-77" width="0.0" height="0.0"/>
                                         <state key="normal" title="Button" image="SubmitRosa"/>
                                         <state key="disabled" image="SubmitRosaNS"/>
                                         <connections>
@@ -1308,13 +1289,13 @@ How do you think others see it?</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 4/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Lej-tX-y6u">
-                                        <rect key="frame" x="22" y="42" width="188" height="38"/>
+                                        <rect key="frame" x="22" y="-179.5" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="mIk-Xe-oy0">
-                                        <rect key="frame" x="22" y="85" width="303" height="67.5"/>
+                                        <rect key="frame" x="22" y="-174.5" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -1390,16 +1371,15 @@ How do you think others see it?</string>
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaT-OJ-lJp">
-                                <rect key="frame" x="0.0" y="0.0" width="328" height="667"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submit answers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="iqq-Hd-Wwa">
-                                        <rect key="frame" x="84.5" y="324" width="187" height="25.5"/>
+                                        <rect key="frame" x="76" y="324" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="32"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="kHH-QA-nou">
-                                        <rect key="frame" x="76" y="363.5" width="203.5" height="34.5"/>
+                                        <rect key="frame" x="76" y="338" width="0.0" height="0.0"/>
                                         <string key="text">Are you sure about 
 all the answers you gave?</string>
                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
@@ -1407,20 +1387,20 @@ all the answers you gave?</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forma1 - Forma2 - Palette - Texture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="RDd-Fb-aqK">
-                                        <rect key="frame" x="0.0" y="429" width="328" height="16"/>
+                                        <rect key="frame" x="0.0" y="369" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOD-j0-7tp">
-                                        <rect key="frame" x="74" y="481" width="92.5" height="43.5"/>
+                                        <rect key="frame" x="74" y="405" width="0.0" height="0.0"/>
                                         <state key="normal" title=" " image="NoRosa"/>
                                         <connections>
                                             <segue destination="GG3-f1-cQ8" kind="show" id="rqq-x5-KjR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tz3-ol-La9">
-                                        <rect key="frame" x="195.5" y="481" width="99" height="43.5"/>
+                                        <rect key="frame" x="103" y="405" width="0.0" height="0.0"/>
                                         <state key="normal" title=" " image="yesRosa"/>
                                         <connections>
                                             <segue destination="hvR-kH-wNA" kind="show" id="0sY-Oe-LsQ"/>
@@ -3049,18 +3029,18 @@ The two shapes on the outside recount </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YourMasterpiece" translatesAutoresizingMaskIntoConstraints="NO" id="hht-L1-G5R">
-                                <rect key="frame" x="-2" y="28" width="418" height="142.5"/>
+                                <rect key="frame" x="-2" y="72" width="418" height="142.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayK-bN-Qsf">
-                                <rect key="frame" x="16" y="119" width="14" height="36.5"/>
+                                <rect key="frame" x="16" y="163" width="14" height="36.5"/>
                                 <state key="normal" image="backArrow"/>
                                 <connections>
                                     <action selector="backB:" destination="q9l-GE-q4m" eventType="touchUpInside" id="m6c-aa-ad3"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcE-Dh-ylJ">
-                                <rect key="frame" x="0.0" y="182.5" width="414" height="958.5"/>
+                                <rect key="frame" x="0.0" y="226.5" width="414" height="880.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kut-iV-ZUw">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1029"/>

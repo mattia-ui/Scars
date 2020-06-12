@@ -88,6 +88,7 @@ class ChooseShape: UIViewController  {
     
     
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var question: UILabel!
     
     @IBOutlet weak var square: UIButton!
     @IBOutlet weak var circle: UIButton!
@@ -125,7 +126,18 @@ class ChooseShape: UIViewController  {
             vertical.spacing = 15
         }else if(view.frame.height == 667){
             vertical.spacing = 8
+            traslate(view: question, aCircleTime: 0, to: -100)
+             traslate(view: label, aCircleTime: 0, to: -100)
+             traslate(view: vertical, aCircleTime: 0, to: -100)
+             traslate(view: nex, aCircleTime: 0, to: -120)
         }
+    }
+    
+    func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
+        print(view.frame.origin.x)
+        UIView.animate(withDuration: aCircleTime, animations: {
+            () -> Void in view.transform = CGAffineTransform(translationX: 0, y: to)
+        })
     }
     
     @IBAction func chooseSquare(_ sender: UIButton) {
