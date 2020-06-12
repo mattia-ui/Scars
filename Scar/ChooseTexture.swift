@@ -90,6 +90,12 @@ class ChooseTexture: UIViewController  {
                     traslate(view: marbleImg, aCircleTime: 0, to: -63)
                     traslate(view: wood, aCircleTime: 0, to: -70)
                     traslate(view: woodImg, aCircleTime: 0, to: -70)
+                    
+                    traslate(view: label1, aCircleTime: 0, to: -75)
+                    traslate(view: label2, aCircleTime: 0, to: -75)
+                    traslate(view: results, aCircleTime: 0, to: -75)
+                    traslate(view: yes, aCircleTime: 0, to: -75)
+                    traslate(view: no, aCircleTime: 0, to: -75)
                 }
     }
     

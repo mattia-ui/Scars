@@ -12,8 +12,37 @@ class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePick
     
     var imagePicker: UIImagePickerController!
     
+    @IBOutlet weak var question: UILabel!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var immagine: UIImageView!
+    @IBOutlet weak var camera: UIButton!
+    @IBOutlet weak var penna: UIButton!
+    @IBOutlet weak var label3: UILabel!
+    
+    
+    func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
+           print(view.frame.origin.x)
+           UIView.animate(withDuration: aCircleTime, animations: {
+               () -> Void in view.transform = CGAffineTransform(translationX: 0, y: to)
+           })
+       }
+       
+       override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+           self.navigationController?.setNavigationBarHidden(true, animated: animated)
+
+                   if(view.frame.height == 812){
+                   }else if(view.frame.height == 667){
+                       traslate(view: question, aCircleTime: 0, to: -35)
+                       traslate(view: label, aCircleTime: 0, to: -35)
+                       traslate(view: label2, aCircleTime: 0, to: -47)
+                       traslate(view: immagine, aCircleTime: 0, to: -60)
+                       traslate(view: camera, aCircleTime: 0, to: -90)
+                       traslate(view: penna, aCircleTime: 0, to: -90)
+                       traslate(view: label3, aCircleTime: 0, to: -93)
+                   }
+       }
     
     override func viewDidLoad() {
         super.viewDidLoad()
