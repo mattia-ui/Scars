@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -40,10 +40,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ns4-Sj-bJV">
-                                <rect key="frame" x="22" y="176" width="366" height="542"/>
+                                <rect key="frame" x="22" y="175" width="366" height="524"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y7q-Le-8bb">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="927"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7Ov-gi-Skw">
                                 <rect key="frame" x="116" y="722" width="182" height="55"/>
@@ -66,7 +66,7 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="1" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="Fim-d8-yE7">
-                                <rect key="frame" x="-75" y="435" width="261" height="31"/>
+                                <rect key="frame" x="-75" y="435" width="261" height="30"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="WOE-BQ-aor"/>
@@ -85,7 +85,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="iYI-gG-qQg">
-                                <rect key="frame" x="20" y="142" width="363" height="23"/>
+                                <rect key="frame" x="20" y="142" width="363" height="22"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -152,7 +152,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7X-yK-cdq">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navInsta" translatesAutoresizingMaskIntoConstraints="NO" id="CVc-ep-RVc">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navInsta" translatesAutoresizingMaskIntoConstraints="NO" id="CVc-ep-RVc">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
                                     </imageView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nrD-Zz-bfZ">
@@ -339,10 +339,14 @@ Masterpiece!</string>
                     </view>
                     <navigationItem key="navigationItem" id="PSD-kx-GFI"/>
                     <connections>
+                        <outlet property="Submitted" destination="b13-TX-EGq" id="vdd-IX-94A"/>
+                        <outlet property="button" destination="5cj-VA-9NZ" id="qNg-mL-Sh8"/>
                         <outlet property="gif" destination="Xph-ou-FkU" id="CLJ-p6-WBc"/>
+                        <outlet property="illustrazionePerBlur" destination="7Iq-1d-X4P" id="MEk-ym-GRh"/>
                         <outlet property="miniSym" destination="Cc2-aZ-ghq" id="goM-Sb-L5z"/>
                         <outlet property="myCollectionView" destination="nrD-Zz-bfZ" id="Jy4-K9-NGG"/>
                         <outlet property="navInsta" destination="CVc-ep-RVc" id="4Cd-84-mUe"/>
+                        <outlet property="thx" destination="Y2D-IT-Jem" id="qJs-L7-f9B"/>
                         <outlet property="viewL" destination="y8C-NL-mQ0" id="c2i-jo-Z5x"/>
                         <outlet property="viewPerBlur" destination="s7X-yK-cdq" id="Csl-QC-qO1"/>
                         <outlet property="viewSulBlur" destination="1JF-r6-XHa" id="Bq4-s8-EI5"/>
@@ -3513,6 +3517,7 @@ The two shapes on the outside recount </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="nIG-wF-CdU"/>
         <segue reference="47n-ms-sJd"/>
         <segue reference="s1A-7h-Aw8"/>
         <segue reference="rqq-x5-KjR"/>
