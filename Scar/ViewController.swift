@@ -26,12 +26,34 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     var swiped = false
     var points = [CGPoint] ()
     
-    @IBOutlet weak var slider: UISlider!{
-        didSet{
-            slider.transform = CGAffineTransform(rotationAngle: CGFloat.pi + CGFloat.pi/2)
-        }
+    @IBOutlet weak var slider: UISlider!//{
+//        didSet{
+//            slider.transform = CGAffineTransform(rotationAngle: CGFloat.pi + CGFloat.pi/2)
+//        }
+//    }
+    
+    func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
+        print(view.frame.origin.x)
+        UIView.animate(withDuration: aCircleTime, animations: {
+            () -> Void in view.transform = CGAffineTransform(translationX: 0, y: to)
+        })
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+
+                if(view.frame.height == 812){
+                }else if(view.frame.height == 667){
+                   
+                    traslate(view: resetDis, aCircleTime: 0, to: -50)
+                    traslate(view: elaboraDisegno, aCircleTime: 0, to: 35)
+                    var tG = CGAffineTransform.identity
+                    tG = tG.rotated(by: CGFloat.pi + CGFloat.pi/2 )
+                    tG = tG.translatedBy(x: 0, y: -50)
+                    slider.transform = tG
+                }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
