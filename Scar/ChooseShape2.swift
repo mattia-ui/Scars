@@ -92,10 +92,50 @@ class ChooseShape2: UIViewController  {
     @IBOutlet weak var zigZag: UIButton!
     @IBOutlet weak var nex: UIButton!
     
+    @IBOutlet weak var question: UILabel!
     @IBOutlet weak var label: UILabel!
+    
+    @IBOutlet weak var h1: UIStackView!
+    @IBOutlet weak var h2: UIStackView!
+    @IBOutlet weak var h3: UIStackView!
+    @IBOutlet weak var h4: UIStackView!
+    @IBOutlet weak var h5: UIStackView!
+    @IBOutlet weak var vertical: UIStackView!
     
     static var shape2: String!
     
+    func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
+           print(view.frame.origin.x)
+           UIView.animate(withDuration: aCircleTime, animations: {
+               () -> Void in view.transform = CGAffineTransform(translationX: 0, y: to)
+           })
+       }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+                if(view.frame.width == 414){
+        //            h1.spacing = 33
+        //            h2.spacing = 26
+        //            h3.spacing = 29
+        //            h4.spacing = 32
+        //            h5.spacing = 23
+                } else if(view.frame.width == 375){
+                    h1.spacing = 23
+                    h2.spacing = 16
+                    h3.spacing = 19
+                    h4.spacing = 22
+                    h5.spacing = 13
+                }
+                if(view.frame.height == 812){
+                    vertical.spacing = 15
+                }else if(view.frame.height == 667){
+                    vertical.spacing = 8
+                    traslate(view: question, aCircleTime: 0, to: -40)
+                    traslate(view: label, aCircleTime: 0, to: -43)
+                    traslate(view: vertical, aCircleTime: 0, to: -46)
+                    traslate(view: nex, aCircleTime: 0, to: -52)
+                }
+    }
     @IBAction func chooseSquare(_ sender: UIButton) {
        if sender.isSelected {
             square.isSelected = false

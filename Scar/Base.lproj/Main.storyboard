@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -674,19 +674,19 @@ How do you think others see it?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="RUp-S9-4CD">
-                                <rect key="frame" x="22.5" y="104" width="227" height="44"/>
+                                <rect key="frame" x="22.5" y="146.5" width="227" height="49"/>
                                 <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="VbA-c6-b5q">
-                                <rect key="frame" x="22.5" y="157" width="369" height="67"/>
+                                <rect key="frame" x="22.5" y="204.5" width="369" height="74.5"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Te-rI-HPa">
-                                <rect key="frame" x="116" y="708" width="182" height="55"/>
+                                <rect key="frame" x="116" y="803.5" width="182" height="61.5"/>
                                 <state key="normal" title="Button" image="NextRosa"/>
                                 <state key="disabled" image="NextRosaNS"/>
                                 <connections>
@@ -694,16 +694,16 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="8Lu-VZ-BEw">
-                                <rect key="frame" x="15.5" y="245" width="383" height="427"/>
+                                <rect key="frame" x="15.5" y="300" width="413.5" height="467.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="J4w-EO-tk2">
-                                        <rect key="frame" x="0.0" y="0.0" width="383" height="71"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="413.5" height="79.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="SPF-T2-Ny5">
-                                                <rect key="frame" x="0.0" y="0.0" width="66" height="71"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="66" height="79.5"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="A3T-Ks-YCR">
-                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
+                                                <rect key="frame" x="112" y="0.0" width="301.5" height="79.5"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -717,13 +717,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="k8w-aV-QhV">
-                                        <rect key="frame" x="0.0" y="89" width="383" height="71"/>
+                                        <rect key="frame" x="0.0" y="97.5" width="413.5" height="79"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="bAp-lc-87B">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="71"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="79"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cj7-a4-0Xz">
-                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
+                                                <rect key="frame" x="112" y="0.0" width="301.5" height="79"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -737,13 +737,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="Qar-eD-Goy">
-                                        <rect key="frame" x="0.0" y="178" width="383" height="71"/>
+                                        <rect key="frame" x="0.0" y="194.5" width="413.5" height="79"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle" translatesAutoresizingMaskIntoConstraints="NO" id="VsF-9m-vhn">
-                                                <rect key="frame" x="0.0" y="0.0" width="74" height="71"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="79"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DJU-JS-gID">
-                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
+                                                <rect key="frame" x="112" y="0.0" width="301.5" height="79"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -757,13 +757,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="ccL-KK-HpV">
-                                        <rect key="frame" x="0.0" y="267" width="383" height="71"/>
+                                        <rect key="frame" x="0.0" y="291.5" width="413.5" height="79"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="fiA-MW-TuO">
-                                                <rect key="frame" x="0.0" y="0.0" width="68" height="71"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="68" height="79"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RcF-Kg-Q4p">
-                                                <rect key="frame" x="113" y="0.0" width="270" height="71"/>
+                                                <rect key="frame" x="113" y="0.0" width="300.5" height="79"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -777,13 +777,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="YGB-Vn-uNM">
-                                        <rect key="frame" x="0.0" y="356" width="383" height="71"/>
+                                        <rect key="frame" x="0.0" y="388.5" width="413.5" height="79"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zigzag" translatesAutoresizingMaskIntoConstraints="NO" id="rJl-hD-wwg">
-                                                <rect key="frame" x="0.0" y="0.0" width="89" height="71"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="89" height="79"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="61O-Bn-xRC">
-                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
+                                                <rect key="frame" x="112" y="0.0" width="301.5" height="79"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -871,172 +871,195 @@ How do you think others see it?</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wSE-1b-OHo">
-                                <rect key="frame" x="125.5" y="275.5" width="278" height="76"/>
-                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
-                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" backgroundImage="QuestionSpento"/>
-                                <state key="selected" backgroundImage="QuestionAcceso"/>
-                                <connections>
-                                    <action selector="chooseSquare:" destination="My5-jh-AI2" eventType="touchUpInside" id="pvb-Pg-YGa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwR-8A-D92">
-                                <rect key="frame" x="110" y="760" width="194" height="58.5"/>
-                                <state key="normal" title="Button" image="NextRosa"/>
-                                <state key="disabled" image="NextRosaNS"/>
-                                <state key="selected" image="nextazzurro"/>
-                                <connections>
-                                    <segue destination="lYX-Go-SkF" kind="push" id="DuD-b2-eFA"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 2/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Uxd-xB-7qe">
-                                <rect key="frame" x="10.5" y="116.5" width="253.5" height="59"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 2/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="dch-Zn-2hU">
+                                <rect key="frame" x="22" y="146" width="227" height="49"/>
                                 <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="MH9-I4-rkS">
-                                <rect key="frame" x="10.5" y="177.5" width="393" height="90"/>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghu-Rl-fXA">
+                                <rect key="frame" x="116" y="749.5" width="182" height="61.5"/>
+                                <state key="normal" title="Button" image="NextRosa"/>
+                                <state key="disabled" image="NextRosaNS"/>
+                                <connections>
+                                    <segue destination="lYX-Go-SkF" kind="show" id="XNp-JC-KL6"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="tWD-x1-iIh">
+                                <rect key="frame" x="20" y="295.5" width="374" height="427"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="m2e-Qs-dbc">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="71"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="NNl-47-msh">
+                                                <rect key="frame" x="0.0" y="0.0" width="66" height="71"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ito-IV-cji">
+                                                <rect key="frame" x="112" y="0.0" width="262" height="71"/>
+                                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" backgroundImage="QuestionSpento"/>
+                                                <state key="selected" backgroundImage="QuestionAcceso">
+                                                    <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="chooseSquare:" destination="My5-jh-AI2" eventType="touchUpInside" id="S1Z-qp-Nfr"/>
+                                                    <action selector="chooseSquare:" destination="xs9-hS-2dx" eventType="touchUpInside" id="YdJ-k5-hyA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="gC4-Iw-fiI">
+                                        <rect key="frame" x="0.0" y="89" width="374" height="71"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="Jiu-yc-pd7">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="71"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tKQ-SR-XTh">
+                                                <rect key="frame" x="112" y="0.0" width="262" height="71"/>
+                                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" backgroundImage="QuestionSpento"/>
+                                                <state key="selected" backgroundImage="QuestionAcceso">
+                                                    <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="chooseRect:" destination="xs9-hS-2dx" eventType="touchUpInside" id="FBr-mU-vFJ"/>
+                                                    <action selector="chooseRect:" destination="My5-jh-AI2" eventType="touchUpInside" id="iR8-iN-etI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="2Yk-Ul-q1c">
+                                        <rect key="frame" x="0.0" y="178" width="374" height="71"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle" translatesAutoresizingMaskIntoConstraints="NO" id="nLa-CY-Kau">
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="71"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4Pd-r7-Jm4">
+                                                <rect key="frame" x="112" y="0.0" width="262" height="71"/>
+                                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" backgroundImage="QuestionSpento"/>
+                                                <state key="selected" backgroundImage="QuestionAcceso">
+                                                    <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="chooseTriangle:" destination="xs9-hS-2dx" eventType="touchUpInside" id="PzK-8n-ZkB"/>
+                                                    <action selector="chooseTriangle:" destination="My5-jh-AI2" eventType="touchUpInside" id="eje-VK-ghi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="RzB-tu-XEm">
+                                        <rect key="frame" x="0.0" y="267" width="374" height="71"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="RTL-Q1-ZKQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="68" height="71"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tDY-84-QdH">
+                                                <rect key="frame" x="113" y="0.0" width="261" height="71"/>
+                                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" backgroundImage="QuestionSpento"/>
+                                                <state key="selected" backgroundImage="QuestionAcceso">
+                                                    <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="chooseCircle:" destination="xs9-hS-2dx" eventType="touchUpInside" id="OmX-oM-TQx"/>
+                                                    <action selector="chooseCircle:" destination="My5-jh-AI2" eventType="touchUpInside" id="wz4-5c-caV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="tay-Vf-mbF">
+                                        <rect key="frame" x="0.0" y="356" width="374" height="71"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zigzag" translatesAutoresizingMaskIntoConstraints="NO" id="Y0s-j4-6yT">
+                                                <rect key="frame" x="0.0" y="0.0" width="89" height="71"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="sia-vk-Gr1">
+                                                <rect key="frame" x="112" y="0.0" width="262" height="71"/>
+                                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" backgroundImage="QuestionSpento"/>
+                                                <state key="selected" backgroundImage="QuestionAcceso">
+                                                    <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="chooseZigZag:" destination="My5-jh-AI2" eventType="touchUpInside" id="V61-1K-mda"/>
+                                                    <action selector="chooseZigZag:" destination="xs9-hS-2dx" eventType="touchUpInside" id="ZbB-95-A8R"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Xfm-ER-bhW">
+                                <rect key="frame" x="22" y="204" width="369" height="74.5"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="xuO-Ut-Xmp">
-                                <rect key="frame" x="24" y="378" width="93.5" height="58.5"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="jAF-iZ-Q55">
-                                <rect key="frame" x="30" y="556" width="72.5" height="72.5"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zigzag" translatesAutoresizingMaskIntoConstraints="NO" id="CmV-SR-trQ">
-                                <rect key="frame" x="23" y="665" width="89.5" height="38.5"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle" translatesAutoresizingMaskIntoConstraints="NO" id="z4P-mb-XrO">
-                                <rect key="frame" x="27" y="463" width="78.5" height="73.5"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="6Kw-k6-rOH">
-                                <rect key="frame" x="31.5" y="279" width="70" height="69"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="idm-Vm-ofd">
-                                <rect key="frame" x="125.5" y="369.5" width="278" height="75.5"/>
-                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
-                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" backgroundImage="QuestionSpento"/>
-                                <state key="selected" backgroundImage="QuestionAcceso"/>
-                                <connections>
-                                    <action selector="chooseRect:" destination="My5-jh-AI2" eventType="touchUpInside" id="bUO-qo-g6D"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="IPH-La-4u4">
-                                <rect key="frame" x="125.5" y="646.5" width="278" height="75.5"/>
-                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
-                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" backgroundImage="QuestionSpento"/>
-                                <state key="selected" backgroundImage="QuestionAcceso"/>
-                                <connections>
-                                    <action selector="chooseZigZag:" destination="My5-jh-AI2" eventType="touchUpInside" id="gkA-yo-R83"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uCS-Vx-npP">
-                                <rect key="frame" x="125.5" y="462" width="278" height="75.5"/>
-                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
-                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" backgroundImage="QuestionSpento"/>
-                                <state key="selected" backgroundImage="QuestionAcceso"/>
-                                <connections>
-                                    <action selector="chooseTriangle:" destination="My5-jh-AI2" eventType="touchUpInside" id="Z8c-mM-Bhf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="B71-RY-kN2">
-                                <rect key="frame" x="125.5" y="554.5" width="278" height="75.5"/>
-                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
-                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" backgroundImage="QuestionSpento"/>
-                                <state key="selected" backgroundImage="QuestionAcceso"/>
-                                <connections>
-                                    <action selector="chooseCircle:" destination="My5-jh-AI2" eventType="touchUpInside" id="jRh-aQ-Mpy"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="idm-Vm-ofd" firstAttribute="leading" secondItem="uCS-Vx-npP" secondAttribute="leading" id="40C-LG-H5J"/>
-                            <constraint firstItem="jAF-iZ-Q55" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="34:421" id="4hU-3H-3Ld"/>
-                            <constraint firstItem="xuO-Ut-Xmp" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0653207" id="5LK-VN-U7X"/>
-                            <constraint firstItem="CmV-SR-trQ" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0427553" id="6GI-9U-IoV"/>
-                            <constraint firstAttribute="bottom" secondItem="bwR-8A-D92" secondAttribute="bottom" constant="77.5" id="6o2-fs-1kf"/>
-                            <constraint firstItem="CmV-SR-trQ" firstAttribute="leading" secondItem="6ea-1q-BRF" secondAttribute="leading" constant="23" id="7Kl-14-h0U"/>
-                            <constraint firstItem="z4P-mb-XrO" firstAttribute="centerX" secondItem="jAF-iZ-Q55" secondAttribute="centerX" id="7s1-HP-Pvi"/>
-                            <constraint firstItem="B71-RY-kN2" firstAttribute="leading" secondItem="IPH-La-4u4" secondAttribute="leading" id="8Tf-GK-8xY"/>
-                            <constraint firstItem="6Kw-k6-rOH" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="33:421" id="8ly-OS-BEu"/>
-                            <constraint firstItem="uCS-Vx-npP" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.084323" id="9GO-rf-ecA"/>
-                            <constraint firstItem="wSE-1b-OHo" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.630435" id="9R7-1l-JZf"/>
-                            <constraint firstItem="B71-RY-kN2" firstAttribute="top" secondItem="uCS-Vx-npP" secondAttribute="bottom" constant="17" id="9fB-h8-rQT"/>
-                            <constraint firstItem="idm-Vm-ofd" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.630435" id="Aw6-dG-wKl"/>
-                            <constraint firstItem="uCS-Vx-npP" firstAttribute="top" secondItem="idm-Vm-ofd" secondAttribute="bottom" constant="17" id="BPq-EN-914"/>
-                            <constraint firstItem="bwR-8A-D92" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="91:421" id="D1d-5b-qwQ"/>
-                            <constraint firstItem="wSE-1b-OHo" firstAttribute="top" secondItem="MH9-I4-rkS" secondAttribute="bottom" constant="8" id="FMK-6F-wLY"/>
-                            <constraint firstItem="wSE-1b-OHo" firstAttribute="leading" secondItem="idm-Vm-ofd" secondAttribute="leading" id="IN8-1A-hl3"/>
-                            <constraint firstItem="jAF-iZ-Q55" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0807601" id="IYz-Hk-zNS"/>
-                            <constraint firstItem="IPH-La-4u4" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.084323" id="Jjh-i1-sWs"/>
-                            <constraint firstItem="MH9-I4-rkS" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.891304" id="KeQ-hu-yoM"/>
-                            <constraint firstItem="Uxd-xB-7qe" firstAttribute="leading" secondItem="MH9-I4-rkS" secondAttribute="leading" id="Kg1-Ro-dC7"/>
-                            <constraint firstItem="wSE-1b-OHo" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="261:842" id="LCB-gg-2vv"/>
-                            <constraint firstItem="B71-RY-kN2" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.630435" id="LWk-EN-Kr0"/>
-                            <constraint firstItem="z4P-mb-XrO" firstAttribute="leading" secondItem="6ea-1q-BRF" secondAttribute="leading" constant="27" id="Mg1-SR-8TP"/>
-                            <constraint firstItem="jAF-iZ-Q55" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.164251" id="NHT-Wo-uPm"/>
-                            <constraint firstItem="idm-Vm-ofd" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="261:842" id="Nwp-Se-x99"/>
-                            <constraint firstItem="MH9-I4-rkS" firstAttribute="top" secondItem="Uxd-xB-7qe" secondAttribute="bottom" constant="2" id="OxM-Mx-HtK"/>
-                            <constraint firstItem="bwR-8A-D92" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.439614" id="S4N-wi-IEn"/>
-                            <constraint firstItem="MH9-I4-rkS" firstAttribute="trailing" secondItem="wSE-1b-OHo" secondAttribute="trailing" id="UzY-xb-RVl"/>
-                            <constraint firstItem="Uxd-xB-7qe" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.574879" id="Vqq-NI-rBN"/>
-                            <constraint firstItem="B71-RY-kN2" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.084323" id="Vv1-Km-3Ey"/>
-                            <constraint firstItem="CmV-SR-trQ" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.202899" id="WRY-3N-9fO"/>
-                            <constraint firstItem="z4P-mb-XrO" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="37:421" id="ZT9-u6-rBv"/>
-                            <constraint firstItem="bwR-8A-D92" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0653207" id="Zmw-a9-okR"/>
-                            <constraint firstItem="z4P-mb-XrO" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.178744" id="Ztj-s3-xQl"/>
-                            <constraint firstItem="B71-RY-kN2" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="261:842" id="au2-NV-467"/>
-                            <constraint firstItem="CmV-SR-trQ" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="42:421" id="ck0-bR-PLZ"/>
-                            <constraint firstItem="xuO-Ut-Xmp" firstAttribute="centerY" secondItem="idm-Vm-ofd" secondAttribute="centerY" id="dWH-Uh-eFH"/>
-                            <constraint firstItem="z4P-mb-XrO" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0819477" id="db2-ti-TXH"/>
-                            <constraint firstItem="6Kw-k6-rOH" firstAttribute="centerX" secondItem="z4P-mb-XrO" secondAttribute="centerX" id="diV-Nu-vWA"/>
-                            <constraint firstItem="6Kw-k6-rOH" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0771971" id="emv-eV-J8P"/>
-                            <constraint firstItem="IPH-La-4u4" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.630435" id="fE0-Ch-PZg"/>
-                            <constraint firstItem="MH9-I4-rkS" firstAttribute="centerX" secondItem="bwR-8A-D92" secondAttribute="centerX" id="fgg-RH-Lw3"/>
-                            <constraint firstItem="xuO-Ut-Xmp" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="44:421" id="h5f-py-Lqn"/>
-                            <constraint firstItem="Uxd-xB-7qe" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0653207" id="hOH-wV-nyM"/>
-                            <constraint firstItem="xuO-Ut-Xmp" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.21256" id="hTa-BU-jZT"/>
-                            <constraint firstItem="z4P-mb-XrO" firstAttribute="centerY" secondItem="uCS-Vx-npP" secondAttribute="centerY" id="hhd-vv-r50"/>
-                            <constraint firstItem="idm-Vm-ofd" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.084323" id="jdS-LY-1JS"/>
-                            <constraint firstItem="xuO-Ut-Xmp" firstAttribute="leading" secondItem="6ea-1q-BRF" secondAttribute="leading" constant="24" id="lii-Js-82e"/>
-                            <constraint firstItem="6Kw-k6-rOH" firstAttribute="centerY" secondItem="wSE-1b-OHo" secondAttribute="centerY" id="lkL-s5-ez8"/>
-                            <constraint firstItem="uCS-Vx-npP" firstAttribute="leading" secondItem="B71-RY-kN2" secondAttribute="leading" id="mtx-rc-qjZ"/>
-                            <constraint firstItem="wSE-1b-OHo" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.084323" id="nGL-sC-zC7"/>
-                            <constraint firstItem="uCS-Vx-npP" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.630435" id="nxi-MT-wDi"/>
-                            <constraint firstItem="Uxd-xB-7qe" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="119:421" id="pLC-ZE-VBC"/>
-                            <constraint firstItem="CmV-SR-trQ" firstAttribute="centerY" secondItem="IPH-La-4u4" secondAttribute="centerY" id="pwO-9t-haf"/>
-                            <constraint firstItem="uCS-Vx-npP" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="261:842" id="qIV-b2-gPl"/>
-                            <constraint firstItem="6Kw-k6-rOH" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.15942" id="sFT-z7-EH6"/>
-                            <constraint firstItem="MH9-I4-rkS" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.10095" id="u2k-pn-WzS"/>
-                            <constraint firstItem="bwR-8A-D92" firstAttribute="top" secondItem="IPH-La-4u4" secondAttribute="bottom" constant="38" id="uBW-f7-AcA"/>
-                            <constraint firstItem="idm-Vm-ofd" firstAttribute="top" secondItem="wSE-1b-OHo" secondAttribute="bottom" constant="18" id="uGs-IB-YvA"/>
-                            <constraint firstItem="IPH-La-4u4" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="261:842" id="vjd-k9-NOs"/>
-                            <constraint firstItem="MH9-I4-rkS" firstAttribute="centerX" secondItem="Mat-fe-5YN" secondAttribute="centerX" id="w92-To-GhC"/>
-                            <constraint firstItem="IPH-La-4u4" firstAttribute="top" secondItem="B71-RY-kN2" secondAttribute="bottom" constant="16.5" id="wX4-VX-yxK"/>
-                            <constraint firstItem="MH9-I4-rkS" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="369:842" id="wxj-Ao-xRS"/>
-                            <constraint firstItem="jAF-iZ-Q55" firstAttribute="centerY" secondItem="B71-RY-kN2" secondAttribute="centerY" id="xW0-V7-fNA"/>
+                            <constraint firstItem="NNl-47-msh" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.15942" id="2LR-Kh-YXW"/>
+                            <constraint firstItem="Y0s-j4-6yT" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="3VW-7Q-zLi"/>
+                            <constraint firstItem="nLa-CY-Kau" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="3d1-GZ-HBi"/>
+                            <constraint firstItem="ghu-Rl-fXA" firstAttribute="centerX" secondItem="Mat-fe-5YN" secondAttribute="centerX" id="4Lu-Vu-H0E"/>
+                            <constraint firstItem="Y0s-j4-6yT" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.214976" id="4hm-LH-fuT"/>
+                            <constraint firstItem="ghu-Rl-fXA" firstAttribute="top" secondItem="tWD-x1-iIh" secondAttribute="bottom" constant="27" id="5mx-AZ-HOn"/>
+                            <constraint firstItem="Xfm-ER-bhW" firstAttribute="top" secondItem="dch-Zn-2hU" secondAttribute="bottom" constant="9" id="6eD-tr-RlE"/>
+                            <constraint firstItem="dch-Zn-2hU" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.548309" id="8yC-6F-lBp"/>
+                            <constraint firstItem="ito-IV-cji" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.63285" id="A1v-8v-1Hx"/>
+                            <constraint firstItem="ito-IV-cji" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="CYd-nw-lTI"/>
+                            <constraint firstItem="ghu-Rl-fXA" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="13:64" id="Cp9-dL-GgE"/>
+                            <constraint firstItem="4Pd-r7-Jm4" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.63285" id="FIX-FL-x7L"/>
+                            <constraint firstItem="ghu-Rl-fXA" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0686384" id="Gts-NF-M7A"/>
+                            <constraint firstItem="4Pd-r7-Jm4" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="HCa-Cl-fAd"/>
+                            <constraint firstItem="Xfm-ER-bhW" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.891304" id="HaQ-U8-fNP"/>
+                            <constraint firstItem="tWD-x1-iIh" firstAttribute="centerX" secondItem="Mat-fe-5YN" secondAttribute="centerX" id="Hrr-X3-1LX"/>
+                            <constraint firstItem="tWD-x1-iIh" firstAttribute="top" secondItem="Xfm-ER-bhW" secondAttribute="bottom" constant="17" id="MNe-Il-1qs"/>
+                            <constraint firstItem="6ea-1q-BRF" firstAttribute="trailing" secondItem="dch-Zn-2hU" secondAttribute="trailing" constant="165" id="QDg-mX-L4b"/>
+                            <constraint firstItem="tKQ-SR-XTh" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="Qab-DJ-Hzx"/>
+                            <constraint firstItem="Jiu-yc-pd7" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.193237" id="SR0-iv-yM1"/>
+                            <constraint firstItem="nLa-CY-Kau" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.178744" id="UUS-i9-OI0"/>
+                            <constraint firstItem="sia-vk-Gr1" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.63285" id="XpN-WE-P4k"/>
+                            <constraint firstItem="dch-Zn-2hU" firstAttribute="leading" secondItem="6ea-1q-BRF" secondAttribute="leading" constant="22" id="a6T-GW-eZ5"/>
+                            <constraint firstItem="Jiu-yc-pd7" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="bEH-0o-9kJ"/>
+                            <constraint firstItem="RTL-Q1-ZKQ" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="ceM-kD-amy"/>
+                            <constraint firstItem="dch-Zn-2hU" firstAttribute="top" secondItem="6ea-1q-BRF" secondAttribute="top" constant="58" id="dHM-N4-gtb"/>
+                            <constraint firstItem="dch-Zn-2hU" firstAttribute="leading" secondItem="Xfm-ER-bhW" secondAttribute="leading" id="dPM-b6-2gG"/>
+                            <constraint firstItem="Xfm-ER-bhW" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0831473" id="fXV-CR-TCM"/>
+                            <constraint firstItem="tDY-84-QdH" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="gKY-4u-TXV"/>
+                            <constraint firstItem="NNl-47-msh" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="h44-Mf-5VB"/>
+                            <constraint firstItem="sia-vk-Gr1" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="m0D-OD-RvX"/>
+                            <constraint firstItem="tDY-84-QdH" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.630435" id="mIj-St-9ox"/>
+                            <constraint firstItem="RTL-Q1-ZKQ" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.164251" id="rsH-wM-Iuv"/>
+                            <constraint firstItem="ghu-Rl-fXA" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.439614" id="tWv-j8-hRv"/>
+                            <constraint firstItem="tWD-x1-iIh" firstAttribute="leading" secondItem="6ea-1q-BRF" secondAttribute="leading" constant="20" id="wO7-kk-ixI"/>
+                            <constraint firstItem="tKQ-SR-XTh" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.63285" id="wpz-zw-de0"/>
+                            <constraint firstItem="dch-Zn-2hU" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0546875" id="xDo-Ct-Ok4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6ea-1q-BRF"/>
                     </view>
                     <navigationItem key="navigationItem" id="wgy-8u-MYd"/>
                     <connections>
-                        <outlet property="circle" destination="B71-RY-kN2" id="ZYZ-MR-W7a"/>
-                        <outlet property="label" destination="MH9-I4-rkS" id="hSD-Yp-56Z"/>
-                        <outlet property="nex" destination="bwR-8A-D92" id="NQv-F1-kef"/>
-                        <outlet property="rect" destination="idm-Vm-ofd" id="QIe-Nk-JsR"/>
-                        <outlet property="square" destination="wSE-1b-OHo" id="QfS-Hi-SCZ"/>
-                        <outlet property="triangle" destination="uCS-Vx-npP" id="WCh-XS-mfg"/>
-                        <outlet property="zigZag" destination="IPH-La-4u4" id="eO2-oX-jVb"/>
+                        <outlet property="circle" destination="tDY-84-QdH" id="3ef-UI-a9h"/>
+                        <outlet property="h1" destination="m2e-Qs-dbc" id="mFH-dT-J1e"/>
+                        <outlet property="h2" destination="gC4-Iw-fiI" id="Qn0-o8-ggQ"/>
+                        <outlet property="h3" destination="2Yk-Ul-q1c" id="5Jd-9X-zEJ"/>
+                        <outlet property="h4" destination="RzB-tu-XEm" id="QF4-jp-VKv"/>
+                        <outlet property="h5" destination="tay-Vf-mbF" id="PLf-Hp-5zh"/>
+                        <outlet property="label" destination="Xfm-ER-bhW" id="nDg-Vd-YXe"/>
+                        <outlet property="nex" destination="ghu-Rl-fXA" id="cb1-US-LT1"/>
+                        <outlet property="question" destination="dch-Zn-2hU" id="Ps0-ze-56C"/>
+                        <outlet property="rect" destination="tKQ-SR-XTh" id="Tzd-Sp-4qd"/>
+                        <outlet property="square" destination="ito-IV-cji" id="Psj-C1-b0w"/>
+                        <outlet property="triangle" destination="4Pd-r7-Jm4" id="uoo-hs-le8"/>
+                        <outlet property="vertical" destination="tWD-x1-iIh" id="879-Ld-XSq"/>
+                        <outlet property="zigZag" destination="sia-vk-Gr1" id="YLj-LG-FSo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tkx-j8-ACD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3534,7 +3557,6 @@ The two shapes on the outside recount </string>
         <image name="linea" width="371" height="1"/>
         <image name="marble" width="168" height="168"/>
         <image name="navInsta" width="415" height="185"/>
-        <image name="nextazzurro" width="182" height="55"/>
         <image name="nonselezionato" width="374" height="76"/>
         <image name="primaPalette" width="87" height="87"/>
         <image name="readyViola" width="182" height="55"/>
