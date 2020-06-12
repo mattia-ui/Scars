@@ -45,7 +45,13 @@ class ChooseTexture: UIViewController  {
     @IBOutlet weak var cratere: UIButton!
     @IBOutlet weak var marble: UIButton!
     @IBOutlet weak var nex: UIButton!
+    @IBOutlet weak var textileImg: UIImageView!
+    @IBOutlet weak var cartereImg: UIImageView!
+    @IBOutlet weak var seaImg: UIImageView!
+    @IBOutlet weak var woodImg: UIImageView!
+    @IBOutlet weak var marbleImg: UIImageView!
     
+    @IBOutlet weak var question: UILabel!
     @IBOutlet weak var label: UILabel!
     static var texture1: String!
     
@@ -57,6 +63,35 @@ class ChooseTexture: UIViewController  {
     @IBOutlet weak var results: UILabel!
     @IBOutlet weak var yes: UIButton!
     @IBOutlet weak var no: UIButton!
+    
+    func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
+        print(view.frame.origin.x)
+        UIView.animate(withDuration: aCircleTime, animations: {
+            () -> Void in view.transform = CGAffineTransform(translationX: 0, y: to)
+        })
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+
+                if(view.frame.height == 812){
+                }else if(view.frame.height == 667){
+                    traslate(view: question, aCircleTime: 0, to: -35)
+                    traslate(view: label, aCircleTime: 0, to: -35)
+                    traslate(view: nex, aCircleTime: 0, to: -83)
+                    traslate(view: sea, aCircleTime: 0, to: -42)
+                    traslate(view: seaImg, aCircleTime: 0, to: -42)
+                    traslate(view: cratere, aCircleTime: 0, to: -49)
+                    traslate(view: cartereImg, aCircleTime: 0, to: -49)
+                    traslate(view: texile, aCircleTime: 0, to: -56)
+                    traslate(view: textileImg, aCircleTime: 0, to: -56)
+                    traslate(view: marble, aCircleTime: 0, to: -63)
+                    traslate(view: marbleImg, aCircleTime: 0, to: -63)
+                    traslate(view: wood, aCircleTime: 0, to: -70)
+                    traslate(view: woodImg, aCircleTime: 0, to: -70)
+                }
+    }
     
     @IBAction func pressed(_ sender: UIButton) {
        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.light)
