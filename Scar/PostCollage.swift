@@ -20,7 +20,11 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
     @IBOutlet weak var viewL: UIView!
      var m = 0
     @IBOutlet weak var miniSym: UIImageView!
+    @IBOutlet weak var button: UIButton!
     
+    @IBOutlet weak var illustrazionePerBlur: UIImageView!
+    @IBOutlet weak var Submitted: UILabel!
+    @IBOutlet weak var thx: UILabel!
     @IBOutlet weak var gif: UIImageView!
     @IBOutlet weak var myCollectionView: UICollectionView!
      var blurEffect = UIBlurEffect()
@@ -42,10 +46,32 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
                    view.addGestureRecognizer(tap)
         }
         
-      
+        if(view.frame.height == 812){
+           }else if(view.frame.height == 667){
+               traslate(view: button, aCircleTime: 0, to: 50)
+                traslateX(view: miniSym, aCircleTime: 0, to: -10)
+            traslate(view: illustrazionePerBlur, aCircleTime: 0, to: -50)
+            traslate(view: Submitted, aCircleTime: 0, to: -50)
+            traslate(view: thx, aCircleTime: 0, to: -50)
+
+            
+        }
+
 //        let sh = Collage()
 //        miniSym.image = sh.screen?.image
     }
+    func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
+        UIView.animate(withDuration: aCircleTime, animations: {
+            () -> Void in view.transform = CGAffineTransform(translationX: 0, y: to)
+        })
+    }
+    func traslateX(view: UIView, aCircleTime: Double, to: CGFloat) {
+        UIView.animate(withDuration: aCircleTime, animations: {
+            () -> Void in view.transform = CGAffineTransform(translationX: to, y: to - 10)
+        })
+    }
+
+
     @objc func tapped(){
         viewSulBlur.isHidden = true
         blurEffectView.alpha = 0
