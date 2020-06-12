@@ -50,7 +50,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
                     traslate(view: elaboraDisegno, aCircleTime: 0, to: 35)
                     var tG = CGAffineTransform.identity
                     tG = tG.rotated(by: CGFloat.pi + CGFloat.pi/2 )
-                    tG = tG.translatedBy(x: 0, y: -50)
+                    tG = tG.translatedBy(x: tempDrawScars.frame.origin.y + 40, y: tempDrawScars.frame.origin.x)
                     slider.transform = tG
                 }
     }
