@@ -601,17 +601,31 @@ class Collage: UIViewController, UITextFieldDelegate  {
                 }
             }
         }
-    
-        
-        let difW = UIScreen.main.bounds.width / 380
-        let difH = UIScreen.main.bounds.height / 750
         
         let randomSize = Float.random(in: 1..<1.05)
-        let randomPos = Int.random(in: 0..<4)
-        let posizioneGx = [20 * difW,-20 * difW,160 * difW,-10 * difW]
-        let posizioneGy = [-40 * difH,0 * difH,-20 * difH,140 * difH]
-        let posizionePx = [170 * difW,180 * difW,30 * difW,180 * difW]
-        let posizionePy = [140 * difH,130 * difH,170 * difH,30 * difH]
+        let randomPos = 3//Int.random(in: 0..<4)
+        
+        var posizioneGx: [Int], posizioneGy: [Int], posizionePx: [Int], posizionePy: [Int]
+        if(UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 896){
+            //11 pro max
+            posizioneGx = [20,-20,160,-10]
+            posizioneGy = [-30,0,-20,140]
+            posizionePx = [170,220,0,200]
+            posizionePy = [200,130,150,30]
+        } else if (UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 896){
+            //XS
+            posizioneGx = [20,-20,160,-10]
+            posizioneGy = [-40,0,-20,140]
+            posizionePx = [170,180,20,180]
+            posizionePy = [140,130,150,30]
+        } else {
+            //11, 8, SE
+            posizioneGx = [20,-20,160,-10]
+            posizioneGy = [-40,0,-20,140]
+            posizionePx = [170,180,30,180]
+            posizionePy = [140,130,170,30]
+        }
+        
            
         var tG = CGAffineTransform.identity
         tG = tG.scaledBy(x: CGFloat(randomSize), y: CGFloat(randomSize))
