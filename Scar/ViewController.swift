@@ -26,11 +26,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     var swiped = false
     var points = [CGPoint] ()
     
-    @IBOutlet weak var slider: UISlider!//{
-//        didSet{
-//            slider.transform = CGAffineTransform(rotationAngle: CGFloat.pi + CGFloat.pi/2)
-//        }
-//    }
+    @IBOutlet weak var slider: UISlider!{
+        didSet{
+            slider.transform = CGAffineTransform(rotationAngle: CGFloat.pi + CGFloat.pi/2)
+        }
+    }
     
     func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
         print(view.frame.origin.x)
@@ -51,6 +51,14 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
                     var tG = CGAffineTransform.identity
                     tG = tG.rotated(by: CGFloat.pi + CGFloat.pi/2 )
                     tG = tG.translatedBy(x: tempDrawScars.frame.origin.y + 40, y: tempDrawScars.frame.origin.x)
+                    slider.transform = tG
+                }else if(view.frame.height == 736){
+                   
+                    traslate(view: resetDis, aCircleTime: 0, to: -50)
+                    traslate(view: elaboraDisegno, aCircleTime: 0, to: 35)
+                    var tG = CGAffineTransform.identity
+                    tG = tG.rotated(by: CGFloat.pi + CGFloat.pi/2 )
+                    tG = tG.translatedBy(x: tempDrawScars.frame.origin.y + 100, y: tempDrawScars.frame.origin.x)
                     slider.transform = tG
                 }
     }

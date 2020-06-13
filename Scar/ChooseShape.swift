@@ -130,6 +130,12 @@ class ChooseShape: UIViewController  {
             traslate(view: label, aCircleTime: 0, to: -100)
             traslate(view: vertical, aCircleTime: 0, to: -100)
             traslate(view: nex, aCircleTime: 0, to: -120)
+        }else if(view.frame.height == 736){
+            vertical.spacing = 10
+            traslate(view: question, aCircleTime: 0, to: -100)
+            traslate(view: label, aCircleTime: 0, to: -100)
+            traslate(view: vertical, aCircleTime: 0, to: -100)
+            traslate(view: nex, aCircleTime: 0, to: -120)
         }
     }
     

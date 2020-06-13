@@ -62,7 +62,17 @@ class ChoosePalette: UIViewController  {
                     traslate(view: cold, aCircleTime: 0, to: -25)
                     traslate(view: warmt, aCircleTime: 0, to: -25)
                     traslate(view: mammt, aCircleTime: 0, to: -25)
-                }
+                }else if(view.frame.height == 736){
+                    traslate(view: question, aCircleTime: 0, to: -36)
+                    traslate(view: label, aCircleTime: 0, to: -43)
+                    traslate(view: nex, aCircleTime: 0, to: -91)
+                    traslate(view: cool, aCircleTime: 0, to: -42)
+                    traslate(view: warm, aCircleTime: 0, to: -42)
+                    traslate(view: neutral, aCircleTime: 0, to: -42)
+                    traslate(view: cold, aCircleTime: 0, to: -42)
+                    traslate(view: warmt, aCircleTime: 0, to: -42)
+                    traslate(view: mammt, aCircleTime: 0, to: -42)
+        }
     }
     
     @IBAction func chooseCool(_ sender: UIButton) {
