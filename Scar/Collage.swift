@@ -745,16 +745,30 @@ class Collage: UIViewController, UITextFieldDelegate  {
     
     func cropBottomImage(image: UIImage) -> UIImage {
 //        iphone XR
-        if(view.frame.width == 414){
+        if(view.frame.width == 414 && view.frame.height == 896){
            let rect = CGRect(x: 115, y: 375, width: 600, height: 600)
            return cropImage(image: image, toRect: rect)
         }
 //            iphone XS
-        else{
+        else  if(view.frame.width == 375 && view.frame.height == 812){
            let rect = CGRect(x: 165, y: 530, width: 800, height: 800)
            return cropImage(image: image, toRect: rect)
         }
+//            iphone 8Plus
+        else  if(view.frame.width == 414 && view.frame.height == 736){
+           let rect = CGRect(x: 165, y: 530, width: 950, height: 950)
+           return cropImage(image: image, toRect: rect)
+        }
+//            iphone 8
+            else  if(view.frame.width == 375 && view.frame.height == 667){
+               let rect = CGRect(x: 95, y: 330, width: 560, height: 560)
+               return cropImage(image: image, toRect: rect)
+            }
+
        
+        else{
+            return UIImage(named: "")!
+        }
     }
     
     @objc func tappedOnLabel(sender : MyTap) {
