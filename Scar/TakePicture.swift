@@ -41,7 +41,15 @@ class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePick
                        traslate(view: camera, aCircleTime: 0, to: -90)
                        traslate(view: penna, aCircleTime: 0, to: -90)
                        traslate(view: label3, aCircleTime: 0, to: -93)
-                   }
+                   }else if(view.frame.height == 736){
+                    traslate(view: question, aCircleTime: 0, to: -35)
+                    traslate(view: label, aCircleTime: 0, to: -35)
+                    traslate(view: label2, aCircleTime: 0, to: -47)
+                    traslate(view: immagine, aCircleTime: 0, to: -60)
+                    traslate(view: camera, aCircleTime: 0, to: -95)
+                    traslate(view: penna, aCircleTime: 0, to: -95)
+                    traslate(view: label3, aCircleTime: 0, to: -103)
+        }
        }
     
     override func viewDidLoad() {

@@ -96,7 +96,27 @@ class ChooseTexture: UIViewController  {
                     traslate(view: results, aCircleTime: 0, to: -75)
                     traslate(view: yes, aCircleTime: 0, to: -75)
                     traslate(view: no, aCircleTime: 0, to: -75)
-                }
+                }else if(view.frame.height == 736){
+                    traslate(view: question, aCircleTime: 0, to: -35)
+                    traslate(view: label, aCircleTime: 0, to: -35)
+                    traslate(view: nex, aCircleTime: 0, to: -88)
+                    traslate(view: sea, aCircleTime: 0, to: -42)
+                    traslate(view: seaImg, aCircleTime: 0, to: -42)
+                    traslate(view: cratere, aCircleTime: 0, to: -49)
+                    traslate(view: cartereImg, aCircleTime: 0, to: -49)
+                    traslate(view: texile, aCircleTime: 0, to: -56)
+                    traslate(view: textileImg, aCircleTime: 0, to: -56)
+                    traslate(view: marble, aCircleTime: 0, to: -63)
+                    traslate(view: marbleImg, aCircleTime: 0, to: -63)
+                    traslate(view: wood, aCircleTime: 0, to: -70)
+                    traslate(view: woodImg, aCircleTime: 0, to: -70)
+                    
+                    traslate(view: label1, aCircleTime: 0, to: -75)
+                    traslate(view: label2, aCircleTime: 0, to: -75)
+                    traslate(view: results, aCircleTime: 0, to: -75)
+                    traslate(view: yes, aCircleTime: 0, to: -75)
+                    traslate(view: no, aCircleTime: 0, to: -75)
+        }
     }
     
     @IBAction func pressed(_ sender: UIButton) {
