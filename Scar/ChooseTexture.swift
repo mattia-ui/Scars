@@ -206,7 +206,7 @@ class ChooseTexture: UIViewController  {
             cratere.isSelected = true
             marble.isSelected = false
             nex.isEnabled = true
-            ChooseTexture.texture1 = "cratere"
+            ChooseTexture.texture1 = "crater"
         }
     }
     
