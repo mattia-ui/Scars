@@ -609,25 +609,25 @@ class Collage: UIViewController, UITextFieldDelegate  {
         if(UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 896){
             //11 pro max
             posizioneGx = [20,-20,160,-10]
-            posizioneGy = [-30,0,-20,140]
+            posizioneGy = [-20,0,-20,140]
             posizionePx = [170,220,0,200]
             posizionePy = [200,130,150,30]
         } else if (UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 896){
             //XS
             posizioneGx = [20,-20,160,-10]
-            posizioneGy = [-40,0,-20,140]
+            posizioneGy = [-30,0,-20,140]
             posizionePx = [170,180,20,180]
             posizionePy = [140,130,150,30]
         }else if (UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 736){
             //8 plus
             posizioneGx = [20,-20,160,-10]
-            posizioneGy = [-30,0,-20,140]
+            posizioneGy = [-20,0,-20,140]
             posizionePx = [190,220,0,190]
             posizionePy = [180,130,170,30]
         } else {
             //11, 8, SE
             posizioneGx = [20,-20,160,-10]
-            posizioneGy = [-40,0,-20,140]
+            posizioneGy = [-30,0,-20,140]
             posizionePx = [170,180,30,180]
             posizionePy = [140,130,170,30]
         }
