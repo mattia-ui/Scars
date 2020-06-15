@@ -80,8 +80,8 @@ class ChoosePalette: UIViewController  {
             cool.isSelected = false
             nex.isEnabled = false
         } else {
-            cool.isSelected = true
-            warm.isSelected = false
+            cool.isSelected = false
+            warm.isSelected = true
             neutral.isSelected = false
             nex.isEnabled = true
             ChoosePalette.color = "cool"
@@ -93,8 +93,8 @@ class ChoosePalette: UIViewController  {
             warm.isSelected = false
             nex.isEnabled = false
         } else {
-            cool.isSelected = false
-            warm.isSelected = true
+            cool.isSelected = true
+            warm.isSelected = false
             neutral.isSelected = false
             nex.isEnabled = true
             ChoosePalette.color = "warm"
