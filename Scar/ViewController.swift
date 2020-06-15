@@ -162,7 +162,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     //Elabora foto.
     @IBAction func drawElaboration(_ sender: Any) {
-        
+        ViewController.imageScars = UIImage(named: "")
 //        UIGraphicsBeginImageContext(view.frame.size)
 //        guard let context = UIGraphicsGetCurrentContext() else {return}
 //        tempDrawScars.image?.draw(in: view.bounds)
@@ -191,6 +191,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let secondVC = storyboard.instantiateViewController(withIdentifier: "Collage")  as! Collage
         self.navigationController?.pushViewController(secondVC, animated: true)
+        
+        
     }
     
     func getDocumentsDirectory() -> URL {

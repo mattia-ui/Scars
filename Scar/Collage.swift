@@ -603,7 +603,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
         }
         
         let randomSize = Float.random(in: 1..<1.05)
-        let randomPos = 0//Int.random(in: 0..<4)
+        let randomPos = Int.random(in: 0..<4)
         
         var posizioneGx: [Int], posizioneGy: [Int], posizionePx: [Int], posizionePy: [Int]
         if(UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 896){
