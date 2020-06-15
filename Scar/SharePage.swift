@@ -204,9 +204,20 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
 //    //        countLabel.font = UIFont(name: "NewYorkMedium-Regular", size: 16)
 //    //        return answerText.text.count + (newText.count - range.length) <= 249
 //        }
-
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
     
     @IBAction func shareUnkown(_ sender: Any) {
+        
+        if let image = screen.image {
+            if let data = image.pngData() {
+                let filename = getDocumentsDirectory().appendingPathComponent("collage")
+                try? data.write(to: filename)
+            }
+        }
+        
         let ourRecord = CKRecord(recordType: "PublicInfo")
         ourRecord.setObject(descriptionField?.text as __CKRecordObjCValue?, forKey: "Description")
         
@@ -247,6 +258,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
         sqlite3_step(stmt)
         print("Saved successfully")
         
+        
         DispatchQueue.main.async{
 //            let storyboard = UIStoryboard(name: "Main", bundle: nil)
 //            let secondVC = storyboard.instantiateViewController(withIdentifier: "postCollage")  as! PostCollage
@@ -266,6 +278,13 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
     }
     
     @IBAction func shareImg(_ sender: Any) {
+        
+        if let image = screen.image {
+                   if let data = image.pngData() {
+                       let filename = getDocumentsDirectory().appendingPathComponent("collage")
+                       try? data.write(to: filename)
+                   }
+               }
         let firstActivityItem = "\(String(describing: descriptionField))"
         let secondActivityItem : NSURL = NSURL(string: "http//:hangme")!
         let image : UIImage =  screen.image!
@@ -312,6 +331,8 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
 
     }
     
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "blur"){
             (segue.destination as! PostCollage).blur = 1
@@ -319,6 +340,12 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
     }
     
     @IBAction func notNow(_ sender: Any) {
+        if let image = screen.image {
+                   if let data = image.pngData() {
+                       let filename = getDocumentsDirectory().appendingPathComponent("collage")
+                       try? data.write(to: filename)
+                   }
+               }
         //Si connette al DB
         var db: OpaquePointer?
         let fileURL = try!

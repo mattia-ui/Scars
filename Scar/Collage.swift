@@ -657,12 +657,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
         
             
         screen.image = cropBottomImage(image: view.snapshot() ?? UIImage())
-        if let image = screen.image {
-            if let data = image.pngData() {
-                let filename = getDocumentsDirectory().appendingPathComponent("collage")
-                try? data.write(to: filename)
-            }
-        }
+        
 //      screen.image = view.snapshot()
         var fontSize : CGFloat = 20
         if(view.frame.width == 375){
