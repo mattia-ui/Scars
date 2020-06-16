@@ -11,6 +11,7 @@ import UIKit
 
 class TerzaTutorial : UIViewController {
     override func viewDidLoad() {
+        overrideUserInterfaceStyle = .light
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
                view.addGestureRecognizer(tap)
     }

@@ -36,6 +36,7 @@ class SecondaTutorial : UIViewController {
     }
     
     override func viewDidLoad() {
+        overrideUserInterfaceStyle = .light
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
                view.addGestureRecognizer(tap)
         TerzaLabel.text = "By telling the story of your indelible sign you can change the way you look at your body and others’s bodies."
