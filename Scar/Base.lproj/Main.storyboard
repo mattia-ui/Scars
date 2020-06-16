@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -65,7 +65,7 @@
                                     <action selector="resetDraw:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mk6-Sl-Sai"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="1" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="Fim-d8-yE7">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="1" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="Fim-d8-yE7">
                                 <rect key="frame" x="-75" y="435" width="261" height="30"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1075,7 +1075,7 @@ How do you think others see it?</string>
             <objects>
                 <viewController id="lYX-Go-SkF" customClass="ChoosePalette" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UH4-Nu-LfI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="m8e-tD-btm">
@@ -1225,7 +1225,7 @@ How do you think others see it?</string>
             <objects>
                 <viewController id="lfU-OF-Bud" customClass="ChooseTexture" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pnh-IU-Nic">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jE3-g0-hTy">
@@ -2031,7 +2031,7 @@ your body and others’s bodies.</string>
                                     <fragment content="Qua ci vanno le stronzate di francesca">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name="NexaLight"/>
+                                            <font key="NSFont" metaFont="system" size="18"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -2379,7 +2379,7 @@ your body and others’s bodies.</string>
                                                         <fragment content="Label">
                                                             <attributes>
                                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="18" name="NexaTextDemo-Light"/>
+                                                                <font key="NSFont" metaFont="system" size="18"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
@@ -2474,7 +2474,7 @@ your body and others’s bodies.</string>
                                                         <fragment content="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
                                                             <attributes>
                                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="9" name="NexaLight"/>
+                                                                <font key="NSFont" metaFont="miniSystem"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
@@ -2840,12 +2840,18 @@ your body and others’s bodies.</string>
                                                         <rect key="frame" x="72" y="202" width="270" height="270"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="raZ-zi-IBM">
+                                                        <rect key="frame" x="291" y="421" width="50" height="50"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHV-UC-arC">
+                                                        <rect key="frame" x="72" y="202" width="70" height="70"/>
+                                                    </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jgS-5L-Xg9">
-                                                        <rect key="frame" x="145" y="202" width="125" height="270"/>
+                                                        <rect key="frame" x="140" y="202" width="125" height="270"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
-                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cc" translatesAutoresizingMaskIntoConstraints="NO" id="zQL-vM-xeu">
-                                                        <rect key="frame" x="72" y="202" width="270" height="270"/>
+                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cc" translatesAutoresizingMaskIntoConstraints="NO" id="zQL-vM-xeu">
+                                                        <rect key="frame" x="72" y="201" width="270" height="270"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DtU-42-1mO">
@@ -2970,12 +2976,6 @@ The two shapes on the outside recount </string>
                                                             <segue destination="LDR-hH-uX6" kind="show" identifier="jamm" id="47n-ms-sJd"/>
                                                         </connections>
                                                     </button>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHV-UC-arC">
-                                                        <rect key="frame" x="72" y="202" width="80" height="80"/>
-                                                    </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="raZ-zi-IBM">
-                                                        <rect key="frame" x="291" y="421" width="50" height="50"/>
-                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -3006,7 +3006,7 @@ The two shapes on the outside recount </string>
                                                     <constraint firstItem="tcg-DQ-JRd" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="56:169" id="Vvs-4Y-ffL"/>
                                                     <constraint firstItem="Q2H-9g-FGd" firstAttribute="top" secondItem="jgS-5L-Xg9" secondAttribute="top" id="WWU-8s-tgk"/>
                                                     <constraint firstItem="zQL-vM-xeu" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="400:1183" constant="-130" id="XIg-HX-anC"/>
-                                                    <constraint firstItem="jgS-5L-Xg9" firstAttribute="leading" secondItem="Iaf-1g-HK7" secondAttribute="leading" constant="145" id="Xs4-fD-DCX"/>
+                                                    <constraint firstItem="jgS-5L-Xg9" firstAttribute="leading" secondItem="Iaf-1g-HK7" secondAttribute="leading" constant="140" id="Xs4-fD-DCX"/>
                                                     <constraint firstItem="Igl-LE-bMi" firstAttribute="leading" secondItem="Ntc-NU-ZMR" secondAttribute="leading" id="ZeU-Mi-hvp"/>
                                                     <constraint firstItem="zQL-vM-xeu" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.338123" constant="-129.99950899999999" id="awI-IX-mus"/>
                                                     <constraint firstItem="DtU-42-1mO" firstAttribute="top" secondItem="jgS-5L-Xg9" secondAttribute="bottom" constant="29" id="bUO-sj-CWy"/>
@@ -3346,7 +3346,7 @@ The two shapes on the outside recount </string>
                                                                 <fragment content="Copy caption">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                        <font key="NSFont" size="20" name="NexaTextDemo-Light"/>
+                                                                        <font key="NSFont" metaFont="system" size="20"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         <integer key="NSUnderline" value="1"/>
                                                                     </attributes>
@@ -3367,7 +3367,7 @@ The two shapes on the outside recount </string>
                                                                 <fragment content="Not now">
                                                                     <attributes>
                                                                         <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                        <font key="NSFont" size="20" name="NexaTextDemo-Light"/>
+                                                                        <font key="NSFont" metaFont="system" size="20"/>
                                                                         <font key="NSOriginalFont" metaFont="system" size="18"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         <integer key="NSUnderline" value="1"/>
@@ -3518,7 +3518,6 @@ The two shapes on the outside recount </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mjP-6E-I86"/>
         <segue reference="47n-ms-sJd"/>
         <segue reference="s1A-7h-Aw8"/>
         <segue reference="rqq-x5-KjR"/>

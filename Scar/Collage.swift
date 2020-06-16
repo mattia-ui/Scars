@@ -602,34 +602,34 @@ class Collage: UIViewController, UITextFieldDelegate  {
             }
         }
         
-        let randomSize = Float.random(in: 1..<1.05)
-        let randomPos = Int.random(in: 0..<4)
+        let randomSize = Float.random(in: 0.99..<1.03)
+        let randomPos = 3//Int.random(in: 0..<4)
         
         var posizioneGx: [Int], posizioneGy: [Int], posizionePx: [Int], posizionePy: [Int]
         if(UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 896){
             //11 pro max
-            posizioneGx = [20,-20,160,-10]
+            posizioneGx = [20,-20,170,-10]
             posizioneGy = [-20,0,-20,140]
-            posizionePx = [170,220,0,200]
-            posizionePy = [200,130,150,30]
-        } else if (UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 896){
+            posizionePx = [170,220,-10,200]
+            posizionePy = [200,150,170,30]
+        } else if (UIScreen.main.bounds.width == 375 && UIScreen.main.bounds.height == 812){
             //XS
-            posizioneGx = [20,-20,160,-10]
+            posizioneGx = [0,-20,160,-20]
             posizioneGy = [-30,0,-20,140]
-            posizionePx = [170,180,20,180]
-            posizionePy = [140,130,150,30]
+            posizionePx = [170,180,0,180]
+            posizionePy = [140,130,150,0]
         }else if (UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 736){
             //8 plus
-            posizioneGx = [20,-20,160,-10]
+            posizioneGx = [-10,-20,170,-30]
             posizioneGy = [-20,0,-20,140]
-            posizionePx = [190,220,0,190]
-            posizionePy = [180,130,170,30]
+            posizionePx = [190,220,0,200]
+            posizionePy = [180,150,170,30]
         } else {
             //11, 8, SE
-            posizioneGx = [20,-20,160,-10]
+            posizioneGx = [-10,-20,160,-30]
             posizioneGy = [-30,0,-20,140]
-            posizionePx = [170,180,30,180]
-            posizionePy = [140,130,170,30]
+            posizionePx = [180,180,0,180]
+            posizionePy = [150,130,170,0]
         }
         
            

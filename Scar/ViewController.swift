@@ -21,7 +21,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     static var imageScars: UIImage!
     var lastPoint = CGPoint.zero
     var color = UIColor.black
-    var brushWidth: CGFloat = 10.0
+    var brushWidth: CGFloat = 25.0
     var opacity: CGFloat = 1.0
     var swiped = false
     var points = [CGPoint] ()
