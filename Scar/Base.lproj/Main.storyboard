@@ -1075,7 +1075,7 @@ How do you think others see it?</string>
             <objects>
                 <viewController id="lYX-Go-SkF" customClass="ChoosePalette" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UH4-Nu-LfI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="m8e-tD-btm">
@@ -1206,13 +1206,13 @@ How do you think others see it?</string>
                     <navigationItem key="navigationItem" id="EPe-Oa-SWg"/>
                     <connections>
                         <outlet property="cold" destination="TDh-Qc-oA1" id="isN-Li-1Pa"/>
-                        <outlet property="cool" destination="m8e-tD-btm" id="Trh-iU-pCz"/>
+                        <outlet property="cool" destination="Hot-ON-zvu" id="Ulc-4b-Kxh"/>
                         <outlet property="label" destination="uW9-br-Aoz" id="65z-Fw-Ugz"/>
                         <outlet property="mammt" destination="cJg-DJ-qS8" id="GHz-bD-CUt"/>
                         <outlet property="neutral" destination="53f-Wh-VQP" id="vab-HU-Y3S"/>
                         <outlet property="nex" destination="y2t-hU-7Lg" id="7aa-Pm-gNV"/>
                         <outlet property="question" destination="daP-9o-FJm" id="mxT-AQ-vf8"/>
-                        <outlet property="warm" destination="Hot-ON-zvu" id="aAo-Lf-1Z8"/>
+                        <outlet property="warm" destination="m8e-tD-btm" id="imW-SO-W1V"/>
                         <outlet property="warmt" destination="XXN-5B-Ifl" id="Pyn-93-7lr"/>
                     </connections>
                 </viewController>
@@ -1225,7 +1225,7 @@ How do you think others see it?</string>
             <objects>
                 <viewController id="lfU-OF-Bud" customClass="ChooseTexture" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pnh-IU-Nic">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jE3-g0-hTy">
@@ -3518,12 +3518,13 @@ The two shapes on the outside recount </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="mjP-6E-I86"/>
         <segue reference="47n-ms-sJd"/>
         <segue reference="s1A-7h-Aw8"/>
         <segue reference="rqq-x5-KjR"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="2-" width="101.5" height="101.5"/>
+        <image name="2-" width="143" height="312"/>
         <image name="BlueCircle" width="232" height="232"/>
         <image name="CAr" width="267" height="267"/>
         <image name="Done" width="182" height="55"/>

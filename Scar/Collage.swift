@@ -144,12 +144,12 @@ class Collage: UIViewController, UITextFieldDelegate  {
         if(ChooseShape.shape1 == "square"){
             if(ChoosePalette.color == "cool"){
                 let randomInt = Int.random(in: 0..<4)
-                imgPrincipale = UIImage(named: structBackImageType[0].coolSquare[randomInt].name)
-                nomeImgPrincipale = structBackImageType[0].coolSquare[randomInt].name
-            } else if(ChoosePalette.color == "warm"){
-                let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].warmSquare[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].warmSquare[randomInt].name
+            } else if(ChoosePalette.color == "warm"){
+                let randomInt = Int.random(in: 0..<4)
+                imgPrincipale = UIImage(named: structBackImageType[0].coolSquare[randomInt].name)
+                nomeImgPrincipale = structBackImageType[0].coolSquare[randomInt].name
             } else {
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].neutralSquare[randomInt].name)
@@ -158,12 +158,12 @@ class Collage: UIViewController, UITextFieldDelegate  {
         } else if(ChooseShape.shape1 == "circle"){
             if(ChoosePalette.color == "cool"){
                 let randomInt = Int.random(in: 0..<4)
-                imgPrincipale = UIImage(named: structBackImageType[0].coolCircle[randomInt].name)
-                nomeImgPrincipale = structBackImageType[0].coolCircle[randomInt].name
-            } else if(ChoosePalette.color == "warm"){
-                let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].warmCircle[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].warmCircle[randomInt].name
+            } else if(ChoosePalette.color == "warm"){
+                let randomInt = Int.random(in: 0..<4)
+                imgPrincipale = UIImage(named: structBackImageType[0].coolCircle[randomInt].name)
+                nomeImgPrincipale = structBackImageType[0].coolCircle[randomInt].name
             } else {
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].neutralCircle[randomInt].name)
@@ -172,12 +172,12 @@ class Collage: UIViewController, UITextFieldDelegate  {
         } else if(ChooseShape.shape1 == "triangle"){
             if(ChoosePalette.color == "cool"){
                 let randomInt = Int.random(in: 0..<4)
-                imgPrincipale = UIImage(named: structBackImageType[0].coolTriangle[randomInt].name)
-                nomeImgPrincipale = structBackImageType[0].coolTriangle[randomInt].name
-            } else if(ChoosePalette.color == "warm"){
-                let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].warmTriangle[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].warmTriangle[randomInt].name
+            } else if(ChoosePalette.color == "warm"){
+                let randomInt = Int.random(in: 0..<4)
+                imgPrincipale = UIImage(named: structBackImageType[0].coolTriangle[randomInt].name)
+                nomeImgPrincipale = structBackImageType[0].coolTriangle[randomInt].name
             } else {
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].neutralTriangle[randomInt].name)
@@ -186,12 +186,12 @@ class Collage: UIViewController, UITextFieldDelegate  {
         } else if(ChooseShape.shape1 == "rect"){
             if(ChoosePalette.color == "cool"){
                 let randomInt = Int.random(in: 0..<4)
-                imgPrincipale = UIImage(named: structBackImageType[0].coolRect[randomInt].name)
-                nomeImgPrincipale = structBackImageType[0].coolRect[randomInt].name
-            } else if(ChoosePalette.color == "warm"){
-                let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].warmRect[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].warmRect[randomInt].name
+            } else if(ChoosePalette.color == "warm"){
+                let randomInt = Int.random(in: 0..<4)
+                imgPrincipale = UIImage(named: structBackImageType[0].coolRect[randomInt].name)
+                nomeImgPrincipale = structBackImageType[0].coolRect[randomInt].name
             } else {
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].neutralRect[randomInt].name)
@@ -200,12 +200,12 @@ class Collage: UIViewController, UITextFieldDelegate  {
         } else {
             if(ChoosePalette.color == "cool"){
                 let randomInt = Int.random(in: 0..<4)
-                imgPrincipale = UIImage(named: structBackImageType[0].coolZigZag[randomInt].name)
-                nomeImgPrincipale = structBackImageType[0].coolZigZag[randomInt].name
-            } else if(ChoosePalette.color == "warm"){
-                let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].warmZigZag[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].warmZigZag[randomInt].name
+            } else if(ChoosePalette.color == "warm"){
+                let randomInt = Int.random(in: 0..<4)
+                imgPrincipale = UIImage(named: structBackImageType[0].coolZigZag[randomInt].name)
+                nomeImgPrincipale = structBackImageType[0].coolZigZag[randomInt].name
             } else {
                 let randomInt = Int.random(in: 0..<4)
                 nomeImgPrincipale = structBackImageType[0].neutralZigZag[randomInt].name
