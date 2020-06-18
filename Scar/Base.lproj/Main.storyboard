@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -28,6 +28,18 @@
         </array>
         <array key="NexaTextDemo-Light.ttf">
             <string>NexaTextDemo-Light</string>
+        </array>
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-ExtraLight.ttf">
+            <string>Poppins-ExtraLight</string>
+        </array>
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -396,54 +408,43 @@ Masterpiece!</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Onboarding1" translatesAutoresizingMaskIntoConstraints="NO" id="abm-bl-K38">
-                                <rect key="frame" x="0.0" y="0.0" width="1271" height="447"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is Skinsugi!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gas-gh-7sj">
-                                <rect key="frame" x="20" y="471" width="384" height="56"/>
-                                <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is Skinsugi!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Gas-gh-7sj">
+                                <rect key="frame" x="20" y="466" width="384" height="61"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="36"/>
                                 <color key="textColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="We are glad that you came to us." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jjs-7W-cLo">
-                                <rect key="frame" x="20" y="536" width="384" height="35"/>
-                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="We are glad that you came to us." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jjs-7W-cLo">
+                                <rect key="frame" x="20" y="525" width="384" height="35"/>
+                                <fontDescription key="fontDescription" name="Poppins-ExtraLight" family="Poppins" pointSize="18"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-gT-4jz">
-                                <rect key="frame" x="848" y="531" width="303" height="23"/>
+                                <rect key="frame" x="848" y="526.5" width="303" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JrA-Yx-juQ">
-                                <rect key="frame" x="20" y="604" width="379" height="22"/>
-                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What's your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="JrA-Yx-juQ">
+                                <rect key="frame" x="20" y="586" width="379" height="42"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="18"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linea" translatesAutoresizingMaskIntoConstraints="NO" id="sCS-4W-8wn">
-                                <rect key="frame" x="20" y="679" width="382" height="1"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="linea" translatesAutoresizingMaskIntoConstraints="NO" id="sCS-4W-8wn">
+                                <rect key="frame" x="20" y="670" width="382" height="1"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpE-XT-qrG">
-                                <rect key="frame" x="116" y="756" width="182" height="55"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpE-XT-qrG">
+                                <rect key="frame" x="116" y="749" width="182" height="63"/>
                                 <state key="normal" image="Start-1"/>
                                 <state key="disabled" image="StartN"/>
                                 <connections>
                                     <action selector="startPressed:" destination="w7d-Tn-c1A" eventType="touchUpInside" id="58j-MS-1wl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKi-Ot-7SM">
-                                <rect key="frame" x="446" y="536" width="292" height="23"/>
-                                <string key="text">Tell us what inspires you the most.
-</string>
-                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PtS-SF-yl7">
-                                <rect key="frame" x="414" y="447" width="414" height="452"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="12" translatesAutoresizingMaskIntoConstraints="NO" id="PtS-SF-yl7">
+                                <rect key="frame" x="414" y="447" width="414" height="436.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell1" rowHeight="120" id="Q0F-YJ-7d9" customClass="Cella1" customModule="Skinsugi" customModuleProvider="target">
@@ -453,17 +454,17 @@ Masterpiece!</string>
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, Sigafreda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ywt-KN-qf8">
-                                                    <rect key="frame" x="22" y="34" width="244" height="49"/>
-                                                    <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hi, Sigafreda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="ywt-KN-qf8">
+                                                    <rect key="frame" x="22" y="25" width="384" height="56"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="36"/>
                                                     <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SzM-f1-Yon">
-                                                    <rect key="frame" x="22" y="97" width="349" height="22"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SzM-f1-Yon">
+                                                    <rect key="frame" x="22" y="81" width="384" height="35"/>
                                                     <string key="text">Tell us what inspires you the most.
 </string>
-                                                    <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-ExtraLight" family="Poppins" pointSize="18"/>
                                                     <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -471,8 +472,8 @@ Masterpiece!</string>
                                             <constraints>
                                                 <constraint firstItem="ywt-KN-qf8" firstAttribute="leading" secondItem="tAq-I3-Gpy" secondAttribute="leadingMargin" constant="2" id="6zP-Bm-JXH"/>
                                                 <constraint firstItem="ywt-KN-qf8" firstAttribute="leading" secondItem="SzM-f1-Yon" secondAttribute="leading" id="GsG-1a-Mlu"/>
-                                                <constraint firstItem="ywt-KN-qf8" firstAttribute="top" secondItem="tAq-I3-Gpy" secondAttribute="topMargin" constant="23" id="HgY-tm-Ai6"/>
-                                                <constraint firstItem="SzM-f1-Yon" firstAttribute="top" secondItem="ywt-KN-qf8" secondAttribute="bottom" constant="14" id="P7f-qU-J20"/>
+                                                <constraint firstItem="ywt-KN-qf8" firstAttribute="top" secondItem="tAq-I3-Gpy" secondAttribute="topMargin" constant="14" id="HgY-tm-Ai6"/>
+                                                <constraint firstItem="SzM-f1-Yon" firstAttribute="top" secondItem="ywt-KN-qf8" secondAttribute="bottom" id="P7f-qU-J20"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -489,7 +490,7 @@ Masterpiece!</string>
                                             <subviews>
                                                 <button opaque="NO" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCf-Wr-8Gn">
                                                     <rect key="frame" x="20" y="12" width="374" height="76"/>
-                                                    <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
                                                     <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="Button" backgroundImage="deselected">
                                                         <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -522,7 +523,7 @@ Masterpiece!</string>
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3A-U0-X4D">
-                                                    <rect key="frame" x="116" y="86" width="182" height="55"/>
+                                                    <rect key="frame" x="116" y="71" width="182" height="55"/>
                                                     <state key="normal" image="Done">
                                                         <color key="titleColor" red="0.91372543569999998" green="0.91366583109999999" blue="0.91764795779999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </state>
@@ -533,7 +534,7 @@ Masterpiece!</string>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="V3A-U0-X4D" firstAttribute="top" secondItem="vQO-Sv-XsO" secondAttribute="topMargin" constant="75" id="9vF-Pu-ifZ"/>
+                                                <constraint firstItem="V3A-U0-X4D" firstAttribute="top" secondItem="vQO-Sv-XsO" secondAttribute="topMargin" constant="60" id="9vF-Pu-ifZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <constraints>
@@ -553,35 +554,38 @@ Masterpiece!</string>
                                     <outlet property="delegate" destination="w7d-Tn-c1A" id="33q-Uo-jSE"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last step" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gQb-mA-l8B">
-                                <rect key="frame" x="850" y="489" width="205" height="51.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Last step" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="gQb-mA-l8B">
+                                <rect key="frame" x="850" y="480" width="384" height="56"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="205" id="RAB-jc-mIn"/>
+                                    <constraint firstAttribute="width" constant="384" id="RAB-jc-mIn"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="36"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WDJ-6S-5Y3">
-                                <rect key="frame" x="850" y="550" width="317.5" height="19"/>
-                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="19"/>
-                                <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
-                                <rect key="frame" x="850" y="596" width="346" height="66"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="WDJ-6S-5Y3">
+                                <rect key="frame" x="850" y="540" width="384" height="19"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="346" id="WAl-jz-akH"/>
+                                    <constraint firstAttribute="height" constant="19" id="Ye5-Cq-PxJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-ExtraLight" family="Poppins" pointSize="18"/>
+                                <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
+                                <rect key="frame" x="850" y="591.5" width="384" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="384" id="WAl-jz-akH"/>
                                 </constraints>
                                 <string key="text">How do you feel about your sign?
 
 How do you think others see it?</string>
-                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-fI-qoJ">
-                                <rect key="frame" x="929" y="750" width="194" height="55"/>
+                                <rect key="frame" x="929" y="763.5" width="194" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" identifier="larg" id="R1p-r1-OP1"/>
                                     <constraint firstAttribute="height" constant="55" identifier="altezza" id="g45-2c-k21"/>
@@ -591,60 +595,56 @@ How do you think others see it?</string>
                                     <segue destination="uc2-fZ-Jab" kind="show" id="S6c-zV-Y2y"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="My name is..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zi4-9B-9mn">
-                                <rect key="frame" x="18" y="643" width="382" height="37"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="My name is..." textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zi4-9B-9mn">
+                                <rect key="frame" x="19" y="633" width="380" height="37"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-ExtraLight" family="Poppins" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OZC-Pr-TMi">
-                                <rect key="frame" x="394" y="490" width="20" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Onboarding1" translatesAutoresizingMaskIntoConstraints="NO" id="abm-bl-K38">
+                                <rect key="frame" x="0.0" y="0.0" width="1271" height="447"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="gQb-mA-l8B" firstAttribute="leading" secondItem="PtS-SF-yl7" secondAttribute="trailing" constant="22" id="192-5P-GGC"/>
-                            <constraint firstItem="Gas-gh-7sj" firstAttribute="baseline" secondItem="gQb-mA-l8B" secondAttribute="baseline" constant="-6" id="1Sk-Ta-WQi"/>
-                            <constraint firstItem="JrA-Yx-juQ" firstAttribute="top" secondItem="Jjs-7W-cLo" secondAttribute="bottom" constant="33" id="2fF-Lg-PdJ"/>
+                            <constraint firstItem="Gas-gh-7sj" firstAttribute="baseline" secondItem="gQb-mA-l8B" secondAttribute="baseline" constant="-9" id="1Sk-Ta-WQi"/>
+                            <constraint firstItem="WDJ-6S-5Y3" firstAttribute="trailing" secondItem="gQb-mA-l8B" secondAttribute="trailing" id="20B-Ri-aEv"/>
+                            <constraint firstItem="JrA-Yx-juQ" firstAttribute="top" secondItem="Jjs-7W-cLo" secondAttribute="bottom" constant="26" id="2fF-Lg-PdJ"/>
                             <constraint firstItem="JrA-Yx-juQ" firstAttribute="centerX" secondItem="sCS-4W-8wn" secondAttribute="centerX" constant="-1.5" id="2uE-dG-tb3"/>
                             <constraint firstItem="PtS-SF-yl7" firstAttribute="leading" secondItem="qOs-Jh-MnI" secondAttribute="trailing" id="35g-O4-Ks2"/>
                             <constraint firstItem="PtS-SF-yl7" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" id="4eC-lf-oEE"/>
-                            <constraint firstItem="XKi-Ot-7SM" firstAttribute="leading" secondItem="Jjs-7W-cLo" secondAttribute="trailing" constant="42" id="5pX-QP-Tzt"/>
                             <constraint firstItem="WDJ-6S-5Y3" firstAttribute="leading" secondItem="4a5-lJ-QbO" secondAttribute="leading" id="8CV-dS-dUr"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="PtS-SF-yl7" secondAttribute="bottom" constant="-37" id="B46-la-Mym"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="PtS-SF-yl7" secondAttribute="bottom" constant="-21.5" id="B46-la-Mym"/>
                             <constraint firstItem="PtS-SF-yl7" firstAttribute="width" secondItem="Mv5-VB-TpB" secondAttribute="width" id="CCD-ik-khv"/>
-                            <constraint firstItem="sCS-4W-8wn" firstAttribute="bottom" secondItem="zi4-9B-9mn" secondAttribute="bottom" id="E7a-X1-JQY"/>
+                            <constraint firstItem="sCS-4W-8wn" firstAttribute="bottom" secondItem="zi4-9B-9mn" secondAttribute="bottom" constant="1" id="E7a-X1-JQY"/>
+                            <constraint firstItem="abm-bl-K38" firstAttribute="top" secondItem="Mv5-VB-TpB" secondAttribute="top" id="EKT-uq-9xd"/>
                             <constraint firstItem="vH6-gT-4jz" firstAttribute="leading" secondItem="PtS-SF-yl7" secondAttribute="trailing" constant="20" id="Fs2-52-x3P"/>
-                            <constraint firstItem="zi4-9B-9mn" firstAttribute="top" secondItem="JrA-Yx-juQ" secondAttribute="bottom" constant="17" id="IdK-xf-iAv"/>
+                            <constraint firstItem="zi4-9B-9mn" firstAttribute="top" secondItem="JrA-Yx-juQ" secondAttribute="bottom" constant="5" id="IdK-xf-iAv"/>
                             <constraint firstItem="zPR-fI-qoJ" firstAttribute="top" secondItem="4a5-lJ-QbO" secondAttribute="bottom" constant="88" id="KXx-FC-h7V"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sCS-4W-8wn" secondAttribute="trailing" constant="-8" id="L9r-d9-ewm"/>
-                            <constraint firstItem="Jjs-7W-cLo" firstAttribute="top" secondItem="Gas-gh-7sj" secondAttribute="bottom" constant="9" id="LVL-hV-8WN"/>
-                            <constraint firstItem="Jjs-7W-cLo" firstAttribute="baseline" secondItem="XKi-Ot-7SM" secondAttribute="firstBaseline" constant="16.5" id="Myj-5J-z9R"/>
+                            <constraint firstItem="Jjs-7W-cLo" firstAttribute="top" secondItem="Gas-gh-7sj" secondAttribute="bottom" constant="-2" id="LVL-hV-8WN"/>
                             <constraint firstItem="zPR-fI-qoJ" firstAttribute="leading" secondItem="Mv5-VB-TpB" secondAttribute="leading" constant="929" identifier="center" id="Osc-TX-68e"/>
-                            <constraint firstItem="sCS-4W-8wn" firstAttribute="top" secondItem="JrA-Yx-juQ" secondAttribute="bottom" constant="53" id="Te5-bj-gVo"/>
-                            <constraint firstItem="qOs-Jh-MnI" firstAttribute="bottom" secondItem="ZpE-XT-qrG" secondAttribute="bottom" constant="51" id="Thd-zo-tTp"/>
-                            <constraint firstItem="ZpE-XT-qrG" firstAttribute="top" secondItem="zi4-9B-9mn" secondAttribute="bottom" constant="76" id="YDi-jn-Dxc"/>
+                            <constraint firstItem="sCS-4W-8wn" firstAttribute="top" secondItem="JrA-Yx-juQ" secondAttribute="bottom" constant="42" id="Te5-bj-gVo"/>
+                            <constraint firstItem="qOs-Jh-MnI" firstAttribute="bottom" secondItem="ZpE-XT-qrG" secondAttribute="bottom" constant="50" id="Thd-zo-tTp"/>
+                            <constraint firstItem="ZpE-XT-qrG" firstAttribute="top" secondItem="zi4-9B-9mn" secondAttribute="bottom" constant="79" id="YDi-jn-Dxc"/>
                             <constraint firstItem="zi4-9B-9mn" firstAttribute="centerX" secondItem="sCS-4W-8wn" secondAttribute="centerX" constant="-2" id="ZEo-mD-WZK"/>
-                            <constraint firstItem="XKi-Ot-7SM" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" constant="89" id="adW-BM-viN"/>
                             <constraint firstItem="Gas-gh-7sj" firstAttribute="trailing" secondItem="Jjs-7W-cLo" secondAttribute="trailing" id="bJv-xX-v5h"/>
-                            <constraint firstItem="JrA-Yx-juQ" firstAttribute="trailing" secondItem="zi4-9B-9mn" secondAttribute="trailing" constant="-1" id="dOe-eg-SaH"/>
-                            <constraint firstItem="vH6-gT-4jz" firstAttribute="top" secondItem="WDJ-6S-5Y3" secondAttribute="top" constant="-19" id="eGz-6O-JbV"/>
-                            <constraint firstItem="gQb-mA-l8B" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" constant="42" id="eIE-R0-Fyo"/>
+                            <constraint firstItem="JrA-Yx-juQ" firstAttribute="trailing" secondItem="zi4-9B-9mn" secondAttribute="trailing" id="dOe-eg-SaH"/>
+                            <constraint firstItem="vH6-gT-4jz" firstAttribute="top" secondItem="WDJ-6S-5Y3" secondAttribute="top" constant="-13.5" id="eGz-6O-JbV"/>
+                            <constraint firstItem="gQb-mA-l8B" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" constant="18" id="eIE-R0-Fyo"/>
                             <constraint firstItem="Jjs-7W-cLo" firstAttribute="leading" secondItem="JrA-Yx-juQ" secondAttribute="leading" id="fYI-Lj-Azb"/>
                             <constraint firstItem="Gas-gh-7sj" firstAttribute="leading" secondItem="Jjs-7W-cLo" secondAttribute="leading" id="fa9-Ej-WKF"/>
                             <constraint firstItem="abm-bl-K38" firstAttribute="leading" secondItem="qOs-Jh-MnI" secondAttribute="leading" id="iHq-Ga-Ji2"/>
-                            <constraint firstItem="zi4-9B-9mn" firstAttribute="leading" secondItem="sCS-4W-8wn" secondAttribute="leading" constant="-2" id="l4c-OD-4vd"/>
+                            <constraint firstItem="zi4-9B-9mn" firstAttribute="leading" secondItem="sCS-4W-8wn" secondAttribute="leading" constant="-1" id="l4c-OD-4vd"/>
                             <constraint firstItem="4a5-lJ-QbO" firstAttribute="top" secondItem="vH6-gT-4jz" secondAttribute="bottom" constant="42" id="lTp-dE-hKg"/>
                             <constraint firstItem="abm-bl-K38" firstAttribute="height" secondItem="Mv5-VB-TpB" secondAttribute="height" multiplier="0.498884" id="p49-Dj-Jxw"/>
                             <constraint firstItem="gQb-mA-l8B" firstAttribute="leading" secondItem="WDJ-6S-5Y3" secondAttribute="leading" id="t1a-cW-gNt"/>
                             <constraint firstItem="ZpE-XT-qrG" firstAttribute="centerX" secondItem="Mv5-VB-TpB" secondAttribute="centerX" id="tW0-8i-s71"/>
-                            <constraint firstItem="Gas-gh-7sj" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" constant="24" id="x2y-lK-BWr"/>
+                            <constraint firstItem="WDJ-6S-5Y3" firstAttribute="top" secondItem="Mv5-VB-TpB" secondAttribute="top" constant="540" id="tis-gc-7ku"/>
+                            <constraint firstItem="Gas-gh-7sj" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" constant="19" id="x2y-lK-BWr"/>
                             <constraint firstItem="abm-bl-K38" firstAttribute="width" secondItem="Mv5-VB-TpB" secondAttribute="width" multiplier="3.00483" constant="27.00037999999995" id="yM6-hk-M8F"/>
-                            <constraint firstItem="XKi-Ot-7SM" firstAttribute="baseline" secondItem="vH6-gT-4jz" secondAttribute="baseline" id="yys-ab-pst"/>
-                            <constraint firstItem="zi4-9B-9mn" firstAttribute="leading" secondItem="Mv5-VB-TpB" secondAttribute="leadingMargin" constant="-2" id="zJq-iT-dN3"/>
+                            <constraint firstItem="zi4-9B-9mn" firstAttribute="leading" secondItem="Mv5-VB-TpB" secondAttribute="leadingMargin" constant="-1" id="zJq-iT-dN3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qOs-Jh-MnI"/>
                     </view>
@@ -678,19 +678,19 @@ How do you think others see it?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="RUp-S9-4CD">
-                                <rect key="frame" x="22.5" y="157.5" width="227" height="44.5"/>
+                                <rect key="frame" x="22.5" y="195.5" width="227" height="49"/>
                                 <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="VbA-c6-b5q">
-                                <rect key="frame" x="22.5" y="211" width="369" height="67.5"/>
+                                <rect key="frame" x="22.5" y="253.5" width="369" height="74.5"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Te-rI-HPa">
-                                <rect key="frame" x="116" y="766.5" width="182" height="55.5"/>
+                                <rect key="frame" x="116" y="852.5" width="182" height="61.5"/>
                                 <state key="normal" title="Button" image="NextRosa"/>
                                 <state key="disabled" image="NextRosaNS"/>
                                 <connections>
@@ -698,16 +698,16 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="8Lu-VZ-BEw">
-                                <rect key="frame" x="15.5" y="299.5" width="386" height="431"/>
+                                <rect key="frame" x="15.5" y="349" width="413.5" height="467.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="J4w-EO-tk2">
-                                        <rect key="frame" x="0.0" y="0.0" width="386" height="72"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="413.5" height="79.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="SPF-T2-Ny5">
-                                                <rect key="frame" x="0.0" y="0.0" width="66" height="72"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="66" height="79.5"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="A3T-Ks-YCR">
-                                                <rect key="frame" x="112" y="0.0" width="274" height="72"/>
+                                                <rect key="frame" x="112" y="0.0" width="301.5" height="79.5"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -721,13 +721,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="k8w-aV-QhV">
-                                        <rect key="frame" x="0.0" y="90" width="386" height="71.5"/>
+                                        <rect key="frame" x="0.0" y="97.5" width="413.5" height="79"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="bAp-lc-87B">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="71.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="79"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cj7-a4-0Xz">
-                                                <rect key="frame" x="112" y="0.0" width="274" height="71.5"/>
+                                                <rect key="frame" x="112" y="0.0" width="301.5" height="79"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -741,13 +741,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="Qar-eD-Goy">
-                                        <rect key="frame" x="0.0" y="179.5" width="386" height="72"/>
+                                        <rect key="frame" x="0.0" y="194.5" width="413.5" height="79"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle" translatesAutoresizingMaskIntoConstraints="NO" id="VsF-9m-vhn">
-                                                <rect key="frame" x="0.0" y="0.0" width="74" height="72"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="79"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DJU-JS-gID">
-                                                <rect key="frame" x="112" y="0.0" width="274" height="72"/>
+                                                <rect key="frame" x="112" y="0.0" width="301.5" height="79"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -761,13 +761,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="ccL-KK-HpV">
-                                        <rect key="frame" x="0.0" y="269.5" width="386" height="71.5"/>
+                                        <rect key="frame" x="0.0" y="291.5" width="413.5" height="79"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="fiA-MW-TuO">
-                                                <rect key="frame" x="0.0" y="0.0" width="68" height="71.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="68" height="79"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RcF-Kg-Q4p">
-                                                <rect key="frame" x="113" y="0.0" width="273" height="71.5"/>
+                                                <rect key="frame" x="113" y="0.0" width="300.5" height="79"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -781,13 +781,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="YGB-Vn-uNM">
-                                        <rect key="frame" x="0.0" y="359.5" width="386" height="71.5"/>
+                                        <rect key="frame" x="0.0" y="388.5" width="413.5" height="79"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zigzag" translatesAutoresizingMaskIntoConstraints="NO" id="rJl-hD-wwg">
-                                                <rect key="frame" x="0.0" y="0.0" width="89" height="71.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="89" height="79"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="61O-Bn-xRC">
-                                                <rect key="frame" x="112" y="0.0" width="274" height="71.5"/>
+                                                <rect key="frame" x="112" y="0.0" width="301.5" height="79"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -1645,7 +1645,7 @@ all the answers you gave?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#skinsugi is a place to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Pt-cQ-xmf">
-                                <rect key="frame" x="22" y="141" width="278" height="25"/>
+                                <rect key="frame" x="22" y="141" width="286" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="JDC-LS-hhj"/>
                                 </constraints>
@@ -1916,7 +1916,7 @@ your body and others’s bodies.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yHf-AX-5ZQ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="282"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="241.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" misplaced="YES" text="Good " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wg-V5-aIC">
                                 <rect key="frame" x="25" y="118" width="281" height="34"/>
@@ -1925,13 +1925,13 @@ your body and others’s bodies.</string>
                                 <color key="highlightedColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v02-uU-l8R">
-                                <rect key="frame" x="22" y="323.5" width="372" height="46"/>
+                                <rect key="frame" x="22" y="252.5" width="372" height="42"/>
                                 <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="25"/>
                                 <color key="textColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fWY-uv-LMG">
-                                <rect key="frame" x="14" y="412" width="400" height="186.5"/>
+                                <rect key="frame" x="14" y="334" width="400" height="165"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="400" id="DS8-NL-NDp"/>
@@ -1944,7 +1944,7 @@ your body and others’s bodies.</string>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" restorationIdentifier="myCell" reuseIdentifier="myCell" id="DOL-XC-LhE" customClass="CollectionViewCell1" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="29" width="176" height="129"/>
+                                        <rect key="frame" x="0.0" y="18" width="176" height="129"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dPQ-80-aLg">
                                             <rect key="frame" x="0.0" y="0.0" width="176" height="129"/>
@@ -2014,19 +2014,19 @@ your body and others’s bodies.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Nice work! Keep on going" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71W-Ns-qfS">
-                                <rect key="frame" x="22" y="375" width="372" height="27"/>
+                                <rect key="frame" x="22" y="300" width="372" height="24"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                 <color key="textColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mqk-Ya-Xpd">
-                                <rect key="frame" x="215" y="618.5" width="189" height="329"/>
+                                <rect key="frame" x="215" y="519" width="189" height="279"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="189" id="19W-RA-Wbc"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="249" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="61N-a8-v0d">
-                                <rect key="frame" x="24" y="701.5" width="190" height="234"/>
+                                <rect key="frame" x="24" y="552" width="190" height="234"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Qua ci vanno le stronzate di francesca">
                                         <attributes>
@@ -2039,13 +2039,13 @@ your body and others’s bodies.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Ready for a boost of self-esteem?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOt-Hk-MoG">
-                                <rect key="frame" x="25" y="264.5" width="369" height="43"/>
+                                <rect key="frame" x="25" y="199.5" width="369" height="37"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZ3-f6-Ny2">
-                                <rect key="frame" x="25" y="215" width="281" height="52.5"/>
+                                <rect key="frame" x="25" y="144.5" width="281" height="58"/>
                                 <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2193,7 +2193,7 @@ your body and others’s bodies.</string>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOo-wB-kmc">
-                                <rect key="frame" x="352" y="141" width="36" height="46.5"/>
+                                <rect key="frame" x="352" y="141" width="36" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="36" id="g7T-Mg-eUZ"/>
                                 </constraints>
@@ -2350,7 +2350,7 @@ your body and others’s bodies.</string>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ymt-6W-zKb"/>
                             </scrollView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u6C-90-pJx">
-                                <rect key="frame" x="0.0" y="269.5" width="414" height="586"/>
+                                <rect key="frame" x="0.0" y="274" width="414" height="586"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="jtl-uh-CSj"/>
@@ -2510,7 +2510,7 @@ your body and others’s bodies.</string>
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCe-mq-vgd">
-                                <rect key="frame" x="22" y="141" width="132.5" height="44.5"/>
+                                <rect key="frame" x="22" y="141" width="145" height="49"/>
                                 <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -3332,7 +3332,7 @@ The two shapes on the outside recount </string>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(We will publish it on our profile)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzJ-Ev-OB7">
-                                                        <rect key="frame" x="94" y="1515" width="226.5" height="16"/>
+                                                        <rect key="frame" x="89" y="1515" width="236.5" height="16"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="16" id="Hfk-Nt-sn4"/>
                                                         </constraints>
