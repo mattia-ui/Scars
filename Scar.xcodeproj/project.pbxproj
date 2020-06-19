@@ -52,6 +52,7 @@
 		34ECF3ED249CC7D1005DA9D3 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34ECF3E1249CC7D1005DA9D3 /* Roboto-ThinItalic.ttf */; };
 		34ECF3EE249CC7D1005DA9D3 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34ECF3E2249CC7D1005DA9D3 /* Roboto-BlackItalic.ttf */; };
 		34ECF3EF249CC7D1005DA9D3 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34ECF3E3249CC7D1005DA9D3 /* Roboto-BoldItalic.ttf */; };
+		34ECF3F1249CE942005DA9D3 /* Manjari-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34ECF3F0249CE942005DA9D3 /* Manjari-Thin.ttf */; };
 		6B01C79A2461A7980040EA77 /* PrimaTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01C7992461A7980040EA77 /* PrimaTutorial.swift */; };
 		6B01C79C2461A7BC0040EA77 /* SecondaTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01C79B2461A7BC0040EA77 /* SecondaTutorial.swift */; };
 		6B01C79E2461A7D90040EA77 /* TerzaTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01C79D2461A7D90040EA77 /* TerzaTutorial.swift */; };
@@ -165,6 +166,7 @@
 		34ECF3E1249CC7D1005DA9D3 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-ThinItalic.ttf"; path = "Font/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		34ECF3E2249CC7D1005DA9D3 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BlackItalic.ttf"; path = "Font/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 		34ECF3E3249CC7D1005DA9D3 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BoldItalic.ttf"; path = "Font/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		34ECF3F0249CE942005DA9D3 /* Manjari-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manjari-Thin.ttf"; sourceTree = "<group>"; };
 		5850DD5C17BD4E16DFDBE827 /* Pods_Scar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B01C7992461A7980040EA77 /* PrimaTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaTutorial.swift; sourceTree = "<group>"; };
 		6B01C79B2461A7BC0040EA77 /* SecondaTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaTutorial.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				34ECF3DB249CC7D0005DA9D3 /* Roboto-Medium.ttf */,
 				34ECF3DF249CC7D0005DA9D3 /* Roboto-MediumItalic.ttf */,
 				34ECF3DD249CC7D0005DA9D3 /* Roboto-Regular.ttf */,
+				34ECF3F0249CE942005DA9D3 /* Manjari-Thin.ttf */,
 				34ECF3DE249CC7D0005DA9D3 /* Roboto-Thin.ttf */,
 				34ECF3E1249CC7D1005DA9D3 /* Roboto-ThinItalic.ttf */,
 				34BABDE324991C7E004D795C /* Font */,
@@ -522,6 +525,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34ECF3F1249CE942005DA9D3 /* Manjari-Thin.ttf in Resources */,
 				34ECF3E4249CC7D1005DA9D3 /* Roboto-Black.ttf in Resources */,
 				34ECF3E5249CC7D1005DA9D3 /* Roboto-Light.ttf in Resources */,
 				34ECF3E6249CC7D1005DA9D3 /* Roboto-Bold.ttf in Resources */,

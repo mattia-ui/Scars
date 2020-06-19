@@ -2310,7 +2310,7 @@ your body and others’s bodies.</string>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="PdY-XF-ifH" firstAttribute="centerY" secondItem="2cz-hS-iGh" secondAttribute="centerY" id="0Vw-Xu-24R"/>
-                                    <constraint firstItem="rnF-9K-8Qw" firstAttribute="leading" secondItem="dSy-AZ-0Wf" secondAttribute="trailing" constant="11" id="4Or-f0-WmY"/>
+                                    <constraint firstItem="rnF-9K-8Qw" firstAttribute="leading" secondItem="dSy-AZ-0Wf" secondAttribute="trailing" constant="31" id="4Or-f0-WmY"/>
                                     <constraint firstItem="PdY-XF-ifH" firstAttribute="centerX" secondItem="usK-xr-joa" secondAttribute="centerX" constant="1" id="5l3-It-Y0y"/>
                                     <constraint firstItem="4mN-US-bx1" firstAttribute="centerX" secondItem="rnF-9K-8Qw" secondAttribute="centerX" constant="-1" id="7Ul-zm-KXs"/>
                                     <constraint firstItem="ekF-6R-Q59" firstAttribute="centerX" secondItem="o2l-Y5-5Ra" secondAttribute="centerX" id="9nr-ce-CPo"/>
@@ -2318,7 +2318,7 @@ your body and others’s bodies.</string>
                                     <constraint firstItem="2w2-2K-Ag7" firstAttribute="centerY" secondItem="2cz-hS-iGh" secondAttribute="centerY" id="BDf-Q2-EtO"/>
                                     <constraint firstItem="c1y-0b-Q2T" firstAttribute="centerY" secondItem="DWf-U8-k4A" secondAttribute="centerY" id="Bka-SW-jjc"/>
                                     <constraint firstItem="ekF-6R-Q59" firstAttribute="centerY" secondItem="2cz-hS-iGh" secondAttribute="centerY" id="C9R-7s-35L"/>
-                                    <constraint firstItem="c1y-0b-Q2T" firstAttribute="leading" secondItem="o2l-Y5-5Ra" secondAttribute="trailing" constant="11" id="DHl-JL-7R3"/>
+                                    <constraint firstItem="c1y-0b-Q2T" firstAttribute="leading" secondItem="o2l-Y5-5Ra" secondAttribute="trailing" constant="31" id="DHl-JL-7R3"/>
                                     <constraint firstItem="rnF-9K-8Qw" firstAttribute="centerY" secondItem="DWf-U8-k4A" secondAttribute="centerY" id="Dqy-qh-qwO"/>
                                     <constraint firstItem="2cz-hS-iGh" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="34" id="EQT-EG-Uzm"/>
                                     <constraint firstItem="dSy-AZ-0Wf" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="7" id="IJi-tW-WAo"/>
@@ -2335,9 +2335,9 @@ your body and others’s bodies.</string>
                                     <constraint firstItem="o2l-Y5-5Ra" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="7" id="dOx-UU-vY5"/>
                                     <constraint firstItem="rnF-9K-8Qw" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="8" id="eAj-hp-aOW"/>
                                     <constraint firstAttribute="height" constant="54" id="eSC-bn-eG6"/>
-                                    <constraint firstItem="o2l-Y5-5Ra" firstAttribute="leading" secondItem="usK-xr-joa" secondAttribute="trailing" constant="11" id="m5Y-Ld-G7T"/>
-                                    <constraint firstItem="dSy-AZ-0Wf" firstAttribute="leading" secondItem="DWf-U8-k4A" secondAttribute="trailing" constant="11" id="qBM-CC-VqN"/>
-                                    <constraint firstItem="usK-xr-joa" firstAttribute="leading" secondItem="rnF-9K-8Qw" secondAttribute="trailing" constant="11" id="ryq-hX-h3Q"/>
+                                    <constraint firstItem="o2l-Y5-5Ra" firstAttribute="leading" secondItem="usK-xr-joa" secondAttribute="trailing" constant="31" id="m5Y-Ld-G7T"/>
+                                    <constraint firstItem="dSy-AZ-0Wf" firstAttribute="leading" secondItem="DWf-U8-k4A" secondAttribute="trailing" constant="31" id="qBM-CC-VqN"/>
+                                    <constraint firstItem="usK-xr-joa" firstAttribute="leading" secondItem="rnF-9K-8Qw" secondAttribute="trailing" constant="31" id="ryq-hX-h3Q"/>
                                     <constraint firstItem="ekF-6R-Q59" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="34" id="u3p-D3-bD2"/>
                                     <constraint firstItem="usK-xr-joa" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="7" id="wrC-mf-yps"/>
                                     <constraint firstAttribute="width" constant="394" id="wvQ-4v-gJ0"/>
@@ -2373,14 +2373,13 @@ your body and others’s bodies.</string>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9o9-F3-Tem">
                                                     <rect key="frame" x="20" y="0.0" width="373" height="134"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pdk-F6-xZK">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="pdk-F6-xZK">
                                                     <rect key="frame" x="36" y="132" width="342" height="153"/>
                                                     <attributedString key="attributedText">
-                                                        <fragment content="Label">
+                                                        <fragment content="Fratmacchion si nu mostra">
                                                             <attributes>
                                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                                 <font key="NSFont" size="18" name="Roboto-Light"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
