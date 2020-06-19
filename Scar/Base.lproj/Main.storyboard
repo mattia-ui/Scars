@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -43,6 +43,9 @@
         </array>
         <array key="Poppins-Regular.ttf">
             <string>Poppins-Regular</string>
+        </array>
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
         </array>
     </customFonts>
     <scenes>
@@ -567,7 +570,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="WDJ-6S-5Y3">
-                                <rect key="frame" x="850" y="510" width="384" height="19"/>
+                                <rect key="frame" x="850" y="520" width="384" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="19" id="Ye5-Cq-PxJ"/>
                                 </constraints>
@@ -576,7 +579,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
-                                <rect key="frame" x="850" y="650" width="384" height="84"/>
+                                <rect key="frame" x="850" y="620" width="384" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="384" id="WAl-jz-akH"/>
                                 </constraints>
@@ -588,7 +591,7 @@ How do you think others see it?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-fI-qoJ">
-                                <rect key="frame" x="929" y="750" width="194" height="55"/>
+                                <rect key="frame" x="880" y="760" width="194" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" identifier="larg" id="R1p-r1-OP1"/>
                                     <constraint firstAttribute="height" constant="55" identifier="altezza" id="g45-2c-k21"/>
@@ -624,10 +627,10 @@ How do you think others see it?</string>
                             <constraint firstItem="abm-bl-K38" firstAttribute="top" secondItem="Mv5-VB-TpB" secondAttribute="top" id="EKT-uq-9xd"/>
                             <constraint firstItem="vH6-gT-4jz" firstAttribute="leading" secondItem="PtS-SF-yl7" secondAttribute="trailing" constant="20" id="Fs2-52-x3P"/>
                             <constraint firstItem="zi4-9B-9mn" firstAttribute="top" secondItem="JrA-Yx-juQ" secondAttribute="bottom" constant="5" id="IdK-xf-iAv"/>
-                            <constraint firstItem="zPR-fI-qoJ" firstAttribute="top" secondItem="4a5-lJ-QbO" secondAttribute="bottom" constant="16" id="KXx-FC-h7V"/>
+                            <constraint firstItem="zPR-fI-qoJ" firstAttribute="top" secondItem="4a5-lJ-QbO" secondAttribute="bottom" constant="56" id="KXx-FC-h7V"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sCS-4W-8wn" secondAttribute="trailing" constant="-8" id="L9r-d9-ewm"/>
                             <constraint firstItem="Jjs-7W-cLo" firstAttribute="top" secondItem="Gas-gh-7sj" secondAttribute="bottom" constant="-2" id="LVL-hV-8WN"/>
-                            <constraint firstItem="zPR-fI-qoJ" firstAttribute="leading" secondItem="Mv5-VB-TpB" secondAttribute="leading" constant="929" identifier="center" id="Osc-TX-68e"/>
+                            <constraint firstItem="zPR-fI-qoJ" firstAttribute="leading" secondItem="Mv5-VB-TpB" secondAttribute="leading" constant="880" identifier="center" id="Osc-TX-68e"/>
                             <constraint firstItem="sCS-4W-8wn" firstAttribute="top" secondItem="JrA-Yx-juQ" secondAttribute="bottom" constant="42" id="Te5-bj-gVo"/>
                             <constraint firstItem="qOs-Jh-MnI" firstAttribute="bottom" secondItem="ZpE-XT-qrG" secondAttribute="bottom" constant="50" id="Thd-zo-tTp"/>
                             <constraint firstItem="ZpE-XT-qrG" firstAttribute="top" secondItem="zi4-9B-9mn" secondAttribute="bottom" constant="79" id="YDi-jn-Dxc"/>
@@ -639,11 +642,11 @@ How do you think others see it?</string>
                             <constraint firstItem="Gas-gh-7sj" firstAttribute="leading" secondItem="Jjs-7W-cLo" secondAttribute="leading" id="fa9-Ej-WKF"/>
                             <constraint firstItem="abm-bl-K38" firstAttribute="leading" secondItem="qOs-Jh-MnI" secondAttribute="leading" id="iHq-Ga-Ji2"/>
                             <constraint firstItem="zi4-9B-9mn" firstAttribute="leading" secondItem="sCS-4W-8wn" secondAttribute="leading" constant="-1" id="l4c-OD-4vd"/>
-                            <constraint firstItem="4a5-lJ-QbO" firstAttribute="top" secondItem="qOs-Jh-MnI" secondAttribute="bottom" constant="-212" id="lTp-dE-hKg"/>
+                            <constraint firstItem="4a5-lJ-QbO" firstAttribute="top" secondItem="qOs-Jh-MnI" secondAttribute="bottom" constant="-242" id="lTp-dE-hKg"/>
                             <constraint firstItem="abm-bl-K38" firstAttribute="height" secondItem="Mv5-VB-TpB" secondAttribute="height" multiplier="0.498884" id="p49-Dj-Jxw"/>
                             <constraint firstItem="gQb-mA-l8B" firstAttribute="leading" secondItem="WDJ-6S-5Y3" secondAttribute="leading" id="t1a-cW-gNt"/>
                             <constraint firstItem="ZpE-XT-qrG" firstAttribute="centerX" secondItem="Mv5-VB-TpB" secondAttribute="centerX" id="tW0-8i-s71"/>
-                            <constraint firstItem="WDJ-6S-5Y3" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" constant="63" id="tis-gc-7ku"/>
+                            <constraint firstItem="WDJ-6S-5Y3" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" constant="73" id="tis-gc-7ku"/>
                             <constraint firstItem="Gas-gh-7sj" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" constant="19" id="x2y-lK-BWr"/>
                             <constraint firstItem="abm-bl-K38" firstAttribute="width" secondItem="Mv5-VB-TpB" secondAttribute="width" multiplier="3.00483" constant="27.00037999999995" id="yM6-hk-M8F"/>
                             <constraint firstItem="zi4-9B-9mn" firstAttribute="leading" secondItem="Mv5-VB-TpB" secondAttribute="leadingMargin" constant="-1" id="zJq-iT-dN3"/>
@@ -1672,10 +1675,10 @@ all the answers you gave?</string>
                                 <rect key="frame" x="283.5" y="711" width="128.5" height="160"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg2-FW-cMy">
-                                <rect key="frame" x="20" y="170" width="378" height="105"/>
+                                <rect key="frame" x="20" y="170" width="378" height="123"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="105" id="yRs-Rh-rVW"/>
+                                    <constraint firstAttribute="height" constant="123" id="yRs-Rh-rVW"/>
                                 </constraints>
                                 <string key="text">By telling the story of your indelible sign
 you can change the way you look at
@@ -1698,11 +1701,11 @@ your body and others’s bodies.</string>
                             <constraint firstItem="l8Y-Og-dtE" firstAttribute="bottom" secondItem="aDm-7l-7cl" secondAttribute="bottom" constant="55" id="Hso-9S-wiu"/>
                             <constraint firstAttribute="bottomMargin" secondItem="ixb-PM-dG4" secondAttribute="bottom" constant="-9" id="MiA-pd-YJx"/>
                             <constraint firstItem="l8Y-Og-dtE" firstAttribute="trailing" secondItem="cg2-FW-cMy" secondAttribute="trailing" constant="16" id="Rri-N3-iXl"/>
-                            <constraint firstItem="hAV-t5-bhq" firstAttribute="top" secondItem="cg2-FW-cMy" secondAttribute="bottom" constant="2" id="XQh-qk-WrY"/>
+                            <constraint firstItem="hAV-t5-bhq" firstAttribute="top" secondItem="cg2-FW-cMy" secondAttribute="bottom" constant="-16" id="XQh-qk-WrY"/>
                             <constraint firstItem="kk1-iP-iA2" firstAttribute="centerX" secondItem="qyN-qn-MDu" secondAttribute="centerX" id="bSD-uA-TGr"/>
                             <constraint firstItem="kk1-iP-iA2" firstAttribute="leading" secondItem="l8Y-Og-dtE" secondAttribute="leading" constant="22" id="dWK-Dx-Ety"/>
                             <constraint firstItem="aDm-7l-7cl" firstAttribute="centerX" secondItem="Iue-cf-wZh" secondAttribute="centerX" id="fa8-nF-GHL"/>
-                            <constraint firstItem="qyN-qn-MDu" firstAttribute="top" secondItem="cg2-FW-cMy" secondAttribute="bottom" constant="14" id="l6g-lf-hnC"/>
+                            <constraint firstItem="qyN-qn-MDu" firstAttribute="top" secondItem="cg2-FW-cMy" secondAttribute="bottom" constant="-4" id="l6g-lf-hnC"/>
                             <constraint firstItem="6Pt-cQ-xmf" firstAttribute="top" secondItem="kk1-iP-iA2" secondAttribute="bottom" constant="4" id="mKf-uz-BHW"/>
                             <constraint firstItem="hAV-t5-bhq" firstAttribute="leading" secondItem="l8Y-Og-dtE" secondAttribute="leading" constant="17" id="mNp-gf-w05"/>
                             <constraint firstItem="kk1-iP-iA2" firstAttribute="trailing" secondItem="hAV-t5-bhq" secondAttribute="trailing" constant="-3" id="rRc-dx-esk"/>
@@ -2372,16 +2375,10 @@ your body and others’s bodies.</string>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9o9-F3-Tem">
                                                     <rect key="frame" x="20" y="0.0" width="373" height="134"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="pdk-F6-xZK">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Fratmacchion si nu mostra" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="pdk-F6-xZK">
                                                     <rect key="frame" x="36" y="132" width="342" height="153"/>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="Fratmacchion si nu mostra">
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="18" name="Roboto-ThinItalic"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="18"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="y9q-2C-HRN">
@@ -3525,7 +3522,7 @@ The two shapes on the outside recount </string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="O1h-M3-5IE"/>
-        <segue reference="wd9-1W-xO2"/>
+        <segue reference="s1A-7h-Aw8"/>
         <segue reference="rqq-x5-KjR"/>
     </inferredMetricsTieBreakers>
     <resources>

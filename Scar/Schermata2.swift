@@ -194,6 +194,9 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         cell.image.isUserInteractionEnabled = true
         cell.image.addGestureRecognizer(tap1)
         
+//        cell.label.font = UIFont(name: ".SFUI-Light", size: 18)
+        print("\n\n\n\n\n\n\(cell.label.font)\n\n\n\n\n\n")
+        
         return cell
     }
     

@@ -170,7 +170,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         traslate(view: frase3, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
         traslate(view: domande3, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
         traslate(view: button3, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
-        button3.frame.origin.x = (UIScreen.main.bounds.width / 2) - 91
+        button3.frame.origin.x = (UIScreen.main.bounds.width / 2) - 97
         
 
         fetchMovies(nome: "the%20theory%20of%20everything", tipo:"movie", yImg: 340)
