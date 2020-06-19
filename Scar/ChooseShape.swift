@@ -19,7 +19,7 @@ class ChooseShape: UIViewController  {
         var attributedString = NSMutableAttributedString(string:boldText)
 
         var normalText = "your deepest being?"
-        var attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
+        var attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: 20)]
         var normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
 
         attributedString.append(normalString)

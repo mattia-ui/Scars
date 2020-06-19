@@ -8,20 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Cera Pro Bold.otf">
-            <string>CeraPro-Bold</string>
-        </array>
-        <array key="Cera Pro Light.otf">
-            <string>CeraPro-Light</string>
-        </array>
         <array key="Nexa Bold.otf">
             <string>NexaBold</string>
         </array>
         <array key="Nexa Light.otf">
             <string>NexaLight</string>
-        </array>
-        <array key="Nexa W01 Heavy.otf">
-            <string>NexaW01-Heavy</string>
         </array>
         <array key="NexaTextDemo-Light.ttf">
             <string>NexaTextDemo-Light</string>
@@ -70,11 +61,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7Ov-gi-Skw">
-                                <rect key="frame" x="116" y="722" width="182" height="55"/>
+                                <rect key="frame" x="116" y="715" width="182" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="SubmitRosa">
+                                <state key="normal" image="submit azzurro">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <state key="disabled" image="submitno"/>
                                 <connections>
                                     <action selector="drawElaboration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nvb-Ps-QCM"/>
                                 </connections>
@@ -104,13 +96,13 @@
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trace it!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="dJF-ko-yfI">
                                 <rect key="frame" x="20" y="96" width="374" height="38"/>
-                                <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="36"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="iYI-gG-qQg">
                                 <rect key="frame" x="20" y="142" width="363" height="22"/>
-                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="20"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1088,7 +1080,7 @@ How do you think others see it?</string>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="m8e-tD-btm">
                                 <rect key="frame" x="129" y="284.5" width="261" height="71"/>
-                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Warm colors" backgroundImage="QuestionSpento">
                                     <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1103,7 +1095,7 @@ How do you think others see it?</string>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Hot-ON-zvu">
                                 <rect key="frame" x="129" y="403.5" width="261" height="71"/>
-                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Cool colors" backgroundImage="QuestionSpento">
                                     <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1118,7 +1110,7 @@ How do you think others see it?</string>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="53f-Wh-VQP">
                                 <rect key="frame" x="129" y="521" width="261" height="71"/>
-                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Neutrals" backgroundImage="QuestionSpento">
                                     <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1255,7 +1247,7 @@ How do you think others see it?</string>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nTf-2F-YIf">
                                         <rect key="frame" x="55" y="-117" width="0.0" height="0.0"/>
-                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Wood" backgroundImage="QuestionSpento">
                                             <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1268,7 +1260,7 @@ How do you think others see it?</string>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kqu-2o-qXn">
                                         <rect key="frame" x="55" y="-165" width="0.0" height="0.0"/>
-                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Sea" backgroundImage="QuestionSpento">
                                             <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1281,7 +1273,7 @@ How do you think others see it?</string>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="CrL-CA-bOp">
                                         <rect key="frame" x="55" y="-153" width="0.0" height="0.0"/>
-                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Crater" backgroundImage="QuestionSpento">
                                             <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1294,7 +1286,7 @@ How do you think others see it?</string>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="YRS-3h-hAc">
                                         <rect key="frame" x="55" y="-141.5" width="0.0" height="0.0"/>
-                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Textile fiber" backgroundImage="QuestionSpento">
                                             <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1307,7 +1299,7 @@ How do you think others see it?</string>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bxN-yg-fPW">
                                         <rect key="frame" x="55" y="-129" width="0.0" height="0.0"/>
-                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Marble" backgroundImage="QuestionSpento">
                                             <color key="titleColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1320,21 +1312,21 @@ How do you think others see it?</string>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4O-Qz-X11">
                                         <rect key="frame" x="0.0" y="-77" width="0.0" height="0.0"/>
-                                        <state key="normal" title="Button" image="SubmitRosa"/>
-                                        <state key="disabled" image="SubmitRosaNS"/>
+                                        <state key="normal" title="Button" image="submit azzurro"/>
+                                        <state key="disabled" image="submitno"/>
                                         <connections>
                                             <action selector="pressed:" destination="lfU-OF-Bud" eventType="touchUpInside" id="vHt-cq-KD0"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 4/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Lej-tX-y6u">
                                         <rect key="frame" x="22" y="-179.5" width="0.0" height="0.0"/>
-                                        <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="36"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="mIk-Xe-oy0">
                                         <rect key="frame" x="22" y="-174.5" width="0.0" height="0.0"/>
-                                        <fontDescription key="fontDescription" name="CeraPro-Light" family="Cera Pro" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="20"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1412,7 +1404,7 @@ How do you think others see it?</string>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submit answers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="iqq-Hd-Wwa">
                                         <rect key="frame" x="76" y="324" width="0.0" height="0.0"/>
-                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="32"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="32"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1420,26 +1412,26 @@ How do you think others see it?</string>
                                         <rect key="frame" x="76" y="338" width="0.0" height="0.0"/>
                                         <string key="text">Are you sure about 
 all the answers you gave?</string>
-                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="20"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forma1 - Forma2 - Palette - Texture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="RDd-Fb-aqK">
                                         <rect key="frame" x="0.0" y="369" width="0.0" height="0.0"/>
-                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="20"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOD-j0-7tp">
                                         <rect key="frame" x="74" y="405" width="0.0" height="0.0"/>
-                                        <state key="normal" title=" " image="NoRosa"/>
+                                        <state key="normal" title=" " image="no"/>
                                         <connections>
                                             <segue destination="GG3-f1-cQ8" kind="show" id="rqq-x5-KjR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tz3-ol-La9">
                                         <rect key="frame" x="103" y="405" width="0.0" height="0.0"/>
-                                        <state key="normal" title=" " image="yesRosa"/>
+                                        <state key="normal" title=" " image="yes"/>
                                         <connections>
                                             <segue destination="hvR-kH-wNA" kind="show" id="0sY-Oe-LsQ"/>
                                         </connections>
@@ -1535,7 +1527,7 @@ all the answers you gave?</string>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the way!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="AiM-zE-6gR">
                                 <rect key="frame" x="22" y="107" width="302" height="38"/>
-                                <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="36"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1553,13 +1545,13 @@ all the answers you gave?</string>
                                     <segue destination="BYZ-38-t0r" kind="show" id="TlC-WV-Ndb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(If you remember the shape already)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="cpF-cN-5d5">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(If you remember the shape already)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="cpF-cN-5d5">
                                 <rect key="frame" x="74.5" y="770" width="266" height="16"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="16"/>
                                 <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weekly1" translatesAutoresizingMaskIntoConstraints="NO" id="ZhO-SO-6sM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weekly8" translatesAutoresizingMaskIntoConstraints="NO" id="ZhO-SO-6sM">
                                 <rect key="frame" x="87" y="329" width="240" height="285"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="kTB-8f-OJj">
@@ -1567,8 +1559,8 @@ all the answers you gave?</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="2UC-Oq-LIj"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Poppins-LightItalic" family="Poppins" pointSize="18"/>
+                                <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="yE5-lk-76G">
@@ -1576,7 +1568,7 @@ all the answers you gave?</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="cSS-h1-VwA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="20"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2827,13 +2819,13 @@ your body and others’s bodies.</string>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is your #skinsugi!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="tcg-DQ-JRd">
                                                         <rect key="frame" x="22" y="62" width="392" height="80"/>
-                                                        <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="36"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover more about your Masterpiece" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Z49-kW-QRd" userLabel="Discover1">
                                                         <rect key="frame" x="22" y="150" width="324" height="18"/>
-                                                        <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="20"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -2972,7 +2964,7 @@ The two shapes on the outside recount </string>
                                                             <constraint firstAttribute="height" constant="55" id="EFw-W6-v2j"/>
                                                             <constraint firstAttribute="width" constant="182" id="Hwg-2J-AJL"/>
                                                         </constraints>
-                                                        <state key="normal" image="ProceedRosa"/>
+                                                        <state key="normal" image="proceed"/>
                                                         <connections>
                                                             <segue destination="LDR-hH-uX6" kind="show" identifier="jamm" id="47n-ms-sJd"/>
                                                         </connections>
@@ -3294,7 +3286,7 @@ The two shapes on the outside recount </string>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram power!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Grm-fg-a3p">
                                                         <rect key="frame" x="22" y="73" width="318" height="42"/>
-                                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="38"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="36"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3304,7 +3296,7 @@ The two shapes on the outside recount </string>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yy9-H0-njk">
                                                         <rect key="frame" x="22" y="388" width="370" height="253"/>
-                                                        <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3313,31 +3305,31 @@ The two shapes on the outside recount </string>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Be an inspiration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="XLh-Ts-cbd">
                                                         <rect key="frame" x="22" y="1021" width="213" height="27"/>
-                                                        <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="27"/>
-                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="26"/>
+                                                        <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edT-gu-EJb">
                                                         <rect key="frame" x="128" y="1368" width="158" height="55"/>
-                                                        <state key="normal" image="ShareRosa"/>
+                                                        <state key="normal" image="share"/>
                                                         <connections>
                                                             <action selector="shareImg:" destination="LDR-hH-uX6" eventType="touchUpInside" id="EgW-tv-pVw"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eN-Y8-iqG">
                                                         <rect key="frame" x="73" y="1451" width="268" height="55"/>
-                                                        <state key="normal" image="ShareARosa"/>
+                                                        <state key="normal" image="shareanonymously (2)"/>
                                                         <connections>
                                                             <action selector="shareUnkown:" destination="LDR-hH-uX6" eventType="touchUpInside" id="nlb-ss-uUh"/>
                                                             <segue destination="GG3-f1-cQ8" kind="show" identifier="blur" id="rkX-St-HZF"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(We will publish it on our profile)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzJ-Ev-OB7">
-                                                        <rect key="frame" x="89" y="1515" width="236.5" height="16"/>
+                                                        <rect key="frame" x="90.5" y="1515" width="233.5" height="16"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="16" id="Hfk-Nt-sn4"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="15"/>
                                                         <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3348,7 +3340,7 @@ The two shapes on the outside recount </string>
                                                                 <fragment content="Copy caption">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                        <font key="NSFont" metaFont="system" size="20"/>
+                                                                        <font key="NSFont" size="18" name="Poppins-Light"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         <integer key="NSUnderline" value="1"/>
                                                                     </attributes>
@@ -3368,8 +3360,8 @@ The two shapes on the outside recount </string>
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content="Not now">
                                                                     <attributes>
-                                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                        <font key="NSFont" metaFont="system" size="20"/>
+                                                                        <color key="NSColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" size="18" name="Poppins-Light"/>
                                                                         <font key="NSOriginalFont" metaFont="system" size="18"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         <integer key="NSUnderline" value="1"/>
@@ -3520,9 +3512,9 @@ The two shapes on the outside recount </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="O1h-M3-5IE"/>
+        <segue reference="47n-ms-sJd"/>
         <segue reference="s1A-7h-Aw8"/>
-        <segue reference="rqq-x5-KjR"/>
+        <segue reference="rkX-St-HZF"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2-" width="143" height="312"/>
@@ -3537,22 +3529,16 @@ The two shapes on the outside recount </string>
         <image name="Let'sgo" width="196" height="55"/>
         <image name="MakePhoto" width="98" height="94"/>
         <image name="MirrorWork1" width="415" height="144"/>
-        <image name="NoRosa" width="120" height="55"/>
         <image name="Onboarding1" width="3740" height="1350"/>
-        <image name="ProceedRosa" width="182" height="55"/>
         <image name="QuestionAcceso" width="261" height="71"/>
         <image name="QuestionSpento" width="261" height="71"/>
         <image name="Reset" width="50" height="50"/>
         <image name="SeeMore" width="82" height="18"/>
-        <image name="ShareARosa" width="268" height="55"/>
-        <image name="ShareRosa" width="158" height="55"/>
         <image name="Skip" width="98" height="94"/>
         <image name="StartN" width="182" height="55"/>
-        <image name="SubmitRosa" width="182" height="55"/>
-        <image name="SubmitRosaNS" width="182" height="55"/>
         <image name="TCAzz" width="230" height="230"/>
         <image name="Textile" width="168" height="168"/>
-        <image name="Weekly1" width="185" height="300"/>
+        <image name="Weekly8" width="370" height="600"/>
         <image name="aggiungiInsight" width="32" height="25"/>
         <image name="backArrow" width="14" height="25"/>
         <image name="backM" width="414" height="896"/>
@@ -3574,23 +3560,29 @@ The two shapes on the outside recount </string>
         <image name="navInsta" width="415" height="185"/>
         <image name="nextazzurro" width="182" height="55"/>
         <image name="nextazzurrono" width="182" height="55"/>
+        <image name="no" width="120" height="55"/>
         <image name="nonselezionato" width="374" height="76"/>
         <image name="primaPalette" width="87" height="87"/>
+        <image name="proceed" width="182" height="55"/>
         <image name="readyViola" width="187" height="55"/>
         <image name="rectangle" width="80" height="55"/>
         <image name="sea" width="168" height="168"/>
         <image name="secondaPalette" width="87" height="87"/>
         <image name="selected" width="374" height="76"/>
         <image name="selezionato" width="374" height="76"/>
+        <image name="share" width="158" height="55"/>
         <image name="share (2)" width="158" height="55"/>
+        <image name="shareanonymously (2)" width="268" height="55"/>
         <image name="square" width="66" height="65"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="start" width="182" height="55"/>
+        <image name="submit azzurro" width="182" height="55"/>
+        <image name="submitno" width="182" height="55"/>
         <image name="terzaPalette" width="87" height="87"/>
         <image name="triangle" width="74" height="69"/>
         <image name="unchecked" width="34" height="32"/>
         <image name="wood" width="168" height="168"/>
-        <image name="yesRosa" width="112" height="55"/>
+        <image name="yes" width="112" height="55"/>
         <image name="yourmasterpiece" width="415" height="140"/>
         <image name="zigzag" width="89" height="42"/>
     </resources>

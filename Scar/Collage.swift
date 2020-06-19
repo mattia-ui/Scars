@@ -659,71 +659,71 @@ class Collage: UIViewController, UITextFieldDelegate  {
         screen.image = cropBottomImage(image: view.snapshot() ?? UIImage())
         
 //      screen.image = view.snapshot()
-        var fontSize : CGFloat = 20
+        var fontSize : CGFloat = 18
         if(view.frame.width == 375){
             fontSize = 18
         }
         var  normalText = "The pattern in the large circle describes\n"
-        var attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: fontSize)]
+        var attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
         let attributedString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
         
         var boldText = "your personality "
-             attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: fontSize)]
+             attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: fontSize)]
            let attributedString2 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
         attributedString.append(attributedString2)
 
 
                 normalText = "and the color inside \nrepresents "
-               attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: fontSize)]
+               attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
              let attributedString20 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
                attributedString.append(attributedString20)
                
                 boldText = "the way you want to look\n"
-                attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: fontSize)]
+                attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: fontSize)]
                
                let attributedString3 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
                
                attributedString.append(attributedString3)
          
         normalText = "from the outside. \n\nThe two shapes on the outside recount\n"
-         attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: fontSize)]
+         attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
         let attributedString21 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
                       attributedString.append(attributedString21)
         
         boldText = "the way you would like to be "
-         attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: fontSize)]
+         attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: fontSize)]
         
         let attributedString4 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
         
         attributedString.append(attributedString4)
         
         normalText = "and the \ntexture inside represents "
-        attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: fontSize)]
+        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
         let attributedString22 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
                       attributedString.append(attributedString22)
         
         boldText = "the \nperception you have of your sign, "
-        attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: fontSize)]
+        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: fontSize)]
        
        let attributedString5 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
        
        attributedString.append(attributedString5)
         
         normalText = "that\nis in gold and occupies the center of \nthe image, as "
-        attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: fontSize)]
+        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
 
         let attributedString23 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
                       attributedString.append(attributedString23)
         
         boldText = "Kintsugi art "
-         attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: fontSize)]
+         attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: fontSize)]
         
         let attributedString6 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
         
         attributedString.append(attributedString6)
         
         normalText = "teaches! "
-        attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: fontSize)]
+        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
 
                 let attributedString24 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
                     attributedString.append(attributedString24)
