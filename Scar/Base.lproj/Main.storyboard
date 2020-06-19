@@ -2378,7 +2378,7 @@ your body and others’s bodies.</string>
                                                         <fragment content="Fratmacchion si nu mostra">
                                                             <attributes>
                                                                 <color key="NSColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="18" name="Roboto-Thin"/>
+                                                                <font key="NSFont" size="18" name="Roboto-ThinItalic"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
