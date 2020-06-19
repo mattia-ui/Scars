@@ -16,4 +16,6 @@ class InightsCollection: UICollectionViewCell {
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var fonte: UILabel!
     @IBOutlet weak var div: UIImageView!
+    
+    
 }

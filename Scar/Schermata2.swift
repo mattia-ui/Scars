@@ -162,6 +162,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         let cell = myCollectionView.dequeueReusableCell(withReuseIdentifier: "ins", for: indexPath) as! InightsCollection
         cell.title.text = contenuto[indexPath.row].title
         cell.label.text = contenuto[indexPath.row].descr
+//        cell.label.font = UIFont(name: "Roboto-Light", size: 18)
         cell.fonte.text = contenuto[indexPath.row].fonte
         let tap = MyTap(target: self, action: #selector(self.goLink(sender:)))
         tap.link = contenuto[indexPath.row].link
@@ -209,8 +210,6 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         overrideUserInterfaceStyle = .light
 
         caricaInfo()
-//        let iC = InightsCollection()
-//        iC.label.font = UIFont(name: "Roboto-Light", size: 18)
 
         if(Schermata2.insights[0] != ""){
            if(Schermata2.insights[0] == "TEDx"){

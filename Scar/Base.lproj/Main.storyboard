@@ -526,7 +526,7 @@ Masterpiece!</string>
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3A-U0-X4D">
-                                                    <rect key="frame" x="116" y="71" width="182" height="55"/>
+                                                    <rect key="frame" x="25" y="71" width="364" height="110"/>
                                                     <state key="normal" image="done">
                                                         <color key="titleColor" red="0.91372543569999998" green="0.91366583109999999" blue="0.91764795779999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </state>
@@ -576,7 +576,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
-                                <rect key="frame" x="850" y="591.5" width="384" height="84"/>
+                                <rect key="frame" x="850" y="591.5" width="384" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="384" id="WAl-jz-akH"/>
                                 </constraints>
@@ -588,7 +588,7 @@ How do you think others see it?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-fI-qoJ">
-                                <rect key="frame" x="929" y="763.5" width="194" height="55"/>
+                                <rect key="frame" x="929" y="749.5" width="194" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" identifier="larg" id="R1p-r1-OP1"/>
                                     <constraint firstAttribute="height" constant="55" identifier="altezza" id="g45-2c-k21"/>
@@ -1225,7 +1225,7 @@ How do you think others see it?</string>
             <objects>
                 <viewController id="lfU-OF-Bud" customClass="ChooseTexture" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pnh-IU-Nic">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jE3-g0-hTy">
@@ -1645,7 +1645,7 @@ all the answers you gave?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#skinsugi is a place to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Pt-cQ-xmf">
-                                <rect key="frame" x="22" y="141" width="285.5" height="25"/>
+                                <rect key="frame" x="22" y="141" width="252.5" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="JDC-LS-hhj"/>
                                 </constraints>
@@ -2379,7 +2379,7 @@ your body and others’s bodies.</string>
                                                         <fragment content="Label">
                                                             <attributes>
                                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="18" name="Poppins-Light"/>
+                                                                <font key="NSFont" size="18" name="Roboto-Light"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
@@ -2387,7 +2387,7 @@ your body and others’s bodies.</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="y9q-2C-HRN">
-                                                    <rect key="frame" x="36" y="85" width="326" height="15"/>
+                                                    <rect key="frame" x="36" y="85" width="326" height="21"/>
                                                     <fontDescription key="fontDescription" name="Poppins-LightItalic" family="Poppins" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -2414,7 +2414,7 @@ your body and others’s bodies.</string>
                                                 <constraint firstAttribute="trailing" secondItem="vxG-uB-0dh" secondAttribute="trailing" constant="29" id="8Ef-17-Ldy"/>
                                                 <constraint firstItem="9o9-F3-Tem" firstAttribute="width" secondItem="xtB-u9-g6l" secondAttribute="width" multiplier="0.903148" id="AE8-dS-cXn"/>
                                                 <constraint firstItem="9o9-F3-Tem" firstAttribute="top" secondItem="xtB-u9-g6l" secondAttribute="top" id="G6B-gS-2DU"/>
-                                                <constraint firstItem="y9q-2C-HRN" firstAttribute="height" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="0.0413223" id="Jgb-t4-H5Z"/>
+                                                <constraint firstItem="y9q-2C-HRN" firstAttribute="height" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="0.0413223" constant="6.000005100000001" id="Jgb-t4-H5Z"/>
                                                 <constraint firstItem="9o9-F3-Tem" firstAttribute="centerX" secondItem="xtB-u9-g6l" secondAttribute="centerX" id="LnY-Co-qNh"/>
                                                 <constraint firstItem="pdk-F6-xZK" firstAttribute="height" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="0.421488" id="Lq7-zs-932"/>
                                                 <constraint firstItem="cSJ-OP-IOa" firstAttribute="top" secondItem="vxG-uB-0dh" secondAttribute="bottom" constant="12" id="M2q-4C-drs"/>
