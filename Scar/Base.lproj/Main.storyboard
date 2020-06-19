@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -423,8 +423,8 @@ Masterpiece!</string>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-gT-4jz">
-                                <rect key="frame" x="848" y="526.5" width="303" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-gT-4jz">
+                                <rect key="frame" x="848" y="973.5" width="303" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -567,7 +567,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="WDJ-6S-5Y3">
-                                <rect key="frame" x="850" y="540" width="384" height="19"/>
+                                <rect key="frame" x="850" y="510" width="384" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="19" id="Ye5-Cq-PxJ"/>
                                 </constraints>
@@ -576,7 +576,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
-                                <rect key="frame" x="850" y="591.5" width="384" height="84"/>
+                                <rect key="frame" x="850" y="650" width="384" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="384" id="WAl-jz-akH"/>
                                 </constraints>
@@ -588,7 +588,7 @@ How do you think others see it?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-fI-qoJ">
-                                <rect key="frame" x="929" y="763.5" width="194" height="55"/>
+                                <rect key="frame" x="929" y="750" width="194" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" identifier="larg" id="R1p-r1-OP1"/>
                                     <constraint firstAttribute="height" constant="55" identifier="altezza" id="g45-2c-k21"/>
@@ -624,7 +624,7 @@ How do you think others see it?</string>
                             <constraint firstItem="abm-bl-K38" firstAttribute="top" secondItem="Mv5-VB-TpB" secondAttribute="top" id="EKT-uq-9xd"/>
                             <constraint firstItem="vH6-gT-4jz" firstAttribute="leading" secondItem="PtS-SF-yl7" secondAttribute="trailing" constant="20" id="Fs2-52-x3P"/>
                             <constraint firstItem="zi4-9B-9mn" firstAttribute="top" secondItem="JrA-Yx-juQ" secondAttribute="bottom" constant="5" id="IdK-xf-iAv"/>
-                            <constraint firstItem="zPR-fI-qoJ" firstAttribute="top" secondItem="4a5-lJ-QbO" secondAttribute="bottom" constant="88" id="KXx-FC-h7V"/>
+                            <constraint firstItem="zPR-fI-qoJ" firstAttribute="top" secondItem="4a5-lJ-QbO" secondAttribute="bottom" constant="16" id="KXx-FC-h7V"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sCS-4W-8wn" secondAttribute="trailing" constant="-8" id="L9r-d9-ewm"/>
                             <constraint firstItem="Jjs-7W-cLo" firstAttribute="top" secondItem="Gas-gh-7sj" secondAttribute="bottom" constant="-2" id="LVL-hV-8WN"/>
                             <constraint firstItem="zPR-fI-qoJ" firstAttribute="leading" secondItem="Mv5-VB-TpB" secondAttribute="leading" constant="929" identifier="center" id="Osc-TX-68e"/>
@@ -634,17 +634,16 @@ How do you think others see it?</string>
                             <constraint firstItem="zi4-9B-9mn" firstAttribute="centerX" secondItem="sCS-4W-8wn" secondAttribute="centerX" constant="-2" id="ZEo-mD-WZK"/>
                             <constraint firstItem="Gas-gh-7sj" firstAttribute="trailing" secondItem="Jjs-7W-cLo" secondAttribute="trailing" id="bJv-xX-v5h"/>
                             <constraint firstItem="JrA-Yx-juQ" firstAttribute="trailing" secondItem="zi4-9B-9mn" secondAttribute="trailing" id="dOe-eg-SaH"/>
-                            <constraint firstItem="vH6-gT-4jz" firstAttribute="top" secondItem="WDJ-6S-5Y3" secondAttribute="top" constant="-13.5" id="eGz-6O-JbV"/>
                             <constraint firstItem="gQb-mA-l8B" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" constant="18" id="eIE-R0-Fyo"/>
                             <constraint firstItem="Jjs-7W-cLo" firstAttribute="leading" secondItem="JrA-Yx-juQ" secondAttribute="leading" id="fYI-Lj-Azb"/>
                             <constraint firstItem="Gas-gh-7sj" firstAttribute="leading" secondItem="Jjs-7W-cLo" secondAttribute="leading" id="fa9-Ej-WKF"/>
                             <constraint firstItem="abm-bl-K38" firstAttribute="leading" secondItem="qOs-Jh-MnI" secondAttribute="leading" id="iHq-Ga-Ji2"/>
                             <constraint firstItem="zi4-9B-9mn" firstAttribute="leading" secondItem="sCS-4W-8wn" secondAttribute="leading" constant="-1" id="l4c-OD-4vd"/>
-                            <constraint firstItem="4a5-lJ-QbO" firstAttribute="top" secondItem="vH6-gT-4jz" secondAttribute="bottom" constant="42" id="lTp-dE-hKg"/>
+                            <constraint firstItem="4a5-lJ-QbO" firstAttribute="top" secondItem="qOs-Jh-MnI" secondAttribute="bottom" constant="-212" id="lTp-dE-hKg"/>
                             <constraint firstItem="abm-bl-K38" firstAttribute="height" secondItem="Mv5-VB-TpB" secondAttribute="height" multiplier="0.498884" id="p49-Dj-Jxw"/>
                             <constraint firstItem="gQb-mA-l8B" firstAttribute="leading" secondItem="WDJ-6S-5Y3" secondAttribute="leading" id="t1a-cW-gNt"/>
                             <constraint firstItem="ZpE-XT-qrG" firstAttribute="centerX" secondItem="Mv5-VB-TpB" secondAttribute="centerX" id="tW0-8i-s71"/>
-                            <constraint firstItem="WDJ-6S-5Y3" firstAttribute="top" secondItem="Mv5-VB-TpB" secondAttribute="top" constant="540" id="tis-gc-7ku"/>
+                            <constraint firstItem="WDJ-6S-5Y3" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" constant="63" id="tis-gc-7ku"/>
                             <constraint firstItem="Gas-gh-7sj" firstAttribute="top" secondItem="abm-bl-K38" secondAttribute="bottom" constant="19" id="x2y-lK-BWr"/>
                             <constraint firstItem="abm-bl-K38" firstAttribute="width" secondItem="Mv5-VB-TpB" secondAttribute="width" multiplier="3.00483" constant="27.00037999999995" id="yM6-hk-M8F"/>
                             <constraint firstItem="zi4-9B-9mn" firstAttribute="leading" secondItem="Mv5-VB-TpB" secondAttribute="leadingMargin" constant="-1" id="zJq-iT-dN3"/>
@@ -2031,7 +2030,7 @@ your body and others’s bodies.</string>
                                     <fragment content="Qua ci vanno le stronzate di francesca">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name="Poppins-Light"/>
+                                            <font key="NSFont" metaFont="system" size="18"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -2379,7 +2378,7 @@ your body and others’s bodies.</string>
                                                         <fragment content="Fratmacchion si nu mostra">
                                                             <attributes>
                                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="18" name="Roboto-Light"/>
+                                                                <font key="NSFont" metaFont="system" size="18"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -2473,7 +2472,7 @@ your body and others’s bodies.</string>
                                                         <fragment content="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
                                                             <attributes>
                                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="9" name="Poppins-Light"/>
+                                                                <font key="NSFont" metaFont="miniSystem"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
