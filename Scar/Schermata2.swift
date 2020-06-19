@@ -136,7 +136,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
                 paragraphStyle.alignment = NSTextAlignment.center
                 let attributedString = NSMutableAttributedString(string: "This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives4.0 International License ")
                 attributedString.setAttributes(
-                    [NSAttributedString.Key.font : UIFont(name: "Poppins-ExtraLight", size: 20)!,
+                    [NSAttributedString.Key.font : UIFont(name: "Poppins-ExtraLight", size: 8)!,
                      NSAttributedString.Key.foregroundColor : UIColor(red: 112 / 255.0, green: 112 / 255.0, blue: 112 / 255.0, alpha: 1.0),
                      NSAttributedString.Key.paragraphStyle : paragraphStyle
                     ], range: NSRange(location:0 , length:111)

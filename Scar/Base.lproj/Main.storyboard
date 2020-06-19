@@ -526,7 +526,7 @@ Masterpiece!</string>
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3A-U0-X4D">
-                                                    <rect key="frame" x="25" y="71" width="364" height="110"/>
+                                                    <rect key="frame" x="116" y="71" width="182" height="55"/>
                                                     <state key="normal" image="done">
                                                         <color key="titleColor" red="0.91372543569999998" green="0.91366583109999999" blue="0.91764795779999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </state>
@@ -576,7 +576,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
-                                <rect key="frame" x="850" y="591.5" width="384" height="70"/>
+                                <rect key="frame" x="850" y="591.5" width="384" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="384" id="WAl-jz-akH"/>
                                 </constraints>
@@ -588,7 +588,7 @@ How do you think others see it?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-fI-qoJ">
-                                <rect key="frame" x="929" y="749.5" width="194" height="55"/>
+                                <rect key="frame" x="929" y="763.5" width="194" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" identifier="larg" id="R1p-r1-OP1"/>
                                     <constraint firstAttribute="height" constant="55" identifier="altezza" id="g45-2c-k21"/>
@@ -1225,7 +1225,7 @@ How do you think others see it?</string>
             <objects>
                 <viewController id="lfU-OF-Bud" customClass="ChooseTexture" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pnh-IU-Nic">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jE3-g0-hTy">
@@ -1645,7 +1645,7 @@ all the answers you gave?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#skinsugi is a place to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Pt-cQ-xmf">
-                                <rect key="frame" x="22" y="141" width="252.5" height="25"/>
+                                <rect key="frame" x="22" y="141" width="285.5" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="JDC-LS-hhj"/>
                                 </constraints>
@@ -2465,16 +2465,16 @@ your body and others’s bodies.</string>
                                                     </constraints>
                                                 </imageView>
                                                 <textView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kqL-Oo-zSr">
-                                                    <rect key="frame" x="38" y="14" width="338" height="69"/>
+                                                    <rect key="frame" x="38" y="12" width="338" height="74"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="69" id="KUX-O2-i6L"/>
+                                                        <constraint firstAttribute="height" constant="74" id="KUX-O2-i6L"/>
                                                         <constraint firstAttribute="width" constant="338" id="gZm-yh-0Yy"/>
                                                     </constraints>
                                                     <attributedString key="attributedText">
                                                         <fragment content="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
                                                             <attributes>
                                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="9" name="Poppins-ExtraLightItalic"/>
+                                                                <font key="NSFont" size="9" name="Poppins-Light"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
@@ -2483,12 +2483,12 @@ your body and others’s bodies.</string>
                                                 </textView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="kqL-Oo-zSr" secondAttribute="bottom" constant="5" id="0gg-z8-ehA"/>
+                                                <constraint firstAttribute="bottom" secondItem="kqL-Oo-zSr" secondAttribute="bottom" constant="2" id="0gg-z8-ehA"/>
                                                 <constraint firstItem="kqL-Oo-zSr" firstAttribute="leading" secondItem="huF-rN-Wyo" secondAttribute="leading" constant="38" id="B7c-fZ-sYQ"/>
                                                 <constraint firstItem="0zm-hy-VyW" firstAttribute="top" secondItem="huF-rN-Wyo" secondAttribute="topMargin" constant="-9" id="CAe-xw-IV9"/>
                                                 <constraint firstAttribute="trailing" secondItem="kqL-Oo-zSr" secondAttribute="trailing" constant="36" id="Eg9-qU-wi3"/>
-                                                <constraint firstItem="kqL-Oo-zSr" firstAttribute="top" secondItem="0zm-hy-VyW" secondAttribute="bottom" constant="-4" id="JCG-tH-PUD"/>
-                                                <constraint firstAttribute="bottom" secondItem="kqL-Oo-zSr" secondAttribute="bottom" constant="5" id="M4s-IJ-iK8"/>
+                                                <constraint firstItem="kqL-Oo-zSr" firstAttribute="top" secondItem="0zm-hy-VyW" secondAttribute="bottom" constant="-6" id="JCG-tH-PUD"/>
+                                                <constraint firstAttribute="bottom" secondItem="kqL-Oo-zSr" secondAttribute="bottom" constant="2" id="M4s-IJ-iK8"/>
                                                 <constraint firstItem="0zm-hy-VyW" firstAttribute="leading" secondItem="huF-rN-Wyo" secondAttribute="leading" constant="162" id="z3e-Qu-ElP"/>
                                             </constraints>
                                         </collectionViewCellContentView>
