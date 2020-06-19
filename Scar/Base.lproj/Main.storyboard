@@ -14,9 +14,6 @@
         <array key="Cera Pro Light.otf">
             <string>CeraPro-Light</string>
         </array>
-        <array key="Cera Pro Medium.otf">
-            <string>CeraPro-Medium</string>
-        </array>
         <array key="Nexa Bold.otf">
             <string>NexaBold</string>
         </array>
@@ -38,6 +35,9 @@
         <array key="Poppins-Light.ttf">
             <string>Poppins-Light</string>
         </array>
+        <array key="Poppins-LightItalic.ttf">
+            <string>Poppins-LightItalic</string>
+        </array>
         <array key="Poppins-Medium.ttf">
             <string>Poppins-Medium</string>
         </array>
@@ -55,10 +55,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ns4-Sj-bJV">
-                                <rect key="frame" x="22" y="176" width="366" height="542"/>
+                                <rect key="frame" x="22" y="175" width="366" height="524"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y7q-Le-8bb">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="927"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7Ov-gi-Skw">
                                 <rect key="frame" x="116" y="722" width="182" height="55"/>
@@ -81,7 +81,7 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="1" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="Fim-d8-yE7">
-                                <rect key="frame" x="-75" y="435" width="261" height="31"/>
+                                <rect key="frame" x="-75" y="435" width="261" height="30"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="WOE-BQ-aor"/>
@@ -100,7 +100,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="iYI-gG-qQg">
-                                <rect key="frame" x="20" y="142" width="363" height="23"/>
+                                <rect key="frame" x="20" y="142" width="363" height="22"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -2031,7 +2031,7 @@ your body and others’s bodies.</string>
                                     <fragment content="Qua ci vanno le stronzate di francesca">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" metaFont="system" size="18"/>
+                                            <font key="NSFont" size="18" name="Poppins-Light"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -2186,14 +2186,14 @@ your body and others’s bodies.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="div" translatesAutoresizingMaskIntoConstraints="NO" id="RZj-ub-Qfp">
-                                <rect key="frame" x="-13" y="61" width="434" height="198"/>
+                                <rect key="frame" x="-13" y="57" width="434" height="198"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="434" id="M45-wa-wld"/>
                                     <constraint firstAttribute="height" constant="198" id="sX7-Cq-hPS"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOo-wB-kmc">
-                                <rect key="frame" x="352" y="141" width="36" height="51"/>
+                                <rect key="frame" x="352" y="141" width="36" height="52.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="36" id="g7T-Mg-eUZ"/>
                                 </constraints>
@@ -2206,8 +2206,8 @@ your body and others’s bodies.</string>
                                 <rect key="frame" x="20" y="205" width="394" height="54"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWf-U8-k4A">
-                                        <rect key="frame" x="10" y="12" width="46" height="22"/>
-                                        <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
+                                        <rect key="frame" x="10" y="7" width="46" height="22"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2220,8 +2220,8 @@ your body and others’s bodies.</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSy-AZ-0Wf">
-                                        <rect key="frame" x="71" y="12" width="46" height="22"/>
-                                        <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
+                                        <rect key="frame" x="69" y="7" width="46" height="22"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2234,8 +2234,8 @@ your body and others’s bodies.</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnF-9K-8Qw">
-                                        <rect key="frame" x="126" y="13" width="46" height="20"/>
-                                        <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
+                                        <rect key="frame" x="126" y="8" width="46" height="20"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2248,8 +2248,8 @@ your body and others’s bodies.</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usK-xr-joa">
-                                        <rect key="frame" x="182" y="12" width="46" height="22"/>
-                                        <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
+                                        <rect key="frame" x="183" y="7" width="46" height="22"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2262,8 +2262,8 @@ your body and others’s bodies.</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2l-Y5-5Ra">
-                                        <rect key="frame" x="237" y="12" width="46" height="22"/>
-                                        <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
+                                        <rect key="frame" x="239" y="7" width="46" height="22"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2276,8 +2276,8 @@ your body and others’s bodies.</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1y-0b-Q2T">
-                                        <rect key="frame" x="291" y="12" width="46" height="22"/>
-                                        <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="22"/>
+                                        <rect key="frame" x="293" y="7" width="46" height="22"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2290,67 +2290,67 @@ your body and others’s bodies.</string>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2cz-hS-iGh">
-                                        <rect key="frame" x="10" y="39" width="48" height="14"/>
+                                        <rect key="frame" x="10" y="34" width="48" height="14"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2w2-2K-Ag7">
-                                        <rect key="frame" x="70" y="39" width="48" height="14"/>
+                                        <rect key="frame" x="68" y="34" width="48" height="14"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4mN-US-bx1">
-                                        <rect key="frame" x="124" y="39" width="48" height="14"/>
+                                        <rect key="frame" x="124" y="34" width="48" height="14"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PdY-XF-ifH">
-                                        <rect key="frame" x="182" y="39" width="48" height="14"/>
+                                        <rect key="frame" x="183" y="34" width="48" height="14"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ekF-6R-Q59">
-                                        <rect key="frame" x="236" y="39" width="48" height="14"/>
+                                        <rect key="frame" x="238" y="34" width="48" height="14"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nFb-B9-lwF">
-                                        <rect key="frame" x="290" y="39" width="48" height="14"/>
+                                        <rect key="frame" x="293" y="34" width="48" height="14"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="PdY-XF-ifH" firstAttribute="centerY" secondItem="2cz-hS-iGh" secondAttribute="centerY" id="0Vw-Xu-24R"/>
-                                    <constraint firstItem="rnF-9K-8Qw" firstAttribute="leading" secondItem="dSy-AZ-0Wf" secondAttribute="trailing" constant="31" id="4Or-f0-WmY"/>
-                                    <constraint firstItem="PdY-XF-ifH" firstAttribute="centerX" secondItem="usK-xr-joa" secondAttribute="centerX" id="5l3-It-Y0y"/>
-                                    <constraint firstItem="4mN-US-bx1" firstAttribute="centerX" secondItem="rnF-9K-8Qw" secondAttribute="centerX" id="7Ul-zm-KXs"/>
+                                    <constraint firstItem="rnF-9K-8Qw" firstAttribute="leading" secondItem="dSy-AZ-0Wf" secondAttribute="trailing" constant="11" id="4Or-f0-WmY"/>
+                                    <constraint firstItem="PdY-XF-ifH" firstAttribute="centerX" secondItem="usK-xr-joa" secondAttribute="centerX" constant="1" id="5l3-It-Y0y"/>
+                                    <constraint firstItem="4mN-US-bx1" firstAttribute="centerX" secondItem="rnF-9K-8Qw" secondAttribute="centerX" constant="-1" id="7Ul-zm-KXs"/>
                                     <constraint firstItem="ekF-6R-Q59" firstAttribute="centerX" secondItem="o2l-Y5-5Ra" secondAttribute="centerX" id="9nr-ce-CPo"/>
-                                    <constraint firstItem="2w2-2K-Ag7" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="39" id="Amb-L3-614"/>
+                                    <constraint firstItem="2w2-2K-Ag7" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="34" id="Amb-L3-614"/>
                                     <constraint firstItem="2w2-2K-Ag7" firstAttribute="centerY" secondItem="2cz-hS-iGh" secondAttribute="centerY" id="BDf-Q2-EtO"/>
                                     <constraint firstItem="c1y-0b-Q2T" firstAttribute="centerY" secondItem="DWf-U8-k4A" secondAttribute="centerY" id="Bka-SW-jjc"/>
                                     <constraint firstItem="ekF-6R-Q59" firstAttribute="centerY" secondItem="2cz-hS-iGh" secondAttribute="centerY" id="C9R-7s-35L"/>
-                                    <constraint firstItem="c1y-0b-Q2T" firstAttribute="leading" secondItem="o2l-Y5-5Ra" secondAttribute="trailing" constant="31" id="DHl-JL-7R3"/>
+                                    <constraint firstItem="c1y-0b-Q2T" firstAttribute="leading" secondItem="o2l-Y5-5Ra" secondAttribute="trailing" constant="11" id="DHl-JL-7R3"/>
                                     <constraint firstItem="rnF-9K-8Qw" firstAttribute="centerY" secondItem="DWf-U8-k4A" secondAttribute="centerY" id="Dqy-qh-qwO"/>
-                                    <constraint firstItem="2cz-hS-iGh" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="39" id="EQT-EG-Uzm"/>
-                                    <constraint firstItem="dSy-AZ-0Wf" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="12" id="IJi-tW-WAo"/>
+                                    <constraint firstItem="2cz-hS-iGh" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="34" id="EQT-EG-Uzm"/>
+                                    <constraint firstItem="dSy-AZ-0Wf" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="7" id="IJi-tW-WAo"/>
                                     <constraint firstItem="o2l-Y5-5Ra" firstAttribute="centerY" secondItem="DWf-U8-k4A" secondAttribute="centerY" id="JhX-hQ-fIB"/>
                                     <constraint firstItem="usK-xr-joa" firstAttribute="centerY" secondItem="DWf-U8-k4A" secondAttribute="centerY" id="KEU-Gd-qXm"/>
                                     <constraint firstItem="nFb-B9-lwF" firstAttribute="top" secondItem="c1y-0b-Q2T" secondAttribute="bottom" constant="5" id="O8S-CP-TwJ"/>
                                     <constraint firstItem="dSy-AZ-0Wf" firstAttribute="centerY" secondItem="DWf-U8-k4A" secondAttribute="centerY" id="P1N-Qa-r4V"/>
                                     <constraint firstItem="4mN-US-bx1" firstAttribute="centerY" secondItem="2cz-hS-iGh" secondAttribute="centerY" id="Pn3-se-QK9"/>
                                     <constraint firstItem="2w2-2K-Ag7" firstAttribute="centerX" secondItem="dSy-AZ-0Wf" secondAttribute="centerX" id="QPg-rm-yTO"/>
-                                    <constraint firstItem="4mN-US-bx1" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="39" id="Vgr-HO-A32"/>
-                                    <constraint firstItem="c1y-0b-Q2T" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="12" id="a1h-Az-TxV"/>
-                                    <constraint firstItem="2cz-hS-iGh" firstAttribute="centerX" secondItem="DWf-U8-k4A" secondAttribute="centerX" id="a7e-h1-yGK"/>
-                                    <constraint firstItem="PdY-XF-ifH" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="39" id="cUJ-gP-ZbW"/>
-                                    <constraint firstItem="o2l-Y5-5Ra" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="12" id="dOx-UU-vY5"/>
-                                    <constraint firstItem="rnF-9K-8Qw" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="13" id="eAj-hp-aOW"/>
+                                    <constraint firstItem="4mN-US-bx1" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="34" id="Vgr-HO-A32"/>
+                                    <constraint firstItem="c1y-0b-Q2T" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="7" id="a1h-Az-TxV"/>
+                                    <constraint firstItem="2cz-hS-iGh" firstAttribute="centerX" secondItem="DWf-U8-k4A" secondAttribute="centerX" constant="1" id="a7e-h1-yGK"/>
+                                    <constraint firstItem="PdY-XF-ifH" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="34" id="cUJ-gP-ZbW"/>
+                                    <constraint firstItem="o2l-Y5-5Ra" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="7" id="dOx-UU-vY5"/>
+                                    <constraint firstItem="rnF-9K-8Qw" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="8" id="eAj-hp-aOW"/>
                                     <constraint firstAttribute="height" constant="54" id="eSC-bn-eG6"/>
-                                    <constraint firstItem="o2l-Y5-5Ra" firstAttribute="leading" secondItem="usK-xr-joa" secondAttribute="trailing" constant="31" id="m5Y-Ld-G7T"/>
-                                    <constraint firstItem="dSy-AZ-0Wf" firstAttribute="leading" secondItem="DWf-U8-k4A" secondAttribute="trailing" constant="31" id="qBM-CC-VqN"/>
-                                    <constraint firstItem="usK-xr-joa" firstAttribute="leading" secondItem="rnF-9K-8Qw" secondAttribute="trailing" constant="31" id="ryq-hX-h3Q"/>
-                                    <constraint firstItem="ekF-6R-Q59" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="39" id="u3p-D3-bD2"/>
-                                    <constraint firstItem="usK-xr-joa" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="12" id="wrC-mf-yps"/>
+                                    <constraint firstItem="o2l-Y5-5Ra" firstAttribute="leading" secondItem="usK-xr-joa" secondAttribute="trailing" constant="11" id="m5Y-Ld-G7T"/>
+                                    <constraint firstItem="dSy-AZ-0Wf" firstAttribute="leading" secondItem="DWf-U8-k4A" secondAttribute="trailing" constant="11" id="qBM-CC-VqN"/>
+                                    <constraint firstItem="usK-xr-joa" firstAttribute="leading" secondItem="rnF-9K-8Qw" secondAttribute="trailing" constant="11" id="ryq-hX-h3Q"/>
+                                    <constraint firstItem="ekF-6R-Q59" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="34" id="u3p-D3-bD2"/>
+                                    <constraint firstItem="usK-xr-joa" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="7" id="wrC-mf-yps"/>
                                     <constraint firstAttribute="width" constant="394" id="wvQ-4v-gJ0"/>
                                     <constraint firstItem="nFb-B9-lwF" firstAttribute="centerX" secondItem="c1y-0b-Q2T" secondAttribute="centerX" id="yYS-S3-Viu"/>
                                     <constraint firstItem="nFb-B9-lwF" firstAttribute="centerY" secondItem="2cz-hS-iGh" secondAttribute="centerY" id="yZV-oa-WQ7"/>
-                                    <constraint firstItem="nFb-B9-lwF" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="39" id="ye8-80-DtR"/>
-                                    <constraint firstItem="DWf-U8-k4A" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="12" id="zmy-eb-WpL"/>
+                                    <constraint firstItem="nFb-B9-lwF" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="34" id="ye8-80-DtR"/>
+                                    <constraint firstItem="DWf-U8-k4A" firstAttribute="top" secondItem="ymt-6W-zKb" secondAttribute="top" constant="7" id="zmy-eb-WpL"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Aen-nI-X0u"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ymt-6W-zKb"/>
                             </scrollView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u6C-90-pJx">
-                                <rect key="frame" x="0.0" y="274" width="414" height="586"/>
+                                <rect key="frame" x="0.0" y="275.5" width="414" height="586"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="jtl-uh-CSj"/>
@@ -2379,7 +2379,7 @@ your body and others’s bodies.</string>
                                                         <fragment content="Label">
                                                             <attributes>
                                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                                <font key="NSFont" size="18" name="Poppins-Light"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
@@ -2388,7 +2388,7 @@ your body and others’s bodies.</string>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="y9q-2C-HRN">
                                                     <rect key="frame" x="36" y="85" width="326" height="15"/>
-                                                    <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-LightItalic" family="Poppins" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2403,10 +2403,10 @@ your body and others’s bodies.</string>
                                                         <constraint firstAttribute="height" constant="18" id="YIn-kP-87G"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="eqz-fq-sWa">
-                                                    <rect key="frame" x="36" y="21" width="330" height="58"/>
-                                                    <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="30"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Build Self Confidence" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="eqz-fq-sWa">
+                                                    <rect key="frame" x="36" y="6" width="332" height="80"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="30"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -2419,24 +2419,24 @@ your body and others’s bodies.</string>
                                                 <constraint firstItem="pdk-F6-xZK" firstAttribute="height" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="0.421488" id="Lq7-zs-932"/>
                                                 <constraint firstItem="cSJ-OP-IOa" firstAttribute="top" secondItem="vxG-uB-0dh" secondAttribute="bottom" constant="12" id="M2q-4C-drs"/>
                                                 <constraint firstAttribute="trailing" secondItem="9o9-F3-Tem" secondAttribute="trailing" constant="20" id="Naw-EN-2dI"/>
-                                                <constraint firstItem="eqz-fq-sWa" firstAttribute="top" secondItem="xtB-u9-g6l" secondAttribute="top" constant="21" id="WPy-ak-IpQ"/>
+                                                <constraint firstItem="eqz-fq-sWa" firstAttribute="top" secondItem="xtB-u9-g6l" secondAttribute="top" constant="6" id="WPy-ak-IpQ"/>
                                                 <constraint firstItem="pdk-F6-xZK" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" constant="36" id="Wfr-iE-G7M"/>
                                                 <constraint firstItem="pdk-F6-xZK" firstAttribute="width" secondItem="xtB-u9-g6l" secondAttribute="width" multiplier="0.828087" id="Zu2-ZR-PMh"/>
                                                 <constraint firstItem="y9q-2C-HRN" firstAttribute="width" secondItem="xtB-u9-g6l" secondAttribute="width" multiplier="0.789346" id="a3s-iS-6IX"/>
                                                 <constraint firstItem="9o9-F3-Tem" firstAttribute="height" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="0.369146" id="akv-7a-afT"/>
-                                                <constraint firstItem="y9q-2C-HRN" firstAttribute="top" secondItem="eqz-fq-sWa" secondAttribute="bottom" constant="6" id="cRB-8A-IN0"/>
+                                                <constraint firstItem="y9q-2C-HRN" firstAttribute="top" secondItem="eqz-fq-sWa" secondAttribute="bottom" constant="-1" id="cRB-8A-IN0"/>
                                                 <constraint firstItem="cSJ-OP-IOa" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" id="d6D-w3-wea"/>
                                                 <constraint firstItem="vxG-uB-0dh" firstAttribute="width" secondItem="xtB-u9-g6l" secondAttribute="width" multiplier="0.196126" id="eHa-1r-eox"/>
                                                 <constraint firstItem="vxG-uB-0dh" firstAttribute="top" secondItem="pdk-F6-xZK" secondAttribute="bottom" constant="-8" id="el3-nD-KkK"/>
-                                                <constraint firstItem="eqz-fq-sWa" firstAttribute="width" secondItem="xtB-u9-g6l" secondAttribute="width" multiplier="0.799031" id="g1Y-aS-6Ep"/>
+                                                <constraint firstItem="eqz-fq-sWa" firstAttribute="width" secondItem="xtB-u9-g6l" secondAttribute="width" multiplier="0.799031" constant="2.0001969999999574" id="g1Y-aS-6Ep"/>
                                                 <constraint firstItem="eqz-fq-sWa" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" constant="36" id="gHA-Fb-WyI"/>
                                                 <constraint firstItem="pdk-F6-xZK" firstAttribute="top" secondItem="9o9-F3-Tem" secondAttribute="bottom" constant="-2" id="hgd-JF-oI2"/>
                                                 <constraint firstAttribute="trailing" secondItem="cSJ-OP-IOa" secondAttribute="trailing" id="kAL-X0-VwJ"/>
-                                                <constraint firstItem="eqz-fq-sWa" firstAttribute="height" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="0.15978" id="oZe-xh-otH"/>
+                                                <constraint firstItem="eqz-fq-sWa" firstAttribute="height" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="0.15978" constant="21.999859999999998" id="oZe-xh-otH"/>
                                                 <constraint firstAttribute="bottom" secondItem="cSJ-OP-IOa" secondAttribute="bottom" constant="24" id="sV8-6E-ru4"/>
                                                 <constraint firstItem="y9q-2C-HRN" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" constant="36" id="uLJ-En-nv0"/>
                                                 <constraint firstItem="vxG-uB-0dh" firstAttribute="height" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="0.0881543" id="wSb-QO-IPr"/>
-                                                <constraint firstItem="eqz-fq-sWa" firstAttribute="trailing" secondItem="pdk-F6-xZK" secondAttribute="trailing" constant="-12" id="zOH-2m-1VX"/>
+                                                <constraint firstItem="eqz-fq-sWa" firstAttribute="trailing" secondItem="pdk-F6-xZK" secondAttribute="trailing" constant="-10" id="zOH-2m-1VX"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2474,7 +2474,7 @@ your body and others’s bodies.</string>
                                                         <fragment content="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
                                                             <attributes>
                                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" metaFont="miniSystem"/>
+                                                                <font key="NSFont" size="9" name="Poppins-ExtraLightItalic"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
@@ -2510,8 +2510,8 @@ your body and others’s bodies.</string>
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCe-mq-vgd">
-                                <rect key="frame" x="22" y="141" width="145" height="49"/>
-                                <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
+                                <rect key="frame" x="22" y="141" width="149" height="50.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2527,7 +2527,7 @@ your body and others’s bodies.</string>
                             <constraint firstItem="ZS4-u3-Tl0" firstAttribute="leading" secondItem="9Ch-hi-KT7" secondAttribute="leading" constant="20" id="AsW-yc-bW2"/>
                             <constraint firstItem="MOo-wB-kmc" firstAttribute="top" secondItem="mCe-mq-vgd" secondAttribute="top" id="Ht0-60-ABg"/>
                             <constraint firstItem="9Ch-hi-KT7" firstAttribute="trailing" secondItem="u6C-90-pJx" secondAttribute="trailing" id="ID5-bh-Cva"/>
-                            <constraint firstItem="RZj-ub-Qfp" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="-27" id="Lgw-CJ-BHB"/>
+                            <constraint firstItem="RZj-ub-Qfp" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="-31" id="Lgw-CJ-BHB"/>
                             <constraint firstItem="ZS4-u3-Tl0" firstAttribute="top" secondItem="MOo-wB-kmc" secondAttribute="bottom" constant="26" id="Qf8-Hx-BiM"/>
                             <constraint firstItem="u6C-90-pJx" firstAttribute="top" secondItem="ZS4-u3-Tl0" secondAttribute="bottom" constant="2" id="Y3f-RT-jW6"/>
                             <constraint firstItem="mCe-mq-vgd" firstAttribute="top" secondItem="9Ch-hi-KT7" secondAttribute="top" constant="53" id="aDc-kV-piZ"/>
@@ -2572,7 +2572,7 @@ your body and others’s bodies.</string>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Interests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0m-rX-KH1">
                                 <rect key="frame" x="22" y="32" width="372" height="40.5"/>
-                                <fontDescription key="fontDescription" name="NexaW01-Heavy" family="NexaW01-Heavy" pointSize="38"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2581,7 +2581,7 @@ your body and others’s bodies.</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="OYB-ej-wEi"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2596,7 +2596,7 @@ your body and others’s bodies.</string>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFX-az-RWs">
                                                         <rect key="frame" x="14" y="118" width="386" height="76"/>
-                                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="Movies and Series" backgroundImage="nonselezionato">
@@ -2611,7 +2611,7 @@ your body and others’s bodies.</string>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJ3-P7-iDQ">
                                                         <rect key="frame" x="14" y="216" width="386" height="76"/>
-                                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="Articles" backgroundImage="nonselezionato">
@@ -2626,7 +2626,7 @@ your body and others’s bodies.</string>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veU-J5-GIh">
                                                         <rect key="frame" x="14" y="314" width="386" height="76"/>
-                                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="Books" backgroundImage="nonselezionato">
@@ -2641,7 +2641,7 @@ your body and others’s bodies.</string>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTP-eF-fNy">
                                                         <rect key="frame" x="14" y="20" width="386" height="76"/>
-                                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="TEDx" backgroundImage="nonselezionato">
@@ -2656,7 +2656,7 @@ your body and others’s bodies.</string>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0L-qT-zEJ">
                                                         <rect key="frame" x="14" y="510" width="386" height="76"/>
-                                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="Podcast" backgroundImage="nonselezionato">
@@ -2671,7 +2671,7 @@ your body and others’s bodies.</string>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Pu-dL-LBl">
                                                         <rect key="frame" x="14" y="412" width="386" height="76"/>
-                                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="Inspiring People" backgroundImage="nonselezionato">
