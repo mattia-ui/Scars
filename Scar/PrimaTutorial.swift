@@ -205,6 +205,24 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         sqlite3_prepare(db, queryString1, -1, &stmt, nil)
         sqlite3_step(stmt)
         print("Saved successfully")
+        
+        //Elimina Tabella. Quando Spostiamo le due funzioni successive nel tutorial non serve piu
+               if sqlite3_exec(db, "DROP TABLE Lingua", nil, nil, nil) != SQLITE_OK {
+                   let errmsg = String(cString: sqlite3_errmsg(db)!)
+                   print("error creating table: \(errmsg)")
+               }
+                          
+        //Crea Tabella. Per valore che dice se mostrare Weekly
+        if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS Lingua (id INTEGER PRIMARY KEY AUTOINCREMENT,lingua TEXT)", nil, nil, nil) != SQLITE_OK {
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error creating table: \(errmsg)")
+        }
+                           
+        //Inserisce Valore. Va nel tutorial
+        let queryString2 = "INSERT INTO Lingua(lingua) VALUES ('ita');"
+        sqlite3_prepare(db, queryString2, -1, &stmt, nil)
+        sqlite3_step(stmt)
+        print("Saved successfully")
     }
     
     
