@@ -24,6 +24,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var frase3: UILabel!
     @IBOutlet weak var domande3: UILabel!
     @IBOutlet weak var button3: UIButton!
+    var text:[String] = []
     
     
     var db: OpaquePointer?
@@ -246,7 +247,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
         
-        
+        text = ENG.textOnPrimaTutorial
                 
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
 
@@ -401,12 +402,14 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
                     
+        var ins: [String] = ENG.insights
+        
         if indexPath.row == 0 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as? Cella1 else
             {
                 return UITableViewCell()
             }
-            cell.Hi.text = "Hi, \(String(describing: nome1.text).dropFirst(10).dropLast(2))!"
+            cell.Hi.text = "\(text[0]) \(String(describing: nome1.text).dropFirst(10).dropLast(2))!"
             cell.selectionStyle = .none
 
             return cell
@@ -415,10 +418,10 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             {
                 return UITableViewCell()
             }
-            cell.button.setTitle("TEDx", for: .normal)
+            cell.button.setTitle(ins[0], for: .normal)
             cell.button.isSelected = false
             for i in 0...selected.count - 1 {
-                if(selected[i] == "TEDx"){
+                if(selected[i] == ins[0]){
                     cell.button.isSelected = true
                 }
             }
@@ -431,10 +434,10 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             {
                 return UITableViewCell()
             }
-            cell.button.setTitle("Movies and Series", for: .normal)
+            cell.button.setTitle(ins[1], for: .normal)
             cell.button.isSelected = false
             for i in 0...selected.count - 1 {
-                if(selected[i] == "Movies and Series"){
+                if(selected[i] == ins[1]){
                     cell.button.isSelected = true
                 }
             }
@@ -447,10 +450,10 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             {
                 return UITableViewCell()
             }
-            cell.button.setTitle("Articles", for: .normal)
+            cell.button.setTitle(ins[2], for: .normal)
             cell.button.isSelected = false
             for i in 0...selected.count - 1 {
-                if(selected[i] == "Articles"){
+                if(selected[i] == ins[2]){
                     cell.button.isSelected = true
                 }
             }
@@ -463,10 +466,10 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             {
                 return UITableViewCell()
             }
-            cell.button.setTitle("Books", for: .normal)
+            cell.button.setTitle(ins[3], for: .normal)
             cell.button.isSelected = false
             for i in 0...selected.count - 1 {
-                if(selected[i] == "Books"){
+                if(selected[i] == ins[3]){
                     cell.button.isSelected = true
                 }
             }
@@ -479,10 +482,10 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             {
                 return UITableViewCell()
             }
-            cell.button.setTitle("Inspiring People", for: .normal)
+            cell.button.setTitle(ins[4], for: .normal)
             cell.button.isSelected = false
             for i in 0...selected.count - 1 {
-                if(selected[i] == "Inspiring People"){
+                if(selected[i] == ins[4]){
                     cell.button.isSelected = true
                 }
             }
@@ -495,10 +498,10 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             {
                 return UITableViewCell()
             }
-            cell.button.setTitle("Podcasts", for: .normal)
+            cell.button.setTitle(ins[5], for: .normal)
             cell.button.isSelected = false
             for i in 0...selected.count - 1 {
-                if(selected[i] == "Podcasts"){
+                if(selected[i] == ins[5]){
                     cell.button.isSelected = true
                 }
             }
@@ -551,7 +554,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
               }
             
               guard let results = response?["results"] as? [[String: Any]] else {
-                  let err = NSError(domain: "Произошла ошибка", code: 0, userInfo: nil)
+                  let err = NSError(domain: "Nope", code: 0, userInfo: nil)
                   completion([], err)
                   return
               }

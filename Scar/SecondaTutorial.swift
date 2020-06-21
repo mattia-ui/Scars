@@ -16,30 +16,30 @@ class SecondaTutorial : UIViewController {
     @IBOutlet weak var TiziaBionda: UIImageView!
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var hashtag: UIImageView!
+    var text:[String] = []
     
     var cont = 0
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-       var i = 1
+        var i = 1
         Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { timer in
             if(i == 80){
                 i = 1
             }
             self.hashtag.image = UIImage(named: "hashtag_\(i)")
             i += 1
-            
         }
-        
-        
-        
     }
     
     override func viewDidLoad() {
         overrideUserInterfaceStyle = .light
+        
+        text = ENG.textOnSecondaTutorial
+        
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
                view.addGestureRecognizer(tap)
-        TerzaLabel.text = "By telling the story of your indelible sign you can change the way you look at your body and others’s bodies."
+        TerzaLabel.text = text[0]
         TiziaBionda.alpha = 0
         button.alpha = 0
         
@@ -60,8 +60,8 @@ class SecondaTutorial : UIViewController {
                 self.TerzaLabel.alpha = 0
             }
             PrimaLabel.text = "#skinsugi"
-            SecondaLabel.text = "will take care of your story"
-            TerzaLabel.text = "Find out how to create your unique masterpiece."
+            SecondaLabel.text = text[1]
+            TerzaLabel.text = text[2]
             
             UIView.animate(withDuration: 0.2){
             self.PrimaLabel.alpha = 1
@@ -77,9 +77,9 @@ class SecondaTutorial : UIViewController {
                 self.TiziaViola.alpha = 0
                self.hashtag.alpha = 0
 //            }
-            PrimaLabel.text = "Time to explore"
-            SecondaLabel.text = "Activities and Insights"
-            TerzaLabel.text = "We also provided a lot of interesting tips and inspirational contents for you!"
+            PrimaLabel.text = text[3]
+            SecondaLabel.text = text[4]
+            TerzaLabel.text = text[5]
 //            UIView.animate(withDuration: 0.2){
 //                self.PrimaLabel.alpha = 1
 //                self.SecondaLabel.alpha = 1

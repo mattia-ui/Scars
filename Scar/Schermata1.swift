@@ -21,16 +21,6 @@ struct WeeklyStruct {
     var image: String
 }
 
-var weeklyInfo: [WeeklyStruct] = [
-    WeeklyStruct(title:"Read a good book",descr: "Did you know that reading reduces stress levels, improves mood and is very good for your mind? What are you waiting for? Choose something you like and start reading it.", image:"Weekly1"),
-    WeeklyStruct(title:"Follow a passion, dedicate yourself to a hobby",descr: "If you love something, why not do it? There is no room for criticism here, there is only you and your passions. Be positive, be creative and enjoy it.", image:"Weekly2"),
-    WeeklyStruct(title:"Try new things, get out of your comfort zone",descr: "Did you know that a comfort zone is a self-imposed boundary that a person refuses to cross? What are you waiting for? Try new flavors, wear new colors and do something you've never done before!", image:"Weekly3"),
-    WeeklyStruct(title:"Become aware of your difficulties",descr: "A. Einstein said: ‘If you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid.’ Accept your limits but after a failure always be ready to rediscover yourself again.", image:"Weekly4"),  WeeklyStruct(title:"List the things you like about your body",descr: "Today remember that there is no one else in the world who is just like you. The things that make you unique are what make you special. Think about what you love most about yourself and be proud of it!", image:"Weekly5"),
-    WeeklyStruct(title:"Stay in contact with nature",descr: "Did you know that contact with nature affects our relationship with other people and makes us less irritable? So today turn off your phone for a while and get outside. ", image:"Weekly6"),
-    WeeklyStruct(title:"Surround yourself with positive people and talk with them",descr: "Today try to avoid critical and negative people who have a problem for each solution. Let go of negativity, surround yourself by positive people, make pancakes and enjoy!", image:"Weekly7"),
-    WeeklyStruct(title:"Make a list or rethink your achievements",descr: "When you set yourself a goal to reach, it seems unreachable. Today make a list of all the obstacles you have overcome, you will discover that they do not even have half the strength you have!", image:"Weekly8")
-]
-
 let NotificationKey2 = "co.seanallen.Side2"
 
 class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
@@ -44,6 +34,8 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     @IBOutlet weak var nome: UILabel!
     @IBOutlet weak var imagineOrario: UIImageView!
     @IBOutlet weak var numeroWeek: UILabel!
+    var weeklyInfo: [WeeklyStruct] = []
+    var frasiDeStoCazzo : [String] = []
     
     let light = Notification.Name(rawValue: NotificationKey2)
     
@@ -54,8 +46,6 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     func createObservers() {
         NotificationCenter.default.addObserver(self, selector: #selector(Schermata1.update(notification:)), name: light, object: nil)
     }
-    
-    static var frasiDeStoCazzo : [String] = ["Great! The first step is done!","You are in great shape today!","Go up and never stop.","Wow! You are almost halfway there.","Keep it up, goes very well!","Don't give up, you're almost done.","You did it great!" ,"Power! Only one is missing.","You did it great!" , "Well done! See you tomorrow."]
     
     static var allImages: [String] = ["unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked"]
     static var allCardsImages: [String] = ["Card1p","Card2p","Card3p","Card4p","Card5p","Card6p","Card7p","Card8p","Card9p"]
@@ -127,16 +117,16 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         }
         
         switch count {
-            case 1 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[0]
-            case 2 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[1]
-            case 3 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[2]
-            case 4 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[3]
-            case 5 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[4]
-            case 6 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[5]
-            case 7 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[6]
-            case 8 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[7]
-            case 9 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[8]
-            default : spronatiLabel.text = "Start the activities and mark them as done!"
+            case 1 : spronatiLabel.text = frasiDeStoCazzo[0]
+            case 2 : spronatiLabel.text = frasiDeStoCazzo[1]
+            case 3 : spronatiLabel.text = frasiDeStoCazzo[2]
+            case 4 : spronatiLabel.text = frasiDeStoCazzo[3]
+            case 5 : spronatiLabel.text = frasiDeStoCazzo[4]
+            case 6 : spronatiLabel.text = frasiDeStoCazzo[5]
+            case 7 : spronatiLabel.text = frasiDeStoCazzo[6]
+            case 8 : spronatiLabel.text = frasiDeStoCazzo[7]
+            case 9 : spronatiLabel.text = frasiDeStoCazzo[8]
+            default : spronatiLabel.text = frasiDeStoCazzo[9]
         }
     }
     
@@ -150,16 +140,16 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         }
         
         switch count {
-            case 1 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[0]
-            case 2 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[1]
-            case 3 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[2]
-            case 4 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[3]
-            case 5 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[4]
-            case 6 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[5]
-            case 7 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[6]
-            case 8 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[7]
-            case 9 : spronatiLabel.text = Schermata1.frasiDeStoCazzo[8]
-            default : spronatiLabel.text = "Start the activities and mark them as done!"
+            case 1 : spronatiLabel.text = frasiDeStoCazzo[0]
+            case 2 : spronatiLabel.text = frasiDeStoCazzo[1]
+            case 3 : spronatiLabel.text = frasiDeStoCazzo[2]
+            case 4 : spronatiLabel.text = frasiDeStoCazzo[3]
+            case 5 : spronatiLabel.text = frasiDeStoCazzo[4]
+            case 6 : spronatiLabel.text = frasiDeStoCazzo[5]
+            case 7 : spronatiLabel.text = frasiDeStoCazzo[6]
+            case 8 : spronatiLabel.text = frasiDeStoCazzo[7]
+            case 9 : spronatiLabel.text = frasiDeStoCazzo[8]
+            default : spronatiLabel.text = frasiDeStoCazzo[9]
         }
     }
     
@@ -167,6 +157,10 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
 
+        weeklyInfo = ENG.Schermata1weeklyInfo
+        frasiDeStoCazzo = ENG.Schermata1frasiDeStoCazzo
+        let textSaluti = ENG.Schermata1Saluti
+        
         overrideUserInterfaceStyle = .light   
         UserDefaults.standard.set(true, forKey: "LaunchedBefore")
         let layout = UICollectionViewFlowLayout()
@@ -182,13 +176,13 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
                 
         if(hour2 >= 14 && hour2 < 20){
             imagineOrario.image = UIImage(named: "Afternoon")
-            orarioSetUp.text = "Good Afternoon,"
+            orarioSetUp.text = textSaluti[0]
         } else if (hour2 >= 20 || hour2 < 5){
             imagineOrario.image = UIImage(named: "Evening")
-            orarioSetUp.text = "Good Evening,"
+            orarioSetUp.text = textSaluti[1]
         }else{
             imagineOrario.image = UIImage(named: "Morning")
-            orarioSetUp.text = "Good Morning,"
+            orarioSetUp.text = textSaluti[2]
         }
                 
         //Si connette al DB

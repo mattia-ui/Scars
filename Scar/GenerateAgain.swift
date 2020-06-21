@@ -19,11 +19,14 @@ class GenerateAgain: UIViewController {
     @IBOutlet weak var lab3: UILabel!
     @IBOutlet weak var lab4: UILabel!
     @IBOutlet weak var lab5: UILabel!
+    var text:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 //        imageNav.layer.borderWidth = 0.5
 //        imageNav.layer.borderColor = CGColor(srgbRed: 0.46, green: 0.41, blue: 0.51, alpha: 1)
+        
+        text = ENG.textOnGenerateAgain
         
         img.layer.borderWidth = 0.4
         img.layer.masksToBounds = true
@@ -37,70 +40,70 @@ class GenerateAgain: UIViewController {
         if(view.frame.width == 375){
             fontSize = 18
         }
-        var  normalText = "The pattern in the large circle describes\n"
+        var  normalText = text[0]
                 var attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                 let attributedString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
                 
-                var boldText = "your personality "
+                var boldText = text[1]
                      attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: fontSize)]
                    let attributedString2 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
                 attributedString.append(attributedString2)
 
 
-                        normalText = "and the color inside \nrepresents "
+                        normalText = text[2]
                        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                         let attributedString20 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
 
                        attributedString.append(attributedString20)
                        
-                        boldText = "the way you want to look\n"
+                        boldText = text[3]
                         attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: fontSize)]
                        
                        let attributedString3 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
                        
                        attributedString.append(attributedString3)
                  
-                normalText = "from the outside.\nThe two shapes on the outside recount\n"
+                normalText = text[4]
                     attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                   let attributedString21 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
 
                  attributedString.append(attributedString21)
                 
-                boldText = "the way you would like to be "
+                boldText = text[5]
                  attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: fontSize)]
                 
                 let attributedString4 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
                 
                 attributedString.append(attributedString4)
                 
-                normalText = "and the \ntexture inside represents "
+                normalText = text[6]
                     attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                   let attributedString22 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
 
                  attributedString.append(attributedString22)
                 
                 
-                boldText = "the \nperception you have of your sign"
+                boldText = text[7]
                  attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: fontSize)]
                 
                 let attributedString6 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
                 
                 attributedString.append(attributedString6)
                 
-                normalText = ", that\nis in gold and occupies the center of\nthe image, as "
+                normalText = text[8]
                         attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                          let attributedString23 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
 
                         attributedString.append(attributedString23)
                
-               boldText = "Kintsugi art "
+               boldText = text[9]
                         attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: fontSize)]
                        
                        let attributedString7 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
                        
                        attributedString.append(attributedString7)
                
-               normalText = "teaches!"
+               normalText = text[10]
                                attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                                 let attributedString24 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
 
@@ -109,11 +112,11 @@ class GenerateAgain: UIViewController {
             
 
             
-            boldText = "Circle"
+            boldText = text[11]
                        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: fontSize)]
                       let attributedString9 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
-                       normalText = ": empathic - sociable"
+                       normalText = text[12]
                         attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                         let attributedString30 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
 
@@ -121,11 +124,11 @@ class GenerateAgain: UIViewController {
                       
                       lab1.attributedText = attributedString9
             
-            boldText = "Zig Zag"
+            boldText = text[13]
                        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: fontSize)]
                       let attributedString10 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
-                       normalText = ": creative - aspiring"
+                       normalText = text[14]
                        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                         let attributedString31 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
 
@@ -133,11 +136,11 @@ class GenerateAgain: UIViewController {
                       
                       lab2.attributedText = attributedString10
             
-            boldText = "Triangle"
+            boldText = text[15]
                        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: fontSize)]
                       let attributedString11 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
-                       normalText = ": leader - focused"
+                       normalText = text[16]
                       attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                         let attributedString32 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
 
@@ -145,11 +148,11 @@ class GenerateAgain: UIViewController {
                       
                       lab3.attributedText = attributedString11
             
-            boldText = "Rectangle"
+            boldText = text[17]
                        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: fontSize)]
                       let attributedString12 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
-                       normalText = ": curious - confused"
+                       normalText = text[18]
                        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                         let attributedString33 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
 
@@ -157,11 +160,11 @@ class GenerateAgain: UIViewController {
                       
                       lab4.attributedText = attributedString12
             
-            boldText = "Square"
+            boldText = text[19]
                        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: fontSize)]
                       let attributedString13 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
-                       normalText = ": careful - analytic"
+                       normalText = text[20]
                        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                         let attributedString34 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
 
@@ -172,7 +175,7 @@ class GenerateAgain: UIViewController {
     }
     @IBAction func saveImg(_ sender: UIButton) {
         UIImageWriteToSavedPhotosAlbum(img.image!, nil, nil, nil)
-        let ac = UIAlertController(title: "Masterpiece saved!", message: "Your Masterpiece was copied successfully", preferredStyle: .alert)
+        let ac = UIAlertController(title: "Masterpiece saved!", message: text[21], preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
 

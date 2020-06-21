@@ -11,31 +11,58 @@ import CloudKit
 
 class ChooseTexture: UIViewController  {
    
+    var text: [String] = []
+    var texture: [String] = []
+    
     override func viewDidLoad() {
         overrideUserInterfaceStyle = .light
         nex.isEnabled = false
         
-       var boldText = "Touch "
+        text = ENG.textOnChooseTexture
+        texture = ENG.Texture
+        
+       var boldText = text[0]
          var attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: 20)]
         let attributedString = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
-       let  normalText = "your indelible sign, which of\nthese textures "
-        let normalString = NSMutableAttributedString(string:normalText)
+        var  normalText = text[1]
+        var normalString = NSMutableAttributedString(string:normalText)
 
         attributedString.append(normalString)
         
-         boldText = "reminds you of it? "
+         boldText = text[2]
          attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: 20)]
         
         let attributedString2 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
         
         attributedString.append(attributedString2)
                
-               label.attributedText = attributedString
+        label.attributedText = attributedString
         
+        normalText = text[3]
+        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
+        normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
+        sea.setAttributedTitle(normalString, for: .normal)
         
+        normalText = text[4]
+        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
+        normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
+        cratere.setAttributedTitle(normalString, for: .normal)
         
+        normalText = text[5]
+        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
+        normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
+        texile.setAttributedTitle(normalString, for: .normal)
         
+        normalText = text[6]
+        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
+        normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
+        marble.setAttributedTitle(normalString, for: .normal)
+               
+        normalText = text[7]
+        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
+        normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
+        wood.setAttributedTitle(normalString, for: .normal)
         
     }
 
@@ -166,7 +193,7 @@ class ChooseTexture: UIViewController  {
             cratere.isSelected = false
             marble.isSelected = false
             nex.isEnabled = true
-            ChooseTexture.texture1 = "sea"
+            ChooseTexture.texture1 = texture[0]
             
         }
     }
@@ -182,7 +209,7 @@ class ChooseTexture: UIViewController  {
             cratere.isSelected = false
             marble.isSelected = false
             nex.isEnabled = true
-            ChooseTexture.texture1 = "wood"
+            ChooseTexture.texture1 = texture[1]
         }
     }
     
@@ -197,7 +224,7 @@ class ChooseTexture: UIViewController  {
             cratere.isSelected = false
             marble.isSelected = false
             nex.isEnabled = true
-            ChooseTexture.texture1 = "texile"
+            ChooseTexture.texture1 = texture[2]
         }
     }
     
@@ -212,7 +239,7 @@ class ChooseTexture: UIViewController  {
             cratere.isSelected = true
             marble.isSelected = false
             nex.isEnabled = true
-            ChooseTexture.texture1 = "cratere"
+            ChooseTexture.texture1 = texture[3]
         }
     }
     
@@ -227,7 +254,7 @@ class ChooseTexture: UIViewController  {
             cratere.isSelected = false
             marble.isSelected = true
             nex.isEnabled = true
-            ChooseTexture.texture1 = "marble"
+            ChooseTexture.texture1 = texture[4]
         }
     }
 }

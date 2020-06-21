@@ -124,6 +124,12 @@ class Collage: UIViewController, UITextFieldDelegate  {
     var imgPrincipale:UIImage?
     var nomeImgPrincipale:String!
     var imgSecondaria:UIImage?
+    
+    var text: [String] = []
+    var shape: [String] = []
+    var palette: [String] = []
+    var texture: [String] = []
+
 
     let dataBase = CKContainer.default().publicCloudDatabase
         
@@ -141,12 +147,16 @@ class Collage: UIViewController, UITextFieldDelegate  {
         tapgesture.link = "https://medium.com/@skinsugi/the-ancient-art-of-kintsugi-e6ed203ad939"
         self.mediumLink.addGestureRecognizer(tapgesture)
         
-        if(ChooseShape.shape1 == "square"){
-            if(ChoosePalette.color == "cool"){
+        shape = ENG.Shape
+        palette = ENG.Palette
+        texture = ENG.Texture
+        
+        if(ChooseShape.shape1 == shape[0]){
+            if(ChoosePalette.color == palette[1]){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].warmSquare[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].warmSquare[randomInt].name
-            } else if(ChoosePalette.color == "warm"){
+            } else if(ChoosePalette.color == palette[0]){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].coolSquare[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].coolSquare[randomInt].name
@@ -155,12 +165,12 @@ class Collage: UIViewController, UITextFieldDelegate  {
                 imgPrincipale = UIImage(named: structBackImageType[0].neutralSquare[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].neutralSquare[randomInt].name
             }
-        } else if(ChooseShape.shape1 == "circle"){
-            if(ChoosePalette.color == "cool"){
+        } else if(ChooseShape.shape1 == shape[1]){
+            if(ChoosePalette.color == palette[1]){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].warmCircle[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].warmCircle[randomInt].name
-            } else if(ChoosePalette.color == "warm"){
+            } else if(ChoosePalette.color == palette[0]){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].coolCircle[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].coolCircle[randomInt].name
@@ -169,12 +179,12 @@ class Collage: UIViewController, UITextFieldDelegate  {
                 imgPrincipale = UIImage(named: structBackImageType[0].neutralCircle[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].neutralCircle[randomInt].name
             }
-        } else if(ChooseShape.shape1 == "triangle"){
-            if(ChoosePalette.color == "cool"){
+        } else if(ChooseShape.shape1 == shape[2]){
+            if(ChoosePalette.color == palette[1]){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].warmTriangle[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].warmTriangle[randomInt].name
-            } else if(ChoosePalette.color == "warm"){
+            } else if(ChoosePalette.color == palette[0]){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].coolTriangle[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].coolTriangle[randomInt].name
@@ -183,12 +193,12 @@ class Collage: UIViewController, UITextFieldDelegate  {
                 imgPrincipale = UIImage(named: structBackImageType[0].neutralTriangle[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].neutralTriangle[randomInt].name
             }
-        } else if(ChooseShape.shape1 == "rect"){
-            if(ChoosePalette.color == "cool"){
+        } else if(ChooseShape.shape1 == shape[3]){
+            if(ChoosePalette.color == palette[1]){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].warmRect[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].warmRect[randomInt].name
-            } else if(ChoosePalette.color == "warm"){
+            } else if(ChoosePalette.color == palette[0]){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].coolRect[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].coolRect[randomInt].name
@@ -198,11 +208,11 @@ class Collage: UIViewController, UITextFieldDelegate  {
                 nomeImgPrincipale = structBackImageType[0].neutralRect[randomInt].name
             }
         } else {
-            if(ChoosePalette.color == "cool"){
+            if(ChoosePalette.color == palette[1]){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].warmZigZag[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].warmZigZag[randomInt].name
-            } else if(ChoosePalette.color == "warm"){
+            } else if(ChoosePalette.color == palette[0]){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].coolZigZag[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].coolZigZag[randomInt].name
@@ -215,8 +225,8 @@ class Collage: UIViewController, UITextFieldDelegate  {
 
         
         print(nomeImgPrincipale.dropFirst(0))
-        if(ChooseShape2.shape2 == "square"){
-            if(ChooseTexture.texture1 == "sea"){
+        if(ChooseShape2.shape2 == shape[0]){
+            if(ChooseTexture.texture1 == texture[0]){
                 switch nomeImgPrincipale.dropFirst(0) {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[1].name)
@@ -231,7 +241,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].seaSquare[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "wood"){
+            } else if(ChooseTexture.texture1 == texture[4]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[1].name)
@@ -246,7 +256,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].woodSquare[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "texile"){
+            } else if(ChooseTexture.texture1 == texture[2]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[1].name)
@@ -261,7 +271,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].texileSquare[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "cratere"){
+            } else if(ChooseTexture.texture1 == texture[1]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[1].name)
@@ -276,7 +286,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].cratereSquare[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "marble"){
+            } else if(ChooseTexture.texture1 == texture[3]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[1].name)
@@ -292,8 +302,8 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     default: imgSecondaria = UIImage(named: structTopImageType[0].marbleSquare[11].name)
                 }
             }
-        } else if(ChooseShape2.shape2 == "circle"){
-            if(ChooseTexture.texture1 == "sea"){
+        } else if(ChooseShape2.shape2 == shape[3]){
+            if(ChooseTexture.texture1 == texture[0]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[1].name)
@@ -308,7 +318,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].seaCircle[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "wood"){
+            } else if(ChooseTexture.texture1 == texture[4]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[1].name)
@@ -323,7 +333,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].woodCircle[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "texile"){
+            } else if(ChooseTexture.texture1 == texture[2]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[1].name)
@@ -338,7 +348,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].texileCircle[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "cratere"){
+            } else if(ChooseTexture.texture1 == texture[1]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[1].name)
@@ -353,7 +363,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].cratereCircle[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "marble"){
+            } else if(ChooseTexture.texture1 == texture[3]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[1].name)
@@ -369,8 +379,8 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     default: imgSecondaria = UIImage(named: structTopImageType[0].marbleCircle[11].name)
                 }
             }
-        } else if(ChooseShape2.shape2 == "triangle"){
-            if(ChooseTexture.texture1 == "sea"){
+        } else if(ChooseShape2.shape2 == shape[2]){
+            if(ChooseTexture.texture1 == texture[0]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[1].name)
@@ -385,7 +395,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].seaTriangle[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "wood"){
+            } else if(ChooseTexture.texture1 == texture[4]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[1].name)
@@ -400,7 +410,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].woodTriangle[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "texile"){
+            } else if(ChooseTexture.texture1 == texture[2]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[1].name)
@@ -415,7 +425,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].texileTriangle[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "cratere"){
+            } else if(ChooseTexture.texture1 == texture[1]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[1].name)
@@ -430,7 +440,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].cratereTriangle[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "marble"){
+            } else if(ChooseTexture.texture1 == texture[3]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[1].name)
@@ -446,8 +456,8 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     default: imgSecondaria = UIImage(named: structTopImageType[0].marbleTriangle[11].name)
                 }
             }
-        } else if(ChooseShape2.shape2 == "rect"){
-            if(ChooseTexture.texture1 == "sea"){
+        } else if(ChooseShape2.shape2 == shape[1]){
+            if(ChooseTexture.texture1 == texture[0]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[1].name)
@@ -462,7 +472,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].seaRect[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].seaRect[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "wood"){
+            } else if(ChooseTexture.texture1 == texture[4]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[1].name)
@@ -477,7 +487,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].woodRect[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].woodRect[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "texile"){
+            } else if(ChooseTexture.texture1 == texture[2]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[0].name)
                    case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[1].name)
@@ -492,7 +502,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].texileRect[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].texileRect[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "cratere"){
+            } else if(ChooseTexture.texture1 == texture[1]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[1].name)
@@ -507,7 +517,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].cratereRect[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "marble"){
+            } else if(ChooseTexture.texture1 == texture[3]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].marbleRect[1].name)
@@ -524,7 +534,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                 }
             }
         }  else {
-            if(ChooseTexture.texture1 == "sea"){
+            if(ChooseTexture.texture1 == texture[0]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[1].name)
@@ -539,7 +549,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].seaZigZag[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "wood"){
+            } else if(ChooseTexture.texture1 == texture[4]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[1].name)
@@ -554,7 +564,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].woodZigZag[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "texile"){
+            } else if(ChooseTexture.texture1 == texture[2]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[1].name)
@@ -569,7 +579,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].texileZigZag[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "cratere"){
+            } else if(ChooseTexture.texture1 == texture[1]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[1].name)
@@ -584,7 +594,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                     case "QRoss", "CRoss","TRoss","RRoss","ORoss": imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[10].name)
                     default: imgSecondaria = UIImage(named: structTopImageType[0].cratereZigZag[11].name)
                 }
-            } else if(ChooseTexture.texture1 == "marble"){
+            } else if(ChooseTexture.texture1 == texture[3]){
                 switch nomeImgPrincipale {
                     case "QBl", "CBl","TBl","RBl","OBl": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[0].name)
                     case "QRosa", "CRosa","TRosa","RRosa","ORosa": imgSecondaria = UIImage(named: structTopImageType[0].marbleZigZag[1].name)
@@ -603,7 +613,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
         }
         
         let randomSize = Float.random(in: 0.99..<1.03)
-        let randomPos = 3//Int.random(in: 0..<4)
+        let randomPos = Int.random(in: 0..<4)
         
         var posizioneGx: [Int], posizioneGy: [Int], posizionePx: [Int], posizionePy: [Int]
         if(UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 896){
@@ -663,66 +673,69 @@ class Collage: UIViewController, UITextFieldDelegate  {
         if(view.frame.width == 375){
             fontSize = 18
         }
-        var  normalText = "The pattern in the large circle describes\n"
+        
+        text = ENG.textOnCollage
+        
+        var normalText = text[0]
         var attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
         let attributedString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
         
-        var boldText = "your personality "
+        var boldText = text[1]
              attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: fontSize)]
            let attributedString2 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
         attributedString.append(attributedString2)
 
 
-                normalText = "and the color inside \nrepresents "
+                normalText = text[2]
                attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
              let attributedString20 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
                attributedString.append(attributedString20)
                
-                boldText = "the way you want to look\n"
+                boldText = text[3]
                 attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: fontSize)]
                
                let attributedString3 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
                
                attributedString.append(attributedString3)
          
-        normalText = "from the outside. \n\nThe two shapes on the outside recount\n"
+        normalText = text[4]
          attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
         let attributedString21 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
                       attributedString.append(attributedString21)
         
-        boldText = "the way you would like to be "
+        boldText = text[5]
          attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: fontSize)]
         
         let attributedString4 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
         
         attributedString.append(attributedString4)
         
-        normalText = "and the \ntexture inside represents "
+        normalText = text[6]
         attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
         let attributedString22 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
                       attributedString.append(attributedString22)
         
-        boldText = "the \nperception you have of your sign, "
+        boldText = text[7]
         attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: fontSize)]
        
        let attributedString5 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
        
        attributedString.append(attributedString5)
         
-        normalText = "that\nis in gold and occupies the center of \nthe image, as "
+        normalText = text[8]
         attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
 
         let attributedString23 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
                       attributedString.append(attributedString23)
         
-        boldText = "Kintsugi art "
+        boldText = text[9]
          attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: fontSize)]
         
         let attributedString6 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
         
         attributedString.append(attributedString6)
         
-        normalText = "teaches! "
+        normalText = text[10]
         attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
 
                 let attributedString24 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
@@ -818,7 +831,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
     
     @IBAction func saveScreen(_ sender: Any) {
         UIImageWriteToSavedPhotosAlbum(screen.image!, nil, nil, nil)
-        let ac = UIAlertController(title: "Masterpiece saved!", message: "Your Masterpiece was copied successfully", preferredStyle: .alert)
+        let ac = UIAlertController(title: text[11], message: text[12], preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
     }

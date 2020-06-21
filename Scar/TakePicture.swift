@@ -19,6 +19,7 @@ class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePick
     @IBOutlet weak var camera: UIButton!
     @IBOutlet weak var penna: UIButton!
     @IBOutlet weak var label3: UILabel!
+    var text:[String] = []
     
     
     func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
@@ -56,31 +57,30 @@ class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePick
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
 
+        text = ENG.textOnTakePicture
         
         self.tabBarController?.tabBar.isHidden = false
-        
-        
 
-        let normalText = "Draw the shape "
+        let normalText = text[0]
          let attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: 20)]
         let attributedString = NSMutableAttributedString(string:normalText, attributes:attrs)
         
-        let boldText = "of your indelible sign, or help yourself taking a "
+        let boldText = text[1]
         let normalString = NSMutableAttributedString(string:boldText)
 
                attributedString.append(normalString)
         
-        let boldText2 = "picture "
+        let boldText2 = text[2]
         let attributedString2 = NSMutableAttributedString(string:boldText2, attributes:attrs)
         
         attributedString.append(attributedString2)
         
-        let boldText1 = "of it to better "
+        let boldText1 = text[3]
         let normalString1 = NSMutableAttributedString(string:boldText1)
 
                attributedString.append(normalString1)
         
-        let boldText3 = "trace it."
+        let boldText3 = text[4]
         let attributedString3 = NSMutableAttributedString(string:boldText3, attributes:attrs)
         
         attributedString.append(attributedString3)
@@ -88,12 +88,12 @@ class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePick
         
         label.attributedText = attributedString
         
-        let normalText2 = "Don’t worry"
+        let normalText2 = text[5]
         let attrs2 = [NSAttributedString.Key.font : UIFont(name: "Poppins-LightItalic", size: 18)]
         let attributedString4 = NSMutableAttributedString(string:normalText2, attributes:attrs2 as [NSAttributedString.Key : Any])
         
         
-        let boldText4 = ", the picture you make won’t be stored in the app!"
+        let boldText4 = text[6]
         let normalString3 = NSMutableAttributedString(string:boldText4)
 
                attributedString4.append(normalString3)

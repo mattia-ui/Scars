@@ -19,6 +19,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
     @IBOutlet weak var screen: UIImageView!
     @IBOutlet weak var descriptionField: UITextView!
     @IBOutlet weak var label: UILabel!
+    var text:[String] = []
    
     var i = 0
 
@@ -33,6 +34,8 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
 
+        text = ENG.textOnSharePage
+        
         screen.layer.borderWidth = 0.5
         screen.layer.borderColor = CGColor(srgbRed: 0.46, green: 0.41, blue: 0.51, alpha: 1)
         
@@ -46,58 +49,58 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
             fontSize = 18
         }
         
-         var  normalText = "Sharing your emotions with others is \nvery important for your "
+         var  normalText = text[0]
           var attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
          let attributedString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
          
-         var boldText = "emotional state,\n"
+         var boldText = text[1]
               attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: fontSize)]
             let attributedString2 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
          attributedString.append(attributedString2)
 
 
-                 normalText = "it "
+                 normalText = text[2]
                 attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                  let attributedString30 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
                 attributedString.append(attributedString30)
                 
-                 boldText = "increases self-esteem"
+                 boldText = text[3]
                  attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: fontSize)]
                 
                 let attributedString3 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
                 
                 attributedString.append(attributedString3)
           
-         normalText = ", decreases \ninsecurities, and makes you understand\nthat "
+         normalText = text[4]
           attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
            let attributedString31 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
           attributedString.append(attributedString31)
          
-         boldText = "you are not alone"
+         boldText = text[5]
           attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: fontSize)]
          
          let attributedString4 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
          
          attributedString.append(attributedString4)
          
-         normalText = ", ever.\n\n"
+         normalText = text[6]
           attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
            let attributedString32 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
           attributedString.append(attributedString32)
          
-         normalText = "What are you waiting for?\nTell your story and share it on "
+         normalText = text[7]
           attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
            let attributedString33 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
           attributedString.append(attributedString33)
          
-         boldText = "Instagram\n"
+         boldText = text[8]
           attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: fontSize)]
          
          let attributedString6 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
          
          attributedString.append(attributedString6)
          
-         normalText = "with the hashtag "
+         normalText = text[9]
                 attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                   let attributedString34 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
                  attributedString.append(attributedString34)
@@ -109,14 +112,14 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
                 
                 attributedString.append(attributedString7)
         
-        normalText = "or send it to\nus anonymously, you can be inspiring\neven without showing your name! "
+        normalText = text[10]
                     attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                          let attributedString25 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
                         attributedString.append(attributedString25)
                        
                        label.attributedText = attributedString
         
-        var  normalText2 = "Tell your story behind your indelible sign here…  - "
+        var  normalText2 = text[11]
                 var normalString2 = NSMutableAttributedString(string:normalText2)
                     let attrs3 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                 let attributedString20 = NSMutableAttributedString(string:String(normalText2), attributes:attrs3 as [NSAttributedString.Key : Any])
@@ -127,7 +130,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
                 attributedString20.append(attributedString21)
 
 
-                normalText2 = "(max 249 characters)"
+                normalText2 = text[12]
                 normalString2 = NSMutableAttributedString(string:normalText2)
                 let attrs4 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                 let attributedString22 = NSMutableAttributedString(string:String(normalText2), attributes:attrs4 as [NSAttributedString.Key : Any])
@@ -272,7 +275,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
     @IBAction func copys(_ sender: AnyObject) {
         
         UIPasteboard.general.string = descriptionField.text
-        let ac = UIAlertController(title: "Description Copied", message: "Your description was copied successfully", preferredStyle: .alert)
+        let ac = UIAlertController(title: "Description Copied", message: text[13], preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
     }

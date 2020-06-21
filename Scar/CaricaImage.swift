@@ -13,10 +13,14 @@ class CaricaImage: UIViewController {
     var id: Int!
     @IBOutlet weak var testo: UILabel!
     @IBOutlet weak var imageSelected: UIImageView!
+    var text:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
+        
+        text = ENG.textOnCaricaImage
+        
         imageSelected.image = SecretCollection.allImages?[id]
         testo.text = SecretCollection.allDescr?[id]
     }

@@ -11,14 +11,20 @@ import CloudKit
 
 class ChooseShape2: UIViewController  {
    
+    var text: [String] = []
+    var shape: [String] = []
+    
     override func viewDidLoad() {
         nex.isEnabled = false
         overrideUserInterfaceStyle = .light
         
-        var boldText = "Which of these shapes represents "
+        text = ENG.textOnChooseShape2
+        shape = ENG.Shape
+        
+        var boldText = text[0]
         var attributedString = NSMutableAttributedString(string:boldText)
 
-        var normalText = "the way you would like to be?"
+        var normalText = text[1]
         var attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: 20)]
         var normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
 
@@ -26,55 +32,55 @@ class ChooseShape2: UIViewController  {
         
         label.attributedText = attributedString
         
-         boldText = "Square \n"
+         boldText = text[2]
          attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
         attributedString = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
-         normalText = "careful - analytic"
+         normalText = text[3]
          normalString = NSMutableAttributedString(string:normalText)
 
         attributedString.append(normalString)
         
         square.setAttributedTitle(attributedString, for: .normal)
         
-         boldText = "Rectangle \n"
+         boldText = text[4]
          attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
         attributedString = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
-         normalText = "curious - confused"
+         normalText = text[5]
          normalString = NSMutableAttributedString(string:normalText)
 
         attributedString.append(normalString)
         
         rect.setAttributedTitle(attributedString, for: .normal)
         
-         boldText = "Triangle \n"
+         boldText = text[6]
          attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
         attributedString = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
-         normalText = "leader - focused"
+         normalText = text[7]
          normalString = NSMutableAttributedString(string:normalText)
 
         attributedString.append(normalString)
         
         triangle.setAttributedTitle(attributedString, for: .normal)
         
-         boldText = "Circle \n"
+         boldText = text[8]
          attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
         attributedString = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
-         normalText = "empathic - sociable"
+         normalText = text[9]
          normalString = NSMutableAttributedString(string:normalText)
 
         attributedString.append(normalString)
         
         circle.setAttributedTitle(attributedString, for: .normal)
         
-         boldText = "Zig zag \n"
+         boldText = text[10]
          attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
         attributedString = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
 
-         normalText = "creative - aspiring"
+         normalText = text[11]
          normalString = NSMutableAttributedString(string:normalText)
 
         attributedString.append(normalString)
@@ -153,7 +159,7 @@ class ChooseShape2: UIViewController  {
             rect.isSelected = false
             zigZag.isSelected = false
             nex.isEnabled = true
-            ChooseShape2.shape2 = "square"
+            ChooseShape2.shape2 = shape[0]
         }
     }
     
@@ -168,7 +174,7 @@ class ChooseShape2: UIViewController  {
             rect.isSelected = false
             zigZag.isSelected = false
             nex.isEnabled = true
-            ChooseShape2.shape2 = "circle"
+            ChooseShape2.shape2 = shape[3]
         }
     }
     
@@ -183,7 +189,7 @@ class ChooseShape2: UIViewController  {
             rect.isSelected = false
             zigZag.isSelected = false
             nex.isEnabled = true
-            ChooseShape2.shape2 = "triangle"
+            ChooseShape2.shape2 = shape[2]
         }
     }
     
@@ -198,7 +204,7 @@ class ChooseShape2: UIViewController  {
             rect.isSelected = true
             zigZag.isSelected = false
             nex.isEnabled = true
-            ChooseShape2.shape2 = "rect"
+            ChooseShape2.shape2 = shape[1]
         }
     }
     
@@ -213,7 +219,7 @@ class ChooseShape2: UIViewController  {
             rect.isSelected = false
             zigZag.isSelected = true
             nex.isEnabled = true
-            ChooseShape2.shape2 = "zigzag"
+            ChooseShape2.shape2 = shape[4]
         }
     }
 }

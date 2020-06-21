@@ -11,20 +11,41 @@ import CloudKit
 
 class ChoosePalette: UIViewController  {
    
+    var text:[String] = []
+    var palette:[String] = []
+
     override func viewDidLoad() {
         overrideUserInterfaceStyle = .light
         nex.isEnabled = false
         
-        let boldText = "With which of these color palettes\n"
+        text = ENG.textOnChoosePalette
+        palette = ENG.Palette
+        
+        let boldText = text[0]
         let attributedString = NSMutableAttributedString(string:boldText)
 
-        let normalText = "do you dress more?"
-        let attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: 20)]
+        let normalText = text[1]
+        let attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 22)]
         let normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
 
-               attributedString.append(normalString)
-               
-               label.attributedText = attributedString
+       attributedString.append(normalString)
+       
+       label.attributedText = attributedString
+        
+        var normalText1 = text[2]
+        var attrs1 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
+        var normalString1 = NSMutableAttributedString(string:normalText1, attributes:attrs as [NSAttributedString.Key : Any])
+        cool.setAttributedTitle(normalString1, for: .normal)
+        
+        normalText1 = text[3]
+        attrs1 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
+        normalString1 = NSMutableAttributedString(string:normalText1, attributes:attrs as [NSAttributedString.Key : Any])
+        warm.setAttributedTitle(normalString1, for: .normal)
+        
+        normalText1 = text[4]
+        attrs1 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
+        normalString1 = NSMutableAttributedString(string:normalText1, attributes:attrs as [NSAttributedString.Key : Any])
+        neutral.setAttributedTitle(normalString1, for: .normal)
     }
     
     @IBOutlet weak var label: UILabel!
@@ -84,7 +105,7 @@ class ChoosePalette: UIViewController  {
             warm.isSelected = false
             neutral.isSelected = false
             nex.isEnabled = true
-            ChoosePalette.color = "cool"
+            ChoosePalette.color = palette[0]
         }
     }
     
@@ -97,7 +118,7 @@ class ChoosePalette: UIViewController  {
             warm.isSelected = true
             neutral.isSelected = false
             nex.isEnabled = true
-            ChoosePalette.color = "warm"
+            ChoosePalette.color = palette[1]
         }
     }
 
@@ -110,7 +131,7 @@ class ChoosePalette: UIViewController  {
             warm.isSelected = false
             neutral.isSelected = true
             nex.isEnabled = true
-            ChoosePalette.color = "neutral"
+            ChoosePalette.color = palette[2]
         }
     }
 }

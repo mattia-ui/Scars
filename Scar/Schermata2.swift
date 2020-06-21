@@ -55,6 +55,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
     @IBOutlet weak var r5: UIImageView!
     @IBOutlet weak var r6: UIImageView!
     var structIns: [ins]!
+    var ins: [String] = []
     
     @IBOutlet weak var myCollectionView: UICollectionView!
     @IBOutlet weak var scroll: UIScrollView!
@@ -142,9 +143,6 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         cell.image.isUserInteractionEnabled = true
         cell.image.addGestureRecognizer(tap1)
         
-//        cell.label.font = UIFont(name: ".SFUI-Light", size: 18)
-        print("\n\n\n\n\n\n\(cell.label.font)\n\n\n\n\n\n")
-        
         return cell
     }
     
@@ -182,8 +180,9 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
             lingua = String(cString: sqlite3_column_text(stmt, 1))
         }
         
+        ins = ENG.insights
         if(lingua == "eng"){
-            structIns = ENG.structInsENG
+            structIns = ENG.Schermata2structInsENG
         } else if (lingua == "ita"){
             structIns = ITA.structInsITA
         }
@@ -191,27 +190,27 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         caricaInfo()
 
         if(Schermata2.insights[0] != ""){
-           if(Schermata2.insights[0] == "TEDx"){
+           if(Schermata2.insights[0] == ins[0]){
                 contenuto = structIns[0].pod
                 self.imgButt = "SeeMore"
             }
-            if(Schermata2.insights[0] == "Movies and Series"){
+            if(Schermata2.insights[0] == ins[1]){
                 contenuto = structIns[0].well
                 self.imgButt = "SeeMoreMovies"
             }
-            if(Schermata2.insights[0] == "Articles"){
+            if(Schermata2.insights[0] == ins[2]){
                 contenuto = structIns[0].mov
                 self.imgButt = "SeeMoreArticle"
             }
-            if(Schermata2.insights[0] == "Books"){
+            if(Schermata2.insights[0] == ins[3]){
                 contenuto = structIns[0].art
                 self.imgButt = "SeeMoreBooks"
             }
-            if(Schermata2.insights[0] == "Inspiring People"){
+            if(Schermata2.insights[0] == ins[4]){
                 contenuto = structIns[0].artists
                 self.imgButt = "SeeMoreInspiringPeople"
             }
-            if(Schermata2.insights[0] == "Podcasts"){
+            if(Schermata2.insights[0] == ins[5]){
                 contenuto = structIns[0].books
                 self.imgButt = "SeeMorePodcast"
             }
@@ -346,27 +345,27 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         scroll.contentSize = CGSize(width: somma, height: 10)
         
         if(Schermata2.insights[0] != ""){
-            if(Schermata2.insights[0] == "TEDx"){
+            if(Schermata2.insights[0] == ins[0]){
                 contenuto = structIns[0].pod
                 self.imgButt = "SeeMore"
             }
-            if(Schermata2.insights[0] == "Movies and Series"){
+            if(Schermata2.insights[0] == ins[1]){
                 contenuto = structIns[0].well
                 self.imgButt = "SeeMoreMovies"
             }
-            if(Schermata2.insights[0] == "Articles"){
+            if(Schermata2.insights[0] == ins[2]){
                 contenuto = structIns[0].mov
                 self.imgButt = "SeeMoreArticle"
             }
-            if(Schermata2.insights[0] == "Books"){
+            if(Schermata2.insights[0] == ins[3]){
                 contenuto = structIns[0].art
                 self.imgButt = "SeeMoreBooks"
             }
-            if(Schermata2.insights[0] == "Inspiring People"){
+            if(Schermata2.insights[0] == ins[4]){
                 contenuto = structIns[0].artists
                 self.imgButt = "SeeMoreInspiringPeople"
             }
-            if(Schermata2.insights[0] == "Podcasts"){
+            if(Schermata2.insights[0] == ins[5]){
                 contenuto = structIns[0].books
                 self.imgButt = "SeeMorePodcast"
             }
@@ -406,27 +405,27 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
             sender.titleLabel?.font = UIFont(name: "Poppins-Medium", size: 20)
         }
         
-        if(sender.titleLabel?.text == "TEDx"){
+        if(sender.titleLabel?.text == ins[0]){
             contenuto = structIns[0].pod
             self.imgButt = "SeeMore"
         }
-        if(sender.titleLabel?.text == "Movies and Series"){
+        if(sender.titleLabel?.text == ins[1]){
             contenuto = structIns[0].well
             self.imgButt = "SeeMoreMovies"
         }
-        if(sender.titleLabel?.text == "Articles"){
+        if(sender.titleLabel?.text == ins[2]){
             contenuto = structIns[0].mov
             self.imgButt = "SeeMoreArticle"
         }
-        if(sender.titleLabel?.text == "Books"){
+        if(sender.titleLabel?.text == ins[3]){
             contenuto = structIns[0].art
             self.imgButt = "SeeMoreBooks"
         }
-        if(sender.titleLabel?.text == "Inspiring People"){
+        if(sender.titleLabel?.text == ins[4]){
             contenuto = structIns[0].artists
             self.imgButt = "SeeMoreInspiringPeople"
         }
-        if(sender.titleLabel?.text == "Podcasts"){
+        if(sender.titleLabel?.text == ins[5]){
             contenuto = structIns[0].books
             self.imgButt = "SeeMorePodcast"
         }
