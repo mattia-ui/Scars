@@ -235,7 +235,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         }
                            
         //Inserisce Valore. Va nel tutorial
-        let queryString2 = "INSERT INTO Lingua(lingua) VALUES ('ita');"
+        let queryString2 = "INSERT INTO Lingua(lingua) VALUES ('eng');"
         sqlite3_prepare(db, queryString2, -1, &stmt, nil)
         sqlite3_step(stmt)
         print("Saved successfully")
