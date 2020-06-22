@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -681,19 +681,19 @@ How do you think others see it?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="RUp-S9-4CD">
-                                <rect key="frame" x="22.5" y="208.5" width="227" height="50.5"/>
+                                <rect key="frame" x="22.5" y="153" width="227" height="44"/>
                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="36"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="VbA-c6-b5q">
-                                <rect key="frame" x="22.5" y="268" width="369" height="77"/>
+                                <rect key="frame" x="22.5" y="206" width="369" height="67"/>
                                 <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="20"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Te-rI-HPa">
-                                <rect key="frame" x="116" y="881" width="182" height="63.5"/>
+                                <rect key="frame" x="116" y="757" width="182" height="55"/>
                                 <state key="normal" title="Button" image="nextazzurro"/>
                                 <state key="disabled" image="nextazzurrono"/>
                                 <connections>
@@ -701,16 +701,16 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="8Lu-VZ-BEw">
-                                <rect key="frame" x="15.5" y="366" width="423" height="479"/>
+                                <rect key="frame" x="15.5" y="294" width="383" height="427"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="J4w-EO-tk2">
-                                        <rect key="frame" x="0.0" y="0.0" width="423" height="81.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="383" height="71"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="SPF-T2-Ny5">
-                                                <rect key="frame" x="0.0" y="0.0" width="66" height="81.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="66" height="71"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="A3T-Ks-YCR">
-                                                <rect key="frame" x="112" y="0.0" width="311" height="81.5"/>
+                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -724,13 +724,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="k8w-aV-QhV">
-                                        <rect key="frame" x="0.0" y="99.5" width="423" height="81.5"/>
+                                        <rect key="frame" x="0.0" y="89" width="383" height="71"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="bAp-lc-87B">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="81.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="71"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cj7-a4-0Xz">
-                                                <rect key="frame" x="112" y="0.0" width="311" height="81.5"/>
+                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -744,13 +744,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="Qar-eD-Goy">
-                                        <rect key="frame" x="0.0" y="199" width="423" height="81.5"/>
+                                        <rect key="frame" x="0.0" y="178" width="383" height="71"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle" translatesAutoresizingMaskIntoConstraints="NO" id="VsF-9m-vhn">
-                                                <rect key="frame" x="0.0" y="0.0" width="74" height="81.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="71"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DJU-JS-gID">
-                                                <rect key="frame" x="112" y="0.0" width="311" height="81.5"/>
+                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -764,13 +764,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="ccL-KK-HpV">
-                                        <rect key="frame" x="0.0" y="298.5" width="423" height="81.5"/>
+                                        <rect key="frame" x="0.0" y="267" width="383" height="71"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="fiA-MW-TuO">
-                                                <rect key="frame" x="0.0" y="0.0" width="68" height="81.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="68" height="71"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RcF-Kg-Q4p">
-                                                <rect key="frame" x="113" y="0.0" width="310" height="81.5"/>
+                                                <rect key="frame" x="113" y="0.0" width="270" height="71"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -784,13 +784,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="YGB-Vn-uNM">
-                                        <rect key="frame" x="0.0" y="398" width="423" height="81"/>
+                                        <rect key="frame" x="0.0" y="356" width="383" height="71"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zigzag" translatesAutoresizingMaskIntoConstraints="NO" id="rJl-hD-wwg">
-                                                <rect key="frame" x="0.0" y="0.0" width="89" height="81"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="89" height="71"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="61O-Bn-xRC">
-                                                <rect key="frame" x="112" y="0.0" width="311" height="81"/>
+                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -1916,7 +1916,7 @@ your body and others’s bodies.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yHf-AX-5ZQ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="352"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="241.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" misplaced="YES" text="Good " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wg-V5-aIC">
                                 <rect key="frame" x="25" y="118" width="281" height="34"/>
@@ -1925,13 +1925,13 @@ your body and others’s bodies.</string>
                                 <color key="highlightedColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v02-uU-l8R">
-                                <rect key="frame" x="22" y="447.5" width="372" height="53.5"/>
+                                <rect key="frame" x="22" y="252.5" width="372" height="42"/>
                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="25"/>
                                 <color key="textColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fWY-uv-LMG">
-                                <rect key="frame" x="14" y="549" width="400" height="223"/>
+                                <rect key="frame" x="14" y="334" width="400" height="165"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="400" id="DS8-NL-NDp"/>
@@ -1944,7 +1944,7 @@ your body and others’s bodies.</string>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" restorationIdentifier="myCell" reuseIdentifier="myCell" id="DOL-XC-LhE" customClass="CollectionViewCell1" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="47" width="176" height="129"/>
+                                        <rect key="frame" x="0.0" y="18" width="176" height="129"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dPQ-80-aLg">
                                             <rect key="frame" x="0.0" y="0.0" width="176" height="129"/>
@@ -2014,31 +2014,31 @@ your body and others’s bodies.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Nice work! Keep on going" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="71W-Ns-qfS">
-                                <rect key="frame" x="22" y="506.5" width="372" height="32.5"/>
+                                <rect key="frame" x="22" y="300" width="372" height="24"/>
                                 <fontDescription key="fontDescription" name="Poppins-ExtraLight" family="Poppins" pointSize="18"/>
                                 <color key="textColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mqk-Ya-Xpd">
-                                <rect key="frame" x="215" y="792" width="189" height="416.5"/>
+                                <rect key="frame" x="215" y="519" width="189" height="279"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="189" id="19W-RA-Wbc"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Qua ci vanno le stronzate di francesca" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="61N-a8-v0d">
-                                <rect key="frame" x="24" y="962.5" width="190" height="234"/>
+                                <rect key="frame" x="24" y="552" width="190" height="234"/>
                                 <fontDescription key="fontDescription" name="Poppins-ExtraLight" family="Poppins" pointSize="18"/>
                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Ready for a boost of self-esteem?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOt-Hk-MoG">
-                                <rect key="frame" x="25" y="377.5" width="369" height="54"/>
+                                <rect key="frame" x="25" y="199.5" width="369" height="37"/>
                                 <fontDescription key="fontDescription" name="Poppins-LightItalic" family="Poppins" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZ3-f6-Ny2">
-                                <rect key="frame" x="25" y="324.5" width="281" height="56"/>
+                                <rect key="frame" x="25" y="155.5" width="281" height="47"/>
                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2357,40 +2357,43 @@ your body and others’s bodies.</string>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" restorationIdentifier="ins" reuseIdentifier="ins" id="tBk-G5-O86" customClass="InightsCollection" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="0.5" y="0.0" width="413" height="363"/>
+                                        <rect key="frame" x="0.5" y="0.0" width="413" height="381"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="insightsCell" insetsLayoutMarginsFromSafeArea="NO" id="xtB-u9-g6l">
-                                            <rect key="frame" x="0.0" y="0.0" width="413" height="363"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="413" height="381"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9o9-F3-Tem">
                                                     <rect key="frame" x="20" y="0.0" width="373" height="134"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="9o9-F3-Tem" secondAttribute="height" multiplier="373:134" id="yDc-2I-dk2"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Fratmacchion si nu mostra" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="pdk-F6-xZK">
-                                                    <rect key="frame" x="36" y="132" width="342" height="153"/>
+                                                    <rect key="frame" x="36" y="138.5" width="342" height="145"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="18"/>
                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="y9q-2C-HRN">
-                                                    <rect key="frame" x="36" y="85" width="326" height="21"/>
+                                                    <rect key="frame" x="36" y="88" width="326" height="21.5"/>
                                                     <fontDescription key="fontDescription" name="Poppins-LightItalic" family="Poppins" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxG-uB-0dh">
-                                                    <rect key="frame" x="303" y="277" width="81" height="32"/>
+                                                    <rect key="frame" x="303" y="290.5" width="81" height="33.5"/>
                                                     <state key="normal" image="SeeMore"/>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cSJ-OP-IOa">
-                                                    <rect key="frame" x="0.0" y="321" width="412" height="18"/>
+                                                    <rect key="frame" x="0.0" y="336" width="412" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="412" id="8Zl-Se-A3b"/>
                                                         <constraint firstAttribute="height" constant="18" id="YIn-kP-87G"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="eqz-fq-sWa">
-                                                    <rect key="frame" x="36" y="12" width="332" height="80"/>
+                                                    <rect key="frame" x="36" y="12" width="332" height="83"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="How to Build Self Confidence">
                                                             <attributes>
@@ -2409,22 +2412,23 @@ your body and others’s bodies.</string>
                                                 <constraint firstItem="9o9-F3-Tem" firstAttribute="top" secondItem="xtB-u9-g6l" secondAttribute="top" id="G6B-gS-2DU"/>
                                                 <constraint firstItem="y9q-2C-HRN" firstAttribute="height" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="0.0413223" constant="6.000005100000001" id="Jgb-t4-H5Z"/>
                                                 <constraint firstItem="9o9-F3-Tem" firstAttribute="centerX" secondItem="xtB-u9-g6l" secondAttribute="centerX" id="LnY-Co-qNh"/>
-                                                <constraint firstItem="pdk-F6-xZK" firstAttribute="height" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="0.421488" id="Lq7-zs-932"/>
+                                                <constraint firstItem="pdk-F6-xZK" firstAttribute="height" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="0.421488" constant="-15.586928" id="Lq7-zs-932"/>
                                                 <constraint firstItem="cSJ-OP-IOa" firstAttribute="top" secondItem="vxG-uB-0dh" secondAttribute="bottom" constant="12" id="M2q-4C-drs"/>
                                                 <constraint firstAttribute="trailing" secondItem="9o9-F3-Tem" secondAttribute="trailing" constant="20" id="Naw-EN-2dI"/>
                                                 <constraint firstItem="eqz-fq-sWa" firstAttribute="top" secondItem="xtB-u9-g6l" secondAttribute="top" constant="12" id="WPy-ak-IpQ"/>
                                                 <constraint firstItem="pdk-F6-xZK" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" constant="36" id="Wfr-iE-G7M"/>
                                                 <constraint firstItem="pdk-F6-xZK" firstAttribute="width" secondItem="xtB-u9-g6l" secondAttribute="width" multiplier="0.828087" id="Zu2-ZR-PMh"/>
                                                 <constraint firstItem="y9q-2C-HRN" firstAttribute="width" secondItem="xtB-u9-g6l" secondAttribute="width" multiplier="0.789346" id="a3s-iS-6IX"/>
-                                                <constraint firstItem="9o9-F3-Tem" firstAttribute="height" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="0.369146" id="akv-7a-afT"/>
+                                                <constraint firstItem="9o9-F3-Tem" firstAttribute="height" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="0.369146" constant="-6.6446259999999882" id="akv-7a-afT"/>
                                                 <constraint firstItem="y9q-2C-HRN" firstAttribute="top" secondItem="eqz-fq-sWa" secondAttribute="bottom" constant="-7" id="cRB-8A-IN0"/>
                                                 <constraint firstItem="cSJ-OP-IOa" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" id="d6D-w3-wea"/>
                                                 <constraint firstItem="vxG-uB-0dh" firstAttribute="width" secondItem="xtB-u9-g6l" secondAttribute="width" multiplier="0.196126" id="eHa-1r-eox"/>
-                                                <constraint firstItem="vxG-uB-0dh" firstAttribute="top" secondItem="pdk-F6-xZK" secondAttribute="bottom" constant="-8" id="el3-nD-KkK"/>
+                                                <constraint firstItem="vxG-uB-0dh" firstAttribute="top" secondItem="pdk-F6-xZK" secondAttribute="bottom" constant="7" id="el3-nD-KkK"/>
                                                 <constraint firstItem="eqz-fq-sWa" firstAttribute="width" secondItem="xtB-u9-g6l" secondAttribute="width" multiplier="0.799031" constant="2.0001969999999574" id="g1Y-aS-6Ep"/>
                                                 <constraint firstItem="eqz-fq-sWa" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" constant="36" id="gHA-Fb-WyI"/>
-                                                <constraint firstItem="pdk-F6-xZK" firstAttribute="top" secondItem="9o9-F3-Tem" secondAttribute="bottom" constant="-2" id="hgd-JF-oI2"/>
+                                                <constraint firstItem="pdk-F6-xZK" firstAttribute="top" secondItem="9o9-F3-Tem" secondAttribute="bottom" constant="4.5" id="hgd-JF-oI2"/>
                                                 <constraint firstAttribute="trailing" secondItem="cSJ-OP-IOa" secondAttribute="trailing" id="kAL-X0-VwJ"/>
+                                                <constraint firstItem="9o9-F3-Tem" firstAttribute="width" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="373:363" constant="-18.495867768595076" id="mBn-Hj-Q6e"/>
                                                 <constraint firstItem="eqz-fq-sWa" firstAttribute="height" secondItem="xtB-u9-g6l" secondAttribute="height" multiplier="0.15978" constant="21.999859999999998" id="oZe-xh-otH"/>
                                                 <constraint firstAttribute="bottom" secondItem="cSJ-OP-IOa" secondAttribute="bottom" constant="24" id="sV8-6E-ru4"/>
                                                 <constraint firstItem="y9q-2C-HRN" firstAttribute="leading" secondItem="xtB-u9-g6l" secondAttribute="leading" constant="36" id="uLJ-En-nv0"/>
@@ -2433,7 +2437,7 @@ your body and others’s bodies.</string>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <size key="customSize" width="413" height="363"/>
+                                        <size key="customSize" width="413" height="381"/>
                                         <connections>
                                             <outlet property="button" destination="vxG-uB-0dh" id="g2s-hP-B5K"/>
                                             <outlet property="div" destination="cSJ-OP-IOa" id="k5E-uR-RpU"/>
@@ -2444,7 +2448,7 @@ your body and others’s bodies.</string>
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="footer" id="eix-Yp-2oL" customClass="FooterCollectionView" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="1" y="373" width="412" height="88"/>
+                                        <rect key="frame" x="1" y="391" width="412" height="88"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="huF-rN-Wyo">
                                             <rect key="frame" x="0.0" y="0.0" width="412" height="88"/>
@@ -2467,8 +2471,8 @@ your body and others’s bodies.</string>
                                                         <fragment content="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
                                                             <attributes>
                                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" metaFont="miniSystem"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                <font key="NSFont" size="9" name="Poppins-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="0.69999999999999996" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -2494,7 +2498,7 @@ your body and others’s bodies.</string>
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kt2-RQ-q2f">
-                                    <rect key="frame" x="0.0" y="461" width="414" height="50"/>
+                                    <rect key="frame" x="0.0" y="479" width="414" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </collectionReusableView>
                                 <connections>

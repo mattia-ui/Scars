@@ -74,6 +74,9 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        
+        
         if (kind == UICollectionView.elementKindSectionFooter) {
             let footerView = myCollectionView.dequeueReusableCell(withReuseIdentifier: "footer", for: indexPath) as! FooterCollectionView
             if(imgButt == "SeeMoreMovies"){
