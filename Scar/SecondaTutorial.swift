@@ -37,6 +37,11 @@ class SecondaTutorial : UIViewController {
         
         text = ENG.textOnSecondaTutorial
         
+        if(UIScreen.main.bounds.width < 800){
+            TiziaBionda.image = UIImage(named: "ILL3")
+            TiziaViola.image = UIImage(named: "ILL2")
+        }
+        
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
                view.addGestureRecognizer(tap)
         TerzaLabel.text = text[0]
