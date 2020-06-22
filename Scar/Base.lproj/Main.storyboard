@@ -681,19 +681,19 @@ How do you think others see it?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="RUp-S9-4CD">
-                                <rect key="frame" x="22.5" y="153" width="227" height="44"/>
+                                <rect key="frame" x="22.5" y="208.5" width="227" height="50.5"/>
                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="36"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="VbA-c6-b5q">
-                                <rect key="frame" x="22.5" y="206" width="369" height="67"/>
+                                <rect key="frame" x="22.5" y="268" width="369" height="77"/>
                                 <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="20"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Te-rI-HPa">
-                                <rect key="frame" x="116" y="757" width="182" height="55"/>
+                                <rect key="frame" x="116" y="881" width="182" height="63.5"/>
                                 <state key="normal" title="Button" image="nextazzurro"/>
                                 <state key="disabled" image="nextazzurrono"/>
                                 <connections>
@@ -701,16 +701,16 @@ How do you think others see it?</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="8Lu-VZ-BEw">
-                                <rect key="frame" x="15.5" y="294" width="383" height="427"/>
+                                <rect key="frame" x="15.5" y="366" width="423" height="479"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="J4w-EO-tk2">
-                                        <rect key="frame" x="0.0" y="0.0" width="383" height="71"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="423" height="81.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="SPF-T2-Ny5">
-                                                <rect key="frame" x="0.0" y="0.0" width="66" height="71"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="66" height="81.5"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="A3T-Ks-YCR">
-                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
+                                                <rect key="frame" x="112" y="0.0" width="311" height="81.5"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -724,13 +724,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="k8w-aV-QhV">
-                                        <rect key="frame" x="0.0" y="89" width="383" height="71"/>
+                                        <rect key="frame" x="0.0" y="99.5" width="423" height="81.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="bAp-lc-87B">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="71"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="81.5"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cj7-a4-0Xz">
-                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
+                                                <rect key="frame" x="112" y="0.0" width="311" height="81.5"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -744,13 +744,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="Qar-eD-Goy">
-                                        <rect key="frame" x="0.0" y="178" width="383" height="71"/>
+                                        <rect key="frame" x="0.0" y="199" width="423" height="81.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle" translatesAutoresizingMaskIntoConstraints="NO" id="VsF-9m-vhn">
-                                                <rect key="frame" x="0.0" y="0.0" width="74" height="71"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="81.5"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DJU-JS-gID">
-                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
+                                                <rect key="frame" x="112" y="0.0" width="311" height="81.5"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -764,13 +764,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="ccL-KK-HpV">
-                                        <rect key="frame" x="0.0" y="267" width="383" height="71"/>
+                                        <rect key="frame" x="0.0" y="298.5" width="423" height="81.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="fiA-MW-TuO">
-                                                <rect key="frame" x="0.0" y="0.0" width="68" height="71"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="68" height="81.5"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RcF-Kg-Q4p">
-                                                <rect key="frame" x="113" y="0.0" width="270" height="71"/>
+                                                <rect key="frame" x="113" y="0.0" width="310" height="81.5"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -784,13 +784,13 @@ How do you think others see it?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="YGB-Vn-uNM">
-                                        <rect key="frame" x="0.0" y="356" width="383" height="71"/>
+                                        <rect key="frame" x="0.0" y="398" width="423" height="81"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zigzag" translatesAutoresizingMaskIntoConstraints="NO" id="rJl-hD-wwg">
-                                                <rect key="frame" x="0.0" y="0.0" width="89" height="71"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="89" height="81"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="61O-Bn-xRC">
-                                                <rect key="frame" x="112" y="0.0" width="271" height="71"/>
+                                                <rect key="frame" x="112" y="0.0" width="311" height="81"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -3293,54 +3293,58 @@ The two shapes on the outside recount </string>
                                                 <rect key="frame" x="0.0" y="0.0" width="415" height="985"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CAr" translatesAutoresizingMaskIntoConstraints="NO" id="hgX-XB-Rln">
-                                                        <rect key="frame" x="102.5" y="53" width="210" height="210"/>
+                                                        <rect key="frame" x="74" y="53" width="267" height="267"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="267" id="ZJT-Ra-DgO"/>
+                                                            <constraint firstAttribute="height" constant="267" id="s1e-sZ-ii3"/>
+                                                        </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="uAB-5d-7q3">
-                                                        <rect key="frame" x="22.5" y="319" width="370" height="258"/>
+                                                        <rect key="frame" x="22.5" y="376" width="370" height="258"/>
                                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="20"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="an7-LJ-inT">
-                                                        <rect key="frame" x="22.5" y="585" width="300" height="30"/>
-                                                        <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
-                                                        <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Qp2-GJ-bGZ">
-                                                        <rect key="frame" x="22.5" y="612" width="300" height="30"/>
-                                                        <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
-                                                        <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="nuu-Et-va7">
                                                         <rect key="frame" x="22.5" y="642" width="300" height="30"/>
                                                         <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Qp2-GJ-bGZ">
+                                                        <rect key="frame" x="22.5" y="669" width="300" height="30"/>
+                                                        <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
+                                                        <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="nuu-Et-va7">
+                                                        <rect key="frame" x="22.5" y="699" width="300" height="30"/>
+                                                        <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
+                                                        <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="NFT-TS-u8d">
-                                                        <rect key="frame" x="22.5" y="667" width="300" height="30"/>
+                                                        <rect key="frame" x="22.5" y="724" width="300" height="30"/>
                                                         <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="juT-ya-x2i">
-                                                        <rect key="frame" x="22.5" y="692" width="300" height="30"/>
+                                                        <rect key="frame" x="22.5" y="749" width="300" height="30"/>
                                                         <fontDescription key="fontDescription" name="NexaTextDemo-Light" family="Nexa Text Demo" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytd-a2-cvp">
-                                                        <rect key="frame" x="76" y="762" width="263" height="55"/>
+                                                        <rect key="frame" x="76" y="819" width="263" height="55"/>
                                                         <state key="normal" image="share (2)"/>
                                                         <connections>
                                                             <segue destination="LDR-hH-uX6" kind="show" id="wEb-bN-aLK"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nyn-3m-ogF">
-                                                        <rect key="frame" x="76" y="842" width="263" height="55"/>
+                                                        <rect key="frame" x="76" y="899" width="263" height="55"/>
                                                         <state key="normal" image="generate"/>
                                                         <connections>
                                                             <action selector="generate:" destination="kq3-3Z-PnA" eventType="touchUpInside" id="YCk-bp-XiA"/>
@@ -3348,7 +3352,11 @@ The two shapes on the outside recount </string>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXJ-DQ-2TO">
-                                                        <rect key="frame" x="258.5" y="209" width="54" height="54"/>
+                                                        <rect key="frame" x="287" y="266" width="54" height="54"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="54" id="5Rb-Vr-YeN"/>
+                                                            <constraint firstAttribute="height" constant="54" id="Fzx-3I-Lgx"/>
+                                                        </constraints>
                                                         <state key="normal" image="download"/>
                                                         <connections>
                                                             <action selector="saveImg:" destination="kq3-3Z-PnA" eventType="touchUpInside" id="Kz8-EV-3AI"/>
@@ -3362,24 +3370,18 @@ The two shapes on the outside recount </string>
                                                     <constraint firstItem="Ytd-a2-cvp" firstAttribute="leading" secondItem="Nyn-3m-ogF" secondAttribute="leading" id="0im-Ob-Dsf"/>
                                                     <constraint firstItem="hgX-XB-Rln" firstAttribute="centerX" secondItem="x5C-5V-WQz" secondAttribute="centerX" id="1Vh-LV-WPa"/>
                                                     <constraint firstItem="nuu-Et-va7" firstAttribute="leading" secondItem="NFT-TS-u8d" secondAttribute="leading" id="2H2-hY-Jwc"/>
-                                                    <constraint firstItem="jXJ-DQ-2TO" firstAttribute="leading" secondItem="hgX-XB-Rln" secondAttribute="leading" constant="156" id="6Iv-dl-n5R"/>
-                                                    <constraint firstItem="hgX-XB-Rln" firstAttribute="width" secondItem="x5C-5V-WQz" secondAttribute="width" multiplier="0.507246" id="721-Gk-lB2"/>
                                                     <constraint firstItem="juT-ya-x2i" firstAttribute="top" secondItem="nuu-Et-va7" secondAttribute="bottom" constant="20" id="7Kf-ku-XMp"/>
                                                     <constraint firstItem="nuu-Et-va7" firstAttribute="top" secondItem="an7-LJ-inT" secondAttribute="bottom" constant="27" id="95D-k1-8Lv"/>
                                                     <constraint firstItem="juT-ya-x2i" firstAttribute="width" secondItem="x5C-5V-WQz" secondAttribute="width" multiplier="0.724638" id="BBz-RV-Cuu"/>
                                                     <constraint firstItem="nuu-Et-va7" firstAttribute="height" secondItem="x5C-5V-WQz" secondAttribute="height" multiplier="0.0304569" id="BlO-8Y-NWz"/>
                                                     <constraint firstItem="nuu-Et-va7" firstAttribute="width" secondItem="x5C-5V-WQz" secondAttribute="width" multiplier="0.724638" id="CKf-dS-cwj"/>
-                                                    <constraint firstItem="hgX-XB-Rln" firstAttribute="height" secondItem="x5C-5V-WQz" secondAttribute="height" multiplier="0.213198" id="EN1-mE-ZHe"/>
                                                     <constraint firstItem="uAB-5d-7q3" firstAttribute="width" secondItem="x5C-5V-WQz" secondAttribute="width" multiplier="0.89372" id="FCI-Un-PIf"/>
                                                     <constraint firstItem="NFT-TS-u8d" firstAttribute="width" secondItem="x5C-5V-WQz" secondAttribute="width" multiplier="0.724638" id="FDf-Md-lP4"/>
-                                                    <constraint firstItem="jXJ-DQ-2TO" firstAttribute="width" secondItem="x5C-5V-WQz" secondAttribute="height" multiplier="54:985" id="Fhy-pY-0UO"/>
                                                     <constraint firstItem="Ytd-a2-cvp" firstAttribute="height" secondItem="x5C-5V-WQz" secondAttribute="height" multiplier="0.0558376" id="G9a-Gc-kCS"/>
                                                     <constraint firstItem="juT-ya-x2i" firstAttribute="width" secondItem="x5C-5V-WQz" secondAttribute="height" multiplier="60:197" id="GbE-lF-YEg"/>
-                                                    <constraint firstItem="jXJ-DQ-2TO" firstAttribute="height" secondItem="x5C-5V-WQz" secondAttribute="height" multiplier="0.0548223" id="Kdm-Li-Ibs"/>
                                                     <constraint firstItem="juT-ya-x2i" firstAttribute="height" secondItem="x5C-5V-WQz" secondAttribute="height" multiplier="0.0304569" id="LjQ-Xs-1Qb"/>
                                                     <constraint firstItem="uAB-5d-7q3" firstAttribute="height" secondItem="x5C-5V-WQz" secondAttribute="height" multiplier="0.261929" id="MbY-bq-FIr"/>
                                                     <constraint firstItem="Nyn-3m-ogF" firstAttribute="height" secondItem="x5C-5V-WQz" secondAttribute="height" multiplier="0.0558376" id="N6L-Bs-R9J"/>
-                                                    <constraint firstItem="jXJ-DQ-2TO" firstAttribute="bottom" secondItem="hgX-XB-Rln" secondAttribute="bottom" id="OBM-WZ-leS"/>
                                                     <constraint firstItem="Qp2-GJ-bGZ" firstAttribute="width" secondItem="x5C-5V-WQz" secondAttribute="width" multiplier="0.724638" id="QCP-ZS-eBL"/>
                                                     <constraint firstItem="NFT-TS-u8d" firstAttribute="width" secondItem="x5C-5V-WQz" secondAttribute="height" multiplier="60:197" id="RWw-Q0-IKO"/>
                                                     <constraint firstItem="NFT-TS-u8d" firstAttribute="top" secondItem="Qp2-GJ-bGZ" secondAttribute="bottom" constant="25" id="SBL-JH-iny"/>
@@ -3392,8 +3394,6 @@ The two shapes on the outside recount </string>
                                                     <constraint firstItem="an7-LJ-inT" firstAttribute="width" secondItem="x5C-5V-WQz" secondAttribute="width" multiplier="0.724638" id="e90-Pg-PSZ"/>
                                                     <constraint firstItem="NFT-TS-u8d" firstAttribute="height" secondItem="x5C-5V-WQz" secondAttribute="height" multiplier="0.0304569" id="eKE-5q-7qV"/>
                                                     <constraint firstItem="an7-LJ-inT" firstAttribute="width" secondItem="x5C-5V-WQz" secondAttribute="height" multiplier="60:197" id="eLT-cU-oGi"/>
-                                                    <constraint firstItem="jXJ-DQ-2TO" firstAttribute="width" secondItem="x5C-5V-WQz" secondAttribute="width" multiplier="0.130435" id="gCy-ca-RJy"/>
-                                                    <constraint firstItem="hgX-XB-Rln" firstAttribute="width" secondItem="x5C-5V-WQz" secondAttribute="height" multiplier="42:197" id="h3v-fj-grD"/>
                                                     <constraint firstItem="an7-LJ-inT" firstAttribute="leading" secondItem="Qp2-GJ-bGZ" secondAttribute="leading" id="hXT-sR-8j0"/>
                                                     <constraint firstItem="Ytd-a2-cvp" firstAttribute="top" secondItem="juT-ya-x2i" secondAttribute="bottom" constant="40" id="haN-05-LNr"/>
                                                     <constraint firstItem="hgX-XB-Rln" firstAttribute="top" secondItem="x5C-5V-WQz" secondAttribute="top" constant="53" id="mHX-1e-e77"/>
@@ -3406,8 +3406,10 @@ The two shapes on the outside recount </string>
                                                     <constraint firstItem="Ytd-a2-cvp" firstAttribute="width" secondItem="x5C-5V-WQz" secondAttribute="width" multiplier="0.635266" id="uhm-Zp-U24"/>
                                                     <constraint firstItem="Ytd-a2-cvp" firstAttribute="width" secondItem="x5C-5V-WQz" secondAttribute="height" multiplier="263:985" id="wFW-5r-mTT"/>
                                                     <constraint firstItem="Nyn-3m-ogF" firstAttribute="top" secondItem="Ytd-a2-cvp" secondAttribute="bottom" constant="25" id="wgM-Th-03J"/>
+                                                    <constraint firstItem="uAB-5d-7q3" firstAttribute="top" secondItem="jXJ-DQ-2TO" secondAttribute="bottom" constant="56" id="wk4-78-f8t"/>
                                                     <constraint firstItem="hgX-XB-Rln" firstAttribute="centerX" secondItem="uAB-5d-7q3" secondAttribute="centerX" id="wpA-I8-N3h"/>
                                                     <constraint firstItem="an7-LJ-inT" firstAttribute="top" secondItem="uAB-5d-7q3" secondAttribute="bottom" constant="8" id="xqe-0l-oHL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jXJ-DQ-2TO" secondAttribute="trailing" constant="74" id="ytm-kw-AK2"/>
                                                     <constraint firstItem="Nyn-3m-ogF" firstAttribute="width" secondItem="x5C-5V-WQz" secondAttribute="width" multiplier="0.635266" id="zff-5C-DCn"/>
                                                 </constraints>
                                             </view>
@@ -3450,6 +3452,8 @@ The two shapes on the outside recount </string>
                     <navigationItem key="navigationItem" id="GVk-lk-bLR"/>
                     <size key="freeformSize" width="414" height="1125"/>
                     <connections>
+                        <outlet property="GenerateAgainButton" destination="Nyn-3m-ogF" id="u5M-0M-epm"/>
+                        <outlet property="downloadButton" destination="jXJ-DQ-2TO" id="KgS-b8-6nh"/>
                         <outlet property="imageNav" destination="PcE-Q1-ANw" id="CQm-Vf-JpG"/>
                         <outlet property="img" destination="hgX-XB-Rln" id="EUI-wL-vyN"/>
                         <outlet property="lab1" destination="an7-LJ-inT" id="ed7-iR-UYE"/>
@@ -3458,6 +3462,7 @@ The two shapes on the outside recount </string>
                         <outlet property="lab4" destination="NFT-TS-u8d" id="dgC-tQ-TS4"/>
                         <outlet property="lab5" destination="juT-ya-x2i" id="vrl-eC-kVg"/>
                         <outlet property="label" destination="uAB-5d-7q3" id="dE1-7o-3Jc"/>
+                        <outlet property="shareButton" destination="Ytd-a2-cvp" id="myp-8j-IQB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="07c-ea-R16" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

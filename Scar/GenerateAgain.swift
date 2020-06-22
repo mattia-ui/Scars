@@ -19,7 +19,39 @@ class GenerateAgain: UIViewController {
     @IBOutlet weak var lab3: UILabel!
     @IBOutlet weak var lab4: UILabel!
     @IBOutlet weak var lab5: UILabel!
+    @IBOutlet weak var downloadButton: UIButton!
+    @IBOutlet weak var shareButton: UIButton!
+    @IBOutlet weak var GenerateAgainButton: UIButton!
     var text:[String] = []
+    
+    
+    func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
+           print(view.frame.origin.x)
+           UIView.animate(withDuration: aCircleTime, animations: {
+               () -> Void in view.transform = CGAffineTransform(translationX: 0, y: to)
+           })
+       }
+       
+       override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+           
+           if(view.frame.width == 375 && UIScreen.main.bounds.height == 667){
+               
+           
+           traslate(view: img, aCircleTime: 0, to: -30)
+           traslate(view: downloadButton, aCircleTime: 0, to: -30)
+           traslate(view: label, aCircleTime: 0, to: -30)
+           traslate(view: lab1, aCircleTime: 0, to: -30)
+           traslate(view: lab2, aCircleTime: 0, to: -30)
+           traslate(view: lab3, aCircleTime: 0, to: -30)
+           traslate(view: lab4, aCircleTime: 0, to: -30)
+           traslate(view: lab5, aCircleTime: 0, to: -30)
+           traslate(view: shareButton, aCircleTime: 0, to: -30)
+           traslate(view: GenerateAgainButton, aCircleTime: 0, to: -30)
+
+           }
+           
+       }
     
     override func viewDidLoad() {
         super.viewDidLoad()
