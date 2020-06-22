@@ -295,5 +295,13 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
        
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        if(view.frame.height == 896){
+            spronatiLabel.font = UIFont(name: "Poppins-ExtraLight", size: 18)
+        }else if(view.frame.height == 667){
+            spronatiLabel.font = UIFont(name: "Poppins-ExtraLight", size: 16)
+        }
+    }
+    
 }
 

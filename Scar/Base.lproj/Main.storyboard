@@ -577,7 +577,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
-                                <rect key="frame" x="850" y="620" width="384" height="70"/>
+                                <rect key="frame" x="850" y="620" width="384" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="384" id="WAl-jz-akH"/>
                                 </constraints>
@@ -589,7 +589,7 @@ How do you think others see it?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-fI-qoJ">
-                                <rect key="frame" x="880" y="746" width="194" height="55"/>
+                                <rect key="frame" x="880" y="760" width="194" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" identifier="larg" id="R1p-r1-OP1"/>
                                     <constraint firstAttribute="height" constant="55" identifier="altezza" id="g45-2c-k21"/>
@@ -1645,7 +1645,7 @@ all the answers you gave?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#skinsugi is a place to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Pt-cQ-xmf">
-                                <rect key="frame" x="22" y="141" width="252.5" height="25"/>
+                                <rect key="frame" x="22" y="141" width="285.5" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="JDC-LS-hhj"/>
                                 </constraints>
@@ -1919,13 +1919,13 @@ your body and others’s bodies.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="241.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" misplaced="YES" text="Good " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wg-V5-aIC">
-                                <rect key="frame" x="25" y="118" width="281" height="34"/>
+                                <rect key="frame" x="25" y="122" width="281" height="47"/>
                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v02-uU-l8R">
-                                <rect key="frame" x="22" y="252.5" width="372" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Daily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v02-uU-l8R">
+                                <rect key="frame" x="22" y="257.5" width="372" height="42"/>
                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="25"/>
                                 <color key="textColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2013,8 +2013,8 @@ your body and others’s bodies.</string>
                                     <action selector="secret:" destination="bpt-qr-c5A" eventType="touchUpInside" id="Qcm-Mf-hv2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Nice work! Keep on going" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="71W-Ns-qfS">
-                                <rect key="frame" x="22" y="300" width="372" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" misplaced="YES" text="Nice work! Keep on going" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="71W-Ns-qfS">
+                                <rect key="frame" x="22" y="305" width="372" height="24"/>
                                 <fontDescription key="fontDescription" name="Poppins-ExtraLight" family="Poppins" pointSize="18"/>
                                 <color key="textColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2037,8 +2037,8 @@ your body and others’s bodies.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZ3-f6-Ny2">
-                                <rect key="frame" x="25" y="155.5" width="281" height="47"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZ3-f6-Ny2">
+                                <rect key="frame" x="25" y="161.5" width="281" height="47"/>
                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2076,16 +2076,16 @@ your body and others’s bodies.</string>
                             <constraint firstItem="yHf-AX-5ZQ" firstAttribute="width" secondItem="4YE-cF-0EA" secondAttribute="width" id="JHc-Uf-y1L"/>
                             <constraint firstItem="puv-vE-VcP" firstAttribute="leading" secondItem="hOt-Hk-MoG" secondAttribute="leading" id="LXs-8X-56z"/>
                             <constraint firstItem="hOt-Hk-MoG" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="25" id="Lb5-7N-fuB"/>
-                            <constraint firstItem="cZ3-f6-Ny2" firstAttribute="bottom" secondItem="hOt-Hk-MoG" secondAttribute="top" constant="3" id="LdB-Ve-2kB"/>
+                            <constraint firstItem="cZ3-f6-Ny2" firstAttribute="bottom" secondItem="hOt-Hk-MoG" secondAttribute="top" constant="7" id="LdB-Ve-2kB"/>
                             <constraint firstItem="M1P-wk-6qy" firstAttribute="trailing" secondItem="mqk-Ya-Xpd" secondAttribute="trailing" constant="10" id="Lyd-65-nFh"/>
                             <constraint firstItem="0Wg-V5-aIC" firstAttribute="width" secondItem="4YE-cF-0EA" secondAttribute="width" multiplier="0.678744" id="Mle-SM-UF4"/>
                             <constraint firstItem="mqk-Ya-Xpd" firstAttribute="leading" secondItem="61N-a8-v0d" secondAttribute="trailing" constant="1" id="NAd-O3-rhW"/>
                             <constraint firstItem="fYq-XF-b71" firstAttribute="top" secondItem="4YE-cF-0EA" secondAttribute="topMargin" constant="-0.5" id="PIh-FU-cd4"/>
                             <constraint firstItem="61N-a8-v0d" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="24" id="QYJ-bE-krj"/>
-                            <constraint firstItem="71W-Ns-qfS" firstAttribute="bottom" secondItem="fWY-uv-LMG" secondAttribute="top" constant="-10" id="Tfp-Xh-dNz"/>
-                            <constraint firstItem="hOt-Hk-MoG" firstAttribute="bottom" secondItem="v02-uU-l8R" secondAttribute="top" constant="-16" id="XUQ-4s-JRi"/>
+                            <constraint firstItem="71W-Ns-qfS" firstAttribute="bottom" secondItem="fWY-uv-LMG" secondAttribute="top" constant="-7" id="Tfp-Xh-dNz"/>
+                            <constraint firstItem="hOt-Hk-MoG" firstAttribute="bottom" secondItem="v02-uU-l8R" secondAttribute="top" constant="-19" id="XUQ-4s-JRi"/>
                             <constraint firstItem="cZ3-f6-Ny2" firstAttribute="leading" secondItem="M1P-wk-6qy" secondAttribute="leading" constant="25" id="Xsm-Rj-Li5"/>
-                            <constraint firstItem="0Wg-V5-aIC" firstAttribute="height" secondItem="4YE-cF-0EA" secondAttribute="height" multiplier="0.0267857" id="Ykp-ew-iiL"/>
+                            <constraint firstItem="0Wg-V5-aIC" firstAttribute="height" secondItem="4YE-cF-0EA" secondAttribute="height" multiplier="0.0267857" constant="23.0000128" id="Ykp-ew-iiL"/>
                             <constraint firstItem="0Wg-V5-aIC" firstAttribute="bottom" secondItem="cZ3-f6-Ny2" secondAttribute="top" constant="7.5" id="bx5-CO-bHA"/>
                             <constraint firstItem="fWY-uv-LMG" firstAttribute="height" secondItem="4YE-cF-0EA" secondAttribute="height" multiplier="0.141741" constant="38.000063999999995" id="chg-Wh-WsP"/>
                             <constraint firstItem="mqk-Ya-Xpd" firstAttribute="width" secondItem="4YE-cF-0EA" secondAttribute="width" multiplier="0.456522" id="g8D-Ll-sdW"/>
@@ -3469,7 +3469,7 @@ The two shapes on the outside recount </string>
             <objects>
                 <viewController id="LDR-hH-uX6" customClass="SharePage" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="haL-L1-cYc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1745"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1691"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ir-as-X4c">
@@ -3522,7 +3522,7 @@ The two shapes on the outside recount </string>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(We will publish it on our profile)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzJ-Ev-OB7">
-                                                        <rect key="frame" x="101" y="1515" width="212.5" height="16"/>
+                                                        <rect key="frame" x="90.5" y="1515" width="233.5" height="16"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="16" id="Hfk-Nt-sn4"/>
                                                         </constraints>
