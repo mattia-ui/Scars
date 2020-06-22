@@ -74,7 +74,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         let normalString2 = NSMutableAttributedString(string:boldText1)
         
         let normalText1 = text[1]
-        let attrs2 = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 22)]
+        let attrs2 = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: 20)]
         let attributedString = NSMutableAttributedString(string:normalText1, attributes:attrs2 as [NSAttributedString.Key : Any])
         
         normalString2.append(attributedString)

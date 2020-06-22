@@ -101,7 +101,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="iYI-gG-qQg">
-                                <rect key="frame" x="20" y="142" width="363" height="22"/>
+                                <rect key="frame" x="20" y="139" width="363" height="31"/>
                                 <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="20"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -109,17 +109,17 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="iYI-gG-qQg" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0245536" id="0rT-EN-n7q"/>
+                            <constraint firstItem="iYI-gG-qQg" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0245536" constant="8.9999744000000028" id="0rT-EN-n7q"/>
                             <constraint firstItem="Y7q-Le-8bb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3Ka-Tc-pOO"/>
                             <constraint firstItem="Fim-d8-yE7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.620773" id="3cp-Bs-X6z"/>
-                            <constraint firstItem="Leg-nv-08a" firstAttribute="top" secondItem="iYI-gG-qQg" secondAttribute="bottom" constant="43" id="3zV-rJ-NjU"/>
+                            <constraint firstItem="Leg-nv-08a" firstAttribute="top" secondItem="iYI-gG-qQg" secondAttribute="bottom" constant="37" id="3zV-rJ-NjU"/>
                             <constraint firstItem="iYI-gG-qQg" firstAttribute="trailing" secondItem="Leg-nv-08a" secondAttribute="trailing" id="4uf-Jo-sWw"/>
                             <constraint firstItem="dJF-ko-yfI" firstAttribute="leading" secondItem="iYI-gG-qQg" secondAttribute="leading" id="5RO-90-ZwQ"/>
                             <constraint firstItem="Fim-d8-yE7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-93" id="6YA-6L-nhi"/>
                             <constraint firstItem="Y7q-Le-8bb" firstAttribute="centerX" secondItem="dJF-ko-yfI" secondAttribute="centerX" id="G5t-Gx-tM2"/>
                             <constraint firstItem="dJF-ko-yfI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.903382" id="IBa-Zl-uP0"/>
                             <constraint firstItem="ns4-Sj-bJV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="KPB-8d-IYk"/>
-                            <constraint firstItem="iYI-gG-qQg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="98" id="MrV-aa-DVC"/>
+                            <constraint firstItem="iYI-gG-qQg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="95" id="MrV-aa-DVC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ns4-Sj-bJV" secondAttribute="trailing" constant="26" id="UaR-qM-aFf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fim-d8-yE7" secondAttribute="trailing" constant="230" id="VKP-sb-xgd"/>
                             <constraint firstItem="ns4-Sj-bJV" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.584821" id="WN6-cJ-xZe"/>
@@ -128,13 +128,13 @@
                             <constraint firstItem="dJF-ko-yfI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="acv-Va-NG1"/>
                             <constraint firstItem="Fim-d8-yE7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="435" id="bd3-bV-yL3"/>
                             <constraint firstItem="Y7q-Le-8bb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="eHI-ef-cvf"/>
-                            <constraint firstItem="iYI-gG-qQg" firstAttribute="bottom" secondItem="ns4-Sj-bJV" secondAttribute="top" constant="-11" id="eeu-Ev-h8h"/>
+                            <constraint firstItem="iYI-gG-qQg" firstAttribute="bottom" secondItem="ns4-Sj-bJV" secondAttribute="top" constant="-5" id="eeu-Ev-h8h"/>
                             <constraint firstItem="ns4-Sj-bJV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.884058" id="fAS-ga-tYE"/>
                             <constraint firstItem="dJF-ko-yfI" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0424107" id="hRC-GX-VsM"/>
                             <constraint firstItem="Fim-d8-yE7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0323661" id="iZa-kg-ACI"/>
                             <constraint firstAttribute="bottom" secondItem="Y7q-Le-8bb" secondAttribute="bottom" id="mn8-hV-rK4"/>
                             <constraint firstItem="dJF-ko-yfI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="o7N-q8-Hta"/>
-                            <constraint firstItem="iYI-gG-qQg" firstAttribute="top" secondItem="dJF-ko-yfI" secondAttribute="bottom" constant="8" id="sti-zW-bYJ"/>
+                            <constraint firstItem="iYI-gG-qQg" firstAttribute="top" secondItem="dJF-ko-yfI" secondAttribute="bottom" constant="5" id="sti-zW-bYJ"/>
                             <constraint firstItem="Y7q-Le-8bb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vXE-fp-WVh"/>
                             <constraint firstItem="Y7q-Le-8bb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xSF-wv-6kP"/>
                             <constraint firstItem="Y7q-Le-8bb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xhA-JU-qOy"/>
@@ -1239,7 +1239,7 @@ How do you think others see it?</string>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sea" translatesAutoresizingMaskIntoConstraints="NO" id="YBv-BC-Bzc">
                                         <rect key="frame" x="22" y="-165.5" width="0.0" height="0.0"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="wood" translatesAutoresizingMaskIntoConstraints="NO" id="SNQ-KO-nnh">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" image="wood" translatesAutoresizingMaskIntoConstraints="NO" id="SNQ-KO-nnh">
                                         <rect key="frame" x="22" y="-117" width="0.0" height="0.0"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marble" translatesAutoresizingMaskIntoConstraints="NO" id="57U-4M-5nY">
@@ -1403,7 +1403,7 @@ How do you think others see it?</string>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaT-OJ-lJp">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submit answers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="iqq-Hd-Wwa">
-                                        <rect key="frame" x="76" y="324" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="76" y="324" width="262" height="0.0"/>
                                         <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="32"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -1424,6 +1424,10 @@ all the answers you gave?</string>
                                     </label>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOD-j0-7tp">
                                         <rect key="frame" x="74" y="405" width="0.0" height="0.0"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="ItB-go-hsw"/>
+                                            <constraint firstAttribute="width" constant="112" id="OXw-ae-jae"/>
+                                        </constraints>
                                         <state key="normal" title=" " image="no"/>
                                         <connections>
                                             <segue destination="GG3-f1-cQ8" kind="show" id="rqq-x5-KjR"/>
@@ -1431,6 +1435,9 @@ all the answers you gave?</string>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tz3-ol-La9">
                                         <rect key="frame" x="103" y="405" width="0.0" height="0.0"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Tz3-ol-La9" secondAttribute="height" multiplier="1:1" id="rYa-N4-nIo"/>
+                                        </constraints>
                                         <state key="normal" title=" " image="yes"/>
                                         <connections>
                                             <segue destination="hvR-kH-wNA" kind="show" id="0sY-Oe-LsQ"/>
@@ -1449,7 +1456,7 @@ all the answers you gave?</string>
                                     <constraint firstItem="kHH-QA-nou" firstAttribute="width" secondItem="LaT-OJ-lJp" secondAttribute="width" multiplier="0.620773" id="Jth-HR-Dyl"/>
                                     <constraint firstItem="iOD-j0-7tp" firstAttribute="baseline" secondItem="Tz3-ol-La9" secondAttribute="baseline" id="Lvj-7h-aSa"/>
                                     <constraint firstItem="kHH-QA-nou" firstAttribute="top" secondItem="iqq-Hd-Wwa" secondAttribute="bottom" constant="14" id="Mna-QK-675"/>
-                                    <constraint firstItem="iOD-j0-7tp" firstAttribute="leading" secondItem="LaT-OJ-lJp" secondAttribute="leading" constant="74" id="WEn-Tu-TZw"/>
+                                    <constraint firstItem="iOD-j0-7tp" firstAttribute="leading" secondItem="LaT-OJ-lJp" secondAttribute="leading" constant="74" id="PdU-2h-7ab"/>
                                     <constraint firstItem="RDd-Fb-aqK" firstAttribute="width" secondItem="LaT-OJ-lJp" secondAttribute="height" multiplier="207:421" id="ZbV-qS-UPx"/>
                                     <constraint firstItem="Tz3-ol-La9" firstAttribute="width" secondItem="LaT-OJ-lJp" secondAttribute="height" multiplier="125:842" id="aDK-EG-8ll"/>
                                     <constraint firstItem="iOD-j0-7tp" firstAttribute="width" secondItem="LaT-OJ-lJp" secondAttribute="width" multiplier="0.282609" id="dl8-of-Byx"/>
@@ -2186,7 +2193,7 @@ your body and others’s bodies.</string>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOo-wB-kmc">
-                                <rect key="frame" x="352" y="141" width="36" height="52.5"/>
+                                <rect key="frame" x="352" y="141" width="36" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="36" id="g7T-Mg-eUZ"/>
                                 </constraints>
@@ -2343,7 +2350,7 @@ your body and others’s bodies.</string>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ymt-6W-zKb"/>
                             </scrollView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u6C-90-pJx">
-                                <rect key="frame" x="0.0" y="275.5" width="414" height="586"/>
+                                <rect key="frame" x="0.0" y="267" width="414" height="586"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="jtl-uh-CSj"/>
@@ -2507,7 +2514,7 @@ your body and others’s bodies.</string>
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCe-mq-vgd">
-                                <rect key="frame" x="22" y="141" width="149" height="50.5"/>
+                                <rect key="frame" x="22" y="141" width="125.5" height="42"/>
                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2822,44 +2829,44 @@ your body and others’s bodies.</string>
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1183"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is your #skinsugi!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="tcg-DQ-JRd">
-                                                        <rect key="frame" x="22" y="62" width="392" height="80"/>
+                                                        <rect key="frame" x="22" y="46" width="392" height="106"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="36"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover more about your Masterpiece" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Z49-kW-QRd" userLabel="Discover1">
-                                                        <rect key="frame" x="22" y="150" width="324" height="18"/>
-                                                        <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="20"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover more about your Masterpiece" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z49-kW-QRd" userLabel="Discover1">
+                                                        <rect key="frame" x="22" y="153" width="392" height="18"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="19"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TCAzz" translatesAutoresizingMaskIntoConstraints="NO" id="Q2H-9g-FGd">
-                                                        <rect key="frame" x="72" y="202" width="270" height="270"/>
+                                                        <rect key="frame" x="72" y="210" width="270" height="272"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="raZ-zi-IBM">
-                                                        <rect key="frame" x="291" y="421" width="50" height="50"/>
+                                                        <rect key="frame" x="291" y="429" width="50" height="50"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHV-UC-arC">
-                                                        <rect key="frame" x="72" y="202" width="70" height="70"/>
+                                                        <rect key="frame" x="72" y="210" width="70" height="70"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jgS-5L-Xg9">
-                                                        <rect key="frame" x="140" y="202" width="125" height="270"/>
+                                                        <rect key="frame" x="140" y="210" width="125" height="272"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
-                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cc" translatesAutoresizingMaskIntoConstraints="NO" id="zQL-vM-xeu">
-                                                        <rect key="frame" x="72" y="201" width="270" height="270"/>
+                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cc" translatesAutoresizingMaskIntoConstraints="NO" id="zQL-vM-xeu">
+                                                        <rect key="frame" x="72" y="209" width="270" height="270"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DtU-42-1mO">
-                                                        <rect key="frame" x="180" y="501" width="54" height="54"/>
+                                                        <rect key="frame" x="180" y="524" width="54" height="54"/>
                                                         <state key="normal" image="download"/>
                                                         <connections>
                                                             <action selector="saveScreen:" destination="3Kp-ef-EWY" eventType="touchUpInside" id="rc6-IS-Gz8"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Igl-LE-bMi">
-                                                        <rect key="frame" x="22" y="617" width="370" height="258"/>
+                                                        <rect key="frame" x="22" y="618" width="370" height="258"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="The pattern in the large circle describes ">
                                                                 <attributes>
@@ -2950,7 +2957,7 @@ The two shapes on the outside recount </string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ntc-NU-ZMR" userLabel="Discover2">
-                                                        <rect key="frame" x="22" y="931" width="248" height="24"/>
+                                                        <rect key="frame" x="22" y="932" width="248" height="24"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Discover more about Kinsugi">
                                                                 <attributes>
@@ -2963,7 +2970,7 @@ The two shapes on the outside recount </string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTA-bJ-RLx">
-                                                        <rect key="frame" x="116" y="1031" width="182" height="55"/>
+                                                        <rect key="frame" x="116" y="1032" width="182" height="55"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="55" id="EFw-W6-v2j"/>
                                                             <constraint firstAttribute="width" constant="182" id="Hwg-2J-AJL"/>
@@ -2976,54 +2983,54 @@ The two shapes on the outside recount </string>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="Igl-LE-bMi" firstAttribute="top" secondItem="DtU-42-1mO" secondAttribute="bottom" constant="62" id="1eK-Tv-f22"/>
-                                                    <constraint firstItem="tcg-DQ-JRd" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.0676247" id="2Iv-c1-SwO"/>
-                                                    <constraint firstItem="raZ-zi-IBM" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.169082" id="34S-YG-bAE"/>
+                                                    <constraint firstItem="Igl-LE-bMi" firstAttribute="top" secondItem="DtU-42-1mO" secondAttribute="bottom" constant="40" id="1eK-Tv-f22"/>
+                                                    <constraint firstItem="tcg-DQ-JRd" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.0676247" constant="25.9999799" id="2Iv-c1-SwO"/>
+                                                    <constraint firstItem="raZ-zi-IBM" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.169082" constant="-19.999948000000003" id="34S-YG-bAE"/>
                                                     <constraint firstItem="jgS-5L-Xg9" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.673913" constant="-153.99998199999999" id="9d1-hm-uOj"/>
                                                     <constraint firstItem="Z49-kW-QRd" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.0152156" id="A0X-zO-Vml"/>
                                                     <constraint firstItem="Igl-LE-bMi" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="370:1183" id="BD8-Q4-1rf"/>
                                                     <constraint firstItem="jgS-5L-Xg9" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="279:1183" constant="-154" id="Df1-QH-Olb"/>
                                                     <constraint firstItem="zQL-vM-xeu" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.966184" constant="-130.00017600000001" id="ECZ-rn-ZKa"/>
-                                                    <constraint firstItem="raZ-zi-IBM" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.0591716" id="Ffs-WG-6GY"/>
-                                                    <constraint firstItem="DtU-42-1mO" firstAttribute="top" secondItem="jgS-5L-Xg9" secondAttribute="bottom" constant="29" id="GKq-o6-IQD"/>
-                                                    <constraint firstItem="Z49-kW-QRd" firstAttribute="top" secondItem="tcg-DQ-JRd" secondAttribute="bottom" constant="8" id="GbN-7o-GRL"/>
+                                                    <constraint firstItem="raZ-zi-IBM" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.0591716" constant="-20.000002800000004" id="Ffs-WG-6GY"/>
+                                                    <constraint firstItem="DtU-42-1mO" firstAttribute="top" secondItem="jgS-5L-Xg9" secondAttribute="bottom" constant="42" id="GKq-o6-IQD"/>
+                                                    <constraint firstItem="Z49-kW-QRd" firstAttribute="top" secondItem="tcg-DQ-JRd" secondAttribute="bottom" constant="1" id="GbN-7o-GRL"/>
                                                     <constraint firstItem="Ntc-NU-ZMR" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="248:1183" id="JuJ-3P-Q6E"/>
-                                                    <constraint firstItem="VHV-UC-arC" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.241546" id="KZt-Ko-7CD"/>
+                                                    <constraint firstItem="VHV-UC-arC" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.241546" constant="-30.000044000000003" id="KZt-Ko-7CD"/>
                                                     <constraint firstItem="DtU-42-1mO" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="54:1183" id="L31-OY-0Vd"/>
-                                                    <constraint firstItem="DtU-42-1mO" firstAttribute="top" secondItem="zQL-vM-xeu" secondAttribute="bottom" constant="29" id="NJ5-tj-bbd"/>
+                                                    <constraint firstItem="DtU-42-1mO" firstAttribute="top" secondItem="zQL-vM-xeu" secondAttribute="bottom" constant="45" id="NJ5-tj-bbd"/>
                                                     <constraint firstItem="Ntc-NU-ZMR" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.0202874" id="NYk-Ft-jt8"/>
                                                     <constraint firstItem="tcg-DQ-JRd" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.94686" id="Oh1-h3-d26"/>
-                                                    <constraint firstItem="VHV-UC-arC" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.0845309" id="PHP-UB-nQ3"/>
+                                                    <constraint firstItem="VHV-UC-arC" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.0845309" constant="-30.000054700000007" id="PHP-UB-nQ3"/>
                                                     <constraint firstItem="Ntc-NU-ZMR" firstAttribute="top" secondItem="Igl-LE-bMi" secondAttribute="bottom" constant="56" id="Rzc-d7-TmW"/>
                                                     <constraint firstItem="Igl-LE-bMi" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.21809" id="S1a-lp-0He"/>
-                                                    <constraint firstItem="jgS-5L-Xg9" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.338123" constant="-129.99950899999999" id="SAA-4L-sNH"/>
+                                                    <constraint firstItem="jgS-5L-Xg9" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.338123" constant="-127.99950899999999" id="SAA-4L-sNH"/>
                                                     <constraint firstItem="Q2H-9g-FGd" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="400:1183" constant="-130" id="UWV-5z-ckO"/>
                                                     <constraint firstItem="Q2H-9g-FGd" firstAttribute="centerX" secondItem="DtU-42-1mO" secondAttribute="centerX" id="UaT-WI-LCL"/>
-                                                    <constraint firstItem="Q2H-9g-FGd" firstAttribute="top" secondItem="Z49-kW-QRd" secondAttribute="bottom" constant="34" id="Uus-aU-03V"/>
+                                                    <constraint firstItem="Q2H-9g-FGd" firstAttribute="top" secondItem="Z49-kW-QRd" secondAttribute="bottom" constant="39" id="Uus-aU-03V"/>
                                                     <constraint firstItem="tcg-DQ-JRd" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="56:169" id="Vvs-4Y-ffL"/>
                                                     <constraint firstItem="Q2H-9g-FGd" firstAttribute="top" secondItem="jgS-5L-Xg9" secondAttribute="top" id="WWU-8s-tgk"/>
                                                     <constraint firstItem="zQL-vM-xeu" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="400:1183" constant="-130" id="XIg-HX-anC"/>
                                                     <constraint firstItem="jgS-5L-Xg9" firstAttribute="leading" secondItem="Iaf-1g-HK7" secondAttribute="leading" constant="140" id="Xs4-fD-DCX"/>
                                                     <constraint firstItem="Igl-LE-bMi" firstAttribute="leading" secondItem="Ntc-NU-ZMR" secondAttribute="leading" id="ZeU-Mi-hvp"/>
                                                     <constraint firstItem="zQL-vM-xeu" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.338123" constant="-129.99950899999999" id="awI-IX-mus"/>
-                                                    <constraint firstItem="DtU-42-1mO" firstAttribute="top" secondItem="jgS-5L-Xg9" secondAttribute="bottom" constant="29" id="bUO-sj-CWy"/>
+                                                    <constraint firstItem="DtU-42-1mO" firstAttribute="top" secondItem="jgS-5L-Xg9" secondAttribute="bottom" constant="42" id="bUO-sj-CWy"/>
                                                     <constraint firstItem="DtU-42-1mO" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="54:1183" id="dOd-Ld-c8O"/>
-                                                    <constraint firstItem="jgS-5L-Xg9" firstAttribute="top" secondItem="Z49-kW-QRd" secondAttribute="bottom" constant="34" id="dd5-2D-QtZ"/>
-                                                    <constraint firstItem="tcg-DQ-JRd" firstAttribute="top" secondItem="Iaf-1g-HK7" secondAttribute="top" constant="62" id="dmK-k9-Bn4"/>
+                                                    <constraint firstItem="jgS-5L-Xg9" firstAttribute="top" secondItem="Z49-kW-QRd" secondAttribute="bottom" constant="39" id="dd5-2D-QtZ"/>
+                                                    <constraint firstItem="tcg-DQ-JRd" firstAttribute="top" secondItem="Iaf-1g-HK7" secondAttribute="top" constant="46" id="dmK-k9-Bn4"/>
                                                     <constraint firstItem="tcg-DQ-JRd" firstAttribute="leading" secondItem="Z49-kW-QRd" secondAttribute="leading" id="epF-mV-Hqw"/>
-                                                    <constraint firstItem="Z49-kW-QRd" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.782609" id="eqV-bC-ITV"/>
+                                                    <constraint firstItem="Z49-kW-QRd" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.782609" constant="67.999873999999977" id="eqV-bC-ITV"/>
                                                     <constraint firstItem="zQL-vM-xeu" firstAttribute="leading" secondItem="Q2H-9g-FGd" secondAttribute="leading" id="f8k-94-IJU"/>
                                                     <constraint firstItem="zQL-vM-xeu" firstAttribute="centerX" secondItem="Iaf-1g-HK7" secondAttribute="centerX" id="gnn-lx-k71"/>
                                                     <constraint firstItem="jTA-bJ-RLx" firstAttribute="top" secondItem="Ntc-NU-ZMR" secondAttribute="bottom" constant="76" id="hHq-HY-91j"/>
                                                     <constraint firstItem="Z49-kW-QRd" firstAttribute="leading" secondItem="Igl-LE-bMi" secondAttribute="leading" id="iz1-Tx-aII"/>
                                                     <constraint firstItem="Q2H-9g-FGd" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.966184" constant="-130.00017600000001" id="j1C-Pr-lU8"/>
                                                     <constraint firstItem="DtU-42-1mO" firstAttribute="centerX" secondItem="Igl-LE-bMi" secondAttribute="centerX" id="kFU-Vr-cdb"/>
-                                                    <constraint firstItem="Q2H-9g-FGd" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.338123" constant="-129.99950899999999" id="kQL-e6-vax"/>
-                                                    <constraint firstItem="DtU-42-1mO" firstAttribute="top" secondItem="Q2H-9g-FGd" secondAttribute="bottom" constant="29" id="lhI-xx-f1h"/>
-                                                    <constraint firstItem="Z49-kW-QRd" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="324:1183" id="mSV-eQ-zZL"/>
+                                                    <constraint firstItem="Q2H-9g-FGd" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.338123" constant="-127.99950899999999" id="kQL-e6-vax"/>
+                                                    <constraint firstItem="DtU-42-1mO" firstAttribute="top" secondItem="Q2H-9g-FGd" secondAttribute="bottom" constant="42" id="lhI-xx-f1h"/>
+                                                    <constraint firstItem="Z49-kW-QRd" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="324:1183" constant="68" id="mSV-eQ-zZL"/>
                                                     <constraint firstItem="Igl-LE-bMi" firstAttribute="centerX" secondItem="jTA-bJ-RLx" secondAttribute="centerX" id="seX-vS-9nv"/>
                                                     <constraint firstItem="Igl-LE-bMi" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.89372" id="tjA-Lf-qMt"/>
-                                                    <constraint firstItem="zQL-vM-xeu" firstAttribute="top" secondItem="Z49-kW-QRd" secondAttribute="bottom" constant="34" id="uE5-83-t3T"/>
+                                                    <constraint firstItem="zQL-vM-xeu" firstAttribute="top" secondItem="Z49-kW-QRd" secondAttribute="bottom" constant="38" id="uE5-83-t3T"/>
                                                     <constraint firstItem="Ntc-NU-ZMR" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.599034" id="uMs-uT-aeu"/>
                                                     <constraint firstItem="DtU-42-1mO" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.0456467" id="yqi-KD-j15"/>
                                                 </constraints>
@@ -3066,7 +3073,7 @@ The two shapes on the outside recount </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOi-Iq-BeJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6105.7971014492759" y="2276.4508928571427"/>
+            <point key="canvasLocation" x="5863.768115942029" y="2402.34375"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="151-S0-q0z">
@@ -3487,13 +3494,13 @@ The two shapes on the outside recount </string>
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1653"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram power!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Grm-fg-a3p">
-                                                        <rect key="frame" x="22" y="73" width="318" height="42"/>
+                                                        <rect key="frame" x="22" y="55" width="351" height="42"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="36"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WQJ-Vl-Xrs">
-                                                        <rect key="frame" x="102" y="158.5" width="210" height="203"/>
+                                                        <rect key="frame" x="102" y="153.5" width="210" height="203"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yy9-H0-njk">
@@ -3542,7 +3549,7 @@ The two shapes on the outside recount </string>
                                                                 <fragment content="Copy caption">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.17652302980000001" green="0.1601839364" blue="0.2000049055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                                        <font key="NSFont" size="18" name="Poppins-Regular"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         <integer key="NSUnderline" value="1"/>
                                                                     </attributes>
@@ -3563,7 +3570,7 @@ The two shapes on the outside recount </string>
                                                                 <fragment content="Not now">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                                        <font key="NSFont" size="18" name="Poppins-Regular"/>
                                                                         <font key="NSOriginalFont" metaFont="system" size="18"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         <integer key="NSUnderline" value="1"/>
@@ -3604,8 +3611,8 @@ The two shapes on the outside recount </string>
                                                     <constraint firstItem="P7L-nb-SEH" firstAttribute="centerX" secondItem="1ks-8R-CwO" secondAttribute="centerX" id="L9Y-hc-d5A"/>
                                                     <constraint firstItem="3eN-Y8-iqG" firstAttribute="height" secondItem="xEw-87-8Pl" secondAttribute="height" multiplier="0.0332728" id="OjN-Lj-Xja"/>
                                                     <constraint firstItem="XLh-Ts-cbd" firstAttribute="leading" secondItem="P7L-nb-SEH" secondAttribute="leading" id="Pad-Tv-ABn"/>
-                                                    <constraint firstItem="Grm-fg-a3p" firstAttribute="top" secondItem="xEw-87-8Pl" secondAttribute="top" constant="73" id="PxD-AH-C3u"/>
-                                                    <constraint firstItem="Yy9-H0-njk" firstAttribute="top" secondItem="WQJ-Vl-Xrs" secondAttribute="bottom" constant="26.5" id="SEE-Lc-lcE"/>
+                                                    <constraint firstItem="Grm-fg-a3p" firstAttribute="top" secondItem="xEw-87-8Pl" secondAttribute="top" constant="55" id="PxD-AH-C3u"/>
+                                                    <constraint firstItem="Yy9-H0-njk" firstAttribute="top" secondItem="WQJ-Vl-Xrs" secondAttribute="bottom" constant="31.5" id="SEE-Lc-lcE"/>
                                                     <constraint firstItem="wLi-qF-dST" firstAttribute="top" secondItem="Yy9-H0-njk" secondAttribute="bottom" constant="56" id="Sxa-hU-x8v"/>
                                                     <constraint firstItem="P7L-nb-SEH" firstAttribute="height" secondItem="xEw-87-8Pl" secondAttribute="height" multiplier="0.121597" id="TLF-xh-p64"/>
                                                     <constraint firstItem="1ks-8R-CwO" firstAttribute="width" secondItem="xEw-87-8Pl" secondAttribute="width" multiplier="0.280193" constant="20.999999999999986" id="TPv-KU-hZ3"/>
@@ -3616,8 +3623,8 @@ The two shapes on the outside recount </string>
                                                     <constraint firstItem="edT-gu-EJb" firstAttribute="height" secondItem="xEw-87-8Pl" secondAttribute="height" multiplier="0.0332728" id="a8j-8W-qwp"/>
                                                     <constraint firstItem="UN9-uJ-1tT" firstAttribute="width" secondItem="xEw-87-8Pl" secondAttribute="width" multiplier="0.190821" constant="39" id="alO-Dl-MVf"/>
                                                     <constraint firstItem="1ks-8R-CwO" firstAttribute="top" secondItem="P7L-nb-SEH" secondAttribute="bottom" constant="13" id="apQ-EK-ccr"/>
-                                                    <constraint firstItem="WQJ-Vl-Xrs" firstAttribute="top" secondItem="Grm-fg-a3p" secondAttribute="bottom" constant="43.5" id="dGe-2Y-s9e"/>
-                                                    <constraint firstItem="Grm-fg-a3p" firstAttribute="width" secondItem="xEw-87-8Pl" secondAttribute="height" multiplier="106:551" id="dun-1c-I2B"/>
+                                                    <constraint firstItem="WQJ-Vl-Xrs" firstAttribute="top" secondItem="Grm-fg-a3p" secondAttribute="bottom" constant="56.5" id="dGe-2Y-s9e"/>
+                                                    <constraint firstItem="Grm-fg-a3p" firstAttribute="width" secondItem="xEw-87-8Pl" secondAttribute="height" multiplier="106:551" constant="33" id="dun-1c-I2B"/>
                                                     <constraint firstItem="wLi-qF-dST" firstAttribute="width" secondItem="xEw-87-8Pl" secondAttribute="height" multiplier="138:551" id="evz-nL-kd9"/>
                                                     <constraint firstItem="3eN-Y8-iqG" firstAttribute="width" secondItem="xEw-87-8Pl" secondAttribute="height" multiplier="268:1653" id="fBR-u8-E6o"/>
                                                     <constraint firstItem="Yy9-H0-njk" firstAttribute="width" secondItem="xEw-87-8Pl" secondAttribute="width" multiplier="0.89372" id="fit-Ob-IXc"/>
@@ -3631,7 +3638,7 @@ The two shapes on the outside recount </string>
                                                     <constraint firstItem="edT-gu-EJb" firstAttribute="width" secondItem="xEw-87-8Pl" secondAttribute="width" multiplier="0.381643" id="rWI-Q2-HnW"/>
                                                     <constraint firstItem="WQJ-Vl-Xrs" firstAttribute="centerX" secondItem="xEw-87-8Pl" secondAttribute="centerX" id="rhh-FS-GMM"/>
                                                     <constraint firstItem="3eN-Y8-iqG" firstAttribute="top" secondItem="edT-gu-EJb" secondAttribute="bottom" constant="28" id="sWA-SI-7Ef"/>
-                                                    <constraint firstItem="Grm-fg-a3p" firstAttribute="width" secondItem="xEw-87-8Pl" secondAttribute="width" multiplier="0.768116" id="t1U-Bm-XtS"/>
+                                                    <constraint firstItem="Grm-fg-a3p" firstAttribute="width" secondItem="xEw-87-8Pl" secondAttribute="width" multiplier="0.768116" constant="32.999976000000004" id="t1U-Bm-XtS"/>
                                                     <constraint firstAttribute="bottom" secondItem="UN9-uJ-1tT" secondAttribute="bottom" constant="43" id="tnr-TD-k31"/>
                                                     <constraint firstItem="1ks-8R-CwO" firstAttribute="height" secondItem="xEw-87-8Pl" secondAttribute="height" multiplier="0.0217786" id="tra-FK-cUx"/>
                                                     <constraint firstItem="WQJ-Vl-Xrs" firstAttribute="width" secondItem="xEw-87-8Pl" secondAttribute="height" multiplier="70:551" id="u2R-2R-YSg"/>
@@ -3714,7 +3721,7 @@ The two shapes on the outside recount </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wEb-bN-aLK"/>
+        <segue reference="47n-ms-sJd"/>
         <segue reference="s1A-7h-Aw8"/>
         <segue reference="rkX-St-HZF"/>
     </inferredMetricsTieBreakers>
