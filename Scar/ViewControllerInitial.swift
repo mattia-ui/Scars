@@ -35,7 +35,7 @@ class ViewControllerInitial: UIViewController, UIScrollViewDelegate {
     var attivita: [ContenutoStruct] = []
     var slides:[Slide] = []
     var sfondi: [String] = ["background","background2","background3","BackTake","background5","BackDo1","background7","background8","background9"]
-    var sfondiNav: [String] = ["MirrorWork1","BeInspired","TheJournal1","TakeAWalk","Meditate","DoExercise","ASmile","DailyGoals","EnjoySunlight"]
+    var sfondiNav: [String] = ["MirrorWork","BeInspired","TheJournal","TakeAWalk","Meditate","DoExercise","ASmile","DailyGoals","EnjoySunlight"]
     @IBOutlet weak var scrollView: UIScrollView!{
         didSet{ scrollView.delegate = self }
     }
@@ -151,7 +151,7 @@ class ViewControllerInitial: UIViewController, UIScrollViewDelegate {
             numberL = attivita[i].righe
         }
             
-        let image = UIImage(named: "MarkAsDone") as UIImage?
+        let image = UIImage(named: "MarkAsDone1") as UIImage?
         let button = UIButton(type: UIButton.ButtonType.custom) as UIButton
         button.frame = CGRect(x: 84, y: 20.30 *  CGFloat(numberL) + 50, width: 244, height: 55)
         button.setImage(image, for: .normal)
