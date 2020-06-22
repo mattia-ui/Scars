@@ -41,7 +41,8 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
         print(view.frame.origin.x)
         UIView.animate(withDuration: aCircleTime, animations: {
-            () -> Void in view.transform = CGAffineTransform(translationX: to, y: 0)
+            () -> Void in
+            view.transform = CGAffineTransform(translationX: to, y: 0)
         })
     }
     
@@ -169,7 +170,21 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         traslate(view: TableView, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
         traslate(view: LastStep, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
         traslate(view: frase3, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
-        traslate(view: domande3, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
+        
+        if(view.frame.height >= 840){
+            UIView.animate(withDuration: 0.1, animations: {
+                () -> Void in
+                self.domande3.transform = CGAffineTransform(translationX: -(UIScreen.main.bounds.width*2), y: -80)
+            })
+        } else if(view.frame.height >= 712) {
+            UIView.animate(withDuration: 0.1, animations: {
+                        () -> Void in
+                self.domande3.transform = CGAffineTransform(translationX: -(UIScreen.main.bounds.width*2), y: -40)
+            })
+        } else {
+            traslate(view: domande3, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
+        }
+        
         traslate(view: button3, aCircleTime: 0.1, to: -(UIScreen.main.bounds.width*2))
         button3.frame.origin.x = (UIScreen.main.bounds.width / 2) - 97
         
