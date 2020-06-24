@@ -209,7 +209,7 @@ class ChooseTexture: UIViewController  {
             cratere.isSelected = false
             marble.isSelected = false
             nex.isEnabled = true
-            ChooseTexture.texture1 = texture[1]
+            ChooseTexture.texture1 = texture[4]
         }
     }
     
@@ -239,7 +239,7 @@ class ChooseTexture: UIViewController  {
             cratere.isSelected = true
             marble.isSelected = false
             nex.isEnabled = true
-            ChooseTexture.texture1 = texture[3]
+            ChooseTexture.texture1 = texture[1]
         }
     }
     
@@ -254,7 +254,7 @@ class ChooseTexture: UIViewController  {
             cratere.isSelected = false
             marble.isSelected = true
             nex.isEnabled = true
-            ChooseTexture.texture1 = texture[4]
+            ChooseTexture.texture1 = texture[3]
         }
     }
 }
