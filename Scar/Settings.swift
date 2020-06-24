@@ -17,6 +17,7 @@ class Settins: UIViewController {
     @IBOutlet weak var linea1: UIImageView!
     @IBOutlet weak var settingslabel: UILabel!
     @IBOutlet weak var linea3: UIImageView!
+    @IBOutlet weak var imageSettings: UIImageView!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -30,6 +31,9 @@ class Settins: UIViewController {
             traslate(view: lingua, aCircleTime: 0, to: 5)
             traslate(view: linea3, aCircleTime: 0, to: 6)
             
+        } else if(view.frame.height == 896){
+            traslate(view: imageSettings, aCircleTime: 0, to: -16)
+            traslate(view: linea1, aCircleTime: 0, to: 7)
         }
         
     }
