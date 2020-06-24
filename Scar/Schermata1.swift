@@ -25,6 +25,9 @@ let NotificationKey2 = "co.seanallen.Side2"
 
 class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    @IBOutlet weak var weekLabel: UILabel!
+    @IBOutlet weak var readyLabel: UILabel!
+    @IBOutlet weak var dailyLabel: UILabel!
     @IBOutlet weak var orarioSetUp: UILabel!
     var i = 1
     @IBOutlet weak var activity: UICollectionView!
@@ -61,6 +64,13 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
             i = i + 1
         }
     }
+    
+    func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
+        print(view.frame.origin.x)
+        UIView.animate(withDuration: aCircleTime, animations: {
+            () -> Void in view.transform = CGAffineTransform(translationX: 0, y: to)
+        })
+    }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return Schermata1.allImages.count
@@ -70,6 +80,7 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         
         let cell = activity.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! CollectionViewCell1
     
+
         
         cell.cardsImage.image = UIImage(named: Schermata1.allCardsImages[indexPath.row] + ".png")
         let tap = MyTapGesture(target: self, action: #selector(self.go(sender:)))
@@ -104,6 +115,31 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        
+        if(view.frame.height == 812){
+            traslate(view: nome, aCircleTime: 0, to: 15)
+            traslate(view: spronatiLabel, aCircleTime: 0, to: 9)
+            traslate(view: readyLabel, aCircleTime: 0, to: 15)
+            traslate(view: dailyLabel, aCircleTime: 0, to: 11)
+            traslate(view: orarioSetUp, aCircleTime: 0, to: 17)
+            traslate(view: weekLabel, aCircleTime: 0, to: -8)
+            traslate(view: numeroWeek, aCircleTime: 0, to: -8)
+                }else if(view.frame.height == 896){
+                    traslate(view: weekLabel, aCircleTime: 0, to: -8)
+                    traslate(view: numeroWeek, aCircleTime: 0, to: -8)
+                    
+                }else if(view.frame.height == 667){
+                    traslate(view: nome, aCircleTime: 0, to: 7)
+                    traslate(view: spronatiLabel, aCircleTime: 0, to: 7)
+                    traslate(view: readyLabel, aCircleTime: 0, to: 7)
+                    traslate(view: dailyLabel, aCircleTime: 0, to: 7)
+                    traslate(view: orarioSetUp, aCircleTime: 0, to: 11)
+                    traslate(view: weekLabel, aCircleTime: 0, to: -2)
+                    traslate(view: numeroWeek, aCircleTime: 0, to: -2)
+            orarioSetUp.font = UIFont(name: "Poppins-SemiBold", size: 23)
+                    
+        }
+        
     }
 
     @objc func update(notification: NSNotification) {
