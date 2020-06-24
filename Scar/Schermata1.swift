@@ -36,6 +36,7 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     @IBOutlet weak var numeroWeek: UILabel!
     var weeklyInfo: [WeeklyStruct] = []
     var frasiDeStoCazzo : [String] = []
+    static var allCardsImages: [String] = []
     
     let light = Notification.Name(rawValue: NotificationKey2)
     
@@ -48,7 +49,6 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     }
     
     static var allImages: [String] = ["unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked","unchecked"]
-    static var allCardsImages: [String] = ["Card1p","Card2p","Card3p","Card4p","Card5p","Card6p","Card7p","Card8p","Card9p"]
     static var weekly: WeeklyStruct = WeeklyStruct(title:"",descr: "", image: "")
     @IBOutlet weak var spronatiLabel: UILabel!
     
@@ -157,6 +157,8 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
 
+        Schermata1.allCardsImages = ENG.allCardsImages
+        
         weeklyInfo = ENG.Schermata1weeklyInfo
         frasiDeStoCazzo = ENG.Schermata1frasiDeStoCazzo
         let textSaluti = ENG.Schermata1Saluti

@@ -35,7 +35,7 @@ class ViewControllerInitial: UIViewController, UIScrollViewDelegate {
     var attivita: [ContenutoStruct] = []
     var slides:[Slide] = []
     var sfondi: [String] = ["background","background2","background3","BackTake","background5","BackDo1","background7","background8","background9"]
-    var sfondiNav: [String] = ["MirrorWork","BeInspired","TheJournal","TakeAWalk","Meditate","DoExercise","ASmile","DailyGoals","EnjoySunlight"]
+    var sfondiNav: [String] = []
     @IBOutlet weak var scrollView: UIScrollView!{
         didSet{ scrollView.delegate = self }
     }
@@ -94,6 +94,7 @@ class ViewControllerInitial: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
 
+        sfondiNav = ENG.sfondiNav
         dati = ENG.ViewControllerInitialdati
         
         imageNav.image = UIImage(named: sfondiNav[id1])

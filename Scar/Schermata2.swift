@@ -56,6 +56,7 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
     @IBOutlet weak var r6: UIImageView!
     var structIns: [ins]!
     var ins: [String] = []
+    var SeeMore: [String] = []
     
     @IBOutlet weak var myCollectionView: UICollectionView!
     @IBOutlet weak var scroll: UIScrollView!
@@ -79,10 +80,10 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         
         if (kind == UICollectionView.elementKindSectionFooter) {
             let footerView = myCollectionView.dequeueReusableCell(withReuseIdentifier: "footer", for: indexPath) as! FooterCollectionView
-            if(imgButt == "SeeMoreMovies"){
+            if(imgButt == SeeMore[1]){
                 footerView.image.image = UIImage(named: "tmb")
                 footerView.text.text = "This product uses the TMDb API but\nis not endorsed or certified by TMDb."
-            }else if(imgButt == "SeeMore"){
+            }else if(imgButt == SeeMore[0]){
                 footerView.image.image = UIImage(named: "tedx")
                 let paragraphStyle = NSMutableParagraphStyle()
                 paragraphStyle.alignment = NSTextAlignment.center
@@ -95,10 +96,10 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
                 )
                 attributedString.addAttribute(.link, value:"https://creativecommons.org/licenses/by-nc-nd/4.0/", range: NSRange(location: 30, length: 82))
                 footerView.text.attributedText = attributedString
-            } else if(imgButt == "SeeMoreBooks"){
+            } else if(imgButt == SeeMore[3]){
                 footerView.image.image = UIImage(named: "goodreeds")
                 footerView.text.text = ""
-            } else if(imgButt == "SeeMorePodcast"){
+            } else if(imgButt == SeeMore[5]){
                 footerView.image.image = UIImage(named: "Spotify")
                 footerView.text.text = ""
             } else {
@@ -126,12 +127,12 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         } else {
             cell.div.image = UIImage(named: "")
         }
-        if(imgButt == "SeeMoreMovies" || imgButt == "SeeMore" || imgButt == "SeeMoreBooks" || imgButt == "SeeMorePodcast"){
+        if(imgButt == SeeMore[1] || imgButt == SeeMore[0] || imgButt == SeeMore[3] || imgButt == SeeMore[5]){
             if(indexPath.row == contenuto.count - 1){
                 cell.div.image = UIImage(named: "divisore")
             }
         }
-        if(imgButt == "SeeMoreMovies"){
+        if(imgButt == SeeMore[1]){
             if(indexPath.row < Schermata2.film.count){
                 if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
                 cell.image.image = UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent(Schermata2.film[indexPath.row] + ".png").path)
@@ -159,6 +160,8 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
+        
+        SeeMore = ENG.goToLink
         
         var db: OpaquePointer?
                     
@@ -195,27 +198,27 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         if(Schermata2.insights[0] != ""){
            if(Schermata2.insights[0] == ins[0]){
                 contenuto = structIns[0].pod
-                self.imgButt = "SeeMore"
+                self.imgButt = SeeMore[0]
             }
             if(Schermata2.insights[0] == ins[1]){
                 contenuto = structIns[0].well
-                self.imgButt = "SeeMoreMovies"
+                self.imgButt = SeeMore[1]
             }
             if(Schermata2.insights[0] == ins[2]){
                 contenuto = structIns[0].mov
-                self.imgButt = "SeeMoreArticle"
+                self.imgButt = SeeMore[2]
             }
             if(Schermata2.insights[0] == ins[3]){
                 contenuto = structIns[0].art
-                self.imgButt = "SeeMoreBooks"
+                self.imgButt = SeeMore[3]
             }
             if(Schermata2.insights[0] == ins[4]){
                 contenuto = structIns[0].artists
-                self.imgButt = "SeeMoreInspiringPeople"
+                self.imgButt = SeeMore[4]
             }
             if(Schermata2.insights[0] == ins[5]){
                 contenuto = structIns[0].books
-                self.imgButt = "SeeMorePodcast"
+                self.imgButt = SeeMore[5]
             }
            
             var somma: CGFloat = 0
@@ -350,27 +353,27 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         if(Schermata2.insights[0] != ""){
             if(Schermata2.insights[0] == ins[0]){
                 contenuto = structIns[0].pod
-                self.imgButt = "SeeMore"
+                self.imgButt = SeeMore[0]
             }
             if(Schermata2.insights[0] == ins[1]){
                 contenuto = structIns[0].well
-                self.imgButt = "SeeMoreMovies"
+                self.imgButt = SeeMore[1]
             }
             if(Schermata2.insights[0] == ins[2]){
                 contenuto = structIns[0].mov
-                self.imgButt = "SeeMoreArticle"
+                self.imgButt = SeeMore[2]
             }
             if(Schermata2.insights[0] == ins[3]){
                 contenuto = structIns[0].art
-                self.imgButt = "SeeMoreBooks"
+                self.imgButt = SeeMore[3]
             }
             if(Schermata2.insights[0] == ins[4]){
                 contenuto = structIns[0].artists
-                self.imgButt = "SeeMoreInspiringPeople"
+                self.imgButt = SeeMore[4]
             }
             if(Schermata2.insights[0] == ins[5]){
                 contenuto = structIns[0].books
-                self.imgButt = "SeeMorePodcast"
+                self.imgButt = SeeMore[5]
             }
 
 
@@ -410,27 +413,27 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         
         if(sender.titleLabel?.text == ins[0]){
             contenuto = structIns[0].pod
-            self.imgButt = "SeeMore"
+            self.imgButt = SeeMore[0]
         }
         if(sender.titleLabel?.text == ins[1]){
             contenuto = structIns[0].well
-            self.imgButt = "SeeMoreMovies"
+            self.imgButt = SeeMore[1]
         }
         if(sender.titleLabel?.text == ins[2]){
             contenuto = structIns[0].mov
-            self.imgButt = "SeeMoreArticle"
+            self.imgButt = SeeMore[2]
         }
         if(sender.titleLabel?.text == ins[3]){
             contenuto = structIns[0].art
-            self.imgButt = "SeeMoreBooks"
+            self.imgButt = SeeMore[3]
         }
         if(sender.titleLabel?.text == ins[4]){
             contenuto = structIns[0].artists
-            self.imgButt = "SeeMoreInspiringPeople"
+            self.imgButt = SeeMore[4]
         }
         if(sender.titleLabel?.text == ins[5]){
             contenuto = structIns[0].books
-            self.imgButt = "SeeMorePodcast"
+            self.imgButt = SeeMore[5]
         }
         
         if(b1.isSelected == true){

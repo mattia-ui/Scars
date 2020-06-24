@@ -9,6 +9,33 @@
 import UIKit
 
 class ENG: UIViewController{
+    
+        static var goToLink: [String] = ["SeeMore","SeeMoreMovies","SeeMoreArticle","SeeMoreBooks","SeeMoreInspiringPeople","SeeMorePodcast"]
+    
+        static var sfondiNav: [String] = ["MirrorWork","BeInspired","TheJournal","TakeAWalk","Meditate","DoExercise","ASmile","DailyGoals","EnjoySunlight"]
+    
+        static var allCardsImages: [String] = ["Card1p","Card2p","Card3p","Card4p","Card5p","Card6p","Card7p","Card8p","Card9p"]
+    
+        static var button = [
+            "submit azzurro", //Bottone elabora disegno schermata disegno
+            "submitno", //Bottone elabora disegno schermata disegno disabilitato
+            "Reset", //Bottone reset schermata disegno
+            "letsgoazzurro", //Bottone let's go schermata post collage/Choose shape/Choose shape2/Choose palette/Choose texture
+            "nextazzurrono", //Bottone let's go schermata post collage/Choose shape/Choose shape2/Choose palette/Choose texture disabilitato
+            "no", //Bottone no schermata Choose texture
+            "yes", //Bottone no schermata Choose texture
+            "readyViola", //Bottone ready schermata tutorial 2
+            "start", //Bottone start schermata tutorial
+            "StartN", //Bottone start schermata tutorial disailitato
+            "done", //Bottone done schermata tutorial
+            "DoneN", //Bottone done schermata tutorial disabilitato
+            "Let'sgo", //Bottone let's go schermata tutorial
+            "proceed", //Bottone procedere Collage
+            "share (2)", //Bottone schare Generate Again
+            "generate", //Bottone generate Generate Again
+            "share", //Bottone schare Share page
+            "shareanonymously (2)",//Bottone schare anonimo Share page
+        ]
 
         static var insights = ["TEDx","Movies and Series","Articles","Books","Inspiring People","Podcasts"]
         
