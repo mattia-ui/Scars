@@ -10,7 +10,7 @@ import UIKit
 
 class ITA: UIViewController{
 
-         static var goToLink: [String] = ["SeeMore","SeeMoreMovies","SeeMoreArticle","SeeMoreBooks","SeeMoreInspiringPeople","SeeMorePodcast"]
+         static var goToLink: [String] = ["SeeMoreIta","SeeMoreMoviesIta","SeeMoreArticleIta","SeeMoreBooksIta","SeeMoreInspiringPeopleIta","SeeMorePodcastIta"]
             
                 static var sfondiNav: [String] = ["MirrorWork","BeInspired","TheJournal","TakeAWalk","Meditate","DoExercise","ASmile","DailyGoals","EnjoySunlight"]
             
@@ -24,12 +24,12 @@ class ITA: UIViewController{
                     "nextazzurrono", //Bottone let's go schermata post collage/Choose shape/Choose shape2/Choose palette/Choose texture disabilitato
                     "no", //Bottone no schermata Choose texture
                     "yes", //Bottone no schermata Choose texture
-                    "readyViola", //Bottone ready schermata tutorial 2
-                    "start", //Bottone start schermata tutorial
-                    "StartN", //Bottone start schermata tutorial disailitato
-                    "done", //Bottone done schermata tutorial
-                    "DoneN", //Bottone done schermata tutorial disabilitato
-                    "Let'sgo", //Bottone let's go schermata tutorial
+                    "readyViolaIta", //Bottone ready schermata tutorial 2
+                    "startIta", //Bottone start schermata tutorial
+                    "StartNIta", //Bottone start schermata tutorial disailitato
+                    "doneIta", //Bottone done schermata tutorial
+                    "DoneNIta", //Bottone done schermata tutorial disabilitato
+                    "Let'sgoIta", //Bottone let's go schermata tutorial
                     "proceed", //Bottone procedere Collage
                     "share (2)", //Bottone schare Generate Again
                     "generate", //Bottone generate Generate Again
