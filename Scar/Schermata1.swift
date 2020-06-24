@@ -61,7 +61,7 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
             i = i + 1
         }
     }
-  
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return Schermata1.allImages.count
     }
