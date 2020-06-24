@@ -135,9 +135,11 @@ class Collage: UIViewController, UITextFieldDelegate  {
     let dataBase = CKContainer.default().publicCloudDatabase
         
     override func viewWillAppear(_ animated: Bool) {
-               super.viewWillAppear(animated)
-               self.navigationController?.setNavigationBarHidden(true, animated: animated)
-           }
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        
+       viewDidLoad()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -148,40 +150,42 @@ class Collage: UIViewController, UITextFieldDelegate  {
         tapgesture.link = "https://medium.com/@skinsugi/the-ancient-art-of-kintsugi-e6ed203ad939"
         self.mediumLink.addGestureRecognizer(tapgesture)
         
-        var db: OpaquePointer?
+       var db: OpaquePointer?
+                                 
+       //Si connette al DB
+       let fileURL = try!
+       FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+       if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+           print("error opening database")
+       }
+                               
+       //Recupera Valore
+       var stmt: OpaquePointer?
+       let queryString = "SELECT * FROM Lingua"
+       if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+       let errmsg = String(cString: sqlite3_errmsg(db)!)
+       print("error preparing insert: \(errmsg)")
+           return
+       }
+                   
+       var lingua = ""
+       while(sqlite3_step(stmt) == SQLITE_ROW){
+           lingua = String(cString: sqlite3_column_text(stmt, 1))
+       }
                            
-        //Si connette al DB
-        let fileURL = try!
-        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
-        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
-            print("error opening database")
-        }
-                         
-        //Recupera Valore
-        var stmt: OpaquePointer?
-        let queryString = "SELECT * FROM Lingua"
-        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
-        let errmsg = String(cString: sqlite3_errmsg(db)!)
-        print("error preparing insert: \(errmsg)")
-            return
-        }
-             
-        var lingua = ""
-        while(sqlite3_step(stmt) == SQLITE_ROW){
-            lingua = String(cString: sqlite3_column_text(stmt, 1))
-        }
-                     
-        if(lingua == "eng"){
-            shape = ENG.Shape
-            palette = ENG.Palette
-            texture = ENG.Texture
-            procede.imageView?.image = UIImage(named: ENG.button[14])
-        } else if (lingua == "ita"){
-            shape = ITA.Shape
-            palette = ITA.Palette
-            texture = ITA.Texture
+       if(lingua == "eng"){
+           text = ENG.textOnCollage
+           shape = ENG.Shape
+           palette = ENG.Palette
+           texture = ENG.Texture
+           procede.imageView?.image = UIImage(named: ENG.button[14])
+       } else if (lingua == "ita"){
+           text = ITA.textOnCollage
+           shape = ITA.Shape
+           palette = ITA.Palette
+           texture = ITA.Texture
            procede.imageView?.image = UIImage(named: ITA.button[14])
-        }
+       }
         
         if(ChooseShape.shape1 == shape[0]){
             if(ChoosePalette.color == palette[1]){
@@ -707,11 +711,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
             fontSize = 18
         }
         
-        if(lingua == "eng"){
-            text = ENG.textOnCollage
-        } else if (lingua == "ita"){
-            text = ITA.textOnCollage
-        }
+       
         
         var normalText = text[0]
         var attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]

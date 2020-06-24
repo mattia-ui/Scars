@@ -40,6 +40,7 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     var weeklyInfo: [WeeklyStruct] = []
     var frasiDeStoCazzo : [String] = []
     static var allCardsImages: [String] = []
+    var textSaluti: [String] = []
     
     let light = Notification.Name(rawValue: NotificationKey2)
     
@@ -115,6 +116,8 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
+       
+        viewDidLoad()
         
         if(view.frame.height == 812){
             traslate(view: nome, aCircleTime: 0, to: 15)
@@ -193,10 +196,6 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
         
-        weeklyInfo = ENG.Schermata1weeklyInfo
-        frasiDeStoCazzo = ENG.Schermata1frasiDeStoCazzo
-        let textSaluti = ENG.Schermata1Saluti
-        
         overrideUserInterfaceStyle = .light   
         UserDefaults.standard.set(true, forKey: "LaunchedBefore")
         let layout = UICollectionViewFlowLayout()
@@ -209,17 +208,6 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         let day2 = components2.day ?? 0
         let hour2 = components2.hour ?? 0
         let minute2 = components2.minute ?? 0
-                
-        if(hour2 >= 14 && hour2 < 20){
-            imagineOrario.image = UIImage(named: "Afternoon")
-            orarioSetUp.text = textSaluti[0]
-        } else if (hour2 >= 20 || hour2 < 5){
-            imagineOrario.image = UIImage(named: "Evening")
-            orarioSetUp.text = textSaluti[1]
-        }else{
-            imagineOrario.image = UIImage(named: "Morning")
-            orarioSetUp.text = textSaluti[2]
-        }
                 
         //Si connette al DB
         let fileURL = try!
@@ -242,25 +230,45 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         }
                 
         nome.text = String(nomeData.dropFirst(10).dropLast(2)) + "!"
-                
+
+
+               //Recupera Valore
+                      queryString = "SELECT * FROM Lingua"
+                      if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+                      let errmsg = String(cString: sqlite3_errmsg(db)!)
+                      print("error preparing insert: \(errmsg)")
+                          return
+                      }
+                                               
+                      var lingua = ""
+                      while(sqlite3_step(stmt) == SQLITE_ROW){
+                          lingua = String(cString: sqlite3_column_text(stmt, 1))
+                      }
+                             
+        print("\n\n\n\n\(lingua)\n\n\n\n")
         
-        //Recupera Valore
-        queryString = "SELECT * FROM Lingua"
-        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
-        let errmsg = String(cString: sqlite3_errmsg(db)!)
-        print("error preparing insert: \(errmsg)")
-            return
-        }
-                                 
-        var lingua = ""
-        while(sqlite3_step(stmt) == SQLITE_ROW){
-            lingua = String(cString: sqlite3_column_text(stmt, 1))
-        }
-                                         
-        if(lingua == "eng"){
-            Schermata1.allCardsImages = ENG.allCardsImages
-        } else if (lingua == "ita"){
-            Schermata1.allCardsImages = ITA.allCardsImages
+                      if(lingua == "eng"){
+                          Schermata1.allCardsImages = ENG.allCardsImages
+                          weeklyInfo = ENG.Schermata1weeklyInfo
+                          frasiDeStoCazzo = ENG.Schermata1frasiDeStoCazzo
+                          textSaluti = ENG.Schermata1Saluti
+                      } else if (lingua == "ita"){
+                          Schermata1.allCardsImages = ITA.allCardsImages
+                          weeklyInfo = ENG.Schermata1weeklyInfo
+                          frasiDeStoCazzo = ENG.Schermata1frasiDeStoCazzo
+                          textSaluti = ITA.Schermata1Saluti
+                      }
+       
+        
+        if(hour2 >= 14 && hour2 < 20){
+            imagineOrario.image = UIImage(named: "Afternoon")
+            orarioSetUp.text = textSaluti[0]
+        } else if (hour2 >= 20 || hour2 < 5){
+            imagineOrario.image = UIImage(named: "Evening")
+            orarioSetUp.text = textSaluti[1]
+        }else{
+            imagineOrario.image = UIImage(named: "Morning")
+            orarioSetUp.text = textSaluti[2]
         }
         
         

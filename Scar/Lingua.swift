@@ -9,6 +9,7 @@
 import UIKit
 import SQLite3
 
+
 class Lingua: UIViewController {
     
     @IBOutlet weak var inglese: UIButton!
@@ -21,6 +22,7 @@ class Lingua: UIViewController {
                () -> Void in view.transform = CGAffineTransform(translationX: 0, y: to)
            })
        }
+   
     
     override func viewDidLoad() {
         
@@ -62,7 +64,6 @@ class Lingua: UIViewController {
         inglese.setTitle(text[0], for: .normal)
         italiano.setTitle(text[1], for: .normal)
         
-      
     }
     
     @IBAction func impInglese(_ sender: Any) {
@@ -104,7 +105,7 @@ class Lingua: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+viewDidLoad()
         if(view.frame.height == 667){
             traslate(view: ill, aCircleTime: 0, to: -32)
         } else if(view.frame.height == 896){

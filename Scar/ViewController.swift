@@ -47,6 +47,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
 
+       viewDidLoad()
+        
                 if(view.frame.height == 812){
                 }else if(view.frame.height == 667){
                    
@@ -71,41 +73,41 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
        
-        var db: OpaquePointer?
-                       
-        //Si connette al DB
-        let fileURL = try!
-        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
-        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
-            print("error opening database")
-        }
-                     
-        //Recupera Valore
-        var stmt: OpaquePointer?
-        let queryString = "SELECT * FROM Lingua"
-        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
-        let errmsg = String(cString: sqlite3_errmsg(db)!)
-            print("error preparing insert: \(errmsg)")
-            return
-        }
-           
-        var lingua = ""
-        while(sqlite3_step(stmt) == SQLITE_ROW){
-            lingua = String(cString: sqlite3_column_text(stmt, 1))
-        }
-           
+       var db: OpaquePointer?
+                      
+       //Si connette al DB
+       let fileURL = try!
+       FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+       if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+           print("error opening database")
+       }
+                    
+       //Recupera Valore
+       var stmt: OpaquePointer?
+       let queryString = "SELECT * FROM Lingua"
+       if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+       let errmsg = String(cString: sqlite3_errmsg(db)!)
+           print("error preparing insert: \(errmsg)")
+           return
+       }
           
-        if(lingua == "eng"){
-            text = ENG.textOnViewController
-            submit = ENG.button[0]
-            submitNo = ENG.button[1]
-        } else if (lingua == "ita"){
-            text = ITA.textOnViewController
-            submit = ITA.button[0]
-            submitNo = ITA.button[1]
-        }
-        
-        elaboraDisegno.imageView?.image = UIImage(named: submitNo)
+       var lingua = ""
+       while(sqlite3_step(stmt) == SQLITE_ROW){
+           lingua = String(cString: sqlite3_column_text(stmt, 1))
+       }
+          
+         
+       if(lingua == "eng"){
+           text = ENG.textOnViewController
+           submit = ENG.button[0]
+           submitNo = ENG.button[1]
+       } else if (lingua == "ita"){
+           text = ITA.textOnViewController
+           submit = ITA.button[0]
+           submitNo = ITA.button[1]
+       }
+       
+       elaboraDisegno.imageView?.image = UIImage(named: submitNo)
         
         let boldText1 = text[0]
         let normalString2 = NSMutableAttributedString(string:boldText1)

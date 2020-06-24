@@ -29,7 +29,7 @@ struct ins {
     var books: [Cont]
 }
 
-class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     
     static var insights: [String] = ["","","","","",""]
     static var film: [String] = ["the%20theory%20of%20everything","shallow%20Hal","orange%20is%20new%20black","the%20shape%20of%20water","unBreakable","pose","glow","hairspray","unorthodox"]
@@ -156,13 +156,14 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         }
      }
     
+    override func viewWillAppear(_ animated: Bool) {
+        viewDidLoad()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
-        
-        SeeMore = ENG.goToLink
-        
+
         var db: OpaquePointer?
                     
         //Si connette al DB
@@ -189,8 +190,10 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         ins = ENG.insights
         if(lingua == "eng"){
             structIns = ENG.Schermata2structInsENG
+            SeeMore = ENG.goToLink
         } else if (lingua == "ita"){
             structIns = ITA.Schermata2structInsENG
+            SeeMore = ITA.goToLink
         }
         
         caricaInfo()

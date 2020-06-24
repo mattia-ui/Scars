@@ -16,10 +16,13 @@ class CaricaImage: UIViewController {
     @IBOutlet weak var imageSelected: UIImageView!
     var text:[String] = []
     
+    override func viewWillAppear(_ animated: Bool) {
+        viewDidLoad()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
-        
         var db: OpaquePointer?
                                           
         //Si connette al DB

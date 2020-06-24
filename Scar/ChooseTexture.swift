@@ -22,45 +22,44 @@ class ChooseTexture: UIViewController  {
         nex.isEnabled = false
         
         var db: OpaquePointer?
-                                      
-        //Si connette al DB
-        let fileURL = try!
-        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
-        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
-            print("error opening database")
-        }
-                                    
-        //Recupera Valore
-        var stmt: OpaquePointer?
-        let queryString = "SELECT * FROM Lingua"
-        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
-        let errmsg = String(cString: sqlite3_errmsg(db)!)
-        print("error preparing insert: \(errmsg)")
-            return
-        }
-                        
-        var lingua = ""
-        while(sqlite3_step(stmt) == SQLITE_ROW){
-            lingua = String(cString: sqlite3_column_text(stmt, 1))
-        }
-                                
-        if(lingua == "eng"){
-            text = ENG.textOnChooseTexture
-            texture = ENG.Texture
-            submit = ENG.button[4]
-            submitNo = ENG.button[5]
-            yes.imageView?.image = UIImage(named: ENG.button[6])
-            no.imageView?.image = UIImage(named: ENG.button[7])
-        } else if (lingua == "ita"){
-            text = ITA.textOnChooseTexture
-            texture = ITA.Texture
-            submit = ITA.button[4]
-            submitNo = ITA.button[5]
-            yes.imageView?.image = UIImage(named: ITA.button[6])
-            no.imageView?.image = UIImage(named: ITA.button[7])
-        }
-        
-       
+                                               
+                 //Si connette al DB
+                 let fileURL = try!
+                 FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+                 if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+                     print("error opening database")
+                 }
+                                             
+                 //Recupera Valore
+                 var stmt: OpaquePointer?
+                 let queryString = "SELECT * FROM Lingua"
+                 if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+                 let errmsg = String(cString: sqlite3_errmsg(db)!)
+                 print("error preparing insert: \(errmsg)")
+                     return
+                 }
+                                 
+                 var lingua = ""
+                 while(sqlite3_step(stmt) == SQLITE_ROW){
+                     lingua = String(cString: sqlite3_column_text(stmt, 1))
+                 }
+                                         
+                 if(lingua == "eng"){
+                     text = ENG.textOnChooseTexture
+                     texture = ENG.Texture
+                     submit = ENG.button[4]
+                     submitNo = ENG.button[5]
+                     yes.imageView?.image = UIImage(named: ENG.button[6])
+                     no.imageView?.image = UIImage(named: ENG.button[7])
+                 } else if (lingua == "ita"){
+                     text = ITA.textOnChooseTexture
+                     texture = ITA.Texture
+                     submit = ITA.button[4]
+                     submitNo = ITA.button[5]
+                     yes.imageView?.image = UIImage(named: ITA.button[6])
+                     no.imageView?.image = UIImage(named: ITA.button[7])
+                 }
+                 
         
        var boldText = text[0]
          var attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: 20)]
@@ -142,6 +141,9 @@ class ChooseTexture: UIViewController  {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        
+        viewDidLoad()
+          
 
                 if(view.frame.height == 812){
                 }else if(view.frame.height == 667){

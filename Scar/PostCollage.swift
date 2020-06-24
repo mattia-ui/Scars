@@ -33,6 +33,9 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
+        
+        viewDidLoad()
+        
         if(blur == 1){
            blurEffect = UIBlurEffect(style: UIBlurEffect.Style.light)
           blurEffectView = UIVisualEffectView(effect: blurEffect)
@@ -118,36 +121,36 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         
         var buttonImg = ""
         var db: OpaquePointer?
-                           
-        //Si connette al DB
-        let fileURL = try!
-        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
-        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
-            print("error opening database")
-        }
-                         
-        //Recupera Valore
-        var stmt: OpaquePointer?
-        var queryString = "SELECT * FROM Lingua"
-        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
-        let errmsg = String(cString: sqlite3_errmsg(db)!)
-        print("error preparing insert: \(errmsg)")
-            return
-        }
-             
-        var lingua = ""
-        while(sqlite3_step(stmt) == SQLITE_ROW){
-            lingua = String(cString: sqlite3_column_text(stmt, 1))
-        }
-                     
-        if(lingua == "eng"){
-            buttonImg = ENG.button[3]
-        } else if (lingua == "ita"){
-            buttonImg = ITA.button[3]
-        }
-        
-        nex.imageView?.image = UIImage(named: buttonImg)
-        
+                                    
+                 //Si connette al DB
+                 let fileURL = try!
+                 FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+                 if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+                     print("error opening database")
+                 }
+                                  
+                 //Recupera Valore
+                 var stmt: OpaquePointer?
+                 var queryString = "SELECT * FROM Lingua"
+                 if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+                 let errmsg = String(cString: sqlite3_errmsg(db)!)
+                 print("error preparing insert: \(errmsg)")
+                     return
+                 }
+                      
+                 var lingua = ""
+                 while(sqlite3_step(stmt) == SQLITE_ROW){
+                     lingua = String(cString: sqlite3_column_text(stmt, 1))
+                 }
+                              
+                 if(lingua == "eng"){
+                     buttonImg = ENG.button[3]
+                 } else if (lingua == "ita"){
+                     buttonImg = ITA.button[3]
+                 }
+                 
+                 nex.imageView?.image = UIImage(named: buttonImg)
+ 
         miniSym.layer.borderWidth = 0.3
         miniSym.layer.masksToBounds = true
         miniSym.layer.borderColor = (UIColor.init(named: "#2E2933")?.cgColor)

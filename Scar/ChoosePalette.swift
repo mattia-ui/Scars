@@ -22,41 +22,39 @@ class ChoosePalette: UIViewController  {
         nex.isEnabled = false
         
         var db: OpaquePointer?
+                                            
+              //Si connette al DB
+              let fileURL = try!
+              FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+              if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+                  print("error opening database")
+              }
+                                          
+              //Recupera Valore
+              var stmt: OpaquePointer?
+              let queryString = "SELECT * FROM Lingua"
+              if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+              let errmsg = String(cString: sqlite3_errmsg(db)!)
+              print("error preparing insert: \(errmsg)")
+                  return
+              }
+                              
+              var lingua = ""
+              while(sqlite3_step(stmt) == SQLITE_ROW){
+                  lingua = String(cString: sqlite3_column_text(stmt, 1))
+              }
                                       
-        //Si connette al DB
-        let fileURL = try!
-        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
-        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
-            print("error opening database")
-        }
-                                    
-        //Recupera Valore
-        var stmt: OpaquePointer?
-        let queryString = "SELECT * FROM Lingua"
-        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
-        let errmsg = String(cString: sqlite3_errmsg(db)!)
-        print("error preparing insert: \(errmsg)")
-            return
-        }
-                        
-        var lingua = ""
-        while(sqlite3_step(stmt) == SQLITE_ROW){
-            lingua = String(cString: sqlite3_column_text(stmt, 1))
-        }
-                                
-        if(lingua == "eng"){
-            text = ENG.textOnChoosePalette
-            palette = ENG.Palette
-            submit = ENG.button[4]
-            submitNo = ENG.button[5]
-        } else if (lingua == "ita"){
-            text = ITA.textOnChoosePalette
-            palette = ITA.Palette
-            submit = ITA.button[4]
-            submitNo = ITA.button[5]
-        }
-        
-        
+              if(lingua == "eng"){
+                  text = ENG.textOnChoosePalette
+                  palette = ENG.Palette
+                  submit = ENG.button[4]
+                  submitNo = ENG.button[5]
+              } else if (lingua == "ita"){
+                  text = ITA.textOnChoosePalette
+                  palette = ITA.Palette
+                  submit = ITA.button[4]
+                  submitNo = ITA.button[5]
+              }
         
         let boldText = text[0]
         let attributedString = NSMutableAttributedString(string:boldText)
@@ -109,6 +107,8 @@ class ChoosePalette: UIViewController  {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
 
+       viewDidLoad()
+        
                 if(view.frame.height == 812){
                 }else if(view.frame.height == 667){
                     traslate(view: question, aCircleTime: 0, to: -22)

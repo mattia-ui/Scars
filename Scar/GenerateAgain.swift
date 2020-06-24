@@ -37,6 +37,7 @@ class GenerateAgain: UIViewController {
            
            if(view.frame.width == 375 /*&& UIScreen.main.bounds.height == 667*/){
                
+       viewDidLoad()
            
            traslate(view: img, aCircleTime: 0, to: -30)
            traslate(view: downloadButton, aCircleTime: 0, to: -30)
@@ -59,37 +60,37 @@ class GenerateAgain: UIViewController {
 //        imageNav.layer.borderColor = CGColor(srgbRed: 0.46, green: 0.41, blue: 0.51, alpha: 1)
         
         var db: OpaquePointer?
-                                       
-        //Si connette al DB
-        let fileURL = try!
-        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
-        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
-            print("error opening database")
-        }
+                                                  
+                   //Si connette al DB
+                   let fileURL = try!
+                   FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+                   if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+                       print("error opening database")
+                   }
+                                                
+                   //Recupera Valore
+                   var stmt: OpaquePointer?
+                   let queryString = "SELECT * FROM Lingua"
+                   if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+                   let errmsg = String(cString: sqlite3_errmsg(db)!)
+                       print("error preparing insert: \(errmsg)")
+                       return
+                   }
+                                      
+                   var lingua = ""
+                   while(sqlite3_step(stmt) == SQLITE_ROW){
+                       lingua = String(cString: sqlite3_column_text(stmt, 1))
+                   }
                                      
-        //Recupera Valore
-        var stmt: OpaquePointer?
-        let queryString = "SELECT * FROM Lingua"
-        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
-        let errmsg = String(cString: sqlite3_errmsg(db)!)
-            print("error preparing insert: \(errmsg)")
-            return
-        }
-                           
-        var lingua = ""
-        while(sqlite3_step(stmt) == SQLITE_ROW){
-            lingua = String(cString: sqlite3_column_text(stmt, 1))
-        }
-                          
-        if(lingua == "eng"){
-            text = ENG.textOnGenerateAgain
-            shareButton.imageView?.image = UIImage(named: ENG.button[15])
-            GenerateAgainButton.imageView?.image = UIImage(named: ENG.button[16])
-        } else if (lingua == "ita"){
-            text = ITA.textOnGenerateAgain
-            shareButton.imageView?.image = UIImage(named: ITA.button[15])
-            GenerateAgainButton.imageView?.image = UIImage(named: ITA.button[16])
-        }
+                   if(lingua == "eng"){
+                       text = ENG.textOnGenerateAgain
+                       shareButton.imageView?.image = UIImage(named: ENG.button[15])
+                       GenerateAgainButton.imageView?.image = UIImage(named: ENG.button[16])
+                   } else if (lingua == "ita"){
+                       text = ITA.textOnGenerateAgain
+                       shareButton.imageView?.image = UIImage(named: ITA.button[15])
+                       GenerateAgainButton.imageView?.image = UIImage(named: ITA.button[16])
+                   }
         
         img.layer.borderWidth = 0.4
         img.layer.masksToBounds = true

@@ -29,46 +29,46 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         screen.image = img
-
+        viewDidLoad()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
 
-        var db: OpaquePointer?
+       var db: OpaquePointer?
+                                               
+                     //Si connette al DB
+                     let fileURL = try!
+                     FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+                     if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+                         print("error opening database")
+                     }
+                                             
+                     //Recupera Valore
+                     var stmt: OpaquePointer?
+                     let queryString = "SELECT * FROM Lingua"
+                     if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+                     let errmsg = String(cString: sqlite3_errmsg(db)!)
+                         print("error preparing insert: \(errmsg)")
+                         return
+                     }
+                                   
+                     var lingua = ""
+                     while(sqlite3_step(stmt) == SQLITE_ROW){
+                         lingua = String(cString: sqlite3_column_text(stmt, 1))
+                     }
                                   
-        //Si connette al DB
-        let fileURL = try!
-        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
-        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
-            print("error opening database")
-        }
-                                
-        //Recupera Valore
-        var stmt: OpaquePointer?
-        let queryString = "SELECT * FROM Lingua"
-        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
-        let errmsg = String(cString: sqlite3_errmsg(db)!)
-            print("error preparing insert: \(errmsg)")
-            return
-        }
-                      
-        var lingua = ""
-        while(sqlite3_step(stmt) == SQLITE_ROW){
-            lingua = String(cString: sqlite3_column_text(stmt, 1))
-        }
+                     if(lingua == "eng"){
+                         text = ENG.textOnSharePage
+                         share.imageView?.image = UIImage(named: ENG.button[17])
+                         shareAnonimo.imageView?.image = UIImage(named: ENG.button[18])
+                     } else if (lingua == "ita"){
+                         text = ITA.textOnSharePage
+                         share.imageView?.image = UIImage(named: ITA.button[17])
+                         shareAnonimo.imageView?.image = UIImage(named: ITA.button[18])
+                     }
                      
-        if(lingua == "eng"){
-            text = ENG.textOnSharePage
-            share.imageView?.image = UIImage(named: ENG.button[17])
-            shareAnonimo.imageView?.image = UIImage(named: ENG.button[18])
-        } else if (lingua == "ita"){
-            text = ITA.textOnSharePage
-            share.imageView?.image = UIImage(named: ITA.button[17])
-            shareAnonimo.imageView?.image = UIImage(named: ITA.button[18])
-        }
-        
         screen.layer.borderWidth = 0.5
         screen.layer.borderColor = CGColor(srgbRed: 0.46, green: 0.41, blue: 0.51, alpha: 1)
         

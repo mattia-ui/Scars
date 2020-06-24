@@ -56,7 +56,6 @@ class ChooseShape2: UIViewController  {
             submitNo = ITA.button[5]
         }
         
-        
         var boldText = text[0]
         var attributedString = NSMutableAttributedString(string:boldText)
 
@@ -155,6 +154,9 @@ class ChooseShape2: UIViewController  {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
+         
+       viewDidLoad()
+        
                 if(view.frame.width == 414){
         //            h1.spacing = 33
         //            h2.spacing = 26

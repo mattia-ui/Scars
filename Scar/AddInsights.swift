@@ -24,38 +24,42 @@ class AddInsights: UIViewController {
     var stmt: OpaquePointer?
     var insights: [String] = []
     
+    override func viewWillAppear(_ animated: Bool) {
+        viewDidLoad()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
-        
+
         var db: OpaquePointer?
-                      
-        //Si connette al DB
-        let fileURL = try!
-        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
-        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
-            print("error opening database")
-        }
-                    
-        //Recupera Valore
-        var stmt: OpaquePointer?
-        let queryString = "SELECT * FROM Lingua"
-        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
-        let errmsg = String(cString: sqlite3_errmsg(db)!)
-            print("error preparing insert: \(errmsg)")
-            return
-        }
-        
-        var lingua = ""
-        while(sqlite3_step(stmt) == SQLITE_ROW){
-            lingua = String(cString: sqlite3_column_text(stmt, 1))
-        }
-                
-        if(lingua == "eng"){
-            insights = ENG.insights
-        } else if (lingua == "ita"){
-            insights = ITA.insights
-        }
+                               
+              //Si connette al DB
+              let fileURL = try!
+              FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+              if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+                  print("error opening database")
+              }
+                             
+              //Recupera Valore
+              var stmt: OpaquePointer?
+              let queryString = "SELECT * FROM Lingua"
+              if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+              let errmsg = String(cString: sqlite3_errmsg(db)!)
+                  print("error preparing insert: \(errmsg)")
+                  return
+              }
+                 
+              var lingua = ""
+              while(sqlite3_step(stmt) == SQLITE_ROW){
+                  lingua = String(cString: sqlite3_column_text(stmt, 1))
+              }
+                         
+              if(lingua == "eng"){
+                  insights = ENG.insights
+              } else if (lingua == "ita"){
+                  insights = ITA.insights
+              }
         
         if(UIScreen.main.bounds.height > 800){
             scroll.isScrollEnabled = false

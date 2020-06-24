@@ -35,6 +35,8 @@ class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePick
            super.viewWillAppear(animated)
            self.navigationController?.setNavigationBarHidden(true, animated: animated)
 
+       viewDidLoad()
+        
                    if(view.frame.height == 812){
                    }else if(view.frame.height == 667){
                        traslate(view: question, aCircleTime: 0, to: -35)
@@ -54,45 +56,46 @@ class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePick
                     traslate(view: label3, aCircleTime: 0, to: -103)
         }
        }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
-
-        var db: OpaquePointer?
-                    
-        //Si connette al DB
-        let fileURL = try!
-        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
-        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
-            print("error opening database")
-        }
-                  
-        //Recupera Valore
-        var stmt: OpaquePointer?
-        let queryString = "SELECT * FROM Lingua"
-        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
-        let errmsg = String(cString: sqlite3_errmsg(db)!)
-            print("error preparing insert: \(errmsg)")
-            return
-        }
-        
-        var lingua = ""
-        while(sqlite3_step(stmt) == SQLITE_ROW){
-            lingua = String(cString: sqlite3_column_text(stmt, 1))
-        }
-        
-       
-        if(lingua == "eng"){
-            text = ENG.textOnTakePicture
-            ins = ENG.insights
-        } else if (lingua == "ita"){
-            text = ITA.textOnTakePicture
-            ins = ITA.insights
-        }
         
         self.tabBarController?.tabBar.isHidden = false
 
+        var db: OpaquePointer?
+                     
+         //Si connette al DB
+         let fileURL = try!
+         FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+         if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+             print("error opening database")
+         }
+                   
+         //Recupera Valore
+         var stmt: OpaquePointer?
+         let queryString = "SELECT * FROM Lingua"
+         if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+         let errmsg = String(cString: sqlite3_errmsg(db)!)
+             print("error preparing insert: \(errmsg)")
+             return
+         }
+         
+         var lingua = ""
+         while(sqlite3_step(stmt) == SQLITE_ROW){
+             lingua = String(cString: sqlite3_column_text(stmt, 1))
+         }
+         
+        
+         if(lingua == "eng"){
+             text = ENG.textOnTakePicture
+             ins = ENG.insights
+         } else if (lingua == "ita"){
+             text = ITA.textOnTakePicture
+             ins = ITA.insights
+         }
+        
         let normalText = text[0]
          let attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: 20)]
         let attributedString = NSMutableAttributedString(string:normalText, attributes:attrs)
