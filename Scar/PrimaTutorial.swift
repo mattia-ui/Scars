@@ -240,6 +240,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         }
                            
         let lingua = Locale.current.languageCode
+        print("\n\n\n\n\n\n\n\(lingua)\n\n\n\n\n\n\n")
         if(lingua == "en"){
             //Inserisce Valore. Va nel tutorial
             let queryString2 = "INSERT INTO Lingua(lingua) VALUES ('eng');"
@@ -277,21 +278,23 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         overrideUserInterfaceStyle = .light
         
         let lingua = Locale.current.languageCode
-        if(lingua == "en"){
-            text = ENG.textOnPrimaTutorial
-            start = ENG.button[9]
-            startNo = ENG.button[10]
-            PrimaTutorial.done = ENG.button[11]
-            PrimaTutorial.doneNo = ENG.button[12]
-            letsgo = ENG.button[13]
-        } else if (lingua == "it"){
+        print("\n\n\n\n\n\n\n\(lingua)\n\n\n\n\n\n\n")
+
+        if (lingua == "it"){
             text = ITA.textOnPrimaTutorial
             start = ITA.button[9]
             startNo = ITA.button[10]
             PrimaTutorial.done = ITA.button[11]
             PrimaTutorial.doneNo = ITA.button[12]
             letsgo = ITA.button[13]
-        }
+        } else {
+            text = ENG.textOnPrimaTutorial
+            start = ENG.button[9]
+            startNo = ENG.button[10]
+            PrimaTutorial.done = ENG.button[11]
+            PrimaTutorial.doneNo = ENG.button[12]
+            letsgo = ENG.button[13]
+        } 
         button1.imageView?.image = UIImage(named: startNo)
         button3.imageView?.image = UIImage(named: letsgo)
         
