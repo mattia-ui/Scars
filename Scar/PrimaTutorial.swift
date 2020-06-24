@@ -28,7 +28,6 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     var start: String = ""
     var startNo: String = ""
     static var done: String = ""
-    static var doneNo: String = ""
     var letsgo: String = ""
     
     
@@ -284,17 +283,15 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             text = ITA.textOnPrimaTutorial
             start = ITA.button[9]
             startNo = ITA.button[10]
-            PrimaTutorial.done = ITA.button[11]
-            PrimaTutorial.doneNo = ITA.button[12]
+            PrimaTutorial.done = ITA.button[12]
             letsgo = ITA.button[13]
         } else {
             text = ENG.textOnPrimaTutorial
             start = ENG.button[9]
             startNo = ENG.button[10]
-            PrimaTutorial.done = ENG.button[11]
-            PrimaTutorial.doneNo = ENG.button[12]
+            PrimaTutorial.done = ENG.button[12]
             letsgo = ENG.button[13]
-        } 
+        }
         button1.imageView?.image = UIImage(named: startNo)
         button3.imageView?.image = UIImage(named: letsgo)
         
@@ -442,6 +439,20 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     func controllo2(){
+        let lingua = Locale.current.languageCode
+              if (lingua == "it"){
+               if(selected[0] != ""){
+                PrimaTutorial.done = ITA.button[11]
+                } else {
+                PrimaTutorial.done = ITA.button[12]
+                }
+              } else {
+                if(selected[0] != ""){
+                  PrimaTutorial.done = ENG.button[11]
+                } else {
+                  PrimaTutorial.done = ENG.button[12]
+                }
+              }
         TableView.reloadData()
 
     }
@@ -571,7 +582,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             }
             
             cell.done.frame.origin.x = (UIScreen.main.bounds.width / 2) - 91
-            cell.done.imageView?.image = UIImage(named: PrimaTutorial.doneNo)
+            cell.done.imageView?.image = UIImage(named: PrimaTutorial.done)
             cell.selectionStyle = .none
             return cell
         }

@@ -23,7 +23,7 @@ class Cella3: UITableViewCell{
     func attiva(){
         if(done.isEnabled){
             done.isEnabled = false
-            done.imageView?.image = UIImage(named: PrimaTutorial.doneNo)
+            done.imageView?.image = UIImage(named: PrimaTutorial.done)
         }else{
             done.isEnabled = true
             done.imageView?.image = UIImage(named: PrimaTutorial.done)
