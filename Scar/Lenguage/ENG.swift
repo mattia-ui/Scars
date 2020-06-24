@@ -25,7 +25,6 @@ class ENG: UIViewController{
             "nextazzurrono", //Bottone nex schermata Choose shape/Choose shape2/Choose palette/Choose texture disabilitato
             "no", //Bottone no schermata Choose texture
             "yes", //Bottone no schermata Choose texture
-            
             "readyViola", //Bottone ready schermata tutorial 2
             "start", //Bottone start schermata tutorial
             "StartN", //Bottone start schermata tutorial disailitato

@@ -60,9 +60,11 @@ class SecondaTutorial : UIViewController {
          }
               
          if(lingua == "eng"){
-             text = ENG.textOnSecondaTutorial
+            text = ENG.textOnSecondaTutorial
+            button.imageView?.image = UIImage(named: ENG.button[8])
          } else if (lingua == "ita"){
-             text = ITA.textOnSecondaTutorial
+            text = ITA.textOnSecondaTutorial
+            button.imageView?.image = UIImage(named: ITA.button[8])
          }
         
         if(UIScreen.main.bounds.width < 800){

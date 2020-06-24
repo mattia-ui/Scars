@@ -25,6 +25,11 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var domande3: UILabel!
     @IBOutlet weak var button3: UIButton!
     var text:[String] = []
+    var start: String = ""
+    var startNo: String = ""
+    static var done: String = ""
+    static var doneNo: String = ""
+    var letsgo: String = ""
     
     
     var db: OpaquePointer?
@@ -274,9 +279,21 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         let lingua = Locale.current.languageCode
         if(lingua == "en"){
             text = ENG.textOnPrimaTutorial
+            start = ENG.button[9]
+            startNo = ENG.button[10]
+            done = ENG.button[11]
+            doneNo = ENG.button[12]
+            letsgo = ENG.button[13]
         } else if (lingua == "it"){
             text = ITA.textOnPrimaTutorial
+            start = ITA.button[9]
+            startNo = ITA.button[10]
+            done = ITA.button[11]
+            doneNo = ITA.button[12]
+            letsgo = ITA.button[13]
         }
+        button1.imageView?.image = UIImage(named: startNo)
+        button3.imageView?.image = UIImage(named: letsgo)
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
 
@@ -415,8 +432,10 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     func controllo(){
         if(nome1.text != ""){
             button1.isEnabled = true
+            button1.imageView?.image = UIImage(named: start)
         } else{
             button1.isEnabled = false
+            button1.imageView?.image = UIImage(named: startNo)
         }
     }
     func controllo2(){
@@ -549,6 +568,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             }
             
             cell.done.frame.origin.x = (UIScreen.main.bounds.width / 2) - 91
+            cell.done.imageView?.image = UIImage(named: doneNo)
             cell.selectionStyle = .none
             return cell
         }

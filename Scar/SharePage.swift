@@ -19,6 +19,8 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
     @IBOutlet weak var screen: UIImageView!
     @IBOutlet weak var descriptionField: UITextView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var share: UIButton!
+    @IBOutlet weak var shareAnonimo: UIButton!
     var text:[String] = []
    
     var i = 0
@@ -59,8 +61,12 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
                      
         if(lingua == "eng"){
             text = ENG.textOnSharePage
+            share.imageView?.image = UIImage(named: ENG.button[17])
+            shareAnonimo.imageView?.image = UIImage(named: ENG.button[18])
         } else if (lingua == "ita"){
             text = ITA.textOnSharePage
+            share.imageView?.image = UIImage(named: ITA.button[17])
+            shareAnonimo.imageView?.image = UIImage(named: ITA.button[18])
         }
         
         screen.layer.borderWidth = 0.5

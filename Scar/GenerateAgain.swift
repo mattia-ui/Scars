@@ -83,8 +83,12 @@ class GenerateAgain: UIViewController {
                           
         if(lingua == "eng"){
             text = ENG.textOnGenerateAgain
+            shareButton.imageView?.image = UIImage(named: ENG.button[15])
+            GenerateAgainButton.imageView?.image = UIImage(named: ENG.button[16])
         } else if (lingua == "ita"){
             text = ITA.textOnGenerateAgain
+            shareButton.imageView?.image = UIImage(named: ITA.button[15])
+            GenerateAgainButton.imageView?.image = UIImage(named: ITA.button[16])
         }
         
         img.layer.borderWidth = 0.4

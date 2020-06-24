@@ -124,6 +124,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
     var imgPrincipale:UIImage?
     var nomeImgPrincipale:String!
     var imgSecondaria:UIImage?
+    @IBOutlet weak var procede: UIButton!
     
     var text: [String] = []
     var shape: [String] = []
@@ -174,10 +175,12 @@ class Collage: UIViewController, UITextFieldDelegate  {
             shape = ENG.Shape
             palette = ENG.Palette
             texture = ENG.Texture
+            procede.imageView?.image = UIImage(named: ENG.button[14])
         } else if (lingua == "ita"){
             shape = ITA.Shape
             palette = ITA.Palette
             texture = ITA.Texture
+            procede.imageView?.image = UIImage(named: ITA.button[14])
         }
         
         if(ChooseShape.shape1 == shape[0]){

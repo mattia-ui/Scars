@@ -128,7 +128,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
                          
         //Recupera Valore
         var stmt: OpaquePointer?
-        let queryString = "SELECT * FROM Lingua"
+        var queryString = "SELECT * FROM Lingua"
         if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
         let errmsg = String(cString: sqlite3_errmsg(db)!)
         print("error preparing insert: \(errmsg)")
@@ -163,24 +163,11 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
             miniSym.addGestureRecognizer(tapGestureRecognizer)
            
         }
-        
-        
-        
-        
-        var db: OpaquePointer?
-        var stmt: OpaquePointer?
-
-        //Si connette al DB
-        let fileURL = try!
-        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
-        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
-            print("error opening database")
-        }
 
         
         //Recupera Valore
         var d = ""
-        let queryString = "SELECT * FROM Collage Where id = 1"
+        queryString = "SELECT * FROM Collage Where id = 1"
         if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("error preparing insert: \(errmsg)")
