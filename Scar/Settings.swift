@@ -34,6 +34,9 @@ class Settins: UIViewController {
         } else if(view.frame.height == 896){
             traslate(view: imageSettings, aCircleTime: 0, to: -16)
             traslate(view: linea1, aCircleTime: 0, to: 7)
+        } else if(view.frame.height == 812){
+            traslate(view: imageSettings, aCircleTime: 0, to: -46)
+            
         }
         
     }
@@ -54,7 +57,7 @@ class Settins: UIViewController {
         if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
             print("error opening database")
         }
-                                    
+        self.navigationController?.view.semanticContentAttribute = .forceRightToLeft
         //Recupera Valore
         var stmt: OpaquePointer?
         var queryString = "SELECT * FROM Lingua"
@@ -80,6 +83,7 @@ class Settins: UIViewController {
     }
     
     @IBAction func lingua(_ sender: Any) {
+        self.navigationController?.view.semanticContentAttribute = .forceRightToLeft
     }
     
     @IBAction func aboutUS(_ sender: Any) {

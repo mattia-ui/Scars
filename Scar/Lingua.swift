@@ -13,6 +13,14 @@ class Lingua: UIViewController {
     
     @IBOutlet weak var inglese: UIButton!
     @IBOutlet weak var italiano: UIButton!
+    @IBOutlet weak var ill: UIImageView!
+    
+    func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
+           print(view.frame.origin.x)
+           UIView.animate(withDuration: aCircleTime, animations: {
+               () -> Void in view.transform = CGAffineTransform(translationX: 0, y: to)
+           })
+       }
     
     override func viewDidLoad() {
         
@@ -34,6 +42,8 @@ class Lingua: UIViewController {
             return
         }
                
+        self.navigationController?.view.semanticContentAttribute = .forceLeftToRight
+        
         var l = ""
         while(sqlite3_step(stmt) == SQLITE_ROW){
             l = String(cString: sqlite3_column_text(stmt, 1))
@@ -92,4 +102,20 @@ class Lingua: UIViewController {
         sqlite3_step(stmt)
         print("Saved successfully")
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        if(view.frame.height == 667){
+            traslate(view: ill, aCircleTime: 0, to: -32)
+        } else if(view.frame.height == 896){
+            traslate(view: ill, aCircleTime: 0, to: -16)
+
+        } else if(view.frame.height == 812){
+//            traslate(view: ill, aCircleTime: 0, to: -20)
+            
+        }
+        
+        
+    }
+    
 }

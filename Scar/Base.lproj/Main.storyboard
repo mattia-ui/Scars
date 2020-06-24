@@ -2837,6 +2837,12 @@ your body and others’s bodies.</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SettingsIllustration" translatesAutoresizingMaskIntoConstraints="NO" id="sQD-ea-gAV">
+                                <rect key="frame" x="24" y="22" width="414" height="828"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="896" id="f8p-3I-Izf"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cD-zh-Axb">
                                 <rect key="frame" x="42" y="65" width="320" height="54"/>
                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="38"/>
@@ -2906,10 +2912,13 @@ your body and others’s bodies.</string>
                             <constraint firstItem="bia-Lt-DFy" firstAttribute="width" secondItem="qcm-5a-Y5k" secondAttribute="width" multiplier="0.903382" id="D1x-1a-SPJ"/>
                             <constraint firstItem="XgA-B6-nuI" firstAttribute="width" secondItem="qcm-5a-Y5k" secondAttribute="height" multiplier="7:421" id="IEh-gl-Tns"/>
                             <constraint firstItem="2oz-De-Rcj" firstAttribute="width" secondItem="qcm-5a-Y5k" secondAttribute="width" multiplier="0.903382" id="KJd-t8-6ey"/>
+                            <constraint firstItem="sQD-ea-gAV" firstAttribute="width" secondItem="qcm-5a-Y5k" secondAttribute="width" id="KPa-yv-EzE"/>
+                            <constraint firstItem="sQD-ea-gAV" firstAttribute="bottom" secondItem="63s-x0-VBK" secondAttribute="bottom" constant="42" id="Klq-UI-QxV"/>
                             <constraint firstItem="eZt-mq-RTk" firstAttribute="height" secondItem="qcm-5a-Y5k" secondAttribute="height" multiplier="0.0475059" id="OwQ-DQ-IwN"/>
                             <constraint firstItem="U07-M2-hPX" firstAttribute="top" secondItem="SC9-8M-Eyw" secondAttribute="bottom" constant="6" id="SFc-Zh-OVk"/>
                             <constraint firstItem="SC9-8M-Eyw" firstAttribute="trailing" secondItem="qcm-5a-Y5k" secondAttribute="trailingMargin" id="SdW-Cc-rKV"/>
                             <constraint firstItem="XgA-B6-nuI" firstAttribute="width" secondItem="qcm-5a-Y5k" secondAttribute="width" multiplier="0.0338164" id="TJn-oN-r3Z"/>
+                            <constraint firstItem="63s-x0-VBK" firstAttribute="top" secondItem="sQD-ea-gAV" secondAttribute="top" constant="-22" id="UK3-go-XBg"/>
                             <constraint firstItem="XgA-B6-nuI" firstAttribute="baseline" secondItem="9cD-zh-Axb" secondAttribute="baseline" id="UiA-k0-cwz"/>
                             <constraint firstItem="bia-Lt-DFy" firstAttribute="top" secondItem="U07-M2-hPX" secondAttribute="bottom" constant="8" id="YGz-tl-YpQ"/>
                             <constraint firstItem="SC9-8M-Eyw" firstAttribute="height" secondItem="qcm-5a-Y5k" secondAttribute="height" multiplier="0.0130641" id="ZDy-my-2Wp"/>
@@ -2918,6 +2927,7 @@ your body and others’s bodies.</string>
                             <constraint firstItem="eZt-mq-RTk" firstAttribute="width" secondItem="qcm-5a-Y5k" secondAttribute="width" multiplier="0.161836" constant="307" id="an7-D9-bE8"/>
                             <constraint firstItem="U07-M2-hPX" firstAttribute="height" secondItem="qcm-5a-Y5k" secondAttribute="height" multiplier="0.0475059" id="cvp-LB-slD"/>
                             <constraint firstItem="XgA-B6-nuI" firstAttribute="height" secondItem="qcm-5a-Y5k" secondAttribute="height" multiplier="0.0475059" id="eUi-H4-UK1"/>
+                            <constraint firstItem="sQD-ea-gAV" firstAttribute="trailing" secondItem="63s-x0-VBK" secondAttribute="trailing" constant="24" id="enO-9U-Zla"/>
                             <constraint firstItem="9cD-zh-Axb" firstAttribute="width" secondItem="qcm-5a-Y5k" secondAttribute="width" multiplier="0.475845" constant="123.00017" id="eue-sK-B8e"/>
                             <constraint firstItem="2oz-De-Rcj" firstAttribute="top" secondItem="eZt-mq-RTk" secondAttribute="bottom" constant="8" id="iwd-zr-Mbe"/>
                             <constraint firstItem="XgA-B6-nuI" firstAttribute="top" secondItem="63s-x0-VBK" secondAttribute="top" constant="73" id="lQu-OC-Ztd"/>
@@ -2930,13 +2940,16 @@ your body and others’s bodies.</string>
                             <constraint firstItem="9cD-zh-Axb" firstAttribute="height" secondItem="qcm-5a-Y5k" secondAttribute="height" multiplier="0.064133" id="w9M-KM-zy7"/>
                             <constraint firstItem="U07-M2-hPX" firstAttribute="width" secondItem="qcm-5a-Y5k" secondAttribute="width" multiplier="0.161836" constant="307" id="wFm-K8-IfG"/>
                             <constraint firstItem="XgA-B6-nuI" firstAttribute="leading" secondItem="SC9-8M-Eyw" secondAttribute="leading" id="wOR-Am-4gO"/>
+                            <constraint firstItem="sQD-ea-gAV" firstAttribute="leading" secondItem="63s-x0-VBK" secondAttribute="leading" constant="24" id="wRx-MZ-cip"/>
                             <constraint firstItem="U07-M2-hPX" firstAttribute="leading" secondItem="bia-Lt-DFy" secondAttribute="leading" id="xfI-to-9bN"/>
+                            <constraint firstItem="sQD-ea-gAV" firstAttribute="height" secondItem="qcm-5a-Y5k" secondAttribute="height" multiplier="1.06413" id="yam-zG-Rav"/>
                             <constraint firstItem="XgA-B6-nuI" firstAttribute="leading" secondItem="qcm-5a-Y5k" secondAttribute="leadingMargin" id="zJh-hO-2sN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="63s-x0-VBK"/>
                     </view>
                     <navigationItem key="navigationItem" id="bGG-Y0-Bgy"/>
                     <connections>
+                        <outlet property="ill" destination="sQD-ea-gAV" id="Bub-UI-fpD"/>
                         <outlet property="inglese" destination="U07-M2-hPX" id="XGr-sW-9Jl"/>
                         <outlet property="italiano" destination="eZt-mq-RTk" id="vd0-iM-ptS"/>
                     </connections>
@@ -2953,8 +2966,8 @@ your body and others’s bodies.</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SettingsIllustration" translatesAutoresizingMaskIntoConstraints="NO" id="KUF-Vd-P6O">
-                                <rect key="frame" x="24" y="-22" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="SettingsIllustration" translatesAutoresizingMaskIntoConstraints="NO" id="KUF-Vd-P6O">
+                                <rect key="frame" x="24" y="-46" width="414" height="896"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="896" id="nU0-rK-WPW"/>
                                 </constraints>
@@ -3002,7 +3015,7 @@ your body and others’s bodies.</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linea" translatesAutoresizingMaskIntoConstraints="NO" id="oLQ-nY-Ime">
-                                <rect key="frame" x="20" y="258" width="374" height="1"/>
+                                <rect key="frame" x="20" y="258" width="374" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="ztH-Jc-3cl"/>
                                 </constraints>
@@ -4005,7 +4018,6 @@ The two shapes on the outside recount </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="HlT-oX-X0z"/>
         <segue reference="47n-ms-sJd"/>
         <segue reference="W8t-6Z-Ukx"/>
         <segue reference="wd9-1W-xO2"/>
