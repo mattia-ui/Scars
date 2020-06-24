@@ -27,6 +27,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     var swiped = false
     var points = [CGPoint] ()
     var text: [String] = []
+    var submit: String = ""
+    var submitNo: String = ""
     
     @IBOutlet weak var slider: UISlider!{
         didSet{
@@ -95,9 +97,15 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
           
         if(lingua == "eng"){
             text = ENG.textOnViewController
+            submit = ENG.button[0]
+            submitNo = ENG.button[1]
         } else if (lingua == "ita"){
             text = ITA.textOnViewController
+            submit = ITA.button[0]
+            submitNo = ITA.button[1]
         }
+        
+        elaboraDisegno.imageView?.image = UIImage(named: submitNo)
         
         let boldText1 = text[0]
         let normalString2 = NSMutableAttributedString(string:boldText1)
@@ -134,6 +142,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     //Cancella disegno.
     @IBAction func resetDraw(_ sender: Any) {
         elaboraDisegno.isEnabled = false
+        elaboraDisegno.imageView?.image = UIImage(named: submitNo)
         tempDrawScars.image = nil
         points = []
     }
@@ -165,6 +174,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             
             UIGraphicsEndImageContext()
             elaboraDisegno.isEnabled = true
+            elaboraDisegno.imageView?.image = UIImage(named: submit)
         }
     }
       

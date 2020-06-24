@@ -14,6 +14,8 @@ class ChooseShape2: UIViewController  {
    
     var text: [String] = []
     var shape: [String] = []
+    var submit: String = ""
+    var submitNo: String = ""
     
     override func viewDidLoad() {
         nex.isEnabled = false
@@ -45,9 +47,13 @@ class ChooseShape2: UIViewController  {
         if(lingua == "eng"){
             text = ENG.textOnChooseShape
             shape = ENG.Shape
+            submit = ENG.button[4]
+            submitNo = ENG.button[5]
         } else if (lingua == "ita"){
             text = ITA.textOnChooseShape
             shape = ITA.Shape
+            submit = ITA.button[4]
+            submitNo = ITA.button[5]
         }
         
         
@@ -182,6 +188,8 @@ class ChooseShape2: UIViewController  {
        if sender.isSelected {
             square.isSelected = false
             nex.isEnabled = false
+            nex.imageView?.image = UIImage(named: submitNo)
+
         } else {
             square.isSelected = true
             circle.isSelected = false
@@ -190,6 +198,8 @@ class ChooseShape2: UIViewController  {
             zigZag.isSelected = false
             nex.isEnabled = true
             ChooseShape2.shape2 = shape[0]
+            nex.imageView?.image = UIImage(named: submit)
+
         }
     }
     
@@ -197,6 +207,8 @@ class ChooseShape2: UIViewController  {
        if sender.isSelected {
             circle.isSelected = false
             nex.isEnabled = false
+            nex.imageView?.image = UIImage(named: submitNo)
+
         } else {
             square.isSelected = false
             circle.isSelected = true
@@ -205,6 +217,8 @@ class ChooseShape2: UIViewController  {
             zigZag.isSelected = false
             nex.isEnabled = true
             ChooseShape2.shape2 = shape[3]
+            nex.imageView?.image = UIImage(named: submit)
+
         }
     }
     
@@ -212,6 +226,8 @@ class ChooseShape2: UIViewController  {
       if sender.isSelected {
             triangle.isSelected = false
             nex.isEnabled = false
+            nex.imageView?.image = UIImage(named: submitNo)
+
         } else {
             square.isSelected = false
             circle.isSelected = false
@@ -220,6 +236,8 @@ class ChooseShape2: UIViewController  {
             zigZag.isSelected = false
             nex.isEnabled = true
             ChooseShape2.shape2 = shape[2]
+            nex.imageView?.image = UIImage(named: submit)
+
         }
     }
     
@@ -227,6 +245,8 @@ class ChooseShape2: UIViewController  {
         if sender.isSelected {
             rect.isSelected = false
             nex.isEnabled = false
+            nex.imageView?.image = UIImage(named: submitNo)
+
         } else {
             square.isSelected = false
             circle.isSelected = false
@@ -235,6 +255,7 @@ class ChooseShape2: UIViewController  {
             zigZag.isSelected = false
             nex.isEnabled = true
             ChooseShape2.shape2 = shape[1]
+            nex.imageView?.image = UIImage(named: submit)
         }
     }
     
@@ -242,6 +263,8 @@ class ChooseShape2: UIViewController  {
        if sender.isSelected {
             zigZag.isSelected = false
             nex.isEnabled = false
+            nex.imageView?.image = UIImage(named: submitNo)
+
         } else {
             square.isSelected = false
             circle.isSelected = false
@@ -250,6 +273,8 @@ class ChooseShape2: UIViewController  {
             zigZag.isSelected = true
             nex.isEnabled = true
             ChooseShape2.shape2 = shape[4]
+            nex.imageView?.image = UIImage(named: submit)
+
         }
     }
 }

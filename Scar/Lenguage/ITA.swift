@@ -20,8 +20,10 @@ class ITA: UIViewController{
                     "submit azzurro", //Bottone elabora disegno schermata disegno
                     "submitno", //Bottone elabora disegno schermata disegno disabilitato
                     "Reset", //Bottone reset schermata disegno
-                    "letsgoazzurro", //Bottone let's go schermata post collage/Choose shape/Choose shape2/Choose palette/Choose texture
-                    "nextazzurrono", //Bottone let's go schermata post collage/Choose shape/Choose shape2/Choose palette/Choose texture disabilitato
+                    
+                    "letsgoazzurro", //Bottone let's go post Collage
+                    "nextazzurro", //Bottone nex go schermata Choose shape/Choose shape2/Choose palette/Choose texture
+                    "nextazzurrono", //Bottone nex schermata Choose shape/Choose shape2/Choose palette/Choose texture disabilitato
                     "no", //Bottone no schermata Choose texture
                     "yes", //Bottone no schermata Choose texture
                     "readyViolaIta", //Bottone ready schermata tutorial 2

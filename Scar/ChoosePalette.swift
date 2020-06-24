@@ -14,6 +14,8 @@ class ChoosePalette: UIViewController  {
    
     var text:[String] = []
     var palette:[String] = []
+    var submit: String = ""
+    var submitNo: String = ""
 
     override func viewDidLoad() {
         overrideUserInterfaceStyle = .light
@@ -45,9 +47,13 @@ class ChoosePalette: UIViewController  {
         if(lingua == "eng"){
             text = ENG.textOnChoosePalette
             palette = ENG.Palette
+            submit = ENG.button[4]
+            submitNo = ENG.button[5]
         } else if (lingua == "ita"){
             text = ITA.textOnChoosePalette
             palette = ITA.Palette
+            submit = ITA.button[4]
+            submitNo = ITA.button[5]
         }
         
         
@@ -131,12 +137,14 @@ class ChoosePalette: UIViewController  {
         if sender.isSelected {
             cool.isSelected = false
             nex.isEnabled = false
+            nex.imageView?.image = UIImage(named: submitNo)
         } else {
             cool.isSelected = true
             warm.isSelected = false
             neutral.isSelected = false
             nex.isEnabled = true
             ChoosePalette.color = palette[0]
+            nex.imageView?.image = UIImage(named: submit)
         }
     }
     
@@ -144,12 +152,14 @@ class ChoosePalette: UIViewController  {
         if sender.isSelected {
             warm.isSelected = false
             nex.isEnabled = false
+            nex.imageView?.image = UIImage(named: submitNo)
         } else {
             cool.isSelected = false
             warm.isSelected = true
             neutral.isSelected = false
             nex.isEnabled = true
             ChoosePalette.color = palette[1]
+            nex.imageView?.image = UIImage(named: submit)
         }
     }
 
@@ -157,12 +167,14 @@ class ChoosePalette: UIViewController  {
         if sender.isSelected {
             neutral.isSelected = false
             nex.isEnabled = false
+            nex.imageView?.image = UIImage(named: submitNo)
         } else {
             cool.isSelected = false
             warm.isSelected = false
             neutral.isSelected = true
             nex.isEnabled = true
             ChoosePalette.color = palette[2]
+            nex.imageView?.image = UIImage(named: submit)
         }
     }
 }
