@@ -234,11 +234,20 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             print("error creating table: \(errmsg)")
         }
                            
-        //Inserisce Valore. Va nel tutorial
-        let queryString2 = "INSERT INTO Lingua(lingua) VALUES ('eng');"
-        sqlite3_prepare(db, queryString2, -1, &stmt, nil)
-        sqlite3_step(stmt)
-        print("Saved successfully")
+        let lingua = Locale.current.languageCode
+        if(lingua == "en"){
+            //Inserisce Valore. Va nel tutorial
+            let queryString2 = "INSERT INTO Lingua(lingua) VALUES ('eng');"
+            sqlite3_prepare(db, queryString2, -1, &stmt, nil)
+            sqlite3_step(stmt)
+            print("Saved successfully")
+        } else if (lingua == "it"){
+            //Inserisce Valore. Va nel tutorial
+            let queryString2 = "INSERT INTO Lingua(lingua) VALUES ('ita');"
+            sqlite3_prepare(db, queryString2, -1, &stmt, nil)
+            sqlite3_step(stmt)
+            print("Saved successfully")
+        }
     }
     
     
@@ -262,8 +271,13 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
         
-        text = ENG.textOnPrimaTutorial
-                
+        let lingua = Locale.current.languageCode
+        if(lingua == "en"){
+            text = ENG.textOnPrimaTutorial
+        } else if (lingua == "it"){
+            text = ITA.textOnPrimaTutorial
+        }
+        
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
 
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard1))
@@ -288,7 +302,6 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
             print("error opening database")
         }
-            
             
         //Elimina Tabella. Quando Spostiamo le due funzioni successive nel tutorial non serve piu
         if sqlite3_exec(db, "DROP TABLE Collage", nil, nil, nil) != SQLITE_OK {

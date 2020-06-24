@@ -187,11 +187,11 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
         }
         
         ins = ENG.insights
-//        if(lingua == "eng"){
+        if(lingua == "eng"){
             structIns = ENG.Schermata2structInsENG
-//        } else if (lingua == "ita"){
-//            structIns = ITA.structInsITA
-//        }
+        } else if (lingua == "ita"){
+            structIns = ITA.Schermata2structInsENG
+        }
         
         caricaInfo()
 

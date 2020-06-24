@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SQLite3
 
 class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate  {
     
@@ -20,6 +21,7 @@ class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePick
     @IBOutlet weak var penna: UIButton!
     @IBOutlet weak var label3: UILabel!
     var text:[String] = []
+    var ins:[String] = []
     
     
     func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
@@ -57,7 +59,37 @@ class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePick
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
 
-        text = ENG.textOnTakePicture
+        var db: OpaquePointer?
+                    
+        //Si connette al DB
+        let fileURL = try!
+        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+            print("error opening database")
+        }
+                  
+        //Recupera Valore
+        var stmt: OpaquePointer?
+        let queryString = "SELECT * FROM Lingua"
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+        let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error preparing insert: \(errmsg)")
+            return
+        }
+        
+        var lingua = ""
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            lingua = String(cString: sqlite3_column_text(stmt, 1))
+        }
+        
+       
+        if(lingua == "eng"){
+            text = ENG.textOnTakePicture
+            ins = ENG.insights
+        } else if (lingua == "ita"){
+            text = ITA.textOnTakePicture
+            ins = ITA.insights
+        }
         
         self.tabBarController?.tabBar.isHidden = false
 

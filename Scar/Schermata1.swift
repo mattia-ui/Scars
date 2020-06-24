@@ -156,8 +156,6 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
-
-        Schermata1.allCardsImages = ENG.allCardsImages
         
         weeklyInfo = ENG.Schermata1weeklyInfo
         frasiDeStoCazzo = ENG.Schermata1frasiDeStoCazzo
@@ -209,6 +207,27 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
                 
         nome.text = String(nomeData.dropFirst(10).dropLast(2)) + "!"
                 
+        
+        //Recupera Valore
+        queryString = "SELECT * FROM Lingua"
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+        let errmsg = String(cString: sqlite3_errmsg(db)!)
+        print("error preparing insert: \(errmsg)")
+            return
+        }
+                                 
+        var lingua = ""
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            lingua = String(cString: sqlite3_column_text(stmt, 1))
+        }
+                                         
+        if(lingua == "eng"){
+            Schermata1.allCardsImages = ENG.allCardsImages
+        } else if (lingua == "ita"){
+            Schermata1.allCardsImages = ITA.allCardsImages
+        }
+        
+        
         //Recupera Valore
         queryString = "SELECT * FROM Date"
         if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{

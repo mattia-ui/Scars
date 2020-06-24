@@ -15,9 +15,6 @@ class Lingua: UIViewController {
     @IBOutlet weak var italiano: UIButton!
     
     override func viewDidLoad() {
-        var text:[String] = ENG.lingua
-        inglese.setTitle(text[0], for: .normal)
-        italiano.setTitle(text[1], for: .normal)
         
         var db: OpaquePointer?
 
@@ -27,7 +24,7 @@ class Lingua: UIViewController {
         if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
             print("error opening database")
         }
-                       
+                              
         //Recupera Valore
         var stmt: OpaquePointer?
         var queryString = "SELECT * FROM Lingua"
@@ -36,19 +33,26 @@ class Lingua: UIViewController {
             print("error preparing insert: \(errmsg)")
             return
         }
-        
+               
         var l = ""
         while(sqlite3_step(stmt) == SQLITE_ROW){
             l = String(cString: sqlite3_column_text(stmt, 1))
         }
         
+        var text:[String] = []
         if(l == "eng"){
             inglese.isSelected = false
             italiano.isSelected = true
+            text = ENG.lingua
         } else {
             inglese.isSelected = true
             italiano.isSelected = false
+            text = ITA.lingua
         }
+        inglese.setTitle(text[0], for: .normal)
+        italiano.setTitle(text[1], for: .normal)
+        
+      
     }
     
     @IBAction func impInglese(_ sender: Any) {

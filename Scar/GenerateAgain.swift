@@ -58,7 +58,34 @@ class GenerateAgain: UIViewController {
 //        imageNav.layer.borderWidth = 0.5
 //        imageNav.layer.borderColor = CGColor(srgbRed: 0.46, green: 0.41, blue: 0.51, alpha: 1)
         
-        text = ENG.textOnGenerateAgain
+        var db: OpaquePointer?
+                                       
+        //Si connette al DB
+        let fileURL = try!
+        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+            print("error opening database")
+        }
+                                     
+        //Recupera Valore
+        var stmt: OpaquePointer?
+        let queryString = "SELECT * FROM Lingua"
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+        let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error preparing insert: \(errmsg)")
+            return
+        }
+                           
+        var lingua = ""
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            lingua = String(cString: sqlite3_column_text(stmt, 1))
+        }
+                          
+        if(lingua == "eng"){
+            text = ENG.textOnGenerateAgain
+        } else if (lingua == "ita"){
+            text = ITA.textOnGenerateAgain
+        }
         
         img.layer.borderWidth = 0.4
         img.layer.masksToBounds = true

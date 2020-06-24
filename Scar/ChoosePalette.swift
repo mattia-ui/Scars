@@ -8,6 +8,7 @@
 
 import UIKit
 import CloudKit
+import SQLite3
 
 class ChoosePalette: UIViewController  {
    
@@ -18,8 +19,38 @@ class ChoosePalette: UIViewController  {
         overrideUserInterfaceStyle = .light
         nex.isEnabled = false
         
-        text = ENG.textOnChoosePalette
-        palette = ENG.Palette
+        var db: OpaquePointer?
+                                      
+        //Si connette al DB
+        let fileURL = try!
+        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+            print("error opening database")
+        }
+                                    
+        //Recupera Valore
+        var stmt: OpaquePointer?
+        let queryString = "SELECT * FROM Lingua"
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+        let errmsg = String(cString: sqlite3_errmsg(db)!)
+        print("error preparing insert: \(errmsg)")
+            return
+        }
+                        
+        var lingua = ""
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            lingua = String(cString: sqlite3_column_text(stmt, 1))
+        }
+                                
+        if(lingua == "eng"){
+            text = ENG.textOnChoosePalette
+            palette = ENG.Palette
+        } else if (lingua == "ita"){
+            text = ITA.textOnChoosePalette
+            palette = ITA.Palette
+        }
+        
+        
         
         let boldText = text[0]
         let attributedString = NSMutableAttributedString(string:boldText)
