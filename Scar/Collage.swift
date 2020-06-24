@@ -180,7 +180,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
             shape = ITA.Shape
             palette = ITA.Palette
             texture = ITA.Texture
-            procede.imageView?.image = UIImage(named: ITA.button[14])
+           procede.imageView?.image = UIImage(named: ITA.button[14])
         }
         
         if(ChooseShape.shape1 == shape[0]){
@@ -644,34 +644,35 @@ class Collage: UIViewController, UITextFieldDelegate  {
             }
         }
         
-        let randomSize = Float.random(in: 0.99..<1.03)
+//        let randomSize = Float.random(in: 1.01..<1.05)
+        let randomSize = 1.07
         let randomPos = Int.random(in: 0..<4)
         
         var posizioneGx: [Int], posizioneGy: [Int], posizionePx: [Int], posizionePy: [Int]
         if(UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 896){
             //11 pro max
             posizioneGx = [20,-20,170,-10]
-            posizioneGy = [-20,0,-20,140]
+            posizioneGy = [-10,10,-10,150]
             posizionePx = [170,220,-10,200]
-            posizionePy = [200,150,170,30]
+            posizionePy = [210,160,180,40]
         } else if (UIScreen.main.bounds.width == 375 && UIScreen.main.bounds.height == 812){
             //XS
             posizioneGx = [0,-20,160,-20]
-            posizioneGy = [-30,0,-20,140]
+            posizioneGy = [-40,10,-30,150]
             posizionePx = [170,180,0,180]
-            posizionePy = [140,130,150,0]
+            posizionePy = [150,140,160,10]
         }else if (UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 736){
             //8 plus
             posizioneGx = [-10,-20,170,-30]
-            posizioneGy = [-20,0,-20,140]
+            posizioneGy = [-10,10,-10,150]
             posizionePx = [190,220,0,200]
-            posizionePy = [180,150,170,30]
+            posizionePy = [190,160,180,40]
         } else {
             //11, 8, SE
             posizioneGx = [-10,-20,160,-30]
-            posizioneGy = [-30,0,-20,140]
+            posizioneGy = [-20,10,-10,150]
             posizionePx = [180,180,0,180]
-            posizionePy = [150,130,170,0]
+            posizionePy = [160,140,180,10]
         }
         
            
@@ -816,7 +817,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
         }
 //            iphone XS
         else  if(view.frame.width == 375 && view.frame.height == 812){
-           let rect = CGRect(x: 135, y: 530, width: 850, height: 850)
+           let rect = CGRect(x: 145, y: 540, width: 830, height: 830)
            return cropImage(image: image, toRect: rect)
         }
 //            iphone 8Plus
