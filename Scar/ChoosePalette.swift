@@ -25,7 +25,7 @@ class ChoosePalette: UIViewController  {
         let attributedString = NSMutableAttributedString(string:boldText)
 
         let normalText = text[1]
-        let attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 22)]
+        let attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: 20)]
         let normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
 
        attributedString.append(normalString)
@@ -34,17 +34,17 @@ class ChoosePalette: UIViewController  {
         
         var normalText1 = text[2]
         var attrs1 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
-        var normalString1 = NSMutableAttributedString(string:normalText1, attributes:attrs as [NSAttributedString.Key : Any])
+        var normalString1 = NSMutableAttributedString(string:normalText1, attributes:attrs1 as [NSAttributedString.Key : Any])
         cool.setAttributedTitle(normalString1, for: .normal)
         
         normalText1 = text[3]
         attrs1 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
-        normalString1 = NSMutableAttributedString(string:normalText1, attributes:attrs as [NSAttributedString.Key : Any])
+        normalString1 = NSMutableAttributedString(string:normalText1, attributes:attrs1 as [NSAttributedString.Key : Any])
         warm.setAttributedTitle(normalString1, for: .normal)
         
         normalText1 = text[4]
         attrs1 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
-        normalString1 = NSMutableAttributedString(string:normalText1, attributes:attrs as [NSAttributedString.Key : Any])
+        normalString1 = NSMutableAttributedString(string:normalText1, attributes:attrs1 as [NSAttributedString.Key : Any])
         neutral.setAttributedTitle(normalString1, for: .normal)
     }
     

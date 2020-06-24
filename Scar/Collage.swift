@@ -775,27 +775,27 @@ class Collage: UIViewController, UITextFieldDelegate  {
         let deviceType = UIDevice().type
 //        iphone XR
         if(view.frame.width == 414 && view.frame.height == 896 && deviceType != Model(rawValue: "iPhone 11 Pro Max") && deviceType != Model(rawValue: "iPhone XS Max")){
-           let rect = CGRect(x: 115, y: 375, width: 600, height: 600)
+           let rect = CGRect(x: 80, y: 355, width: 670, height: 670)
            return cropImage(image: image, toRect: rect)
         }
 //            iphone XS
         else  if(view.frame.width == 375 && view.frame.height == 812){
-           let rect = CGRect(x: 165, y: 530, width: 800, height: 800)
+           let rect = CGRect(x: 135, y: 530, width: 850, height: 850)
            return cropImage(image: image, toRect: rect)
         }
 //            iphone 8Plus
         else  if(view.frame.width == 414 && view.frame.height == 736){
-           let rect = CGRect(x: 165, y: 530, width: 950, height: 950)
+           let rect = CGRect(x: 134, y: 535, width: 980, height: 1000)
            return cropImage(image: image, toRect: rect)
         }
 //            iphone 8
             else  if(view.frame.width == 375 && view.frame.height == 667){
-               let rect = CGRect(x: 95, y: 330, width: 560, height: 560)
+               let rect = CGRect(x: 85, y: 345, width: 580, height: 580)
                return cropImage(image: image, toRect: rect)
             }
 //            iphone 11 pro Max
             else  if(deviceType == Model(rawValue: "iPhone 11 Pro Max") || deviceType == Model(rawValue: "iPhone XS Max")){
-            let rect = CGRect(x: 110, y: 500, width: 1000, height: 1000)
+            let rect = CGRect(x: 120, y: 535, width: 1000, height: 1000)
             return cropImage(image: image, toRect: rect)
                        }
 

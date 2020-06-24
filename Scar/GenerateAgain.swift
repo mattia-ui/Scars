@@ -35,7 +35,7 @@ class GenerateAgain: UIViewController {
        override func viewWillAppear(_ animated: Bool) {
            super.viewWillAppear(animated)
            
-           if(view.frame.width == 375 && UIScreen.main.bounds.height == 667){
+           if(view.frame.width == 375 /*&& UIScreen.main.bounds.height == 667*/){
                
            
            traslate(view: img, aCircleTime: 0, to: -30)
