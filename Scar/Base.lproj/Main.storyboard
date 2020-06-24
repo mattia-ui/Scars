@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -425,7 +425,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-gT-4jz">
-                                <rect key="frame" x="2491.5" y="973.5" width="303" height="23"/>
+                                <rect key="frame" x="848" y="973.5" width="303" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -448,14 +448,14 @@ Masterpiece!</string>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="12" translatesAutoresizingMaskIntoConstraints="NO" id="PtS-SF-yl7">
-                                <rect key="frame" x="1235.5" y="447" width="1236" height="436.5"/>
+                                <rect key="frame" x="414" y="447" width="414" height="436.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell1" rowHeight="120" id="Q0F-YJ-7d9" customClass="Cella1" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1236" height="120"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q0F-YJ-7d9" id="tAq-I3-Gpy">
-                                            <rect key="frame" x="0.0" y="0.0" width="1236" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hi, Sigafreda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="ywt-KN-qf8">
@@ -486,14 +486,14 @@ Masterpiece!</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell2" rowHeight="100" id="Odx-4k-Ygl" customClass="Cella2" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="148" width="1236" height="100"/>
+                                        <rect key="frame" x="0.0" y="148" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Odx-4k-Ygl" id="z3Q-oM-gjf">
-                                            <rect key="frame" x="0.0" y="0.0" width="1236" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCf-Wr-8Gn">
-                                                    <rect key="frame" x="20" y="12" width="1196" height="76"/>
+                                                    <rect key="frame" x="20" y="12" width="374" height="76"/>
                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
                                                     <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="Button" backgroundImage="deselected">
@@ -521,13 +521,13 @@ Masterpiece!</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell3" rowHeight="200" id="B7d-lg-0DN" customClass="Cella3" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="248" width="1236" height="200"/>
+                                        <rect key="frame" x="0.0" y="248" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B7d-lg-0DN" translatesAutoresizingMaskIntoConstraints="NO" id="vQO-Sv-XsO">
-                                            <rect key="frame" x="0.0" y="0.0" width="1236" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3A-U0-X4D">
-                                                    <rect key="frame" x="527" y="71" width="182" height="55"/>
+                                                    <rect key="frame" x="116" y="71" width="182" height="55"/>
                                                     <state key="normal" image="done">
                                                         <color key="titleColor" red="0.91372543569999998" green="0.91366583109999999" blue="0.91764795779999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </state>
@@ -568,7 +568,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="WDJ-6S-5Y3">
-                                <rect key="frame" x="2493.5" y="520" width="384" height="19"/>
+                                <rect key="frame" x="850" y="520" width="384" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="19" id="Ye5-Cq-PxJ"/>
                                 </constraints>
@@ -577,7 +577,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
-                                <rect key="frame" x="2493.5" y="625" width="384" height="42"/>
+                                <rect key="frame" x="850" y="625" width="384" height="50.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="384" id="WAl-jz-akH"/>
                                 </constraints>
@@ -601,7 +601,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-fI-qoJ">
-                                <rect key="frame" x="880" y="718" width="194" height="55"/>
+                                <rect key="frame" x="880" y="726.5" width="194" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" identifier="larg" id="R1p-r1-OP1"/>
                                     <constraint firstAttribute="height" constant="55" identifier="altezza" id="g45-2c-k21"/>
@@ -618,7 +618,7 @@ Masterpiece!</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Onboarding1" translatesAutoresizingMaskIntoConstraints="NO" id="abm-bl-K38">
-                                <rect key="frame" x="0.0" y="0.0" width="3740" height="447"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1271" height="447"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1668,7 +1668,7 @@ all the answers you gave?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#skinsugi is a place to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Pt-cQ-xmf">
-                                <rect key="frame" x="22" y="141" width="252.5" height="25"/>
+                                <rect key="frame" x="22" y="141" width="285.5" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="JDC-LS-hhj"/>
                                 </constraints>
@@ -2834,25 +2834,25 @@ your body and others’s bodies.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cD-zh-Axb">
-                                <rect key="frame" x="42" y="11" width="197" height="54"/>
+                                <rect key="frame" x="42" y="99" width="197" height="54"/>
                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linea" translatesAutoresizingMaskIntoConstraints="NO" id="SC9-8M-Eyw">
-                                <rect key="frame" x="20" y="73" width="374" height="11"/>
+                                <rect key="frame" x="20" y="161" width="374" height="11"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="11" id="gMd-tQ-tD1"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linea" translatesAutoresizingMaskIntoConstraints="NO" id="bia-Lt-DFy">
-                                <rect key="frame" x="20" y="138" width="374" height="11"/>
+                                <rect key="frame" x="20" y="226" width="374" height="11"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="11" id="WPw-Bh-Xtw"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZt-mq-RTk">
-                                <rect key="frame" x="20" y="157" width="374" height="40"/>
+                                <rect key="frame" x="20" y="245" width="374" height="40"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button">
@@ -2866,7 +2866,7 @@ your body and others’s bodies.</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U07-M2-hPX">
-                                <rect key="frame" x="20" y="90" width="374" height="40"/>
+                                <rect key="frame" x="20" y="178" width="374" height="40"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button">
@@ -2880,14 +2880,14 @@ your body and others’s bodies.</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgA-B6-nuI">
-                                <rect key="frame" x="20" y="19" width="14" height="40"/>
+                                <rect key="frame" x="20" y="107" width="14" height="40"/>
                                 <state key="normal" image="backArrow"/>
                                 <connections>
                                     <segue destination="5O1-J8-IaV" kind="show" id="W8t-6Z-Ukx"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linea" translatesAutoresizingMaskIntoConstraints="NO" id="2oz-De-Rcj">
-                                <rect key="frame" x="20" y="205" width="374" height="11"/>
+                                <rect key="frame" x="20" y="293" width="374" height="11"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="11" id="dl9-rB-QN0"/>
                                 </constraints>
@@ -2945,23 +2945,23 @@ your body and others’s bodies.</string>
             <objects>
                 <viewController id="5O1-J8-IaV" customClass="Settins" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ybv-z4-6Pa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ept-6i-MJD">
-                                <rect key="frame" x="20" y="12" width="164" height="53.5"/>
+                                <rect key="frame" x="20" y="100" width="164" height="53"/>
                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linea" translatesAutoresizingMaskIntoConstraints="NO" id="KRu-GJ-yD4">
-                                <rect key="frame" x="20" y="73.5" width="374" height="11"/>
+                                <rect key="frame" x="20" y="161" width="374" height="11"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="11" id="fTz-AE-hHd"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgu-08-N3P">
-                                <rect key="frame" x="20" y="160" width="374" height="40.5"/>
+                                <rect key="frame" x="20" y="248" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="YqF-uk-KUt"/>
                                 </constraints>
@@ -2975,7 +2975,7 @@ your body and others’s bodies.</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPs-S0-gaU">
-                                <rect key="frame" x="20" y="92.5" width="374" height="40.5"/>
+                                <rect key="frame" x="20" y="180" width="374" height="41"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button">
@@ -2991,13 +2991,13 @@ your body and others’s bodies.</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linea" translatesAutoresizingMaskIntoConstraints="NO" id="oLQ-nY-Ime">
-                                <rect key="frame" x="20" y="208.5" width="374" height="155"/>
+                                <rect key="frame" x="20" y="296" width="374" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="11" id="ztH-Jc-3cl"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linea" translatesAutoresizingMaskIntoConstraints="NO" id="p5X-Tg-GfW">
-                                <rect key="frame" x="20" y="141" width="374" height="11"/>
+                                <rect key="frame" x="20" y="229" width="374" height="11"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="11" id="kWh-lE-xtf"/>
                                 </constraints>
@@ -3012,15 +3012,18 @@ your body and others’s bodies.</string>
                             <constraint firstItem="p5X-Tg-GfW" firstAttribute="width" secondItem="ybv-z4-6Pa" secondAttribute="width" multiplier="0.903382" id="75j-cc-YQ8"/>
                             <constraint firstItem="Bgu-08-N3P" firstAttribute="top" secondItem="p5X-Tg-GfW" secondAttribute="bottom" constant="8" id="D6A-83-CJY"/>
                             <constraint firstItem="oLQ-nY-Ime" firstAttribute="height" secondItem="ybv-z4-6Pa" secondAttribute="height" multiplier="0.0122768" id="GH2-Fr-uY7"/>
+                            <constraint firstItem="oLQ-nY-Ime" firstAttribute="top" secondItem="nMv-EE-xA8" secondAttribute="top" constant="208" id="IQD-z6-JU9"/>
                             <constraint firstItem="KRu-GJ-yD4" firstAttribute="width" secondItem="ybv-z4-6Pa" secondAttribute="width" multiplier="0.903382" id="KhV-VB-vje"/>
                             <constraint firstItem="nMv-EE-xA8" firstAttribute="bottom" secondItem="oLQ-nY-Ime" secondAttribute="bottom" constant="507" id="LFA-E7-svh"/>
                             <constraint firstItem="Bgu-08-N3P" firstAttribute="width" secondItem="ybv-z4-6Pa" secondAttribute="width" multiplier="0.161836" constant="307" id="N4o-dD-WWq"/>
                             <constraint firstItem="ept-6i-MJD" firstAttribute="width" secondItem="ybv-z4-6Pa" secondAttribute="width" multiplier="0.396135" id="S7S-sn-Vpq"/>
                             <constraint firstItem="oLQ-nY-Ime" firstAttribute="leading" secondItem="ybv-z4-6Pa" secondAttribute="leadingMargin" id="V4s-R5-Xwx"/>
+                            <constraint firstItem="p5X-Tg-GfW" firstAttribute="leading" secondItem="nMv-EE-xA8" secondAttribute="leading" constant="20" id="WOw-uW-xzV"/>
                             <constraint firstItem="oLQ-nY-Ime" firstAttribute="width" secondItem="ybv-z4-6Pa" secondAttribute="width" multiplier="0.903382" id="Xsf-bs-CTi"/>
                             <constraint firstItem="p5X-Tg-GfW" firstAttribute="leading" secondItem="Bgu-08-N3P" secondAttribute="leading" id="Zgp-Df-7Az"/>
                             <constraint firstItem="KRu-GJ-yD4" firstAttribute="trailing" secondItem="p5X-Tg-GfW" secondAttribute="trailing" id="a2P-8B-E6g"/>
                             <constraint firstItem="oLQ-nY-Ime" firstAttribute="top" secondItem="Bgu-08-N3P" secondAttribute="bottom" constant="8" id="bEF-me-7WU"/>
+                            <constraint firstItem="p5X-Tg-GfW" firstAttribute="top" secondItem="nMv-EE-xA8" secondAttribute="top" constant="141" id="dZu-8W-zoy"/>
                             <constraint firstItem="iPs-S0-gaU" firstAttribute="leading" secondItem="p5X-Tg-GfW" secondAttribute="leading" id="e4U-b2-4US"/>
                             <constraint firstItem="Bgu-08-N3P" firstAttribute="height" secondItem="ybv-z4-6Pa" secondAttribute="height" multiplier="0.0446429" id="eBG-hE-ufS"/>
                             <constraint firstItem="p5X-Tg-GfW" firstAttribute="height" secondItem="ybv-z4-6Pa" secondAttribute="height" multiplier="0.0122768" id="eI6-r8-HAz"/>
@@ -3959,7 +3962,7 @@ The two shapes on the outside recount </string>
         <scene sceneID="2Dz-KE-cUW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="laW-Uq-fAf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" selectedImage="Sttingsicon" id="CJT-2l-Edo"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Sttingsicon" id="CJT-2l-Edo"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="dLL-bA-y4K"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qFX-uT-CyZ">
@@ -3978,7 +3981,7 @@ The two shapes on the outside recount </string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="47n-ms-sJd"/>
-        <segue reference="W8t-6Z-Ukx"/>
+        <segue reference="BXP-xo-Wme"/>
         <segue reference="wd9-1W-xO2"/>
         <segue reference="rkX-St-HZF"/>
     </inferredMetricsTieBreakers>
