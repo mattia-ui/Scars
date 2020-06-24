@@ -281,15 +281,15 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             text = ENG.textOnPrimaTutorial
             start = ENG.button[9]
             startNo = ENG.button[10]
-            done = ENG.button[11]
-            doneNo = ENG.button[12]
+            PrimaTutorial.done = ENG.button[11]
+            PrimaTutorial.doneNo = ENG.button[12]
             letsgo = ENG.button[13]
         } else if (lingua == "it"){
             text = ITA.textOnPrimaTutorial
             start = ITA.button[9]
             startNo = ITA.button[10]
-            done = ITA.button[11]
-            doneNo = ITA.button[12]
+            PrimaTutorial.done = ITA.button[11]
+            PrimaTutorial.doneNo = ITA.button[12]
             letsgo = ITA.button[13]
         }
         button1.imageView?.image = UIImage(named: startNo)
@@ -568,7 +568,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             }
             
             cell.done.frame.origin.x = (UIScreen.main.bounds.width / 2) - 91
-            cell.done.imageView?.image = UIImage(named: doneNo)
+            cell.done.imageView?.image = UIImage(named: PrimaTutorial.doneNo)
             cell.selectionStyle = .none
             return cell
         }
