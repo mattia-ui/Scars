@@ -19,6 +19,11 @@ class Password: UIViewController {
 
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+           self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     @IBAction func tryPass(_ sender: Any) {
         
         if(pass.text == "uragani"){
