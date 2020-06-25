@@ -1527,6 +1527,7 @@ all the answers you gave?</string>
                         <outlet property="results" destination="RDd-Fb-aqK" id="9hd-Ue-SGO"/>
                         <outlet property="sea" destination="kqu-2o-qXn" id="NHH-3b-LRV"/>
                         <outlet property="seaImg" destination="YBv-BC-Bzc" id="HNF-Xy-XXh"/>
+                        <outlet property="stackO" destination="DIG-Si-Gdq" id="vSi-YV-1lX"/>
                         <outlet property="texile" destination="YRS-3h-hAc" id="6SE-9z-VcT"/>
                         <outlet property="textileImg" destination="eP9-YF-Agc" id="XZT-o7-Q61"/>
                         <outlet property="view1" destination="jE3-g0-hTy" id="1az-Xs-48Q"/>

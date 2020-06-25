@@ -106,6 +106,7 @@ class ChooseTexture: UIViewController  {
         
     }
 
+    @IBOutlet weak var stackO: UIStackView!
     @IBOutlet weak var sea: UIButton!
     @IBOutlet weak var wood: UIButton!
     @IBOutlet weak var texile: UIButton!
@@ -145,52 +146,21 @@ class ChooseTexture: UIViewController  {
         viewDidLoad()
           
 
-                if(view.frame.height == 812){
+                if(view.frame.height == 896){
+                    traslate(view: stackO,aCircleTime: 0, to: -20)
+                    traslate(view: label,aCircleTime: 0, to: -20)
+                    traslate(view: question,aCircleTime: 0, to: -20)
+                    traslate(view: nex,aCircleTime: 0, to: -20)
+                    
                 }else if(view.frame.height == 667){
-//                    traslate(view: question, aCircleTime: 0, to: -35)
-//                    traslate(view: label, aCircleTime: 0, to: -35)
-//                    traslate(view: nex, aCircleTime: 0, to: -83)
-//                    traslate(view: sea, aCircleTime: 0, to: -42)
-//                    traslate(view: seaImg, aCircleTime: 0, to: -42)
-//                    traslate(view: cratere, aCircleTime: 0, to: -49)
-//                    traslate(view: cartereImg, aCircleTime: 0, to: -49)
-//                    traslate(view: texile, aCircleTime: 0, to: -56)
-//                    traslate(view: textileImg, aCircleTime: 0, to: -56)
-//                    traslate(view: marble, aCircleTime: 0, to: -63)
-//                    traslate(view: marbleImg, aCircleTime: 0, to: -63)
-//                    traslate(view: wood, aCircleTime: 0, to: -70)
-//                    traslate(view: woodImg, aCircleTime: 0, to: -70)
-//
-//                    traslate(view: label1, aCircleTime: 0, to: -75)
-//                    traslate(view: label2, aCircleTime: 0, to: -75)
-//                    traslate(view: results, aCircleTime: 0, to: -75)
-//                    traslate(view: yes, aCircleTime: 0, to: -75)
-//                    traslate(view: no, aCircleTime: 0, to: -75)
-                    UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+                    traslate(view: stackO,aCircleTime: 0, to: -50)
+                    traslate(view: label,aCircleTime: 0, to: -50)
+                    traslate(view: question,aCircleTime: 0, to: -50)
+                    traslate(view: nex,aCircleTime: 0, to: -50)
+                   
         }
-//                }else if(view.frame.height == 736){
-//                    traslate(view: question, aCircleTime: 0, to: -35)
-//                    traslate(view: label, aCircleTime: 0, to: -35)
-//                    traslate(view: nex, aCircleTime: 0, to: -88)
-//                    traslate(view: sea, aCircleTime: 0, to: -42)
-//                    traslate(view: seaImg, aCircleTime: 0, to: -42)
-//                    traslate(view: cratere, aCircleTime: 0, to: -49)
-//                    traslate(view: cartereImg, aCircleTime: 0, to: -49)
-//                    traslate(view: texile, aCircleTime: 0, to: -56)
-//                    traslate(view: textileImg, aCircleTime: 0, to: -56)
-//                    traslate(view: marble, aCircleTime: 0, to: -63)
-//                    traslate(view: marbleImg, aCircleTime: 0, to: -63)
-//                    traslate(view: wood, aCircleTime: 0, to: -70)
-//                    traslate(view: woodImg, aCircleTime: 0, to: -70)
-//                    
-//                    traslate(view: label1, aCircleTime: 0, to: -75)
-//                    traslate(view: label2, aCircleTime: 0, to: -75)
-//                    traslate(view: results, aCircleTime: 0, to: -75)
-//                    traslate(view: yes, aCircleTime: 0, to: -75)
-//                    traslate(view: no, aCircleTime: 0, to: -75)
-//        }
-    }
-    
+                
+}
     @IBAction func pressed(_ sender: UIButton) {
        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.light)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
