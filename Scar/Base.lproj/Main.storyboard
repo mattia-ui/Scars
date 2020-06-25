@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -426,7 +426,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-gT-4jz">
-                                <rect key="frame" x="848" y="973.5" width="303" height="23"/>
+                                <rect key="frame" x="2491.5" y="973.5" width="303" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -449,14 +449,14 @@ Masterpiece!</string>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="12" translatesAutoresizingMaskIntoConstraints="NO" id="PtS-SF-yl7">
-                                <rect key="frame" x="414" y="447" width="414" height="436.5"/>
+                                <rect key="frame" x="1235.5" y="447" width="1236" height="436.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell1" rowHeight="120" id="Q0F-YJ-7d9" customClass="Cella1" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                        <rect key="frame" x="0.0" y="28" width="1236" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q0F-YJ-7d9" id="tAq-I3-Gpy">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1236" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hi, Sigafreda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="ywt-KN-qf8">
@@ -487,14 +487,14 @@ Masterpiece!</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell2" rowHeight="100" id="Odx-4k-Ygl" customClass="Cella2" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="148" width="414" height="100"/>
+                                        <rect key="frame" x="0.0" y="148" width="1236" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Odx-4k-Ygl" id="z3Q-oM-gjf">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1236" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCf-Wr-8Gn">
-                                                    <rect key="frame" x="20" y="12" width="374" height="76"/>
+                                                    <rect key="frame" x="20" y="12" width="1196" height="76"/>
                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
                                                     <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="Button" backgroundImage="deselected">
@@ -522,13 +522,13 @@ Masterpiece!</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell3" rowHeight="200" id="B7d-lg-0DN" customClass="Cella3" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="248" width="414" height="200"/>
+                                        <rect key="frame" x="0.0" y="248" width="1236" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B7d-lg-0DN" translatesAutoresizingMaskIntoConstraints="NO" id="vQO-Sv-XsO">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1236" height="200"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3A-U0-X4D">
-                                                    <rect key="frame" x="116" y="71" width="182" height="55"/>
+                                                    <rect key="frame" x="527" y="71" width="182" height="55"/>
                                                     <state key="normal" image="done">
                                                         <color key="titleColor" red="0.91372543569999998" green="0.91366583109999999" blue="0.91764795779999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </state>
@@ -569,7 +569,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="WDJ-6S-5Y3">
-                                <rect key="frame" x="850" y="520" width="384" height="19"/>
+                                <rect key="frame" x="2493.5" y="520" width="384" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="19" id="Ye5-Cq-PxJ"/>
                                 </constraints>
@@ -578,7 +578,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
-                                <rect key="frame" x="850" y="625" width="384" height="42"/>
+                                <rect key="frame" x="2493.5" y="625" width="384" height="50.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="384" id="WAl-jz-akH"/>
                                 </constraints>
@@ -602,7 +602,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-fI-qoJ">
-                                <rect key="frame" x="880" y="718" width="194" height="55"/>
+                                <rect key="frame" x="880" y="726.5" width="194" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" identifier="larg" id="R1p-r1-OP1"/>
                                     <constraint firstAttribute="height" constant="55" identifier="altezza" id="g45-2c-k21"/>
@@ -619,7 +619,7 @@ Masterpiece!</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Onboarding1" translatesAutoresizingMaskIntoConstraints="NO" id="abm-bl-K38">
-                                <rect key="frame" x="0.0" y="0.0" width="1271" height="447"/>
+                                <rect key="frame" x="0.0" y="0.0" width="3740" height="447"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1242,7 +1242,7 @@ Masterpiece!</string>
             <objects>
                 <viewController id="lfU-OF-Bud" customClass="ChooseTexture" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pnh-IU-Nic">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jE3-g0-hTy">
@@ -1260,7 +1260,7 @@ Masterpiece!</string>
                                             <constraint firstAttribute="width" constant="75" id="7O2-5I-YuA"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="wood" translatesAutoresizingMaskIntoConstraints="NO" id="SNQ-KO-nnh">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" image="wood" translatesAutoresizingMaskIntoConstraints="NO" id="SNQ-KO-nnh">
                                         <rect key="frame" x="22" y="594" width="75" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="Ixq-gG-O1T"/>
@@ -1269,7 +1269,7 @@ Masterpiece!</string>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="marble" translatesAutoresizingMaskIntoConstraints="NO" id="57U-4M-5nY">
                                         <rect key="frame" x="22" y="507" width="75" height="75"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nTf-2F-YIf">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nTf-2F-YIf">
                                         <rect key="frame" x="130" y="594" width="261" height="71"/>
                                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1334,7 +1334,7 @@ Masterpiece!</string>
                                             <action selector="chooseZigZag:" destination="My5-jh-AI2" eventType="touchUpInside" id="UY8-Lb-vTp"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4O-Qz-X11">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4O-Qz-X11">
                                         <rect key="frame" x="116" y="707" width="182" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="182" id="TcV-Vb-nZl"/>
@@ -1345,7 +1345,7 @@ Masterpiece!</string>
                                             <action selector="pressed:" destination="lfU-OF-Bud" eventType="touchUpInside" id="vHt-cq-KD0"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 4/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Lej-tX-y6u">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Question 4/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Lej-tX-y6u">
                                         <rect key="frame" x="22" y="81" width="279" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="279" id="1ma-0S-7jp"/>
@@ -1354,7 +1354,7 @@ Masterpiece!</string>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="mIk-Xe-oy0">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="mIk-Xe-oy0">
                                         <rect key="frame" x="22" y="152" width="369" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="Q97-ZH-JlX"/>
@@ -1433,7 +1433,7 @@ all the answers you gave?</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forma1 - Forma2 - Palette - Texture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="RDd-Fb-aqK">
-                                        <rect key="frame" x="26" y="440" width="321" height="30"/>
+                                        <rect key="frame" x="26" y="440" width="356.5" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="LHk-NW-KhR"/>
                                         </constraints>
@@ -1646,7 +1646,7 @@ all the answers you gave?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#skinsugi is a place to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Pt-cQ-xmf">
-                                <rect key="frame" x="22" y="141" width="252.5" height="25"/>
+                                <rect key="frame" x="22" y="141" width="285.5" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="JDC-LS-hhj"/>
                                 </constraints>
@@ -1919,7 +1919,7 @@ your body and others’s bodies.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yHf-AX-5ZQ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="261.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="241.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" misplaced="YES" text="Good " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wg-V5-aIC">
                                 <rect key="frame" x="25" y="122" width="281" height="47"/>
@@ -1934,7 +1934,7 @@ your body and others’s bodies.</string>
                                 <color key="highlightedColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fWY-uv-LMG">
-                                <rect key="frame" x="14" y="373" width="400" height="175.5"/>
+                                <rect key="frame" x="14" y="334" width="400" height="165"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="400" id="DS8-NL-NDp"/>
@@ -1947,7 +1947,7 @@ your body and others’s bodies.</string>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" restorationIdentifier="myCell" reuseIdentifier="myCell" id="DOL-XC-LhE" customClass="CollectionViewCell1" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="23.5" width="176" height="129"/>
+                                        <rect key="frame" x="0.0" y="18" width="176" height="129"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dPQ-80-aLg">
                                             <rect key="frame" x="0.0" y="0.0" width="176" height="129"/>
@@ -2023,19 +2023,19 @@ your body and others’s bodies.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mqk-Ya-Xpd">
-                                <rect key="frame" x="215" y="568.5" width="189" height="304"/>
+                                <rect key="frame" x="215" y="519" width="189" height="279"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="189" id="19W-RA-Wbc"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Qua ci vanno le stronzate di francesca" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="61N-a8-v0d">
-                                <rect key="frame" x="24" y="626.5" width="190" height="234"/>
+                                <rect key="frame" x="24" y="552" width="190" height="234"/>
                                 <fontDescription key="fontDescription" name="Poppins-ExtraLight" family="Poppins" pointSize="18"/>
                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Ready for a boost of self-esteem?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOt-Hk-MoG">
-                                <rect key="frame" x="25" y="232" width="369" height="40"/>
+                                <rect key="frame" x="25" y="199.5" width="369" height="37"/>
                                 <fontDescription key="fontDescription" name="Poppins-LightItalic" family="Poppins" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2811,7 +2811,7 @@ your body and others’s bodies.</string>
             <objects>
                 <viewController id="yAG-TC-SHI" customClass="Lingua" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qcm-5a-Y5k">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SettingsIllustration" translatesAutoresizingMaskIntoConstraints="NO" id="sQD-ea-gAV">
@@ -3092,10 +3092,10 @@ your body and others’s bodies.</string>
                                                         <rect key="frame" x="72" y="210" width="270" height="272"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="raZ-zi-IBM">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="raZ-zi-IBM">
                                                         <rect key="frame" x="291" y="429" width="50" height="50"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHV-UC-arC">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHV-UC-arC">
                                                         <rect key="frame" x="72" y="210" width="70" height="70"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jgS-5L-Xg9">
@@ -3333,11 +3333,11 @@ The two shapes on the outside recount </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yourmasterpiece" translatesAutoresizingMaskIntoConstraints="NO" id="hht-L1-G5R">
-                                <rect key="frame" x="-2" y="28" width="418" height="142.5"/>
+                                <rect key="frame" x="-2" y="28" width="418" height="140"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayK-bN-Qsf">
-                                <rect key="frame" x="16" y="119" width="14" height="36.5"/>
+                                <rect key="frame" x="16" y="119" width="14" height="34"/>
                                 <state key="normal" image="backArrow"/>
                                 <connections>
                                     <action selector="backB:" destination="q9l-GE-q4m" eventType="touchUpInside" id="m6c-aa-ad3"/>
