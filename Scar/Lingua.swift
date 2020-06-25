@@ -107,7 +107,7 @@ class Lingua: UIViewController {
         super.viewWillAppear(animated)
 viewDidLoad()
         if(view.frame.height == 667){
-            traslate(view: ill, aCircleTime: 0, to: -32)
+            traslate(view: ill, aCircleTime: 0, to: -74)
         } else if(view.frame.height == 896){
             traslate(view: ill, aCircleTime: 0, to: -16)
 

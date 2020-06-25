@@ -33,7 +33,7 @@ class Settins: UIViewController {
             traslate(view: settingslabel, aCircleTime: 0, to: 5)
             traslate(view: lingua, aCircleTime: 0, to: 5)
             traslate(view: linea3, aCircleTime: 0, to: 6)
-            
+            traslate(view: imageSettings, aCircleTime: 0, to: -72)
         } else if(view.frame.height == 896){
             traslate(view: imageSettings, aCircleTime: 0, to: -16)
             traslate(view: linea1, aCircleTime: 0, to: 7)
