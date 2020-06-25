@@ -254,8 +254,8 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
                           textSaluti = ENG.Schermata1Saluti
                       } else if (lingua == "ita"){
                           Schermata1.allCardsImages = ITA.allCardsImages
-                          weeklyInfo = ENG.Schermata1weeklyInfo
-                          frasiDeStoCazzo = ENG.Schermata1frasiDeStoCazzo
+                          weeklyInfo = ITA.Schermata1weeklyInfo
+                          frasiDeStoCazzo = ITA.Schermata1frasiDeStoCazzo
                           textSaluti = ITA.Schermata1Saluti
                       }
        
