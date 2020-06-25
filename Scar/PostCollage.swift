@@ -52,7 +52,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         
         if(view.frame.height == 812){
            }else if(view.frame.height == 667){
-               traslate(view: button, aCircleTime: 0, to: 50)
+//               traslate(view: button, aCircleTime: 0, to: 50)
                 traslateX(view: miniSym, aCircleTime: 0, to: -10)
             traslate(view: illustrazionePerBlur, aCircleTime: 0, to: -50)
             traslate(view: Submitted, aCircleTime: 0, to: -50)
