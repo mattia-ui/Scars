@@ -47,14 +47,14 @@ class ChooseTexture: UIViewController  {
                  if(lingua == "eng"){
                      text = ENG.textOnChooseTexture
                      texture = ENG.Texture
-                     submit = ENG.button[4]
+                     submit = ENG.button[0]
                      submitNo = ENG.button[5]
                      yes.imageView?.image = UIImage(named: ENG.button[6])
                      no.imageView?.image = UIImage(named: ENG.button[7])
                  } else if (lingua == "ita"){
                      text = ITA.textOnChooseTexture
                      texture = ITA.Texture
-                     submit = ITA.button[4]
+                     submit = ITA.button[0]
                      submitNo = ITA.button[5]
                      yes.imageView?.image = UIImage(named: ITA.button[6])
                      no.imageView?.image = UIImage(named: ITA.button[7])

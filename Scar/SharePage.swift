@@ -191,15 +191,15 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
         
         let  normalText = t
         _ = NSMutableAttributedString(string:String(normalText))
-            let attrs2 = [NSAttributedString.Key.font : UIFont(name: "Nexa Light", size: 20)]
+            let attrs2 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: 18)]
         let attributedString = NSMutableAttributedString(string:String(normalText), attributes:attrs2 as [NSAttributedString.Key : Any])
         
         let boldText = " - #skinsugi"
-        let attrs = [NSAttributedString.Key.font : UIFont(name: "Nexa Bold", size: 20)]
+        let attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: 18)]
            let attributedString2 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
         attributedString.append(attributedString2)
         
-        descriptionField.font = UIFont(name: "Nexa Light", size: 20)
+        descriptionField.font = UIFont(name: "Poppins-Light", size: 18)
         descriptionField.attributedText = attributedString
         
         let arbitraryValue: Int = t.count

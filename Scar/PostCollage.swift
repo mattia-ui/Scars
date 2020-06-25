@@ -63,6 +63,8 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
             traslate(view: illustrazionePerBlur, aCircleTime: 0, to: -20)
             traslate(view: Submitted, aCircleTime: 0, to: -20)
             traslate(view: thx, aCircleTime: 0, to: -20)
+        }else if(view.frame.height == 896){
+            traslateX(view: miniSym, aCircleTime: 0, to: 20)
         }
 
 //        let sh = Collage()
