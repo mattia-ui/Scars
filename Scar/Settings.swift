@@ -24,7 +24,7 @@ class Settins: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         
       viewDidLoad()
-        
+        let deviceType = UIDevice().type
         if(view.frame.height == 667){
             
         traslate(view: linea1, aCircleTime: 0, to: -8)
@@ -34,15 +34,25 @@ class Settins: UIViewController {
             traslate(view: lingua, aCircleTime: 0, to: 5)
             traslate(view: linea3, aCircleTime: 0, to: 6)
             traslate(view: imageSettings, aCircleTime: 0, to: -72)
-        } else if(view.frame.height == 896){
-            traslate(view: imageSettings, aCircleTime: 0, to: -16)
+        } else if(view.frame.height == 896  && deviceType != Model(rawValue: "iPhone 11 Pro Max") && deviceType != Model(rawValue: "iPhone XS Max")){
+//            traslate(view: imageSettings, aCircleTime: 0, to: -16)
             traslate(view: linea1, aCircleTime: 0, to: 7)
         } else if(view.frame.height == 812){
-            traslate(view: imageSettings, aCircleTime: 0, to: -46)
+//            traslate(view: imageSettings, aCircleTime: 0, to: -46)
+            
+        } else if(view.frame.height == 736){
+            traslate(view: imageSettings, aCircleTime: 0, to: -73)
+            
+            
+        }else  if(deviceType == Model(rawValue: "iPhone 11 Pro Max") || deviceType == Model(rawValue: "iPhone XS Max")) {
+            
+//            traslate(view: imageSettings, aCircleTime: 0, to: -73)
             
         }
         
     }
+    
+
     
     func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
         print(view.frame.origin.x)
@@ -92,3 +102,4 @@ class Settins: UIViewController {
     @IBAction func aboutUS(_ sender: Any) {
     }
 }
+

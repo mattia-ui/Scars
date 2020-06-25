@@ -109,10 +109,14 @@ viewDidLoad()
         if(view.frame.height == 667){
             traslate(view: ill, aCircleTime: 0, to: -74)
         } else if(view.frame.height == 896){
-            traslate(view: ill, aCircleTime: 0, to: -16)
+            traslate(view: ill, aCircleTime: 0, to: 3)
 
         } else if(view.frame.height == 812){
 //            traslate(view: ill, aCircleTime: 0, to: -20)
+            
+        } else if(view.frame.height == 736){
+            traslate(view: ill, aCircleTime: 0, to: -64)
+            
             
         }
         
