@@ -118,6 +118,7 @@ class ChooseTexture: UIViewController  {
     @IBOutlet weak var seaImg: UIImageView!
     @IBOutlet weak var woodImg: UIImageView!
     @IBOutlet weak var marbleImg: UIImageView!
+    @IBOutlet weak var HView: UIStackView!
     
     @IBOutlet weak var question: UILabel!
     @IBOutlet weak var label: UILabel!
@@ -153,10 +154,13 @@ class ChooseTexture: UIViewController  {
                     traslate(view: nex,aCircleTime: 0, to: -20)
                     
                 }else if(view.frame.height == 667){
-                    traslate(view: stackO,aCircleTime: 0, to: -50)
-                    traslate(view: label,aCircleTime: 0, to: -50)
-                    traslate(view: question,aCircleTime: 0, to: -50)
-                    traslate(view: nex,aCircleTime: 0, to: -50)
+                    traslate(view: stackO,aCircleTime: 0, to: -90)
+                    traslate(view: label,aCircleTime: 0, to: -80)
+                    traslate(view: question,aCircleTime: 0, to: -55)
+                    traslate(view: HView,aCircleTime: 0, to: -18)
+                    traslate(view: nex,aCircleTime: 0, to: -175)
+                    stackO.spacing = 7.5
+                    
                    
         }
                 
