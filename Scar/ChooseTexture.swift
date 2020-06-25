@@ -154,12 +154,18 @@ class ChooseTexture: UIViewController  {
                     traslate(view: nex,aCircleTime: 0, to: -20)
                     
                 }else if(view.frame.height == 667){
-                    traslate(view: stackO,aCircleTime: 0, to: -90)
-                    traslate(view: label,aCircleTime: 0, to: -80)
+                    traslate(view: stackO,aCircleTime: 0, to: -100)
+                    traslate(view: label,aCircleTime: 0, to: -82)
                     traslate(view: question,aCircleTime: 0, to: -55)
                     traslate(view: HView,aCircleTime: 0, to: -18)
-                    traslate(view: nex,aCircleTime: 0, to: -175)
+                    traslate(view: nex,aCircleTime: 0, to: -182)
                     stackO.spacing = 7.5
+                    traslate(view: label1,aCircleTime: 0, to: -100)
+                    traslate(view: label2,aCircleTime: 0, to: -100)
+                    traslate(view: results,aCircleTime: 0, to: -100)
+                    traslate(view: yes,aCircleTime: 0, to: -100)
+                    traslate(view: no,aCircleTime: 0, to: -100)
+                    results.font = UIFont(name: "Poppins-SemiBold", size: 19)
                     
                    
         }else if(view.frame.height == 736){
