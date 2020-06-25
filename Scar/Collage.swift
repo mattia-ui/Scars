@@ -648,51 +648,50 @@ class Collage: UIViewController, UITextFieldDelegate  {
             }
         }
         
-//        let randomSize = Float.random(in: 1.01..<1.05)
-        let randomSize = 1.07
-        let randomPos = Int.random(in: 0..<4)
-        
-        var posizioneGx: [Int], posizioneGy: [Int], posizionePx: [Int], posizionePy: [Int]
-        if(UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 896){
-            //11 pro max
-            posizioneGx = [20,-20,170,-10]
-            posizioneGy = [-10,10,-10,150]
-            posizionePx = [170,220,-10,200]
-            posizionePy = [210,160,180,40]
-        } else if (UIScreen.main.bounds.width == 375 && UIScreen.main.bounds.height == 812){
-            //XS
-            posizioneGx = [0,-20,160,-20]
-            posizioneGy = [-40,10,-30,150]
-            posizionePx = [170,180,0,180]
-            posizionePy = [150,140,160,10]
-        }else if (UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 736){
-            //8 plus
-            posizioneGx = [-10,-20,170,-30]
-            posizioneGy = [-10,10,-10,150]
-            posizionePx = [190,220,0,200]
-            posizionePy = [190,160,180,40]
-        } else {
-            //11, 8, SE
-            posizioneGx = [-10,-20,160,-30]
-            posizioneGy = [-20,10,-10,150]
-            posizionePx = [180,180,0,180]
-            posizionePy = [160,140,180,10]
-        }
-        
-           
-        var tG = CGAffineTransform.identity
-        tG = tG.scaledBy(x: CGFloat(randomSize), y: CGFloat(randomSize))
-        tG = tG.translatedBy(x: CGFloat(posizioneGx[randomPos]) + top.frame.origin.x, y: CGFloat(posizioneGy[randomPos]) + top.frame.origin.y)
-        imgSG.transform = tG
-        imgSG.image = imgSecondaria
+let randomSize = Float.random(in: 1.30..<1.35)
+       let randomPos = Int.random(in: 0..<4)
+       
+       var posizioneGx: [Int], posizioneGy: [Int], posizionePx: [Int], posizionePy: [Int]
+       if(UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 896){
+           //11 pro max
+           posizioneGx = [30,0,180,-10]
+           posizioneGy = [-10,0,0,150]
+           posizionePx = [180,220,0,210]
+           posizionePy = [220,160,190,40]
+       } else if (UIScreen.main.bounds.width == 375 && UIScreen.main.bounds.height == 812){
+           //XS
+           posizioneGx = [0,-10,150,-10]
+           posizioneGy = [0,10,-10,150]
+           posizionePx = [170,190,0,180]
+           posizionePy = [170,140,160,10]
+       }else if (UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 736){
+           //8 plus
+           posizioneGx = [20,-10,180,-10]
+           posizioneGy = [-10,10,-10,150]
+           posizionePx = [210,230,0,210]
+           posizionePy = [190,160,180,40]
+       } else {
+           //11, 8, SE
+           posizioneGx = [0,-10,170,-10]
+           posizioneGy = [0,10,-10,150]
+           posizionePx = [190,190,10,190]
+           posizionePy = [160,140,180,10]
+       }
+       
+          
+       var tG = CGAffineTransform.identity
+       tG = tG.translatedBy(x: CGFloat(posizioneGx[randomPos]) + top.frame.origin.x, y: CGFloat(posizioneGy[randomPos]) + top.frame.origin.y)
+       tG = tG.scaledBy(x: CGFloat(randomSize), y: CGFloat(randomSize))
+       imgSG.transform = tG
+       imgSG.image = imgSecondaria
 
-        var tP = CGAffineTransform.identity
-        tP = tP.scaledBy(x: CGFloat(randomSize), y: CGFloat(randomSize))
-        tP = tP.translatedBy(x: CGFloat(posizionePx[randomPos]) + top.frame.origin.x, y: CGFloat(posizionePy[randomPos]) + top.frame.origin.y)
-        imgSP.transform = tP
-        imgSP.image = imgSecondaria
+       var tP = CGAffineTransform.identity
+       tP = tP.translatedBy(x: CGFloat(posizionePx[randomPos]) + top.frame.origin.x, y: CGFloat(posizionePy[randomPos]) + top.frame.origin.y)
+       tP = tP.scaledBy(x: CGFloat(randomSize), y: CGFloat(randomSize))
+       imgSP.transform = tP
+       imgSP.image = imgSecondaria
 
-        top.image = imgPrincipale
+       top.image = imgPrincipale
         
         if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
             scarsImage.image = UIImage(named: "2-.jpg")
