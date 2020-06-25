@@ -144,6 +144,12 @@ class Collage: UIViewController, UITextFieldDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
+        let attributedString9 = NSMutableAttributedString(string: "Discover more about Kinsugi")
+        
+        // Add Underline Style Attribute.
+        attributedString9.addAttribute(NSAttributedString.Key.underlineStyle, value: 1, range:
+            NSRange.init(location: 0, length: attributedString9.length));
+        mediumLink.attributedText = attributedString9
         self.mediumLink.isUserInteractionEnabled = true
         let tapgesture = MyTap1(target: self, action: #selector((tappedOnLabel(sender: ))))
         tapgesture.numberOfTapsRequired = 1
