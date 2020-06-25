@@ -98,7 +98,7 @@ class GenerateAgain: UIViewController {
         img.layer.cornerRadius = img.frame.size.width/2
         img.clipsToBounds = true
         if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
-                   img.image = UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent("collage").path)?.imageWithInsets(insets: UIEdgeInsets(top: 65, left: 65, bottom: 65, right: 65))
+                   img.image = UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent("collage").path)?.imageWithInsets(insets: UIEdgeInsets(top: 25, left: 75, bottom: 65, right: 65))
         }
         var fontSize : CGFloat = 18
         if(view.frame.width == 375){
