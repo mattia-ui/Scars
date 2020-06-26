@@ -12,6 +12,8 @@ import SQLite3
 
 class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet weak var createYour: UILabel!
+    @IBOutlet weak var illmast: UIImageView!
     @IBOutlet weak var navInsta: UIImageView!
     var blur = 0
     @IBOutlet weak var viewPerBlur: UIView!
@@ -54,8 +56,11 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
             var tG = CGAffineTransform.identity
             tG = tG.translatedBy(x: 0 - 10 , y: 3)
             miniSym.transform = tG
+            traslate(view: button, aCircleTime: 0, to: 50)
            }else if(view.frame.height == 667){
-              traslate(view: button, aCircleTime: 0, to: 50)
+              traslate(view: button, aCircleTime: 0, to: -43)
+            traslate(view: illmast, aCircleTime: 0, to: -71)
+            traslate(view: createYour, aCircleTime: 0, to: -50)
                 traslateX(view: miniSym, aCircleTime: 0, to: -10)
             traslate(view: illustrazionePerBlur, aCircleTime: 0, to: -50)
             traslate(view: Submitted, aCircleTime: 0, to: -50)

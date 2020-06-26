@@ -341,16 +341,22 @@ Masterpiece!</string>
                             <constraint firstItem="s7X-yK-cdq" firstAttribute="height" secondItem="XOD-ds-Jxc" secondAttribute="height" id="1Qv-oi-yu6"/>
                             <constraint firstAttribute="bottom" secondItem="s7X-yK-cdq" secondAttribute="bottom" id="3st-mI-ZfW"/>
                             <constraint firstItem="s7X-yK-cdq" firstAttribute="leading" secondItem="neX-xS-Nid" secondAttribute="leading" id="NZp-8i-UOP"/>
+                            <constraint firstItem="5cj-VA-9NZ" firstAttribute="width" secondItem="neX-xS-Nid" secondAttribute="height" multiplier="91:404" id="O0V-Kr-IIJ"/>
                             <constraint firstItem="1JF-r6-XHa" firstAttribute="width" secondItem="XOD-ds-Jxc" secondAttribute="width" id="OWE-m9-TUM"/>
                             <constraint firstItem="y8C-NL-mQ0" firstAttribute="height" secondItem="XOD-ds-Jxc" secondAttribute="height" id="OcE-aW-oOt"/>
                             <constraint firstItem="1JF-r6-XHa" firstAttribute="height" secondItem="XOD-ds-Jxc" secondAttribute="height" id="U0b-wI-3pI"/>
+                            <constraint firstItem="5cj-VA-9NZ" firstAttribute="width" secondItem="XOD-ds-Jxc" secondAttribute="width" multiplier="0.439614" id="XRO-Ln-hHN"/>
                             <constraint firstItem="y8C-NL-mQ0" firstAttribute="width" secondItem="XOD-ds-Jxc" secondAttribute="width" id="bQI-7c-8hW"/>
+                            <constraint firstItem="5cj-VA-9NZ" firstAttribute="height" secondItem="neX-xS-Nid" secondAttribute="height" multiplier="0.072401" id="dTc-Ew-izv"/>
                             <constraint firstItem="s7X-yK-cdq" firstAttribute="top" secondItem="neX-xS-Nid" secondAttribute="top" id="doh-Uc-2oZ"/>
                             <constraint firstItem="s7X-yK-cdq" firstAttribute="trailing" secondItem="neX-xS-Nid" secondAttribute="trailing" id="eGZ-Xj-Jdc"/>
+                            <constraint firstItem="5cj-VA-9NZ" firstAttribute="width" secondItem="XOD-ds-Jxc" secondAttribute="height" multiplier="91:421" id="h6M-2R-zIX"/>
                             <constraint firstItem="s7X-yK-cdq" firstAttribute="width" secondItem="XOD-ds-Jxc" secondAttribute="width" id="lhX-HI-p8T"/>
+                            <constraint firstItem="5cj-VA-9NZ" firstAttribute="height" secondItem="XOD-ds-Jxc" secondAttribute="height" multiplier="0.0694774" id="qlN-uV-doJ"/>
                             <constraint firstAttribute="bottom" secondItem="1JF-r6-XHa" secondAttribute="bottom" id="rOo-1t-3Cd"/>
                             <constraint firstItem="1JF-r6-XHa" firstAttribute="top" secondItem="neX-xS-Nid" secondAttribute="top" id="tVG-o7-XjH"/>
                             <constraint firstItem="1JF-r6-XHa" firstAttribute="trailing" secondItem="neX-xS-Nid" secondAttribute="trailing" id="tcy-uI-5Xs"/>
+                            <constraint firstItem="5cj-VA-9NZ" firstAttribute="width" secondItem="neX-xS-Nid" secondAttribute="width" multiplier="0.439614" id="yh7-Lf-wlE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="neX-xS-Nid"/>
                     </view>
@@ -358,7 +364,9 @@ Masterpiece!</string>
                     <connections>
                         <outlet property="Submitted" destination="b13-TX-EGq" id="vdd-IX-94A"/>
                         <outlet property="button" destination="5cj-VA-9NZ" id="qNg-mL-Sh8"/>
+                        <outlet property="createYour" destination="Bri-Aq-9dp" id="rI4-jz-71Z"/>
                         <outlet property="gif" destination="Xph-ou-FkU" id="CLJ-p6-WBc"/>
+                        <outlet property="illmast" destination="zKV-vd-0Ud" id="fFf-8j-AzP"/>
                         <outlet property="illustrazionePerBlur" destination="7Iq-1d-X4P" id="MEk-ym-GRh"/>
                         <outlet property="miniSym" destination="Cc2-aZ-ghq" id="goM-Sb-L5z"/>
                         <outlet property="myCollectionView" destination="nrD-Zz-bfZ" id="Jy4-K9-NGG"/>
