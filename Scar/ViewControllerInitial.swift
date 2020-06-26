@@ -149,6 +149,8 @@ class ViewControllerInitial: UIViewController, UIScrollViewDelegate {
             case 7: attivita = dati[0].attivita8
             default: attivita = dati[0].attivita9
         }
+        
+        print("\n\n\n\n\n\n\n\(attivita[0].contenuto)\n\n\n\n\n\n\n\n")
             
         for i in 0 ..< attivita.count{
             let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
@@ -170,7 +172,9 @@ class ViewControllerInitial: UIViewController, UIScrollViewDelegate {
         scrollView.isPagingEnabled = true
             
         var numberL = 2
-        for i in 0 ..< slides.count {
+        for i in 0 ..< attivita.count {
+            print("CIAO")
+
             slides[i].frame = CGRect(x: 0, y: 20 * CGFloat(numberL), width: view.frame.width, height: view.frame.height)
             if(i != 0){
                 slides[i].labelTitle.font = UIFont(name: "Poppins-Bold", size: 18.0)
