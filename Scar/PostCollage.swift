@@ -61,6 +61,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
             traslate(view: button, aCircleTime: 0, to: 60)
            }else if(view.frame.height == 667){
               traslate(view: button, aCircleTime: 0, to: -43)
+            traslate(view: nex, aCircleTime: 0, to: -43)
             traslate(view: illmast, aCircleTime: 0, to: -71)
             traslate(view: createYour, aCircleTime: 0, to: -50)
                 traslateX(view: miniSym, aCircleTime: 0, to: -10)
@@ -69,6 +70,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
             traslate(view: thx, aCircleTime: 0, to: -50)
         }else if(view.frame.height == 736){
             traslate(view: button, aCircleTime: 0, to: 40)
+            traslate(view: nex, aCircleTime: 0, to: 40)
             traslateX(view: miniSym, aCircleTime: 0, to: 30)
             traslate(view: illustrazionePerBlur, aCircleTime: 0, to: -20)
             traslate(view: Submitted, aCircleTime: 0, to: -20)
@@ -76,6 +78,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         }else if(view.frame.height == 896){
             traslateX(view: miniSym, aCircleTime: 0, to: 20)
             traslate(view: button, aCircleTime: 0, to: 46)
+            traslate(view: nex, aCircleTime: 0, to: 46)
         }
 
 //        let sh = Collage()
