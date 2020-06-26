@@ -179,15 +179,22 @@ class ChooseShape2: UIViewController  {
                 }else if(view.frame.height == 667){
                     vertical.spacing = 8
                     traslate(view: question, aCircleTime: 0, to: -38)
-                    traslate(view: label, aCircleTime: 0, to: -40)
-                    traslate(view: vertical, aCircleTime: 0, to: -43)
-                    traslate(view: nex, aCircleTime: 0, to: -78)
+                    traslate(view: label, aCircleTime: 0, to: -72)
+                    traslate(view: vertical, aCircleTime: 0, to: -88)
+                    traslate(view: nex, aCircleTime: 0, to: -200)
+                    traslate(view: h5, aCircleTime: 0, to: -34)
                 }else if(view.frame.height == 736){
                     vertical.spacing = 10
                     traslate(view: question, aCircleTime: 0, to: -12)
                     traslate(view: label, aCircleTime: 0, to: -15)
                     traslate(view: vertical, aCircleTime: 0, to: -18)
                     traslate(view: nex, aCircleTime: 0, to: -30)
+                }else if(view.frame.height == 896){
+                    
+                    traslate(view: question, aCircleTime: 0, to: -20)
+                    traslate(view: label, aCircleTime: 0, to: -35)
+                    traslate(view: vertical, aCircleTime: 0, to: -43)
+                    traslate(view: nex, aCircleTime: 0, to: -78)
                 }
     }
     @IBAction func chooseSquare(_ sender: UIButton) {

@@ -911,7 +911,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghu-Rl-fXA">
-                                <rect key="frame" x="115" y="803.5" width="184" height="55"/>
+                                <rect key="frame" x="115" y="732" width="182" height="55"/>
                                 <state key="normal" title="Button" image="nextazzurro"/>
                                 <state key="disabled" image="nextazzurrono"/>
                                 <connections>
@@ -919,16 +919,16 @@ Masterpiece!</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="tWD-x1-iIh">
-                                <rect key="frame" x="20" y="235.5" width="374" height="507"/>
+                                <rect key="frame" x="20" y="235.5" width="374" height="427"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="m2e-Qs-dbc">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="87"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="71"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="NNl-47-msh">
-                                                <rect key="frame" x="0.0" y="0.0" width="66" height="87"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="66" height="71"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ito-IV-cji">
-                                                <rect key="frame" x="112" y="0.0" width="262" height="87"/>
+                                                <rect key="frame" x="112" y="0.0" width="262" height="71"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -939,15 +939,21 @@ Masterpiece!</string>
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="NNl-47-msh" firstAttribute="height" secondItem="m2e-Qs-dbc" secondAttribute="height" id="eqf-ee-By6"/>
+                                            <constraint firstItem="ito-IV-cji" firstAttribute="height" secondItem="m2e-Qs-dbc" secondAttribute="height" id="l5h-ZK-Ojr"/>
+                                            <constraint firstItem="NNl-47-msh" firstAttribute="width" secondItem="m2e-Qs-dbc" secondAttribute="width" multiplier="0.176471" id="vjq-wq-9dO"/>
+                                            <constraint firstItem="ito-IV-cji" firstAttribute="width" secondItem="m2e-Qs-dbc" secondAttribute="width" multiplier="0.700535" id="yBo-eo-Bbr"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="gC4-Iw-fiI">
-                                        <rect key="frame" x="0.0" y="105" width="374" height="87"/>
+                                        <rect key="frame" x="0.0" y="89" width="374" height="71"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="Jiu-yc-pd7">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="87"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="71"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tKQ-SR-XTh">
-                                                <rect key="frame" x="112" y="0.0" width="262" height="87"/>
+                                                <rect key="frame" x="112" y="0.0" width="262" height="71"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -960,15 +966,21 @@ Masterpiece!</string>
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Jiu-yc-pd7" firstAttribute="height" secondItem="gC4-Iw-fiI" secondAttribute="height" id="BLg-e5-9N7"/>
+                                            <constraint firstItem="tKQ-SR-XTh" firstAttribute="width" secondItem="gC4-Iw-fiI" secondAttribute="width" multiplier="0.700535" id="OaK-7s-uVY"/>
+                                            <constraint firstItem="Jiu-yc-pd7" firstAttribute="width" secondItem="gC4-Iw-fiI" secondAttribute="width" multiplier="0.213904" id="qD5-ga-6mr"/>
+                                            <constraint firstItem="tKQ-SR-XTh" firstAttribute="height" secondItem="gC4-Iw-fiI" secondAttribute="height" id="wBE-Uk-BVI"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="2Yk-Ul-q1c">
-                                        <rect key="frame" x="0.0" y="210" width="374" height="87"/>
+                                        <rect key="frame" x="0.0" y="178" width="374" height="71"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle" translatesAutoresizingMaskIntoConstraints="NO" id="nLa-CY-Kau">
-                                                <rect key="frame" x="0.0" y="0.0" width="74" height="87"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="71"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4Pd-r7-Jm4">
-                                                <rect key="frame" x="112" y="0.0" width="262" height="87"/>
+                                                <rect key="frame" x="112" y="0.0" width="262" height="71"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -981,15 +993,21 @@ Masterpiece!</string>
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="4Pd-r7-Jm4" firstAttribute="height" secondItem="2Yk-Ul-q1c" secondAttribute="height" id="1dM-vS-1XG"/>
+                                            <constraint firstItem="nLa-CY-Kau" firstAttribute="height" secondItem="2Yk-Ul-q1c" secondAttribute="height" id="96G-0y-eof"/>
+                                            <constraint firstItem="nLa-CY-Kau" firstAttribute="width" secondItem="2Yk-Ul-q1c" secondAttribute="width" multiplier="0.197861" id="IZX-Nu-67R"/>
+                                            <constraint firstItem="4Pd-r7-Jm4" firstAttribute="width" secondItem="2Yk-Ul-q1c" secondAttribute="width" multiplier="0.700535" id="a3m-M0-bIj"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="RzB-tu-XEm">
-                                        <rect key="frame" x="0.0" y="315" width="374" height="87"/>
+                                        <rect key="frame" x="0.0" y="267" width="374" height="71"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="RTL-Q1-ZKQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="68" height="87"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="68" height="71"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tDY-84-QdH">
-                                                <rect key="frame" x="113" y="0.0" width="261" height="87"/>
+                                                <rect key="frame" x="113" y="0.0" width="261" height="71"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -1002,15 +1020,21 @@ Masterpiece!</string>
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="RTL-Q1-ZKQ" firstAttribute="width" secondItem="RzB-tu-XEm" secondAttribute="width" multiplier="0.181818" id="Cu2-1C-57r"/>
+                                            <constraint firstItem="RTL-Q1-ZKQ" firstAttribute="height" secondItem="RzB-tu-XEm" secondAttribute="height" id="MKl-yt-VLL"/>
+                                            <constraint firstItem="tDY-84-QdH" firstAttribute="width" secondItem="RzB-tu-XEm" secondAttribute="width" multiplier="0.697861" id="VRp-1G-c5C"/>
+                                            <constraint firstItem="tDY-84-QdH" firstAttribute="height" secondItem="RzB-tu-XEm" secondAttribute="height" id="hq5-Gn-rbz"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="tay-Vf-mbF">
-                                        <rect key="frame" x="0.0" y="420" width="374" height="87"/>
+                                        <rect key="frame" x="0.0" y="356" width="374" height="71"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zigzag" translatesAutoresizingMaskIntoConstraints="NO" id="Y0s-j4-6yT">
-                                                <rect key="frame" x="0.0" y="0.0" width="89" height="87"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="89" height="71"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="sia-vk-Gr1">
-                                                <rect key="frame" x="112" y="0.0" width="262" height="87"/>
+                                                <rect key="frame" x="112" y="0.0" width="262" height="71"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="QuestionSpento"/>
@@ -1023,11 +1047,48 @@ Masterpiece!</string>
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Y0s-j4-6yT" firstAttribute="height" secondItem="tay-Vf-mbF" secondAttribute="height" id="Uqn-si-9k8"/>
+                                            <constraint firstItem="sia-vk-Gr1" firstAttribute="width" secondItem="tay-Vf-mbF" secondAttribute="width" multiplier="0.700535" id="apb-h0-NxK"/>
+                                            <constraint firstItem="sia-vk-Gr1" firstAttribute="height" secondItem="tay-Vf-mbF" secondAttribute="height" id="d3F-6o-v7n"/>
+                                            <constraint firstItem="Y0s-j4-6yT" firstAttribute="width" secondItem="tay-Vf-mbF" secondAttribute="width" multiplier="0.237968" id="yF5-nA-kk8"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="tay-Vf-mbF" firstAttribute="leading" secondItem="tWD-x1-iIh" secondAttribute="leading" id="3eT-MK-9Zt"/>
+                                    <constraint firstItem="RzB-tu-XEm" firstAttribute="height" secondItem="tWD-x1-iIh" secondAttribute="height" multiplier="0.166276" id="4Qa-ea-3SS"/>
+                                    <constraint firstItem="gC4-Iw-fiI" firstAttribute="width" secondItem="tWD-x1-iIh" secondAttribute="width" id="4mH-Yt-d9S"/>
+                                    <constraint firstItem="RzB-tu-XEm" firstAttribute="top" secondItem="2Yk-Ul-q1c" secondAttribute="bottom" constant="18" id="6o7-Xs-GJU"/>
+                                    <constraint firstItem="tay-Vf-mbF" firstAttribute="height" secondItem="tWD-x1-iIh" secondAttribute="height" multiplier="0.166276" id="8yl-zK-Idc"/>
+                                    <constraint firstItem="m2e-Qs-dbc" firstAttribute="height" secondItem="tWD-x1-iIh" secondAttribute="height" multiplier="0.166276" id="BOP-AY-0g0"/>
+                                    <constraint firstAttribute="trailing" secondItem="RzB-tu-XEm" secondAttribute="trailing" id="Ceu-nm-yem"/>
+                                    <constraint firstItem="gC4-Iw-fiI" firstAttribute="leading" secondItem="tWD-x1-iIh" secondAttribute="leading" id="HMr-oC-r9m"/>
+                                    <constraint firstItem="gC4-Iw-fiI" firstAttribute="height" secondItem="tWD-x1-iIh" secondAttribute="height" multiplier="0.166276" id="Jon-jd-sfH"/>
+                                    <constraint firstItem="m2e-Qs-dbc" firstAttribute="width" secondItem="tWD-x1-iIh" secondAttribute="width" id="Lpz-GM-xvm"/>
+                                    <constraint firstItem="tay-Vf-mbF" firstAttribute="width" secondItem="tWD-x1-iIh" secondAttribute="width" id="NWT-qa-DUE"/>
+                                    <constraint firstAttribute="trailing" secondItem="m2e-Qs-dbc" secondAttribute="trailing" id="Ofk-Hv-ADu"/>
+                                    <constraint firstAttribute="trailing" secondItem="gC4-Iw-fiI" secondAttribute="trailing" id="UrR-9u-hWj"/>
+                                    <constraint firstItem="gC4-Iw-fiI" firstAttribute="top" secondItem="m2e-Qs-dbc" secondAttribute="bottom" constant="18" id="XLD-HP-8nO"/>
+                                    <constraint firstItem="RzB-tu-XEm" firstAttribute="leading" secondItem="tWD-x1-iIh" secondAttribute="leading" id="aCA-Yf-J3Y"/>
+                                    <constraint firstItem="2Yk-Ul-q1c" firstAttribute="top" secondItem="gC4-Iw-fiI" secondAttribute="bottom" constant="18" id="avp-kZ-iJ4"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Yk-Ul-q1c" secondAttribute="trailing" id="c5R-ij-1BM"/>
+                                    <constraint firstItem="2Yk-Ul-q1c" firstAttribute="height" secondItem="tWD-x1-iIh" secondAttribute="height" multiplier="0.166276" id="cc0-am-0VE"/>
+                                    <constraint firstItem="m2e-Qs-dbc" firstAttribute="top" secondItem="tWD-x1-iIh" secondAttribute="top" id="eGJ-sK-XVR"/>
+                                    <constraint firstItem="2Yk-Ul-q1c" firstAttribute="width" secondItem="tWD-x1-iIh" secondAttribute="width" id="ffl-m1-kO2"/>
+                                    <constraint firstAttribute="trailing" secondItem="tay-Vf-mbF" secondAttribute="trailing" id="jo1-JY-Y8y"/>
+                                    <constraint firstItem="tay-Vf-mbF" firstAttribute="top" secondItem="RzB-tu-XEm" secondAttribute="bottom" constant="18" id="sUX-zQ-FT8"/>
+                                    <constraint firstItem="m2e-Qs-dbc" firstAttribute="leading" secondItem="tWD-x1-iIh" secondAttribute="leading" id="tZD-pa-DjQ"/>
+                                    <constraint firstItem="2Yk-Ul-q1c" firstAttribute="leading" secondItem="tWD-x1-iIh" secondAttribute="leading" id="ve0-GA-6cU"/>
+                                    <constraint firstItem="RzB-tu-XEm" firstAttribute="width" secondItem="tWD-x1-iIh" secondAttribute="width" id="wcz-98-868"/>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Xfm-ER-bhW">
-                                <rect key="frame" x="22" y="127" width="369" height="91.5"/>
+                                <rect key="frame" x="22" y="112" width="369" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="0xY-c1-u7y"/>
+                                    <constraint firstAttribute="width" constant="369" id="TNB-GQ-Ax7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="20"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -1035,43 +1096,22 @@ Masterpiece!</string>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="NNl-47-msh" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.15942" id="2LR-Kh-YXW"/>
-                            <constraint firstItem="Y0s-j4-6yT" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="3VW-7Q-zLi"/>
-                            <constraint firstItem="nLa-CY-Kau" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="3d1-GZ-HBi"/>
-                            <constraint firstItem="ghu-Rl-fXA" firstAttribute="centerX" secondItem="Mat-fe-5YN" secondAttribute="centerX" id="4Lu-Vu-H0E"/>
-                            <constraint firstItem="Y0s-j4-6yT" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.214976" id="4hm-LH-fuT"/>
-                            <constraint firstItem="ghu-Rl-fXA" firstAttribute="top" secondItem="tWD-x1-iIh" secondAttribute="bottom" constant="61" id="5mx-AZ-HOn"/>
-                            <constraint firstItem="Xfm-ER-bhW" firstAttribute="top" secondItem="dch-Zn-2hU" secondAttribute="bottom" constant="9" id="6eD-tr-RlE"/>
-                            <constraint firstItem="dch-Zn-2hU" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.548309" id="8yC-6F-lBp"/>
-                            <constraint firstItem="ito-IV-cji" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.63285" id="A1v-8v-1Hx"/>
-                            <constraint firstItem="ito-IV-cji" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="CYd-nw-lTI"/>
-                            <constraint firstItem="ghu-Rl-fXA" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="13:64" constant="12.96875" id="Cp9-dL-GgE"/>
-                            <constraint firstItem="4Pd-r7-Jm4" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.63285" id="FIX-FL-x7L"/>
-                            <constraint firstItem="ghu-Rl-fXA" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0686384" constant="-2.7935328000000013" id="Gts-NF-M7A"/>
-                            <constraint firstItem="4Pd-r7-Jm4" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="HCa-Cl-fAd"/>
-                            <constraint firstItem="Xfm-ER-bhW" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.891304" id="HaQ-U8-fNP"/>
-                            <constraint firstItem="tWD-x1-iIh" firstAttribute="centerX" secondItem="Mat-fe-5YN" secondAttribute="centerX" id="Hrr-X3-1LX"/>
-                            <constraint firstItem="tWD-x1-iIh" firstAttribute="top" secondItem="Xfm-ER-bhW" secondAttribute="bottom" constant="17" id="MNe-Il-1qs"/>
-                            <constraint firstItem="6ea-1q-BRF" firstAttribute="trailing" secondItem="dch-Zn-2hU" secondAttribute="trailing" constant="165" id="QDg-mX-L4b"/>
-                            <constraint firstItem="tKQ-SR-XTh" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="Qab-DJ-Hzx"/>
-                            <constraint firstItem="Jiu-yc-pd7" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.193237" id="SR0-iv-yM1"/>
-                            <constraint firstItem="nLa-CY-Kau" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.178744" id="UUS-i9-OI0"/>
-                            <constraint firstItem="sia-vk-Gr1" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.63285" id="XpN-WE-P4k"/>
-                            <constraint firstItem="dch-Zn-2hU" firstAttribute="leading" secondItem="6ea-1q-BRF" secondAttribute="leading" constant="22" id="a6T-GW-eZ5"/>
-                            <constraint firstItem="Jiu-yc-pd7" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="bEH-0o-9kJ"/>
-                            <constraint firstItem="RTL-Q1-ZKQ" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="ceM-kD-amy"/>
-                            <constraint firstItem="dch-Zn-2hU" firstAttribute="top" secondItem="6ea-1q-BRF" secondAttribute="top" constant="58" id="dHM-N4-gtb"/>
-                            <constraint firstItem="dch-Zn-2hU" firstAttribute="leading" secondItem="Xfm-ER-bhW" secondAttribute="leading" id="dPM-b6-2gG"/>
-                            <constraint firstItem="Xfm-ER-bhW" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0831473" id="fXV-CR-TCM"/>
-                            <constraint firstItem="tDY-84-QdH" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="gKY-4u-TXV"/>
-                            <constraint firstItem="NNl-47-msh" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="h44-Mf-5VB"/>
-                            <constraint firstItem="sia-vk-Gr1" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0792411" id="m0D-OD-RvX"/>
-                            <constraint firstItem="tDY-84-QdH" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.630435" id="mIj-St-9ox"/>
-                            <constraint firstItem="RTL-Q1-ZKQ" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.164251" id="rsH-wM-Iuv"/>
-                            <constraint firstItem="ghu-Rl-fXA" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.439614" constant="1.9998040000000117" id="tWv-j8-hRv"/>
-                            <constraint firstItem="tWD-x1-iIh" firstAttribute="leading" secondItem="6ea-1q-BRF" secondAttribute="leading" constant="20" id="wO7-kk-ixI"/>
-                            <constraint firstItem="tKQ-SR-XTh" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.63285" id="wpz-zw-de0"/>
-                            <constraint firstItem="dch-Zn-2hU" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0546875" id="xDo-Ct-Ok4"/>
+                            <constraint firstItem="Xfm-ER-bhW" firstAttribute="top" secondItem="6ea-1q-BRF" secondAttribute="top" constant="112" id="37T-WL-E5n"/>
+                            <constraint firstItem="Xfm-ER-bhW" firstAttribute="leading" secondItem="6ea-1q-BRF" secondAttribute="leading" constant="22" id="B4O-Zf-mrl"/>
+                            <constraint firstItem="tWD-x1-iIh" firstAttribute="width" secondItem="6ea-1q-BRF" secondAttribute="height" multiplier="187:404" id="Kb2-Bn-dnW"/>
+                            <constraint firstItem="ghu-Rl-fXA" firstAttribute="leading" secondItem="6ea-1q-BRF" secondAttribute="leading" constant="115" id="KhB-jw-ZJ2"/>
+                            <constraint firstItem="dch-Zn-2hU" firstAttribute="height" secondItem="Mat-fe-5YN" secondAttribute="height" multiplier="0.0712589" id="MaE-Gk-BaG"/>
+                            <constraint firstItem="Xfm-ER-bhW" firstAttribute="top" secondItem="dch-Zn-2hU" secondAttribute="bottom" constant="-6" id="PpV-Dj-fkD"/>
+                            <constraint firstItem="tWD-x1-iIh" firstAttribute="width" secondItem="6ea-1q-BRF" secondAttribute="width" multiplier="0.903382" id="TZL-me-pxN"/>
+                            <constraint firstItem="ghu-Rl-fXA" firstAttribute="top" secondItem="tWD-x1-iIh" secondAttribute="bottom" constant="69" id="Xvs-3Q-Dmo"/>
+                            <constraint firstItem="dch-Zn-2hU" firstAttribute="top" secondItem="6ea-1q-BRF" secondAttribute="top" constant="58" id="Yop-Wq-Cy2"/>
+                            <constraint firstItem="dch-Zn-2hU" firstAttribute="width" secondItem="Mat-fe-5YN" secondAttribute="width" multiplier="0.548309" id="aun-gJ-dBo"/>
+                            <constraint firstItem="dch-Zn-2hU" firstAttribute="leading" secondItem="6ea-1q-BRF" secondAttribute="leading" constant="22" id="awh-Xl-YuN"/>
+                            <constraint firstItem="ghu-Rl-fXA" firstAttribute="top" secondItem="6ea-1q-BRF" secondAttribute="top" constant="731.5" id="bDG-DK-DeQ"/>
+                            <constraint firstItem="tWD-x1-iIh" firstAttribute="leading" secondItem="6ea-1q-BRF" secondAttribute="leading" constant="20" id="jJ6-9c-jfV"/>
+                            <constraint firstItem="tWD-x1-iIh" firstAttribute="top" secondItem="6ea-1q-BRF" secondAttribute="top" constant="235.5" id="kcv-qn-ag4"/>
+                            <constraint firstItem="dch-Zn-2hU" firstAttribute="leading" secondItem="Xfm-ER-bhW" secondAttribute="leading" id="nx1-of-r1w"/>
+                            <constraint firstItem="tWD-x1-iIh" firstAttribute="height" secondItem="6ea-1q-BRF" secondAttribute="height" multiplier="0.528465" id="rr0-Dr-S3G"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6ea-1q-BRF"/>
                     </view>
@@ -4041,7 +4081,6 @@ The two shapes on the outside recount </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XNp-JC-KL6"/>
         <segue reference="wEb-bN-aLK"/>
         <segue reference="W8t-6Z-Ukx"/>
         <segue reference="wd9-1W-xO2"/>

@@ -139,6 +139,9 @@ class ChoosePalette: UIViewController  {
                     traslate(view: cold, aCircleTime: 0, to: -42)
                     traslate(view: warmt, aCircleTime: 0, to: -42)
                     traslate(view: mammt, aCircleTime: 0, to: -42)
+                }else if(view.frame.height == 896){
+                    traslate(view: nex, aCircleTime: 0, to: -21)
+                    traslate(view: question, aCircleTime: 0, to: -16)
         }
     }
     

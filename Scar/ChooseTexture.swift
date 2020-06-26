@@ -148,15 +148,15 @@ class ChooseTexture: UIViewController  {
           
 
                 if(view.frame.height == 896){
-                    traslate(view: stackO,aCircleTime: 0, to: -20)
-                    traslate(view: label,aCircleTime: 0, to: -20)
-                    traslate(view: question,aCircleTime: 0, to: -20)
-                    traslate(view: nex,aCircleTime: 0, to: -20)
+                    traslate(view: stackO,aCircleTime: 0, to: -36)
+                    traslate(view: label,aCircleTime: 0, to: -40)
+                    traslate(view: question,aCircleTime: 0, to: -39)
+                    traslate(view: nex,aCircleTime: 0, to: -45)
                     
                 }else if(view.frame.height == 667){
                     traslate(view: stackO,aCircleTime: 0, to: -100)
-                    traslate(view: label,aCircleTime: 0, to: -82)
-                    traslate(view: question,aCircleTime: 0, to: -55)
+                    traslate(view: label,aCircleTime: 0, to: -84)
+                    traslate(view: question,aCircleTime: 0, to: -60)
                     traslate(view: HView,aCircleTime: 0, to: -18)
                     traslate(view: nex,aCircleTime: 0, to: -182)
                     stackO.spacing = 7.5
