@@ -52,7 +52,7 @@ class ITA: UIViewController{
                     "il modo in cui ","vuoi apparire. \n\nLe due forme geometriche all’esterno raccontano ",
                     "il modo in cui vorresti essere ","e la texture al loro interno rappresenta ",
                     "la percezione che hai del tuo segno indelebile, ",
-                    "che è in oro ed occupa il centro dell’immagine, come ",
+                    "che è in oro ed occupa il centro dell’ immagine, come ",
                     "insegna l’arte ","del Kintsugi! ",
                     "Masterpiece salvato!",
                     "Il tuo Masterpiece è stato copiato correttamente"
@@ -451,9 +451,9 @@ class ITA: UIViewController{
                     
                     static var textOnSecondaTutorial = ["Raccontando la storia del tuo segno indelebile puoi cambiare il modo in cui guardi il tuo corpo e quello degli altri.","si prenderà cura della tua storia","Scopri come creare il tuo Skinsugi masterpiece.","Tempo di esplorare”,”Attività e Insights","Qui troverai consigli interessanti e contenuti sempre nuovi!"]
                     
-                    static var textOnSharePage = ["Condividere le tue emozioni con gli altri \nè fondamentale per la tua\n","emotività ","rafforza l autostima",",allontana \nle insicurezze, e t insegna \nche ","non sei solo",", mai.\n\n","Cosa stai aspettando?\nRacconta la tua storia e condividila su ","Instagram\n","con l  hashtag ","o invialo a noi\nin forma anonima puoi essere d ispirazione\nanche senza mostrare il tuo nome! ","Scrivi la storia che si cela dietro il tuo segno indelebile…  - ","(max 1100 characters)","La tua storia è stata copiata correttamente"]
+                    static var textOnSharePage = ["Condividere le tue emozioni con gli altri è fondamentale per la tua ","emotività ","rafforza l autostima",",allontana le insicurezze, e ti insegna che ","non sei solo",", mai.\n","\nCosa stai aspettando?\nRacconta la tua storia e condividila su ","Instagram","con l hashtag ","o invialo a noi\nin forma anonima puoi essere d ispirazione anche senza mostrare il tuo nome!\n ","Scrivi la storia che si cela dietro il tuo segno indelebile…  - ","(max 1100 characters)","La tua storia è stata copiata correttamente"]
                     
-                    static var textOnGenerateAgain = ["Il pattern nel cerchio più grande descrive\n","la tua personalità ","e il colore al suo interno \nrappresenta ","il modo in cui vuoi apparire"," dall’esterno.\nLe due forme geometriche all’esterno raccontano\n"," il modo in cui vorresti essere "," e la texture al loro interno rappresenta ","la percezione che hai del tuo segno indelebile",", che\nè in oro ed occupa il centro dell’immagine, come ","l’arte del Kintsugi ","insegna!","Cerchio",": empatia - socievolezza","Zig Zag",": creatività - ambizione","Triangolo",": leadership - fermezza","Rettangolo",": curiosità - confusione","Quadrato", ": attenzione - precisione","Il tuo Skinsugi Masterpiece è stato copiato correttamente"]
+                    static var textOnGenerateAgain = ["Il pattern nel cerchio più grande descrive ","la tua personalità ","e il colore al suo interno rappresenta ","il modo in cui vuoi apparire"," dall’esterno.\nLe due forme geometriche all’esterno raccontano"," il modo in cui vorresti essere "," e la texture al loro interno rappresenta ","la percezione che hai del tuo segno indelebile",", che è in oro ed occupa il centro dell’immagine, come ","l’arte del Kintsugi ","insegna!","Cerchio",": empatia - socievolezza","Zig Zag",": creatività - ambizione","Triangolo",": leadership - fermezza","Rettangolo",": curiosità - confusione","Quadrato", ": attenzione - precisione","Il tuo Skinsugi Masterpiece è stato copiato correttamente"]
                     
                     
                     

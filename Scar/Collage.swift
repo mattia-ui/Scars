@@ -820,7 +820,7 @@ let randomSize = Float.random(in: 1.30..<1.35)
         let deviceType = UIDevice().type
 //        iphone XR
         if(view.frame.width == 414 && view.frame.height == 896 && deviceType != Model(rawValue: "iPhone 11 Pro Max") && deviceType != Model(rawValue: "iPhone XS Max")){
-            self.scrollSk.contentSize = CGSize(width: scrollSk.frame.size.width,height: scrollSk.frame.size.height+207 )
+            self.scrollSk.contentSize = CGSize(width: scrollSk.frame.size.width,height: scrollSk.frame.size.height+222 )
            let rect = CGRect(x: 80, y: 355, width: 670, height: 670)
            return cropImage(image: image, toRect: rect)
         }
