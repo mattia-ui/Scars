@@ -39,6 +39,7 @@ class GenerateAgain: UIViewController {
                
        viewDidLoad()
            
+            
            traslate(view: img, aCircleTime: 0, to: -30)
            traslate(view: downloadButton, aCircleTime: 0, to: -30)
            traslate(view: label, aCircleTime: 0, to: -30)
@@ -50,8 +51,10 @@ class GenerateAgain: UIViewController {
            traslate(view: shareButton, aCircleTime: 0, to: -30)
            traslate(view: GenerateAgainButton, aCircleTime: 0, to: -30)
 
-           }
-           
+           } else if(view.frame.height == 667 ){
+            traslate(view: imageNav, aCircleTime: 0, to: -80)
+            
+        }
        }
     
     override func viewDidLoad() {

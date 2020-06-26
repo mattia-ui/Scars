@@ -46,8 +46,8 @@ class ENG: UIViewController{
             "and the color inside \nrepresents ",
             "the way you want to look\n","from the outside. \n\nThe two shapes on the outside recount\n",
             "the way you would like to be ","and the \ntexture inside represents ",
-            "the \nperception you have of your sign, ",
-            "that\nis in gold and occupies the center of \nthe image, as ",
+            "the perception you have of your sign, ",
+            "that is in gold and occupies the center of the image, as ",
             "Kintsugi art ","teaches! ",
             "Masterpiece saved!",
             "Your Masterpiece was copied successfully"
@@ -448,7 +448,7 @@ class ENG: UIViewController{
         
         static var textOnSharePage = ["Sharing your emotions with others is \nvery important for your ","emotional state,\n","it ","increases self-esteem",", decreases \ninsecurities, and makes you understand\nthat ","you are not alone",", ever.\n\n","What are you waiting for?\nTell your story and share it on ","Instagram\n","with the hashtag ","or send it to\nus anonymously, you can be inspiring\neven without showing your name! ","Tell your story behind your indelible sign here…  - ","(max 1100 characters)","Your description was copied successfully"]
         
-        static var textOnGenerateAgain = ["The pattern in the large circle describes\n","your personality ","and the color inside \nrepresents ","the way you want to look\n","from the outside.\nThe two shapes on the outside recount\n","the way you would like to be ","and the \ntexture inside represents ","the \nperception you have of your sign",", that\nis in gold and occupies the center of\nthe image, as ","Kintsugi art ","teaches!","Circle",": empathic - sociable","Zig Zag",": creative - aspiring","Triangle",": leader - focused","Rectangle",": curious - confused","Square", ": careful - analytic","Your Masterpiece was copied successfully"]
+        static var textOnGenerateAgain = ["The pattern in the large circle describes\n","your personality ","and the color inside \nrepresents ","the way you want to look\n","from the outside.\nThe two shapes on the outside recount\n","the way you would like to be ","and the \ntexture inside represents ","the perception you have of your sign",", that is in gold and occupies the center of the image, as ","Kintsugi art ","teaches!","Circle",": empathic - sociable","Zig Zag",": creative - aspiring","Triangle",": leader - focused","Rectangle",": curious - confused","Square", ": careful - analytic","Your Masterpiece was copied successfully"]
     
         static var lingua = ["English","Italian"]
     

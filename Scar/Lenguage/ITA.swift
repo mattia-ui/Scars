@@ -46,13 +46,13 @@ class ITA: UIViewController{
                 static var insights = ["TEDx","Movies and Series","Articles","Books","Inspiring People","Podcasts"]
                 
                static var textOnCollage = [
-                    "Il pattern nel cerchio più grande descrive\n",
-                    "la tua personalità",
-                    "e il colore al suo interno  \nrappresenta",
-                    "il modo in cui\n","vuoi apparire. \n\nLe due forme geometriche all’esterno raccontano\n",
-                    "il modo in cui vorresti essere","e la \n texture al loro interno rappresenta ",
-                    "la \n percezione che hai del tuo segno indelebile, ",
-                    "che\n è in oro ed occupa il centro \n dell’immagine, come ",
+                    "Il pattern nel cerchio più grande descrive ",
+                    "la tua personalità ",
+                    "e il colore al suo interno rappresenta ",
+                    "il modo in cui ","vuoi apparire. \n\nLe due forme geometriche all’esterno raccontano ",
+                    "il modo in cui vorresti essere ","e la texture al loro interno rappresenta ",
+                    "la percezione che hai del tuo segno indelebile, ",
+                    "che è in oro ed occupa il centro dell’immagine, come ",
                     "insegna l’arte ","del Kintsugi! ",
                     "Masterpiece salvato!",
                     "Il tuo Masterpiece è stato copiato correttamente"
@@ -65,7 +65,7 @@ class ITA: UIViewController{
                         "Rettangolo \n",
                         "curiosità - confusione",
                         "Triangolo \n",
-                        "leadership - determinazione",
+                        "leadership - fermezza",
                         "Cerchio \n",
                         "empatia - socievolezza",
                         "Zig zag \n",
@@ -453,7 +453,7 @@ class ITA: UIViewController{
                     
                     static var textOnSharePage = ["Condividere le tue emozioni con gli altri \nè fondamentale per la tua\n","emotività ","rafforza l autostima",",allontana \nle insicurezze, e t insegna \nche ","non sei solo",", mai.\n\n","Cosa stai aspettando?\nRacconta la tua storia e condividila su ","Instagram\n","con l  hashtag ","o invialo a noi\nin forma anonima puoi essere d ispirazione\nanche senza mostrare il tuo nome! ","Scrivi la storia che si cela dietro il tuo segno indelebile…  - ","(max 1100 characters)","La tua storia è stata copiata correttamente"]
                     
-                    static var textOnGenerateAgain = ["Il pattern nel cerchio più grande descrive\n","la tua personalità","e il colore al suo interno \nrappresenta ","il modo in cui vuoi apparire\n","dall’esterno.\nTLe due forme geometriche all’esterno raccontano\n","il modo in cui vorresti essere","e la \ntexture al loro interno rappresenta","la \npercezione che hai del tuo segno indelebile",", che\nè in oro ed occupa il centro \ndell’immagine, come ","l’arte del Kintsugi","insegna!","Cerchio",": empatia - socievolezza","Zig Zag",": creatività - ambizione","Triangolo",": leadership - determinazione","Rettangolo",": curiosità - confusione","Quadrato", ": attenzione - precisione","Il tuo Skinsugi Masterpiece è stato copiato correttamente"]
+                    static var textOnGenerateAgain = ["Il pattern nel cerchio più grande descrive\n","la tua personalità ","e il colore al suo interno \nrappresenta ","il modo in cui vuoi apparire"," dall’esterno.\nLe due forme geometriche all’esterno raccontano\n"," il modo in cui vorresti essere "," e la texture al loro interno rappresenta ","la percezione che hai del tuo segno indelebile",", che\nè in oro ed occupa il centro dell’immagine, come ","l’arte del Kintsugi ","insegna!","Cerchio",": empatia - socievolezza","Zig Zag",": creatività - ambizione","Triangolo",": leadership - fermezza","Rettangolo",": curiosità - confusione","Quadrato", ": attenzione - precisione","Il tuo Skinsugi Masterpiece è stato copiato correttamente"]
                     
                     
                     
