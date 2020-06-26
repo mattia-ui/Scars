@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qer-Ka-Ghl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -168,7 +168,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7X-yK-cdq">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navInsta" translatesAutoresizingMaskIntoConstraints="NO" id="CVc-ep-RVc">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navInsta" translatesAutoresizingMaskIntoConstraints="NO" id="CVc-ep-RVc">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
                                     </imageView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nrD-Zz-bfZ">
@@ -428,7 +428,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-gT-4jz">
-                                <rect key="frame" x="2491.5" y="973.5" width="303" height="23"/>
+                                <rect key="frame" x="848" y="973.5" width="303" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -451,14 +451,14 @@ Masterpiece!</string>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="12" translatesAutoresizingMaskIntoConstraints="NO" id="PtS-SF-yl7">
-                                <rect key="frame" x="1235.5" y="447" width="1236" height="436.5"/>
+                                <rect key="frame" x="414" y="447" width="414" height="436.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell1" rowHeight="120" id="Q0F-YJ-7d9" customClass="Cella1" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1236" height="120"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q0F-YJ-7d9" id="tAq-I3-Gpy">
-                                            <rect key="frame" x="0.0" y="0.0" width="1236" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hi, Sigafreda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="ywt-KN-qf8">
@@ -489,14 +489,14 @@ Masterpiece!</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell2" rowHeight="100" id="Odx-4k-Ygl" customClass="Cella2" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="148" width="1236" height="100"/>
+                                        <rect key="frame" x="0.0" y="148" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Odx-4k-Ygl" id="z3Q-oM-gjf">
-                                            <rect key="frame" x="0.0" y="0.0" width="1236" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCf-Wr-8Gn">
-                                                    <rect key="frame" x="20" y="12" width="1196" height="76"/>
+                                                    <rect key="frame" x="20" y="12" width="374" height="76"/>
                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
                                                     <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="Button" backgroundImage="deselected">
@@ -524,13 +524,13 @@ Masterpiece!</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell3" rowHeight="200" id="B7d-lg-0DN" customClass="Cella3" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="248" width="1236" height="200"/>
+                                        <rect key="frame" x="0.0" y="248" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B7d-lg-0DN" translatesAutoresizingMaskIntoConstraints="NO" id="vQO-Sv-XsO">
-                                            <rect key="frame" x="0.0" y="0.0" width="1236" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3A-U0-X4D">
-                                                    <rect key="frame" x="527" y="71" width="182" height="55"/>
+                                                    <rect key="frame" x="116" y="71" width="182" height="55"/>
                                                     <state key="normal" image="done">
                                                         <color key="titleColor" red="0.91372543569999998" green="0.91366583109999999" blue="0.91764795779999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </state>
@@ -571,7 +571,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="WDJ-6S-5Y3">
-                                <rect key="frame" x="2493.5" y="520" width="384" height="19"/>
+                                <rect key="frame" x="850" y="520" width="384" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="19" id="Ye5-Cq-PxJ"/>
                                 </constraints>
@@ -580,7 +580,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
-                                <rect key="frame" x="2493.5" y="625" width="384" height="50.5"/>
+                                <rect key="frame" x="850" y="625" width="384" height="50.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="384" id="WAl-jz-akH"/>
                                 </constraints>
@@ -621,7 +621,7 @@ Masterpiece!</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Onboarding1" translatesAutoresizingMaskIntoConstraints="NO" id="abm-bl-K38">
-                                <rect key="frame" x="0.0" y="0.0" width="3740" height="447"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1271" height="447"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -2002,7 +2002,7 @@ your body and others’s bodies.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yHf-AX-5ZQ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="261.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="241.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" misplaced="YES" text="Good " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wg-V5-aIC">
                                 <rect key="frame" x="25" y="122" width="281" height="47"/>
@@ -2017,7 +2017,7 @@ your body and others’s bodies.</string>
                                 <color key="highlightedColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fWY-uv-LMG">
-                                <rect key="frame" x="14" y="373" width="400" height="175.5"/>
+                                <rect key="frame" x="14" y="334" width="400" height="165"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="400" id="DS8-NL-NDp"/>
@@ -2030,7 +2030,7 @@ your body and others’s bodies.</string>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" restorationIdentifier="myCell" reuseIdentifier="myCell" id="DOL-XC-LhE" customClass="CollectionViewCell1" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="23.5" width="176" height="129"/>
+                                        <rect key="frame" x="0.0" y="18" width="176" height="129"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dPQ-80-aLg">
                                             <rect key="frame" x="0.0" y="0.0" width="176" height="129"/>
@@ -2106,19 +2106,19 @@ your body and others’s bodies.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mqk-Ya-Xpd">
-                                <rect key="frame" x="215" y="568.5" width="189" height="304"/>
+                                <rect key="frame" x="215" y="519" width="189" height="279"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="189" id="19W-RA-Wbc"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Qua ci vanno le stronzate di francesca" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="61N-a8-v0d">
-                                <rect key="frame" x="24" y="626.5" width="190" height="234"/>
+                                <rect key="frame" x="24" y="552" width="190" height="234"/>
                                 <fontDescription key="fontDescription" name="Poppins-ExtraLight" family="Poppins" pointSize="18"/>
                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Ready for a boost of self-esteem?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOt-Hk-MoG">
-                                <rect key="frame" x="25" y="232" width="369" height="40"/>
+                                <rect key="frame" x="25" y="199.5" width="369" height="37"/>
                                 <fontDescription key="fontDescription" name="Poppins-LightItalic" family="Poppins" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2275,7 +2275,7 @@ your body and others’s bodies.</string>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOo-wB-kmc">
-                                <rect key="frame" x="352" y="141" width="36" height="44"/>
+                                <rect key="frame" x="352" y="141" width="36" height="52.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="36" id="g7T-Mg-eUZ"/>
                                 </constraints>
@@ -2432,7 +2432,7 @@ your body and others’s bodies.</string>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ymt-6W-zKb"/>
                             </scrollView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u6C-90-pJx">
-                                <rect key="frame" x="0.0" y="267" width="414" height="586"/>
+                                <rect key="frame" x="0.0" y="275.5" width="414" height="586"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="jtl-uh-CSj"/>
@@ -2592,7 +2592,7 @@ your body and others’s bodies.</string>
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCe-mq-vgd">
-                                <rect key="frame" x="22" y="141" width="125.5" height="42"/>
+                                <rect key="frame" x="22" y="141" width="149" height="50.5"/>
                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -3866,7 +3866,7 @@ The two shapes on the outside recount </string>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(We will publish it on our profile)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzJ-Ev-OB7">
-                                                        <rect key="frame" x="101" y="1515" width="212.5" height="16"/>
+                                                        <rect key="frame" x="90.5" y="1515" width="233.5" height="16"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="16" id="Hfk-Nt-sn4"/>
                                                         </constraints>
@@ -4075,7 +4075,7 @@ The two shapes on the outside recount </string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="nIG-wF-CdU"/>
-        <segue reference="O1h-M3-5IE"/>
+        <segue reference="wEb-bN-aLK"/>
         <segue reference="W8t-6Z-Ukx"/>
         <segue reference="wd9-1W-xO2"/>
         <segue reference="KEg-EQ-8Ct"/>
