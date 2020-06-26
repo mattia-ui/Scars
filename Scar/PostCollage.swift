@@ -51,6 +51,9 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         }
         
         if(view.frame.height == 812){
+            var tG = CGAffineTransform.identity
+            tG = tG.translatedBy(x: 0 - 10 , y: 3)
+            miniSym.transform = tG
            }else if(view.frame.height == 667){
               traslate(view: button, aCircleTime: 0, to: 50)
                 traslateX(view: miniSym, aCircleTime: 0, to: -10)
