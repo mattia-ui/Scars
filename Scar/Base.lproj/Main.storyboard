@@ -305,7 +305,7 @@ Masterpiece!</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cj-VA-9NZ">
-                                        <rect key="frame" x="257.5" y="1247.5" width="403.5" height="129.5"/>
+                                        <rect key="frame" x="257.5" y="1247.5" width="403.5" height="125.5"/>
                                         <state key="normal" title="Button" image="letsgoazzurro"/>
                                         <connections>
                                             <segue destination="xs9-hS-2dx" kind="show" id="nIG-wF-CdU"/>
