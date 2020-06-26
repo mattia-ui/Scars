@@ -36,6 +36,8 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
         
+        self.tabBarController?.tabBar.isHidden = false
+        
         viewDidLoad()
         
         if(blur == 1){
