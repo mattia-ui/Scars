@@ -41,11 +41,11 @@ class ENG: UIViewController{
         static var insights = ["TEDx","Movies and Series","Articles","Books","Inspiring People","Podcasts"]
         
         static var textOnCollage = [
-            "The pattern in the large circle describes\n",
+            "The pattern in the large circle describes ",
             "your personality ",
-            "and the color inside \nrepresents ",
-            "the way you want to look\n","from the outside. \n\nThe two shapes on the outside recount\n",
-            "the way you would like to be ","and the \ntexture inside represents ",
+            "and the color inside represents ",
+            "the way you want to look ","from the outside. \n\nThe two shapes on the outside recount ",
+            "the way you would like to be ","and the texture inside represents ",
             "the perception you have of your sign, ",
             "that is in gold and occupies the center of the image, as ",
             "Kintsugi art ","teaches! ",
