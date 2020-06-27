@@ -58,32 +58,32 @@ class ITA: UIViewController{
                 ]
                     
                     static var textOnChooseShape = [
-                        "Quale di queste forme rappresenta ",
-                        "la tua più profonda essenza?","Quadrato \n",
-                        "attenzione - precisione",
+                        "Quale forma rappresenta ",
+                        "la tua\npiù profonda essenza?","Quadrato \n",
+                        "cautela - precisione",
                         "Rettangolo \n",
-                        "curiosità - confusione",
+                        "curiosità - caos",
                         "Triangolo \n",
-                        "leadership - fermezza",
+                        "leadership - tenacia",
                         "Cerchio \n",
-                        "empatia - socievolezza",
+                        "empatia - socialità",
                         "Zig zag \n",
-                        "creatività - ambizione"
+                        "estro - ambizione"
                     ]
                     
                     static var textOnChooseShape2 = [
-                        "Quale di queste forme rappresenta",
+                        "Quale forma rappresenta",
                         "il modo in cui ti piacerebbe essere?",
                         "Quadrato \n",
-                        "attenzione - precisione",
+                        "cautela - precisione",
                         "Rettangolo \n",
-                        "curiosità - confusione",
+                        "curiosità - caos",
                         "Triangolo \n",
-                        "leadership - determinazione",
+                        "leadership - tenacia",
                         "Cerchio \n",
-                        "empatia - socievolezza",
+                        "empatia - socialità",
                         "Zig zag \n",
-                        "creatività - ambizione"
+                        "estro - ambizione"
                     ]
                     
                     static var Shape = [
@@ -114,7 +114,7 @@ class ITA: UIViewController{
                     
                     static var textOnChooseTexture = [
                         "Tocca ",
-                        "il tuo segno indelebile, quale di\n queste textures ",
+                        "il tuo segno, quale di queste\ntextures ",
                         "ti ricorda al tatto? ",
                         "Mare",
                         "Cratere",
@@ -405,7 +405,7 @@ class ITA: UIViewController{
                     Cont(image: "InsightI12", title:"\nNatalia Benson", descr: "Natalia is a women’s empowerment coach living in Los Angeles. She encourages women to honor their female energy. ‘Sometimes we need each other to overcome things, it is useful to receive messages from others to see things in a new light or in a new way.’", fonte:"", link: "https://www.instagram.com/natalia_benson/?hl=it")*/]
                     )]
                     
-                    static var textOnTakePicture = ["Disegna la forma ","del tuo segno indelebile, o aiutati scattando una","foto ","in modo da ","tracciarne meglio i contorni.","Non preoccuparti",", la foto che scatterai non verrà salvata!"]
+                    static var textOnTakePicture = ["Disegna la forma ","del tuo segno indelebile, o aiutati scattando una ","foto ","in modo da ","tracciarne meglio i contorni.","Non preoccuparti",", la foto che scatterai non verrà salvata!"]
                     
                     static var ViewControllerInitialdati = [ActivityStruct(
                         attivita1:[
@@ -450,9 +450,9 @@ class ITA: UIViewController{
                     
                     static var textOnSecondaTutorial = ["Raccontando la storia del tuo segno indelebile puoi cambiare il modo in cui guardi il tuo corpo e quello degli altri.","si prenderà cura della tua storia","Scopri come creare il tuo Skinsugi masterpiece.","Tempo di esplorare","Attività e Insights","Qui troverai consigli interessanti e contenuti sempre nuovi!"]
                     
-                    static var textOnSharePage = ["Condividere le tue emozioni con gli altri è fondamentale per la tua ","emotività ","rafforza l autostima",",allontana le insicurezze, e ti insegna che ","non sei solo",", mai.\n","\nCosa stai aspettando?\nRacconta la tua storia e condividila su ","Instagram","con l hashtag ","o invialo a noi\nin forma anonima puoi essere d ispirazione anche senza mostrare il tuo nome!\n ","Scrivi la storia che si cela dietro il tuo segno indelebile…  - ","(max 1100 characters)","La tua storia è stata copiata correttamente"]
+                    static var textOnSharePage = ["Condividere le tue emozioni con gli altri è fondamentale per la tua ","emotività ","rafforza l autostima",",allontana le insicurezze, e ti insegna che ","non sei solo",", mai.\n","\nCosa stai aspettando?\nRacconta la tua storia e condividila su ","Instagram ","con l'hashtag ","o invialo a noi\nin forma anonima puoi essere d'ispirazione anche senza mostrare il tuo nome!\n ","Scrivi la storia che si cela dietro il tuo segno indelebile…  - ","(max 1100 caratteri)","La tua storia è stata copiata correttamente"]
                     
-                    static var textOnGenerateAgain = ["Il pattern nel cerchio più grande descrive ","la tua personalità ","e il colore al suo interno rappresenta ","il modo in cui vuoi apparire"," dall’esterno.\nLe due forme geometriche all’esterno raccontano"," il modo in cui vorresti essere "," e la texture al loro interno rappresenta ","la percezione che hai del tuo segno indelebile",", che è in oro ed occupa il centro dell’immagine, come ","l’arte del Kintsugi ","insegna!","Cerchio",": empatia - socievolezza","Zig Zag",": creatività - ambizione","Triangolo",": leadership - fermezza","Rettangolo",": curiosità - confusione","Quadrato", ": attenzione - precisione","Il tuo Skinsugi Masterpiece è stato copiato correttamente"]
+                    static var textOnGenerateAgain = ["Il pattern nel cerchio più grande descrive ","la tua personalità ","e il colore al suo interno rappresenta ","il modo in cui vuoi apparire"," dall’esterno.\nLe due forme geometriche all’esterno raccontano"," il modo in cui vorresti essere "," e la texture al loro interno rappresenta ","la percezione che hai del tuo segno indelebile",", che è in oro ed occupa il centro dell’immagine, come ","l’arte del Kintsugi ","insegna!","Cerchio",": empatia - socialità","Zig Zag",": estro - ambizione","Triangolo",": leadership - tenacia","Rettangolo",": curiosità - caos","Quadrato", ": cautela - precisione","Il tuo Skinsugi Masterpiece è stato copiato correttamente"]
                     
                     
                     
