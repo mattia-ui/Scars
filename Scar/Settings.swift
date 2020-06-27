@@ -43,7 +43,6 @@ class Settins: UIViewController {
         } else if(view.frame.height == 736){
             traslate(view: imageSettings, aCircleTime: 0, to: -73)
             
-            
         }else  if(deviceType == Model(rawValue: "iPhone 11 Pro Max") || deviceType == Model(rawValue: "iPhone XS Max")) {
             
 //            traslate(view: imageSettings, aCircleTime: 0, to: -73)
