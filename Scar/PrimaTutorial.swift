@@ -238,17 +238,18 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             print("error creating table: \(errmsg)")
         }
                            
-        let lingua = Locale.current.languageCode
+        let lingua = Locale.preferredLanguages[0]//Locale.current.languageCode
         print("\n\n\n\n\n\n\n\(lingua)\n\n\n\n\n\n\n")
-        if(lingua == "en"){
+
+        if (lingua == "it-IT"){
             //Inserisce Valore. Va nel tutorial
-            let queryString2 = "INSERT INTO Lingua(lingua) VALUES ('eng');"
+            let queryString2 = "INSERT INTO Lingua(lingua) VALUES ('ita');"
             sqlite3_prepare(db, queryString2, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
-        } else if (lingua == "it"){
+        } else {
             //Inserisce Valore. Va nel tutorial
-            let queryString2 = "INSERT INTO Lingua(lingua) VALUES ('ita');"
+            let queryString2 = "INSERT INTO Lingua(lingua) VALUES ('eng');"
             sqlite3_prepare(db, queryString2, -1, &stmt, nil)
             sqlite3_step(stmt)
             print("Saved successfully")
@@ -276,16 +277,18 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
         
-        let lingua = Locale.current.languageCode
+        let lingua = Locale.preferredLanguages[0]//Locale.current.languageCode
         print("\n\n\n\n\n\n\n\(lingua)\n\n\n\n\n\n\n")
 
-        if (lingua == "it"){
+        if (lingua == "it-IT"){
+            print("\n\n\n\n\n\n\nCIAO\n\n\n\n\n\n\n")
             text = ITA.textOnPrimaTutorial
             start = ITA.button[9]
             startNo = ITA.button[10]
             PrimaTutorial.done = ITA.button[12]
             letsgo = ITA.button[13]
         } else {
+            print("\n\n\n\n\n\n\nHELLO\n\n\n\n\n\n\n")
             text = ENG.textOnPrimaTutorial
             start = ENG.button[9]
             startNo = ENG.button[10]
@@ -294,6 +297,14 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         }
         button1.imageView?.image = UIImage(named: startNo)
         button3.imageView?.image = UIImage(named: letsgo)
+        
+        welcome.text = text[1]
+        frase1.text = text[2]
+        domanda1.text = text[3]
+        nome1.text = text[4]
+        frase3.text = text[5]
+        domande3.text = text[7]
+        LastStep.text = text[6]
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
 
@@ -439,8 +450,8 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     func controllo2(){
-        let lingua = Locale.current.languageCode
-              if (lingua == "it"){
+        let lingua = Locale.preferredLanguages[0]//Locale.current.languageCode
+              if (lingua == "it-IT"){
                if(selected[0] != ""){
                 PrimaTutorial.done = ITA.button[11]
                 } else {
@@ -462,8 +473,14 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-                    
-        var ins: [String] = ENG.insights
+                
+        var ins: [String] = []
+        let lingua = Locale.preferredLanguages[0]//Locale.current.languageCode
+        if (lingua == "it-IT"){
+            ins = ITA.insights
+        } else {
+            ins = ENG.insights
+        }
         
         if indexPath.row == 0 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as? Cella1 else

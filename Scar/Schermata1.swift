@@ -314,13 +314,12 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
             sqlite3_step(stmt)
             print("Saved successfully")
                     
-            if(week == 1){
-                if(w == 7){w = 0} else {w = w + 1}
-                queryString = "UPDATE Week SET valore = '\(w)';"
-                sqlite3_prepare(db, queryString, -1, &stmt, nil)
-                sqlite3_step(stmt)
-                print("Saved successfully")
-            }
+            if(w == 7){w = 0} else {w = w + 1}
+            queryString = "UPDATE Week SET valore = '\(w)';"
+            sqlite3_prepare(db, queryString, -1, &stmt, nil)
+            sqlite3_step(stmt)
+            print("Saved successfully")
+
         }
                 
         Schermata1.weekly = weeklyInfo[w]

@@ -187,13 +187,14 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
             lingua = String(cString: sqlite3_column_text(stmt, 1))
         }
         
-        ins = ENG.insights
         if(lingua == "eng"){
             structIns = ENG.Schermata2structInsENG
             SeeMore = ENG.goToLink
+            ins = ENG.insights
         } else if (lingua == "ita"){
             structIns = ITA.Schermata2structInsENG
             SeeMore = ITA.goToLink
+            ins = ITA.insights
         }
         
         caricaInfo()

@@ -60,7 +60,17 @@ class AddInsights: UIViewController {
               } else if (lingua == "ita"){
                   insights = ITA.insights
               }
-        
+        pod.setTitle(insights[0], for: .normal)
+        well.setTitle(insights[1], for: .normal)
+        mov.setTitle(insights[2], for: .normal)
+        art.setTitle(insights[3], for: .normal)
+        artist.setTitle(insights[4], for: .normal)
+        books.setTitle(insights[5], for: .normal)
+
+
+
+
+
         if(UIScreen.main.bounds.height > 800){
             scroll.isScrollEnabled = false
         } else {
