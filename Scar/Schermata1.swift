@@ -297,10 +297,12 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         }
                 
         var w = 0
+        
         let week = Calendar.current.component(.weekday, from: dateNow)
         while(sqlite3_step(stmt) == SQLITE_ROW){
             w = Int(String(cString: sqlite3_column_text(stmt, 1))) ?? 0
         }
+        if(w == 8){w = 0}
         numeroWeek.text = "n.\(w + 1)"
                 
         if(month2 > m || day2 > day){
@@ -314,7 +316,7 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
             sqlite3_step(stmt)
             print("Saved successfully")
                     
-            if(w == 7){w = 0} else {w = w + 1}
+            
             queryString = "UPDATE Week SET valore = '\(w)';"
             sqlite3_prepare(db, queryString, -1, &stmt, nil)
             sqlite3_step(stmt)
