@@ -8,9 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Nexa Bold.otf">
-            <string>NexaBold</string>
-        </array>
         <array key="Nexa Light.otf">
             <string>NexaLight</string>
         </array>
@@ -254,13 +251,13 @@
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submitted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="b13-TX-EGq">
                                         <rect key="frame" x="128" y="324" width="152" height="32"/>
-                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="32"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="32"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for sharing your masterpiece with us!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Y2D-IT-Jem">
                                         <rect key="frame" x="71" y="372" width="266" height="47"/>
-                                        <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="22"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -4082,6 +4079,7 @@ The two shapes on the outside recount </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="nIG-wF-CdU"/>
         <segue reference="47n-ms-sJd"/>
         <segue reference="W8t-6Z-Ukx"/>
         <segue reference="wd9-1W-xO2"/>
