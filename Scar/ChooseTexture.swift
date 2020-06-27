@@ -155,7 +155,7 @@ class ChooseTexture: UIViewController  {
                     
                 }else if(view.frame.height == 667){
                     traslate(view: stackO,aCircleTime: 0, to: -100)
-                    traslate(view: label,aCircleTime: 0, to: -84)
+                    traslate(view: label,aCircleTime: 0, to: -77)
                     traslate(view: question,aCircleTime: 0, to: -60)
                     traslate(view: HView,aCircleTime: 0, to: -18)
                     traslate(view: nex,aCircleTime: 0, to: -182)
