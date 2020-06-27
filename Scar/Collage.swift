@@ -838,6 +838,7 @@ let randomSize = Float.random(in: 1.30..<1.35)
         }
 //            iphone 8
             else  if(view.frame.width == 375 && view.frame.height == 667){
+            self.scrollSk.contentSize = CGSize(width: scrollSk.frame.size.width,height: scrollSk.frame.size.height+350 )
                let rect = CGRect(x: 85, y: 345, width: 580, height: 580)
                return cropImage(image: image, toRect: rect)
             }

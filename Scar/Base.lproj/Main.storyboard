@@ -255,8 +255,8 @@
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for sharing your masterpiece with us!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Y2D-IT-Jem">
-                                        <rect key="frame" x="71" y="372" width="266" height="47"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Thank you for sharing your masterpiece with us!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Y2D-IT-Jem">
+                                        <rect key="frame" x="71" y="370" width="266" height="60"/>
                                         <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="22"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -264,22 +264,22 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Y2D-IT-Jem" secondAttribute="trailing" constant="77" id="0Pg-yM-XEA"/>
-                                    <constraint firstItem="Y2D-IT-Jem" firstAttribute="height" secondItem="1JF-r6-XHa" secondAttribute="height" multiplier="0.0558195" id="ArR-kV-CMd"/>
+                                    <constraint firstItem="Y2D-IT-Jem" firstAttribute="height" secondItem="1JF-r6-XHa" secondAttribute="height" multiplier="0.0558195" constant="6.9999809999999982" id="ArR-kV-CMd"/>
                                     <constraint firstAttribute="trailing" secondItem="b13-TX-EGq" secondAttribute="trailing" constant="134" id="Bj4-3A-RVq"/>
                                     <constraint firstAttribute="bottom" secondItem="7Iq-1d-X4P" secondAttribute="bottom" constant="-206" id="L61-a0-sET"/>
                                     <constraint firstItem="b13-TX-EGq" firstAttribute="height" secondItem="1JF-r6-XHa" secondAttribute="height" multiplier="0.0380048" id="PhQ-17-2HL"/>
                                     <constraint firstItem="7Iq-1d-X4P" firstAttribute="width" secondItem="1JF-r6-XHa" secondAttribute="width" multiplier="0.89372" id="T6P-R6-7TB"/>
-                                    <constraint firstItem="Y2D-IT-Jem" firstAttribute="top" secondItem="b13-TX-EGq" secondAttribute="bottom" constant="16" id="UQn-P4-M9H"/>
+                                    <constraint firstItem="Y2D-IT-Jem" firstAttribute="top" secondItem="b13-TX-EGq" secondAttribute="bottom" constant="14" id="UQn-P4-M9H"/>
                                     <constraint firstItem="Y2D-IT-Jem" firstAttribute="leading" secondItem="1JF-r6-XHa" secondAttribute="leading" constant="71" id="Zjy-1o-iVu"/>
-                                    <constraint firstItem="7Iq-1d-X4P" firstAttribute="top" secondItem="Y2D-IT-Jem" secondAttribute="bottom" constant="29" id="eWO-ay-g6C"/>
+                                    <constraint firstItem="7Iq-1d-X4P" firstAttribute="top" secondItem="Y2D-IT-Jem" secondAttribute="bottom" constant="24" id="eWO-ay-g6C"/>
                                     <constraint firstItem="7Iq-1d-X4P" firstAttribute="height" secondItem="1JF-r6-XHa" secondAttribute="height" multiplier="0.712589" id="fkU-it-Kv5"/>
                                     <constraint firstItem="b13-TX-EGq" firstAttribute="width" secondItem="1JF-r6-XHa" secondAttribute="width" multiplier="0.36715" id="gWQ-Or-YU6"/>
                                     <constraint firstItem="Y2D-IT-Jem" firstAttribute="width" secondItem="1JF-r6-XHa" secondAttribute="width" multiplier="0.642512" id="hAu-JM-1aM"/>
                                     <constraint firstItem="7Iq-1d-X4P" firstAttribute="leading" secondItem="1JF-r6-XHa" secondAttribute="leading" constant="22" id="prp-xR-Z6a"/>
-                                    <constraint firstItem="7Iq-1d-X4P" firstAttribute="top" secondItem="Y2D-IT-Jem" secondAttribute="bottom" constant="29" id="s5a-0G-oUY"/>
+                                    <constraint firstItem="7Iq-1d-X4P" firstAttribute="top" secondItem="Y2D-IT-Jem" secondAttribute="bottom" constant="24" id="s5a-0G-oUY"/>
                                     <constraint firstItem="b13-TX-EGq" firstAttribute="leading" secondItem="1JF-r6-XHa" secondAttribute="leading" constant="128" id="vp9-OF-S0H"/>
                                     <constraint firstItem="b13-TX-EGq" firstAttribute="top" secondItem="1JF-r6-XHa" secondAttribute="top" constant="324" id="w1P-Ey-YBW"/>
-                                    <constraint firstItem="Y2D-IT-Jem" firstAttribute="top" secondItem="b13-TX-EGq" secondAttribute="bottom" constant="16" id="wfj-jS-P48"/>
+                                    <constraint firstItem="Y2D-IT-Jem" firstAttribute="top" secondItem="b13-TX-EGq" secondAttribute="bottom" constant="14" id="wfj-jS-P48"/>
                                     <constraint firstAttribute="trailing" secondItem="7Iq-1d-X4P" secondAttribute="trailing" constant="22" id="xLb-45-k47"/>
                                 </constraints>
                             </view>
@@ -425,7 +425,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-gT-4jz">
-                                <rect key="frame" x="2491.5" y="973.5" width="303" height="23"/>
+                                <rect key="frame" x="848" y="973.5" width="303" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -448,14 +448,14 @@ Masterpiece!</string>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="12" translatesAutoresizingMaskIntoConstraints="NO" id="PtS-SF-yl7">
-                                <rect key="frame" x="1235.5" y="447" width="1236" height="436.5"/>
+                                <rect key="frame" x="414" y="447" width="414" height="436.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell1" rowHeight="120" id="Q0F-YJ-7d9" customClass="Cella1" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1236" height="120"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q0F-YJ-7d9" id="tAq-I3-Gpy">
-                                            <rect key="frame" x="0.0" y="0.0" width="1236" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hi, Sigafreda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="ywt-KN-qf8">
@@ -486,14 +486,14 @@ Masterpiece!</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell2" rowHeight="100" id="Odx-4k-Ygl" customClass="Cella2" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="148" width="1236" height="100"/>
+                                        <rect key="frame" x="0.0" y="148" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Odx-4k-Ygl" id="z3Q-oM-gjf">
-                                            <rect key="frame" x="0.0" y="0.0" width="1236" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCf-Wr-8Gn">
-                                                    <rect key="frame" x="20" y="12" width="1196" height="76"/>
+                                                    <rect key="frame" x="20" y="12" width="374" height="76"/>
                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
                                                     <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="Button" backgroundImage="deselected">
@@ -521,13 +521,13 @@ Masterpiece!</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell3" rowHeight="200" id="B7d-lg-0DN" customClass="Cella3" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="248" width="1236" height="200"/>
+                                        <rect key="frame" x="0.0" y="248" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B7d-lg-0DN" translatesAutoresizingMaskIntoConstraints="NO" id="vQO-Sv-XsO">
-                                            <rect key="frame" x="0.0" y="0.0" width="1236" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3A-U0-X4D">
-                                                    <rect key="frame" x="527" y="71" width="182" height="55"/>
+                                                    <rect key="frame" x="116" y="71" width="182" height="55"/>
                                                     <state key="normal" image="done">
                                                         <color key="titleColor" red="0.91372543569999998" green="0.91366583109999999" blue="0.91764795779999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </state>
@@ -568,7 +568,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="WDJ-6S-5Y3">
-                                <rect key="frame" x="2493.5" y="520" width="384" height="19"/>
+                                <rect key="frame" x="850" y="520" width="384" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="19" id="Ye5-Cq-PxJ"/>
                                 </constraints>
@@ -577,7 +577,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
-                                <rect key="frame" x="2493.5" y="625" width="384" height="50.5"/>
+                                <rect key="frame" x="850" y="625" width="384" height="50.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="384" id="WAl-jz-akH"/>
                                 </constraints>
@@ -618,7 +618,7 @@ Masterpiece!</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Onboarding1" translatesAutoresizingMaskIntoConstraints="NO" id="abm-bl-K38">
-                                <rect key="frame" x="0.0" y="0.0" width="3740" height="447"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1271" height="447"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -3292,7 +3292,7 @@ The two shapes on the outside recount </string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ntc-NU-ZMR" userLabel="Discover2">
-                                                        <rect key="frame" x="22" y="932" width="248" height="24"/>
+                                                        <rect key="frame" x="22" y="909" width="248" height="24"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Discover more about Kinsugi">
                                                                 <attributes>
@@ -3305,7 +3305,7 @@ The two shapes on the outside recount </string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTA-bJ-RLx">
-                                                        <rect key="frame" x="116" y="1032" width="182" height="55"/>
+                                                        <rect key="frame" x="116" y="1009" width="182" height="55"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="55" id="EFw-W6-v2j"/>
                                                             <constraint firstAttribute="width" constant="182" id="Hwg-2J-AJL"/>
@@ -3336,7 +3336,7 @@ The two shapes on the outside recount </string>
                                                     <constraint firstItem="Ntc-NU-ZMR" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.0202874" id="NYk-Ft-jt8"/>
                                                     <constraint firstItem="tcg-DQ-JRd" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="width" multiplier="0.94686" id="Oh1-h3-d26"/>
                                                     <constraint firstItem="VHV-UC-arC" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.0845309" constant="-30.000054700000007" id="PHP-UB-nQ3"/>
-                                                    <constraint firstItem="Ntc-NU-ZMR" firstAttribute="top" secondItem="Igl-LE-bMi" secondAttribute="bottom" constant="56" id="Rzc-d7-TmW"/>
+                                                    <constraint firstItem="Ntc-NU-ZMR" firstAttribute="top" secondItem="Igl-LE-bMi" secondAttribute="bottom" constant="33" id="Rzc-d7-TmW"/>
                                                     <constraint firstItem="Igl-LE-bMi" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.21809" id="S1a-lp-0He"/>
                                                     <constraint firstItem="jgS-5L-Xg9" firstAttribute="height" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="0.338123" constant="-127.99950899999999" id="SAA-4L-sNH"/>
                                                     <constraint firstItem="Q2H-9g-FGd" firstAttribute="width" secondItem="Iaf-1g-HK7" secondAttribute="height" multiplier="400:1183" constant="-130" id="UWV-5z-ckO"/>
