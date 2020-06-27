@@ -111,14 +111,14 @@ class ChoosePalette: UIViewController  {
         
                 if(view.frame.height == 812){
                     traslate(view: question, aCircleTime: 0, to: 45)
-                    traslate(view: label, aCircleTime: 0, to: 35)
-                    traslate(view: nex, aCircleTime: 0, to: 15)
-                    traslate(view: cool, aCircleTime: 0, to: 35)
-                    traslate(view: warm, aCircleTime: 0, to: 35)
-                    traslate(view: neutral, aCircleTime: 0, to: 35)
-                    traslate(view: cold, aCircleTime: 0, to: 35)
-                    traslate(view: warmt, aCircleTime: 0, to: 35)
-                    traslate(view: mammt, aCircleTime: 0, to: 35)
+                    traslate(view: label, aCircleTime: 0, to: 55)
+                    traslate(view: nex, aCircleTime: 0, to: 5)
+                    traslate(view: cool, aCircleTime: 0, to: 55)
+                    traslate(view: warm, aCircleTime: 0, to: 55)
+                    traslate(view: neutral, aCircleTime: 0, to: 55)
+                    traslate(view: cold, aCircleTime: 0, to: 55)
+                    traslate(view: warmt, aCircleTime: 0, to: 55)
+                    traslate(view: mammt, aCircleTime: 0, to: 55)
                 }else if(view.frame.height == 667){
                     traslate(view: question, aCircleTime: 0, to: -22)
                     traslate(view: label, aCircleTime: 0, to: -25)

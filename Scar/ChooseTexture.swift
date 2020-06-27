@@ -179,11 +179,11 @@ class ChooseTexture: UIViewController  {
                     
                    
         }else if(view.frame.height == 812){
-                    traslate(view: stackO,aCircleTime: 0, to: -59)
-                    traslate(view: label,aCircleTime: 0, to: -45)
-                    traslate(view: question,aCircleTime: 0, to: -24)
+                    traslate(view: stackO,aCircleTime: 0, to: -52)
+                    traslate(view: label,aCircleTime: 0, to: -38)
+                    traslate(view: question,aCircleTime: 0, to: -21)
                     traslate(view: nex,aCircleTime: 0, to: -103)
-                    traslate(view: HView,aCircleTime: 0, to: -16)
+                    traslate(view: HView,aCircleTime: 0, to: -9)
                     
                     stackO.spacing = 7.5
                     
@@ -231,7 +231,6 @@ class ChooseTexture: UIViewController  {
         if sender.isSelected {
             sea.isSelected = false
             nex.isEnabled = false
-            nex.imageView?.image = UIImage(named: submitNo)
         } else {
             sea.isSelected = true
             wood.isSelected = false
@@ -240,7 +239,6 @@ class ChooseTexture: UIViewController  {
             marble.isSelected = false
             nex.isEnabled = true
             ChooseTexture.texture1 = texture[0]
-            nex.imageView?.image = UIImage(named: submit)
         }
     }
     
@@ -248,7 +246,6 @@ class ChooseTexture: UIViewController  {
         if sender.isSelected {
             wood.isSelected = false
             nex.isEnabled = false
-            nex.imageView?.image = UIImage(named: submitNo)
         } else {
             sea.isSelected = false
             wood.isSelected = true
@@ -257,7 +254,6 @@ class ChooseTexture: UIViewController  {
             marble.isSelected = false
             nex.isEnabled = true
             ChooseTexture.texture1 = texture[4]
-            nex.imageView?.image = UIImage(named: submit)
         }
     }
     
@@ -265,7 +261,6 @@ class ChooseTexture: UIViewController  {
         if sender.isSelected {
             texile.isSelected = false
             nex.isEnabled = false
-            nex.imageView?.image = UIImage(named: submitNo)
         } else {
             sea.isSelected = false
             wood.isSelected = false
@@ -274,7 +269,6 @@ class ChooseTexture: UIViewController  {
             marble.isSelected = false
             nex.isEnabled = true
             ChooseTexture.texture1 = texture[2]
-            nex.imageView?.image = UIImage(named: submit)
         }
     }
     
@@ -282,7 +276,6 @@ class ChooseTexture: UIViewController  {
         if sender.isSelected {
             cratere.isSelected = false
             nex.isEnabled = false
-            nex.imageView?.image = UIImage(named: submitNo)
         } else {
             sea.isSelected = false
             wood.isSelected = false
@@ -291,7 +284,6 @@ class ChooseTexture: UIViewController  {
             marble.isSelected = false
             nex.isEnabled = true
             ChooseTexture.texture1 = texture[1]
-            nex.imageView?.image = UIImage(named: submit)
         }
     }
     
@@ -299,7 +291,6 @@ class ChooseTexture: UIViewController  {
         if sender.isSelected {
             marble.isSelected = false
             nex.isEnabled = false
-            nex.imageView?.image = UIImage(named: submitNo)
         } else {
             sea.isSelected = false
             wood.isSelected = false
@@ -308,7 +299,6 @@ class ChooseTexture: UIViewController  {
             marble.isSelected = true
             nex.isEnabled = true
             ChooseTexture.texture1 = texture[3]
-            nex.imageView?.image = UIImage(named: submit)
         }
     }
 }
