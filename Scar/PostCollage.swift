@@ -62,6 +62,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
             
 
            }else if(view.frame.height == 667){
+            navInsta.image = UIImage(named: "navInsta8")
               traslate(view: button, aCircleTime: 0, to: -43)
             traslate(view: nex, aCircleTime: 0, to: 35)
             traslate(view: illmast, aCircleTime: 0, to: 10)
