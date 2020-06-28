@@ -144,6 +144,8 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         }
         
     }
+    
+ 
 
     @objc func update(notification: NSNotification) {
         var count : Int = 0

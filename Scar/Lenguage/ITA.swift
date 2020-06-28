@@ -29,10 +29,10 @@ class ITA: UIViewController{
                     "nextazzurronoIta", //Bottone nex schermata Choose shape/Choose shape2/Choose palette/Choose texture disabilitato
                     "noIta", //Bottone no schermata Choose texture
                     "yesIta", //Bottone no schermata Choose texture
-                    "readyViolaIta", //Bottone ready schermata tutorial 2
-                    "startIta", //Bottone start schermata tutorial
+                    "ReadyVioleIta", //Bottone ready schermata tutorial 2
+                    "StartIta", //Bottone start schermata tutorial
                     "StartNIta", //Bottone start schermata tutorial disailitato
-                    "doneIta", //Bottone done schermata tutorial
+                    "DoneIta", //Bottone done schermata tutorial
                     "DoneNIta", //Bottone done schermata tutorial disabilitato
                     "Let'sgoIta", //Bottone let's go schermata tutorial
                     "proceedIta", //Bottone procedere Collage
@@ -446,14 +446,11 @@ class ITA: UIViewController{
                     
                     static var textOnViewController = ["Traccia e"," riempi la forma"," del tuo segno."]
                     
-                     static var textOnPrimaTutorial = ["Ciao,","Questo è Skinsugi!","Siamo felici di averti con noi.","Inserisci il tuo nome","Il mio nome è..","Prova a riflettere sulle risposte","Ci siamo quasi","Come ti fa sentire il tuo segno?\nCome pensi che gli altri lo vedano?"]
+                     static var textOnPrimaTutorial = ["Ciao,","Questo è Skinsugi!","Siamo felici di averti con noi.","Inserisci il tuo nome","Il mio nome è..","Prova a riflettere sulle risposte","Ci siamo quasi","Come ti fa sentire il tuo segno?\nCome pensi che gli altri lo vedano?","Da cosa ti lasci ispirare?"]
                     
-                    static var textOnSecondaTutorial = ["Raccontando la storia del tuo segno indelebile puoi cambiare il modo in cui guardi il tuo corpo e quello degli altri.","si prenderà cura della tua storia","Scopri come creare il tuo Skinsugi masterpiece.","Tempo di esplorare","Attività e Insights","Qui troverai consigli interessanti e contenuti sempre nuovi!"]
+                    static var textOnSecondaTutorial = ["Raccontando la storia del tuo segno indelebile puoi cambiare il modo in cui guardi il tuo corpo e quello degli altri.","si prenderà cura della tua storia","Scopri come creare il tuo Skinsugi masterpiece.","Tempo di esplorare","Attività e Insights","Qui troverai consigli interessanti e contenuti sempre nuovi!","Prima di iniziare","#skinsugi è condivisione"]
                     
                     static var textOnSharePage = ["Condividere le tue emozioni con gli altri è fondamentale per la tua ","emotività ","rafforza l autostima",",allontana le insicurezze, e ti insegna che ","non sei solo",", mai.\n","\nCosa stai aspettando?\nRacconta la tua storia e condividila su ","Instagram ","con l'hashtag ","o invialo a noi\nin forma anonima puoi essere d'ispirazione anche senza mostrare il tuo nome!\n ","Scrivi la storia che si cela dietro il tuo segno indelebile…  - ","(max 1100 caratteri)","La tua storia è stata copiata correttamente"]
                     
                     static var textOnGenerateAgain = ["Il pattern nel cerchio più grande descrive ","la tua personalità ","e il colore al suo interno rappresenta ","il modo in cui vuoi apparire"," dall’esterno.\nLe due forme geometriche all’esterno raccontano"," il modo in cui vorresti essere "," e la texture al loro interno rappresenta ","la percezione che hai del tuo segno indelebile",", che è in oro ed occupa il centro dell’immagine, come ","l’arte del Kintsugi ","insegna!","Cerchio",": empatia - socialità","Zig Zag",": estro - ambizione","Triangolo",": leadership - tenacia","Rettangolo",": curiosità - caos","Quadrato", ": cautela - precisione","Il tuo Skinsugi Masterpiece è stato copiato correttamente"]
-                    
-                    
-                    
                 }

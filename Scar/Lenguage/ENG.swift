@@ -442,9 +442,9 @@ class ENG: UIViewController{
         
         static var textOnViewController = ["Trace and"," fill your sign"," shape."]
         
-        static var textOnPrimaTutorial = ["Hi,","This is Skinsugi!","We are glad that you came to us.","What's your name?","My name is..","Reflect, we don’t need your answer.","Last step","How do you feel about your sign?\n How do you think others see it?"]
+        static var textOnPrimaTutorial = ["Hi,","This is Skinsugi!","We are glad that you came to us.","What's your name?","My name is..","Reflect, we don’t need your answer.","Last step","How do you feel about your sign?\n How do you think others see it?","Tell us what inspires you the most."]
         
-        static var textOnSecondaTutorial = ["By telling the story of your indelible sign you can change the way you look at your body and others’s bodies.","will take care of your story","Find out how to create your unique masterpiece.","Time to explore","Activities and Insights","We also provided a lot of interesting tips and inspirational contents for you!"]
+        static var textOnSecondaTutorial = ["By telling the story of your indelible sign you can change the way you look at your body and others’s bodies.","will take care of your story","Find out how to create your unique masterpiece.","Time to explore","Activities and Insights","We also provided a lot of interesting tips and inspirational contents for you!","Before starting","#skinsugi is a place to share"]
         
         static var textOnSharePage = ["Sharing your emotions with others is \nvery important for your ","emotional state,\n","it ","increases self-esteem",", decreases insecurities, and makes you understand that ","you are not alone",", ever.","\nWhat are you waiting for?\nTell your story and share it on ","Instagram"," with the hashtag ","or send it to us anonymously, you can be inspiring even without showing your name! ","Tell your story behind your indelible sign here…  - ","(max 1100 characters)","Your description was copied successfully"]
         

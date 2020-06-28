@@ -17,6 +17,7 @@ class SecondaTutorial : UIViewController {
     @IBOutlet weak var TiziaBionda: UIImageView!
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var hashtag: UIImageView!
+    var b: String = ""
     var text:[String] = []
     
     var cont = 0
@@ -61,19 +62,21 @@ class SecondaTutorial : UIViewController {
               
          if(lingua == "eng"){
             text = ENG.textOnSecondaTutorial
-            button.imageView?.image = UIImage(named: ENG.button[8])
+            b = ENG.button[8]
          } else if (lingua == "ita"){
             text = ITA.textOnSecondaTutorial
-            button.imageView?.image = UIImage(named: ITA.button[8])
+            b =  ITA.button[8]
          }
         
-        if(UIScreen.main.bounds.width < 800){
+        if(UIScreen.main.bounds.height < 800){
             TiziaBionda.image = UIImage(named: "ILL3")
             TiziaViola.image = UIImage(named: "ILL2")
         }
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
                view.addGestureRecognizer(tap)
+        PrimaLabel.text = text[6]
+        SecondaLabel.text = text[7]
         TerzaLabel.text = text[0]
         TiziaBionda.alpha = 0
         button.alpha = 0
@@ -121,6 +124,8 @@ class SecondaTutorial : UIViewController {
 //                self.TerzaLabel.alpha = 1
                 self.TiziaBionda.alpha = 1
                 self.button.alpha = 1
+            print(b)
+            button.imageView?.image = UIImage(named: b)
 //            }
         }
     }

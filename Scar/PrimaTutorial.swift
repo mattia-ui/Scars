@@ -10,7 +10,7 @@ protocol MovieListViewControllerDelegate: class {
   func didSelect(movie selectedMovie: Movie)
 }
 
-class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelegate,UITextFieldDelegate{
+class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelegate,UITextFieldDelegate,UITextViewDelegate{
 
     @IBOutlet weak var illustrazione: UIImageView!
     @IBOutlet weak var welcome: UILabel!
@@ -24,6 +24,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var frase3: UILabel!
     @IBOutlet weak var domande3: UILabel!
     @IBOutlet weak var button3: UIButton!
+    static var tellUs: String = ""
     var text:[String] = []
     var start: String = ""
     var startNo: String = ""
@@ -49,7 +50,9 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             view.transform = CGAffineTransform(translationX: to, y: 0)
         })
     }
-    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+         nome1.text = ""
+    }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if self.view.frame.origin.y != 0{
             self.view.frame.origin.y += 150
@@ -295,8 +298,9 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
             PrimaTutorial.done = ENG.button[12]
             letsgo = ENG.button[13]
         }
-        button1.imageView?.image = UIImage(named: startNo)
         button3.imageView?.image = UIImage(named: letsgo)
+        print(startNo)
+        button1.imageView?.image = UIImage(named: startNo)
         
         welcome.text = text[1]
         frase1.text = text[2]
@@ -305,6 +309,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         frase3.text = text[5]
         domande3.text = text[7]
         LastStep.text = text[6]
+        PrimaTutorial.tellUs = text[8]
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
 
@@ -421,9 +426,10 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         sqlite3_prepare(db, queryString, -1, &stmt, nil)
         sqlite3_step(stmt)
         print("Saved successfully")
-    }
         
-    
+
+    }
+      
     @objc func dismissKeyboard1() {
         if self.view.frame.origin.y != 0{
             self.view.frame.origin.y += 150
@@ -441,7 +447,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func controllo(){
-        if(nome1.text != ""){
+        if(nome1.text != "" && nome1.text != text[4]){
             button1.isEnabled = true
             button1.imageView?.image = UIImage(named: start)
         } else{
@@ -488,6 +494,7 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
                 return UITableViewCell()
             }
             cell.Hi.text = "\(text[0]) \(String(describing: nome1.text).dropFirst(10).dropLast(2))!"
+            cell.frase.text = PrimaTutorial.tellUs
             cell.selectionStyle = .none
 
             return cell
