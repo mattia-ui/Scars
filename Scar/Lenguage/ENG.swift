@@ -217,7 +217,9 @@ class ENG: UIViewController{
             "Good Evening,",
             "Good Morning,"
         ]
-        
+         
+        static var Schemata1Text = ["Ready for a boost of self-esteem?","Daily","Weekly"]
+    
         static var Schermata2structInsENG = [ins(
         pod:[
             Cont(
@@ -450,8 +452,8 @@ class ENG: UIViewController{
         
         static var textOnGenerateAgain = ["The pattern in the large circle describes\n","your personality ","and the color inside \nrepresents ","the way you want to look\n","from the outside.\nThe two shapes on the outside recount\n","the way you would like to be ","and the \ntexture inside represents ","the perception you have of your sign",", that is in gold and occupies the center of the image, as ","Kintsugi art ","teaches!","Circle",": empathic - sociable","Zig Zag",": creative - aspiring","Triangle",": leader - focused","Rectangle",": curious - confused","Square", ": careful - analytic","Your Masterpiece was copied successfully"]
     
-        static var lingua = ["English","Italian"]
+        static var lingua = ["English","Italian","Language"]
     
-        static var textOnSettings = ["Language","About us"]
+        static var textOnSettings = ["Language","About us","Settings"]
         
 }

@@ -92,6 +92,7 @@ class Settins: UIViewController {
                    }
                    lingua.setTitle(text[0], for: .normal)
                    about.setTitle(text[1], for: .normal)
+        settingslabel.text = text[2]
     }
     
     @IBAction func lingua(_ sender: Any) {
@@ -99,6 +100,8 @@ class Settins: UIViewController {
     }
     
     @IBAction func aboutUS(_ sender: Any) {
+        UIApplication.shared.openURL(NSURL(string: "http://www.skinsugi.com")! as URL)
+
     }
 }
 

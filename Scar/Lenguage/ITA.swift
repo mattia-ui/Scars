@@ -10,9 +10,9 @@ import UIKit
 
 class ITA: UIViewController{
     
-    static var lingua = ["English","Italian"]
+    static var lingua = ["Inglese","Italiano","Lingua"]
     
-        static var textOnSettings = ["Language","About us"]
+    static var textOnSettings = ["Lingua","About us","Impostazioni"]
 
          static var goToLink: [String] = ["SeeMoreIta","SeeMoreMoviesIta","SeeMoreArticleIta","SeeMoreBooksIta","SeeMoreInspiringPeopleIta","SeeMorePodcastIta"]
             
@@ -130,6 +130,8 @@ class ITA: UIViewController{
                         "Marmo",
                         "Legno"
                     ]
+    
+    static var Schemata1Text = ["Pronto per una buona dose di autostima?","Attività giornaliere","Settimanale"]
                     
                     static var textOnLPassword = [""]
                     

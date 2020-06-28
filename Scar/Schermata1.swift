@@ -37,6 +37,9 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
     @IBOutlet weak var nome: UILabel!
     @IBOutlet weak var imagineOrario: UIImageView!
     @IBOutlet weak var numeroWeek: UILabel!
+    @IBOutlet weak var ready: UILabel!
+    @IBOutlet weak var daily: UILabel!
+    @IBOutlet weak var weekkkk: UILabel!
     var weeklyInfo: [WeeklyStruct] = []
     var frasiDeStoCazzo : [String] = []
     static var allCardsImages: [String] = []
@@ -118,6 +121,7 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
        
         viewDidLoad()
+        activity.reloadData()
         
         if(view.frame.height == 812){
             traslate(view: nome, aCircleTime: 0, to: 15)
@@ -254,11 +258,19 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
                           weeklyInfo = ENG.Schermata1weeklyInfo
                           frasiDeStoCazzo = ENG.Schermata1frasiDeStoCazzo
                           textSaluti = ENG.Schermata1Saluti
+                        ready.text = ENG.Schemata1Text[0]
+                        daily.text = ENG.Schemata1Text[1]
+                        weekkkk.text = ENG.Schemata1Text[2]
+                        traslate(view: numeroWeek, aCircleTime: 0, to: -14)
+
                       } else if (lingua == "ita"){
                           Schermata1.allCardsImages = ITA.allCardsImages
                           weeklyInfo = ITA.Schermata1weeklyInfo
                           frasiDeStoCazzo = ITA.Schermata1frasiDeStoCazzo
                           textSaluti = ITA.Schermata1Saluti
+                        ready.text = ITA.Schemata1Text[0]
+                        daily.text = ITA.Schemata1Text[1]
+                        weekkkk.text = ITA.Schemata1Text[2]
                       }
        
         
@@ -305,7 +317,8 @@ class Schermata1: UIViewController, UICollectionViewDataSource, UICollectionView
             w = Int(String(cString: sqlite3_column_text(stmt, 1))) ?? 0
         }
         if(w == 8){w = 0}
-        numeroWeek.text = "n.\(w + 1)"
+//        numeroWeek.text = "n.\(w + 1)"
+        numeroWeek.text = ""
                 
         if(month2 > m || day2 > day){
             queryString = "UPDATE Date SET mese = '\(month2)', giorno = '\(day2)', ora = '\(hour2)', minuti = '\(minute2)';"

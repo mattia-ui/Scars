@@ -45,12 +45,12 @@ class ChooseShape2: UIViewController  {
         }
                          
         if(lingua == "eng"){
-            text = ENG.textOnChooseShape
+            text = ENG.textOnChooseShape2
             shape = ENG.Shape
             submit = ENG.button[4]
             submitNo = ENG.button[5]
         } else if (lingua == "ita"){
-            text = ITA.textOnChooseShape
+            text = ITA.textOnChooseShape2
             shape = ITA.Shape
             submit = ITA.button[4]
             submitNo = ITA.button[5]

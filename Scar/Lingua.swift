@@ -15,6 +15,7 @@ class Lingua: UIViewController {
     @IBOutlet weak var inglese: UIButton!
     @IBOutlet weak var italiano: UIButton!
     @IBOutlet weak var ill: UIImageView!
+    @IBOutlet weak var li: UILabel!
     
     func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
            print(view.frame.origin.x)
@@ -63,6 +64,9 @@ class Lingua: UIViewController {
         }
         inglese.setTitle(text[0], for: .normal)
         italiano.setTitle(text[1], for: .normal)
+        
+       li.text = text[2]
+
         
     }
     
