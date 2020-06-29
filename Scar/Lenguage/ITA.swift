@@ -131,7 +131,7 @@ class ITA: UIViewController{
                         "Legno"
                     ]
     
-    static var Schemata1Text = ["Pronto per una buona dose di autostima?","Attività giornaliere","Settimanale"]
+    static var Schemata1Text = ["Pronto per una dose di autostima?","Giornaliere","Settimanale"]
                     
                     static var textOnLPassword = [""]
                     

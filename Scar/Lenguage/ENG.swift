@@ -207,7 +207,6 @@ class ENG: UIViewController{
             "Don't give up, you're almost done.",
             "You did it great!" ,
             "Power! Only one is missing.",
-            "You did it great!" ,
             "Well done! See you tomorrow.",
             "Start the activities and mark them as done!"
         ]
