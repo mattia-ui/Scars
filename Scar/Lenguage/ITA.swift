@@ -448,7 +448,7 @@ class ITA: UIViewController{
                     
                     static var textOnViewController = ["Traccia e"," riempi la forma"," del tuo segno."]
                     
-                     static var textOnPrimaTutorial = ["Ciao,","Questo è Skinsugi!","Siamo felici di averti con noi.","Inserisci il tuo nome","Il mio nome è..","Prova a riflettere sulle risposte","Ci siamo quasi","Come ti fa sentire il tuo segno?\nCome pensi che gli altri lo vedano?","Da cosa ti lasci ispirare?"]
+                     static var textOnPrimaTutorial = ["Ciao,","Questo è Skinsugi!","Siamo felici di averti con noi.","Inserisci il tuo nome","Il mio nome è..","Prova a riflettere sulle risposte","Ci siamo quasi","Come ti fa sentire il tuo segno?Come pensi che gli altri lo vedano?","Da cosa ti lasci ispirare?"]
                     
                     static var textOnSecondaTutorial = ["Raccontando la storia del tuo segno indelebile puoi cambiare il modo in cui guardi il tuo corpo e quello degli altri.","si prenderà cura della tua storia","Scopri come creare il tuo Skinsugi masterpiece.","Tempo di esplorare","Attività e Insights","Qui troverai consigli interessanti e contenuti sempre nuovi!","Prima di iniziare","#skinsugi è condivisione"]
                     

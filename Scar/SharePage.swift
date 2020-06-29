@@ -308,7 +308,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
     @IBAction func copys(_ sender: AnyObject) {
         
         UIPasteboard.general.string = descriptionField.text
-        let ac = UIAlertController(title: "Description Copied", message: text[13], preferredStyle: .alert)
+        let ac = UIAlertController(title: "Description Copied", message: text[12], preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
     }

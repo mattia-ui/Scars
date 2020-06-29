@@ -108,7 +108,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return SecretCollection.allImages?.count ?? 0
+        return (SecretCollection.allImages?.count ?? 0)/2 
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
