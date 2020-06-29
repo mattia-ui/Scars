@@ -296,12 +296,13 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
              
         //Recupera Valore
         var stmt: OpaquePointer?
-        let queryString = "SELECT * FROM Insights"
+        var queryString = "SELECT * FROM Insights"
         if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
         let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("error preparing insert: \(errmsg)")
             return
         }
+        
         while(sqlite3_step(stmt) == SQLITE_ROW){
             Schermata2.insights[0] = String(cString: sqlite3_column_text(stmt, 1))
             Schermata2.insights[1] = String(cString: sqlite3_column_text(stmt, 2))
@@ -310,6 +311,46 @@ class Schermata2: UIViewController, UICollectionViewDataSource,UICollectionViewD
             Schermata2.insights[4] = String(cString: sqlite3_column_text(stmt, 5))
             Schermata2.insights[5] = String(cString: sqlite3_column_text(stmt, 6))
         }
+        //Recupera Valore
+        queryString = "SELECT * FROM Lingua"
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error preparing insert: \(errmsg)")
+            return
+        }
+              
+        var lingua = ""
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            lingua = String(cString: sqlite3_column_text(stmt, 1))
+        }
+              
+        if(lingua == "eng"){
+          for i in 0..<6{
+              switch Schermata2.insights[i] {
+                  case "TEDx": Schermata2.insights[i] = "TEDx"
+                  case "Film e serie Tv": Schermata2.insights[i] = "Movies and Series"
+                  case "Articoli": Schermata2.insights[i] = "Articles"
+                  case "Libri": Schermata2.insights[i] = "Books"
+                  case "Inspiring People": Schermata2.insights[i] = "Inspiring People"
+                  case "Podcasts": Schermata2.insights[i] = "Podcasts"
+                  default: print("ok")
+              }
+          }
+        } else if (lingua == "ita"){
+            for i in 0..<6{
+                switch Schermata2.insights[i] {
+                    case "TEDx": Schermata2.insights[i] = "TEDx"
+                    case "Movies and Series": Schermata2.insights[i] = "Film e serie Tv"
+                    case "Articles": Schermata2.insights[i] = "Articoli"
+                    case "Books": Schermata2.insights[i] = "Libri"
+                    case "Inspiring People": Schermata2.insights[i] = "Inspiring People"
+                    case "Podcasts": Schermata2.insights[i] = "Podcasts"
+                    default: print("ok")
+                }
+            }
+        }
+        
+        
     }
     
     @objc func buttonName(notification: NSNotification) {

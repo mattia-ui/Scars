@@ -210,7 +210,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                 imgPrincipale = UIImage(named: structBackImageType[0].neutralSquare[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].neutralSquare[randomInt].name
             }
-        } else if(ChooseShape.shape1 == shape[1]){
+        } else if(ChooseShape.shape1 == shape[3]){
             if(ChoosePalette.color == palette[1]){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].warmCircle[randomInt].name)
@@ -238,7 +238,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
                 imgPrincipale = UIImage(named: structBackImageType[0].neutralTriangle[randomInt].name)
                 nomeImgPrincipale = structBackImageType[0].neutralTriangle[randomInt].name
             }
-        } else if(ChooseShape.shape1 == shape[3]){
+        } else if(ChooseShape.shape1 == shape[1]){
             if(ChoosePalette.color == palette[1]){
                 let randomInt = Int.random(in: 0..<4)
                 imgPrincipale = UIImage(named: structBackImageType[0].warmRect[randomInt].name)
