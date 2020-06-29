@@ -115,7 +115,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! CollectionViewCell
         cell.layer.borderColor = (UIColor.init(named: "#2E2933")?.cgColor)
         cell.layer.borderWidth = 0.3
-        cell.myImageView.image = SecretCollection.allImages?[indexPath.row]
+        cell.myImageView.image = SecretCollection.allImages?[indexPath.row].imageWithInsets(insets: UIEdgeInsets(top: 20, left: 20, bottom: 65, right: 65))
         return cell
     }
     
