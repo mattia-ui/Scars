@@ -144,7 +144,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         cell.layer.borderWidth = 0.3
         cell.myImageView.image = SecretCollection.allImages?[indexPath.row].imageWithInsets(insets: UIEdgeInsets(top: 20, left: 20, bottom: 70, right: 70))
          cell.myImageView.contentMode = .scaleAspectFill
-         cell.myImageView.image = SecretCollection.allImages?[indexPath.row].withAlignmentRectInsets(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
+         cell.myImageView.image = SecretCollection.allImages?[indexPath.row].withAlignmentRectInsets(UIEdgeInsets(top: -5, left: -5, bottom: -5, right: -5))
         return cell
     }
     
