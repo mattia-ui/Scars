@@ -56,7 +56,8 @@ class ChooseShape2: UIViewController  {
             submitNo = ITA.button[5]
         }
         
-        nex.imageView?.image = UIImage(named: submitNo)
+        nex.setImage(UIImage(named: submitNo), for: .disabled)
+        nex.setImage(UIImage(named:submit), for: .normal)
         var boldText = text[0]
         var attributedString = NSMutableAttributedString(string:boldText)
 

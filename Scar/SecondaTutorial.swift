@@ -125,7 +125,7 @@ class SecondaTutorial : UIViewController {
                 self.TiziaBionda.alpha = 1
                 self.button.alpha = 1
             print(b)
-            button.imageView?.image = UIImage(named: b)
+            button.setImage(UIImage(named: b), for: .normal)
 //            }
         }
     }

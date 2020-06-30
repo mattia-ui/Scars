@@ -300,7 +300,8 @@ class PrimaTutorial : UIViewController, UITableViewDataSource, UITableViewDelega
         }
         button3.imageView?.image = UIImage(named: letsgo)
         print(startNo)
-        button1.imageView?.image = UIImage(named: startNo)
+        button1.setImage(UIImage(named: startNo), for: .disabled)
+        button1.setImage(UIImage(named:start), for: .normal)
         
         welcome.text = text[1]
         frase1.text = text[2]

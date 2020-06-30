@@ -71,7 +71,8 @@ class ChoosePalette: UIViewController  {
                       submitNo = ITA.button[5]
                   }
     
-
+            nex.setImage(UIImage(named: submitNo), for: .disabled)
+            nex.setImage(UIImage(named:submit), for: .normal)
             
             let boldText = text[0]
             let attributedString = NSMutableAttributedString(string:boldText)

@@ -31,7 +31,9 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        screen.image = img
+        if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
+            screen.image = UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent("collage").path)
+        }
         viewDidLoad()
     }
     

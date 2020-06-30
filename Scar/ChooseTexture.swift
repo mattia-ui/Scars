@@ -89,8 +89,8 @@ class ChooseTexture: UIViewController  {
                        no.imageView?.image = UIImage(named: ITA.button[7])
                    }
           
-           nex.imageView?.image = UIImage(named: submitNo)
-                   
+           nex.setImage(UIImage(named: submitNo), for: .disabled)
+           nex.setImage(UIImage(named:submit), for: .normal)
           
          var boldText = text[0]
            var attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: 20)]

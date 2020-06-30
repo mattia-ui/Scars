@@ -873,6 +873,12 @@ let randomSize = Float.random(in: 1.30..<1.35)
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let image = screen.image {
+                   if let data = image.pngData() {
+                       let filename = getDocumentsDirectory().appendingPathComponent("collage.png")
+                       try? data.write(to: filename)
+                   }
+               }
         if (segue.identifier == "jamm") {
             // pass data to next view
             (segue.destination as! SharePage).img = screen.image ?? UIImage()

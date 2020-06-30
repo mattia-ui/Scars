@@ -55,8 +55,9 @@ class ChooseShape: UIViewController  {
                   submit = ITA.button[4]
                   submitNo = ITA.button[5]
               }
+        nex.setImage(UIImage(named: submitNo), for: .disabled)
+        nex.setImage(UIImage(named:submit), for: .normal)
         
-         nex.imageView?.image = UIImage(named: submitNo)
         
         question.text = text[12]
         var boldText = text[0]
