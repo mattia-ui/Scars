@@ -12,79 +12,7 @@ import SQLite3
 
 class ChoosePalette: UIViewController  {
    
-    var text:[String] = []
-    var palette:[String] = []
-    var submit: String = ""
-    var submitNo: String = ""
 
-    override func viewDidLoad() {
-        overrideUserInterfaceStyle = .light
-        nex.isEnabled = false
-        
-        var db: OpaquePointer?
-                                            
-              //Si connette al DB
-              let fileURL = try!
-              FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
-              if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
-                  print("error opening database")
-              }
-                                          
-              //Recupera Valore
-              var stmt: OpaquePointer?
-              let queryString = "SELECT * FROM Lingua"
-              if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
-              let errmsg = String(cString: sqlite3_errmsg(db)!)
-              print("error preparing insert: \(errmsg)")
-                  return
-              }
-                              
-              var lingua = ""
-              while(sqlite3_step(stmt) == SQLITE_ROW){
-                  lingua = String(cString: sqlite3_column_text(stmt, 1))
-              }
-                                      
-              if(lingua == "eng"){
-                  text = ENG.textOnChoosePalette
-                  palette = ENG.Palette
-                  submit = ENG.button[4]
-                  submitNo = ENG.button[5]
-              } else if (lingua == "ita"){
-                  text = ITA.textOnChoosePalette
-                  palette = ITA.Palette
-                  submit = ITA.button[4]
-                  submitNo = ITA.button[5]
-              }
-        
-        let boldText = text[0]
-        let attributedString = NSMutableAttributedString(string:boldText)
-
-        let normalText = text[1]
-        let attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: 20)]
-        let normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
-
-       attributedString.append(normalString)
-       
-       label.attributedText = attributedString
-        
-        var normalText1 = text[2]
-        var attrs1 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
-        var normalString1 = NSMutableAttributedString(string:normalText1, attributes:attrs1 as [NSAttributedString.Key : Any])
-        cool.setAttributedTitle(normalString1, for: .normal)
-        
-        normalText1 = text[3]
-        attrs1 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
-        normalString1 = NSMutableAttributedString(string:normalText1, attributes:attrs1 as [NSAttributedString.Key : Any])
-        warm.setAttributedTitle(normalString1, for: .normal)
-        
-        normalText1 = text[4]
-        attrs1 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
-        normalString1 = NSMutableAttributedString(string:normalText1, attributes:attrs1 as [NSAttributedString.Key : Any])
-        neutral.setAttributedTitle(normalString1, for: .normal)
-        
-        question.text = text[5]
-
-    }
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var cool: UIButton!
@@ -98,6 +26,81 @@ class ChoosePalette: UIViewController  {
     @IBOutlet weak var nex: UIButton!
     @IBOutlet weak var question: UILabel!
     static var color: String!
+    
+        var text:[String] = []
+        var palette:[String] = []
+        var submit: String = ""
+        var submitNo: String = ""
+
+        override func viewDidLoad() {
+            overrideUserInterfaceStyle = .light
+            nex.isEnabled = false
+            
+            var db: OpaquePointer?
+                                                
+                  //Si connette al DB
+                  let fileURL = try!
+                  FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+                  if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+                      print("error opening database")
+                  }
+                                              
+                  //Recupera Valore
+                  var stmt: OpaquePointer?
+                  let queryString = "SELECT * FROM Lingua"
+                  if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+                  let errmsg = String(cString: sqlite3_errmsg(db)!)
+                  print("error preparing insert: \(errmsg)")
+                      return
+                  }
+                                  
+                  var lingua = ""
+                  while(sqlite3_step(stmt) == SQLITE_ROW){
+                      lingua = String(cString: sqlite3_column_text(stmt, 1))
+                  }
+                                          
+                  if(lingua == "eng"){
+                      text = ENG.textOnChoosePalette
+                      palette = ENG.Palette
+                      submit = ENG.button[4]
+                      submitNo = ENG.button[5]
+                  } else if (lingua == "ita"){
+                      text = ITA.textOnChoosePalette
+                      palette = ITA.Palette
+                      submit = ITA.button[4]
+                      submitNo = ITA.button[5]
+                  }
+    
+
+            
+            let boldText = text[0]
+            let attributedString = NSMutableAttributedString(string:boldText)
+
+            let normalText = text[1]
+            let attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: 20)]
+            let normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
+
+           attributedString.append(normalString)
+           
+           label.attributedText = attributedString
+            
+            var normalText1 = text[2]
+            var attrs1 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
+            var normalString1 = NSMutableAttributedString(string:normalText1, attributes:attrs1 as [NSAttributedString.Key : Any])
+            cool.setAttributedTitle(normalString1, for: .normal)
+            
+            normalText1 = text[3]
+            attrs1 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
+            normalString1 = NSMutableAttributedString(string:normalText1, attributes:attrs1 as [NSAttributedString.Key : Any])
+            warm.setAttributedTitle(normalString1, for: .normal)
+            
+            normalText1 = text[4]
+            attrs1 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
+            normalString1 = NSMutableAttributedString(string:normalText1, attributes:attrs1 as [NSAttributedString.Key : Any])
+            neutral.setAttributedTitle(normalString1, for: .normal)
+            
+            question.text = text[5]
+        }
     
     func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
         print(view.frame.origin.x)

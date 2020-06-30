@@ -36,10 +36,12 @@ class ITA: UIViewController{
                     "DoneNIta", //Bottone done schermata tutorial disabilitato
                     "Let'sgoIta", //Bottone let's go schermata tutorial
                     "proceedIta", //Bottone procedere Collage
-                    "share (2)Ita", //Bottone schare Generate Again
+                    "shareIta (2)", //Bottone schare Generate Again
                     "generateIta", //Bottone generate Generate Again
                     "shareIta", //Bottone schare Share page
-                    "shareanonymously (2)Ita",//Bottone schare anonimo Share page
+                    "shareanonymuslyIta (2)",//Bottone schare anonimo Share page
+                    "submitanswerIta",
+                    "submitanswernoIta"
                 ]
 
                 static var insights = ["TEDx","Film e serie Tv","Articoli","Libri","Inspiring People","Podcasts"]
@@ -461,8 +463,8 @@ class ITA: UIViewController{
                     
                     static var textOnSharePage = ["Condividere le tue emozioni con gli altri è fondamentale per la tua ","emotività ","rafforza l autostima",",allontana le insicurezze, e ti insegna che ","non sei solo",", mai.\n","\nCosa stai aspettando?\nRacconta la tua storia e condividila su ","Instagram ","con l'hashtag ","o invialo a noi\nin forma anonima puoi essere d'ispirazione anche senza mostrare il tuo nome!\n ","Scrivi la storia che si cela dietro il tuo segno indelebile…  - ","(max 1100 caratteri)","La tua storia è stata copiata correttamente","Ispira gli altri","Copia la descrizione","Non ora"]
                     
-                    static var textOnGenerateAgain = ["Il pattern nel cerchio più grande descrive ","la tua personalità ","e il colore al suo interno rappresenta ","il modo in cui vuoi apparire"," dall’esterno.\nLe due forme geometriche all’esterno raccontano"," il modo in cui vorresti essere "," e la texture al loro interno rappresenta ","la percezione che hai del tuo segno indelebile",", che è in oro ed occupa il centro dell’immagine, come ","l’arte del Kintsugi ","insegna!","Cerchio",": empatia - socialità","Zig Zag",": estro - ambizione","Triangolo",": leadership - tenacia","Rettangolo",": curiosità - caos","Quadrato", ": cautela - precisione","Il tuo Skinsugi Masterpiece è stato copiato correttamente"]
-     static var textPostCollage = ["Crea il tuo Masterpiece!"]
+                    static var textOnGenerateAgain = ["Il pattern nel cerchio più grande descrive ","la tua personalità ","e il colore al suo interno rappresenta ","il modo in cui vuoi apparire"," dall’esterno.\nLe due forme geometriche all’esterno raccontano"," il modo in cui vorresti essere "," e la texture al loro interno rappresenta ","la percezione che hai del tuo segno indelebile",", che è in oro ed occupa il centro dell’immagine, come ","l’arte del Kintsugi ","insegna!","Cerchio",": empatia - socialità","Zig Zag",": estro - ambizione","Triangolo",": leadership - tenacia","Rettangolo",": curiosità - caos","Quadrato", ": cautela - precisione","Il tuo Skinsugi Masterpiece è stato copiato correttamente","yourmasterpiece-1"]
+     static var textPostCollage = ["Crea il tuo Masterpiece!","navInsta8Ita","navInsta8Ita"]
      static var textCollage = ["Questo è il tuo #skinsugi!","Scopri di più sul tuo Masterpiece","Scopri di più sull'arte del Kinsugi"]
     
                 }

@@ -12,104 +12,7 @@ import SQLite3
 
 class ChooseTexture: UIViewController  {
    
-    var text: [String] = []
-    var texture: [String] = []
-    var submit: String = ""
-    var submitNo: String = ""
-    
-    override func viewDidLoad() {
-        overrideUserInterfaceStyle = .light
-        nex.isEnabled = false
-        
-        var db: OpaquePointer?
-                                               
-                 //Si connette al DB
-                 let fileURL = try!
-                 FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
-                 if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
-                     print("error opening database")
-                 }
-                                             
-                 //Recupera Valore
-                 var stmt: OpaquePointer?
-                 let queryString = "SELECT * FROM Lingua"
-                 if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
-                 let errmsg = String(cString: sqlite3_errmsg(db)!)
-                 print("error preparing insert: \(errmsg)")
-                     return
-                 }
-                                 
-                 var lingua = ""
-                 while(sqlite3_step(stmt) == SQLITE_ROW){
-                     lingua = String(cString: sqlite3_column_text(stmt, 1))
-                 }
-                                         
-                 if(lingua == "eng"){
-                     text = ENG.textOnChooseTexture
-                     texture = ENG.Texture
-                     submit = ENG.button[0]
-                     submitNo = ENG.button[5]
-                     yes.imageView?.image = UIImage(named: ENG.button[6])
-                     no.imageView?.image = UIImage(named: ENG.button[7])
-                 } else if (lingua == "ita"){
-                     text = ITA.textOnChooseTexture
-                     texture = ITA.Texture
-                     submit = ITA.button[0]
-                     submitNo = ITA.button[5]
-                     yes.imageView?.image = UIImage(named: ITA.button[6])
-                     no.imageView?.image = UIImage(named: ITA.button[7])
-                 }
-                 
-        
-       var boldText = text[0]
-         var attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: 20)]
-        let attributedString = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
-
-        var  normalText = text[1]
-        var normalString = NSMutableAttributedString(string:normalText)
-
-        attributedString.append(normalString)
-        
-         boldText = text[2]
-         attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: 20)]
-        
-        let attributedString2 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
-        
-        attributedString.append(attributedString2)
-               
-        label.attributedText = attributedString
-        
-        normalText = text[3]
-        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
-        normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
-        sea.setAttributedTitle(normalString, for: .normal)
-        
-        normalText = text[4]
-        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
-        normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
-        cratere.setAttributedTitle(normalString, for: .normal)
-        
-        normalText = text[5]
-        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
-        normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
-        texile.setAttributedTitle(normalString, for: .normal)
-        
-        normalText = text[6]
-        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
-        normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
-        marble.setAttributedTitle(normalString, for: .normal)
-               
-        normalText = text[7]
-        attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
-        normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
-        wood.setAttributedTitle(normalString, for: .normal)
-        
-        question.text = text[8]
-        label1.text = text[9]
-        label2.text = text[10]
-        yes.setTitle(text[11], for: .normal)
-
-    }
+  
 
     @IBOutlet weak var stackO: UIStackView!
     @IBOutlet weak var sea: UIButton!
@@ -137,6 +40,107 @@ class ChooseTexture: UIViewController  {
     @IBOutlet weak var results: UILabel!
     @IBOutlet weak var yes: UIButton!
     @IBOutlet weak var no: UIButton!
+    
+    var text: [String] = []
+      var texture: [String] = []
+      var submit: String = ""
+      var submitNo: String = ""
+      
+      override func viewDidLoad() {
+          overrideUserInterfaceStyle = .light
+          nex.isEnabled = false
+          
+          var db: OpaquePointer?
+                                                 
+                   //Si connette al DB
+                   let fileURL = try!
+                   FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+                   if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+                       print("error opening database")
+                   }
+                                               
+                   //Recupera Valore
+                   var stmt: OpaquePointer?
+                   let queryString = "SELECT * FROM Lingua"
+                   if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+                   let errmsg = String(cString: sqlite3_errmsg(db)!)
+                   print("error preparing insert: \(errmsg)")
+                       return
+                   }
+                                   
+                   var lingua = ""
+                   while(sqlite3_step(stmt) == SQLITE_ROW){
+                       lingua = String(cString: sqlite3_column_text(stmt, 1))
+                   }
+                                           
+                   if(lingua == "eng"){
+                       text = ENG.textOnChooseTexture
+                       texture = ENG.Texture
+                       submit = ENG.button[19]
+                       submitNo = ENG.button[20]
+                       yes.imageView?.image = UIImage(named: ENG.button[6])
+                       no.imageView?.image = UIImage(named: ENG.button[7])
+                   } else if (lingua == "ita"){
+                       text = ITA.textOnChooseTexture
+                       texture = ITA.Texture
+                       submit = ITA.button[19]
+                       submitNo = ITA.button[20]
+                       yes.imageView?.image = UIImage(named: ITA.button[6])
+                       no.imageView?.image = UIImage(named: ITA.button[7])
+                   }
+          
+           nex.imageView?.image = UIImage(named: submitNo)
+                   
+          
+         var boldText = text[0]
+           var attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: 20)]
+          let attributedString = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
+
+          var  normalText = text[1]
+          var normalString = NSMutableAttributedString(string:normalText)
+
+          attributedString.append(normalString)
+          
+           boldText = text[2]
+           attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: 20)]
+          
+          let attributedString2 = NSMutableAttributedString(string:boldText, attributes:attrs as [NSAttributedString.Key : Any])
+          
+          attributedString.append(attributedString2)
+                 
+          label.attributedText = attributedString
+          
+          normalText = text[3]
+          attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
+          normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
+          sea.setAttributedTitle(normalString, for: .normal)
+          
+          normalText = text[4]
+          attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
+          normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
+          cratere.setAttributedTitle(normalString, for: .normal)
+          
+          normalText = text[5]
+          attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
+          normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
+          texile.setAttributedTitle(normalString, for: .normal)
+          
+          normalText = text[6]
+          attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
+          normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
+          marble.setAttributedTitle(normalString, for: .normal)
+                 
+          normalText = text[7]
+          attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
+          normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
+          wood.setAttributedTitle(normalString, for: .normal)
+          
+          question.text = text[8]
+          label1.text = text[9]
+          label2.text = text[10]
+          yes.setTitle(text[11], for: .normal)
+
+      }
     
     func traslate(view: UIView, aCircleTime: Double, to: CGFloat) {
         print(view.frame.origin.x)
@@ -236,6 +240,7 @@ class ChooseTexture: UIViewController  {
         if sender.isSelected {
             sea.isSelected = false
             nex.isEnabled = false
+            nex.imageView?.image = UIImage(named: submitNo)
         } else {
             sea.isSelected = true
             wood.isSelected = false
@@ -243,6 +248,7 @@ class ChooseTexture: UIViewController  {
             cratere.isSelected = false
             marble.isSelected = false
             nex.isEnabled = true
+                 nex.imageView?.image = UIImage(named: submit)
             ChooseTexture.texture1 = texture[0]
         }
     }
@@ -251,6 +257,7 @@ class ChooseTexture: UIViewController  {
         if sender.isSelected {
             wood.isSelected = false
             nex.isEnabled = false
+                 nex.imageView?.image = UIImage(named: submitNo)
         } else {
             sea.isSelected = false
             wood.isSelected = true
@@ -258,6 +265,7 @@ class ChooseTexture: UIViewController  {
             cratere.isSelected = false
             marble.isSelected = false
             nex.isEnabled = true
+                 nex.imageView?.image = UIImage(named: submit)
             ChooseTexture.texture1 = texture[4]
         }
     }
@@ -266,6 +274,7 @@ class ChooseTexture: UIViewController  {
         if sender.isSelected {
             texile.isSelected = false
             nex.isEnabled = false
+                 nex.imageView?.image = UIImage(named: submitNo)
         } else {
             sea.isSelected = false
             wood.isSelected = false
@@ -273,6 +282,7 @@ class ChooseTexture: UIViewController  {
             cratere.isSelected = false
             marble.isSelected = false
             nex.isEnabled = true
+                 nex.imageView?.image = UIImage(named: submit)
             ChooseTexture.texture1 = texture[2]
         }
     }
@@ -281,6 +291,7 @@ class ChooseTexture: UIViewController  {
         if sender.isSelected {
             cratere.isSelected = false
             nex.isEnabled = false
+                 nex.imageView?.image = UIImage(named: submitNo)
         } else {
             sea.isSelected = false
             wood.isSelected = false
@@ -288,6 +299,7 @@ class ChooseTexture: UIViewController  {
             cratere.isSelected = true
             marble.isSelected = false
             nex.isEnabled = true
+                 nex.imageView?.image = UIImage(named: submit)
             ChooseTexture.texture1 = texture[1]
         }
     }
@@ -296,6 +308,7 @@ class ChooseTexture: UIViewController  {
         if sender.isSelected {
             marble.isSelected = false
             nex.isEnabled = false
+                 nex.imageView?.image = UIImage(named: submitNo)
         } else {
             sea.isSelected = false
             wood.isSelected = false
@@ -303,6 +316,7 @@ class ChooseTexture: UIViewController  {
             cratere.isSelected = false
             marble.isSelected = true
             nex.isEnabled = true
+                 nex.imageView?.image = UIImage(named: submit)
             ChooseTexture.texture1 = texture[3]
         }
     }

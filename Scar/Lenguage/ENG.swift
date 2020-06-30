@@ -35,7 +35,9 @@ class ENG: UIViewController{
             "share (2)", //Bottone schare Generate Again
             "generate", //Bottone generate Generate Again
             "share", //Bottone schare Share page
-            "shareanonymously (2)",//Bottone schare anonimo Share page
+            "shareanonymously (2)",//Bottone schare anonimo Share page,
+            "submit azzurro",
+            "submitno"
         ]
 
         static var insights = ["TEDx","Movies and Series","Articles","Books","Inspiring People","Podcasts"]
@@ -457,13 +459,13 @@ class ENG: UIViewController{
         
         static var textOnSharePage = ["Sharing your emotions with others is \nvery important for your ","emotional state,\n","it ","increases self-esteem",", decreases insecurities, and makes you understand that ","you are not alone",", ever.","\nWhat are you waiting for?\nTell your story and share it on ","Instagram"," with the hashtag ","or send it to us anonymously, you can be inspiring even without showing your name! ","Tell your story behind your indelible sign here…  - ","(max 1100 characters)","Your description was copied successfully","Be an inspiration","Tell your story behind your indelible sign here…  - #skinsugi (max 1100 character)","Copy caption","Not now"]
         
-        static var textOnGenerateAgain = ["The pattern in the large circle describes\n","your personality ","and the color inside \nrepresents ","the way you want to look\n","from the outside.\nThe two shapes on the outside recount\n","the way you would like to be ","and the \ntexture inside represents ","the perception you have of your sign",", that is in gold and occupies the center of the image, as ","Kintsugi art ","teaches!","Circle",": empathic - sociable","Zig Zag",": creative - aspiring","Triangle",": leader - focused","Rectangle",": curious - confused","Square", ": careful - analytic","Your Masterpiece was copied successfully"]
+        static var textOnGenerateAgain = ["The pattern in the large circle describes\n","your personality ","and the color inside \nrepresents ","the way you want to look\n","from the outside.\nThe two shapes on the outside recount\n","the way you would like to be ","and the \ntexture inside represents ","the perception you have of your sign",", that is in gold and occupies the center of the image, as ","Kintsugi art ","teaches!","Circle",": empathic - sociable","Zig Zag",": creative - aspiring","Triangle",": leader - focused","Rectangle",": curious - confused","Square", ": careful - analytic","Your Masterpiece was copied successfully","yourmasterpiece-1"]
     
         static var lingua = ["English","Italian","Language"]
     
         static var textOnSettings = ["Language","About us","Settings"]
     
-    static var textPostCollage = ["Create your Masterpiece!"]
+    static var textPostCollage = ["Create your Masterpiece!","navInsta8","navInsta"]
     
     static var textCollage = ["This is your #skinsugi!","Discover more about your Masterpiece","Discover more about Kinsugi"]
         

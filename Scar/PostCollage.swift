@@ -84,12 +84,12 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
             
 
            }else if(view.frame.height == 667){
-            if(lingua == "ENG"){navInsta.image = UIImage(named: "navInsta8")}
-            else if(lingua == "ITA"){
-                
-                navInsta.image = UIImage(named: "navInsta8Ita")
-                
-            }
+//            if(lingua == "ENG"){navInsta.image = UIImage(named: "navInsta8")}
+//            else if(lingua == "ITA"){
+//
+//                navInsta.image = UIImage(named: "navInsta8Ita")
+//
+//            }
               traslate(view: button, aCircleTime: 0, to: -43)
             traslate(view: nex, aCircleTime: 0, to: 35)
             traslate(view: illmast, aCircleTime: 0, to: 10)
@@ -143,6 +143,8 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         cell.layer.borderColor = (UIColor.init(named: "#2E2933")?.cgColor)
         cell.layer.borderWidth = 0.3
         cell.myImageView.image = SecretCollection.allImages?[indexPath.row].imageWithInsets(insets: UIEdgeInsets(top: 20, left: 20, bottom: 70, right: 70))
+         cell.myImageView.contentMode = .scaleAspectFill
+         cell.myImageView.image = SecretCollection.allImages?[indexPath.row].withAlignmentRectInsets(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
         return cell
     }
     
@@ -190,11 +192,21 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
                  }
                               
                  if(lingua == "eng"){
-                     buttonImg = ENG.button[3]
+                    buttonImg = ENG.button[3]
                     createY.text = ENG.textPostCollage[0]
+                    if(view.frame.height == 667){
+                        navInsta.image = UIImage(named: ENG.textPostCollage[1])
+                    } else {
+                        navInsta.image = UIImage(named: ENG.textPostCollage[2])
+                    }
                  } else if (lingua == "ita"){
-                     buttonImg = ITA.button[3]
-                     createY.text = ITA.textPostCollage[0]
+                    buttonImg = ITA.button[3]
+                    createY.text = ITA.textPostCollage[0]
+                     if(view.frame.height == 667){
+                        navInsta.image = UIImage(named: ITA.textPostCollage[1])
+                    } else {
+                        navInsta.image = UIImage(named: ITA.textPostCollage[2])
+                    }
                  }
                  
                  nex.imageView?.image = UIImage(named: buttonImg)

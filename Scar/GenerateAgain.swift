@@ -95,6 +95,7 @@ class GenerateAgain: UIViewController {
                        GenerateAgainButton.imageView?.image = UIImage(named: ITA.button[16])
                    }
         
+        imageNav.image = UIImage(named: text[22])
         img.layer.borderWidth = 0.4
         img.layer.masksToBounds = true
         img.layer.borderColor = (UIColor.init(named: "#2E2933")?.cgColor)
