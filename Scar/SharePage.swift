@@ -23,6 +23,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
     @IBOutlet weak var notN: UIButton!
     @IBOutlet weak var beAn: UILabel!
     @IBOutlet weak var share: UIButton!
+    @IBOutlet weak var weWill: UILabel!
     @IBOutlet weak var shareAnonimo: UIButton!
     var text:[String] = []
    
@@ -194,6 +195,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
         notN.setAttributedTitle(b, for: .normal)
         
         beAn.text = text[13]
+        weWill.text = text[16]
     }
     
     @objc func dismissKeyboard() {
