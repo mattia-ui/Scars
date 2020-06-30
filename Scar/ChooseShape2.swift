@@ -122,6 +122,8 @@ class ChooseShape2: UIViewController  {
         
         zigZag.setAttributedTitle(attributedString, for: .normal)
         
+        question.text = text[12]
+        
         
         
     }

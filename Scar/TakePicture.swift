@@ -135,6 +135,8 @@ class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePick
 
         
                label2.attributedText = attributedString4
+        
+        question.text = text[7]
     }
     
     //Fai la foto.

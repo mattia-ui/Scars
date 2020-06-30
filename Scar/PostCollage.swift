@@ -15,6 +15,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
     @IBOutlet weak var createYour: UILabel!
     @IBOutlet weak var illmast: UIImageView!
     @IBOutlet weak var navInsta: UIImageView!
+    @IBOutlet weak var createY: UILabel!
     var blur = 0
     @IBOutlet weak var viewPerBlur: UIView!
     @IBOutlet weak var viewSulBlur: UIView!
@@ -164,8 +165,10 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
                               
                  if(lingua == "eng"){
                      buttonImg = ENG.button[3]
+                    createY.text = ENG.textPostCollage[0]
                  } else if (lingua == "ita"){
                      buttonImg = ITA.button[3]
+                     createY.text = ITA.textPostCollage[0]
                  }
                  
                  nex.imageView?.image = UIImage(named: buttonImg)

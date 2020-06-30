@@ -81,6 +81,9 @@ class ChoosePalette: UIViewController  {
         attrs1 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Medium", size: 20)]
         normalString1 = NSMutableAttributedString(string:normalText1, attributes:attrs1 as [NSAttributedString.Key : Any])
         neutral.setAttributedTitle(normalString1, for: .normal)
+        
+        question.text = text[5]
+
     }
     
     @IBOutlet weak var label: UILabel!

@@ -19,6 +19,9 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
     @IBOutlet weak var screen: UIImageView!
     @IBOutlet weak var descriptionField: UITextView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var copyC: UIButton!
+    @IBOutlet weak var notN: UIButton!
+    @IBOutlet weak var beAn: UILabel!
     @IBOutlet weak var share: UIButton!
     @IBOutlet weak var shareAnonimo: UIButton!
     var text:[String] = []
@@ -149,10 +152,10 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
                     attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                          let attributedString25 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
                         attributedString.append(attributedString25)
-                       
+
                        label.attributedText = attributedString
         
-        var  normalText2 = text[11]
+        var  normalText2 = text[10]
                 var normalString2 = NSMutableAttributedString(string:normalText2)
                     let attrs3 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                 let attributedString20 = NSMutableAttributedString(string:String(normalText2), attributes:attrs3 as [NSAttributedString.Key : Any])
@@ -163,12 +166,16 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
                 attributedString20.append(attributedString21)
 
 
-                normalText2 = text[12]
+                normalText2 = text[11]
                 normalString2 = NSMutableAttributedString(string:normalText2)
                 let attrs4 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                 let attributedString22 = NSMutableAttributedString(string:String(normalText2), attributes:attrs4 as [NSAttributedString.Key : Any])
                attributedString20.append(attributedString22)
-//        descriptionField.attributedText = attributedString20
+        descriptionField.attributedText = attributedString20
+        
+        copyC.setTitle(text[14], for: .normal)
+        notN.setTitle(text[15], for: .normal)
+        beAn.text = text[13]
     }
     
     @objc func dismissKeyboard() {

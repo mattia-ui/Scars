@@ -17,6 +17,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBOutlet weak var pictureScars: UIImageView!
     @IBOutlet weak var tempDrawScars: UIImageView!
 
+    @IBOutlet weak var traceIt: UILabel!
     @IBOutlet weak var subTitle: UILabel!
     
     static var imageScars: UIImage!
@@ -133,7 +134,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         elaboraDisegno.frame.origin.y = UIScreen.main.bounds.height -  150
         elaboraDisegno.frame.origin.x =
             UIScreen.main.bounds.width/2 - elaboraDisegno.frame.size.width/2
-        
+       
+        traceIt.text = text[3]
     }
     
     @IBAction func changeBrush(_ sender: UISlider) {

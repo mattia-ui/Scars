@@ -104,6 +104,11 @@ class ChooseTexture: UIViewController  {
         normalString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
         wood.setAttributedTitle(normalString, for: .normal)
         
+        question.text = text[8]
+        label1.text = text[9]
+        label2.text = text[10]
+        yes.setTitle(text[11], for: .normal)
+
     }
 
     @IBOutlet weak var stackO: UIStackView!

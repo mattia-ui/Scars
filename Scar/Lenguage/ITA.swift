@@ -68,7 +68,8 @@ class ITA: UIViewController{
                         "Cerchio \n",
                         "empatia - socialità",
                         "Zig zag \n",
-                        "estro - ambizione"
+                        "estro - ambizione",
+                        "Domanda 1/4"
                     ]
                     
                     static var textOnChooseShape2 = [
@@ -83,7 +84,8 @@ class ITA: UIViewController{
                         "Cerchio \n",
                         "empatia - socialità",
                         "Zig zag \n",
-                        "estro - ambizione"
+                        "estro - ambizione",
+                        "Domanda 2/4"
                     ]
                     
                     static var Shape = [
@@ -99,7 +101,8 @@ class ITA: UIViewController{
                         "più spesso nel vestirti?",
                         "Colori caldi",
                         "Colori freddi",
-                        "Colori neutri"
+                        "Colori neutri",
+                        "Domanda 3/4"
                     ]
 
                     static var Palette = [
@@ -120,7 +123,11 @@ class ITA: UIViewController{
                         "Cratere",
                         "Fibra tessile",
                         "Marmo",
-                        "Legno"
+                        "Legno",
+                        "Domanda 4/4",
+                        "Conferma risposte",
+                        "Sei sicuro di voler confermare le risposte?",
+                        "Si"
                     ]
                     
                     static var Texture = [
@@ -407,7 +414,7 @@ class ITA: UIViewController{
                     Cont(image: "InsightI12", title:"\nNatalia Benson", descr: "Natalia is a women’s empowerment coach living in Los Angeles. She encourages women to honor their female energy. ‘Sometimes we need each other to overcome things, it is useful to receive messages from others to see things in a new light or in a new way.’", fonte:"", link: "https://www.instagram.com/natalia_benson/?hl=it")*/]
                     )]
                     
-                    static var textOnTakePicture = ["Disegna la forma ","del tuo segno indelebile, o aiutati scattando una ","foto ","in modo da ","tracciarne meglio i contorni.","Non preoccuparti",", la foto che scatterai non verrà salvata!"]
+                    static var textOnTakePicture = ["Disegna la forma ","del tuo segno indelebile, o aiutati scattando una ","foto ","in modo da ","tracciarne meglio i contorni.","Non preoccuparti",", la foto che scatterai non verrà salvata!","Scegli un modo"]
                     
                     static var ViewControllerInitialdati = [ActivityStruct(
                         attivita1:[
@@ -446,13 +453,16 @@ class ITA: UIViewController{
                                 [ContenutoStruct(contenuto: "La luce solare apporta notevoli benefici alla tua mente, migliora l’umore e riduce lo stress. I vantaggi sono molti ma qual è il miglior modo per esporsi al sole mentre si sta a casa?\n\nSe hai un balcone puoi utilizzare una comoda sedia a sdraio e cercare di trascorrere del tempo all’aperto ogni volta che ne hai la possibilità.\n\nE se invece non hai un balcone? Prova a identificare le ore del giorno in cui la luce entra direttamente dalle tua finestra. Aprila, siediti a favore della luce e sfrutta ogni momento di pausa per esporti al sole!", titolo: "Quali sono i benefici della luce solare?", righe: 23)]
                     )]
                     
-                    static var textOnViewController = ["Traccia e"," riempi la forma"," del tuo segno."]
+                    static var textOnViewController = ["Traccia e"," riempi la forma"," del tuo segno.","Traccia il contorno"]
                     
                      static var textOnPrimaTutorial = ["Ciao,","Questo è Skinsugi!","Siamo felici di averti con noi.","Inserisci il tuo nome","Il mio nome è..","Prova a riflettere sulle risposte","Ci siamo quasi","Come ti fa sentire il tuo segno?Come pensi che gli altri lo vedano?","Da cosa ti lasci ispirare?"]
                     
                     static var textOnSecondaTutorial = ["Raccontando la storia del tuo segno indelebile puoi cambiare il modo in cui guardi il tuo corpo e quello degli altri.","si prenderà cura della tua storia","Scopri come creare il tuo Skinsugi masterpiece.","Tempo di esplorare","Attività e Insights","Qui troverai consigli interessanti e contenuti sempre nuovi!","Prima di iniziare","#skinsugi è condivisione"]
                     
-                    static var textOnSharePage = ["Condividere le tue emozioni con gli altri è fondamentale per la tua ","emotività ","rafforza l autostima",",allontana le insicurezze, e ti insegna che ","non sei solo",", mai.\n","\nCosa stai aspettando?\nRacconta la tua storia e condividila su ","Instagram ","con l'hashtag ","o invialo a noi\nin forma anonima puoi essere d'ispirazione anche senza mostrare il tuo nome!\n ","Scrivi la storia che si cela dietro il tuo segno indelebile…  - ","(max 1100 caratteri)","La tua storia è stata copiata correttamente"]
+                    static var textOnSharePage = ["Condividere le tue emozioni con gli altri è fondamentale per la tua ","emotività ","rafforza l autostima",",allontana le insicurezze, e ti insegna che ","non sei solo",", mai.\n","\nCosa stai aspettando?\nRacconta la tua storia e condividila su ","Instagram ","con l'hashtag ","o invialo a noi\nin forma anonima puoi essere d'ispirazione anche senza mostrare il tuo nome!\n ","Scrivi la storia che si cela dietro il tuo segno indelebile…  - ","(max 1100 caratteri)","La tua storia è stata copiata correttamente","Ispira gli altri","Copia la descrizione","Non ora"]
                     
                     static var textOnGenerateAgain = ["Il pattern nel cerchio più grande descrive ","la tua personalità ","e il colore al suo interno rappresenta ","il modo in cui vuoi apparire"," dall’esterno.\nLe due forme geometriche all’esterno raccontano"," il modo in cui vorresti essere "," e la texture al loro interno rappresenta ","la percezione che hai del tuo segno indelebile",", che è in oro ed occupa il centro dell’immagine, come ","l’arte del Kintsugi ","insegna!","Cerchio",": empatia - socialità","Zig Zag",": estro - ambizione","Triangolo",": leadership - tenacia","Rettangolo",": curiosità - caos","Quadrato", ": cautela - precisione","Il tuo Skinsugi Masterpiece è stato copiato correttamente"]
+     static var textPostCollage = ["Crea il tuo Masterpiece!"]
+     static var textCollage = ["Questo è il tuo #skinsugi!","Scopri di più sul tuo Masterpiece","Scopri di più sull'arte del Kinsugi"]
+    
                 }

@@ -121,6 +121,8 @@ class Collage: UIViewController, UITextFieldDelegate  {
     @IBOutlet weak var screen: UIImageView!
     @IBOutlet weak var imgSP: UIImageView!
     @IBOutlet weak var imgSG: UIImageView!
+    @IBOutlet weak var thisIs: UILabel!
+    @IBOutlet weak var discoverM: UILabel!
     var imgPrincipale:UIImage?
     var nomeImgPrincipale:String!
     var imgSecondaria:UIImage?
@@ -188,12 +190,18 @@ class Collage: UIViewController, UITextFieldDelegate  {
            palette = ENG.Palette
            texture = ENG.Texture
            procede.imageView?.image = UIImage(named: ENG.button[14])
+        thisIs.text = ENG.textCollage[0]
+        discoverM.text = ENG.textCollage[1]
+        mediumLink.text = ENG.textCollage[2]
        } else if (lingua == "ita"){
            text = ITA.textOnCollage
            shape = ITA.Shape
            palette = ITA.Palette
            texture = ITA.Texture
            procede.imageView?.image = UIImage(named: ITA.button[14])
+        thisIs.text = ITA.textCollage[0]
+        discoverM.text = ITA.textCollage[1]
+        mediumLink.text = ITA.textCollage[2]
        }
         
         if(ChooseShape.shape1 == shape[0]){

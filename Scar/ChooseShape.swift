@@ -56,6 +56,7 @@ class ChooseShape: UIViewController  {
                   submitNo = ITA.button[5]
               }
         
+        question.text = text[12]
         var boldText = text[0]
         var attributedString = NSMutableAttributedString(string:boldText)
 
