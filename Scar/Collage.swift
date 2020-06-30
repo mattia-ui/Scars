@@ -791,7 +791,7 @@ let randomSize = Float.random(in: 1.30..<1.35)
         normalText = text[10]
         attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
 
-                let attributedString24 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
+        let attributedString24 = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
                     attributedString.append(attributedString24)
                       
                       label.attributedText = attributedString

@@ -89,7 +89,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
         
          var  normalText = text[0]
           var attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
-         let attributedString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
+        var attributedString = NSMutableAttributedString(string:normalText, attributes:attrs as [NSAttributedString.Key : Any])
          
          var boldText = text[1]
               attrs = [NSAttributedString.Key.font : UIFont(name: "Poppins-SemiBold", size: fontSize)]
@@ -175,8 +175,24 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
                attributedString20.append(attributedString22)
         descriptionField.attributedText = attributedString20
         
-        copyC.setTitle(text[14], for: .normal)
-        notN.setTitle(text[15], for: .normal)
+        
+        
+        var att = [
+            NSAttributedString.Key.underlineStyle : 1,
+            NSAttributedString.Key.foregroundColor : UIColor.black,
+        ] as [NSAttributedString.Key : Any]
+        
+
+        var a = NSMutableAttributedString(string:"")
+        let buttonTitleStr = NSMutableAttributedString(string:text[14], attributes:att)
+        a.append(buttonTitleStr)
+        copyC.setAttributedTitle(a, for: .normal)
+        
+        var b = NSMutableAttributedString(string:"")
+        let buttonTitleStr2 = NSMutableAttributedString(string:text[15], attributes:att)
+        b.append(buttonTitleStr2)
+        notN.setAttributedTitle(b, for: .normal)
+        
         beAn.text = text[13]
     }
     
