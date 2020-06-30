@@ -40,7 +40,28 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         self.tabBarController?.tabBar.isHidden = false
         
         viewDidLoad()
-        
+        var db: OpaquePointer?
+                           
+        //Si connette al DB
+        let fileURL = try!
+        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+            print("error opening database")
+        }
+                         
+        //Recupera Valore
+        var stmt: OpaquePointer?
+        var queryString = "SELECT * FROM Lingua"
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+        let errmsg = String(cString: sqlite3_errmsg(db)!)
+        print("error preparing insert: \(errmsg)")
+            return
+        }
+             
+        var lingua = ""
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            lingua = String(cString: sqlite3_column_text(stmt, 1))
+        }
         if(blur == 1){
            blurEffect = UIBlurEffect(style: UIBlurEffect.Style.light)
           blurEffectView = UIVisualEffectView(effect: blurEffect)
@@ -63,7 +84,12 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
             
 
            }else if(view.frame.height == 667){
-            navInsta.image = UIImage(named: "navInsta8")
+            if(lingua == "ENG"){navInsta.image = UIImage(named: "navInsta8")}
+            else if(lingua == "ITA"){
+                
+                navInsta.image = UIImage(named: "navInsta8Ita")
+                
+            }
               traslate(view: button, aCircleTime: 0, to: -43)
             traslate(view: nex, aCircleTime: 0, to: 35)
             traslate(view: illmast, aCircleTime: 0, to: 10)
@@ -116,7 +142,7 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! CollectionViewCell
         cell.layer.borderColor = (UIColor.init(named: "#2E2933")?.cgColor)
         cell.layer.borderWidth = 0.3
-        cell.myImageView.image = SecretCollection.allImages?[indexPath.row].imageWithInsets(insets: UIEdgeInsets(top: 20, left: 20, bottom: 65, right: 65))
+        cell.myImageView.image = SecretCollection.allImages?[indexPath.row].imageWithInsets(insets: UIEdgeInsets(top: 20, left: 20, bottom: 70, right: 70))
         return cell
     }
     
