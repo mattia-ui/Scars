@@ -22,6 +22,7 @@
 		345F14EF24573809003EE819 /* ScarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F14EE24573809003EE819 /* ScarUITests.swift */; };
 		345F14FF24573819003EE819 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345F14FE24573819003EE819 /* CloudKit.framework */; };
 		345F15492459D5D9003EE819 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345F15482459D5D9003EE819 /* WebKit.framework */; };
+		34A5593924ABE48700C8B932 /* launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A5593824ABE48700C8B932 /* launch.swift */; };
 		34BABE4A24991F20004D795C /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34BABE3824991F1B004D795C /* Poppins-Black.ttf */; };
 		34BABE4B24991F20004D795C /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34BABE3924991F1B004D795C /* Poppins-MediumItalic.ttf */; };
 		34BABE4C24991F20004D795C /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34BABE3A24991F1B004D795C /* Poppins-Bold.ttf */; };
@@ -56,7 +57,6 @@
 		6B01C79C2461A7BC0040EA77 /* SecondaTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01C79B2461A7BC0040EA77 /* SecondaTutorial.swift */; };
 		6B29F0B3247D21A6008B8D49 /* SharePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B29F0B2247D21A6008B8D49 /* SharePage.swift */; };
 		6B29F0B524816C44008B8D49 /* GenerateAgain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B29F0B424816C44008B8D49 /* GenerateAgain.swift */; };
-		6BA9C37D24890AC8006AA395 /* launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA9C37C24890AC8006AA395 /* launch.swift */; };
 		6BA9C37F24890B94006AA395 /* TimelineAnimated.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6BA9C37E24890B94006AA395 /* TimelineAnimated.gif */; };
 		6BAD16A32464A53200859C79 /* Cella1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD16A22464A53200859C79 /* Cella1.swift */; };
 		6BAD16A52464A53A00859C79 /* Cella2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD16A42464A53A00859C79 /* Cella2.swift */; };
@@ -136,6 +136,7 @@
 		345F14FC24573816003EE819 /* Scar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scar.entitlements; sourceTree = "<group>"; };
 		345F14FE24573819003EE819 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		345F15482459D5D9003EE819 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		34A5593824ABE48700C8B932 /* launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = launch.swift; path = /Users/matthew/Documents/Scars/Scar/launch.swift; sourceTree = "<absolute>"; };
 		34BABE3824991F1B004D795C /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
 		34BABE3924991F1B004D795C /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
 		34BABE3A24991F1B004D795C /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
@@ -171,7 +172,6 @@
 		6B01C79B2461A7BC0040EA77 /* SecondaTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaTutorial.swift; sourceTree = "<group>"; };
 		6B29F0B2247D21A6008B8D49 /* SharePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePage.swift; sourceTree = "<group>"; };
 		6B29F0B424816C44008B8D49 /* GenerateAgain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateAgain.swift; sourceTree = "<group>"; };
-		6BA9C37C24890AC8006AA395 /* launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = launch.swift; sourceTree = "<group>"; };
 		6BA9C37E24890B94006AA395 /* TimelineAnimated.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TimelineAnimated.gif; sourceTree = "<group>"; };
 		6BAD16A22464A53200859C79 /* Cella1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cella1.swift; sourceTree = "<group>"; };
 		6BAD16A42464A53A00859C79 /* Cella2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cella2.swift; sourceTree = "<group>"; };
@@ -275,13 +275,13 @@
 				345F14CC24573808003EE819 /* AppDelegate.swift */,
 				345F14CE24573808003EE819 /* SceneDelegate.swift */,
 				76C14724246026BB00DAD927 /* AddInsights.swift */,
+				34A5593824ABE48700C8B932 /* launch.swift */,
 				76F8FF142458AFDB00E50D7F /* Collage.swift */,
 				76E9F0FD245B214B00D4921E /* ChooseShape.swift */,
 				76E9F0FC245B214B00D4921E /* ChooseShape2.swift */,
 				76C13DE6245B255C00D1AE9F /* ChoosePalette.swift */,
 				76C13DE8245B2B3100D1AE9F /* ChooseTexture.swift */,
 				342BF26B245DDA19004CD081 /* CaricaImage.swift */,
-				6BA9C37C24890AC8006AA395 /* launch.swift */,
 				76F08B3A245DEFCC002A6F19 /* Password.swift */,
 				76F08B3C245DF36F002A6F19 /* PostCollage.swift */,
 				76F08B38245DEE8C002A6F19 /* Schermata1.swift */,
@@ -653,7 +653,6 @@
 				6BAD16A32464A53200859C79 /* Cella1.swift in Sources */,
 				6B29F0B3247D21A6008B8D49 /* SharePage.swift in Sources */,
 				76C14725246026BB00DAD927 /* AddInsights.swift in Sources */,
-				6BA9C37D24890AC8006AA395 /* launch.swift in Sources */,
 				6BAD16A52464A53A00859C79 /* Cella2.swift in Sources */,
 				765310F6249E4A4900D318DE /* ITA.swift in Sources */,
 				342BF2CC2460D006004CD081 /* CollectionViewCell1.swift in Sources */,
@@ -673,6 +672,7 @@
 				7607123424793FE900B29C2C /* Movie.swift in Sources */,
 				76F08B39245DEE8C002A6F19 /* Schermata1.swift in Sources */,
 				76C7D47C2466F19C00E82414 /* TableViewActivity.swift in Sources */,
+				34A5593924ABE48700C8B932 /* launch.swift in Sources */,
 				6B29F0B524816C44008B8D49 /* GenerateAgain.swift in Sources */,
 				76C23D4224A141AB00C8377C /* Lingua.swift in Sources */,
 				345F14CF24573808003EE819 /* SceneDelegate.swift in Sources */,
@@ -863,7 +863,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Scar/Scar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = RL6WJW484U;
 				INFOPLIST_FILE = Scar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
@@ -886,7 +886,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Scar/Scar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = RL6WJW484U;
 				INFOPLIST_FILE = Scar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
