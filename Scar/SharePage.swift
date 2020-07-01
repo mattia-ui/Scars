@@ -158,7 +158,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
 
                        label.attributedText = attributedString
         
-        var  normalText2 = text[10]
+        var  normalText2 = text[11]
                 var normalString2 = NSMutableAttributedString(string:normalText2)
                     let attrs3 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                 let attributedString20 = NSMutableAttributedString(string:String(normalText2), attributes:attrs3 as [NSAttributedString.Key : Any])
@@ -169,7 +169,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
                 attributedString20.append(attributedString21)
 
 
-                normalText2 = text[11]
+                normalText2 = text[12]
                 normalString2 = NSMutableAttributedString(string:normalText2)
                 let attrs4 = [NSAttributedString.Key.font : UIFont(name: "Poppins-Light", size: fontSize)]
                 let attributedString22 = NSMutableAttributedString(string:String(normalText2), attributes:attrs4 as [NSAttributedString.Key : Any])
@@ -185,7 +185,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
         
 
         var a = NSMutableAttributedString(string:"")
-        let buttonTitleStr = NSMutableAttributedString(string:text[14], attributes:att)
+        let buttonTitleStr = NSMutableAttributedString(string:text[16], attributes:att)
         a.append(buttonTitleStr)
         copyC.setAttributedTitle(a, for: .normal)
         
@@ -194,8 +194,8 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
         b.append(buttonTitleStr2)
         notN.setAttributedTitle(b, for: .normal)
         
-        beAn.text = text[13]
-        weWill.text = text[16]
+        beAn.text = text[14]
+        weWill.text = text[17]
     }
     
     @objc func dismissKeyboard() {
