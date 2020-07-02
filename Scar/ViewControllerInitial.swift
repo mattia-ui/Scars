@@ -187,10 +187,37 @@ class ViewControllerInitial: UIViewController, UIScrollViewDelegate {
             numberL = attivita[i].righe
         }
             
-        let image = UIImage(named: "MarkAsDone1") as UIImage?
         let button = UIButton(type: UIButton.ButtonType.custom) as UIButton
         button.frame = CGRect(x: 84, y: 20.30 *  CGFloat(numberL) + 50, width: 244, height: 55)
-        button.setImage(image, for: .normal)
+        var db: OpaquePointer?
+                    
+        //Si connette al DB
+        let fileURL = try!
+        FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Database.sqlite")
+        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+            print("error opening database")
+        }
+                  
+        //Recupera Valore
+        var stmt: OpaquePointer?
+        let queryString = "SELECT * FROM Lingua"
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+        let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error preparing insert: \(errmsg)")
+            return
+        }
+        
+        var lingua = ""
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            lingua = String(cString: sqlite3_column_text(stmt, 1))
+        }
+        
+        if(lingua == "eng"){
+            button.setImage(UIImage(named: ENG.button[21]), for: .normal)
+        } else if (lingua == "ita"){
+            button.setImage(UIImage(named: ITA.button[21]), for: .normal)
+        }
+       
         button.addTarget(self, action: "done:", for: UIControl.Event.touchUpInside)
         scrollView.addSubview(button)
         

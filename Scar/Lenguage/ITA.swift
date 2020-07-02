@@ -41,7 +41,8 @@ class ITA: UIViewController{
                     "shareIta", //Bottone schare Share page
                     "shareanonymuslyIta (2)",//Bottone schare anonimo Share page
                     "submitanswerIta",
-                    "submitanswernoIta"
+                    "submitanswernoIta",
+                    "completato"
                 ]
 
                 static var insights = ["TEDx","Film e serie Tv","Articoli","Libri","Inspiring People","Podcasts"]

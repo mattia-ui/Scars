@@ -37,7 +37,8 @@ class ENG: UIViewController{
             "share", //Bottone schare Share page
             "shareanonymously (2)",//Bottone schare anonimo Share page,
             "submit azzurro",
-            "submitno"
+            "submitno",
+            "MarkAsDone1"
         ]
 
         static var insights = ["TEDx","Movies and Series","Articles","Books","Inspiring People","Podcasts"]
