@@ -145,19 +145,19 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         if(UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 896){
             //11 pro max
             cell.myImageView.contentMode = .scaleToFill
-            cell.myImageView.image = SecretCollection.allImages?[indexPath.row].withAlignmentRectInsets(UIEdgeInsets(top: -5, left: -5, bottom: -5, right: -5))
+            cell.myImageView.image = SecretCollection.allImages?[indexPath.row].imageWithInsets(insets: UIEdgeInsets(top: -47, left: -50, bottom: 5, right: 5))
         } else if (UIScreen.main.bounds.width == 375 && UIScreen.main.bounds.height == 812){
             //XS
             cell.myImageView.contentMode = .scaleToFill
-            cell.myImageView.image = SecretCollection.allImages?[indexPath.row].withAlignmentRectInsets(UIEdgeInsets(top: -5, left: -5, bottom: -5, right: -5))
+            cell.myImageView.image = SecretCollection.allImages?[indexPath.row].imageWithInsets(insets: UIEdgeInsets(top: -47, left: -50, bottom: 73, right: 53))
         }else if (UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 736){
             //8 plus
             cell.myImageView.contentMode = .scaleToFill
-            cell.myImageView.image = SecretCollection.allImages?[indexPath.row].withAlignmentRectInsets(UIEdgeInsets(top: -5, left: -5, bottom: -5, right: -5))
+            cell.myImageView.image = SecretCollection.allImages?[indexPath.row].imageWithInsets(insets: UIEdgeInsets(top: -47, left: -50, bottom: 5, right: 5))
         } else {
             //11, 8, SE
             cell.myImageView.contentMode = .scaleToFill
-            cell.myImageView.image = SecretCollection.allImages?[indexPath.row].withAlignmentRectInsets(UIEdgeInsets(top: -5, left: -5, bottom: -5, right: -5))
+            cell.myImageView.image = SecretCollection.allImages?[indexPath.row].imageWithInsets(insets: UIEdgeInsets(top: -55, left: -65, bottom: 55, right: 55))
         }
         
         return cell
