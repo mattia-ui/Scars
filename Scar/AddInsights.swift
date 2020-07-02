@@ -19,6 +19,9 @@ class AddInsights: UIViewController {
     @IBOutlet weak var books: UIButton!
     @IBOutlet weak var scroll: UIScrollView!
     
+    @IBOutlet weak var intere: UILabel!
+    @IBOutlet weak var persona: UILabel!
+    
     static var j: Int = 0
     var db: OpaquePointer?
     var stmt: OpaquePointer?
@@ -56,9 +59,13 @@ class AddInsights: UIViewController {
               }
                          
               if(lingua == "eng"){
-                  insights = ENG.insights
+                insights = ENG.insights
+                intere.text = ENG.textOnAddInsights[0]
+                persona.text = ENG.textOnAddInsights[1]
               } else if (lingua == "ita"){
                   insights = ITA.insights
+                intere.text = ITA.textOnAddInsights[0]
+                persona.text =  ITA.textOnAddInsights[1]
               }
         pod.setTitle(insights[0], for: .normal)
         well.setTitle(insights[1], for: .normal)

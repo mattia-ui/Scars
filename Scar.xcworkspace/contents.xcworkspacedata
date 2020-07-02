@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/matthew/Documents/Scars/Scar/launch.swift">
-   </FileRef>
-   <FileRef
       location = "group:Scar.xcodeproj">
    </FileRef>
    <FileRef
