@@ -466,7 +466,7 @@ class ENG: UIViewController{
     
         static var textOnSettings = ["Language","About us","Settings"]
     
-    static var textPostCollage = ["Create your Masterpiece!","navInsta8","navInsta"]
+    static var textPostCollage = ["Create your Masterpiece!","navInsta8","navInsta","Submitted","Thank you for sharing your masterpiece with us!"]
     
     static var textCollage = ["This is your #skinsugi!","Discover more about your Masterpiece","Discover more about Kinsugi"]
         

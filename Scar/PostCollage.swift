@@ -194,6 +194,8 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
                  if(lingua == "eng"){
                     buttonImg = ENG.button[3]
                     createY.text = ENG.textPostCollage[0]
+                    Submitted.text = ENG.textPostCollage[3]
+                    thx.text = ENG.textPostCollage[4]
                     if(view.frame.height == 667){
                         navInsta.image = UIImage(named: ENG.textPostCollage[1])
                     } else {
@@ -202,6 +204,8 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
                  } else if (lingua == "ita"){
                     buttonImg = ITA.button[3]
                     createY.text = ITA.textPostCollage[0]
+                    Submitted.text = ITA.textPostCollage[3]
+                    thx.text = ITA.textPostCollage[4]
                      if(view.frame.height == 667){
                         navInsta.image = UIImage(named: ITA.textPostCollage[1])
                     } else {
