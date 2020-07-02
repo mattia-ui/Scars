@@ -145,7 +145,7 @@ class ITA: UIViewController{
                     
                     static var textOnLPassword = [""]
                     
-                    static var textOnAddInsights = ["Your Interests","Personalize your insights section"]
+                    static var textOnAddInsights = ["I tuoi interessi","Personalizza i tuoi Insights"]
                     
                     static var Schermata1weeklyInfo = [
                         WeeklyStruct(
