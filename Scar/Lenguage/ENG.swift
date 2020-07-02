@@ -218,7 +218,7 @@ class ENG: UIViewController{
             "You did it great!" ,
             "Power! Only one is missing.",
             "Well done! See you tomorrow.",
-            "Start the activities and mark them as done!"
+            "Start and mark your daily activities."
         ]
         
         static var Schermata1Saluti = [

@@ -142,24 +142,23 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! CollectionViewCell
         cell.layer.borderColor = (UIColor.init(named: "#2E2933")?.cgColor)
         cell.layer.borderWidth = 0.3
-        cell.myImageView.image = SecretCollection.allImages?[indexPath.row].imageWithInsets(insets: UIEdgeInsets(top: 20, left: 20, bottom: 70, right: 70))
         if(UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 896){
-                 //11 pro max
-               cell.myImageView.contentMode = .scaleAspectFill
-                cell.myImageView.image = SecretCollection.allImages?[indexPath.row].withAlignmentRectInsets(UIEdgeInsets(top: -5, left: -5, bottom: -5, right: -5))
-             } else if (UIScreen.main.bounds.width == 375 && UIScreen.main.bounds.height == 812){
-                 //XS
-                cell.myImageView.contentMode = .scaleAspectFill
-                cell.myImageView.image = SecretCollection.allImages?[indexPath.row].withAlignmentRectInsets(UIEdgeInsets(top: -5, left: -5, bottom: -5, right: -5))
-             }else if (UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 736){
-                 //8 plus
-                cell.myImageView.contentMode = .scaleAspectFill
-                cell.myImageView.image = SecretCollection.allImages?[indexPath.row].withAlignmentRectInsets(UIEdgeInsets(top: -5, left: -5, bottom: -5, right: -5))
-             } else {
-                //11, 8, SE
-                cell.myImageView.contentMode = .scaleAspectFill
-                cell.myImageView.image = SecretCollection.allImages?[indexPath.row].withAlignmentRectInsets(UIEdgeInsets(top: -5, left: -5, bottom: -5, right: -5))
-             }
+            //11 pro max
+            cell.myImageView.contentMode = .scaleAspectFit
+            cell.myImageView.image = SecretCollection.allImages?[indexPath.row].withAlignmentRectInsets(UIEdgeInsets(top: -5, left: -5, bottom: -5, right: -5))
+        } else if (UIScreen.main.bounds.width == 375 && UIScreen.main.bounds.height == 812){
+            //XS
+            cell.myImageView.contentMode = .scaleAspectFill
+            cell.myImageView.image = SecretCollection.allImages?[indexPath.row].withAlignmentRectInsets(UIEdgeInsets(top: -5, left: -5, bottom: -5, right: -5))
+        }else if (UIScreen.main.bounds.width == 414 && UIScreen.main.bounds.height == 736){
+            //8 plus
+            cell.myImageView.contentMode = .scaleAspectFill
+            cell.myImageView.image = SecretCollection.allImages?[indexPath.row].withAlignmentRectInsets(UIEdgeInsets(top: -5, left: -5, bottom: -5, right: -5))
+        } else {
+            //11, 8, SE
+            cell.myImageView.contentMode = .scaleAspectFill
+            cell.myImageView.image = SecretCollection.allImages?[indexPath.row].withAlignmentRectInsets(UIEdgeInsets(top: -5, left: -5, bottom: -5, right: -5))
+        }
         
         return cell
     }
