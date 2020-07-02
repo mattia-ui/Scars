@@ -187,13 +187,14 @@ class ChooseShape2: UIViewController  {
                     traslate(view: label, aCircleTime: 0, to: -66)
                     traslate(view: vertical, aCircleTime: 0, to: -88)
                     traslate(view: nex, aCircleTime: 0, to: -200)
-                    traslate(view: h5, aCircleTime: 0, to: -34)
+                    traslate(view: h5, aCircleTime: 0, to: -35)
                 }else if(view.frame.height == 736){
                     vertical.spacing = 10
-                    traslate(view: question, aCircleTime: 0, to: -12)
-                    traslate(view: label, aCircleTime: 0, to: -15)
-                    traslate(view: vertical, aCircleTime: 0, to: -18)
-                    traslate(view: nex, aCircleTime: 0, to: -30)
+                    traslate(view: question, aCircleTime: 0, to: -27)
+                    traslate(view: label, aCircleTime: 0, to: -44)
+                    traslate(view: vertical, aCircleTime: 0, to: -56)
+                    traslate(view: nex, aCircleTime: 0, to: -140)
+                    traslate(view: h5, aCircleTime: 0, to: -33)
                 }else if(view.frame.height == 896){
                     
                     traslate(view: question, aCircleTime: 0, to: -20)
