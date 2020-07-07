@@ -100,7 +100,7 @@ class Settins: UIViewController {
     }
     
     @IBAction func aboutUS(_ sender: Any) {
-        UIApplication.shared.openURL(NSURL(string: "http://www.skinsugi.com")! as URL)
+        UIApplication.shared.openURL(NSURL(string: "https://landing.skinsugi.com/en/skinsugi")! as URL)
 
     }
 }

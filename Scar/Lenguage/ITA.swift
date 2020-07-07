@@ -33,15 +33,15 @@ class ITA: UIViewController{
                     "StartIta", //Bottone start schermata tutorial
                     "StartNIta", //Bottone start schermata tutorial disailitato
                     "DoneIta", //Bottone done schermata tutorial
-                    "DoneNIta", //Bottone done schermata tutorial disabilitato
-                    "Let'sgoIta", //Bottone let's go schermata tutorial
+                    "donenoIta", //Bottone done schermata tutorial disabilitato
+                    "letsgoIta", //Bottone let's go schermata tutorial
                     "proceedIta", //Bottone procedere Collage
                     "shareIta (2)", //Bottone schare Generate Again
                     "generateIta", //Bottone generate Generate Again
                     "shareIta", //Bottone schare Share page
                     "shareanonymuslyIta (2)",//Bottone schare anonimo Share page
-                    "submitanswerIta",
-                    "submitanswernoIta",
+                    "submitIta",
+                    "submitnoIta",
                     "completato"
                 ]
 
