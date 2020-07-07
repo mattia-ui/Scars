@@ -36,7 +36,7 @@ class ITA: UIViewController{
                     "donenoIta", //Bottone done schermata tutorial disabilitato
                     "Let'sgoIta", //Bottone let's go schermata tutorial
                     "proceedIta", //Bottone procedere Collage
-                    "shareIta (2)", //Bottone schare Generate Again
+                    "shareIta", //Bottone schare Generate Again
                     "generateIta", //Bottone generate Generate Again
                     "shareIta", //Bottone schare Share page
                     "shareanonymuslyIta (2)",//Bottone schare anonimo Share page
