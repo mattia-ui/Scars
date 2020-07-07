@@ -41,7 +41,7 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
-
+        var buttonImg1 = ""
        var db: OpaquePointer?
                                                
                      //Si connette al DB
@@ -68,13 +68,16 @@ class SharePage: UIViewController, UITextFieldDelegate, UITextViewDelegate{
                      if(lingua == "eng"){
                          text = ENG.textOnSharePage
                          share.imageView?.image = UIImage(named: ENG.button[17])
-                         shareAnonimo.imageView?.image = UIImage(named: ENG.button[18])
+                        buttonImg1 = ENG.button[18]
+//                         shareAnonimo.imageView?.image = UIImage(named: ENG.button[18])
                      } else if (lingua == "ita"){
                          text = ITA.textOnSharePage
                          share.imageView?.image = UIImage(named: ITA.button[17])
-                         shareAnonimo.imageView?.image = UIImage(named: ITA.button[18])
+                        buttonImg1 = ITA.button[18]
+//                         shareAnonimo.imageView?.image = UIImage(named: ITA.button[18])
                      }
-                     
+                     shareAnonimo.setImage(UIImage(named: buttonImg1), for: .disabled)
+                     shareAnonimo.setImage(UIImage(named:buttonImg1), for: .normal)
         screen.layer.borderWidth = 0.5
         screen.layer.borderColor = CGColor(srgbRed: 0.46, green: 0.41, blue: 0.51, alpha: 1)
         

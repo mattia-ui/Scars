@@ -45,7 +45,8 @@ class ChooseTexture: UIViewController  {
       var texture: [String] = []
       var submit: String = ""
       var submitNo: String = ""
-      
+    var y: String = ""
+    var n: String = ""
       override func viewDidLoad() {
           overrideUserInterfaceStyle = .light
           nex.isEnabled = false
@@ -78,17 +79,22 @@ class ChooseTexture: UIViewController  {
                        texture = ENG.Texture
                        submit = ENG.button[19]
                        submitNo = ENG.button[20]
-                       yes.imageView?.image = UIImage(named: ENG.button[6])
-                       no.imageView?.image = UIImage(named: ENG.button[7])
+                    y = ENG.button[6]
+                    n = ENG.button[7]
                    } else if (lingua == "ita"){
                        text = ITA.textOnChooseTexture
                        texture = ITA.Texture
                        submit = ITA.button[19]
                        submitNo = ITA.button[20]
-                       yes.imageView?.image = UIImage(named: ITA.button[6])
-                       no.imageView?.image = UIImage(named: ITA.button[7])
+                    y = ITA.button[6]
+                    n = ITA.button[7]
+//                       yes.imageView?.image = UIImage(named: ITA.button[6])
+//                       no.imageView?.image = UIImage(named: ITA.button[7])
                    }
-          
+          yes.setImage(UIImage(named: y), for: .disabled)
+          yes.setImage(UIImage(named:y), for: .normal)
+        no.setImage(UIImage(named: n), for: .disabled)
+        no.setImage(UIImage(named: n), for: .normal)
            nex.setImage(UIImage(named: submitNo), for: .disabled)
            nex.setImage(UIImage(named:submit), for: .normal)
           

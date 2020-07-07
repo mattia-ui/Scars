@@ -143,7 +143,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
         
        viewDidLoad()
     }
-    
+    var buttonImg2 = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
@@ -189,7 +189,7 @@ class Collage: UIViewController, UITextFieldDelegate  {
            shape = ENG.Shape
            palette = ENG.Palette
            texture = ENG.Texture
-           procede.imageView?.image = UIImage(named: ENG.button[14])
+        buttonImg2 = ENG.button[14]
         thisIs.text = ENG.textCollage[0]
         discoverM.text = ENG.textCollage[1]
         mediumLink.text = ENG.textCollage[2]
@@ -198,11 +198,15 @@ class Collage: UIViewController, UITextFieldDelegate  {
            shape = ITA.Shape
            palette = ITA.Palette
            texture = ITA.Texture
-           procede.imageView?.image = UIImage(named: ITA.button[14])
+        buttonImg2 = ITA.button[14]
+//           procede.imageView?.image = UIImage(named: ITA.button[14])
         thisIs.text = ITA.textCollage[0]
         discoverM.text = ITA.textCollage[1]
         mediumLink.text = ITA.textCollage[2]
        }
+        procede.setImage(UIImage(named: buttonImg2), for: .disabled)
+        procede.setImage(UIImage(named: buttonImg2), for: .normal)
+        
         
         if(ChooseShape.shape1 == shape[0]){
             if(ChoosePalette.color == palette[1]){

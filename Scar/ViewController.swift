@@ -108,7 +108,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
            submitNo = ITA.button[1]
        }
        
-       elaboraDisegno.imageView?.image = UIImage(named: submitNo)
         elaboraDisegno.setImage(UIImage(named: submitNo), for: .disabled)
         elaboraDisegno.setImage(UIImage(named:submit), for: .normal)
         let boldText1 = text[0]
