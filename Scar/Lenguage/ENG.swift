@@ -17,31 +17,31 @@ class ENG: UIViewController{
         static var allCardsImages: [String] = ["Card1p","Card2p","Card3p","Card4p","Card5p","Card6p","Card7p","Card8p","Card9p"]
     
         static var button = [
-            "submit azzurro", //Bottone elabora disegno schermata disegno
+            "submit", //Bottone elabora disegno schermata disegno
             "submitno", //Bottone elabora disegno schermata disegno disabilitato
             "Reset", //Bottone reset schermata disegno
-            "letsgoazzurro", //Bottone let's go post Collage
-            "nextazzurro", //Bottone nex go schermata Choose shape/Choose shape2/Choose palette/Choose texture
-            "nextazzurrono", //Bottone nex schermata Choose shape/Choose shape2/Choose palette/Choose texture disabilitato
-            "no", //Bottone no schermata Choose texture
-            "yes", //Bottone no schermata Choose texture
+            "letsgo", //Bottone let's go post Collage
+            "next", //Bottone nex go schermata Choose shape/Choose shape2/Choose palette/Choose texture
+            "nextno", //Bottone nex schermata Choose shape/Choose shape2/Choose palette/Choose texture disabilitato
+            "no copy", //Bottone no schermata Choose texture
+            "Yesyes", //Bottone no schermata Choose texture
             "readyViola", //Bottone ready schermata tutorial 2
             "start", //Bottone start schermata tutorial
             "StartN", //Bottone start schermata tutorial disailitato
             "done", //Bottone done schermata tutorial
-            "DoneN", //Bottone done schermata tutorial disabilitato
+            "doneno", //Bottone done schermata tutorial disabilitato
             "Let'sgo", //Bottone let's go schermata tutorial
             "proceed", //Bottone procedere Collage
-            "share (2)", //Bottone schare Generate Again
+            "share", //Bottone schare Generate Again
             "generate", //Bottone generate Generate Again
             "share", //Bottone schare Share page
-            "shareanonymously (2)",//Bottone schare anonimo Share page,
-            "submit azzurro",
+            "shareanon",//Bottone schare anonimo Share page,
+            "submit",
             "submitno",
             "MarkAsDone1"
         ]
 
-        static var insights = ["TEDx","Movies and Series","Articles","Books","Inspiring People","Podcasts"]
+        static var insights = ["TEDx","Books","Articles","Books","Inspiring people","Podcasts"]
         
         static var textOnCollage = [
             "The pattern in the large circle describes ",

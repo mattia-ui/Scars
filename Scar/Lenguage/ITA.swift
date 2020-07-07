@@ -21,12 +21,12 @@ class ITA: UIViewController{
                 static var allCardsImages: [String] = ["Card1pIta","Card2pIta","Card3pIta","Card4pIta","Card5pIta","Card6pIta","Card7pIta","Card8pIta","Card9pIta"]
             
                 static var button = [
-                    "submit azzurroIta", //Bottone elabora disegno schermata disegno
+                    "submitIta", //Bottone elabora disegno schermata disegno
                     "submitnoIta", //Bottone elabora disegno schermata disegno disabilitato
                     "ResetIta", //Bottone reset schermata disegno
-                    "letsgoazzurroIta", //Bottone let's go post Collage
-                    "nextazzurroIta", //Bottone nex go schermata Choose shape/Choose shape2/Choose palette/Choose texture
-                    "nextazzurronoIta", //Bottone nex schermata Choose shape/Choose shape2/Choose palette/Choose texture disabilitato
+                    "letsgoIta", //Bottone let's go post Collage
+                    "nextIta", //Bottone nex go schermata Choose shape/Choose shape2/Choose palette/Choose texture
+                    "nextnoIta", //Bottone nex schermata Choose shape/Choose shape2/Choose palette/Choose texture disabilitato
                     "noIta", //Bottone no schermata Choose texture
                     "yesIta", //Bottone no schermata Choose texture
                     "ReadyVioleIta", //Bottone ready schermata tutorial 2
@@ -34,7 +34,7 @@ class ITA: UIViewController{
                     "StartNIta", //Bottone start schermata tutorial disailitato
                     "DoneIta", //Bottone done schermata tutorial
                     "donenoIta", //Bottone done schermata tutorial disabilitato
-                    "letsgoIta", //Bottone let's go schermata tutorial
+                    "Let'sgoIta", //Bottone let's go schermata tutorial
                     "proceedIta", //Bottone procedere Collage
                     "shareIta (2)", //Bottone schare Generate Again
                     "generateIta", //Bottone generate Generate Again
@@ -45,7 +45,7 @@ class ITA: UIViewController{
                     "completato"
                 ]
 
-                static var insights = ["TEDx","Film e serie Tv","Articoli","Libri","Inspiring People","Podcasts"]
+                static var insights = ["TEDx","Film e serie Tv","Articoli","Libri","Inspiring people","Podcasts"]
                 
                static var textOnCollage = [
                     "Il pattern nel cerchio più grande descrive ",
