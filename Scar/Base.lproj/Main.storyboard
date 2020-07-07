@@ -427,7 +427,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Reflect, we don’t need your answer." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-gT-4jz">
-                                <rect key="frame" x="848" y="973.5" width="303" height="23"/>
+                                <rect key="frame" x="2491.5" y="973.5" width="303" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -579,7 +579,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-lJ-QbO">
-                                <rect key="frame" x="2493.5" y="625" width="384" height="50.5"/>
+                                <rect key="frame" x="2493.5" y="625" width="384" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="384" id="WAl-jz-akH"/>
                                 </constraints>
@@ -603,7 +603,7 @@ Masterpiece!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-fI-qoJ">
-                                <rect key="frame" x="880" y="726.5" width="194" height="55"/>
+                                <rect key="frame" x="880" y="718" width="194" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" identifier="larg" id="R1p-r1-OP1"/>
                                     <constraint firstAttribute="height" constant="55" identifier="altezza" id="g45-2c-k21"/>
@@ -1287,7 +1287,7 @@ Masterpiece!</string>
             <objects>
                 <viewController id="lfU-OF-Bud" customClass="ChooseTexture" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pnh-IU-Nic">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jE3-g0-hTy">
@@ -1474,13 +1474,13 @@ Masterpiece!</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 4/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Lej-tX-y6u">
-                                        <rect key="frame" x="22" y="81" width="242" height="51"/>
+                                        <rect key="frame" x="22" y="81" width="242" height="50.5"/>
                                         <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="36"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="mIk-Xe-oy0">
-                                        <rect key="frame" x="22" y="152" width="52.5" height="28"/>
+                                        <rect key="frame" x="22" y="151.5" width="49" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="20"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -1497,27 +1497,27 @@ Masterpiece!</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tz3-ol-La9">
-                                        <rect key="frame" x="232" y="479.5" width="110" height="56"/>
+                                        <rect key="frame" x="232" y="477" width="110" height="55"/>
                                         <state key="normal" title=" " image="Yesyes"/>
                                         <connections>
                                             <segue destination="hvR-kH-wNA" kind="show" id="0sY-Oe-LsQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOD-j0-7tp">
-                                        <rect key="frame" x="72" y="479.5" width="110" height="56"/>
+                                        <rect key="frame" x="72" y="477" width="110" height="55"/>
                                         <state key="normal" title=" " image="noIta"/>
                                         <connections>
                                             <segue destination="GG3-f1-cQ8" kind="show" id="KEg-EQ-8Ct"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submit answers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="iqq-Hd-Wwa">
-                                        <rect key="frame" x="62" y="300" width="290" height="49"/>
+                                        <rect key="frame" x="62" y="300" width="290" height="48"/>
                                         <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="32"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="kHH-QA-nou">
-                                        <rect key="frame" x="77.5" y="351" width="259" height="56"/>
+                                        <rect key="frame" x="77.5" y="350" width="259" height="55"/>
                                         <string key="text">Are you sure about 
 all the answers you gave?</string>
                                         <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="20"/>
@@ -1525,7 +1525,7 @@ all the answers you gave?</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forma1 - Forma2 - Palette - Texture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="RDd-Fb-aqK">
-                                        <rect key="frame" x="23" y="418.5" width="368" height="30"/>
+                                        <rect key="frame" x="23" y="416.5" width="368" height="29.5"/>
                                         <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="20"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -1734,7 +1734,7 @@ all the answers you gave?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#skinsugi is a place to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Pt-cQ-xmf">
-                                <rect key="frame" x="22" y="141" width="285.5" height="25"/>
+                                <rect key="frame" x="22" y="141" width="252.5" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="JDC-LS-hhj"/>
                                 </constraints>
@@ -2008,7 +2008,7 @@ your body and others’s bodies.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yHf-AX-5ZQ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="241.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="261.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" misplaced="YES" text="Good " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wg-V5-aIC">
                                 <rect key="frame" x="25" y="122" width="281" height="47"/>
@@ -2023,7 +2023,7 @@ your body and others’s bodies.</string>
                                 <color key="highlightedColor" red="0.1803921568627451" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fWY-uv-LMG">
-                                <rect key="frame" x="14" y="334" width="400" height="165"/>
+                                <rect key="frame" x="14" y="373" width="400" height="175.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="400" id="DS8-NL-NDp"/>
@@ -2036,7 +2036,7 @@ your body and others’s bodies.</string>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" restorationIdentifier="myCell" reuseIdentifier="myCell" id="DOL-XC-LhE" customClass="CollectionViewCell1" customModule="Skinsugi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="18" width="176" height="129"/>
+                                        <rect key="frame" x="0.0" y="23.5" width="176" height="129"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dPQ-80-aLg">
                                             <rect key="frame" x="0.0" y="0.0" width="176" height="129"/>
@@ -2112,19 +2112,19 @@ your body and others’s bodies.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mqk-Ya-Xpd">
-                                <rect key="frame" x="215" y="519" width="189" height="279"/>
+                                <rect key="frame" x="215" y="568.5" width="189" height="304"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="189" id="19W-RA-Wbc"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Qua ci vanno le stronzate di francesca" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="61N-a8-v0d">
-                                <rect key="frame" x="24" y="552" width="190" height="234"/>
+                                <rect key="frame" x="24" y="626.5" width="190" height="234"/>
                                 <fontDescription key="fontDescription" name="Poppins-ExtraLight" family="Poppins" pointSize="18"/>
                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Ready for a boost of self-esteem?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="hOt-Hk-MoG">
-                                <rect key="frame" x="25" y="199.5" width="369" height="37"/>
+                                <rect key="frame" x="25" y="232" width="369" height="40"/>
                                 <fontDescription key="fontDescription" name="Poppins-LightItalic" family="Poppins" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2905,7 +2905,7 @@ your body and others’s bodies.</string>
             <objects>
                 <viewController id="yAG-TC-SHI" customClass="Lingua" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qcm-5a-Y5k">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SettingsIllustration" translatesAutoresizingMaskIntoConstraints="NO" id="sQD-ea-gAV">
@@ -3827,52 +3827,52 @@ The two shapes on the outside recount </string>
         <scene sceneID="MAA-cj-BQ7">
             <objects>
                 <viewController id="LDR-hH-uX6" customClass="SharePage" customModule="Skinsugi" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="haL-L1-cYc">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="haL-L1-cYc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1691"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ir-as-X4c">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ir-as-X4c">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1691"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="22s-NT-cwB">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="22s-NT-cwB">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1653"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEw-87-8Pl">
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xEw-87-8Pl">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1653"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram power!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Grm-fg-a3p">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Instagram power!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Grm-fg-a3p">
                                                         <rect key="frame" x="22" y="52" width="351" height="50"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="36"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WQJ-Vl-Xrs">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQJ-Vl-Xrs">
                                                         <rect key="frame" x="102" y="153.5" width="210" height="203"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Yy9-H0-njk">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Yy9-H0-njk">
                                                         <rect key="frame" x="22" y="388" width="370" height="253"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="18"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="illustrazioneCollage" translatesAutoresizingMaskIntoConstraints="NO" id="wLi-qF-dST">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="illustrazioneCollage" translatesAutoresizingMaskIntoConstraints="NO" id="wLi-qF-dST">
                                                         <rect key="frame" x="0.0" y="697" width="414" height="262"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Be an inspiration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="XLh-Ts-cbd">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Be an inspiration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="XLh-Ts-cbd">
                                                         <rect key="frame" x="22" y="1015" width="213" height="41"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="26"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edT-gu-EJb">
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edT-gu-EJb">
                                                         <rect key="frame" x="128" y="1368" width="158" height="55"/>
                                                         <state key="normal" image="share"/>
                                                         <connections>
                                                             <action selector="shareImg:" destination="LDR-hH-uX6" eventType="touchUpInside" id="EgW-tv-pVw"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eN-Y8-iqG">
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eN-Y8-iqG">
                                                         <rect key="frame" x="73" y="1451" width="268" height="55"/>
                                                         <state key="normal" image="shareanonymously (2)"/>
                                                         <connections>
@@ -3880,7 +3880,7 @@ The two shapes on the outside recount </string>
                                                             <segue destination="GG3-f1-cQ8" kind="show" identifier="blur" id="rkX-St-HZF"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(We will publish it on our profile)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzJ-Ev-OB7">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="(We will publish it on our profile)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzJ-Ev-OB7">
                                                         <rect key="frame" x="90.5" y="1515" width="233.5" height="16"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="16" id="Hfk-Nt-sn4"/>
@@ -3889,7 +3889,7 @@ The two shapes on the outside recount </string>
                                                         <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ks-8R-CwO">
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ks-8R-CwO">
                                                         <rect key="frame" x="138.5" y="1283" width="137" height="36"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="19"/>
                                                         <state key="normal" title="Copy caption">
@@ -3899,7 +3899,7 @@ The two shapes on the outside recount </string>
                                                             <action selector="copys:" destination="LDR-hH-uX6" eventType="touchUpInside" id="0Ni-9n-5VT"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UN9-uJ-1tT">
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UN9-uJ-1tT">
                                                         <rect key="frame" x="148" y="1578" width="118" height="32"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="118" id="q4Q-R3-Nec"/>
@@ -3912,7 +3912,7 @@ The two shapes on the outside recount </string>
                                                             <action selector="notNow:" destination="LDR-hH-uX6" eventType="touchUpInside" id="MQp-7j-GuB"/>
                                                         </connections>
                                                     </button>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Tell your story behind your indelible sign here…  - #skinsugi (max 1100 character)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P7L-nb-SEH">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Tell your story behind your indelible sign here…  - #skinsugi (max 1100 character)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P7L-nb-SEH">
                                                         <rect key="frame" x="22" y="1069" width="370" height="201"/>
                                                         <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <color key="textColor" red="0.18039215689999999" green="0.16078431369999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
