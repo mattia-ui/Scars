@@ -228,8 +228,8 @@ class PostCollage: UIViewController, UICollectionViewDataSource, UICollectionVie
                     }
                  }
                  
-                 nex.imageView?.image = UIImage(named: buttonImg)
- 
+        nex.setImage(UIImage(named: buttonImg), for: .disabled)
+        nex.setImage(UIImage(named: buttonImg), for: .normal)
         miniSym.layer.borderWidth = 0.3
         miniSym.layer.masksToBounds = true
         miniSym.layer.borderColor = (UIColor.init(named: "#2E2933")?.cgColor)

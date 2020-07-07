@@ -109,7 +109,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
        }
        
        elaboraDisegno.imageView?.image = UIImage(named: submitNo)
-        
+        elaboraDisegno.setImage(UIImage(named: submitNo), for: .disabled)
+        elaboraDisegno.setImage(UIImage(named:submit), for: .normal)
         let boldText1 = text[0]
         let normalString2 = NSMutableAttributedString(string:boldText1)
         
